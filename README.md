@@ -22,8 +22,10 @@ Use Notepad++ with the language extension - it is included in the project folder
 
 This will allow folding of comments that have the lines below at the start:
 - TROOPS COMMANDERS UNITS MAGES SUMMONS SPELLS EVENTS ITEMS WEAPONS ARMOR SITES PROVINCEDEFENSE
+
 And the closing fold is:
 - ENDTROOPS ENDCOMMANDERS ENDUNITS ENDMAGES ENDSUMMONS ENDSPELLS ENDEVENTS ENDITEMS ENDWEAPONS ENDARMOR ENDSITES ENDPROVINCEDEFENSE
+
 Feel free to request additions, or to adjust the file yourself!
 As an example for above;
 ```
