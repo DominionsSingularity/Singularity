@@ -1,0 +1,94 @@
+--- Thane on Oathstone
+
+#newmonster 6114
+#spr1 "./Warhammer_Dwarfs/Thane_Oathstone_1.tga"
+#spr2 "./Warhammer_Dwarfs/Thane_Oathstone_2.tga"
+#name "Oathsworn Thane"
+#descr "Some Thanes swear a sacred oath to defend their land and inscribe this oath to a large stone. In battle, the oathsworn Thane will stand upon this stone, gaining great strength and protection from the power of his oath. However, once oath is sworn, it cannot ever be taken back and the Thane will forever stay in the land he has sworn to guard. His oath also grants the blessing of wisdom, allowing him to tap into the divine might of the awakening god. Oathsworn thane is a glorious sight on he battlefield and will improve the morale of any nearby dwarf units. Oathsworn Thanes are skilled administrators and can collect taxes and improve province defence in their province."
+#str 13
+#prot 5
+#weapon 859 --dwarf axe
+#armor 345 -- Dwarf Helmet
+#armor 344 -- Dwarf Plate Hauberk
+#armor 348 -- Runic Ward
+#onebattlespell "Sermon of Courage"
+#mountainsurvival
+#darkvision 50
+#siegebonus 2
+#castledef 4
+#magicskill 8 1
+#taxcollector
+#inspirational 1
+#incprovdef 2
+#patrolbonus 10
+#immobile
+#holy
+#hp 17
+#mor 30
+#mr 16
+#att 14
+#def 13
+#ap 8
+#prec 10
+#enc 1
+#gcost 40
+#rcost 1
+#goodleader
+#mapmove 1
+#size 3
+#nametype 196
+#startage 200
+#maxage 300
+#end
+
+
+
+
+
+--Clan King on Oathstone
+
+#newmonster 6116
+#copystats 1997 -- to get the no magic research ability
+#cleararmor
+#clearweapons
+#spr1 "./Warhammer_Dwarfs/Dwarf_King_Oathstone_1.tga"
+#spr2 "./Warhammer_Dwarfs/Dwarf_King_Oathstone_2.tga"
+#name "Oathsworn King"
+#descr "Each major clan has a king. Clan Kings are not only great warriors and leaders, but also historians, knowing their ancestors by heart. They keep track of the grudges of the clan and constantly plan on ways to make them right. As a result, they can channel the power of their ancestors and curse foes for their sins against the dwarf race. Some Kings swear a sacred oath to defend their land and inscribe this oath to a large stone. In battle, the Oathsworn King will stand upon this stone, gaining great divine strength and protection from the power of his oath. Oathsworn King is a glorious sight on he battlefield and will improve the morale of his troops. Oathsworn Kings are noble rulers, improving province defence and collecting taxes in the province they guard."
+#str 14
+#prot 6
+#weapon 854 --Greataxe of Grudges
+#armor 349 -- Runic Crown
+#armor 344 -- Dwarf Plate Hauberk
+#armor 348 -- Runic Ward
+#mountainsurvival
+#darkvision 50
+#siegebonus 2
+#castledef 5
+#researchbonus 9
+#inspirational 1
+#taxcollector
+#incprovdef 3
+#patrolbonus 15
+#immobile
+#magicskill 8 1
+#holy
+#hp 18
+#mor 30
+#mr 18
+#att 15
+#def 14
+#ap 8
+#prec 10
+#enc 1
+#gcost 120
+#rcost 1
+#expertleader
+#mapmove 1
+#size 3
+#nametype 196
+#startage 200
+#maxage 300
+#drainimmune
+#end
+
