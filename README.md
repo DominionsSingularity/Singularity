@@ -40,7 +40,7 @@ As an example for above;
 
 These folds do stack, however starts/ends can be intermixed accidentally (you can start with troops, end a fold with endweapons, for example).
 
-** Please utilize folding to the largest extent possible to allow good organization. ** I understand files will not have it set up automatically, of course. Just attempt to add it where you can.
+**Please utilize folding to the largest extent possible to allow good organization.** I understand files will not have it set up automatically, of course. Just attempt to add it where you can.
 
 ### Nation Format
 Extra nations to a separate file - this will allow us to easily analyze the files. Add the comments as per this style-line at the top to allow sorting. If there's conflicts right now with others, that's fine - but we need to ensure the comment system at the top is accurate. Leave room in the ID range at the top for changes and additions - if a mod uses monster ID's 6810 to 6830, it is (likely) better to claim 6800 to 6850 and we can attempt to end mods in sets to keep them a bit easier to organize and search through.
