@@ -82,6 +82,11 @@ Keep the mod sorted in this order:
 
 If there's issues with this order, please let me know!
 
+### General Flow
+- Pick a nation to edit that's included in the mod - extract it from the source into its own file (unless already extracted). Sort the information inside the mod file, and go through the ID's. Test to ensure ID's are linked properly if you can! Rename asset links as well if need be. Find->replace is your friend for that.
+- Move assets to the assets folder for the nation.
+- Adjust balance, make additions, whichever you need.
+
 ### Extra Notes
 You can utilize a dependency DM - if you have a lot of common pieces of information for nations, you can store them inside a dependency DM file. Since everything will be merged into a single DM file, it's fine to have stuff referenced between files. Same format restrictions should apply, but you may not have nations, and you may have less data in general. Files that require a dependency should denote the filename of the dependency required, for the later ability to autoload a dependency without needing to select it.
 
@@ -108,6 +113,9 @@ Any nation can be banned by gathering a total of 10 votes in the lobby. However,
 Thrones will be reworked to be useful/worth contesting 
 
 ## Additional Notes:
+
+Nation List is found here: https://docs.google.com/spreadsheets/d/1AAd1OI7T8leD68dRARF_m7HMEpPIXcuU_9qRVU2L9sM/
+Try to keep an updated list!
 
 More source nations can be found here;
 Strabo: http://dominionsmods.com/index.php?showtopic=3265
