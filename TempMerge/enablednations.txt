@@ -1,0 +1,2 @@
+0	"nation path"	// any text can go here
+1	"..\nations\Troldsvarheim.dm"	Troldsvarheim
