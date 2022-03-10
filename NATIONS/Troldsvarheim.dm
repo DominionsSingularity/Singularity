@@ -2620,7 +2620,7 @@ Any battles fought there will have partial darkness."
 #name "Capture Giant Shadows"
 #descr "The Shadow Weaver borrows the shadows of particularly mighty beings such as trolls or giants, then binds them to the weaver's will. The shadows of giants often retain some of their skills and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, giant shadows are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
 #school 4 -- Enchantment
-#researchlevel 4
+#researchlevel 5
 #path 0 5 -- Death
 #pathlevel 0 3
 #effect 10001
