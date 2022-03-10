@@ -2429,43 +2429,43 @@ In battle, it's shadow will extend across the entire battlefield, shrouding it i
 
 
 #selectspell 875 -- Animate Skeleton
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 876 -- Animate Dead
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 877 -- Reanimation
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 893 -- Raise Skeletons
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 903 -- Raise Dead
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 920 -- Horde of Skeletons
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 919 -- Pale Riders
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 940 -- Reanimate Archers
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 950 -- Carrion Reanimation
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #selectspell 853 -- Corpse Man Construction
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 
@@ -2485,7 +2485,7 @@ In battle, it's shadow will extend across the entire battlefield, shrouding it i
 #fatiguecost 1500
 #provrange 1
 #onlyowndst 1
-#restricted 203
+#restricted 204
 #end
 
 
@@ -2524,7 +2524,7 @@ Any battles fought there will have partial darkness."
 --#damage -1
 #damage 4300
 #provrange 1
-#restricted 203
+#restricted 204
 #nextspell "Dark Clouds"
 #end
 
@@ -2563,7 +2563,7 @@ Any battles fought there will have partial darkness."
 --#damage -1
 #damage 4301
 #provrange 1
-#restricted 203
+#restricted 204
 #nextspell "Sunless Sky"
 #end
 
@@ -2579,7 +2579,7 @@ Any battles fought there will have partial darkness."
 #path 1 1 -- Air
 #pathlevel 1 2
 #fatiguecost 300
-#restricted 203
+#restricted 204
 #nogeosrc 4096 -- Cannot cast in Caves
 #end
 
@@ -2596,7 +2596,7 @@ Any battles fought there will have partial darkness."
 #damage -5300 -- Shadow Animals
 #fatiguecost 300
 --#spec 8388608
-#restricted 203
+#restricted 204
 #end
 
 
@@ -2612,7 +2612,7 @@ Any battles fought there will have partial darkness."
 #damage -5301 -- Shadow People
 #fatiguecost 400
 --#spec 8388608
-#restricted 203
+#restricted 204
 #end
 
 -- Capture Giant Shadows
@@ -2628,7 +2628,7 @@ Any battles fought there will have partial darkness."
 #damage -5303 -- Shadow Trolls
 #fatiguecost 600
 --#spec 8388608
-#restricted 203
+#restricted 204
 #end
 
 -- Capture Great Shadow
@@ -2643,7 +2643,7 @@ Any battles fought there will have partial darkness."
 #nreff 1
 #damage -5304 -- Great Shadow
 #fatiguecost 4500
-#restricted 203
+#restricted 204
 #end
 
 -- Contact Forest Trolls, but a research tier earlier and cheaper.
@@ -2659,11 +2659,11 @@ Any battles fought there will have partial darkness."
 #nreff 1002
 #damage 2219 -- Forest Trolls
 #fatiguecost 600
-#restricted 203
+#restricted 204
 #end
 
 #selectspell 794 -- Contact Forest Trolls
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 -- Forest Troll Tribe, but a research tier earlier and cheaper.
@@ -2676,11 +2676,11 @@ Any battles fought there will have partial darkness."
 #path 0 6 -- Nature
 #pathlevel 0 3
 #fatiguecost 2700
-#restricted 203
+#restricted 204
 #end
 
 #selectspell 812 -- Forest Troll Tribe
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 -- Summon a Troll Seithberender. Similar in power to a Vuorihiisi, but different paths and a forest troll instead of a mountain troll.
@@ -2697,7 +2697,7 @@ Any battles fought there will have partial darkness."
 #nreff 1
 #damage 2221 -- Troll Seithberender
 #fatiguecost 2500
-#restricted 203
+#restricted 204
 #onlygeosrc 128
 #end
 
@@ -2714,7 +2714,7 @@ Any battles fought there will have partial darkness."
 #nreff 1002
 #damage 518 -- Mountain Trolls
 #fatiguecost 800
-#restricted 203
+#restricted 204
 #end
 
 -- Contact War Trolls. Normally only acquirable via Troll King Court.
@@ -2730,7 +2730,7 @@ Any battles fought there will have partial darkness."
 #nreff 1002
 #damage 1037 -- War Troll
 #fatiguecost 1200
-#restricted 203
+#restricted 204
 #end
 
 -- Contact Moose Knights. Normally only acquirable via Troll King Court, in very limited quantities.
@@ -2747,11 +2747,11 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #nreff 1001
 #damage 1086 -- Moose Knight
 #fatiguecost 1400
-#restricted 203
+#restricted 204
 #end
 
 #selectspell 786 -- Contact Mountain Trolls
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 -- Troll King's Court, but cheaper.
@@ -2764,11 +2764,11 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #path 0 3 -- Earth
 #pathlevel 0 3
 #fatiguecost 4000
-#restricted 203
+#restricted 204
 #end
 
 #selectspell 807 -- Troll King's Court
-#notfornation 203 -- Troldsvarheim
+#notfornation 204 -- Troldsvarheim
 #end
 
 #newspell
@@ -2784,7 +2784,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #fatiguecost 2500
 #nreff 1
 #damage 6976 -- Vuorihiisi
-#restricted 203
+#restricted 204
 #onlygeosrc 4194320 -- Mountains & Highlands
 #end
 
@@ -2802,7 +2802,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #nreff 1
 #damage 1010 -- Svartalf
 #fatiguecost 3000
-#restricted 203
+#restricted 204
 #onlygeosrc 4096 -- Cave
 #end
 
@@ -2817,7 +2817,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #pathlevel 0 2
 #fatiguecost 100
 #casttime 300
-#restricted 203
+#restricted 204
 --#spec 0
 #nogeosrc 2052
 #end
@@ -2865,7 +2865,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 --#damage 1000
 #damage 1
 #fatiguecost 20
-#restricted 203
+#restricted 204
 #spec 545263744 -- MR normal
 --#spec 17592731320448 -- MR hard
 --#spec 1152921505152127104 -- MR Normal, extra effect only on damage
@@ -2886,7 +2886,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #provrange 6
 #onlyowndst 1
 #walkable 1
-#restricted 203
+#restricted 204
 #end
 
 #newspell
@@ -2906,7 +2906,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #provrange 10
 #onlyowndst 1
 #walkable 1
-#restricted 203
+#restricted 204
 #end
 
 -- Summon Shadow Incarnate
@@ -2920,7 +2920,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #pathlevel 0 3
 #damage 6938 -- Shadow Incarnate
 #fatiguecost 100
-#restricted 203
+#restricted 204
 #spec 8388608
 #end
 
@@ -2936,7 +2936,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #nreff 1
 #damage 6977 -- Phantom
 #fatiguecost 3500
-#restricted 203
+#restricted 204
 #end
 
 -- Summons an Ancient Phantom. Very, very powerful mages.
@@ -2951,7 +2951,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #nreff 1
 #damage 6978 -- Ancient Phantom
 #fatiguecost 7000
-#restricted 203
+#restricted 204
 #end
 
 -- Summons a bird scout.
@@ -2966,7 +2966,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #nreff 1
 #damage 6940 -- Shadow Bird
 #fatiguecost 200
-#restricted 203
+#restricted 204
 #end
 
 -- Auspex, but MUCH earlier in research and with a lower A requirement, albeit lower range.
@@ -2979,7 +2979,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #school 5 -- Thaumaturgy
 #researchlevel 1
 #pathlevel 0 1
-#restricted 203
+#restricted 204
 #provrange 1
 #end
 
@@ -3027,7 +3027,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #str 2
 #itemcost1 -70
 #restricteditem 1220 -- Troldsvar
-#restricted 203
+#restricted 204
 #end
 
 #newitem 511
@@ -3039,7 +3039,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #mainlevel 2
 #type 8
 #tmpdeathgems 1
-#restricted 203
+#restricted 204
 #itemcost1 -50
 #end
 
@@ -3058,7 +3058,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #cursed
 #magicboost 5 1
 --#itemcost1 34
-#restricted 203
+#restricted 204
 #end
 
 #newitem 513
@@ -3071,7 +3071,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #mainlevel 3
 #type 2
 #itemcost1 -40
-#restricted 203
+#restricted 204
 #end
 
 #newitem 514
@@ -3085,7 +3085,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #darkpower 3
 #batstartsum3 -5302 -- Shadow Familiar
 #itemcost1 -70
-#restricted 203
+#restricted 204
 #end
 
 -- ENDITEMS
