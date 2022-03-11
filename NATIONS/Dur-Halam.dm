@@ -11,9 +11,9 @@
 -- Spell: 7 with no ID
 -- Sites: 1692 
 -- Nametypes: N/A
--- Event Codes: 327, 328
+-- Event Codes: N/A
 -- Montags N/A
--- Enchantment IDs: 327
+-- Enchantment IDs: 327, 328
 -- Item restrictions: 19 
 -- Poptypes: likespop 25, 78
 
