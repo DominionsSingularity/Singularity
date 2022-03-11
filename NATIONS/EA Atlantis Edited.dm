@@ -4,14 +4,14 @@
 -- None
 -- Nation ID: 36
 -- ID Ranges Utilized:
--- Monster: 6103.
+-- Monster: 5086, 6103, 4844, 4880, 4890, 4897, 4914
 -- Item: N/A 
 -- Weapon: 1755 
 -- Armor: 513 
--- Spell: 5 with no IDs 
--- Sites: 1700-1702, 1826 
+-- Spell: 14 with no IDs 
+-- Sites: 1628-1630, 1700-1702, 1826 
 -- Nametypes: N/A
--- Event Codes: N/A
+-- Event Codes: 467
 -- Montags: N/A
 -- Enchantment IDs: 8210-8212 
 -- Item restrictions: N/A
@@ -20,7 +20,8 @@
 
 
 -- Changelog 1.0: Extracted and Reformated the edits from Dimensional_Fractured3.3.dm
--- Notes: No idea if it actually works
+-- Changelog 1.1: Extracted and Reformated One Age and DE additions from Dimensional_Fractured3.3.dm
+-- Notes: No idea if it actually works. Some pretenders have homerealms. 
 
 
 
@@ -93,6 +94,25 @@
 #descr "Soldiers of the Deep are martial initiates of the cult of the deep and compose the greater part of the force spearheading the Atlantian conquest of the overland. Soldiers of the Deep are taught the secrets of waterbreathing and are armed with coral spears, coral javelins, and turtle shell shields."
 #end
 
+#newmonster 5086 -- Coral Snake
+#copystats 403 -- Horned Serpent
+#spr1 "./Dimensional FractureV3.0/EAAtlantis/EESnake.tga"
+#spr2 "./Dimensional FractureV3.0/EAAtlantis/EESnake2.tga"
+#name "Coral Snake"
+#descr "This is an aquatic coral snake. It is highly venomous."
+#snake
+#mor 30
+#size 1
+#hp 5
+#prot 3
+#str 5
+#att 10
+#def 12
+#ap 14
+#amphibian
+#uwbug
+#end
+
 
 -- ENDTROOPS
 
@@ -163,9 +183,363 @@
 #descr "The Witnesses of the Deep are human mages of water magic who have given up dry land for the comfort of the waves. Initially a member of a coastal mystery cult, the mage will eventually master the art of waterbreathing and be brought to the Basalt City or Coral Spires to marvel at the might and splendor of Atlantis. After having witnessed, the former initiate is returned to his cultic center to train and initiate others in the mysteries of the deep."
 #end
 
+#newmonster 4844 -- Basalt Architect
+#copystats 322 -- King of the Deep
+#clearmagic
+#clearweapons
+#name "Basalt Architect"
+#spr1 "./Dimensional FractureV3.0/EAAtlantis/BasaltArchitect.tga"
+#spr2 "./Dimensional FractureV3.0/EAAtlantis/BasaltArchitect2.tga"
+#descr "The Basalt Architect was the first of the Basalt Kings and was the prime architect of the Basalt City. He has now attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Basalt Architect is a master of magic and can be adept in several magic paths. He can enchant the stone of the city to make great quantities of artifacts, weapons and armor for the Deep Ones."
+#humanoid
+#gcost 150
+#size 5
+#hp 55
+#mr 18
+#mor 30
+#str 21
+#prot 13
+#fear 5
+#fireres 5
+#magicskill 3 1
+#weapon 151 -- Wand
+#resources 40
+#fixforgebonus 2
+#goodleader
+#mason
+#heal
+#twiceborn 3195 -- Wight Mage
+#coldres 5
+#diseaseres 100
+#maxage 2000
+#startage 1000
+#pathcost 10
+#startdom 1
+#end
+
+#newmonster 4880 -- Terror of the Deep
+#name "Terror of the Deep"
+#spr1 "./Dimensional FractureV3.0/EAAtlantis/DeepTerror.tga"
+#spr2 "./Dimensional FractureV3.0/EAAtlantis/DeepTerror2.tga"
+#descr "This huge creature was born at the dawn of time, when monsters and giants roamed the world. Since ancient times is has slumbered dreamlessly in the deepest gorges of the ocean where even the faintest sunlight does not reach. Now awoken, it is worshipped by the lesser beings of the ocean. The Terror of the Deep is amphibian and can leave its watery home when required. It rarely communicates with its followers, however if displeased it opens its enormous mouth and swallows the unfortunate whole. Now it is out to become the true God to extend its rule above the waves. In combat the creature will manifest magical Water and Death gems to aid in spellcasting."
+#humanoid
+#gcost 250
+#size 6
+#hp 166
+#prot 18
+#mr 20
+#mor 30
+#str 30
+#att 14
+#def 12
+#prec 8
+#enc 2
+#mapmove 3
+#ap 12
+#magicskill 2 1
+#magicskill 5 2
+#weapon 461 -- Swallow
+#weapon 29 -- Claw
+#fear 10
+#heal
+#diseaseres 100
+#amphibian
+#darkvision 100
+#poisonres 10
+#goodleader
+#spiritsight
+#digest 2
+#maxage 3000
+#startage 1000
+#pathcost 60
+#startdom 3
+#homerealm 9 -- Deeps
+#tmpwatergems 1
+#tmpdeathgems 2
+#end
+
+#newmonster 4890 -- Idol of Watery Wisdom
+#name "Idol of Watery Wisdom"
+#spr1 "./Dimensional FractureV3.0/EAAtlantis/WateryWisdom.tga"
+#spr2 "./Dimensional FractureV3.0/EAAtlantis/WateryWisdom.tga"
+#descr "The Idol of Watery Wisdom is a primordial spirit of knowledge and water that once served a previous Pantokrator and brought wisdom to the world. When the world had learned enough its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
+#miscshape
+#gcost 170
+#size 6
+#hp 150
+#prot 24
+#mr 18
+#mor 30
+#str 15
+#att 5
+#def 0
+#prec 10
+#enc 0
+#mapmove 0
+#ap 2
+#magicskill 2 3
+#weapon 0
+#expertleader
+#immobile
+#inanimate
+#poisonres 25
+#blind
+#spiritsight
+#stonebeing
+#slashres
+#pierceres
+#neednoteat
+#amphibian
+#heal
+#researchbonus 10
+#diseaseres 100
+#bonusspells 1
+#itemslots 12288 -- 2 misc
+#maxage 5000
+#startage 1000
+#startdom 4
+#pathcost 40
+#homerealm 10 -- Default
+#end
+
+#newmonster 4897 -- Spirit of the Well
+#name "Spirit of the Well"
+#spr1 "./Dimensional FractureV3.0/EAAtlantis/SpiritWell.tga"
+#spr2 "./Dimensional FractureV3.0/EAAtlantis/SpiritWell2.tga"
+#descr "The Spirit of the Well is a powerful spirit that inhabits a deep well leading to the centre of the earth. Through the well the spirit can access the deep waters of the world to draw on their strength. The spirit appears at the well to perform tasks such as forging items for enchantment. The Spirit of the Well is immobile and cannot leave the well it inhabits. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as an awakening god. The Spirit is tremendously strong in its dominion and magically powerful. The spirit can be destroyed, but not easily."
+#djinn
+#gcost 160
+#size 6
+#hp 65
+#prot 0
+#mr 18
+#mor 30
+#str 18
+#att 15
+#def 10
+#prec 12
+#enc 0
+#mapmove 0
+#ap 2
+#magicskill 2 2
+#magicskill 3 1
+#gemprod 2 1
+#weapon 90 -- Crush
+#expertleader
+#immobile
+#poisonres 25
+#slashres
+#pierceres
+#bluntres
+#heal
+#diseaseres 100
+#female
+#neednoteat
+#amphibian
+#itemslots 13446 -- No Feet
+#maxage 5000
+#startage 1000
+#startdom 4
+#pathcost 40
+#homerealm 10 -- Default
+#end
+
+#newmonster 4914 -- Dark Crystal
+#name "Dark Crystal"
+#spr1 "./Dimensional FractureV3.0/EAAtlantis/DarkCrystal.tga"
+#spr2 "./Dimensional FractureV3.0/EAAtlantis/DarkCrystal2.tga"
+#descr "The Dark Crystal is a great crystal worshipped by the Basalt Kings. Over the centuries it has gained in power and now has the chance to put the world under its strong dominion and becoming the True God. The Kings spend most of their time staring into the Dark Crystal  and in the pale light of the Basalt Kings' antennae, shades and movements can be seen that predict future events. The Crystal can control the minds of the weak willed and the Basalt Kings divine its will from the movements. In a physical battle, the crystal would be difficult to destroy, even though it cannot strike back. It is magically powerful and can reach further with spells of Earth and Astral magic."
+#miscshape
+#gcost 190
+#size 6
+#enc 0
+#hp 90
+#mor 30
+#mr 20
+#prot 18
+#ap 2
+#mapmove 0
+#itemslots 12288
+#magicskill 3 2
+#magicskill 4 2
+#bonusspells 1
+#maxage 5000
+#inanimate
+#blind
+#spiritsight
+#poisonres 25
+#fireres 5
+#coldres 5
+#str 15
+#att 5
+#def 5
+#ap 0
+#eyes 0
+#nobadevents 50
+#astralrange 2
+#earthrange 2
+#immobile
+#expertleader
+#expertmagicleader
+#weapon "Enslave mind"
+#pierceres
+#homerealm 0
+#slashres
+#startdom 4
+#pathcost 40
+#amphibian
+#end
+
+
+
 -- ENDMAGES
 
 -- FOLDSPELLS
+
+#newspell -- Power of the Crystal
+#name "Power of the Crystal"
+#descr "Through the power of the Dark Crystal the caster divines the location of all sites of magical power in an underwater province."
+#school 0
+#researchlevel 5
+#path 0 3
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 1
+#nreff 1
+#effect 10048
+#damage 55
+#fatiguecost 1500
+#spec 8388608 -- cast UW
+#provrange 4
+#onlyowndst 1
+#nolandtrace 1
+#onlyatsite 129 -- The Dark Crystal
+#onlymnr 1702 -- Basalt King
+#restricted 36 -- EA Atlantis
+#end
+
+#newspell-- Secrets of the Crystal
+#copyspell 791 -- Acashic Record
+#name "Secrets of the Crystal"
+#descr "Through the power of the Dark Crystal the caster reveals details of the history for one nation. The spell must be targeted on a capital to give any useful information."
+#researchlevel 3
+#fatiguecost 300
+#path 0 3
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 1
+#onlyatsite 129 -- The Dark Crystal
+#onlymnr 1702 -- Basalt King
+#restricted 36 -- EA Atlantis
+#end
+
+#newspell -- Knowledge of the Crystal
+#copyspell 987 -- Scrying Pool
+#name "Knowledge of the Crystal"
+#descr "Through the power of the Dark Crystal the caster gains knowledge of a distant province. The more magic gems spent the longer the mystical connection will last. The information gained through the crystal is much more accurate than a normal scout can provide."
+#researchlevel 0
+#path 0 3
+#path 1 0
+#pathlevel 0 3
+#pathlevel 1 1
+#fatiguecost 200
+#spec 8388608 -- cast UW
+#onlyatsite 129 -- The Dark Crystal
+#onlymnr 1702 -- Basalt King
+#restricted 36 -- EA Atlantis
+#end
+
+#newspell -- Murk of the Depths
+#copyspell 648 -- Solar Eclipse
+#name "Murk of the Depths"
+#descr "The caster clouds the water above the battlefield with silt and muck, causing a darkness to fall that mirrors the deepest oceans.  It is enough to make a battlefield as dark as the night and will impair all units without darkvision. This spell can only be cast underwater."
+#details "Darkness: -3 att/def/prec."
+#path 0 3
+#path 1 2
+#spec 41943040 -- UW Only
+#restricted 36 -- EA Atlantis
+--#restricted 73 -- MA Atlantis
+--#restricted 106 -- LA Atlantis
+#end
+
+#newspell -- Basalt Blessing
+#copyspell 614 -- Stoneskin
+#name "Basalt Blessing"
+#descr "The priests of Atlantis can temporarily gift their warriors with skin as hard as basalt."
+#details "Grants natural protection 15, or +2 if already 14 or higher. Also incurs susceptibility to Cold 5."
+#researchlevel 0
+#school 7
+#path 0 8
+#pathlevel 0 1
+#range 10
+#aoe 1000
+#fatiguecost 0
+#restricted 36 -- EA Atlantis
+#end
+
+#newspell -- Coral Blessing
+#copyspell 907 -- Poison Ward
+#name "Coral Blessing"
+#descr "The priests of Atlantis can grant protection from the stinging poison of the coral reefs."
+#details "Poison Resistance 10"
+#school 7
+#researchlevel 0
+#path 0 8
+#pathlevel 0 1
+#aoe 1004
+#fatiguecost 0
+#restricted 36 -- EA Atlantis
+--#restricted 73 -- MA Atlantis
+#end
+
+#newspell -- Summon Coral Snakes
+#copyspell 641 -- Swarm
+#name "Summon Coral Snakes"
+#descr "The coral reefs are home to many creatures that live amongst the twisting pillars. The caster summons a swarm of venomous Coral Snakes to attack his enemies. This spell can only be cast underwater."
+#school 0
+#researchlevel 4
+#path 0 2
+#damage 5086 -- Coral Snake
+#nreff 3007
+#spec 41943040 -- UW Only
+#restricted 36 -- EA Atlantis
+--#restricted 73 -- MA Atlantis
+--#restricted 200 -- Sargassia
+#end
+
+#newspell -- Basalt Vein
+#copyspell 987 -- Scrying Pool
+#name "Basalt Vein"
+#descr "The caster casts an enchantment over a nearby province that reveals the location of veins of basalt. These can be used by Atlanteans for forging and construction in the province. More basalt will be found in underwater and mountain provinces. The more magic gems spent the longer the enchantment will last."
+#school 4 -- Enchantment
+#path 0 3
+#path 1 0
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 500
+#damage 467
+#spec 8388608 -- Castable UW
+#provrange 2
+#friendlyench 1
+#hiddenench 1
+#restricted 36 -- EA Atlantis
+#onlyowndst 1
+#end
+
+#newspell -- Raise Basalt Fortress
+#copyspell 829 -- Living Castle
+#name "Raise Basalt Fortress"
+#descr "The caster raises a great basalt fortress from the deeps. The fortress can only be created in a friendly sea. The magic used to raise the castle will provide basalt for forging and construction for several months. This spell cannot be cast above the waves."
+#path 0 3
+#path 1 0
+#pathlevel 0 4
+#pathlevel 1 1
+#provrange 3
+#damage 6 -- Fortress
+#nolandtrace 1
+#restricted 36 -- EA Atlantis
+#nextspell "Basalt Vein"
+#end
 
 #newspell -- (Nextspell) Word of Coral Spires
 #name "Word of Coral Spires"
@@ -284,6 +658,30 @@
 #res 30
 #end
 
+#newsite 1628 -- Basalt Vein (Mountain)
+#name "Basalt Vein" -- Mountain
+#path 3
+#level 0
+#rarity 5
+#res 100
+#end
+
+#newsite 1629-- Basalt Vein (UW)
+#name "Basalt Vein" -- UW
+#path 3
+#level 0
+#rarity 5
+#res 50
+#end
+
+#newsite 1630 -- Basalt Vein (Land)
+#name "Basalt Vein" -- Land
+#path 3
+#level 0
+#rarity 5
+#res 25
+#end
+
 #newsite 1700 -- Coral Spires
 #name "Coral Spires"
 #path 2
@@ -331,6 +729,75 @@
 -- ENDSITES
 
 -- FOLDEVENTS
+
+#newevent -- Add Basalt Vein (Mountain)
+#rarity 5
+#req_myench 467
+#req_land 1
+#req_mountain 1
+#req_nositenbr 1628 -- Basalt Vein
+#req_pop0ok
+#msg "Basalt Vein"
+#notext
+#nolog
+#addsite 1628
+#end
+
+#newevent -- Remove Basalt Vein (Mountain)
+#rarity 5
+#req_noench 467 -- Basalt Vein
+#req_pop0ok
+#msg "Remove Basalt Vein"
+#notext
+#nolog
+#removesite 1628
+#end
+
+#newevent  -- Add Basalt Vein (UW)
+#rarity 5
+#req_myench 467
+#req_land 0
+#req_nositenbr 1629 -- Basalt Vein
+#req_pop0ok
+#msg "Basalt Vein"
+#notext
+#nolog
+#addsite 1629
+#end
+
+#newevent -- Remove Basalt Vein (UW)
+#rarity 5
+#req_noench 467 -- Basalt Vein
+#req_pop0ok
+#msg "Remove Basalt Vein"
+#notext
+#nolog
+#removesite 1629
+#end
+
+#newevent -- Add Basalt Vein (Land)
+#rarity 5
+#req_myench 467
+#req_land 1
+#req_mountain 0
+#req_nositenbr 1630 -- Basalt Vein
+#req_pop0ok
+#msg "Basalt Vein"
+#notext
+#nolog
+#addsite 1630
+#end
+
+#newevent -- Remove Basalt Vein (Land)
+#rarity 5
+#req_noench 467 -- Basalt Vein
+#req_site 1
+#req_pop0ok
+#msg "Remove Basalt Vein [Basalt Vein]"
+#notext
+#nolog
+#removesite 1630
+#end
 
 #newevent  -- Add Mystery Cult
 #rarity 5
@@ -438,13 +905,29 @@
 
 #selectnation 36 -- EA Atlantis
 
-#multihero1 104 -- deep seer
+#name "EA Atlantis"
+#era 2
+#brief "Atlantis is an underwater nation of amphibious beings. They do not use missile troops. They have powerful Earth and Water mages and powerful priests."
+#descr "For centuries the seas have been the domain of the Tritons, but recently a nation of beings resembling a cross between fish, frog and human has emerged in the deepest gorges of the oceans. The race is not entirely unknown, for there are a few of them who have made shallow coastal reefs their home, but the Triton Kings never imagined that they were numerous or powerful enough to form a nation. These Atlantians of the deeps never stop growing and will live for several hundred years unless killed. The Atlantian society is organized in a strict hierarchy of size and age. The oldest and most cunning Atlantians have made themselves kings and queens of The Basalt City in the deepest reaches of the ocean. The Atlantians of the deeps use weapons of enchanted basalt made by the Basalt Kings."
+#summary "Race: Amphibious
+Military: Light infantry, shamblers, no missile weapons
+Magic: Earth, Water, Fire, some Astral
+Priests: Powerful"
 
-#addgod 3058 -- godking of the deep
-#cheapgod20 3058
+#multihero1 104 -- deep seer
 
 #addgod 873 -- great seer of the deep
 #cheapgod20 873
+#addgod 3058 -- godking of the deep
+#cheapgod20 3058
+#addgod 4844 -- Basalt Architect
+#cheapgod20 4844 -- Basalt Architect
+#cheapgod20 4880 -- Terror of the Deep
+#addgod 4890 -- Idol of Watery Wisdom
+#addgod 4897 -- Spirit of the Well
+#addgod 4914 -- Dark Crystal
+#cheapgod20 4914 -- Dark Crystal
+#delgod 2791 -- Earth Serpent
 
 
 #end
