@@ -71,8 +71,8 @@
 #end
 
 #selectmonster 1690 -- Living Pillar
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/livingpillar1.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/livingpillar2.tga"
+#spr1 "./Singularity/EAAtlantis/livingpillar1.tga"
+#spr2 "./Singularity/EAAtlantis/livingpillar2.tga"
 #gcost 40
 #rpcost 35
 #mr 10
@@ -83,8 +83,8 @@
 
 #selectmonster 2860 -- Soldier of the Deep
 #cleararmor
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/soldierofthedeep1.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/soldierofthedeep2.tga"
+#spr1 "./Singularity/EAAtlantis/soldierofthedeep1.tga"
+#spr2 "./Singularity/EAAtlantis/soldierofthedeep2.tga"
 #weapon 640 - coral tipped javelins
 #armor 25 - turtleshell shield
 #armor 22 - coral cuirass
@@ -96,8 +96,8 @@
 
 #newmonster 5086 -- Coral Snake
 #copystats 403 -- Horned Serpent
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/EESnake.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/EESnake2.tga"
+#spr1 "./Singularity/EAAtlantis/EESnake.tga"
+#spr2 "./Singularity/EAAtlantis/EESnake2.tga"
 #name "Coral Snake"
 #descr "This is an aquatic coral snake. It is highly venomous."
 #snake
@@ -120,8 +120,8 @@
 
 #newmonster 6103 -- Commander of the Deep
 #name "Commander of the Deep"
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/commanderofthedeep1.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/commanderofthedeep2.tga"
+#spr1 "./Singularity/EAAtlantis/commanderofthedeep1.tga"
+#spr2 "./Singularity/EAAtlantis/commanderofthedeep2.tga"
 #nametype 100
 #descr "Commanders of the Deep are devoted followers of the Deep Seers who have made a pilgrimage to the Basalt City. There they were granted the privilege of training under the Coral Guard and recieved a ceremonial set of coral armor along with a coral blade. Commanders of the Deep are skilled commanders and are often regarded as fanatics to the Atlantian cause."
 #weapon 1755 - coral sword
@@ -188,8 +188,8 @@
 #clearmagic
 #clearweapons
 #name "Basalt Architect"
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/BasaltArchitect.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/BasaltArchitect2.tga"
+#spr1 "./Singularity/EAAtlantis/BasaltArchitect.tga"
+#spr2 "./Singularity/EAAtlantis/BasaltArchitect2.tga"
 #descr "The Basalt Architect was the first of the Basalt Kings and was the prime architect of the Basalt City. He has now attained such power that he has mastered his own mortality. Donning a godly mantle, he has taken the role of a Pretender God. The Basalt Architect is a master of magic and can be adept in several magic paths. He can enchant the stone of the city to make great quantities of artifacts, weapons and armor for the Deep Ones."
 #humanoid
 #gcost 150
@@ -219,8 +219,8 @@
 
 #newmonster 4880 -- Terror of the Deep
 #name "Terror of the Deep"
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/DeepTerror.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/DeepTerror2.tga"
+#spr1 "./Singularity/EAAtlantis/DeepTerror.tga"
+#spr2 "./Singularity/EAAtlantis/DeepTerror2.tga"
 #descr "This huge creature was born at the dawn of time, when monsters and giants roamed the world. Since ancient times is has slumbered dreamlessly in the deepest gorges of the ocean where even the faintest sunlight does not reach. Now awoken, it is worshipped by the lesser beings of the ocean. The Terror of the Deep is amphibian and can leave its watery home when required. It rarely communicates with its followers, however if displeased it opens its enormous mouth and swallows the unfortunate whole. Now it is out to become the true God to extend its rule above the waves. In combat the creature will manifest magical Water and Death gems to aid in spellcasting."
 #humanoid
 #gcost 250
@@ -260,8 +260,8 @@
 
 #newmonster 4890 -- Idol of Watery Wisdom
 #name "Idol of Watery Wisdom"
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/WateryWisdom.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/WateryWisdom.tga"
+#spr1 "./Singularity/EAAtlantis/WateryWisdom.tga"
+#spr2 "./Singularity/EAAtlantis/WateryWisdom.tga"
 #descr "The Idol of Watery Wisdom is a primordial spirit of knowledge and water that once served a previous Pantokrator and brought wisdom to the world. When the world had learned enough its services were no longer needed and the spirit was bound in a huge stone statue for eternity. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as a reawakening god. The spirit cannot leave the statue, but it can possess willing targets in order to make its will heard and to perform tasks such as forging items for enchantment. The spirit is tremendously strong in its dominion. In a physical battle, the statue would be difficult to destroy, even though it cannot strike back."
 #miscshape
 #gcost 170
@@ -304,8 +304,8 @@
 
 #newmonster 4897 -- Spirit of the Well
 #name "Spirit of the Well"
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/SpiritWell.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/SpiritWell2.tga"
+#spr1 "./Singularity/EAAtlantis/SpiritWell.tga"
+#spr2 "./Singularity/EAAtlantis/SpiritWell2.tga"
 #descr "The Spirit of the Well is a powerful spirit that inhabits a deep well leading to the centre of the earth. Through the well the spirit can access the deep waters of the world to draw on their strength. The spirit appears at the well to perform tasks such as forging items for enchantment. The Spirit of the Well is immobile and cannot leave the well it inhabits. With the Pantokrator gone, its powers have begun to manifest themselves and it is now worshipped as an awakening god. The Spirit is tremendously strong in its dominion and magically powerful. The spirit can be destroyed, but not easily."
 #djinn
 #gcost 160
@@ -346,8 +346,8 @@
 
 #newmonster 4914 -- Dark Crystal
 #name "Dark Crystal"
-#spr1 "./Dimensional FractureV3.0/EAAtlantis/DarkCrystal.tga"
-#spr2 "./Dimensional FractureV3.0/EAAtlantis/DarkCrystal2.tga"
+#spr1 "./Singularity/EAAtlantis/DarkCrystal.tga"
+#spr2 "./Singularity/EAAtlantis/DarkCrystal2.tga"
 #descr "The Dark Crystal is a great crystal worshipped by the Basalt Kings. Over the centuries it has gained in power and now has the chance to put the world under its strong dominion and becoming the True God. The Kings spend most of their time staring into the Dark Crystal  and in the pale light of the Basalt Kings' antennae, shades and movements can be seen that predict future events. The Crystal can control the minds of the weak willed and the Basalt Kings divine its will from the movements. In a physical battle, the crystal would be difficult to destroy, even though it cannot strike back. It is magically powerful and can reach further with spells of Earth and Astral magic."
 #miscshape
 #gcost 190
