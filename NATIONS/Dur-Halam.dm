@@ -6,7 +6,7 @@
 -- ID Ranges Utilized:
 -- Monster: 5873-5896, 5898
 -- Item: 835 
--- Weapon: 1285-1892 
+-- Weapon: 1285-1292 
 -- Armor: 412
 -- Spell: 7 with no ID
 -- Sites: 1692 
