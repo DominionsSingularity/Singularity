@@ -21,7 +21,7 @@ Large mod combination for Dominions 5.
 Use Notepad++ with the language extension - it is included in the project folder of 'Utility'. In N++, go to Language -> User-Defined Languages -> Open Folder and copy the language extension in. For technical people, symlink it to have it automatically update with git changes. Restart Notepad++. Go to Languages -> Dominions 5.53.
 
 This will allow folding of comments that have the lines below at the start:
-- TROOPS COMMANDERS UNITS MAGES SUMMONS SPELLS EVENTS ITEMS WEAPONS ARMOR SITES PROVINCEDEFENSE
+- FOLDTROOPS FOLDCOMMANDERS FOLDUNITS FOLDMAGES FOLDSUMMONS FOLDSPELLS FOLDEVENTS FOLDITEMS FOLDWEAPONS FOLDARMOR FOLDSITES FOLDPROVINCEDEFENSE
 
 And the closing fold is:
 - ENDTROOPS ENDCOMMANDERS ENDUNITS ENDMAGES ENDSUMMONS ENDSPELLS ENDEVENTS ENDITEMS ENDWEAPONS ENDARMOR ENDSITES ENDPROVINCEDEFENSE
@@ -29,7 +29,7 @@ And the closing fold is:
 Feel free to request additions, or to adjust the file yourself!
 As an example for above;
 ```
--- TROOPS <-- Fold starts here
+-- FOLDTROOPS <-- Fold starts here
 
 #newmonster
 #blah
@@ -83,7 +83,8 @@ Keep the mod sorted in this order:
 If there's issues with this order, please let me know!
 
 ### General Flow
-- Pick a nation to edit that's included in the mod - extract it from the source into its own file (unless already extracted). Sort the information inside the mod file, and go through the ID's. Test to ensure ID's are linked properly if you can! Rename asset links as well if need be. Find->replace is your friend for that.
+- Pick a nation to edit that's included in the mod - extract it from the source into its own file (unless already extracted). Sort the information inside the mod file, and go through the ID's. Test to ensure ID's are linked properly if you can!
+- Rename all asset links in the mod nation to "./Singularity/Nation/tga's
 - Move assets to the assets folder for the nation.
 - Adjust balance, make additions, whichever you need.
 
