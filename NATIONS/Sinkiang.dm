@@ -19,7 +19,7 @@
 
 
 
--- Changelog 1.0: Reformatted and Extracted from Executor's beautiful organization in Dimensional_Fractured3.3.dm
+-- Changelog 1.0: Reformatted and Extracted from Dimensional_Fractured3.3.dm
 -- Notes: Not been booted up/playtested alone yet, I might have broken something(s)
 
 
@@ -161,8 +161,8 @@
 
 -- Infantryman - very lightly armored, weird axe thingy - dagger axe and shield [Fig 2]
 #newmonster 6673 -- Infantryman
-#spr1 "./Dimensional FractureV3.0/sinkiang/infantryman.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/infantryman_2.tga"
+#spr1 "./Singularity/sinkiang/infantryman.tga"
+#spr2 "./Singularity/sinkiang/infantryman_2.tga"
 #name "Infantryman"
 #descr "Many peoples live in Sinkiang. The Yi are the descendents of the steppe nomads, and are the most populous and poor. They usually work on the farms but are drafted in times of war into the armies of Sinkiang. Their superior strength is welcome and they usually wield either a bronze battleaxe, or a shield and gao - a farming tool that doubles as a dagger-axe in war. They are given no armor however. The colour of the peasantry is white."
 #weapon 1473 -- dagger-axe
@@ -189,8 +189,8 @@
 
 -- Axeman - very lightly armored, two handed axe [Fig 2]
 #newmonster 6674 -- Axeman
-#spr1 "./Dimensional FractureV3.0/sinkiang/axeman.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/axeman_2.tga"
+#spr1 "./Singularity/sinkiang/axeman.tga"
+#spr2 "./Singularity/sinkiang/axeman_2.tga"
 #name "Axeman"
 #descr "Many peoples live in Sinkiang. The Yi are the descendents of the steppe nomads, and are the most populous and poor. They usually work on the farms but are drafted in times of war into the armies of Sinkiang. Their superior strength is welcome and they usually wield either a bronze battleaxe, or a shield and gao - a farming tool that doubles as a dagger-axe in war. They are given no armor however. The colour of the peasantry is white."
 #weapon 698 --bronze battleaxe
@@ -216,8 +216,8 @@
 
 -- Crossbowman - Primitive crossbow/arbaĺest [Fig 1]
 #newmonster 6675 -- Crossbow
-#spr1 "./Dimensional FractureV3.0/sinkiang/crossbowman.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/crossbowman_2.tga"
+#spr1 "./Singularity/sinkiang/crossbowman.tga"
+#spr2 "./Singularity/sinkiang/crossbowman_2.tga"
 #name "Crossbow"
 #descr "The powerful and prosperous Sinkiang kingdom is home to some of the greatest scholars in the world. Their most recent invention is a complex, trigger activated mechanical bow. While much slower, heavier and less precise than regular bows, these crossbows, as they are usually called, can effectively pierce through even heavy armor. As these weapons are shot from the chest, they have somewhat lower accuracy. They require much less training than a bow and arrow, and therefore can be levied in mass."
 #weapon 1472 --Primitive crossbow
@@ -245,8 +245,8 @@
 -- Spearman - slightly armored, no shield, weird spear --polearm dagger-axe [Fig 1]
 #newmonster 6676 -- Citizen Spearman
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/spearman.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/spearman_2.tga"
+#spr1 "./Singularity/sinkiang/spearman.tga"
+#spr2 "./Singularity/sinkiang/spearman_2.tga"
 #name "Citizen Spearman"
 #descr "Many peoples live in Sinkiang. The Qin are the citizens and mostly live in the cities of Sinkiang. They are given good equipment and armor when going into battle, as well as martial training. The spearmen carry a pole version of the dagger-axe used by the Yi. It has evolved from a farming tool into quite a popular weapon of war. The color of the citizens is blue."
 #clearweapons
@@ -256,8 +256,8 @@
 -- Swordsman - lightly armored, shield + dao  [Fig 1] [Fig 4][Fig 7][Fig 8]
 #newmonster 6677 -- Citizen Swordsman
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/swordsman.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/swordsman_2.tga"
+#spr1 "./Singularity/sinkiang/swordsman.tga"
+#spr2 "./Singularity/sinkiang/swordsman_2.tga"
 #name "Citizen Swordsman"
 #descr "Many peoples live in Sinkiang. The Qin are the citizens and mostly live in the cities of Sinkiang. They are given good equipment and armor when going into battle, as well as martial training. The swordsmen carry the Dao - a Sinkiang version of the broadsword, and a shield. The color of the citizens is blue."
 #clearweapons
@@ -270,8 +270,8 @@
 -- Composite archer - with axe, similar to LA ulm ranger [Fig 6]
 #newmonster 6678 -- Citizen Archer
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/archer.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/archer_2.tga"
+#spr1 "./Singularity/sinkiang/archer.tga"
+#spr2 "./Singularity/sinkiang/archer_2.tga"
 #name "Citizen Archer"
 #descr "Many peoples live in Sinkiang. The Qin are the citizens and mostly live in the cities of Sinkiang. TThey are given good equipment and armor when going into battle, as well as martial training. The archers carry a composite bow and a bronze war axe to battle. They are quite proficient in the use of both. The color of the citizens is blue."
 #clearweapons
@@ -282,8 +282,8 @@
 -- Heavy Chariot - spear + archer +driver [Fig 5]
 #newmonster 6679 -- Heavy Chariot
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/chariot.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/chariot_2.tga"
+#spr1 "./Singularity/sinkiang/chariot.tga"
+#spr2 "./Singularity/sinkiang/chariot_2.tga"
 #name "Heavy Chariot"
 #descr "Chariots have seen military use since the early days of the Kingdom. Nobody knows where they come from but they have dominated the battlefield ever since. Some say they were introduced by Ubaran traders, others that the Ubarans merely brought the concept and stories from a land inhabited by giants. The heavy war chariots are pulled by two horses. They are wide with two large wheels for stability. Each one carries a driver, an archer and a spearman. Chariots are difficult to repair and if sufficiently damaged they will be abandoned after the battle."
 #clearweapons
@@ -311,8 +311,8 @@
 
 #newmonster 6680 -- Heavy Chariot
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/chariot2.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/chariot2_2.tga"
+#spr1 "./Singularity/sinkiang/chariot2.tga"
+#spr2 "./Singularity/sinkiang/chariot2_2.tga"
 #name "Heavy Chariot"
 #descr "Chariots have seen military use since the early days of the Kingdom. Nobody knows where they come from but they have dominated the battlefield ever since. Some say they were introduced by Ubaran traders, others that the Ubarans merely brought the concept and stories from a land inhabited by giants. The heavy war chariots are pulled by two horses. They are wide with two large wheels for stability. Each one carries a driver, an archer and a spearman. Chariots are difficult to repair and if sufficiently damaged they will be abandoned after the battle."
 #clearweapons
@@ -338,8 +338,8 @@
 -- Noble warrior - armored, spear + composite bow [Fig 2] [Fig 3]
 #newmonster 6682 -- Nobleman
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/noble.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/noble_2.tga"
+#spr1 "./Singularity/sinkiang/noble.tga"
+#spr2 "./Singularity/sinkiang/noble_2.tga"
 #name "Nobleman"
 #descr "The noble class of Sinkiang is called the Shang. They are descendants of conquerors and as such every Nobleman must prove himself on the field of battle if he is to advance in the Court of Sinkiang. They spend their days training with weapons and are accomplished warriors and archers. Their primary weapons are the composite bow and spear. Should they get bested however they will switch to an axe and dagger for close quarter combat."
 #clearweapons
@@ -362,8 +362,8 @@
 
 #newmonster 6683 -- Nobleman
 #copystats 1901 --EA TC medium footman
-#spr1 "./Dimensional FractureV3.0/sinkiang/noble2.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/noble2_2.tga"
+#spr1 "./Singularity/sinkiang/noble2.tga"
+#spr2 "./Singularity/sinkiang/noble2_2.tga"
 #name "Nobleman"
 #descr "The noble class of Sinkiang is called the Shang. They are descendants of conquerors and as such every Nobleman must prove himself on the field of battle if he is to advance in the Court of Sinkiang. They spend their days training with weapons and are accomplished warriors and archers. Their primary weapons are the composite bow and spear. Should they get bested however they will switch to an axe and dagger for close quarter combat. This noble has switched to using his close-quarter kit. He is tired of battle and his morale is lower than it used to be."
 #clearweapons
@@ -385,8 +385,8 @@
 -- Amazonian Guard - permanent, amazon stats + better equipment+tattoos
 #newmonster 6684 -- Amazon Guard
 #copystats 1669 -- ea sauro amazon
-#spr1 "./Dimensional FractureV3.0/sinkiang/amazon_guard.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/amazon_guard_2.tga"
+#spr1 "./Singularity/sinkiang/amazon_guard.tga"
+#spr2 "./Singularity/sinkiang/amazon_guard_2.tga"
 #name "Amazon Guard"
 #descr "Some amazons prefer life in the cities rather than in small tribes. These amazons are usually employed by the Sinkiang nobility as guardians, both of people and places. They retain their martial prowess and are superbly equipped. The amazons decorate themselves with magical snake tattoos, the secret of making them was passed on through generations. However, only the tribal Jade Priestesses still know the magic of how to activate them."
 #clearweapons
@@ -404,8 +404,8 @@
 -- Jade Warrior - with sacred spirit retinue, maybe self buf twist safe ?
 -- SPRITE !! elite warrior with sacred spirit retinue
 #newmonster 6685 -- Jade Warrior
-#spr1 "./Dimensional FractureV3.0/sinkiang/jade_warrior.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/jade_warrior_2.tga"
+#spr1 "./Singularity/sinkiang/jade_warrior.tga"
+#spr2 "./Singularity/sinkiang/jade_warrior_2.tga"
 #name "Jade Warrior"
 #descr "By their own will or the will of the ancestors, some Mediums choose the martial path and become Jade Warriors. They don a full set of magical jade armor and wield magical jade glaives. Jade brings luck to the wearer and anyone foolish enough to strike them will have their fate rewritten and suffer from misfortune for the rest of the battle. Jade acts as a conduit between the world of the living and Xian, the paradise of the immortal souls. As such the wearer is always accompanied in battle by a sacred soul of an ancestor. Although not sacred, Jade Warriors require a temple and a high dominion for the power of Xian to permeate the armour, weapons and souls of the Jade Warriors."
 #weapon 1475 -- Jade Glaive
@@ -469,8 +469,8 @@
 
 -- General [Fig 4]
 #newmonster 6691 -- General
-#spr1 "./Dimensional FractureV3.0/sinkiang/general.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/general_2.tga"
+#spr1 "./Singularity/sinkiang/general.tga"
+#spr2 "./Singularity/sinkiang/general_2.tga"
 #name "General"
 #descr "Generals are Shang nobles who have finished their education as well as proved themselves in battle. Although reasonably equipped and very skilled, the generals are not expected to engage directly in combat."
 #armor 7 -- scale mail cuirass
@@ -523,8 +523,8 @@
 
 -- Medium
 #newmonster 6692 -- Medium
-#spr1 "./Dimensional FractureV3.0/sinkiang/medium.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/medium_2.tga"
+#spr1 "./Singularity/sinkiang/medium.tga"
+#spr2 "./Singularity/sinkiang/medium_2.tga"
 #copystats 806 --EA TC master of the dead
 #name "Medium"
 #descr "Mediums are mages and priests tasked with communicating with the dead. They carry a magical staff made of jade which is used as a conduit between the mortal world and the world of the spirits, and can enter temples to commune with the ancestors and bind them to the land of the living. They also carry a Bagua board as help to interpret the will of the dead and as protection against evil spirits and the Jiangshi. The Bagua board can also be used as an improvised shield should the need arise. As added protection against malicious spirits, they carry papers inscribed with sacred texts. Weaker unholy beings hit by a thrown sutra are paralyzed by the holy words."
@@ -543,8 +543,8 @@
 
 -- King - Mage, priest, diviner good leader
 #newmonster 6699 -- King
-#spr1 "./Dimensional FractureV3.0/sinkiang/king_chariot.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/king_chariot_2.tga"
+#spr1 "./Singularity/sinkiang/king_chariot.tga"
+#spr2 "./Singularity/sinkiang/king_chariot_2.tga"
 #name "King"
 #descr "The Kings of Sinkiang are accomplished rulers, mages, diviners and priests. Although quite capable at commanding armies, they mostly spend their time in matters of ruling, magic and religion. All Kings are required to be able to perform divination as well, and thus will help see and prevent unfavourable events. Divination magic can take on many forms - some seek advice from the dead or break bones, while others interpret natural phenomena to try to discern the future. They are also required to know the magic of the astral planes and death to be able to consult the ancestors. As the members of the royal family, their rule is ensured by the Mandate of Heaven and thus are considered sacred and are trained as powerful priests. They are protected in battles by the spirits of their ancestors. Should a king ever fall in battle, his mortal remains will be taken to the capital and a Jade Suit made to encase them. Then the higher spirit soul, Hun, is called back from Xian to inhabit the vessel once more and guide the people. To appease the spirit, offerings of gold, food and even human sacrifices must be made on a monthly basis. They are driven on chariots and never show their hands. Should the chariot be destroyed the retainers will sacrifice themselves to save the king, who will continue to fight on foot, more ancestral spirits coming to his aid in the time of need."
 #weapon 10 -- falchion
@@ -590,8 +590,8 @@
 #end
 
 #newmonster 6700 -- King
-#spr1 "./Dimensional FractureV3.0/sinkiang/king.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/king.tga"
+#spr1 "./Singularity/sinkiang/king.tga"
+#spr2 "./Singularity/sinkiang/king.tga"
 #name "King"
 #descr "The Kings of Sinkiang are accomplished rulers, mages, diviners and priests. Although quite capable at commanding armies, they mostly spend their time in matters of ruling, magic and religion. All Kings are required to be able to perform divination as well, and thus will help see and prevent unfavourable events. Divination magic can take on many forms - some seek advice from the dead or break bones, while others interpret natural phenomena to try to discern the future. They are also required to know the magic of the astral planes and death to be able to consult the ancestors. As the members of the royal family, their rule is ensured by the Mandate of Heaven and thus are considered sacred and are trained as powerful priests. They are protected in battles by the spirits of their ancestors. Should a king ever fall in battle, his mortal remains will be taken to the capital and a Jade Suit made to encase them. Then the higher spirit soul, Hun, is called back from Xian to inhabit the vessel once more and guide the people. To appease the spirit, offerings of gold, food and even human sacrifices must be made on a monthly basis. They are driven on chariots and never show their hands. Should the chariot be destroyed the retainers will sacrifice themselves to save the king, who will continue to fight on foot, more ancestral spirits coming to his aid in the time of need."
 #weapon 10 -- falchion
@@ -653,8 +653,8 @@
 -- King of Old - jade suited kings of old. sacred, kills population - sacrifices
 #newmonster 6702 -- Jade King
 #name "Jade King"
-#spr1 "./Dimensional FractureV3.0/sinkiang/jade_king.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/jade_king_2.tga"
+#spr1 "./Singularity/sinkiang/jade_king.tga"
+#spr2 "./Singularity/sinkiang/jade_king_2.tga"
 #descr "When a king falls in battle, his mortal remains are taken to the capital and a Jade Suit is made to encase them. Then the higher spirit soul, Hun, is called back from Xian to inhabit the vessel once more and guide the people. The suit is exquisitely made and human like, able to wear additional armor as well as handle weapons and shields. The Jade Kings command more priestly powers than their living counterparts. They will also gain new insight about the magic of death in Xian and become more powerful. To appease the spirit, offerings of gold, food and even human sacrifices must be made on a monthly basis."
 #weapon 10 -- falchion
 #hp 21
@@ -714,8 +714,8 @@
 
 -- Diviner - death astral fortune teller ?
 #newmonster 6693 -- Diviner
-#spr1 "./Dimensional FractureV3.0/sinkiang/diviner.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/diviner_2.tga"
+#spr1 "./Singularity/sinkiang/diviner.tga"
+#spr2 "./Singularity/sinkiang/diviner_2.tga"
 #name "Diviner"
 #descr "Divination is as common in Sinkiang as the communions with the dead. Divination can take on many forms, some seek advice from the dead or break bones, others interpret natural phenomena to try to discern the future. Although widely practiced, divination is not considered holy work, even when seeking advice from the dead. Thus diviners have neither priestly powers nor are considered holy."
 #armor 158 -- robes
@@ -746,8 +746,8 @@
 
 -- Jade Sculptor -- forge mage
 #newmonster 6694 -- Jade Sculptor
-#spr1 "./Dimensional FractureV3.0/sinkiang/jade_sculptor.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/jade_sculptor_2.tga"
+#spr1 "./Singularity/sinkiang/jade_sculptor.tga"
+#spr2 "./Singularity/sinkiang/jade_sculptor_2.tga"
 #name "Jade Sculptor"
 #descr "Jade is the foundation upon which Sinkiang is built. Jade can be used to manipulate luck and the fortunes and is used in weapons and armor. It is also used in trade with distant lands. Most importantly jade is used as a conduit to Xian, the paradise of immortals. Ancestors can be called from Xian to aid Sinkiang. Old kings and queens can still walk among the living in their jade suits constructed by the jade masters. As masters of jade sculpting, as well as jade arms and armor forging, they can reduce the cost of forging items."
 #armor 158 -- robes
@@ -781,8 +781,8 @@
 
 -- Xian Emisary(?) - death astral  priest to deal with Xian
 #newmonster 6695 -- Xian Ambassador
-#spr1 "./Dimensional FractureV3.0/sinkiang/xian_ambasador.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/xian_ambasador_2.tga"
+#spr1 "./Singularity/sinkiang/xian_ambasador.tga"
+#spr2 "./Singularity/sinkiang/xian_ambasador_2.tga"
 #name "Xian Ambassador"
 #descr "The most accomplished mediums receive magical and courtly training in the Palace of Heaven to act as ambassadors of the living in Xian, the afterlife paradise of immortals ruled by ancestral spirits and minor gods, presided by the Awakening One. They are supremely skilled in astral and death magic. Their long training means that most of them are quite old, a fact which helps them commune with the dead. They are sacred and have strong priestly powers. As ambassadors to Xian they are always carried on a palanquin, so to be kept between the earth and xian and not touch either."
 #hp 12
@@ -818,8 +818,8 @@
 
 -- Warrior Queen -- great general, battle mage, inspired by Fu Hao and amazonian connection [Fig 9]
 #newmonster 6696 -- Warrior Queen
-#spr1 "./Dimensional FractureV3.0/sinkiang/warrior_queen.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/warrior_queen_2.tga"
+#spr1 "./Singularity/sinkiang/warrior_queen.tga"
+#spr2 "./Singularity/sinkiang/warrior_queen_2.tga"
 #name "Warrior Queen"
 #descr "The Queens of Sinkiang have been greatly influenced by the Amazons living in the Jade Kingdom. While the kings are high priests, mages and bureaucrats, queens are in charge of military campaigns and are accomplished warriors. To that end they are taught magic skills to aid them in battle. As the members of the royal family, their rule is ensured by the Mandate of Heaven and thus are considered sacred and have some priestly power. They are protected in battles by the spirits of their ancestors. Should a queen ever fall in battle, her mortal remains will be taken to the capital and a Jade Suit made to encase them. Then the higher spirit soul, Hun, is called back from Xian to inhabit the vessel once more and guide the people. To appease the spirit, offerings of gold, food and even human sacrifices must be made on a monthly basis."
 #armor 7 -- scale mail cuirass
@@ -860,8 +860,8 @@
 
 -- queen of old - jade suited kings of old. sacred, kills population - sacrifices
 #newmonster 6697 -- Warrior Queen
-#spr1 "./Dimensional FractureV3.0/sinkiang/warrior_queen.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/warrior_queen_2.tga"
+#spr1 "./Singularity/sinkiang/warrior_queen.tga"
+#spr2 "./Singularity/sinkiang/warrior_queen_2.tga"
 #descr "The Queens of Sinkiang have been greatly influenced by the Amazons living in the Jade Kingdom. While the kings are high priests, mages and bureaucrats, queens are in charge of military campaigns and are accomplished warriors. To that end they are taught magic skills to aid them in battle. As the members of the royal family, their rule is ensured by the Mandate of Heaven and thus are considered sacred and have some priestly power. They are protected in battles by the spirits of their ancestors. Should a queen ever fall in battle, her mortal remains will be taken to the capital and a Jade Suit made to encase them. Then the higher spirit soul, Hun, is called back from Xian to inhabit the vessel once more and guide the people. To appease the spirit, offerings of gold, food and even human sacrifices must be made on a monthly basis."
 #name "Warrior Queen"
 #hp 1
@@ -903,8 +903,8 @@
 
 #newmonster 6698 -- Jade Queen
 #name "Jade Queen"
-#spr1 "./Dimensional FractureV3.0/sinkiang/jade_queen.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/jade_queen_2.tga"
+#spr1 "./Singularity/sinkiang/jade_queen.tga"
+#spr2 "./Singularity/sinkiang/jade_queen_2.tga"
 #descr "When a queen falls in battle, her mortal remains are taken to the capital and a Jade Suit is made to encase them. Then the higher spirit soul, Hun, is called back from Xian to inhabit the vessel once more and guide the people. The suit is exquisitely made and human like, able to wear additional armor as well as handle weapons and shields. The Jade queens command more priestly powers than their living counterparts. If the queen knew the magic of death when she was alive, she will gain new insight in Xian and become more powerful. To appease the spirit, offerings of gold, food and even human sacrifices must be made on a monthly basis."
 #weapon 698 -- bronze battleaxe 
 #hp 24
@@ -951,8 +951,8 @@
 
 -- Jade Colossus
 #newmonster 6687
-#spr1 "./Dimensional FractureV3.0/sinkiang/jade_colossus.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/jade_colossus_2.tga"
+#spr1 "./Singularity/sinkiang/jade_colossus.tga"
+#spr2 "./Singularity/sinkiang/jade_colossus_2.tga"
 #name "Jade Colossus"
 #descr "The Jade Colossus is a giant artificial humanoid made entirely out of pure jade. As such it acts as a massive conduit with Xian. Although spirits cannot inhabit the lifeless construct they can exert their will on it and command it on the battlefield. As a link to Xian, the Jade Colossus is considered sacred. The conducting properties of Jade also allow Ancestral spirits to manifest themselves near the colossus and aid in battle. Should the Divine Name be placed on its forehead, it may start to manifest magical abilities of jade and be used by the spirits as a conduit for their magical powers of the astral plane. The large concentration of jade will influence the flow of luck, bringing good fortune to allies and misfortune to enemies. The Jade Colossus cannot be petrified."
 #weapon 1608 -- Jade Fist
@@ -997,8 +997,8 @@
 
 -- jade pillar -- summons ancestors, brings luck
 #newmonster 6704
-#spr1 "./Dimensional FractureV3.0/sinkiang/jade_pillar.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/jade_pillar.tga"
+#spr1 "./Singularity/sinkiang/jade_pillar.tga"
+#spr2 "./Singularity/sinkiang/jade_pillar.tga"
 #name "Jade Pillar"
 #descr "Jade sculptors carve these ornate pillars out of pure jade to act as conduits to Xian, the paradise of immortals. The Ancestors can more easily manifest themselves and guide the populace of the region to prevent bad events as well as share some of their knowledge with mages performing magical research. The large amount of jade will also bring good luck to the province it is in. If enemies of Sinkiang attack the province, ancestral spirits will use the pillar as a bridge and come to the aid of the defenders. Up to twelve ancestral spirits will appear at the start of battle and two may cross every combat round. The pillar is immobile, but with lessons learned from constructing the Jade Colossi, it could also be made mobile with the proper magic.
 
@@ -1053,8 +1053,8 @@ Jade pillars are teaming with ancestral spirits and are perilous opponents in a 
 
 --mobile pillar
 #newmonster 6705 -- Walking Jade Pillar
-#spr1 "./Dimensional FractureV3.0/sinkiang/moving_pillar.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/moving_pillar_2.tga"
+#spr1 "./Singularity/sinkiang/moving_pillar.tga"
+#spr2 "./Singularity/sinkiang/moving_pillar_2.tga"
 #name "Walking Jade Pillar"
 #descr "A jade pillar granted enchanted jade legs to bear the guidance of the Ancestors across the land. Jade sculptors carve these ornate pillars out of pure jade to act as conduits to Xian, the paradise of immortals. The Ancestors can more easily manifest themselves and guide the populace of the region to prevent bad events as well as share some of their knowledge with mages performing magical research. The large amount of jade will also bring good luck to the province it is in. If enemies of Sinkiang attack the province, ancestral spirits will use the pillar as a bridge and come to the aid of the defenders. Up to twelve ancestral spirits will appear at the start of battle and two may cross every combat round.
 
@@ -1109,8 +1109,8 @@ Jade pillars are teaming with ancestral spirits and are perilous opponents in a 
 
 -- Queen of old
 #newmonster 6706 -- Queen of Old
-#spr1 "./Dimensional FractureV3.0/sinkiang/queen_of_old.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/queen_of_old_2.tga"
+#spr1 "./Singularity/sinkiang/queen_of_old.tga"
+#spr2 "./Singularity/sinkiang/queen_of_old_2.tga"
 #copystats 6698
 #name "Queen of Old"
 #descr "Although jade suits are reserved for the recently deceased Kings and Queens, the body-soul (Po) and the spirit-soul (Hun) of long-dead queens can still be recalled from Xian to serve Sinkiang once again. Having spent centuries in Xian, they are greater death and astral mages. They manifest a celestial awe as well as wings and are thus able to fly. As honoured ancestors they are given great priestly powers."
@@ -1124,8 +1124,8 @@ Jade pillars are teaming with ancestral spirits and are perilous opponents in a 
 
 -- King of old
 #newmonster 6707 -- King of Old
-#spr1 "./Dimensional FractureV3.0/sinkiang/king_of_old.tga"
-#spr2 "./Dimensional FractureV3.0/sinkiang/king_of_old_2.tga"
+#spr1 "./Singularity/sinkiang/king_of_old.tga"
+#spr2 "./Singularity/sinkiang/king_of_old_2.tga"
 #copystats 6702
 #name "King of Old"
 #descr "Although jade suits are reserved for the recently deceased Kings and Queens, the body-soul (Po) and the spirit-soul (Hun) of long-dead kings can still be recalled from Xian to serve Sinkiang once again. Having spent centuries in Xian, they are greater death and astral mages. They manifest a celestial awe as well as wings and are thus able to fly. As honoured ancestors they are given great priestly powers."
@@ -1375,7 +1375,7 @@ Jade pillars are teaming with ancestral spirits and are perilous opponents in a 
 -- FOLDITEMS
 
 #selectitem 913 -- Jade Blessing
-#spr "./Dimensional FractureV3.0/MagicEnhanced/EEIRuneF.tga"
+#spr "./Singularity/sinkiang/EEIRuneF.tga"
 #name "Jade Blessing"
 #descr "Ancestors passing through this sacred jade conduit emerge blessed."
 #constlevel 12
@@ -1678,7 +1678,7 @@ Jade pillars are teaming with ancestral spirits and are perilous opponents in a 
 Military: Light and medium infantry, primitive crossbows and chariots. Jade Amazon mercenaries that fight single battles.
 Magic: Astral, Death, Water, Earth and Nature. Minor Fire and Air.
 Priests: Powerful." 
-#flag "./Dimensional FractureV3.0/sinkiang/flag.tga"
+#flag "./Singularity/sinkiang/flag.tga"
 #templepic 18
 #color 0.0 0.66 0.42
 #homefort 13
