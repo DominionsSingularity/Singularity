@@ -718,4 +718,488 @@
 --ENDCOMMANDERS
 
 --FOLDHEROES
+
+#newmonster 3725
+#clear
+#clearmagic
+#name "Dreamhunter"
+#nametype 178
+#spr1 "./Alchera/DreamHunter.tga"
+#spr2 "./Alchera/DreamHunter2.tga"
+#descr "When a Rainbow Serpent passes, it sometimes takes an Alcheran child with it. These children eventually return, years or generations later, utterly changed. In order to survive in the heart of the Dreamtime they learn skills that not even the Sages understand. It is said that a Dreamhunter can track a shadow at night and catch a person's life between his fingers. In times of war, they lead armies of Dreamwalkers and of strange creatures out of the old stories. After livinq so deeply in tune with the Dreamtime, the passage of mortal time weighs heavily upon them. No Alcheran will touch a Dreamhunter as they are Tapu, sacred and forbidden, and to do so would be both disrespectful and spiritually unsafe."
+#humanoid
+#ap 18
+#mapmove 16
+#hp 20
+#size 2
+#str 14
+#enc 3
+#att 13
+#def 13
+#prec 12
+#mr 18
+#mor 18
+#weapon "War Boomerang"
+#weapon "Magic Spear"
+#armor "Magic Shield"
+#maxage 175
+#startage 100
+#wastesurvival
+#expertleader
+#okmagicleader
+#ethereal
+#stealthy 30
+#assassin
+#spiritsight
+#patience 3
+#horrormark
+#holy
+#gcost 0
+#magicpower 1
+#magicstudy 1
+#magicskill 1 1
+#magicskill 4 1
+#magicskill 5 1
+#custommagic 10624 100 -- 100% FASN
+#magicskill 8 1
+#end
+
+#newmonster 3726
+#clear
+#clearmagic
+#name "Kupe Toitehuatahi"
+#nametype 126
+#spr1 "./Alchera/Toitehuatahi.tga"
+#spr2 "./Alchera/Toitehuatahi.tga"
+#descr "Kupe Toitehuatahi is the legendary ancestor of the Maohi people, who brought them all to Alchera in a great canoe when disaster befell their homeland. The spirits Tanematahuta, Tawhirimatea, Tumatauenga, and Tangaroa feared their own destruction and begged shelter in his canoe, in exchange for which he learned mastery over the nature, sea, sky and man. After a long absence, he has returned lead his people to glory."
+#humanoid
+#gcost 0
+#ap 14
+#mapmove 2
+#hp 60
+#size 4
+#str 18
+#enc 3
+#att 13
+#def 13
+#prec 12
+#prot 7
+#mr 16
+#mor 30
+#weapon "Magic Spear"
+#weapon "Patu"
+#armor "Crown"
+#armor "Leather Cuirass"
+#maxage 1000
+#swampsurvival
+#superiorleader
+#okmagicleader
+#swimming
+#inspirational 1
+#ambidextrous 3
+#wolftattoo 4
+#sailing 999 6
+#magicskill 1 2
+#magicskill 2 3
+#magicskill 6 3
+#end
+
+#newmonster 3727
+#clear
+#clearmagic
+#name "Trickster Hero"
+#fixedname "Maui"
+#spr1 "./Alchera/Maui.tga"
+#spr2 "./Alchera/Maui2.tga"
+#descr "Maui's exploits are legendary.  Cast into the sea at birth, he was saved from drowning by the Taniwha and raised by Rangi, the spirit of the sky. The jawbone of his grandfather is his talisman, and his feats include catching a fish the size of an island and stealing fire from an angry spirit. A great hero, he is also a trickster and sometimes a glory hound. When quick wits and quick reflexes aren't enough he relies on his legendary luck, which seems to be contagious. This luck is inspiring to those around however it is unreliable and sometimes affects others, deserting Maui just when needed most."
+#humanoid
+#gcost 0
+#ap 16
+#mapmove 14
+#hp 20
+#size 2
+#str 14
+#enc 3
+#att 14
+#def 15
+#prot 4
+#prec 14
+#mr 13
+#mor 16
+#rcost 10
+#weapon "Grandfather's Jawbone"
+#weapon "Woomera"
+#armor "Woomera Shield"
+#armor "Circlet"
+#armor "Leather Cuirass"
+#maxage 100
+#wolftattoo 3
+#swimming
+#swampsurvival
+#sailing 2 999
+#goodleader
+#onebattlespell "Battle Fortune"
+#inspirational 2
+#magicskill 0 3
+#end
+
+#newmonster 3735
+#clear
+#name "Ancient Shaman"
+#fixedname "Bluetongue Lizard"
+#spr1 "./Alchera/AlchBluetongue.tga"
+#spr2 "./Alchera/AlchBluetongue2.tga"
+#descr "Bluetongue Lizard is an old shaman skilled in the Dreaming arts and a master of fire summoning. He is capricious and enjoys tricking those he meets, such as pretending he is blind in order to get others to perform chores for him. Once his sons brought him a kangaroo they had slain to eat, however Bluetongue Lizard recognised it as a sacred and wise kangaroo that had taught him in the art of Dreaming. He was so incensed he conjured living flames to hunt them down wherever they went. In remorse for the slaying of his sons he has decided to offer his services to the Dreaming God."
+#humanoid
+#gcost 0
+#ap 12
+#mapmove 14
+#hp 10
+#size 2
+#str 9
+#enc 3
+#att 10
+#def 10
+#prec 12
+#mr 18
+#mor 14
+#rcost 1
+#weapon "Wand"
+#batstartsum2 596 -- Living Fire
+#rpcost 4
+#startage 90
+#maxage 60
+#stealthy 0
+#fireres 15
+#magicpower 1
+#researchbonus -2
+#magicstudy 1
+#magicskill 0 4
+#magicskill 4 2
+#magicskill 6 2
+#magicskill 8 2
+#startage 60
+#latehero 10
+#holy
+#poorleader
+#okmagicleader
+#spiritsight
+#wastesurvival
+#nametype 178
+#end
 --ENDHEROES
+
+--FOLDSUMMONS
+
+#newmonster 3728
+#clear
+#clearmagic
+#name "Yowie"
+#spr1 "./Alchera/Yowie.tga"
+#spr2 "./Alchera/Yowie2.tga"
+#descr "These bizarre creatures come directly from the Dreamtime, appearing as hairy humanoids capable of speech but with glowing red eyes. They have long arms ending in claws and can utter a fearsome shriek. They are sometimes summoned from the Dreamtime by the Karadji of Alchera. Once summoned they cannot be compelled, but serve the Pretender for reasons of their own."
+#humanoid
+#gcost 0
+#ap 12
+#mapmove 16
+#hp 20
+#size 3
+#str 15
+#enc 3
+#att 11
+#def 12
+#prot 8
+#prec 11
+#mr 15
+#mor 16
+#weapon "Claws"
+#magicpower 1
+#darkvision 100
+#maxage 200
+#stealthy 0
+#wastesurvival
+#noleader
+#okmagicleader
+#magicbeing
+#end
+
+#newmonster 3729
+#clear
+#name "Mimi"
+#spr1 "./Alchera/Mimi.tga"
+#spr2 "./Alchera/Mimi2.tga"
+#descr "Mimis are slender and graceful spirit creatures with disproporionately large heads.  They weigh next to nothing and can travel upon a breeze like dandelion seeds, but fear storms because a strong enough wind will break their delicate necks.  They love yams, but their second favorite food is human flesh."
+#humanoid
+#gcost 0
+#ap 18
+#mapmove 16
+#hp 8
+#size 2
+#str 15
+#enc 3
+#att 12
+#def 14
+#prot 0
+#prec 10
+#ap 18
+#mr 14
+#mor 10
+#float
+#magicbeing
+#wastesurvival
+#stormpower -5
+#weapon "Bite"
+#weapon "Claw"
+#end
+
+#newmonster 3730
+#clear
+#name "Bunyip"
+#spr1 "./Alchera/Bunyip.tga"
+#spr2 "./Alchera/Bunyip2.tga"
+#descr "The Bunyip is a pond and bog-dwelling creature that spends half its time in the Dreamtime and half in the material world. Bunyips are equally at home on land and in water, moving with a supernatural speed that belies their short legs. The roar of a Bunyip strikes fear into the hearts of men, and those unfortunate enough to be bitten by a Bunyip contract a terrible fever that few survive."
+#humanoid
+#gcost 0
+#ap 18
+#mapmove 14
+#hp 24
+#size 3
+#str 20
+#enc 3
+#att 14
+#def 16
+#prot 14
+#prec 8
+#mr 15
+#mor 14
+#amphibian
+#animal
+#magicbeing
+#swampsurvival
+#weapon "Claw"
+#weapon "Bunyip Bite"
+#fear 5
+#end
+
+#newmonster 3731
+#clear
+#clearmagic
+#name "Maero"
+#spr1 "./Alchera/Maero.tga"
+#spr2 "./Alchera/Maero2.tga"
+#descr "Maeros are lesser children of the Maohi spirit Tane. Wild beastmen who hunt with their long claws, they lurk in the forests and coastal areas the Maohi inhabit and are prone to destructive rages. They appear wherever the Maohi go, and have long been an irritation to them, but Tane will not allow them to be killed. He does permit his priests to take charge of them and send them to war, but even thus compelled the Maero are still unruly."
+#humanoid
+#gcost 0
+#ap 12
+#mapmove 2
+#hp 14
+#size 2
+#str 13
+#enc 2
+#att 12
+#def 12
+#prec 8
+#prot 6
+#mr 10
+#mor 10
+#weapon "Claws"
+#forestsurvival
+#stealthy 0
+#regeneration 10
+#berserk 2
+#incunrest 10
+#end
+
+#newmonster 3732
+#clear
+#name "Yarama Yha-who"
+#spr1 "./Alchera/Yarama.tga"
+#spr2 "./Alchera/Yarama2.tga"
+#descr "The Yarama Yha-who is an arboreal vampire that sucks blood from its victims. Although not much larger than a child their gaping jaws can stretch wide enough to swallow a man whole.  They are born in the Dreamtime of tales told to frighten children and can only be drawn into the material world through the rituals of the Karadji. They are often sent to devour the enemies of the Alcherans."
+#humanoid
+#gcost 0
+#ap 12
+#mapmove 12
+#hp 11
+#size 1
+#str 14
+#enc 2
+#att 14
+#def 12
+#prec 12
+#prot 10
+#mr 15
+#mor 12
+#weapon "Life Drain"
+#weapon "Yarama Bite"
+#forestsurvival
+#ethereal
+#magicbeing
+#end
+
+#newmonster 3733
+#copystats 2800
+#clearmagic
+#name "Rainbow Serpent"
+#spr1 "./Alchera/Rainbow.tga"
+#spr2 "./Alchera/Rainbow2.tga"
+#descr "The Alcherans say that there is no Rainbow Serpent, there is one Rainbow Serpent, and there are many Rainbow Serpents. The Rainbow Serpent exists in the Dreamtime but has a great impact on the physical world, changing everything it touches. In a past age, Rainbow serpents shaped the land and left the songlines as marks of their passage. Awakening one and persuading it to once-again influence the material world requires immense magical power and focus. The bite of a Rainbow Serpent causes the targets soul to pass into the Dreamtime."
+#snake
+#gcost 0
+#homerealm 0
+#ap 16
+#mapmove 100
+#mr 20
+#mor 30
+#maxage 1000
+#weapon 400 -- Devour Soul
+#ethereal
+#magicbeing
+#expertleader
+#superiormagicleader
+#holy
+#illusion
+#horrormark
+#teleport
+#nowish
+#voidsanity 20
+#magicpower 1
+#decscale 5 -- +Magic
+#magicskill 0 3
+#magicskill 1 3
+#magicskill 2 0
+#magicskill 3 0
+#magicskill 4 5
+#magicskill 6 3
+#tmpfiregems 1
+#tmpairgems 1
+#tmpastralgems 2
+#tmpnaturegems 1
+#researchbonus -20
+#itemslots 12416
+#nametype 178
+#end
+
+#newmonster 3734
+#clear
+#copystats 1063 -- Leocampus
+#clearmagic
+#name "Taniwha"
+#spr1 "./Alchera/Taniwha.tga"
+#spr2 "./Alchera/Taniwha2.tga"
+#descr "Taniwha are guardian spirits specific to certain bodies of water.  They take many forms, but most commonly appear as a great lizard-like monster. Taniwha are skilled in the magic of water and the natural world and fiercely guard their homes against breaches of Tapu. Taniwha can leave the water for short periods, but will not abandon the body of water they inhabit."
+#lizard
+#hp 44
+#str 20
+#size 4
+#prot 14
+#prec 10
+#mr 15
+#magicbeing
+#okleader
+#okmagicleader
+#magicskill 2 3
+#magicskill 6 2
+#regeneration 10
+#transformation 0
+#end
+
+#newmonster 3736
+#copystats 2135 -- Ogre
+#clearweapons
+#cleararmor
+#clearmagic
+#name "Malingee"
+#spr1 "./Alchera/Malingee.tga"
+#spr2 "./Alchera/Malingee2.tga"
+#descr "Malingee are nocturnal malignant spirit creatures sometimes summoned by the Dreamspeakers of Alchera. They ignore mortal beings unless disturbed, however if provoked they can be savage and merciless. Their bodies are as hard as stone and the scraping noise of their movement can be heard for some distance. Their eyes glow like smouldering coals and they are highly magical creatures."
+#humanoid
+#size 2
+#hp 22
+#prot 20
+#mr 16
+#mor 16
+#att 13
+#def 12
+#darkvision 100
+#spiritsight
+#wastesurvival
+#poisonres 15
+#startage 200
+#maxage 500
+#weapon 456 -- Gaze of Fear
+#weapon 29 -- Claw
+#weapon "Stone Dagger"
+#stonebeing
+#magicbeing
+#noleader
+#nametype 140 -- Demon
+#magicskill 0 2
+#magicskill 1 2
+#end
+
+#newmonster 3737
+#copystats 2135 -- Ogre
+#clearweapons
+#cleararmor
+#clearmagic
+#name "Kinnie Ger"
+#spr1 "./Alchera/KinnieGer.tga"
+#spr2 "./Alchera/KinnieGer2.tga"
+#descr "In the land of Alchera the Kinnie Ger is an evil half-man, half-quoll beast that hunts and kills the innocent. It is a ruthless killer with the head and body of a rodent-like quoll but the limbs of a man. Their skin is thick and leathery, whilst their claws and teeth are razor sharp. They are known to enter a frenzy in battle and will not stop until their target is dead."
+#humanoid
+#ap 18
+#prot 11
+#mr 11
+#mor 16
+#att 13
+#def 11
+#darkvision 50
+#wastesurvival
+#berserk 4
+#noleader
+#coldres 0
+#fireres 5
+#weapon 29 -- Claw
+#weapon 29 -- Claw
+#weapon 20 -- Bite
+#end
+
+#newmonster 3738
+#copystats 1063 -- leocampus
+#clearweapons
+#cleararmor
+#clearmagic
+#name "Irukandji"
+#spr1 "./Alchera/Irukandji.tga"
+#spr2 "./Alchera/Irukandji.tga"
+#descr "The Irukandji is a tiny venomous jellyfish native to the waters around Alchera. The sting of its poison is more potent than a hundred snake bites and will quickly paralyze a target. Anyone attacking the Irukandji risks being stung unless they are using a long weapon."
+#miscshape
+#size 1
+#hp 3
+#prot 0
+#mor 50
+#str 2
+#att 12
+#def 12
+#ap 8
+#transformation 0
+#poisonarmor 5
+#unsurr 10
+#poisonres 10
+#blind
+#speciallook 150
+#bluntres
+#weapon 885 -- Irukandji Tentacle
+#noleader
+#end
+
+--ENDSUMMONS
+
+
+
+
+
+
+--
+
