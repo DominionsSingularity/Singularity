@@ -1117,7 +1117,7 @@
 #end
 
 #newmonster 5121 -- Lord of Heroes DO NOT MOVE OR CHANGE ID (xpshape, events)
-#copystats 1075
+#copystats 1075 -- Wind Lord
 #spr1 "./Singularity/Makedon/bellerophon1.tga"
 #spr2 "./Singularity/Makedon/bellerophon2.tga"
 #name "Lord of Heroes"
@@ -1158,7 +1158,7 @@
 #end
 
 #newmonster 5122 -- Champion of Heroes DO NOT MOVE OR CHANGE ID (xpshape, events)
-#copystats 1075
+#copystats 1075 -- Wind Lord
 #spr1 "./Singularity/Makedon/bellerophonchosen1.tga"
 #spr2 "./Singularity/Makedon/bellerophonchosen2.tga"
 #name "Champion of Heroes"
@@ -1203,7 +1203,7 @@
 #end
 
 #newmonster 5123 -- Demigod Incarnate DO NOT MOVE OR CHANGE ID (xpshape, events)
-#copystats 1075
+#copystats 1075 -- Wind Lord
 #spr1 "./Singularity/Makedon/bellerophongods1.tga"
 #spr2 "./Singularity/Makedon/bellerophongods2.tga"
 #name "Demigod Incarnate"
@@ -2016,7 +2016,7 @@
 
 #newitem -- Vial of Breeze
 #spr "./Singularity/Makedon/item_1240.tga"
-#copyitem 303
+#copyitem 303 -- Bag of Winds
 #constlevel 6
 #mainpath 1
 #mainlevel 3
