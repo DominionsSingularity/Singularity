@@ -18,6 +18,8 @@
 -- Poptypes: N/A
 
 
+----- Credits: Makeddon made by Mirokan and AetherNomad
+
 
 ----- Notes: Nabbed the pseudo-generic Medusa, Eternal Gate, Wight Sorceress, Undying God. Removed other #restricted from the #selectspell spells. Haven't gone through a full review of unit sub-commands between the two files, names and IDs of all are confirmed (see Cross-pollinations). 
 -- Cross-pollinations: 3368, Bronze Colossus is edited to have a Sword of Titans
@@ -30,7 +32,7 @@
 -- FOLDWEAPONS
 
 #newweapon 1143 -- Bronze Lance (Singleuse)
-#copyweapon 4
+#copyweapon 4 -- Lance
 #name "Bronze Lance"
 #dmg 3
 #len 3
@@ -39,7 +41,7 @@
 #end
 
 #newweapon 1144 -- Hero Lance
-#copyweapon 4
+#copyweapon 4 -- Lance
 #name "Hero Lance"
 #dmg 5
 #att 2
@@ -51,7 +53,7 @@
 #end
 
 #newweapon 1145 -- Lance of Titans
-#copyweapon 4
+#copyweapon 4 -- Lance
 #name "Lance of Titans"
 #armorpiercing
 #dmg 7
@@ -64,13 +66,13 @@
 #end
 
 #newweapon 1146 -- Hero Sword
-#copyweapon 474
+#copyweapon 474 -- Golden Sword
 #name "Hero Sword"
 #dt_large
 #end
 
 #newweapon 1147 -- Sword of Titans
-#copyweapon 518
+#copyweapon 518 -- Anakite Sword
 #name "Sword of Titans"
 #armorpiercing
 #dt_large
