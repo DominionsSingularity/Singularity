@@ -16,7 +16,9 @@
 -- Item restrictions:
 -- Poptypes:
 
+--CONTENT NEEDS RESTRUCTURING
 
+--FOLDCOMMANDERS
 ------------------------------
 --------- EA NIHUALA ---------
 ------ THE FIRST PEOPLE ------
@@ -265,7 +267,9 @@
 #weapon 470 -- Spirit Club
 #end
 
------- Heroes ------
+--ENDCOMMANDERS
+
+--FOLDHEROES
 
 #newmonster 6590 -- Spring
 #name "Changing Woman"
@@ -434,8 +438,83 @@
 #montag 5198 -- No Transformation spells
 #end
 
+#newmonster 6630
+#name "Monster Slayer"
+#fixedname "Naayéé Neizghání"
+#descr "Naayéé Neizghání is one of the twin sons of Changing Woman. At a young age, he and his brother told their mother that they wanted to visit their father, whom they had never met. Changing Woman tried to discourage them, telling them how dangerous this trip would be, how many guardians there were at his house, how he was without mercy. Nevertheless, they set out on a long and arduous journey to the East Mountain. When the boys arrived, they found that their father was none other than Sun God himself. Sun God subjected the two young men to many deadly trials to determine whether they were truly his sons, but they passed each one. Accepting him as his children, he offered them jewels, livestock, game, plants, and beautiful flowers, but each time they refused. Instead they asked for weapons and armor to defeat the rampaging monsters that were terrorizing the First People. Sun God agreed and placed agate within them, making them immune to injury, and gave them weapons and armor forged from divine jet. Naayéé Neizghání was given black jet axes and arrows, granting him the blessing of lightning. A storm rages whenever Naayéé Neizghání is driven to anger, and zigzag lightning strikes wherever he lands his blows. With the coming of the New God, Naayéé Neizghání has returned to once again take up the title of Monster Slayer."
+#spr1 "./Nihuala/MonsterSlayer.tga"
+#spr2 "./Nihuala/MonsterSlayer_2.tga"
+#gcost 0
+#hp 28
+#str 17
+#att 15
+#def 15
+#prec 15
+#size 3
+#mr 16
+#mor 16
+#enc 3
+#mapmove 18
+#ap 15
+#poorleader
+#eyes 2
+#older 300
+#maxage 2000
+#holy
+#ambidextrous 4
+#invulnerable 20
+#spiritsight
+#stormpower 3
+#shockres 20
+#coldres 10
+#onebattlespell "Storm"
+#weapon 1254 -- Black Jet Axe
+#weapon 1254 -- Black Jet Axe
+#weapon 243 -- "Thunder"
+#armor 206 -- Obsidian Curiass
+#armor 702 -- Obsidian Helmet
+#end
 
------- Units ------
+#newmonster 6631
+#name "Child of Water"
+#fixedname "Tóbájíshchíní"
+#descr "Tóbájíshchíní is one of the twin sons of Changing Woman. At a young age, he and his brother told their mother that they wanted to visit their father, whom they had never met. Changing Woman tried to discourage them, telling them how dangerous this trip would be, how many guardians there were at his house, how he was without mercy. Nevertheless, they set out on a long and arduous journey to the East Mountain. When the boys arrived, theyfound that their father was none other than Sun God himself. Sun God subjected the two young men to many deadly trials to determine whether they were truly his sons, but they passed each one. Accepting him as his children, he offered them jewels, livestock, game, plants, and beautiful flowers, but each time they refused. Instead they asked for weapons and armor to defeat the rampaging monsters that were terrorizing the First People. Sun God agreed and placed agate within them, making them immune to injury, and gave them weapons and armor forged from divine jet. Tóbájíshchíní was given a blue jet club and armor, granting him the blessing of water. Whenever Tóbájíshchíní is in danger, a heavy rain will fall and the water will rise up to defend him. With the coming of the New God, Tóbájíshchíní has returned to once again take up the title of Child of Water."
+#spr1 "./Nihuala/ChildOfWater.tga"
+#spr2 "./Nihuala/ChildOfWater_2.tga"
+#gcost 0
+#hp 28
+#str 16
+#att 15
+#def 17
+#prec 15
+#size 3
+#mr 18
+#mor 16
+#enc 3
+#mapmove 18
+#ap 15
+#poorleader
+#eyes 2
+#older 261 -- To at least attempt to get his age to align with Monster Slayer
+#maxage 2000
+#magicskill 2 4
+#holy
+#invulnerable 20
+#spiritsight
+#shockres 10
+#coldres 15
+#batstartsum1d6 410 -- Size 4 Water Elementals
+#onebattlespell "Rain"
+#weapon 1255 -- Blue Jet Club
+#armor 206 -- Obsidian Curiass
+#armor 702 -- Obsidian Helmet
+#end
+
+--ENDHEROES
+
+--FOLDTROOPS
+
+
 
 #newmonster 3657
 #name "Fox Totem Warrior"
@@ -1203,7 +1282,9 @@
 #holy
 #spiritsight
 #end
+--ENDTROOPS
 
+--FOLDCOMMANDERS
 
 ---------------------------------
 --------   LA NIHUALA    --------
@@ -1591,6 +1672,8 @@
 #weapon 29 -- Claw
 #weapon 29 -- Claw
 #end
+
+--ENDCOMMANDERS
 
 ------ Heroes ------
 
