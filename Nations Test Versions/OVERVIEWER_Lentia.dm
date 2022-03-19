@@ -1,3 +1,9 @@
+#modname "OVERVIEWER Lentia" -- This will show on the mod menu ingame
+#description "Edited up version of Lentia to enable looking at units and spells and jazz" -- What shows when you look at the mod section of the game in detail
+--#icon ".tga"
+
+
+
 -- EA Lentia BEGIN
 
 -- Dependencies Required:
@@ -1279,3 +1285,36 @@ Priests: Moderate."
 -- EA Lentia END
 
 --
+
+
+#newsite 1574
+#name "Summons and Extras"
+#path 2
+#level 0
+#rarity 5
+#homemon 4298 -- Wereshark
+#homemon 4307 -- Giant Carp
+#homemon 4308 -- Giant Shark
+#homemon 4316 -- Pirhana Shark
+#homemon 4319 -- Dragon Shark-Kin
+#homecom 4318 -- Dragon Shark Aspect
+#end
+
+#newsite 1575
+#name "Heroes"
+#path 2
+#level 0
+#rarity 5
+#homecom 4309 -- Salted One
+#homecom 4310 -- Smoked One
+#homecom 4311 -- Sun-dried One
+#homecom 4312 -- Insane Stargazer
+#end
+
+#selectnation 133 -- Lentia, Shark Cult
+#futuresite "Summons and Extras"
+#futuresite "Heroes"
+#futuresite "Lesser Shark Totem"
+#end 
+
+#end
