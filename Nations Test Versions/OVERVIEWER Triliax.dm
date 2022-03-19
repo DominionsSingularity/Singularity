@@ -1,3 +1,9 @@
+#modname "OVERVIEWER Triliax" -- This will show on the mod menu ingame
+#description "Edited up version of Triliax to enable looking at units and spells and jazz" -- What shows when you look at the mod section of the game in detail
+--#icon ".tga"
+
+
+
 -- Triliax, Divine Citadel BEGIN
 
 -- Dependencies Required:
@@ -2417,3 +2423,30 @@ Priests: Powerful."
 -- Triliax, Divine Citadel END
 
 --
+
+
+
+#newsite 1932 -- Summons
+#name "Summons"
+#path 2
+#level 0
+#rarity 5
+#homemon 1850 -- Hydra
+#homemon 4235 -- Child of Scylla
+#homemon 4235 -- Horse of Trilios
+#homecom 4522 -- Boread (Default)
+#homecom 4816 -- Boread (Sirocco's Gift Version)
+#homecom 5154 -- Pillar of the City
+#homecom 4234 -- Cyclops King
+#homecom 4236 -- Living Maelstrom
+#homecom 4197 -- Living Maelstrom
+
+#end
+
+#selectnation 238 -- Triliax, Divine Citadel
+#futuresite "Summons"
+#end
+
+
+
+#end
