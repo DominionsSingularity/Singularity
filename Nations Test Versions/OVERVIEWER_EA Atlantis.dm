@@ -1,3 +1,7 @@
+#modname "OVERVIEWER EA Atlantis" -- This will show on the mod menu ingame
+#description "Edited up version of EA Atlantis to enable looking at units and spells and jazz" -- What shows when you look at the mod section of the game in detail
+--#icon ".tga"
+
 -- EA Atlantis BEGIN
 
 -- Dependencies Required:
@@ -931,3 +935,48 @@ Priests: Powerful"
 -- EA Atlantis END
 
 --
+
+
+#newsite 1575 -- Summons
+#name "Summons"
+#path 8
+#level 0
+#rarity 5
+#homemon 5086 -- Coral Snake
+#end
+
+#newsite 1576 -- Mystery Cult See
+#name "Mystery Cult See"
+#path 2
+#level 0
+#rarity 5
+#homecom 6103 -- commander of the deep
+#homecom 102 -- initiate of deep
+#homecom 2859 -- witness of deep
+#homemon 2860 -- soldier of the deep
+#end
+
+#newsite 1701 -- The Coral Spires
+#name "The Coral Spires See"
+#path 2 -- Water
+#level 0
+#rarity 5 
+#gems 2 1 -- 1 Water gem
+#gems 3 1 -- 1 Earth gem
+#gems 4 1 -- 1 Astral pearl
+#homemon 209 -- mother guards
+#homemon 1622 -- coral guard halberdier
+#homemon 108 -- coral guard spear
+#homemon 211 -- war lobster
+#homecom 112 -- coral queen
+#homecom 322 -- king of the deep
+#end
+
+#selectnation 36 -- EA Atlantis
+#futuresite "Summons"
+#futuresite "Mystery Cult See"
+#futuresite "The Coral Spires See"
+#end 
+
+
+#end 
