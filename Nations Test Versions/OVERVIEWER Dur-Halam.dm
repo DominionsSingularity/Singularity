@@ -1,3 +1,8 @@
+#modname "OVERVIEWER Dur-Halam" -- This will show on the mod menu ingame
+#description "Edited up version of Dur-Halam to enable looking at units and spells and jazz" -- What shows when you look at the mod section of the game in detail
+--#icon ".tga"
+
+
 -- Dur-Halam BEGIN
 
 -- Dependencies Required:
@@ -1450,3 +1455,5 @@ Priests: Average"
 -- Dur-Halam END
 
 --
+
+#end
