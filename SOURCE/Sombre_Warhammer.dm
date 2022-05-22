@@ -1,14 +1,14 @@
-#modname "Sombre Warhammer 1.5"
-#description "Adds a selection of 17 Warhammer nations to the Middle Age which have been either entirely created or updated for Dominions 5 by Sombre. The nations added here and their titles ingame are:
+#modname "Sombre Warhammer 1.7"
+#description "Adds a selection of 18 Warhammer nations to the Middle Age which have been either entirely created or updated for Dominions 5 by Sombre. The nations added here and their titles ingame are:
 Bretonnia (Bretonnia)
 Chaos Dwarfs (Zharr-Naggrund)
 Dark Elves (Naggarond)
-Dwarfs (Dwarfs)
+Dwarfs (Karaz-a-Karak)
 The Empire (Altdorf)
 The Empire (Nuln)
 The Empire (Middenheim)
-Greenskins (Greenskins North)
-Greenskins (Greenskins South)
+Greenskins (Black Crag)
+Greenskins (Bone Nose Tribe)
 High Elves (Ulthuan)
 Lizardmen (Itza)
 Ogre Kingdoms (Goldtooth Tribe)
@@ -16,13 +16,196 @@ Skaven (Skavenblight)
 Slaanesh (Slaanesh)
 Tilea (Tilea)
 Tomb Kings (Nehekhara)
-Vampires (Vampires)"
+Vampires (Vampiria)
+Wood Elves (Athel Loren)"
 
 #icon "Sombre_Warhammer/logo.tga"
 
-#version 1.5
+#version 1.7
 
--- Each nationa sits in its own section, delimited by -- @@@@[Name of nation] - [version number]. This makes the nations easy to split apart as separate mods if desired.
+-- Each nation sits in its own section, delimited by -- @@@@[Name of nation] - [version number]. This makes the nations easy to split apart as separate mods if desired.
+
+
+
+-- VERSION 1.7 CHANGES
+
+--------------------- CHAOS DWARFS -----------------------
+-- FIX -- Hobgoblin Scout and Hobgoblin Sneak leadership fixed (by being greatly reduced)
+-- TWEAK -- Slaver gold cost decreased 90 -> 75
+-- TWEAK -- Dwarf armour and weapons renamed with terms like 'quality' rather than just 'dwarf' for flavour reasons
+-- TWEAK -- Slave Giant gold cost reduced from 240 -> 220
+
+
+--------------------- DARK ELVES -----------------------
+-- FIX -- Daemonettes no longer have a better version of the wicked claw than their Slaanesh faction counterparts
+-- TWEAK -- Removed Death Recruitment discounts from hags and witch elves and reduced gold costs (hag from 120 to 100, witch elf from 25 to 22)
+-- TWEAK -- Summon Seeker pack cost in slaves increased 40 -> 46
+-- TWEAK -- Daemonette, Seeker, and Heralds of Slaanesh made slightly worse statwise than the Slaanesh national versions
+-- TWEAK -- Heralds of Slaanesh can now be male or female, lost their hand slots (to match slaanesh versions)
+-- TWEAK -- Added Fiends of Slaanesh to some cult of pleasure events
+-- TWEAK -- Summon Daemonette troupe blood slave cost decreased 28 -> 25
+-- CONTENT -- Added the Fiend of Slaanesh and spell to summon it
+
+
+--------------------- DWARFS -----------------------
+-- FIX -- Forts now cost 50% more than normal as was intended all along (there was a typo preventing this)
+-- FIX -- Bugman now just gets autohealer 1 from his tankard, doesn't have autohealer himself
+-- TWEAK -- Kragg the Grim now not suffering from old age
+-- TWEAK -- Longbeards a lot less likely to be suffering from old age
+-- TWEAK -- Nation now called 'Karaz-a-Karak' rather than 'Dwarfs', to better fit the Dominions style of nation names also working as province names
+-- TWEAK -- Engineer and Engineer Guildmaster got +2 precision each
+-- TWEAK -- Dwarf armour and weapons renamed with terms like 'quality' and 'gromril' rather than just 'dwarf' for flavour reasons
+-- TWEAK -- Quality Shield now has +1 parry over a regular shield
+
+
+--------------------- EMPIRE -----------------------
+-- TWEAK -- Grey Wizards no longer have darkpower
+-- TWEAK -- Jade Wizards no longer have springpower
+-- TWEAK -- Light Wizard Lord autohealer reduced from 2 -> 1
+-- TWEAK -- Noble on Griffon now has reduced hp and prot and a second form of the griffon, rather than a combined profile
+-- TWEAK -- Karl Franz on Deathclaw now has reduced hp and prot and a second form of Deathclaw, rather than a combined profile
+-- TWEAK -- Balthasar Gelt now has reduced hp and prot and a second form of the pegasus, rather than a combined profile
+
+
+--------------------- GREENSKINS -----------------------
+-- TWEAK -- Greenskins North now known as 'Black Crag' to better fit dominions style of nation names also working as province names
+-- TWEAK -- Greenskins South now known as 'Bone Nose Tribe' to better fit dominions style of nation names also working as province names
+-- TWEAK -- Bone Nose Tribe's epithet is now 'Green Horde of Fury' rather than 'Primal Fury'
+-- TWEAK -- Mages had their HP values decreased considerably in line with more standard dominions values, but also have reduced gold costs
+-- TWEAK -- Added gold cost in turmoil 3 to the descriptions of recruitable things, to help players understand true costs
+-- TWEAK -- Gold cost of black orcs reduced slightly (19 -> 17 gold in turmoil 3)
+-- TWEAK -- Gold cost of giants reduced in turmoil 3 from 230 -> 200
+-- TWEAK -- Giants now use a reduced size graphic on the recruitment screen
+-- CONTENT -- Added Wurrzag (mounted savage orc great shaman) as a hero to the South
+-- CONTENT -- Added Grokka Goreaxe (on foot savage orc warboss) as a hero to the South, with his own WAAAGH event
+
+
+--------------------- HIGH ELVES -----------------------
+-- FIX -- Prince of Tiranoc now has correct upkeep (was upkeep free before)
+-- FIX -- Great Eagle mount has maxage same as high elves, so you don't get an old one if the multihero rider dies
+-- FIX -- Bond Lance and Talon spell now correctly in air, not water
+-- TWEAK -- Prince of Tiranoc golcost reduced from 150 -> 140 and I gave him a lance
+-- TWEAK -- The multihero Prince on Great Eagle now can't appear before turn 6
+-- TWEAK -- Loremasters can no longer cast communion master or slave
+-- TWEAK -- Spearman gold cost reduced 16 -> 15
+-- TWEAK -- Silverin Spearman gold cost reduced 22 -> 20
+-- TWEAK -- Phoenix Guard gold cost reduced 55 -> 50, poison resistance removed
+-- TWEAK -- Sister of Avelorn gold cost reduced 60 -> 55
+-- TWEAK -- Priestess of Isha autohealer and auto disease healer reduced to 1 each
+-- TWEAK -- Removed the small research bonuses from the high mage and archmage, as they were largely irrelevant
+-- TWEAK -- Removed auto disease healer from all the non Isha mages - just use a Priestess of Isha if you want that
+-- TWEAK -- Archmage leadership boosted to okleader (40)
+-- TWEAK -- White Lion of Chrace infantry recruitment limited to 5 a turn
+-- CONTENT -- Added Eltharion the Grim (lord with magic mounted on griffon) as a hero
+-- CONTENT -- Added a Prince on Griffon as a multihero
+-- CONTENT -- Added spell 'Bond Blade and Wing' to summon a prince mounted on a griffon
+
+
+--------------------- LIZARDMEN -----------------------
+-- TWEAK -- All Slaan have their casting speed increase halved (e.g. 90% increase to 45% increase)
+-- TWEAK -- Skink Priest gold cost reduced from 120 -> 100, hp reduced from 9 -> 8
+-- TWEAK -- Skink Priest commander point cost increased from 1 -> 2
+
+
+--------------------- OGRE KINGDOMS -----------------------
+-- TWEAK -- Hunters got unsurr 1 and patrolbonus 5
+-- CONTENT -- Added Jhared the Red (powered up Hunter that summons Sabretusks) as a hero
+-- CONTENT -- Added Greasus Goldtooth (tyrant on a rhinox) as a hero
+
+
+--------------------- SLAANESH -----------------------
+-- FIX -- ID conflict between female cultist and spawn, resolved
+-- TWEAK -- Daemon Princes blood reduced from B3 -> B2, as was always intended
+-- TWEAK -- Added discounted prices when in turmoil 3 in square brackets to descriptions of all relevant troops and commanders (to help the player evaluate costs)
+-- TWEAK -- Various Daemons got snow movement
+-- TWEAK -- Summon Fiend of Slaanesh reduced in slave cost from 14 -> 13
+-- TWEAK -- Summon Daemonette blood slave cost decreased 5 -> 4
+-- TWEAK -- Summon Daemonette troupe blood slave cost decreased 32 -> 26
+-- CONTENT -- Added Azazel (daemon prince) as a hero
+-- CONTENT -- Added N'Kari (keeper of secrets) as a hero
+
+
+
+--------------------- TILEA -----------------------
+-- FIX -- Nametypes had some problems with special characters
+-- FIX -- Jade Wizard now has disease healer, not true healer
+-- TWEAK -- Added hero and multihero preview sites to the national overview screen
+-- TWEAK -- Grey Wizards no longer have darkpower
+-- TWEAK -- Jade Wizards no longer have springpower
+-- TWEAK -- Dwarf armour and weapons renamed with terms like 'quality' rather than just 'dwarf' for flavour reasons
+-- TWEAK -- Quality Shield now has +1 parry over a regular shield
+-- TWEAK -- Mercenary Contract gold cost decreased from 340 -> 320
+-- CONTENT -- Added Leonardo da Miragliano (inventor) as a hero
+-- CONTENT -- Added Borgio the Besieger (mounted general) as a hero
+
+
+--------------------- TOMB KINGS -----------------------
+-- TWEAK -- Lich priests and necrotects got reduced HP in line with mages generally in dominions
+-- CONTENT -- Added Ramhotep (super necrotect) as a hero
+-- CONTENT -- Added a new spell for Necrotects to give quickness to constructs, but it's E4 (they are starting at E2)
+
+
+--------------------- VAMPIRES -----------------------
+-- TWEAK -- Nation is now called 'Vampiria' rather than 'Vampires', simply so it works better as a province name
+-- CONTENT -- Added Vlad Von Carstein (vampire lord on foot) as a hero
+-- CONTENT -- Added Isabella Von Carstein (vampire lord on foot) as a hero
+
+
+--------------------- WOOD ELVES -----------------------
+-- FIX -- Araloth got correct name
+-- FIX -- Glade Captains got 5 magic leader so the dryads in PD don't autorout
+-- CONTENT -- Added a Glade Lord on Great Eagle multihero
+-- CONTENT -- Added summon spells for Great Eagles and for the Glade Lord on Great Eagle
+-- CONTENT -- Added Orion as a guaranteed commander via event in mid spring of year 1 (so not right at the start) who dies every mid winter and is spring immortal
+-- CONTENT -- Added Hound of Kurnous summon to accompany Orion
+
+
+--hero count 15
+
+
+
+
+
+
+-- VERSION 1.6 CHANGES
+
+--------------------- CHAOS DWARFS -----------------------
+-- TWEAK -- Sneaky Gits now have AP weapons (and obviously do less damage with them)
+-- TWEAK -- Hobgoblin Gutstabber (assassin) gold cost increased from 60 -> 70
+-- TWEAK -- Basic hobgoblin spearman and archer reduced in gold cost by 1 each
+-- TWEAK -- Infernal Full Plate increased in resource cost from 30 -> 34
+-- TWEAK -- Infernal Chosen now have halved gold upkeep, gold cost reduced from 60 -> 50
+-- TWEAK -- Slave Contracts reduced in gold cost from 4 -> 3, but resource cost increased from 6 -> 8
+-- TWEAK -- Basic chaos dwarf warrior gold cost reduced from 16 -> 15
+
+
+--------------------- GREENSKINS -----------------------
+-- TWEAK -- All shamans got reinvigoration 1 to represent the energy flowing through them during battles
+-- TWEAK -- Touched up the Northern Greenskins flag a bit
+
+
+--------------------- HIGH ELVES -----------------------
+-- FIX -- Unicorns are magic beings now, with maxage 3000
+-- FIX -- Eagle Claw Bolt Thrower now has correct start and max age
+-- TWEAK -- Chariot of Chrace recruitment limited to 2 per turn
+
+
+--------------------- LIZARDMEN -----------------------
+-- FIX -- Gor Rok now gets proper item slots
+-- TWEAK -- All sacred spawning troops and commanders now have appropriate gold upkeep (previously had basically none)
+-- TWEAK -- All sacred spawnings research level increased from 4 -> 5 and they now require holy 3, except the sotek summon which is now B2 rather than B1
+-- TWEAK -- Spawning of Sotek cost in slaves increased from 28 -> 33, but gives 13 troops rather than 12
+-- TWEAK -- Skink Priest gold cost increased from 115 -> 120
+-- TWEAK -- Added a note to make it clear what is going on with the sacred spawning of Xhotl and the second gen slann with the bubble shield
+
+
+--------------------- WOOD ELVES -----------------------
+-- CONTENT -- Added the Wood Elves (athel loren) as a new nation
+
+
+
+
+
 
 
 
@@ -209,6 +392,4247 @@ Vampires (Vampires)"
 
 
 
+-- @@@@ Wood Elves
+
+
+-- it turns out that if you give a troop stealth in forest and not stealth in their plainshape, then they destealth and have a battle, as you'd expect.
+-- but the same isn't true of a commander. Their battle is delayed by a turn, although they still get stuck in the hostile land and can't leave
+
+-- so its best to just have better stealth in forests, rather than stealth vs no stealth
+
+
+------ possible spite ideas
+
+
+-- Spite effects
+
+--Forest Spite: -- Tank thug
+-- Vine Shield
+-- Barkskin
+-- Regeneration
+
+--Porcupine Spite: -- Tank thug
+-- Spines
+-- Stoneskin
+
+--Dream Spite: -- Assassin
+-- Ethereal
+-- Sleepy weapon
+-- Assassin?
+
+--Wind Spite: -- Raider
+-- Flying
+
+--Fire spite: -- High damage thug
+-- Flaming weapon
+-- Heat?
+-- FR
+
+--Leaden spite: -- Mage stopper
+-- High MR
+-- High resistances
+-- Slightly increased HP?
+
+--Leech Spite: -- Thug
+-- Life Drain? Or even Soul Vortex?
+
+--Whispering Spite: -- Thug
+-- Fear
+-- Small insanity
+
+--Venom Spite: -- Assassin
+-- Paralyze and poison damage
+
+--Swift Spite:
+-- High mapmove
+-- Quickness in battle
+
+
+
+
+-------- stuff to add
+
+---- heroes
+-- scarloc the wanderer
+-- naestra and arahan
+-- coeddil
+-- durthu
+-- orion (plus hounds of kurnous)
+-- ariel
+-- drycha
+-- skaw the falconer
+
+
+---- commanders
+-- glade lord on great eagle
+-- highweaver on unicorn
+
+
+---- monsters
+
+-- forest dragon
+-- great eagle
+
+
+
+
+-------------------------------------------------------------------------
+-- Weapons
+-------------------------------------------------------------------------
+
+
+---- Giant Stomp
+
+#newweapon 1168
+#name "Giant Stomp"
+#dmg 0
+#att 0
+#def -1
+#len 0
+#rcost 0
+#bonus
+#aoe 1
+#len 0
+#blunt
+#sizeresist
+#end
+
+
+---- Vinelash
+
+#newweapon 1169
+#name "Vinelash"
+#slash
+#dmg -8
+#flail
+#len 4 -- +1 from size
+#sound 9
+#nratt 2
+#magic
+#bonus
+#secondaryeffect 1150 -- entangling roots (mr resists)
+#end
+
+
+
+---- Unicorn Horn
+
+#newweapon 1167
+#copyweapon 614 -- tusk
+#name "Unicorn Horn"
+#charge
+#att 0
+#def 0
+#dmg 2
+#len 1
+#magic
+#pierce
+#bonus
+#end
+
+---- Great Hunting Spear
+
+#newweapon 1166
+#copyweapon 120 -- enchanted spear
+#name "Great Hunting Spear"
+#len 4 -- +1
+#dmg 12 -- +5
+#def 1 -- -1
+#end
+
+
+---- Skaryn the eye thief
+
+#newweapon 1165
+#copyweapon 230 -- owl that attacks people for the titan of wisdom
+#name "Skaryn the Eye Thief"
+#dmg 8
+#slash
+#pierce
+#secondaryeffect 333 -- eyeloss
+#armorpiercing
+#end
+
+
+-- Magic hoof (used by great stag)
+
+#newweapon 1161
+#copyweapon 55 -- hoof
+#name "Hoof"
+#magic
+#end
+
+-- Stag's antlers
+
+#newweapon 1162
+#copyweapon 634 -- antlers with str bonus
+#name "Antlers"
+#magic
+#charge
+#pierce -- as well as slash
+#end
+
+
+-- Magic hoof (used by great stag) - nostr version
+
+#newweapon 1163
+#copyweapon 55 -- hoof
+#name "Stag Hoof"
+#magic
+#bonus
+#dmg 21
+#nostr
+#att -2
+#end
+
+-- Stag's antlers -- nostr version
+
+#newweapon 1164
+#copyweapon 634 -- antlers with str bonus
+#name "Stag Antlers"
+#magic
+#charge
+#pierce -- as well as slash
+#nostr
+#bonus
+#att -2
+#dmg 22
+#end
+
+
+-- Warhawks claws and beak (no rider)
+
+#newweapon 1138
+#name "Beak and Talons"
+#dmg 0
+#bonus
+#len -1
+#att 0
+#nratt 2
+#pierce
+#slash
+#charge
+#end
+
+
+
+-- Warhawks claws and beak
+
+#newweapon 1139
+#name "Warhawk Beak and Talon"
+#dmg 14
+#bonus
+#len -1
+#att -1
+#nratt 2
+#pierce
+#slash
+#nostr
+#charge
+#end
+
+
+-- Asrai Spear
+
+#newweapon 1140
+#copyweapon 1 -- spear
+#name "Asrai Spear"
+#dmg 5 -- +2
+#att 1 -- +1
+#end
+
+-- Asrai Long Bow
+
+#newweapon 1141
+#copyweapon 24 -- long bow
+#name "Asrai Long Bow"
+#dmg 9
+#att 1 -- +1
+#halfstr
+#end
+
+-- Asrai Long Bow (forest)
+
+#newweapon 1170
+#copyweapon 24 -- long bow
+#name "Asrai Long Bow"
+#dmg 9
+#att 1 -- +1
+#halfstr
+#friendlyimmune
+#end
+
+-- Asrai Lance
+
+#newweapon 1142
+#copyweapon 357 -- light lance
+#name "Asrai Lance"
+#dmg 5 -- +2
+#att 1 -- +1
+#end
+
+-- Asrai Composite Bow
+
+#newweapon 1143
+#copyweapon 264 -- composite bow
+#name "Asrai Composite Bow"
+#halfstr
+#end
+
+-- Asrai Composite Bow (forest)
+
+#newweapon 1205
+#copyweapon 264 -- composite bow
+#name "Asrai Composite Bow"
+#halfstr
+#friendlyimmune
+#end
+
+-- Antlers of the steed of kurnous
+
+#newweapon 1144
+#copyweapon 354 -- antlers nostr bonus
+#name "Antlers"
+#pierce -- as well as slash
+#charge
+#end
+
+-- Hoof of the steed of kurnous
+
+#newweapon 1145
+#copyweapon 56 -- hoof
+#name "Hoof"
+#dmg 15 -- stronger than a horse
+#end
+
+-- Sapling Whip
+
+#newweapon 1146
+#name "Sapling Whip"
+#dmg 2
+#att 0
+#def 0
+#len 3
+#nratt 1
+#slash
+#sound 9 -- whip
+#flail
+#secondaryeffect 50 -- weak poison
+#end
+
+-- Frost Spike
+
+#newweapon 1147
+#copyweapon 69 -- icicle fist
+#name "Frost Spike"
+#secondaryeffect 1148 -- Spiteful Frost
+#end
+
+-- Spiteful Frost
+
+#newweapon 1148
+#copyweapon 222 -- cold
+#name "Spiteful Frost"
+#dmg 8 -- -4
+#end
+
+-- Oaken Fist
+
+#newweapon 1149
+#copyweapon 92 -- fist
+#name "Oaken Fist"
+#dmg 3
+#att 0
+#def 0
+#end
+
+-- Entangling Roots
+
+#newweapon 1150
+#copyweapon 137 -- entangle
+#name "Entangling Roots"
+#mrnegates
+#end
+
+-- Lance of Isha
+
+#newweapon 1151
+#copyweapon 357 -- light lance
+#name "Lance of Isha"
+#dmg 4 -- +1
+#att 1 -- +1
+#secondaryeffect 50 -- weak poison
+#end
+
+-- Blackbriar Javelin
+
+#newweapon 1152
+#copyweapon 21 -- javelin
+#name "Blackbriar Javelin"
+#ammo 3 -- +1
+#dmg 1 -- -1
+#att 0 -- +2
+#secondaryeffect 51 -- strong poison
+#end
+
+-- Antlers of the steed of isha
+
+#newweapon 1153
+#copyweapon 354 -- antlers nostr bonus
+#name "Antlers"
+#pierce -- as well as slash
+#charge
+#magic
+#dmg 13 -- -3
+#end
+
+-- Lance of Spite
+
+#newweapon 1154
+#copyweapon 357 -- light lance
+#name "Lance of Spite"
+#dmg 6 -- +3
+#att 2 -- +2
+#def 1 -- +1
+#magic
+#rcost 3
+#end
+
+-- Spiritbane Glaive
+
+#newweapon 1155
+#copyweapon 11 -- great sword
+#name "Spiritbane Glaive"
+#dmg 8 -- -1
+#def 1 -- -1
+#secondaryeffect 1156 -- spiritbane
+#rcost 7 -- +2
+#end
+
+-- Spiritbane
+
+#newweapon 1156
+#name "Spiritbane"
+#dmg 4
+#nostr
+#magic
+#dt_magic -- x2 vs magic beings
+#armorpiercing
+#bonus
+#internal
+#end
+
+
+-- Waywatcher Long Bow
+
+#newweapon 1157
+#copyweapon 24 -- long bow
+#name "Waywatcher Long Bow"
+#dmg 9
+#att 2 -- +2
+#armorpiercing
+#halfstr
+#end
+
+
+-- Waywatcher Long Bow (forests)
+
+#newweapon 1206
+#copyweapon 24 -- long bow
+#name "Waywatcher Long Bow"
+#dmg 9
+#att 2 -- +2
+#armorpiercing
+#halfstr
+#friendlyimmune
+#end
+
+
+-- Spite Infused Bow
+
+#newweapon 1158
+#copyweapon 24 -- long bow
+#name "Spite Infused Bow"
+#dmg 10 -- same
+#att 2 -- +2
+#armorpiercing
+#magic
+#nratt 2
+#ammo 24
+#flyspr 10148 -- long green particle trail things
+#secondaryeffect 1150 -- entangling roots
+#friendlyimmune
+#halfstr
+#end
+
+
+-- Hawk's Talon
+
+#newweapon 1207
+#copyweapon 24 -- long bow
+#name "Hawk's Talon"
+#dmg 12
+#att 4
+#armorpiercing
+#magic
+#nratt 6
+#ammo 24
+#flyspr 10148 -- long green particle trail things
+#secondaryeffect 1150 -- entangling roots
+#friendlyimmune
+#halfstr
+#end
+
+
+-- Spear of Kurnous
+
+#newweapon 1208
+#copyweapon 643 -- bronze spear
+#name "Spear of Kurnous"
+#dmg 5
+#armorpiercing
+#att 2
+#def 1
+#magic
+#charge
+#end
+
+
+-- Bite, magical
+
+#newweapon 1209
+#copyweapon 20 -- bite
+#name "Bite"
+#magic
+#end
+
+
+-------------------------------------------------------------------------
+-- Armour
+-------------------------------------------------------------------------
+
+#newarmor 337
+#name "Elven Chainmail"
+#prot 14 -- +2 compared to Chain Mail Cuirass
+#def 0   -- +1 
+#enc 1
+#type 5
+#rcost 14 -- +5
+#end
+
+#newarmor 338
+#name "Whirling Blades"
+#type 4
+#prot 20
+#def 6
+#enc 0
+#rcost 0
+#end
+
+#newarmor 339
+#name "Sigil Tattoos"
+#prot 6
+#def 0
+#enc 0
+#type 7
+#rcost 0
+#end
+
+-------------------------------------------------------------------------
+-- Recruitables
+-------------------------------------------------------------------------
+
+-----Template Wood Elf -- compared with high elf
+
+#newmonster 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Guard.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Guard2.tga"
+#name "Template Wood Elf"
+#descr "Wood Elf Template."
+#hp 8
+#prot 0
+#size 2
+#str 9
+#enc 3
+#att 12
+#def 12
+#prec 12
+#mr 12
+#mor 12
+#rcost 1
+#rpcost 10
+#ap 14
+#mapmove 16
+#startage 130
+#maxage 2000
+#nametype 200 -- male wood elf
+#forestsurvival
+#snow
+#end
+
+
+----- Glade Guard (archer)
+
+#newmonster 4131
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Guard.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Guard2.tga"
+#name "Glade Guard"
+#descr "In time of need, every Wood Elf can answer the call to defend their realm, for all are trained in the art of the Long Bow as soon as they are old enough to hold one. After all to the Asrai archery is not just a tool of battle but one of many hunter's skills necessary for survival. When an Elf comes of age he or she will be formally inducted into the Glade Guard of their household and given responsibility for patrolling a section of the realm. When a threat is identified by a patrol it does not take long before they are faced with a suitable sized force of Glade Guard who stand ready to pincushion the interloper with arrows. Glade Guard form the core of almost every force fielded by Athel Loren and are famed for the storms of arrows they can rain down on the enemy line. While graceful and capable swordsmen, Glade Guard are lightly armoured and typically prefer to leave melee combat to the Eternal Guard or troupes of Wardancers.
+
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#gcost 14
+#armor 10 -- leather hauberk
+#armor 120 -- leather cap
+#weapon 1141 -- asrai long bow
+#weapon 6 -- Short Sword
+#forestshape 4132
+#end
+
+----- Glade Guard (archer) -- forest shape
+
+#newmonster 4132
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Guard.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Guard2.tga"
+#name "Glade Guard"
+#descr "In time of need, every Wood Elf can answer the call to defend their realm, for all are trained in the art of the Long Bow as soon as they are old enough to hold one. After all to the Asrai archery is not just a tool of battle but one of many hunter's skills necessary for survival. When an Elf comes of age he or she will be formally inducted into the Glade Guard of their household and given responsibility for patrolling a section of the realm. When a threat is identified by a patrol it does not take long before they are faced with a suitable sized force of Glade Guard who stand ready to pincushion the interloper with arrows. Glade Guard form the core of almost every force fielded by Athel Loren and are famed for the storms of arrows they can rain down on the enemy line. While graceful and capable swordsmen, Glade Guard are lightly armoured and typically prefer to leave melee combat to the Eternal Guard or troupes of Wardancers.
+
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+#gcost 14
+#armor 10 -- leather hauberk
+#armor 120 -- leather cap
+#weapon 1170 -- asrai long bow
+#weapon 6 -- Short Sword
+#illusion -- glamour
+#plainshape 4131
+#mor 13 -- +1
+#prec 13 -- +1
+#patrolbonus 1 -- +1
+#end
+
+----- Deepwood Scout
+
+#newmonster 4133
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout2.tga"
+#name "Deepwood Scout"
+#descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
+
+[Gain glamour, +15 stealth, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#gcost 15
+#armor 5 -- leather cuirass
+#armor 121 -- leather hood
+#weapon 1141 -- asrai long bow
+#weapon 9 -- dagger
+#forestshape 4134
+#prec 13 -- +1
+#patrolbonus 1
+#stealthy 10
+#skirmisher 1
+#rpcost 12 -- +2
+#end
+
+----- Deepwood Scout -- forest shape
+
+#newmonster 4134
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout2.tga"
+#name "Deepwood Scout"
+#descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
+
+[Lose glamour, 15 stealth, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+#gcost 15
+#armor 5 -- leather cuirass
+#armor 121 -- leather hood
+#weapon 1170 -- asrai long bow
+#weapon 9 -- dagger
+#illusion -- glamour
+#plainshape 4133
+#mor 13 -- +1
+#prec 14 -- +1
+#skirmisher 1
+#rpcost 12 -- +2
+#patrolbonus 2 -- +1
+#stealthy 10
+#end
+
+
+----- Eternal Guard
+
+#newmonster 4135
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Eternal_Guard.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Eternal_Guard2.tga"
+#name "Eternal Guard"
+#descr "The Eternal Guard are elite Wood Elf infantry tasked with the defence of the most important and holy sites of their people. Membership can only be gained through skill and deeds in battle and while many elves seek this position of honour, relatively few are accepted. They make use of a phalanx formation not unlike those employed by their High Elf cousins on Ulthuan, protected by a wall of large shields as their superbly crafted spears dart out to wound and kill with frightening speed. The Eternal Guard's duties are most important during the winter months when the allied spirits of Athel Loren are at their lowest ebb and the spiteful creatres of the Wildwood are at their most bitter and resentful, for at this time the safety of the ancient forest realm falls almost entirely on their shoulders. Each member bears the sign of eternity on their shield and knows they cannot falter and must endure, just as Athel Loren must endure. When the most powerful nobles of the Asrai households travel they are often accompanied by watchful Eternal Guard as a sign of their status and a guarantee of their safety.
+
+[Gain glamour, +1 hp, +1 strength, and +1 morale in forests]"
+#gcost 18
+#armor 7 -- scale mail cuirass
+#armor 162 -- crested helm
+#armor 3 -- kite shield
+#weapon 1140 -- asrai spear
+#forestshape 4136
+#rpcost 20 -- +10
+#coldres 3
+#bodyguard 1
+#formationfighter 2 -- phalanx
+#att 13
+#def 13
+#hp 10 -- tougher
+#str 10 -- stronger
+#mor 15 -- +3
+#end
+
+----- Eternal Guard -- forest shape
+
+#newmonster 4136
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Eternal_Guard.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Eternal_Guard2.tga"
+#name "Eternal Guard"
+#descr "The Eternal Guard are elite Wood Elf infantry tasked with the defence of the most important and holy sites of their people. Membership can only be gained through skill and deeds in battle and while many elves seek this position of honour, relatively few are accepted. They make use of a phalanx formation not unlike those employed by their High Elf cousins on Ulthuan, protected by a wall of large shields as their superbly crafted spears dart out to wound and kill with frightening speed. The Eternal Guard's duties are most important during the winter months when the allied spirits of Athel Loren are at their lowest ebb and the spiteful creatres of the Wildwood are at their most bitter and resentful, for at this time the safety of the ancient forest realm falls almost entirely on their shoulders. Each member bears the sign of eternity on their shield and knows they cannot falter and must endure, just as Athel Loren must endure. When the most powerful nobles of the Asrai households travel they are often accompanied by watchful Eternal Guard as a sign of their status and a guarantee of their safety.
+
+[Lose glamour, 1 hp, 1 strength, and 1 morale outside forests]"
+#gcost 18
+#armor 7 -- scale mail cuirass
+#armor 162 -- crested helm
+#armor 3 -- kite shield
+#weapon 1140 -- asrai spear
+#illusion -- glamour
+#plainshape 4135
+#rpcost 20 -- +10
+#coldres 3
+#bodyguard 1
+#formationfighter 2 -- phalanx
+#att 13
+#def 13
+#hp 11 -- +1
+#str 11 -- +1
+#mor 16 -- +1
+#end
+
+
+-- Glade Rider
+
+#newmonster 4139
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Rider2.tga"
+#name "Glade Rider"
+#descr "The Glade Riders of Athel Loren are amongst the finest horse-warriors in the world, their Elven Steeds and sharp reflexes allowing them to perform feats of horsemanship that border on the supernatural. While their mounts are descended from the same stock as those used by their cousins in Ulthuan, the Wood Elves have ceased to treat these horses as chattel and instead created a close bond of mutual benefit between Elf and Steed. Glade Riders fight in a similar style to the Glade Guard, preferring to finish their foe with volleys of missile fire rather than engage in melee for although their well crafted lances do allow them to deal decisive charges, they are quite lightly armoured.
+
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests.]"
+#size 3
+#enc 4
+#weapon 1142 -- asrai lance
+#weapon 1143 -- composite bow
+#weapon 56 -- hoof
+#armor 15 -- full leather armour
+#armor 119 -- reinforced leather cap
+#gcost 35
+#rpcost 30
+#rcost 4
+#mapmove 28 -- incredibly swift
+#ap 30
+#ressize 2
+#mounted
+#patrolbonus 1
+#forestshape 4140
+#end
+
+
+-- Glade Rider (forest shape)
+
+#newmonster 4140
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Rider2.tga"
+#name "Glade Rider"
+#descr "The Glade Riders of Athel Loren are amongst the finest horse-warriors in the world, their Elven Steeds and sharp reflexes allowing them to perform feats of horsemanship that border on the supernatural. While their mounts are descended from the same stock as those used by their cousins in Ulthuan, the Wood Elves have ceased to treat these horses as chattel and instead created a close bond of mutual benefit between Elf and Steed. Glade Riders fight in a similar style to the Glade Guard, preferring to finish their foe with volleys of missile fire rather than engage in melee for although their well crafted lances do allow them to deal decisive charges, they are quite lightly armoured.
+
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Composite Bow will harm friendlies outside forests.]"
+#size 3
+#enc 4
+#weapon 1142 -- asrai lance
+#weapon 1205 -- composite bow
+#weapon 56 -- hoof
+#armor 15 -- full leather armour
+#armor 119 -- reinforced leather cap
+#gcost 35
+#rpcost 30
+#rcost 4
+#mapmove 28 -- incredibly swift
+#ap 30
+#ressize 2
+#mounted
+#illusion -- glamour
+#plainshape 4139
+#mor 13 -- +1
+#prec 13 -- +1
+#patrolbonus 2 -- +1
+#end
+
+
+
+-- Wild Rider
+
+#newmonster 4141
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wild_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wild_Rider2.tga"
+#name "Wild Rider"
+#descr "The Wild Riders of Kurnous are Orion's personal guard, each as aggressive and impulsive as he. While they were once Elves they are now fey and dangerous creatures, permanently part of the Wild Hunt having taken the position and surrendered their former mortal life in honour of Orion and Kurnous. It is their sacred duty to protect the King's Glade where Orion lies in his death-sleep during the winter, though much like their master they are at their strongest during the spring season and are at their weakest point in the months leading up to winter. These members of the Wild Hunt are easily recognised for their eyes blaze with power and their skin and hair is green and crackles with energy as their bloodlust builds. They ride into battle atop Steeds of Kurnous, magical deerlike beasts that are said to be the hunt itself given form and share the ferocious temperament of their riders. Wild Riders wear little armour save their horned masks, relying on their devasating charge and heedless aggression to see them through combat, though they are also supernaturally durable and resistant to hostile magic. Once given the blessing of Kurnous in battle Wild Riders will immediately enter a berserker state.
+
+[Goes berserk when blessed]
+[Gain glamour, recuperation, +1 morale, +1 strength, +2 hp, +2 invulnerability, +1 patrolbonus in forests]"
+#size 3
+#enc 3 -- supernaturally tireless
+#prot 3 -- little bit of toughness from the steed
+#hp 12 -- bit extra from the steed
+#weapon 1142 -- asrai lance
+#weapon 1144 -- antlers
+#weapon 1145 -- hoof
+#armor 10 -- leather hauberk
+#armor 162 -- crested helmet
+#gcost 60
+#rpcost 40
+#rcost 4
+#mapmove 28 -- incredibly swift
+#ap 30
+#ressize 2
+#mounted
+#patrolbonus 1
+#berserk 3 -- standard strong berserk
+#att 13
+#def 13
+#str 12 -- very strong for an elf
+#mor 15
+#mr 14 -- protected against magic (ward save 6+)
+#invulnerable 6
+#magicbeing
+#forestshape 4142
+#springpower 50 - same as red guard
+#holy
+#blessbers
+#end
+
+
+-- Wild Rider (forest shape)
+
+#newmonster 4142
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wild_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wild_Rider2.tga"
+#name "Wild Rider"
+#descr "The Wild Riders of Kurnous are Orion's personal guard, each as aggressive and impulsive as he. While they were once Elves they are now fey and dangerous creatures, permanently part of the Wild Hunt having taken the position and surrendered their former mortal life in honour of Orion and Kurnous. It is their sacred duty to protect the King's Glade where Orion lies in his death-sleep during the winter, though much like their master they are at their strongest during the spring season and are at their weakest point in the months leading up to winter. These members of the Wild Hunt are easily recognised for their eyes blaze with power and their skin and hair is green and crackles with energy as their bloodlust builds. They ride into battle atop Steeds of Kurnous, magical deerlike beasts that are said to be the hunt itself given form and share the ferocious temperament of their riders. Wild Riders wear little armour save their horned masks, relying on their devasating charge and heedless aggression to see them through combat, though they are also supernaturally durable and resistant to hostile magic. Once given the blessing of Kurnous in battle Wild Riders will immediately enter a berserker state.
+
+[Goes berserk when blessed]
+[Lose glamour, recuperation, 1 morale, 1 strength, 2 invulnerability, and 1 patrolbonus outside forests]"
+#size 3
+#enc 3
+#prot 3
+#hp 14
+#weapon 1142 -- asrai lance
+#weapon 1144 -- antlers
+#weapon 1145 -- hoof
+#armor 10 -- leather hauberk
+#armor 162 -- crested helmet
+#gcost 60
+#rpcost 40
+#rcost 4
+#mapmove 28
+#ap 30
+#ressize 2
+#mounted
+#patrolbonus 2 -- +1
+#berserk 3
+#att 13
+#def 13
+#str 13 -- +1
+#mor 16 -- +1
+#mr 14
+#invulnerable 8 -- +2
+#magicbeing
+#plainshape 4141
+#springpower 50 - same as red guard
+#holy
+#illusion
+#blessbers
+#heal
+#end
+
+
+-- Dryad (autumn)
+
+#newmonster 4143
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Autumn.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Autumn2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy on sharp spines.
+
+[Form depends on the season. Currently in Autumn form. Autumn form is the default when recruiting, no matter the season]
+[Gain glamour, recuperation, +1 morale, +1 strength, +1 magic resistance, +1 hp, +1 protection in forests, lose gold upkeep]"
+#size 2
+#enc 1
+#prot 7 -- same as vine man
+#hp 15 -- tough
+#weapon 29 -- claw
+#weapon 29 -- claw
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 12 -- +1 for hatred
+#def 11
+#str 13 -- they are s3 but I need to push this because they have only claws to attack with
+#mor 14
+#mr 12
+#fireres -3
+#poisonres 15 -- same as vine man
+#bluntres -- this is thematic and makes them more durable, vine men also have it
+#pierceres -- this is thematic and makes them more durable, vine men also have it
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#forestshape 4144
+#springshape 4145
+#summershape 4149
+#wintershape 4147
+#domrec 1
+#end
+
+
+-- Dryad (autumn - forest shape)
+
+#newmonster 4144
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Autumn.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Autumn2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy on sharp spines.
+
+[Form depends on the season. Currently in Autumn form. Autumn form is the default when recruiting, no matter the season]
+[Lose glamour, recuperation, 1 morale, 1 strength, 1 magic resistance, 1 hp, 1 protection and gain gold upkeep outside forests]"
+#size 2
+#enc 1
+#prot 8 -- +1
+#hp 16 -- +1
+#weapon 29 -- claw
+#weapon 29 -- claw
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 12
+#def 11
+#str 14 -- +1
+#mor 15 -- +1
+#mr 13 -- +1
+#fireres -3
+#poisonres 15
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#heal -- can heal themselves easily
+#plainshape 4143
+#illusion
+#addupkeep -999
+#springshape 4146
+#summershape 4150
+#wintershape 4148
+#domrec 1
+#end
+
+
+
+-- Dryad (spring)
+
+#newmonster 4145
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Spring.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Spring2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy on sharp spines.
+
+[Form depends on the season. Currently in Spring form]
+[Gain glamour, recuperation, +1 morale, +1 strength, +1 magic resistance, +1 hp, +1 protection in forests, lose gold upkeep]"
+#size 2
+#enc 1
+#prot 6 -- -1
+#hp 14 -- -1
+#weapon 1146 -- poison whip
+#weapon 29 -- claw
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18
+#ap 14
+#att 12
+#def 11
+#str 13
+#mor 14
+#mr 12
+#fireres -3
+#poisonres 20 -- +5 for spring
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#forestshape 4146
+#summershape 4149
+#autumnshape 4143
+#wintershape 4147
+#regeneration 10 -- in spring form they regenerate
+#domrec 1
+#end
+
+
+-- Dryad (spring - forest shape)
+
+#newmonster 4146
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Spring.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Spring2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy on sharp spines.
+
+[Form depends on the season. Currently in Spring form]
+[Lose glamour, recuperation, 1 morale, 1 strength, 1 magic resistance, 1 hp, 1 protection and gain gold upkeep outside forests]"
+#size 2
+#enc 1
+#prot 7 -- +1
+#hp 15 -- +1
+#weapon 1146 -- poison whip
+#weapon 29 -- claw
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18
+#ap 14
+#att 12
+#def 11
+#str 14 -- +1
+#mor 15 -- +1
+#mr 13 -- +1
+#fireres -3
+#poisonres 20 -- spring
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#heal -- can heal themselves easily
+#plainshape 4145
+#illusion
+#addupkeep -999
+#summershape 4150
+#autumnshape 4144
+#wintershape 4148
+#regeneration 10 -- in spring form they regenerate
+#domrec 1
+#end
+
+
+
+-- Dryad (winter)
+
+#newmonster 4147
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Winter.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Winter2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy with spines of frost hardened wood.
+
+[Form depends on the season. Currently in Winter form]
+[Gain glamour, recuperation, +1 morale, +1 strength, +1 magic resistance, +1 hp, +1 protection in forests, lose gold upkeep]"
+#size 2
+#enc 1
+#prot 5 -- 2 lower
+#hp 13 -- 2 less
+#weapon 1147 -- frost spike
+#weapon 1147 -- frost spike
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 12 -- +1 for hatred
+#def 11
+#str 13 -- they are s3 but I need to push this because they have only claws to attack with
+#mor 15 -- increased for winter
+#mr 12
+#fireres -3
+#poisonres 15 -- same as vine man
+#coldres 5
+--bluntres -- they lose this because winter
+#pierceres -- this is thematic and makes them more durable, vine men also have it
+#magicbeing
+#forestsurvival
+#snow
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#forestshape 4148
+#springshape 4145
+#summershape 4149
+#autumnshape 4143
+#domrec 1
+#end
+
+
+-- Dryad (winter - forest shape)
+
+#newmonster 4148
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Winter.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Winter2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy with spines of frost hardened wood.
+
+[Form depends on the season. Currently in Winter form]
+[Lose glamour, recuperation, 1 morale, 1 strength, 1 magic resistance, 1 hp, 1 protection and gain gold upkeep outside forests]"
+#size 2
+#enc 1
+#prot 6 -- +1
+#hp 14 -- +1
+#weapon 1147 -- frost spike
+#weapon 1147 -- frost spike
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 12
+#def 11
+#str 14 -- +1
+#mor 16 -- +1
+#mr 13 -- +1
+#fireres -3
+#poisonres 15
+#coldres 5
+--bluntres -- winter
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#snow
+#neednoteat
+#startage 600
+#maxage 4000
+#heal -- can heal themselves easily
+#plainshape 4147
+#illusion
+#addupkeep -999
+#springshape 4146
+#summershape 4150
+#autumnshape 4144
+#domrec 1
+#end
+
+
+
+-- Dryad (summer)
+
+#newmonster 4149
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Summer.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Summer2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy with spines of frost hardened wood.
+
+[Form depends on the season. Currently in Summer form]
+[Gain glamour, recuperation, +1 morale, +1 strength, +1 magic resistance, +1 hp, +1 protection in forests, lose gold upkeep]"
+#size 2
+#enc 1
+#prot 9 -- +2 for summer
+#hp 17 -- +2 for summer
+#weapon 1149 -- oaken fist
+#weapon 1149 -- oaken fist
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 12 -- +1 for hatred
+#def 11
+#str 15 -- +2 in summer
+#mor 14
+#mr 12
+#fireres -3
+#poisonres 15 -- same as vine man
+#bluntres -- this is thematic and makes them more durable, vine men also have it
+#pierceres -- this is thematic and makes them more durable, vine men also have it
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#forestshape 4150
+#springshape 4145
+#autumnshape 4143
+#wintershape 4147
+#domrec 1
+#end
+
+
+-- Dryad (summer - forest shape)
+
+#newmonster 4150
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Summer.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dryad_Summer2.tga"
+#name "Dryad"
+#descr "Dryads are merciless spirits dedicated to the defence of Athel Loren that have taken up aspects of war to punish those who would threaten their realm. They appear as creatures of twisted wood and plant matter with baleful glowing eyes that release a keening screech as they descend on their prey to rend it asunder. Though they are fey, magical spirits their choice of corporeal form leaves them rather vulnerable to fire, though their wooden bodies are quite resistant to damage, especially when they are at their full strength in forested lands. The exact physical form a Dryad takes changes as the seasons do; in spring they are lithe and lash with long tendrils, in summer their bark hardens and they strike great bludgeoning blows, in autumn they tear at the foe with their claws, while in winter they become more brittle but ever more spiteful and pierce the enemy with spines of frost hardened wood.
+
+[Form depends on the season. Currently in Summer form]
+[Lose glamour, recuperation, 1 morale, 1 strength, 1 magic resistance, 1 hp, 1 protection and gain gold upkeep outside forests]"
+#size 2
+#enc 1
+#prot 10 -- +1
+#hp 18 -- +1
+#weapon 1149 -- oaken fist
+#weapon 1149 -- oaken fist
+#gcost 15
+#rpcost 12
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 12
+#def 11
+#str 16 -- +1
+#mor 15 -- +1
+#mr 13 -- +1
+#fireres -3
+#poisonres 15
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#heal -- can heal themselves easily
+#plainshape 4149
+#illusion
+#addupkeep -999
+#springshape 4146
+#autumnshape 4144
+#wintershape 4148
+#domrec 1
+#end
+
+
+-- Treekin
+
+#newmonster 4173
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treekin.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treekin2.tga"
+#name "Tree Kin"
+#descr "Tree Kin are hunks of deadwood animated into a hulking, twisted form somewhere between elf and ogre. They do not fight with finesse but with gnarbled clubbing fists that batter apart armour and pummel flesh and tearing claws of jagged and splintering wood that rend and tear. Tree Kin are truly implacable for they feel nothing at all, save a compulsion to destroy the enemies of Athel Loren. When Asrai warriors perish their souls typically abandon their identity and become one with the Weave of the forest, but there are a few that cannot abandon their formers lives and though they quickly lose their memories and personality, they retain a drive to protect that which they loved in life. To Tree Kin the world is a strange place, hidden beyond a shroud of confusion and shattered fragments of memories they cannot even recognise as their own, and unlike forest spirits like Dryads they feel no spite, nor do they have the deep relationship with the forest held by the superficially similar Treemen; instead they are compelled to wordlessly serve Athel Loren as lumbering enforcers of her will. Often Tree Kin will stand guard for decades or even centuries in long abandoned glades, but in times of war they can reliably be called forth to do battle and join the great Asrai hosts in defence of their homeland.
+
+[Gain glamour, recuperation, +2 strength, +1 magic resistance, +4 hp, +2 protection in forests, lose gold upkeep. Requires Dominion 4 and a temple to recruit. Limited to recruitment of 2 per turn]"
+#size 3
+#enc 1
+#prot 13 -- they have a 4+ save which is pretty amazing
+#hp 40 -- big, 3 wounds
+#weapon 1149 -- oaken fist
+#weapon 29 -- claw
+#gcost 50
+#rpcost 24
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 11
+#def 10
+#str 17 -- they are s4 but I need to push this because of their weapons
+#mor 30 -- near mindless
+#mr 12
+#fireres -5 -- dead wood
+#poisonres 15 -- same as vine man
+#coldres 5
+#pierceres -- this is thematic and makes them more durable, vine men also have it
+#magicbeing
+#forestsurvival
+#snow
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#forestshape 4174
+#domrec 4
+#reclimit 2 -- onyl 2 per turn
+#reqtemple
+#end
+
+
+-- Treekin (forest shape)
+
+#newmonster 4174
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treekin.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treekin2.tga"
+#name "Tree Kin"
+#descr "Tree Kin are hunks of deadwood animated into a hulking, twisted form somewhere between elf and ogre. They do not fight with finesse but with gnarbled clubbing fists that batter apart armour and pummel flesh and tearing claws of jagged and splintering wood that rend and tear. Tree Kin are truly implacable for they feel nothing at all, save a compulsion to destroy the enemies of Athel Loren. When Asrai warriors perish their souls typically abandon their identity and become one with the Weave of the forest, but there are a few that cannot abandon their formers lives and though they quickly lose their memories and personality, they retain a drive to protect that which they loved in life. To Tree Kin the world is a strange place, hidden beyond a shroud of confusion and shattered fragments of memories they cannot even recognise as their own, and unlike forest spirits like Dryads they feel no spite, nor do they have the deep relationship with the forest held by the superficially similar Treemen; instead they are compelled to wordlessly serve Athel Loren as lumbering enforcers of her will. Often Tree Kin will stand guard for decades or even centuries in long abandoned glades, but in times of war they can reliably be called forth to do battle and join the great Asrai hosts in defence of their homeland.
+
+[Lose glamour, recuperation, 2 strength, 1 magic resistance, 4 hp, 2 protection outside forests, gain gold upkeep. Requires Dominion 4 and a temple to recruit. Limited to recruitment of 2 per turn]"
+#size 3
+#enc 1
+#prot 15 -- +2
+#hp 44 -- +4
+#weapon 1149 -- oaken fist
+#weapon 29 -- claw
+#gcost 50
+#addupkeep -50
+#rpcost 24
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 11
+#def 10
+#str 19 -- +2
+#mor 30 -- near mindless
+#mr 13 -- +1
+#fireres -5 -- dead wood
+#poisonres 15 -- same as vine man
+#coldres 5
+#pierceres -- this is thematic and makes them more durable, vine men also have it
+#magicbeing
+#forestsurvival
+#snow
+#spiritsight
+#plant
+#neednoteat
+#startage 600
+#maxage 4000
+#plainshape 4173
+#domrec 4
+#reclimit 2 -- onyl 2 per turn
+#illusion
+#heal
+#reqtemple
+#end
+
+
+
+-- Sister of the Thorn
+
+#newmonster 4151
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Thorn_Sister.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Thorn_Sister2.tga"
+#name "Sister of the Thorn"
+#descr "The Sisters of the Thorn are servants of the goddess Isha and thus handmaidens of Ariel, that much is known to all Wood Elves, though their origin and exact organisation is shrouded in mystery. Some say that they were once a coven of Dark Elf sorceresses turned to the service of Athel Loren, others say they are Asrai maidens possessed by the spirits of Dryads; all agree that they are to be feared and loved in equal measure. While the Sisters are stalwart defenders of the Wood Elf realm and people and their aid can be relied upon, it is known that aid always comes at some price to be paid at a future date. As servants of Isha the Sisters ride atop magical Steeds of Isha of great agility, deerlike creatures with glowing antlers who are said to be able to see and change their own fate, allowing them to prance through missile fire and dodge attacks in melee. The Sisters of the Thorn make extensive use of the poisons produced by many plants across Athel Loren on both their lances and infamous Blackbriar javelins. Such is their connection with the forest and magical power that they can command roots and vines to entangle their foes at the moment before they deliver their lance charge. Should a Sister fall in battle it is said her spirit will return to the heart of Athel Loren and in some secret glade fall under the care of Isha until she springs forth to serve once more in the renewing season of Spring.
+
+[Gain glamour, recuperation, entangling weapon, +1 morale, and +1 hp in forests]"
+#size 3
+#enc 3 -- supernaturally tireless
+#weapon 1151 -- lance of Isha
+#weapon 1152 -- blackbriar javelin
+#weapon 1153 -- magic antlers
+#armor 10 -- leather hauberk
+#armor 162 -- crested helmet
+#def 13 -- fateweaving stuff
+#gcost 70
+#rpcost 40
+#rcost 4
+#mapmove 28 -- incredibly swift
+#ap 30
+#ressize 2
+#mounted
+#mor 13 -- +1 over normal wood elf
+#mr 15 -- protected against magic (ward save 4+)
+#forestshape 4152
+#immortal
+#springimmortal
+#holy
+#airshield 50
+#female
+#end
+
+
+
+-- Sister of the Thorn (forest shape)
+
+#newmonster 4152
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Thorn_Sister.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Thorn_Sister2.tga"
+#name "Sister of the Thorn"
+#descr "The Sisters of the Thorn are servants of the goddess Isha and thus handmaidens of Ariel, that much is known to all Wood Elves, though their origin and exact organisation is shrouded in mystery. Some say that they were once a coven of Dark Elf sorceresses turned to the service of Athel Loren, others say they are Asrai maidens possessed by the spirits of Dryads; all agree that they are to be feared and loved in equal measure. While the Sisters are stalwart defenders of the Wood Elf realm and people and their aid can be relied upon, it is known that aid always comes at some price to be paid at a future date. As servants of Isha the Sisters ride atop magical Steeds of Isha of great agility, deerlike creatures with glowing antlers who are said to be able to see and change their own fate, allowing them to prance through missile fire and dodge attacks in melee. The Sisters of the Thorn make extensive use of the poisons produced by many plants across Athel Loren on both their lances and infamous Blackbriar javelins. Such is their connection with the forest and magical power that they can command roots and vines to entangle their foes at the moment before they deliver their lance charge. Should a Sister fall in battle it is said her spirit will return to the heart of Athel Loren and in some secret glade fall under the care of Isha until she springs forth to serve once more in the renewing season of Spring.
+
+[Lose glamour, recuperation, entangling weapon, 1 morale, and 1 hp outside forests]"
+#size 3
+#enc 3 -- supernaturally tireless
+#weapon 1150 -- entangling roots
+#weapon 1151 -- lance of Isha
+#weapon 1152 -- blackbriar javelin
+#weapon 1153 -- magic antlers
+#armor 10 -- leather hauberk
+#armor 162 -- crested helmet
+#hp 10 -- +1
+#def 13
+#gcost 70
+#rpcost 40
+#rcost 4
+#mapmove 28
+#ap 30
+#ressize 2
+#mounted
+#mor 14 -- +1
+#mr 15
+#plainshape 4151
+#immortal
+#springimmortal
+#holy
+#airshield 50
+#heal
+#illusion
+#female
+#end
+
+
+----- Wildwood Ranger
+
+#newmonster 4155
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wildwood_Ranger.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wildwood_Ranger2.tga"
+#name "Wildwood Ranger"
+#descr "Athel Loren is not a safe place, even for the Elves. Even now, thousands of years on from the first Great Council, there are those forest spirits who resent the Elves' presence, and visit upon them whatever cruelties are in their power. Banished to the sinister south-eastern corner of Athel Loren known as the Wildwood, these dark spirits rail against the waystone fence that confines them and dream darkly of revenge on those who have occupied their home. The task of guarding the border between this shadowy prison and the rest of Athel Loren falls to the Wildwood Rangers. Theirs is an existence thoroughly at odds with the gaiety and splendour known by other Wood Elves, for just as the creatures of the Wildwood do not rest, nor can those who have sworn to keep them trammelled. The waystone fence is ever under attack, and it suffers disruption more often than any care to contemplate. Any breach, however small, brings with it the risk of carnage as the dark spirits slip loose from their bonds and wreak all manner of havoc in the forest beyond. The Rangers converge on such breaches within moments of their formation, holding back the tide of dark spirits long enough for Spellweavers to make the waystone barriers whole once again. Thus must the Rangers be ever-vigilant, so that their kinsfolk need not live in fear. Wildwood Rangers are armed and armoured in a fashion that sets them apart from other Asrai, with great two handed cleaving glaives and much heavier armour than is typical, for they specialise in destroying hardy foes able to unleash an onslaught of strikes. In times of conflict detachments of the Rangers are given leave from their watch duty to put their unique skills to use against the foes of Athel Loren across the wider world.
+
+[Gain glamour, +1 hp, +1 strength, +1 morale, and +2 patrolbonus in forests]"
+#gcost 18
+#armor 12 -- scale mail hauberk
+#armor 20 -- iron cap
+#weapon 1155 -- spiritbane glaive
+#forestshape 4156
+#rpcost 18
+#att 13
+#hp 10 -- tougher
+#str 10 -- stronger
+#mor 15
+#mr 13 -- specialists in fighting magical crap
+#end
+
+
+----- Wildwood Ranger (forest)
+
+#newmonster 4156
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wildwood_Ranger.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wildwood_Ranger2.tga"
+#name "Wildwood Ranger"
+#descr "Athel Loren is not a safe place, even for the Elves. Even now, thousands of years on from the first Great Council, there are those forest spirits who resent the Elves' presence, and visit upon them whatever cruelties are in their power. Banished to the sinister south-eastern corner of Athel Loren known as the Wildwood, these dark spirits rail against the waystone fence that confines them and dream darkly of revenge on those who have occupied their home. The task of guarding the border between this shadowy prison and the rest of Athel Loren falls to the Wildwood Rangers. Theirs is an existence thoroughly at odds with the gaiety and splendour known by other Wood Elves, for just as the creatures of the Wildwood do not rest, nor can those who have sworn to keep them trammelled. The waystone fence is ever under attack, and it suffers disruption more often than any care to contemplate. Any breach, however small, brings with it the risk of carnage as the dark spirits slip loose from their bonds and wreak all manner of havoc in the forest beyond. The Rangers converge on such breaches within moments of their formation, holding back the tide of dark spirits long enough for Spellweavers to make the waystone barriers whole once again. Thus must the Rangers be ever-vigilant, so that their kinsfolk need not live in fear. Wildwood Rangers are armed and armoured in a fashion that sets them apart from other Asrai, with great two handed cleaving glaives and much heavier armour than is typical, for they specialise in destroying hardy foes able to unleash an onslaught of strikes. In times of conflict detachments of the Rangers are given leave from their watch duty to put their unique skills to use against the foes of Athel Loren across the wider world.
+
+[Lose glamour, 1 hp, 1 strength, 1 morale, and 2 patrolbonus outside forests]"
+#gcost 18
+#armor 12 -- scale mail hauberk
+#armor 20 -- iron cap
+#weapon 1155 -- spiritbane glaive
+#plainshape 4155
+#rpcost 18
+#patrolbonus 2 -- +1
+#att 13
+#hp 11 -- +1
+#str 11 -- +1
+#mor 16 -- +1
+#mr 13
+#illusion
+#end
+
+
+----- Waywatcher
+
+#newmonster 4161
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waywatcher.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waywatcher2.tga"
+#name "Waywatcher"
+#descr "Waywatchers and silent sentinels, the guardians of the paths leading into Athel Loren. They are masters of concealment, tracking, and hunting. Waywatchers almost always spent their youth as a member of the Deepwood Scouts but there is no formal system of promotion by which they join the ranks of the Waywatchers, rather some Elves simply become more at home in the forest than they do in the society of the Asrai and choose to embark on a decades long pilgrimage to learn the ways of the wilds. Many do not return from this sojourn, but those that do have achieved a harmony with Athel Loren that goes far beyond what one of their kind could typically experience. Waywatchers are superb archers, capable of placing arrows in the weak points of enemy armour with terrifying accuracy. They wear bracers carved from the bone of some unfamiliar creature and inscribed with strange symbols, use this same bone to reinforce their hoods and protect their senses, and cover themselves in foliage to better conceal their movements until the moment is right to strike.
+
+[Gain glamour, +1 hp, +1 strength, +1 morale, +1 precision, and +2 patrolbonus in forests. Waywatcher Long Bow will not harm friendlies in forests.]"
+#gcost 25
+#armor 15 -- full leather armour
+#armor 150 -- bone helmet
+#weapon 9 -- dagger
+#weapon 9 -- dagger
+#weapon 1157 -- Waywatcher Long Bow
+#forestshape 4162
+#rpcost 24
+#hp 10 -- tougher
+#str 10 -- stronger
+#prec 14 -- extremely good shots
+#mountainsurvival
+#stealthy 60 -- same as a spy
+#mor 14
+#patrolbonus 2
+#end
+
+
+----- Waywatcher (forest)
+
+#newmonster 4162
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waywatcher.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waywatcher2.tga"
+#name "Waywatcher"
+#descr "Waywatchers and silent sentinels, the guardians of the paths leading into Athel Loren. They are masters of concealment, tracking, and hunting. Waywatchers almost always spent their youth as a member of the Deepwood Scouts but there is no formal system of promotion by which they join the ranks of the Waywatchers, rather some Elves simply become more at home in the forest than they do in the society of the Asrai and choose to embark on a decades long pilgrimage to learn the ways of the wilds. Many do not return from this sojourn, but those that do have achieved a harmony with Athel Loren that goes far beyond what one of their kind could typically experience. Waywatchers are superb archers, capable of placing arrows in the weak points of enemy armour with terrifying accuracy. They wear bracers carved from the bone of some unfamiliar creature and inscribed with strange symbols, use this same bone to reinforce their hoods and protect their senses, and cover themselves in foliage to better conceal their movements until the moment is right to strike.
+
+[Lose glamour, 1 hp, 1 strength, 1 morale, 1 precision, and 2 patrolbonus outside forests.  Waywatcher Long Bow will harm friendlies outside forests.]"
+#gcost 25
+#armor 15 -- full leather armour
+#armor 150 -- bone helmet
+#weapon 9 -- dagger
+#weapon 9 -- dagger
+#weapon 1206 -- Waywatcher Long Bow
+#plainshape 4161
+#rpcost 24
+#hp 11 -- +1
+#str 11 -- +1
+#prec 15 -- +1
+#mountainsurvival
+#stealthy 60
+#mor 15 -- +1
+#patrolbonus 4 -- +2
+#illusion
+#end
+
+
+
+----- Wardancer
+
+#newmonster 4159
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wardancer.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wardancer2.tga"
+#name "Wardancer"
+#descr "Wardancers are the warrior-servants and worshippers of the Eleven trickster god Loec, who perform the vital service of leading their kind in music, story telling, and intricate dances that tell the chronicle of their people. Even so Wardancers are often regarded as wild and unpredictable, for they serve no Elven Court and are apart even from the spirits of the forest. To a Wardancer even other Elves appear to move slowly and clumsily, for the followers of Loec are in a constant state of dance, each movement or expression flowing perfectly into the next. Even in battle Wardancers continue to dance, unconsciously dodging blows, striking at weak points, and fighting in harmony with their allies. Though Wardancers wear no armour they are protected by magical tattoos representing all manner of creatures, activated in battle by the presence of one of their mysterious leaders, the Shadowdancers. They are known to style and dye their hair in striking shapes and colours and nearly always fight with a pair of deadly blades that they whirl about them with such skill that they are able to strike incoming arrows from the air.
+
+[Gain glamour, +1 hp, +1 strength, and +1 morale in forests. Tattoos can be activated by a battle start spell cast automatically by a Shadowdancer]"
+#gcost 25
+#weapon 746 -- scimitar
+#weapon 746 -- scimitar
+#rpcost 20 -- +10
+#att 14
+#def 15 -- +1 for special dances
+#mor 14
+#ambidextrous 4
+#airshield 30
+#beartattoo 1 -- +1 strength per point
+#horsetattoo 1 -- +1 def and +2 speed per point
+#wolftattoo 1 -- +1 attack skill per point
+#boartattoo 1 -- invuln increase?
+#snaketattoo 1 -- magic res +1 per point
+#forestshape 4160
+#end
+
+
+----- Wardancer (forestshape)
+
+#newmonster 4160
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wardancer.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Wardancer2.tga"
+#name "Wardancer"
+#descr "Wardancers are the warrior-servants and worshippers of the Eleven trickster god Loec, who perform the vital service of leading their kind in music, story telling, and intricate dances that tell the chronicle of their people. Even so Wardancers are often regarded as wild and unpredictable, for they serve no Elven Court and are apart even from the spirits of the forest. To a Wardancer even other Elves appear to move slowly and clumsily, for the followers of Loec are in a constant state of dance, each movement or expression flowing perfectly into the next. Even in battle Wardancers continue to dance, unconsciously dodging blows, striking at weak points, and fighting in harmony with their allies. Though Wardancers wear no armour they are protected by magical tattoos representing all manner of creatures, activated in battle by the presence of one of their mysterious leaders, the Shadowdancers. They are known to style and dye their hair in striking shapes and colours and nearly always fight with a pair of deadly blades that they whirl about them with such skill that they are able to strike incoming arrows from the air.
+
+[Lose glamour, 1 hp, 1 strength, and 1 morale outside forests. Tattoos can be activated by a battle start spell cast automatically by a Shadowdancer]"
+#gcost 25
+#weapon 746 -- scimitar
+#weapon 746 -- scimitar
+#rpcost 20 -- +10
+#att 14
+#def 15 -- +1 for special dances
+#hp 10 -- +1
+#str 10 -- +1
+#mor 15 -- +1
+#ambidextrous 4
+#airshield 30
+#beartattoo 1 -- +1 strength per point
+#horsetattoo 1 -- +1 def and +2 speed per point
+#wolftattoo 1 -- +1 attack skill per point
+#boartattoo 1 -- invuln increase?
+#snaketattoo 1 -- magic res +1 per point
+#illusion
+#plainshape 4159
+#end
+
+
+
+
+----- War Hawk Rider
+
+#newmonster 4178
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Rider2.tga"
+#name "Warhawk Rider"
+#descr "A great many hawks and shrikes of great size inhabit the canopy of Athel Loren, especially in the regions where the great forest meets the Grey Mountains. These creatures can boast wingspans of fifteen or sixteen feet and are fierce, cunning predators with highly territorial natures, as all the inhabitants of Athel Loren tend to be. Though most Asrai live in the glades in the centre and west of Athel Loren, there are still many who call the eastern regions bordering the Grey Mountains their home and these elves have over the centuries formed a firm bond with these great avians. Warhawk Riders are yong elves who have reared a hawk or shrike from a hatchling, maturing with it and learning to fight in harmony. They are such expert riders that they are able to loose their arrows with great accuracy even as their mount twists and swoops through the air, their elevation and the superb eyesight of their mounts allowing them even more precision in reaching their target. Warhawk Riders wear very little armour and although they are armed with lances and their mounts boast deadly beaks and talons they should not be expected to fare well in prolonged melee. Should the rider be slain the Warhawk will fight on until the end of the battle.
+
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests.]
+[Recruitment limited to 5 per turn]"
+#prot 2 -- from warhawk
+#size 4
+#enc 4
+#weapon 1142 -- asrai lance
+#weapon 1143 -- composite bow
+#weapon 1139 -- warhawk
+#armor 5 -- leather cuirass
+#armor 120 -- leather cap
+#hp 9 -- +1
+#gcost 40
+#rpcost 34
+#rcost 4
+#ressize 2
+#mounted
+#patrolbonus 1
+#forestshape 4179
+#secondtmpshape 4177 -- warhawk riderless
+#forestsurvival
+#mountainsurvival
+#flying
+#xploss 100
+#cleanshape
+#ap 8 -- same
+#prec 14 -- super good archers
+#mapmove 32 -- 2 lower than the birb
+#reclimit 5
+#end
+
+
+----- War Hawk Rider (forest)
+
+#newmonster 4179
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Rider2.tga"
+#name "Warhawk Rider"
+#descr "A great many hawks and shrikes of great size inhabit the canopy of Athel Loren, especially in the regions where the great forest meets the Grey Mountains. These creatures can boast wingspans of fifteen or sixteen feet and are fierce, cunning predators with highly territorial natures, as all the inhabitants of Athel Loren tend to be. Though most Asrai live in the glades in the centre and west of Athel Loren, there are still many who call the eastern regions bordering the Grey Mountains their home and these elves have over the centuries formed a firm bond with these great avians. Warhawk Riders are yong elves who have reared a hawk or shrike from a hatchling, maturing with it and learning to fight in harmony. They are such expert riders that they are able to loose their arrows with great accuracy even as their mount twists and swoops through the air, their elevation and the superb eyesight of their mounts allowing them even more precision in reaching their target. Warhawk Riders wear very little armour and although they are armed with lances and their mounts boast deadly beaks and talons they should not be expected to fare well in prolonged melee. Should the rider be slain the Warhawk will fight on until the end of the battle.
+
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside of forests. Asrai Composite Bow will harm friendlies outside forests.]
+[Recruitment limited to 5 per turn]"
+#prot 2 -- from warhawk
+#size 4
+#enc 4
+#weapon 1142 -- asrai lance
+#weapon 1205 -- composite bow
+#weapon 1139 -- warhawk
+#armor 5 -- leather cuirass
+#armor 120 -- leather cap
+#hp 9 -- +1
+#gcost 40
+#rpcost 34
+#rcost 4
+#ressize 2
+#mor 13
+#mounted
+#patrolbonus 2
+#plainshape 4178
+#secondtmpshape 4177 -- warhawk riderless
+#forestsurvival
+#mountainsurvival
+#flying
+#xploss 100
+#cleanshape
+#ap 8 -- same
+#prec 15 -- super good archers
+#mapmove 32 -- 2 lower than the birb
+#illusion
+#reclimit 5
+#end
+
+
+
+
+
+----- War Hawk (lost rider)
+
+#newmonster 4177
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk2.tga"
+#name "Warhawk"
+#descr "A great many hawks and shrikes of great size inhabit the canopy of Athel Loren, especially in the regions where the great forest meets the Grey Mountains. These creatures can boast wingspans of fifteen or sixteen feet and are fierce, cunning predators with highly territorial natures, as all the inhabitants of Athel Loren tend to be. Though most Asrai live in the glades in the centre and west of Athel Loren, there are still many who call the eastern regions bordering the Grey Mountains their home and these elves have over the centuries formed a firm bond with these great avians. This Warhawk has lost his bonded rider and once the battle is over will return to the wilds.
+
+[Leaves once the battle concludes]"
+--stats compared with great eagle
+#gcost 0
+#weapon 408 -- Talons
+#weapon 404 -- Beak
+#forestsurvival
+#mountainsurvival
+#prot 5 -- -2
+#att 11 -- -1
+#def 12 -- same
+#size 4 -- -4
+#hp 25 -- -27
+#str 14 -- -4
+#mor 12 -- -6
+#enc 3 -- same
+#mr 9 -- better than most animals
+#flying
+#animal
+#xploss 100
+#cleanshape
+#ap 8 -- same
+#prec 13 -- -1
+#mapmove 34 -- -4
+#maxage 2000 -- has to be the same as the elves
+#poorleader
+#end
+
+
+
+
+
+---- Great Stag (no saddle)
+
+#newmonster 4180
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag2.tga"
+#name "Great Stag"
+#descr "No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Whatever the truth of their nature, it is undeniable that the Great Stags are magical creatures and of a higher cast than the capricious Unicorns. They are typically only seen at portentous times, known to offer themselves are war steeds to Asrai of particular virtue or those destined to do great deeds in defence of the forest, though of late they have revealed themselves in far greater numbers than ever before. Great Stags are sacred to the Asrai.
+
+[Gain glamour, recuperation, +1 att, +1 def, and +2 morale in forests]"
+#gcost 0
+#weapon 1162 -- magic antlers with charge bonus etc
+#weapon 1161 -- magic hoof
+#forestsurvival
+#prot 6 -- T4, big
+#att 12 -- WS5
+#def 12 -- WS5
+#size 5 -- huge
+#hp 50 -- T4 W3 and big. Great boar of carnutes is 55
+#str 21 -- same as great boar of carnutes
+#mor 13
+#enc 2 -- same
+#mr 14 -- great boar of carnutes
+#animal
+#magicbeing
+#holy
+#ap 24 -- M9 in warhammer, so a fast horse
+#prec 11
+#mapmove 22 -- great boar
+#maxage 2000 -- has to be the same as the elves
+#forestshape 4181
+#maxage 5000
+#quadruped
+#end
+
+
+
+---- Great Stag (no saddle) - forestshape
+
+#newmonster 4181
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag2.tga"
+#name "Great Stag"
+#descr "No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Whatever the truth of their nature, it is undeniable that the Great Stags are magical creatures and of a higher cast than the capricious Unicorns. They are typically only seen at portentous times, known to offer themselves are war steeds to Asrai of particular virtue or those destined to do great deeds in defence of the forest, though of late they have revealed themselves in far greater numbers than ever before. Great Stags are sacred to the Asrai.
+
+[Lose glamour, recuperation, 1 att, 1 def, and 2 morale outside of forests]"
+#gcost 0
+#weapon 1162 -- magic antlers with charge bonus etc
+#weapon 1161 -- magic hoof
+#forestsurvival
+#prot 6 -- T4, big
+#att 13
+#def 13
+#size 5 -- huge
+#hp 50 -- T4 W3 and big. Great boar of carnutes is 55
+#str 21 -- same as great boar of carnutes
+#mor 15
+#enc 2 -- same
+#mr 14 -- great boar of carnutes
+#animal
+#magicbeing
+#holy
+#ap 24 -- M9 in warhammer, so a fast horse
+#prec 11
+#mapmove 22 -- great boar
+#maxage 2000 -- has to be the same as the elves
+#plainshape 4180
+#maxage 5000
+#quadruped
+#illusion
+#heal
+#end
+
+
+
+
+
+---- Unicorn of Athel Loren
+
+#newmonster 4190
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Unicorn.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Unicorn2.tga"
+#name "Unicorn of Athel Loren"
+#descr "The Unicorns of Athel Loren are the most famed of their kind and for good reason, for they are more powerful and fearsome than their cousins on Ulthuan or other distant forests. Innately magical creatures, they are not the noble beasts immortalised in song by Bretonnian bards, but instead selfish and arrogant in the extreme, harbouring no notions of kinship with mortals nor forest spirits. Unicorn ivory is highly prized and Unicorns are quite aware of their allure, so they delight in allowing themselves to be seen and pursued by would be hunters, only to be lured into a pack of vengeful forest Spites, deadly Waywatchers, or simply the territory of some ferocious predator. Should they find themselves in combat they are quite capable, for they are supernaturally swift and able to deal terrible damage with their magical horn and powerful hooves. Unicorns are resistant to and capable of consuming magical power and those who inhabit Athel Loren have had considerable exposure to Dark Magic, heightening their vindictive temperaments and lending them an aura of terrifying malice when they are encountered in a forest.
+
+[Gain glamour, fear 3, +1 att, +1 def, and +2 morale in forests]"
+#size 3 -- horse
+#hp 34 -- +2 over ulthuan version
+#prot 4 -- +1
+#att 13
+#def 13
+#str 16 -- +1 over ulthuan version
+#prec 10
+#enc 2
+#mapmove 30 -- incredibly swift
+#ap 32 -- Ultra fast
+#mr 15 -- magic res 2, magical, elfy, horn
+#mor 13 -- proud, LD8, big, but selfish, -1 over ulthuan one
+#weapon 1167 -- Horn
+#weapon 55 -- Hoof, str added
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 3000
+#forestsurvival
+#magicbeing
+#animal
+#heal
+#forestshape 4191
+#end
+
+
+---- Unicorn of Athel Loren
+
+#newmonster 4191
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Unicorn.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Unicorn2.tga"
+#name "Unicorn of Athel Loren"
+#descr "The Unicorns of Athel Loren are the most famed of their kind and for good reason, for they are more powerful and fearsome than their cousins on Ulthuan or other distant forests. Innately magical creatures, they are not the noble beasts immortalised in song by Bretonnian bards, but instead selfish and arrogant in the extreme, harbouring no notions of kinship with mortals nor forest spirits. Unicorn ivory is highly prized and Unicorns are quite aware of their allure, so they delight in allowing themselves to be seen and pursued by would be hunters, only to be lured into a pack of vengeful forest Spites, deadly Waywatchers, or simply the territory of some ferocious predator. Should they find themselves in combat they are quite capable, for they are supernaturally swift and able to deal terrible damage with their magical horn and powerful hooves. Unicorns are resistant to and capable of consuming magical power and those who inhabit Athel Loren have had considerable exposure to Dark Magic, heightening their vindictive temperaments and lending them an aura of terrifying malice when they are encountered in a forest.
+
+[Lose glamour, fear 3, 1 att, 1 def, and 2 morale outside forests]"
+#size 3 -- horse
+#hp 34 -- +2 over ulthuan version
+#prot 4 -- +1
+#att 14
+#def 14
+#str 16 -- +1 over ulthuan version
+#prec 10
+#enc 2
+#mapmove 30 -- incredibly swift
+#ap 32 -- Ultra fast
+#mr 15 -- magic res 2, magical, elfy, horn
+#mor 15
+#weapon 1167 -- Horn
+#weapon 55 -- Hoof, str added
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 3000
+#forestsurvival
+#magicbeing
+#animal
+#heal
+#illusion
+#plainshape 4190
+#fear 3 -- 2 less than standard
+#end
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+-- Commanders
+-------------------------------------------------------------------------
+
+
+----- War Hawk Captain
+
+#newmonster 4186
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Captain.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Captain2.tga"
+#name "Warhawk Captain"
+#descr "Amongst the flights of Warhawk Riders that protect Athel Loren and strike out to punish her enemies all positions are equal, for they are a true brotherhood, but they elect those amongst them with the greatest talent for tactical leadership to act as their Captains. Amongst their own kind they are known as Windriders and it is said they can hear the whispers of the wind itself informing them of enemy movements and the perfect moment to launch strikes or hang back and pepper the foe with arrows. These captains have identical equipment to their troops, save for a more elaborate helm to mark them out. Should the rider be slain the Warhawk will fight on until the end of the battle.
+
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests.]"
+#prot 2 -- from warhawk
+#size 4
+#enc 4
+#weapon 1142 -- asrai lance
+#weapon 1143 -- composite bow
+#weapon 1139 -- warhawk
+#armor 5 -- leather cuirass
+#armor 119 -- reinforced leather cap
+#gcost 70
+#rpcost 1
+#rcost 4
+#ressize 2
+#mounted
+#patrolbonus 1
+#forestshape 4187
+#secondtmpshape 4177 -- warhawk riderless
+#forestsurvival
+#mountainsurvival
+#flying
+#xploss 100
+#cleanshape
+#ap 8 -- same
+#prec 14 -- super good archers
+#mapmove 32 -- 2 lower than the birb
+#unsurr 1
+#okleader
+#mr 13 -- tier 1
+#hp 12 -- tier 1
+#end
+
+
+
+----- War Hawk Captain (forest)
+
+#newmonster 4187
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Captain.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Warhawk_Captain2.tga"
+#name "Warhawk Captain"
+#descr "Amongst the flights of Warhawk Riders that protect Athel Loren and strike out to punish her enemies all positions are equal, for they are a true brotherhood, but they elect those amongst them with the greatest talent for tactical leadership to act as their Captains. Amongst their own kind they are known as Windriders and it is said they can hear the whispers of the wind itself informing them of enemy movements and the perfect moment to launch strikes or hang back and pepper the foe with arrows. These captains have identical equipment to their troops, save for a more elaborate helm to mark them out. Should the rider be slain the Warhawk will fight on until the end of the battle.
+
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside of forests. Asrai Composite Bow will harm friendlies outside forests.]"
+#prot 2 -- from warhawk
+#size 4
+#enc 4
+#weapon 1142 -- asrai lance
+#weapon 1205 -- composite bow
+#weapon 1139 -- warhawk
+#armor 5 -- leather cuirass
+#armor 119 -- reinforced leather cap
+#gcost 70
+#rpcost 1
+#rcost 4
+#ressize 2
+#mor 13
+#mounted
+#patrolbonus 2
+#plainshape 4186
+#secondtmpshape 4177 -- warhawk riderless
+#forestsurvival
+#mountainsurvival
+#flying
+#xploss 100
+#cleanshape
+#ap 8 -- same
+#prec 15 -- super good archers
+#mapmove 32 -- 2 lower than the birb
+#illusion
+#unsurr 1
+#okleader
+#mr 13 -- tier 1
+#hp 12 -- tier 1
+#end
+
+
+
+-- Glade Lord on Great Stag
+
+#newmonster 4182
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord_Stag.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord_Stag2.tga"
+#name "Glade Lord on Great Stag"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. The most virtuous Glade Lords, those destined to defend their home against the greatest threats, ride into battle atop a sacred Great Stag of Athel Loren. No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Should the Glade Lord fall in battle the Great Stag will fight on for a time before returning to the innermost glades of Athel Loren.
+
+[Gain glamour, recuperation, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#hp 24 -- elf, W3, +4 for great stag
+#size 5
+#att 15
+#def 15
+#prec 15
+#str 10
+#prec 16
+#mr 16 -- tier 3 leader, elf, +1 for great stag
+#mor 15 -- LD10
+#enc 3
+#armor 12 -- scale mail hauberk
+#armor 118 -- half helmet
+#armor 3 -- kite shield
+#weapon 1141 -- asrai long bow
+#weapon 1154 -- lance of spite
+#weapon 1164 -- stag's antler
+#weapon 1163 -- stag's hoof
+#gcost 0
+#rcost 6
+#mapmove 22
+#ap 24
+#ressize 2
+#mounted
+#expertleader
+#poormagicleader
+#unsurr 3 -- tier 3 combat leader
+#rpcost 2
+#forestshape 4183
+#holy
+#secondtmpshape 4184
+#end
+
+
+-- Glade Lord on Great Stag (forest)
+
+#newmonster 4183
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord_Stag.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord_Stag2.tga"
+#name "Glade Lord on Great Stag"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. The most virtuous Glade Lords, those destined to defend their home against the greatest threats, ride into battle atop a sacred Great Stag of Athel Loren. No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Should the Glade Lord fall in battle the Great Stag will fight on for a time before returning to the innermost glades of Athel Loren.
+
+[Lose glamour, recuperation, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+#hp 26 -- +2
+#size 5
+#att 15
+#def 15
+#prec 16 -- +1
+#str 11 -- +1
+#prec 16
+#mr 16
+#mor 16 -- +1
+#enc 3
+#armor 12 -- scale mail hauberk
+#armor 118 -- half helmet
+#armor 3 -- kite shield
+#weapon 1170 -- asrai long bow
+#weapon 1154 -- lance of spite
+#weapon 1164 -- stag's antler
+#weapon 1163 -- stag's hoof
+#gcost 0
+#rcost 6
+#mapmove 22
+#ap 24
+#ressize 2
+#mounted
+#expertleader
+#poormagicleader
+#unsurr 4 -- +1
+#rpcost 2
+#plainshape 4182
+#illusion -- glamour
+#holy
+#heal
+#secondtmpshape 4185
+#end
+
+
+
+---- Great Stag (saddle)
+
+#newmonster 4184
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag_Saddle.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag_Saddle2.tga"
+#name "Great Stag"
+#descr "No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Whatever the truth of their nature, it is undeniable that the Great Stags are magical creatures and of a higher cast than the capricious Unicorns. They are typically only seen at portentous times, known to offer themselves are war steeds to Asrai of particular virtue or those destined to do great deeds in defence of the forest, though of late they have revealed themselves in far greater numbers than ever before. Great Stags are sacred to the Asrai.
+
+[Will vanish at end of battle]"
+#gcost 0
+#weapon 1162 -- magic antlers with charge bonus etc
+#weapon 1161 -- magic hoof
+#forestsurvival
+#prot 6 -- T4, big
+#att 12 -- WS5
+#def 12 -- WS5
+#size 5 -- huge
+#hp 50 -- T4 W3 and big. Great boar of carnutes is 55
+#str 21 -- same as great boar of carnutes
+#mor 13
+#enc 2 -- same
+#mr 14 -- great boar of carnutes
+#animal
+#magicbeing
+#holy
+#ap 24 -- M9 in warhammer, so a fast horse
+#prec 11
+#mapmove 22 -- great boar
+#maxage 2000 -- has to be the same as the elves
+#forestshape 4185
+#maxage 5000
+#quadruped
+#cleanshape
+#xploss 100
+#end
+
+
+
+---- Great Stag (saddle) - forestshape
+
+#newmonster 4185
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag_Saddle.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Stag_Saddle2.tga"
+#name "Great Stag"
+#descr "No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Whatever the truth of their nature, it is undeniable that the Great Stags are magical creatures and of a higher cast than the capricious Unicorns. They are typically only seen at portentous times, known to offer themselves are war steeds to Asrai of particular virtue or those destined to do great deeds in defence of the forest, though of late they have revealed themselves in far greater numbers than ever before. Great Stags are sacred to the Asrai.
+
+[Lose glamour, recuperation, 1 att, 1 def, and 2 morale outside of forests]"
+#gcost 0
+#weapon 1162 -- magic antlers with charge bonus etc
+#weapon 1161 -- magic hoof
+#forestsurvival
+#prot 6 -- T4, big
+#att 13
+#def 13
+#size 5 -- huge
+#hp 50 -- T4 W3 and big. Great boar of carnutes is 55
+#str 21 -- same as great boar of carnutes
+#mor 15
+#enc 2 -- same
+#mr 14 -- great boar of carnutes
+#animal
+#magicbeing
+#holy
+#ap 24 -- M9 in warhammer, so a fast horse
+#prec 11
+#mapmove 22 -- great boar
+#maxage 2000 -- has to be the same as the elves
+#plainshape 4184
+#maxage 5000
+#quadruped
+#illusion
+#heal
+#cleanshape
+#xploss 100
+#end
+
+
+
+
+
+----- Deepwood Scout (commander)
+
+#newmonster 4175
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout2.tga"
+#name "Deepwood Scout"
+#descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
+
+[Gain glamour, +15 stealth, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#gcost 25
+#armor 5 -- leather cuirass
+#armor 121 -- leather hood
+#weapon 1141 -- asrai long bow
+#weapon 9 -- dagger
+#forestshape 4176
+#prec 13 -- +1
+#patrolbonus 1
+#stealthy 10
+#rpcost 1
+#noleader
+#end
+
+----- Deepwood Scout -- forest shape (commander)
+
+#newmonster 4176
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Deepwood_Scout2.tga"
+#name "Deepwood Scout"
+#descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
+
+[Lose glamour, 15 stealth, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+#gcost 25
+#armor 5 -- leather cuirass
+#armor 121 -- leather hood
+#weapon 1170 -- asrai long bow
+#weapon 9 -- dagger
+#illusion -- glamour
+#plainshape 4175
+#mor 13 -- +1
+#prec 14 -- +1
+#rpcost 1
+#patrolbonus 2 -- +1
+#noleader
+#stealthy 10
+#end
+
+
+
+----- Glade Captain
+
+#newmonster 4137
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Captain.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Captain2.tga"
+#name "Glade Captain"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute, but the majority of the class is made up of lesser nobles who compete for status and respect. Unlike their cousins the High Elves of Ulthuan or Dark Elves of Naggaroth, the nobility of the Asrai are better able to set aside their ambitions for the greater good of Athel Loren and their rivalries are typically expressed through friendly competition and hunts rather than damaging courtly intrigue. Many lesser nobles become Glade Captains, commanders of small contingents of troops and responsible for the first line defence of their realm and the occasional raid beyond. While they are almost all Highborn, Glade Captains keep their position through merit rather than birthright and are very well versed in tactical leadership, though only Glade Lords are permitted to lead truly large forces. As they typically lead Glade Guard they are armed in a similar manner and favour the Long Bow as their primary weapon, though they wear heavier armour.
+
+[Gain glamour, +1 precision, +1 morale, +1 strength, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#armor 7 -- scale mail cuirass
+#armor 119 -- reinforced leather cap
+#weapon 1141 -- asrai long bow
+#weapon 746 -- scimitar
+#hp 14 -- W2, T3, elf
+#att 13 -- WS4 I5, elf, but champion
+#def 13 -- WS4 I4, elf, but champion
+#str 10 -- str 3, elf, but champion
+#prec 13
+#mr 13 -- tier 1, elf
+#mor 13 -- LD8 elf
+#gcost 60
+#rcost 1
+#rpcost 1
+#goodleader
+#command -40
+#unsurr 1 -- tier 1 leader
+#forestshape 4138
+#poormagicleader
+#magiccommand -5
+#end
+
+
+----- Glade Captain (forest)
+
+#newmonster 4138
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Captain.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Captain2.tga"
+#name "Glade Captain"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute, but the majority of the class is made up of lesser nobles who compete for status and respect. Unlike their cousins the High Elves of Ulthuan or Dark Elves of Naggaroth, the nobility of the Asrai are better able to set aside their ambitions for the greater good of Athel Loren and their rivalries are typically expressed through friendly competition and hunts rather than damaging courtly intrigue. Many lesser nobles become Glade Captains, commanders of small contingents of troops and responsible for the first line defence of their realm and the occasional raid beyond. While they are almost all Highborn, Glade Captains keep their position through merit rather than birthright and are very well versed in tactical leadership, though only Glade Lords are permitted to lead truly large forces. As they typically lead Glade Guard they are armed in a similar manner and favour the Long Bow as their primary weapon, though they wear heavier armour.
+
+[Lose glamour, 1 precision, 1 morale, 1 strength, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+#armor 7 -- scale mail cuirass
+#armor 119 -- reinforced leather cap
+#weapon 1170 -- asrai long bow
+#weapon 746 -- scimitar
+#hp 14
+#att 13
+#def 13
+#str 11 -- +1
+#prec 14 -- +1
+#mr 13 -- tier 1, elf
+#mor 14 -- +1
+#gcost 60
+#rcost 1
+#rpcost 1
+#goodleader
+#command -40
+#unsurr 2 -- +1
+#plainshape 4137
+#illusion
+#poormagicleader
+#magiccommand -5
+#end
+
+
+
+-- Glade Lord
+
+#newmonster 4153
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord2.tga"
+#name "Glade Lord"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Glade Lords fight from horseback, riding the finest Elven Steeds with practiced ease, and are capable of firing even the large Asrai Long Bow from this position, though they typically prefer to engage in melee combat where they can indulge their more primal instincts.
+
+[Gain glamour, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#hp 20 -- elf, W3
+#size 3
+#att 15
+#def 15
+#prec 15
+#str 10
+#prec 16
+#mr 15 -- tier 3 leader, elf
+#mor 15 -- LD10
+#enc 4
+#armor 12 -- scale mail hauberk
+#armor 118 -- half helmet
+#armor 3 -- kite shield
+#weapon 1141 -- asrai long bow
+#weapon 1154 -- lance of spite
+#weapon 56 -- hoof
+#gcost 110
+#rcost 6
+#mapmove 28 -- incredibly swift
+#ap 30
+#ressize 2
+#mounted
+#expertleader
+#poormagicleader
+#unsurr 3 -- tier 3 combat leader
+#rpcost 2
+#forestshape 4154
+#end
+
+
+-- Glade Lord (forest)
+
+#newmonster 4154
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Glade_Lord2.tga"
+#name "Glade Lord"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Glade Lords fight from horseback, riding the finest Elven Steeds with practiced ease, and are capable of firing even the large Asrai Long Bow from this position, though they typically prefer to engage in melee combat where they can indulge their more primal instincts.
+
+[Lose glamour, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+#hp 22 -- +2
+#size 3
+#att 15
+#def 15
+#prec 16 -- +1
+#str 11 -- +1
+#prec 16
+#mr 15
+#mor 16 -- +1
+#enc 4
+#armor 12 -- scale mail hauberk
+#armor 118 -- half helmet
+#armor 3 -- kite shield
+#weapon 1170 -- asrai long bow
+#weapon 1154 -- lance of spite
+#weapon 56 -- hoof
+#gcost 110
+#rcost 6
+#mapmove 28 -- incredibly swift
+#ap 30
+#ressize 2
+#mounted
+#expertleader
+#poormagicleader
+#unsurr 4 -- +1
+#rpcost 2
+#plainshape 4153
+#illusion -- glamour
+#end
+
+
+
+-- Treeman (Recruit)
+
+#newmonster 4197
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman_Recruit.tga"
+#name "Treeman"
+#descr "The most powerful of Athel Loren's spirits entwine their essence with that of a living tree, moulding it to their will. This is a not a decision made lightly, for the bond is permanent and by tethering themselves to a physical form these great spirits risk much, including the previously alien concept of death. Treemen are revered by the Asrai and other inhabitants of the forest alike and these great sentinels of Athel Loren are typically home to a great many lesser spirits that will lend them strength should they be threatened. For their part the Treemen cherish the lives of lesser creatures and boast a warmth of character totally unlike that of the spiteful Dryads. They can be counted amongst the mightiest of Athel Loren's denizens, able to wield magic of nature and earth and possessing incredible physical prowess and resilience. Treemen do not fight with grace but instead rely on sheer ferocity and their great strength to smash threats to their forest realm or tear them apart with whipping tendrils as strong as steel.
+
+[Gain glamour, recuperation, +3 strength, +1 magic resistance, +10 hp, +2 protection, and +1 unsurroundable in forests]
+[This commander uses a smaller sprite on the recruitment screen for ease of use.]"
+#size 6
+#enc 1
+#prot 15
+#hp 80
+#weapon 1169 -- vinelash
+#weapon 1169 -- vinelash
+#weapon 1149 -- oaken fist
+#weapon 1168 -- giant stomp
+#gcost 300
+#rpcost 4
+#rcost 1
+#mapmove 22
+#ap 18
+#att 13
+#def 12
+#str 22
+#mor 18
+#mr 17
+#fireres -5
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 4500
+#maxage 9000
+#firstshape 4192
+#magicskill 6 2 -- N2
+#magicskill 3 1 -- E1
+#magicskill 8 2 -- H2
+#holy
+#unsurr 2 -- they are fighters after all
+#goodmagicleader
+#poorleader
+#fear 5
+#itemslots 274560 -- 2 misc plus crown
+#end
+
+
+
+
+-- Treeman
+
+#newmonster 4192
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman2.tga"
+#name "Treeman"
+#descr "The most powerful of Athel Loren's spirits entwine their essence with that of a living tree, moulding it to their will. This is a not a decision made lightly, for the bond is permanent and by tethering themselves to a physical form these great spirits risk much, including the previously alien concept of death. Treemen are revered by the Asrai and other inhabitants of the forest alike and these great sentinels of Athel Loren are typically home to a great many lesser spirits that will lend them strength should they be threatened. For their part the Treemen cherish the lives of lesser creatures and boast a warmth of character totally unlike that of the spiteful Dryads. They can be counted amongst the mightiest of Athel Loren's denizens, able to wield magic of nature and earth and possessing incredible physical prowess and resilience. Treemen do not fight with grace but instead rely on sheer ferocity and their great strength to smash threats to their forest realm or tear them apart with whipping tendrils as strong as steel.
+
+[Gain glamour, recuperation, +3 strength, +1 magic resistance, +10 hp, +2 protection, and +1 unsurroundable in forests]"
+#size 6
+#enc 1
+#prot 15
+#hp 80
+#weapon 1169 -- vinelash
+#weapon 1169 -- vinelash
+#weapon 1149 -- oaken fist
+#weapon 1168 -- giant stomp
+#gcost 300
+#rpcost 4
+#rcost 1
+#mapmove 22
+#ap 18
+#att 13
+#def 12
+#str 22
+#mor 18
+#mr 17
+#fireres -5
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 4500
+#maxage 9000
+#forestshape 4193
+#magicskill 6 2 -- N2
+#magicskill 3 1 -- E1
+#magicskill 8 2 -- H2
+#holy
+#unsurr 2 -- they are fighters after all
+#goodmagicleader
+#poorleader
+#fear 5
+#itemslots 274560 -- 2 misc plus crown
+#end
+
+
+-- Treeman (forest shape)
+
+#newmonster 4193
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman2.tga"
+#name "Treeman"
+#descr "The most powerful of Athel Loren's spirits entwine their essence with that of a living tree, moulding it to their will. This is a not a decision made lightly, for the bond is permanent and by tethering themselves to a physical form these great spirits risk much, including the previously alien concept of death. Treemen are revered by the Asrai and other inhabitants of the forest alike and these great sentinels of Athel Loren are typically home to a great many lesser spirits that will lend them strength should they be threatened. For their part the Treemen cherish the lives of lesser creatures and boast a warmth of character totally unlike that of the spiteful Dryads. They can be counted amongst the mightiest of Athel Loren's denizens, able to wield magic of nature and earth and possessing incredible physical prowess and resilience. Treemen do not fight with grace but instead rely on sheer ferocity and their great strength to smash threats to their forest realm or tear them apart with whipping tendrils as strong as steel.
+
+[Lose glamour, recuperation, 3 strength, 1 magic resistance, 10 hp, 2 protection, and 1 unsurroundable outside forests]"
+#size 6
+#enc 1
+#prot 17
+#hp 90
+#weapon 1169 -- vinelash
+#weapon 1169 -- vinelash
+#weapon 1149 -- oaken fist
+#weapon 1168 -- giant stomp
+#gcost 300
+#rpcost 4
+#rcost 1
+#mapmove 22
+#ap 18
+#att 13
+#def 12
+#str 25
+#mor 18
+#mr 18
+#fireres -5
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 4500
+#maxage 9000
+#plainshape 4192
+#magicskill 6 2 -- N2
+#magicskill 3 1 -- E1
+#magicskill 8 2 -- H2
+#holy
+#unsurr 3 -- they are fighters after all
+#goodmagicleader
+#poorleader
+#fear 5
+#illusion
+#heal
+#itemslots 274560 -- 2 misc plus crown
+#end
+
+
+
+
+-- Treeman Ancient (recruitment graphic)
+
+#newmonster 4196
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman_Ancient_Recruit.tga"
+#name "Treeman Ancient"
+#descr "The oldest, wisest, and most revered generation of Treemen are known as the Ancients, and only Orion, Ariel, and the two remaining Elder Treemen stand above them in the hierarchy of Athel Loren. Ancients are prone to slumber in a dormant state for decades at a time and even when at their most energetic are not nearly so active as their younger fellows, though their magical knowledge and power is considerable and they still boast impressive physical might and resilience. It is only in recent years that many Ancients have awoken and begun to act at the same time, surely signalling that an era of great import has dawned for Athel Loren. While Treemen do not make use of weapons and instead rely on their crushing fists or lashing vines, Ancients typically carry a great staff of enchanted birch and have been known to use other magical items as the moment requires.
+
+[Gain glamour, recuperation, +3 strength, +1 magic resistance, +15 hp, +2 protection in forests]
+[This commander uses a smaller sprite on the recruitment screen for ease of use.]"
+#size 6
+#enc 2
+#prot 13 -- less prot
+#hp 85 -- slightly bigger
+#weapon 238 -- magic staff
+#weapon 1168 -- giant stomp
+#gcost 450
+#rpcost 6
+#rcost 1
+#mapmove 16 -- significantly slower
+#ap 14
+#att 10
+#def 10
+#str 20
+#mor 18
+#mr 18
+#fireres -5
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 7000
+#maxage 9000
+#firstshape 4194
+#magicskill 6 3 -- N3
+#magicskill 3 2 -- E2
+#magicskill 2 1 -- W2
+#magicskill 8 3 -- H3
+#holy
+#goodmagicleader
+#okleader
+#fear 5
+#itemslots 274566 -- 2 misc plus crown, plus 2 hands
+#end
+
+
+
+
+-- Treeman Ancient
+
+#newmonster 4194
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman_Ancient.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman_Ancient2.tga"
+#name "Treeman Ancient"
+#descr "The oldest, wisest, and most revered generation of Treemen are known as the Ancients, and only Orion, Ariel, and the two remaining Elder Treemen stand above them in the hierarchy of Athel Loren. Ancients are prone to slumber in a dormant state for decades at a time and even when at their most energetic are not nearly so active as their younger fellows, though their magical knowledge and power is considerable and they still boast impressive physical might and resilience. It is only in recent years that many Ancients have awoken and begun to act at the same time, surely signalling that an era of great import has dawned for Athel Loren. While Treemen do not make use of weapons and instead rely on their crushing fists or lashing vines, Ancients typically carry a great staff of enchanted birch and have been known to use other magical items as the moment requires.
+
+[Gain glamour, recuperation, +3 strength, +1 magic resistance, +15 hp, +2 protection in forests]"
+#size 6
+#enc 2
+#prot 13 -- less prot
+#hp 85 -- slightly bigger
+#weapon 238 -- magic staff
+#weapon 1168 -- giant stomp
+#gcost 450
+#rpcost 6
+#rcost 1
+#mapmove 16 -- significantly slower
+#ap 14
+#att 10
+#def 10
+#str 20
+#mor 18
+#mr 18
+#fireres -5
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 7000
+#maxage 9000
+#forestshape 4195
+#magicskill 6 3 -- N3
+#magicskill 3 2 -- E2
+#magicskill 2 1 -- W2
+#magicskill 8 3 -- H3
+#holy
+#goodmagicleader
+#okleader
+#fear 5
+#itemslots 274566 -- 2 misc plus crown, plus 2 hands
+#end
+
+
+
+-- Treeman Ancient (forest shape)
+
+#newmonster 4195
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman_Ancient.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Treeman_Ancient2.tga"
+#name "Treeman Ancient"
+#descr "The oldest, wisest, and most revered generation of Treemen are known as the Ancients, and only Orion, Ariel, and the two remaining Elder Treemen stand above them in the hierarchy of Athel Loren. Ancients are prone to slumber in a dormant state for decades at a time and even when at their most energetic are not nearly so active as their younger fellows, though their magical knowledge and power is considerable and they still boast impressive physical might and resilience. It is only in recent years that many Ancients have awoken and begun to act at the same time, surely signalling that an era of great import has dawned for Athel Loren. While Treemen do not make use of weapons and instead rely on their crushing fists or lashing vines, Ancients typically carry a great staff of enchanted birch and have been known to use other magical items as the moment requires.
+
+[Lose glamour, recuperation, 3 strength, 1 magic resistance, 15 hp, and 2 protection outside forests]"
+#size 6
+#enc 2
+#prot 15
+#hp 100
+#weapon 238 -- magic staff
+#weapon 1168 -- giant stomp
+#gcost 450
+#rpcost 4
+#rcost 1
+#mapmove 22
+#ap 18
+#att 10
+#def 10
+#str 23
+#mor 18
+#mr 19
+#fireres -5
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 7000
+#maxage 9000
+#plainshape 4194
+#magicskill 6 3 -- N3
+#magicskill 3 2 -- E2
+#magicskill 2 1 -- W2
+#magicskill 8 3 -- H3
+#holy
+#goodmagicleader
+#okleader
+#fear 5
+#illusion
+#heal
+#itemslots 274566 -- 2 misc plus crown, plus 2 hands
+#end
+
+
+
+
+
+-- Dryad Branchwraith
+
+#newmonster 4165
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Branchwraith.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Branchwraith2.tga"
+#name "Dryad Branchwraith"
+#descr "Branchwraiths are the oldest and deadliest of the Dryads, beings that have served as the handmaidens of the Ancients of Athel Loren since the forest was young. Their dedication to the Ancients and Treemen borders on the fanatical and they greatly resent the coming of the Elves, who they see as usurpers and trespassers they are barely able to tolerate. Adanhu, oldest and wisest of the Treemen, was the first to welcome the Elves to Athel Loren and though they have passed from this world their legacy is continued by Durthu, mightiest protector of the forest. The Branchwraiths would never go against the will of the Ancients and so they fight alongside the Elves, though the Asrai know they can never fully trust the malevolent forest spirits. Branchwraiths do not change with the seasons as their lesser siblings do, instead maintaining a spiteful form year round, their energy and hatred radiating out from gnarled and twisted wood.
+
+[Gain glamour, recuperation, +1 morale, +1 strength, +1 magic resistance, +3 hp, +1 protection, and +1 unsurroundable in forests]"
+#size 2
+#enc 1
+#prot 9
+#hp 25
+#weapon 29 -- claw
+#weapon 29 -- claw
+#gcost 160
+#rpcost 2
+#rcost 1
+#mapmove 18 -- same as a satyr
+#ap 14 -- same as a satyr/wood elf
+#att 14 -- +1 for hatred
+#def 13
+#str 15
+#mor 15
+#mr 15
+#fireres -3
+#poisonres 15 -- same as vine man
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 2500
+#maxage 4000
+#forestshape 4166
+#domrec 1
+#magicskill 6 2 -- N2
+#magicskill 5 1 -- D1
+#holy
+#unsurr 1
+#female
+#okmagicleader
+#poorleader
+#end
+
+
+-- Dryad Branchwraith
+
+#newmonster 4166
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Branchwraith.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Branchwraith2.tga"
+#name "Dryad Branchwraith"
+#descr "Branchwraiths are the oldest and deadliest of the Dryads, beings that have served as the handmaidens of the Ancients of Athel Loren since the forest was young. Their dedication to the Ancients and Treemen borders on the fanatical and they greatly resent the coming of the Elves, who they see as usurpers and trespassers they are barely able to tolerate. Adanhu, oldest and wisest of the Treemen, was the first to welcome the Elves to Athel Loren and though they have passed from this world their legacy is continued by Durthu, mightiest protector of the forest. The Branchwraiths would never go against the will of the Ancients and so they fight alongside the Elves, though the Asrai know they can never fully trust the malevolent forest spirits. Branchwraiths do not change with the seasons as their lesser siblings do, instead maintaining a spiteful form year round, their energy and hatred radiating out from gnarled and twisted wood.
+
+[Lose glamour, recuperation, 1 morale, 1 strength, 1 magic resistance, 3 hp, 1 protection, and 1 unsurroundable outside forests]"
+#size 2
+#enc 1
+#prot 10 -- +1
+#hp 28 -- +3
+#weapon 29 -- claw
+#weapon 29 -- claw
+#gcost 160
+#rpcost 2
+#rcost 1
+#mapmove 18
+#ap 14
+#att 14
+#def 13
+#str 16 -- +1
+#mor 16 -- +1
+#mr 16 -- +1
+#fireres -3
+#poisonres 15
+#coldres 5
+#bluntres
+#pierceres
+#magicbeing
+#forestsurvival
+#spiritsight
+#plant
+#neednoteat
+#startage 2500
+#maxage 4000
+#plainshape 4165
+#domrec 1
+#magicskill 6 2 -- N2
+#magicskill 5 1 -- D1
+#holy
+#heal
+#illusion
+#unsurr 2 -- +1
+#female
+#okmagicleader
+#poorleader
+#end
+
+
+
+----- Shadowdancer of Loec
+
+#newmonster 4157
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Shadowdancer.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Shadowdancer2.tga"
+#name "Shadowdancer of Loec"
+#descr "Shadowdancers are the spiritual and martial leaders of the sects of Wood Elves known as Wardancers. Devoted servants of the trickster god Loec, the Shadowdancers bear the responsibility of carrying the oral history of their people and are expected to be able to tell every tale that makes of the chronicle of the children of Athel Loren, as well as perform the complex dances which draw those outside the Wardancer troupe into true rememberance of the past. The burden of such a vast and nuanced corpus is such that Shadowdancers are known to have entirely given up their own personality and even identity, wearing a gilded wooden mask of Loec at all times. They are known to be even more skilled in combat than the Wardancers that follow them and have mastered a fighting style involving the use of two long Asrai spears, a combination that should be unwieldy but in their hands creates a near perfect fusion of offence and defence. As master storytellers and performers of Loec's rites Shadowdancers have some talent in the magic of shadow and illusion but perhaps their greatest power is their ability to call the blessings of Loec down on their troupe, activating their tattoos to enchance their abilities and protect them from harm.
+
+[Gain glamour, +2 hp, +1 morale, +1 strength, and +1 unsurroundable in forests. Automatically casts Awaken Tattoos on battle start]"
+#armor 187 -- magical wooden mask
+#weapon 1140 -- asrai spear
+#weapon 1140 -- asrai spear
+#hp 14 -- W2, T3, elf
+#att 16
+#def 17
+#str 11 -- str 4, elf
+#prec 13
+#mr 16 -- tier 2, elf, mage
+#mor 16
+#gcost 110
+#rcost 1
+#rpcost 2 -- mage
+#goodleader
+#command -70 -- only allowed very few troops
+#unsurr 2 -- tier 2 leader
+#magicskill 1 1 -- air 1
+#magicskill 5 1 -- death 1
+#ambidextrous 6
+#airshield 40
+#beartattoo 1 -- +1 strength per point
+#horsetattoo 1 -- +1 def and +2 speed per point
+#wolftattoo 1 -- +1 attack skill per point
+#boartattoo 1 -- invuln increase?
+#snaketattoo 1 -- magic res +1 per point
+#forestshape 4158
+#onebattlespell 205 -- awaken tattoos
+#end
+
+
+----- Shadowdancer of Loec
+
+#newmonster 4158
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Shadowdancer.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Shadowdancer2.tga"
+#name "Shadowdancer of Loec"
+#descr "Shadowdancers are the spiritual and martial leaders of the sects of Wood Elves known as Wardancers. Devoted servants of the trickster god Loec, the Shadowdancers bear the responsibility of carrying the oral history of their people and are expected to be able to tell every tale that makes of the chronicle of the children of Athel Loren, as well as perform the complex dances which draw those outside the Wardancer troupe into true rememberance of the past. The burden of such a vast and nuanced corpus is such that Shadowdancers are known to have entirely given up their own personality and even identity, wearing a gilded wooden mask of Loec at all times. They are known to be even more skilled in combat than the Wardancers that follow them and have mastered a fighting style involving the use of two long Asrai spears, a combination that should be unwieldy but in their hands creates a near perfect fusion of offence and defence. As master storytellers and performers of Loec's rites Shadowdancers have some talent in the magic of shadow and illusion but perhaps their greatest power is their ability to call the blessings of Loec down on their troupe, activating their tattoos to enchance their abilities and protect them from harm.
+
+[Loses glamour, 2 hp, 1 morale, 1 strength, and 1 unsurroundable outside forests. Automatically casts Awaken Tattoos on battle start]"
+#armor 187 -- magical wooden mask
+#weapon 1140 -- asrai spear
+#weapon 1140 -- asrai spear
+#hp 16 -- +2
+#att 16
+#def 17
+#str 12 -- +1
+#prec 13
+#mr 16 -- tier 2, elf, mage
+#mor 17 -- +1
+#gcost 110
+#rcost 1
+#rpcost 2 -- mage
+#goodleader
+#command -70 -- only allowed very few troops
+#unsurr 3 -- +1
+#magicskill 1 1 -- air 1
+#magicskill 5 1 -- death 1
+#ambidextrous 6
+#airshield 40
+#beartattoo 1 -- +1 strength per point
+#horsetattoo 1 -- +1 def and +2 speed per point
+#wolftattoo 1 -- +1 attack skill per point
+#boartattoo 1 -- invuln increase?
+#snaketattoo 1 -- magic res +1 per point
+#plainshape 4157
+#illusion
+#onebattlespell 205 -- awaken tattoos
+#end
+
+
+----- Waystalker
+
+#newmonster 4167
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waystalker.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waystalker2.tga"
+#name "Waystalker"
+#descr "Waystalkers are elite amongst the elite, former Waywatchers who have become attuned with the forest on an even deeper level and sharpened their skills to the point they can perform feats of archery, tracking, and ambush that can only be described as supernatural. While all Wood Elves seek harmony with their home forest of Athel Loren, Waystalkers are truly part of the forest, deadly predators feared even by lesser forest spirits for bringing swift judgement. Waystalkers are nearly impossible to locate if in a forest and capable of isolating and assassinating enemy commanders, often taking some part of their body to place on a warning totem to others who would trespass against Athel Loren and her children. Like the Waywatchers under their command Waystalkers camouflage themselves with foliage, but they also protect themselves with elaborate armour fashioned from the bones of some unfamiliar creature and inscribed with strange symbols. Waystalkers are known to dominate Spites, vicious minor forest spirits, through sheer willpower and force them to inhabit and enhance their bows, transforming them into magical weapons of destruction. 
+
+[Gain glamour, +2 hp, +1 strength, +1 morale, +1 precision, +5 patrolbonus, and the assassin ability in forests. Spite Infused Bows will never harm friendlies.]"
+#gcost 160
+#armor 149 -- bone cuirass
+#armor 150 -- bone helmet
+#weapon 6 -- short sword
+#weapon 9 -- dagger
+#weapon 1158 -- Spite infused Bow
+#forestshape 4168
+#rpcost 2
+#hp 15
+#str 11
+#prec 16
+#att 14
+#def 14
+#mountainsurvival
+#stealthy 70 -- spy +10
+#mor 15
+#patrolbonus 10
+#unsurr 2 -- tier 2 combat commander
+#mr 14 -- tier 2
+#goodleader
+#command -70 -- 10 left
+#end
+
+
+----- Waystalker (forest)
+
+#newmonster 4168
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waystalker.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waystalker2.tga"
+#name "Waystalker"
+#descr "Waystalkers are elite amongst the elite, former Waywatchers who have become attuned with the forest on an even deeper level and sharpened their skills to the point they can perform feats of archery, tracking, and ambush that can only be described as supernatural. While all Wood Elves seek harmony with their home forest of Athel Loren, Waystalkers are truly part of the forest, deadly predators feared even by lesser forest spirits for bringing swift judgement. Waystalkers are nearly impossible to locate if in a forest and capable of isolating and assassinating enemy commanders, often taking some part of their body to place on a warning totem to others who would trespass against Athel Loren and her children. Like the Waywatchers under their command Waystalkers camouflage themselves with foliage, but they also protect themselves with elaborate armour fashioned from the bones of some unfamiliar creature and inscribed with strange symbols. Waystalkers are known to dominate Spites, vicious minor forest spirits, through sheer willpower and force them to inhabit and enhance their bows, transforming them into magical weapons of destruction. 
+
+[Lose glamour, 2 hp, 1 strength, 1 morale, 1 precision, 5 patrolbonus, and the assassin ability outside forests. Spite Infused Bows will never harm friendlies.]"
+#gcost 160
+#armor 149 -- bone cuirass
+#armor 150 -- bone helmet
+#weapon 6 -- short sword
+#weapon 9 -- dagger
+#weapon 1158 -- Spite infused Bow
+#forestshape 4168
+#rpcost 2
+#hp 17
+#str 12
+#prec 17
+#att 14
+#def 14
+#mountainsurvival
+#stealthy 70 -- spy +10
+#mor 16
+#patrolbonus 15
+#unsurr 2 -- tier 2 combat commander
+#mr 14 -- tier 2
+#goodleader
+#command -70 -- 10 left
+#illusion
+#assassin
+#patience 3
+#end
+
+
+
+
+----- Spellsinger
+
+#newmonster 4163
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Spellsinger.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Spellsinger2.tga"
+#name "Spellsinger"
+#descr "As with all elves, the Asrai have a natural aptitude for magic, but their approach to its use differs greatly from both the rigidly schooled Mages of Ulthuan or the reckless Sorceresses of Naggaroth. While the High Elves reject the risks associated with Dark Magic and the Dark Elves embrace its promise of unfettered power, the Spellsingers of the Wood Elves instead seek to find a point of balance centered on their unique relationship with their forest home. By communing with the sprawling joint intelligence of Athel Loren and strengthening their bond with it, they are able to cast spells of nature, earth, air, and water without straying into the rigidity of High Magic or sadistic danger of Dark Magic. Their relationship with the forest manifests in a constant flow of energy which leaves them looking almost like Fey beings themselves, floating above the ground with their hair glowing and waving in the unseen Winds of Magic. Spellsingers are the most common magic users amongst the Asrai and perform most of the duties beneath the more powerful Spellweavers. Spellsingers are able to lend their voice to a chorus, a communion which can lend the power to an individual voice to weave more potent spells, but the forest does not permit them to lead them.
+
+[Gain glamour, +1 precision, +1 morale, and +1 magic resistance in forests]"
+#gcost 15
+#weapon 9 -- dagger
+#mr 16
+#gcost 180
+#rcost 1
+#rpcost 2
+#poorleader
+#poormagicleader
+#forestshape 4164
+#holy
+#magicskill 8 1
+#magicskill 6 1 -- N1
+#custommagic 9984 100 -- AWEN
+#custommagic 8704 100 -- WN
+#custommagic 1280 100 -- AE
+#spellsinger
+#female
+#float
+#end
+
+
+----- Spellsinger (Forest)
+
+#newmonster 4164
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Spellsinger.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Spellsinger2.tga"
+#name "Spellsinger"
+#descr "As with all elves, the Asrai have a natural aptitude for magic, but their approach to its use differs greatly from both the rigidly schooled Mages of Ulthuan or the reckless Sorceresses of Naggaroth. While the High Elves reject the risks associated with Dark Magic and the Dark Elves embrace its promise of unfettered power, the Spellsingers of the Wood Elves instead seek to find a point of balance centered on their unique relationship with their forest home. By communing with the sprawling joint intelligence of Athel Loren and strengthening their bond with it, they are able to cast spells of nature, earth, air, and water without straying into the rigidity of High Magic or sadistic danger of Dark Magic. Their relationship with the forest manifests in a constant flow of energy which leaves them looking almost like Fey beings themselves, floating above the ground with their hair glowing and waving in the unseen Winds of Magic. Spellsingers are the most common magic users amongst the Asrai and perform most of the duties beneath the more powerful Spellweavers. Spellsingers are able to lend their voice to a chorus, a communion which can lend the power to an individual voice to weave more potent spells, but the forest does not permit them to lead them.
+
+[Lose glamour, 1 precision, 1 morale, and 1 magic resistance outside forests]"
+#weapon 9 -- dagger
+#mr 17 -- +1
+#gcost 180
+#rcost 1
+#rpcost 2
+#prec 13 -- +1
+#mor 13 -- +1
+#poorleader
+#poormagicleader
+#plainshape 4163
+#holy
+#magicskill 8 1
+#magicskill 6 1 -- N1
+#custommagic 9984 100 -- AWEN
+#custommagic 8704 100 -- WN
+#custommagic 1280 100 -- AE
+#spellsinger
+#female
+#float
+#illusion
+#end
+
+
+
+
+------ Highweaver
+
+
+#newmonster 4171
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Highweaver.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Highweaver2.tga"
+#name "Highweaver"
+#descr "As with all elves, the Asrai have a natural aptitude for magic, but their approach to its use differs greatly from both the rigidly schooled Mages of Ulthuan or the reckless Sorceresses of Naggaroth. While the High Elves reject the risks associated with Dark Magic and the Dark Elves embrace its promise of unfettered power, the Spellsingers of the Wood Elves instead seek to find a point of balance centered on their unique relationship with their forest home. The most powerful Spellsingers are known as Spellweavers and invariably have specialised in the use of either Dark or High magic, leading the Spellsingers in chorus to construct elaborate magical songs. Traditionally the Spellsingers maintain a balance of Highweavers and Darkweavers an encourage them to act in pairs, as each is able to complement or reign in their opposite as the situation demands. Highweavers make use of High Magic, though they reject its tendency to scour and destroy its counterpart, preferring instead to utilise it in a more subtle manner.
+
+[Gain glamour, +1 precision, +1 morale, and +1 magic resistance in forests]"
+#weapon 7 -- quarterstaff
+#mr 17
+#gcost 300
+#rcost 1
+#rpcost 4
+#poorleader
+#poormagicleader
+#forestshape 4172
+#holy
+#magicskill 8 2 -- +1
+#magicskill 6 2 -- +1
+#magicskill 4 2 -- S2
+#custommagic 9984 100 -- AWEN
+#custommagic 8704 100 -- WN
+#custommagic 1280 100 -- AE
+#spellsinger
+#female
+#float
+#end
+
+
+----- Highweaver
+
+#newmonster 4172
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Highweaver.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Highweaver2.tga"
+#name "Highweaver"
+#descr "As with all elves, the Asrai have a natural aptitude for magic, but their approach to its use differs greatly from both the rigidly schooled Mages of Ulthuan or the reckless Sorceresses of Naggaroth. While the High Elves reject the risks associated with Dark Magic and the Dark Elves embrace its promise of unfettered power, the Spellsingers of the Wood Elves instead seek to find a point of balance centered on their unique relationship with their forest home. The most powerful Spellsingers are known as Spellweavers and invariably have specialised in the use of either Dark or High magic, leading the Spellsingers in chorus to construct elaborate magical songs. Traditionally the Spellsingers maintain a balance of Highweavers and Darkweavers an encourage them to act in pairs, as each is able to complement or reign in their opposite as the situation demands. Highweavers make use of High Magic, though they reject its tendency to scour and destroy its counterpart, preferring instead to utilise it in a more subtle manner.
+
+[Lose glamour, 1 precision, 1 morale, and 1 magic resistance outside forests]"
+#weapon 7 -- quarterstaff
+#mr 18
+#gcost 300
+#rcost 1
+#rpcost 4
+#prec 13 -- +1
+#mor 13 -- +1
+#poorleader
+#poormagicleader
+#plainshape 4171
+#holy
+#magicskill 8 2 -- +1
+#magicskill 6 2 -- +1
+#magicskill 4 2 -- S2
+#custommagic 9984 100 -- AWEN
+#custommagic 8704 100 -- WN
+#custommagic 1280 100 -- AE
+#spellsinger
+#female
+#float
+#illusion
+#end
+
+----- Darkweaver
+
+#newmonster 4169
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Darkweaver.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Darkweaver2.tga"
+#name "Darkweaver"
+#descr "As with all elves, the Asrai have a natural aptitude for magic, but their approach to its use differs greatly from both the rigidly schooled Mages of Ulthuan or the reckless Sorceresses of Naggaroth. While the High Elves reject the risks associated with Dark Magic and the Dark Elves embrace its promise of unfettered power, the Spellsingers of the Wood Elves instead seek to find a point of balance centered on their unique relationship with their forest home. The most powerful Spellsingers are known as Spellweavers and invariably have specialised in the use of either Dark or High magic, leading the Spellsingers in chorus to construct elaborate magical songs. Traditionally the Spellsingers maintain a balance of Highweavers and Darkweavers an encourage them to act in pairs, as each is able to complement or reign in their opposite as the situation demands. Darkweavers make use of Dark Magic but reject its most destructive and unnatural aspects, though they are no less powerful for this.
+
+[Gain glamour, +1 precision, +1 morale, and +1 magic resistance in forests]"
+#weapon 7 -- quarterstaff
+#mr 17
+#gcost 300
+#rcost 1
+#rpcost 4
+#poorleader
+#poormagicleader
+#forestshape 4170
+#holy
+#magicskill 8 2 -- +1
+#magicskill 6 2 -- +1
+#magicskill 5 2 -- D2
+#custommagic 9984 100 -- AWEN
+#custommagic 8704 100 -- WN
+#custommagic 1280 100 -- AE
+#spellsinger
+#female
+#float
+#end
+
+
+----- Darkweaver
+
+#newmonster 4170
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Darkweaver.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Darkweaver2.tga"
+#name "Darkweaver"
+#descr "As with all elves, the Asrai have a natural aptitude for magic, but their approach to its use differs greatly from both the rigidly schooled Mages of Ulthuan or the reckless Sorceresses of Naggaroth. While the High Elves reject the risks associated with Dark Magic and the Dark Elves embrace its promise of unfettered power, the Spellsingers of the Wood Elves instead seek to find a point of balance centered on their unique relationship with their forest home. The most powerful Spellsingers are known as Spellweavers and invariably have specialised in the use of either Dark or High magic, leading the Spellsingers in chorus to construct elaborate magical songs. Traditionally the Spellsingers maintain a balance of Highweavers and Darkweavers an encourage them to act in pairs, as each is able to complement or reign in their opposite as the situation demands. Darkweavers make use of Dark Magic but reject its most destructive and unnatural aspects, though they are no less powerful for this.
+
+[Lose glamour, 1 precision, 1 morale, and 1 magic resistance outside forests]"
+#weapon 7 -- quarterstaff
+#mr 18
+#gcost 300
+#rcost 1
+#rpcost 4
+#prec 13 -- +1
+#mor 13 -- +1
+#poorleader
+#poormagicleader
+#plainshape 4169
+#holy
+#magicskill 8 2 -- +1
+#magicskill 6 2 -- +1
+#magicskill 5 2 -- D2
+#custommagic 9984 100 -- AWEN
+#custommagic 8704 100 -- WN
+#custommagic 1280 100 -- AE
+#spellsinger
+#female
+#float
+#illusion
+#end
+
+
+
+------------ HEROES
+
+
+----- Glade Lord on a Great Eagle multihero
+
+#newmonster 4198
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Eagle_Lord.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Eagle_Lord2.tga"
+#name "Glade Lord on Great Eagle"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Some Glade Lords have forged bonds of friendship and alliance with the Great Eagles of the Grey Mountains and fly into battle on the back of one of these noble creatures. Great Eagles are more intelligent and noble in character than the Warhawks of the lower slopes but possess a great hatred of the evils that beset Athel Loren and are a deadly presence on the battlefield. Should the Glade Lord fall in battle the Great Eagle will fight to avenge him before returning to the mountains at the end of the battle.
+
+[Gain glamour, recuperation, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+#nametype 172 -- Elven names
+#size 6 -- vanilla
+#hp 26 -- riders profile +6
+#att 15
+#def 15
+#str 10
+#prec 16
+#enc 4
+#mr 16 -- tier 3 leader, elf, +1 for great eagle
+#mor 15
+#mapmove 40
+#ap 15 -- same as elves
+#armor 12 -- scale mail hauberk
+#armor 118 -- half helmet
+#armor 3 -- kite shield
+#weapon 1141 -- asrai long bow
+#weapon 1154 -- lance of spite
+#weapon 1007 -- Great Eagle -- borrowed from high elves
+#gcost 0 -- hero
+#rpcost 0
+#rcost 0
+#flying
+#mountainsurvival
+#forestsurvival
+#mounted
+#siegebonus 10
+#patrolbonus 10
+#expertleader
+#poormagicleader
+#unsurr 3 -- tier 3 combat leader
+#latehero 6 -- can't appear before turn 6
+#secondtmpshape 4311 -- great eagle
+#forestshape 4310
+#end
+
+
+----- Glade Lord on a Great Eagle multihero (forest shape)
+
+#newmonster 4310
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Eagle_Lord.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Eagle_Lord2.tga"
+#name "Glade Lord on Great Eagle"
+#descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Some Glade Lords have forged bonds of friendship and alliance with the Great Eagles of the Grey Mountains and fly into battle on the back of one of these noble creatures. Great Eagles are more intelligent and noble in character than the Warhawks of the lower slopes but possess a great hatred of the evils that beset Athel Loren and are a deadly presence on the battlefield. Should the Glade Lord fall in battle the Great Eagle will fight to avenge him before returning to the mountains at the end of the battle.
+
+[Lose glamour, recuperation, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow can harm friendlies outside forests.]"
+#nametype 172 -- Elven names
+#size 6
+#hp 28 -- +2
+#att 15
+#def 15
+#str 11 -- +1
+#prec 17 -- +1
+#enc 4
+#mr 16 -- tier 3 leader, elf, +1 for great eagle
+#mor 16 -- +1
+#mapmove 40
+#ap 15 -- same as elves
+#armor 12 -- scale mail hauberk
+#armor 118 -- half helmet
+#armor 3 -- kite shield
+#weapon 1170 -- asrai long bow
+#weapon 1154 -- lance of spite
+#weapon 1007 -- Great Eagle -- borrowed from high elves
+#gcost 0 -- hero
+#rpcost 0
+#rcost 0
+#flying
+#mountainsurvival
+#forestsurvival
+#mounted
+#siegebonus 10
+#patrolbonus 10
+#expertleader
+#poormagicleader
+#unsurr 4 -- +1
+#heal
+#illusion
+#latehero 6 -- can't appear before turn 6
+#secondtmpshape 4311 -- great eagle
+#plainshape 4198
+#end
+
+
+
+-- Great Eagle of Athel Loren
+
+#newmonster 4311
+#copystats 1381 -- Base game great eagle
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Eagle.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Great_Eagle2.tga"
+#name "Great Eagle of Athel Loren"
+#descr "Elvenkind has a long and close history with the Great Eagles of the world and in times past a formal alliance was struck between the Great Eagles of Ulthuan and her people. The Elves of Athel Loren hold no such treaty but have established close relations with the Great Eagles that inhabit the bordering Grey Mountains and share their hatred of evil intruders to either realm and so can often be found cooperating in battle. Great Eagles are similar to the Warhawks that nest on the lower slopes but are far larger, more intelligent, and of a nobler character. On rare occasion a Glade Lord will form such a bond with a Great Eagle that the two forevermore fight as a pair, the Great Eagle carrying the Asrai warrior to battle on its back. In battle Great Eagles are not so durable as other flying beasts like Griffons or Dragons, but are incredibly swift and capable of striking the rear ranks of an enemy force with great precision and to devastating effect.
+
+[Great Eagles are not true forest dwellers and do not have a forest form]"
+#size 6 -- vanilla
+#hp 42 -- W3T4, huge
+#att 13 -- WS5I4
+#def 12 -- WS5I4
+#str 18 -- STR 4, huge, natural weapons
+#prec 14 -- same as vanilla one
+#enc 3
+#mapmove 40
+#ap 15 -- same as elves
+#mr 13 -- animals, but magical, special, 1 less than vanilla one
+#mor 15 -- proud, LD8, big monster, 3 less than vanilla
+#weapon 408 -- Talons -- borrowed from HE
+#weapon 404 -- Beak -- borrowed from HE
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 3000
+#flying
+#mountainsurvival
+#forestsurvival
+#animal
+#siegebonus 10
+#patrolbonus 10
+#itemslots 12288 -- 2 misc
+#end
+
+
+
+-- Araloth
+
+#newmonster 4188
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Araloth.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Araloth2.tga"
+#name "Lord of Talsyn"
+#descr "Araloth is the Champion of the Mage Queen, Consort of the Goddess Lileath, and Lord of Talsyn, known to his fellow Asrai as Araloth the Bold for his feats of implacable bravery and honour in war. This was not always the case though, indeed Araloth was once a rather selfish and reluctant figure, who avoided battle in defence of his realm and preferred to spend his time hunting and enjoying his ancestral wealth. This all changed one fateful hunt when Araloth was separated from his band and stumbled across a glade where he saw a maiden of enchanting beauty menaced by a four armed Daemon of Slaanesh. All at once Araloth's reluctance and fear dissolved and he hurled himself into battle with the creature, facing certain death were it not for the intervention of his hawk Skaryn, who suddenly swept down and blinded the Daemon, allowing Araloth to strike a fatal blow. The maiden revealed herself to be the Goddess Lileath and spoke to Araloth of his destiny as her consort; from that day forth he was the greatest of the Glade Lords, a figure of towering bravery and selflessness rewarded by Ariel herself and honoured with Orion's respect. The Lord of Talsyn still bears the protection of his Goddess and fights in battle with a large enchanted hunting spear, accompanied by his faithful companion Skaryn, now known to all as the Eye Thief.
+
+[Gain glamour, +1 precision, +1 strength, +4 hp, +1 att, and +1 def in forests]"
+#hp 24 -- elf, hero
+#size 2
+#att 16
+#def 16
+#prec 17
+#str 11
+#mr 18 -- tier 4 leader, protection of Lileath
+#invulnerable 12 -- lileath's protection
+#mor 30 -- special
+#enc 3
+#armor 213 -- golden helmet
+#armor 196 -- golden scale mail
+#weapon 1165 -- Skaryn the eye thief
+#weapon 1166 -- Great Hunting Spear
+#gcost 0
+#rcost 6
+#expertleader
+#inspirational 1
+#poormagicleader
+#unsurr 4 -- tier 4 combat leader
+#rpcost 2
+#forestshape 4189
+#itemslots 15488 -- normal but no hands
+#fixedname "Araloth"
+#end
+
+
+-- Araloth (forest shape)
+
+#newmonster 4189
+#copystats 4130
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Araloth.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Araloth2.tga"
+#name "Lord of Talsyn"
+#descr "Araloth is the Champion of the Mage Queen, Consort of the Goddess Lileath, and Lord of Talsyn, known to his fellow Asrai as Araloth the Bold for his feats of implacable bravery and honour in war. This was not always the case though, indeed Araloth was once a rather selfish and reluctant figure, who avoided battle in defence of his realm and preferred to spend his time hunting and enjoying his ancestral wealth. This all changed one fateful hunt when Araloth was separated from his band and stumbled across a glade where he saw a maiden of enchanting beauty menaced by a four armed Daemon of Slaanesh. All at once Araloth's reluctance and fear dissolved and he hurled himself into battle with the creature, facing certain death were it not for the intervention of his hawk Skaryn, who suddenly swept down and blinded the Daemon, allowing Araloth to strike a fatal blow. The maiden revealed herself to be the Goddess Lileath and spoke to Araloth of his destiny as her consort; from that day forth he was the greatest of the Glade Lords, a figure of towering bravery and selflessness rewarded by Ariel herself and honoured with Orion's respect. The Lord of Talsyn still bears the protection of his Goddess and fights in battle with a large enchanted hunting spear, accompanied by his faithful companion Skaryn, now known to all as the Eye Thief.
+
+[Lose glamour, 1 precision, 1 strength, 4 hp, 1 att, and 1 def outside forests]"
+#hp 28 -- elf, hero
+#size 2
+#att 17
+#def 17
+#prec 18
+#str 12
+#mr 18 -- tier 4 leader, protection of Lileath
+#invulnerable 12 -- lileath's protection
+#mor 30 -- special
+#enc 3
+#armor 213 -- golden helmet
+#armor 196 -- golden scale mail
+#weapon 1165 -- Skaryn the eye thief
+#weapon 1166 -- Great Hunting Spear
+#gcost 0
+#rcost 6
+#expertleader
+#inspirational 1
+#poormagicleader
+#unsurr 4 -- tier 4 combat leader
+#rpcost 2
+#plainshape 4188
+#itemslots 15488 -- normal but no hands
+#illusion
+#fixedname "Araloth"
+#end
+
+
+
+
+
+----- Orion
+
+#newmonster 4312
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Orion.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Orion2.tga"
+#name "King in the Woods"
+#descr "Orion is the king of Athel Loren, an immortal being whose existence is irrevocably tied to the seasons. Thus does he willingly pass into his own funeral pyre each Midwinter, only to be reborn into thunderous life on the first day of spring. Orion is the material personnification of the Elven god Kurnous the Hunter and the consort of Ariel who is herself the avatar of Isha the goddess of magic and growth. When Orion awakens at full strength in spring he leads the Wild Hunt, a great surge of Asrai activity in defending their realm and destroying those who would threaten it, with some elves entirely succumbing to their primal instincts to hunt. In battle Orion is always accompanied by a pair of magical Hounds of Kurnous which leap forward to tear the enemy limb from limb and is armed with his great bow known as Hawk's Talon, the legendary Spear of Kurnous, and the Horn of the Wild Hunt, while being protected by the immaterial mantle known as the Cloak of Isha. These fabled armaments make Orion deadly indeed, but his own form is also truly mighty, marrying the raw physicality and unrelenting savagery of a great beast with the grace and skill of an elven lord. Orion is fated to die and be reborn each year and no matter whether he is struck down in battle or willingly destroys himself in his own funernal pyre come Midwinter, he will always return on the first day of the coming spring.
+
+[Gain glamour, rejuvenation, +2 precision, +2 berserk, +2 fear, +2 strength, +10 patrol bonus, and +1 unsurroundable in forests]
+[Summons 2 sacred Hounds of Kurnous and casts Divine Blessing on battle start]
+[Orion will always die, no matter what, after the first turn of the winter season, so plan accordingly]"
+#weapon 1208 -- spear of Kurnous
+#weapon 1207 -- Hawk's Talon bow
+#weapon 55 -- hoof
+#size 4
+#hp 65 -- W5, T5, big
+#prot 10 -- tough!
+#forestsurvival
+#att 16 -- WS8, always strikes first
+#def 16 --
+#str 20 -- str 6, big
+#prec 17 -- super accurate
+#mr 18
+#mor 30 -- pretender level
+#ap 20
+#mapmove 24
+#unsurr 4 -- tier 4
+#gcost 0
+#rcost 1
+#rpcost 1
+#expertleader
+#goodmagicleader
+#forestshape 4313
+#fear 5
+#berserk 3
+#magicbeing
+#invulnerable 15
+#siegebonus 30 -- from the horn
+#patrolbonus 20 -- the ultimate hunter
+#regeneration 10 -- from the cloak of Isha
+#itemslots 276608 -- crown, feet, 2 misc
+#batstartsum2 4314 -- hound of Kurnous
+#immortal
+#springimmortal -- reforms in spring
+#springpower 25
+#maxage 9000
+#startage 3000
+#holy
+#spreaddom 1
+#fixedname "Orion"
+#onebattlespell "Divine Blessing"
+#end
+
+
+----- Orion (forestshape)
+
+#newmonster 4313
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Orion.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hero_Orion2.tga"
+#name "King in the Woods"
+#descr "Orion is the king of Athel Loren, an immortal being whose existence is irrevocably tied to the seasons. Thus does he willingly pass into his own funeral pyre each Midwinter, only to be reborn into thunderous life on the first day of spring. Orion is the material personnification of the Elven god Kurnous the Hunter and the consort of Ariel who is herself the avatar of Isha the goddess of magic and growth. When Orion awakens at full strength in spring he leads the Wild Hunt, a great surge of Asrai activity in defending their realm and destroying those who would threaten it, with some elves entirely succumbing to their primal instincts to hunt. In battle Orion is always accompanied by a pair of magical Hounds of Kurnous which leap forward to tear the enemy limb from limb and is armed with his great bow known as Hawk's Talon, the legendary Spear of Kurnous, and the Horn of the Wild Hunt, while being protected by the immaterial mantle known as the Cloak of Isha. These fabled armaments make Orion deadly indeed, but his own form is also truly mighty, marrying the raw physicality and unrelenting savagery of a great beast with the grace and skill of an elven lord. Orion is fated to die and be reborn each year and no matter whether he is struck down in battle or willingly destroys himself in his own funernal pyre come Midwinter, he will always return on the first day of the coming spring.
+
+[Lose glamour, rejuvenation, 2 precision, 2 berserk, 2 strength, and 1 unsurroundable outside forests]
+[Summons 2 sacred Hounds of Kurnous and casts Divine Blessing on battle start]
+[Orion will always die, no matter what, after the first turn of the winter season, so plan accordingly]"
+#weapon 1208 -- spear of Kurnous
+#weapon 1207 -- Hawk's Talon bow
+#weapon 55 -- hoof
+#size 4
+#hp 65 -- W5, T5, big
+#prot 10 -- tough!
+#forestsurvival
+#att 16 -- WS8, always strikes first
+#def 16 --
+#str 22
+#prec 19
+#mr 18
+#mor 30 -- pretender level
+#ap 20
+#mapmove 24
+#unsurr 5
+#gcost 0
+#rcost 1
+#rpcost 1
+#expertleader
+#goodmagicleader
+#plainshape 4312
+#fear 7
+#berserk 5
+#magicbeing
+#invulnerable 15
+#siegebonus 30 -- from the horn
+#patrolbonus 30 -- the ultimate hunter
+#regeneration 10 -- from the cloak of Isha
+#itemslots 276608 -- crown, feet, 2 misc
+#batstartsum2 4314 -- hound of Kurnous
+#immortal
+#springimmortal -- reforms in spring
+#springpower 25
+#maxage 9000
+#startage 3000
+#heal
+#illusion
+#holy
+#spreaddom 1
+#fixedname "Orion"
+#onebattlespell "Divine Blessing"
+#end
+
+
+
+---- Hound of Kurnous
+
+#newmonster 4314
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hound.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Hound2.tga"
+#name "Hound of Kurnous"
+#descr "As the Avatar of Kurnous and master of the Wild Hunt, Orion is always flanked by a pair of magical Hounds of Kurnous. These great baying hounds are embodiments of Kurnous' instinct to track his prey and tear at it in the most bestial manner and they will eagerly bound ahead of Orion when they catch the scent of the enemy. The hounds are capable of entering a bloodthirsty frenzy just like Orion and are surprisingly powerful in combat."
+#size 3 -- horse sized pretty much
+#hp 20
+#prot 6
+#invulnerable 10
+#att 12
+#def 11
+#str 15
+#prec 12
+#enc 1
+#mapmove 26
+#ap 26
+#mr 14
+#mor 30
+#weapon 1209 -- bite, magical
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 3000
+#forestsurvival
+#magicbeing
+#animal
+#heal
+#quadruped
+#regeneration 10
+#springpower 20
+#holy
+#end
+
+
+
+
+
+
+
+----------------- SPELLS
+
+--copy of man's communion slave spell, call Join Chorus
+
+#newspell
+#copyspell 1125 -- chorus slave
+#name "Join Chorus"
+#descr "Spellsingers are capable of joining groups of like minded mages working in concert and merging their voices and wills, subsuming themselves to the group and communing with the world. Such a group is known as a Chorus and those who take the position of leader will be able to draw on its power to greatly enhance their magical power. Spellsingers are not permitted to lead a Chorus, for they lack the training to maintain a proper balance and channel the power through the use of powerful High or Dark magic."
+#details "Identical to the Man national spell Chorus Slave - effectively an alternate way of casting Communion Slave, which is forbidden to the Wood Elf nation. The fatigue that comes from casting spells will be distributed among all chorus members and the chorus master will also be able to cast more powerful spells than she could alone. While in communal chorus, all spells that only affect the caster will also affect all the chorus members. A chorus with two slaves will grant all masters one extra level in all their paths, four slaves will grant two levels, eight slaves will grant three levels, and so on. Only spell singers can cast this spell. Chorus slaves can be used by regular communion masters."
+#notfornation 47
+#notfornation 83
+#restricted 111
+#end
+
+
+
+--copy of man's communion master spell, at S2, called High Chorus, only castable by spellsinger things
+
+#newspell
+#copyspell 1124 -- chorus master
+#name "High Chorus"
+#descr "With this chant the Highweaver takes a lead position amongst of a Chorus of Spellsingers, such that their power might be guided through the Weaver's High Magic to cast powerful spells."
+#details "Identical to the Man national spell Chorus Master - effectively an alternate way of casting Communion Master (a spell forbidden to the Wood Elf nation). The fatigue that comes from casting spells will be distributed among all chorus members and the chorus master will also be able to cast more powerful spells than she could alone. While in communal chorus, all spells that only affect the caster will also affect all the chorus members. A chorus with two slaves will grant all masters one extra level in all their paths, four slaves will grant two levels, eight slaves will grant three levels, and so on. Only Highweavers can cast this spell. Chorus masters can use regular communion slaves."
+#notfornation 47
+#notfornation 83
+#path 0 4
+#pathlevel 0 2 -- D2
+#onlymnr 4171 -- Highweaver
+#onlymnr 4172 -- Highweaver
+#restricted 111
+#end
+
+
+--copy of man's communion master spell, at D2, called Dark Chorus, only castable by spellsinger things
+
+#newspell
+#copyspell 1124 -- chorus master
+#name "Dark Chorus"
+#descr "With this chant the Darkweaver takes a lead position amongst of a Chorus of Spellsingers, such that their power might be bent through the Weaver's Dark Magic to cast powerful spells."
+#details "Identical to the Man national spell Chorus Master - effectively an alternate way of casting Communion Master (a spell forbidden to the Wood Elf nation). The fatigue that comes from casting spells will be distributed among all chorus members and the chorus master will also be able to cast more powerful spells than she could alone. While in communal chorus, all spells that only affect the caster will also affect all the chorus members. A chorus with two slaves will grant all masters one extra level in all their paths, four slaves will grant two levels, eight slaves will grant three levels, and so on. Only Darkweavers can cast this spell. Chorus masters can use regular communion slaves."
+#notfornation 47
+#notfornation 83
+#path 0 5
+#pathlevel 0 2 -- D2
+#onlymnr 4169 -- Darkweaver
+#onlymnr 4170 -- Darkweaver
+#restricted 111
+#end
+
+
+-- Air Canopy
+
+#newspell
+#copyspell 192 -- air shield
+#name "Air Canopy"
+#descr "Calling upon the aid of a swarm of tiny air spirits, the caster is able to protect a number of their allies from missile fire with a swirling shield of wind."
+#details "This spell is identical to Air Shield, but with increased range and area of effect."
+#school 0 -- conjuration, since it's summoning air spirits
+#pathlevel 0 2 -- A2
+#researchlevel 3
+#aoe 5 -- same as wooden warriors
+#range 10 -- same as wooden warriors
+#fatiguecost 30 -- 20 more than airshield, 20 less than wooden warriors
+#restricted 111
+#end
+
+
+---- this stops the wood elves having communion slave and master
+
+#selectspell 977 -- communion slave
+#notfornation 111
+#end
+
+#selectspell 976 -- communion master
+#notfornation 111
+#end
+
+
+-- Succor of Athel Loren
+
+#newspell
+#copyspell 600 -- eagle eyes
+#name "Succor of Athel Loren"
+#descr "The mage calls upon the spirits of Athel Loren to look favourably on them and grant them a portion of their energy, reinvigorating them for the duration of the battle."
+#details "This is identical to the reinvigoration granted by Summon Earthpower and does not stack with the reinvigoration from that spell."
+#effect 23 -- type 2 buff
+#damage 68719476736 -- reinvigoration
+#school 4 -- enchantment
+#fatiguecost 20 -- +15
+#restricted 111 -- wood elves
+#end
+
+
+
+-- Worldroot Sojourn
+
+#newspell
+#copyspell 996 -- teleport
+#name "Worldroot Sojourn"
+#descr "Tapping into the system of Worldroots that connects all forests across the land, the mage travels to a distant forested province. Time functions differently in the Worldroots and the journey will appear instantaneous to any observers."
+#details "Identical to the Teleport spell but with different paths and can only be cast in a forest and target a forest."
+#path 0 6 -- nature
+#pathlevel 0 3 -- N3
+#onlygeosrc 128 -- forest
+#onlygeodst 128 -- forest
+#school 4 -- enchantment
+#end
+
+
+-- Worldroot Journey
+
+#newspell
+#copyspell 1047 -- astral travel
+#name "Worldroot Journey"
+#descr "Tapping into the system of Worldroots that connects all forests across the land, the mage opens a path through which they may travel with their followers to a distant forested province. Time functions differently in the Worldroots and the journey will appear instantaneous to any observers."
+#details "Identical to the Astral Travel spell but with different paths and a lower cost but can only be cast in a forest and target a forest."
+#path 0 6 -- nature
+#pathlevel 0 4 -- N4
+#onlygeosrc 128 -- forest
+#onlygeodst 128 -- forest
+#school 4 -- enchantment
+#researchlevel 6 -- -3
+#fatiguecost 1500 -- -10
+#end
+
+
+
+------ SUMMON SPELLS
+
+
+--- Lords of Two Worlds
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Lords of Two Worlds"
+#descr "With this ritual a Glade Lord of great renown and a Great Stag of Athel Loren are forever bonded. No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Whatever the truth of their nature, it is undeniable that the Great Stags are magical creatures and of a higher cast than the capricious Unicorns. They are typically only seen at portentous times, known to offer themselves are war steeds to Asrai of particular virtue or those destined to do great deeds in defence of the forest, though of late they have revealed themselves in far greater numbers than ever before. Great Stags are sacred to the Asrai."
+#details "Summons a sacred Glade Lord on Great Stag commander."
+#researchlevel 5
+#restricted 111
+#path 0 6 -- nature
+#pathlevel 0 3
+#damage 4182 -- glade lord on great stag
+#fatiguecost 1400
+#end
+
+
+--- Summon Unicorns of Athel Loren
+
+#newspell
+#copyspell "Summon Leogryphs"
+#name "Summon Unicorns of Athel Loren"
+#descr "With this ritual the mage calls and binds a small number of Unicorns from the depths of Athel Loren. The Unicorns of Athel Loren are the most famed of their kind and for good reason, for they are more powerful and fearsome than their cousins on Ulthuan or other distant forests. Innately magical creatures, they are not the noble beasts immortalised in song by Bretonnian bards, but instead selfish and arrogant in the extreme, harbouring no notions of kinship with mortals nor forest spirits. Unicorn ivory is highly prized and Unicorns are quite aware of their allure, so they delight in allowing themselves to be seen and pursued by would be hunters, only to be lured into a pack of vengeful forest Spites, deadly Waywatchers, or simply the territory of some ferocious predator. Should they find themselves in combat they are quite capable, for they are supernaturally swift and able to deal terrible damage with their magical horn and powerful hooves. Unicorns are resistant to and capable of consuming magical power and those who inhabit Athel Loren have had considerable exposure to Dark Magic, heightening their vindictive temperaments and lending them an aura of terrifying malice when they are encountered in a forest."
+#details "Summons Unicorn troops."
+#researchlevel 3
+#restricted 111
+#path 0 6 -- nature
+#pathlevel 0 2
+#nreff 504 -- 4+ 1/2 per level
+#damage 4190
+#fatiguecost 700
+#end
+
+
+
+--- Summon Great Eagles of Athel Loren
+
+#newspell
+#copyspell "Summon Great Eagles"
+#name "Summon Great Eagles of Athel Loren"
+#descr "Elvenkind has a long and close history with the Great Eagles of the world and in times past a formal alliance was struck between the Great Eagles of Ulthuan and her people. The Elves of Athel Loren hold no such treaty but have established close relations with the Great Eagles that inhabit the bordering Grey Mountains and share their hatred of evil intruders to either realm and so can often be found cooperating in battle. Great Eagles are similar to the Warhawks that nest on the lower slopes but are far larger, more intelligent, and of a nobler character. In battle Great Eagles are not so durable as other flying beasts like Griffons or Dragons, but are incredibly swift and capable of striking the rear ranks of an enemy force with great precision and to devastating effect."
+#details "Summons Great Eagle troops."
+#researchlevel 4
+#restricted 111
+#path 0 1 -- air
+#pathlevel 0 2
+#nreff 504 -- 4+ 1/2 per level
+#damage 4311
+#fatiguecost 900 -- +1 over the high elf version because they're less allied
+#end
+
+
+
+
+--- Lords of Two Worlds
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Princes of Forest and Peak"
+#descr "With this ritual a Glade Lord of great renown and a Great Eagle of the Grey Mountains are forever bonded, the Asrai Warrior flying into battle on the back of his noble ally. Elvenkind has a long and close history with the Great Eagles of the world and in times past a formal alliance was struck between the Great Eagles of Ulthuan and her people. The Elves of Athel Loren hold no such treaty but have established close relations with the Great Eagles that inhabit the bordering Grey Mountains and share their hatred of evil intruders to either realm and so can often be found cooperating in battle. Great Eagles are similar to the Warhawks that nest on the lower slopes but are far larger, more intelligent, and of a nobler character. In battle Great Eagles are not so durable as other flying beasts like Griffons or Dragons, but are incredibly swift and capable of striking the rear ranks of an enemy force with great precision and to devastating effect."
+#details "Summons a Glade Lord on Great Eagle commander."
+#researchlevel 5
+#restricted 111
+#path 0 1 -- air
+#pathlevel 0 3
+#damage 4198 -- glade lord on great eagle
+#fatiguecost 1500 -- +1 over high elf version because they're less close
+#end
+
+
+
+--- Summon Great Stag
+
+#newspell
+#copyspell "Summon Leogryphs"
+#name "Summon Great Stag"
+#descr "With this ritual the mage calls and binds a Great Stag of Athel Loren. No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Whatever the truth of their nature, it is undeniable that the Great Stags are magical creatures and of a higher cast than the capricious Unicorns. They are typically only seen at portentous times, known to offer themselves are war steeds to Asrai of particular virtue or those destined to do great deeds in defence of the forest, though of late they have revealed themselves in far greater numbers than ever before."
+#details "Summons a single sacred Great Stag troop."
+#researchlevel 4
+#restricted 111
+#path 0 6 -- nature
+#pathlevel 0 3
+#nreff 1
+#damage 4180
+#fatiguecost 400
+#end
+
+
+--- Contact Treeman
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Contact Treeman"
+#descr "With this ritual the caster calls one of the greatest and most powerful forest spirits come to the aid of Athel Loren in the form of a Treeman. Treemen are revered by the Asrai and other inhabitants of the forest alike and these great sentinels of Athel Loren are typically home to a great many lesser spirits that will lend them strength should they be threatened. For their part the Treemen cherish the lives of lesser creatures and boast a warmth of character totally unlike that of the spiteful Dryads. They can be counted amongst the mightiest of Athel Loren's denizens, able to wield magic of nature and earth and possessing incredible physical prowess and resilience. Treemen do not fight with grace but instead rely on sheer ferocity and their great strength to smash threats to their forest realm or tear them apart with whipping tendrils as strong as steel."
+#details "Summons a sacred Treeman commander. Note this commander is the same as the capital recruitable and so will have a gold upkeep."
+#researchlevel 6
+#onlygeosrc 128 -- forest
+#restricted 111
+#path 0 6 -- nature
+#pathlevel 0 3
+#damage 4192 -- treeman
+#fatiguecost 3500
+#end
+
+
+
+--- Awaken Treeman Ancient
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Awaken Ancient of Athel Loren"
+#descr "With this ritual the caster awakens one of the oldest, wisest, and most powerful of the forest spirits in the world, rousing a Treeman Ancient from their dreaming slumber to unleash fury upon the enemies of Athel Loren. "
+#details "Summons a sacred Treeman Ancient commander. Note this commander is the same as the capital recruitable and so will have a gold upkeep. This ritual can only be cast in a forest."
+#researchlevel 7
+#onlygeosrc 128 -- forest
+#restricted 111
+#path 0 6 -- nature
+#pathlevel 0 4
+#damage 4194 -- treeman ancient
+#fatiguecost 4500
+#end
+
+
+----------------- NAMETYPES
+
+-- Wood elf
+
+#selectnametype 200
+#addname "Aymon"
+#addname "Galaeron"
+#addname "Naertho"
+#addname "Elauthin"
+#addname "Ettrian"
+#addname "Laeroth"
+#addname "Aias"
+#addname "Lathlaeril"
+#addname "Ascal"
+#addname "Giullis"
+#addname "Iefyr"
+#addname "Kolvar"
+#addname "Elashor"
+#addname "Ornthalas"
+#addname "Gorred"
+#addname "Almar"
+#addname "Durothil"
+#addname "Hatharal"
+#addname "Illithor"
+#addname "Faeranduil"
+#addname "Goren"
+#addname "Nelaeryn"
+#addname "Hagduin"
+#addname "Orym"
+#addname "Ardryll"
+#addname "Arlen"
+#addname "Fhaornik"
+#addname "Ailmon"
+#addname "Halamar"
+#addname "Ailen"
+#addname "Lukalyn"
+#addname "Keacaryn"
+#addname "Grexidor"
+#addname "Mormys"
+#addname "Hermoira"
+#addname "Magfina"
+#addname "Yinpeiros"
+#addname "Sardithas"
+#addname "Keaven"
+#addname "Mirahice"
+#addname "Glynkian"
+#addname "Xilydark"
+#addname "Grecyne"
+#addname "Elazorwyn"
+#addname "Olaydark"
+#addname "Engwyn"
+#addname "Torwynn"
+#addname "Olarel"
+#addname "Lorajyre"
+#addname "Heilar"
+#addname "Daebella"
+#addname "Quijyre"
+#addname "Ravaralei"
+#addname "Thefina"
+#addname "Uriyarus"
+#addname "Genyarus"
+#addname "Shaceran"
+#addname "Farrona"
+#addname "Aeneiros"
+#addname "Fenjor"
+#addname "Valdalas"
+#addname "Clensai"
+#addname "Basteleb"
+#addname "Bralindir"
+#addname "Girddhel"
+#addname "Bereephor"
+#addname "Montrm"
+#addname "Aenhroth"
+#addname "Monond"
+#addname "Sildor"
+#addname "Urunhelorn"
+#addname "Anruthaur"
+#addname "Elbendal"
+#addname "Hunhaur"
+#addname "Coal"
+#addname "Galnir"
+#addname "Daealorn"
+#addname "Galtfin"
+#addname "Gunthil"
+#addname "Fauegor"
+#addname "Valth"
+#addname "Britlorn"
+#addname "Norasai"
+#addname "Tarelras"
+#addname "Allrthir"
+#addname "Cleomlallor"
+#addname "Ulwhir"
+#addname "Anrurien"
+#addname "Hinonor"
+#addname "Agarindor"
+#addname "Filorolros"
+#addname "Berethil"
+#addname "Angelor"
+#addname "Barading"
+#addname "Anorronor"
+#addname "Brolgor"
+#addname "Ururannir"
+#addname "Alveelas"
+#addname "Basrin"
+#addname "Ungragor"
+#addname "Sagehollow"
+#addname "Fernrun"
+#addname "Dornlake"
+#addname "Forestwind"
+#addname "Ivyblossom"
+#addname "Skyprowl"
+#addname "Balfstone"
+#addname "Applebrook"
+#addname "Applesky"
+#addname "Fernwind"
+#addname "Sagescrub"
+#addname "Springsky"
+#addname "Applerock"
+#addname "Seedshade"
+#addname "Oakwind"
+#addname "Seedblossom"
+#addname "Duskstone"
+#addname "Oakenwood"
+#addname "Sagewing"
+#addname "Lichengrass"
+#addname "Barkbrook"
+#addname "Springdale"
+#addname "Pinelock"
+#addname "Bladehollow"
+#addname "Sageblossom"
+#addname "Blueblossom"
+#addname "Softmire"
+#addname "Forestmire"
+#addname "Oakwood"
+#addname "Arlath"
+#addname "Belrathion"
+#addname "Altharion"
+#addname "Campion"
+#addname "Terramire"
+#addname "Applehollow"
+#addname "Softvale"
+#addname "Hawkfletch"
+#addname "Birchblade"
+#addname "Talsymir"
+#addname "Arloth"
+#addname "Vendrys"
+#addname "Silvarys"
+#addname "Torlath"
+#addname "Timberheart"
+#addname "Gladeheart"
+#addname "Frostbranch"
+#addname "Bitterleaf"
+#addname "Thornblade"
+#addname "Thornheart"
+#end
+
+
+
+
+------------ SITES
+
+
+------ Glade of Shadow
+
+#newsite 1587
+#name "Glade of Shadow"
+#path 5
+#level 0
+#rarity 5
+#gems 5 1
+#end
+
+
+------ Glade of Light
+
+#newsite 1588
+#name "Glade of Light"
+#path 4
+#level 0
+#rarity 5
+#gems 4 1
+#homemon 4151 -- sister of the thorn
+#end
+
+
+------ Ancient Glade
+
+#newsite 1611
+#name "Ancient Glade"
+#path 6
+#level 0
+#rarity 5
+#gems 6 3
+#homecom 4197 -- treeman
+#homecom 4196 -- treeman ancient
+#homemon 4141 -- wild rider
+#end
+
+
+
+
+--------- PREVIEW SITES
+
+--- Summons
+
+#newsite 1615
+#name "Wood Elf Summons and Other"
+#path 6 -- nature
+#level 0
+#rarity 5
+#homecom 4192 -- treeman
+#homecom 4194 -- treeman ancient
+#homecom 4182 -- glade lord on great stag
+#homecom 4198 -- glade lord on great eagle
+#homemon 4180 -- great stag
+#homemon 4311 -- great eagle
+#homemon 4190 -- unicorn
+#homemon 4177 -- warhawk riderless
+#homemon 4314 -- hound of kurnous
+#end
+
+
+--- Luck based Multiheroes
+
+#newsite 1616
+#name "Wood Elf Luck Based Multiheroes"
+#path 4 -- astral looking thing
+#level 0
+#rarity 5
+#homecom 4192 -- treeman
+#homecom 4182 -- glade lord on great stag
+#homecom 4198 -- glade lord on great eagle
+#homecom 4171 -- highweaver
+#homecom 4169 -- darkweaver
+#end
+
+
+--- Luck-independent Heroes
+
+#newsite 1617
+#name "Wood Elf Luck-independent Heroes"
+#path 1 -- air
+#level 0
+#rarity 5
+#homecom 4312 -- Orion
+#homecom 4188 -- Araloth
+#end
+
+
+--- Summons
+
+#newsite 1618
+#name "Dryad Seasonal Shapes"
+#path 6 -- nature
+#level 0
+#rarity 5
+#homemon 4145 -- spring
+#homemon 4149 -- summer
+#homemon 4143 -- autumn
+#homemon 4147 -- winter
+#end
+
+
+
+-------------- EVENTS
+
+
+#newevent
+#msg "Welcome! Athel Loren has some special mechanics which make them a little different from other nations:
+
+The King in the Woods. In the second turn of spring in year 1 (so about 12 turns into the game) you will receive an event that gives you Orion, a very powerful military commander and single combatant. In the second month of each winter you will get an event that kills Orion if he is still alive, or perhaps he will die in battle before then, but either way he is a spring immortal so will return on the first month of the following spring.
+
+Forest Home. Most of your commanders and troops gain bonuses when in a forest province. Use this to your advantage! In particular you will notice they get glamour (prevents enemy from seeing you on the strategic map and gives a defensive bonus in combat) when in a forest. Additionally it is cheaper for you to build labs and temples in a forest but more expensive outside.
+
+Bramble Forts. Wood Elves are poor builders of forts (they are more expensive and limited to just pallisades) unless you order a fort built in a forest province. An order to build a fort in a forest will give you a bramble fort the very next month."
+#req_owncapital 1
+#req_pregame 1 -- only happens before the first turn of the game
+#req_fornation 111
+#nation 111
+#req_unique 1
+#rarity 5
+#end
+
+
+
+
+-- Get a free bramble fort when you try to build a fort in a forest province
+
+#newevent
+#msg "You started construction of a fort in a forest province as the Wood Elves, so you get a free bramble fort."
+#req_targorder 20 -- build fort
+#nation 111 -- wood elves
+#rarity 5
+#req_forest 1 -- forest prov
+#req_pop0ok -- can fire in provinces with low pop
+#req_land 1 -- must be land
+#req_fornation 111
+#req_fort 0 -- no fort here
+#fort 10 -- bramble fort get
+#end
+
+
+
+------ HERO EVENTS
+
+---- SPAWN HERO Araloth
+
+#newevent
+#msg "The mighty hero Araloth the Bold, Lord of Talsyn, Consort of the Goddess Lileath, Champion of the Mage Queen has joined your cause, bringing with him a small band of Eternal Guard."
+#req_owncapital 1
+#req_fornation 111
+#nation 111
+#com 4188 -- Araloth
+#req_unique 1
+#rarity 5
+#req_rare 3 -- 3% chance, since he's the only hero currently
+#4d3units 4135 -- Eternal Guard
+#req_turn 6 -- not super early
+#end
+
+
+---- SPAWN HERO Orion
+
+#newevent
+#msg "On the first day of spring Orion, the Avatar of Kurnous and the King in the Woods, emerged to great joy from the people of Athel Loren. Long had Orion been divided in soul, but with the coming of this unprecedented era he is once more whole. Having gathered his strength for a full month he is ready to lead the Wild Hunt in defence of Athel Loren and to seek out and destroy those who have trespassed against his realm. Should Orion be felled he will rise once more on the first day of spring, and if he lives to see Midwinter will gladly sacrifice himself on the funeral pyre to be restored once more."
+#req_owncapital 1
+#req_fornation 111
+#nation 111
+#req_unique 1 -- orion is spring immortal, so this only needs to happen once
+#rarity 5
+#req_rare 100 -- you always get orion
+#req_season 0 -- spring
+#com 4312 -- Orion
+#req_turn 4 -- not year 1 spring
+#end
+
+
+---- kill orion a lot
+
+#newevent
+#msg "With the arrival of Midwinter, Orion willingly turns to the funeral pyre that his sacrifice will maintain the balance of Athel Loren and allow for his triumphant return on the first day of spring."
+#req_fornation 111
+#nation 111
+#rarity 5
+#req_rare 100 -- always dies
+#req_season 4 -- winter, so mid winter basically
+#req_indepok 1
+#req_pop0ok
+#req_targforeignok
+#req_monster 4312
+#req_targmnr 4312
+#poison 999
+#end
+
+---- kill orion a lot (forest shape)
+
+#newevent
+#msg "With the arrival of Midwinter, Orion willingly turns to the funeral pyre that his sacrifice will maintain the balance of Athel Loren and allow for his triumphant return in Spring."
+#req_fornation 111
+#nation 111
+#rarity 5
+#req_rare 100 -- always dies
+#req_season 4 -- winter, so mid winter basically
+#req_indepok 1
+#req_pop0ok
+#req_targforeignok
+#req_monster 4313
+#req_targmnr 4313
+#poison 999
+#end
+
+
+
+------------------------------------------------------------------------
+-- Nation
+-------------------------------------------------------------------------
+
+
+#selectnation 111
+#name "Athel Loren"
+#epithet "Forest of the Asrai"
+#brief "The Asrai, or Wood Elves as some call them, are an offshoot of the Elven people of Ulthuan who long ago split from the Elven empire which once spanned the world to shelter in the ancient forest of Athel Loren. Over time they struck a truce and then an alliance with the wild forest spirits and now live in harmony with the World Tree under the leadership of their two divine rulers Orion and Ariel. The Asrai reject both the sneering cruelty of the Dark Elves and the arrogant pride of the High Elves, instead striking a balance of grace and fury with which they protect their mystical home."
+#descr "The Asrai, or Wood Elves as some call them, are an offshoot of the Elven people of Ulthuan who long ago split from the Elven empire which once spanned the world to shelter in the ancient forest of Athel Loren. Over time they struck a truce and then an alliance with the wild forest spirits and now live in harmony with the World Tree under the leadership of their two divine rulers Orion and Ariel. The Asrai reject both the sneering cruelty of the Dark Elves and the arrogant pride of the High Elves, instead striking a balance of grace and fury with which they protect their mystical home. Now a time of great change has come upon the world and the Oak of Ages once more spreads life into its many worldroots, calling for the Asrai and forest spirits to liberate the wild lands of the world from the tyranny of the squabbling mortal empires."
+#summary "Race: Graceful elves and forest spirits.
+Military: Superb archers, skilled infantry, sacred cavalary, and spiteful forest spirits. All troops gain bonuses in forest provinces.
+Magic: Strong nature, earth, water, air, and specialised astral and death casters. Spellsingers can form Chorus communions.
+Priests: Average.
+Mechanics: Labs and temples are cheaper in forests and more expensive outside. If you order a fort built in a forest you immediately get a Bramble Fort."
+#era 2
+#color .0 .6 .0 -- Rich green
+#flag "./Sombre_Warhammer/Warhammer_Wood_Elves/Flag.tga"
+#templepic 10 -- foresty temple
+
+---- Pretenders
+
+#addgod 138 -- gorgon
+#addgod 158 -- oracle
+#addgod 245 -- master enchanter
+#addgod 266 -- green dragon
+#addgod 270 -- arch druid
+#addgod 485 -- great enchantress
+#addgod 606 -- great mother
+#addgod 657 -- monolith
+#addgod 779 -- rams headed serpent
+#addgod 812 -- lord of the wild
+#addgod 978 -- great black bull
+#addgod 979 -- great white bull
+#addgod 1342 -- titaness of rivers
+#addgod 1343 -- titaness of love
+#addgod 1370 -- volla of forest
+#addgod 1378 -- lord of the forest
+#addgod 1905 -- great sorceress
+#addgod 2234 -- irminsul
+#addgod 2239 -- asynja
+#addgod 2437 -- annunaki of growth
+#addgod 2448 -- idol of beasts
+#addgod 2450 -- horned one
+#addgod 2784 -- thrice horned boar
+#addgod 2785 -- solar eagle
+#addgod 3082 -- matrona of the healing spring
+#addgod 3203 -- titaness of the hunt
+#addgod 3208 -- titaness of the spring
+#addgod 3209 -- titaness of growth
+
+
+#startsite "Glade of Light"
+#startsite "Glade of Shadow"
+#startsite "Ancient Glade"
+
+#futuresite 1615
+#futuresite 1616
+#futuresite 1617
+#futuresite 1618
+
+#idealcold 0
+#likesterr 128 -- likes to start in a forest
+
+#fortera 0 -- palisades only
+#homefort 3 -- this is a castle, standard for middle era
+#fortcost 20 -- extra 120 per fort
+
+#labcost 600
+#templecost 500
+
+#foresttemplecost 300
+#forestlabcost 400
+
+
+-- Troops
+
+#addrecunit 4131 -- Glade Guard
+#addrecunit 4133 -- Deepwood Scout
+#addrecunit 4155 -- Wildwood Ranger
+#addrecunit 4135 -- Eternal Guard
+#addrecunit 4159 -- wardancer
+#addrecunit 4161 -- waywatcher
+#addrecunit 4139 -- Glade Rider
+#addrecunit 4178 -- warhawk rider
+#forestrec 4143 -- dryad
+#forestrec 4173 -- treekin
+
+
+-- Commanders
+
+#addreccom 4175 -- Deepwood Scout
+#addreccom 4137 -- glade captain
+#addreccom 4186 -- Warhawk Captain
+#addreccom 4153 -- glade lord
+--addreccom 4182 -- glade lord on great stag
+#addreccom 4157 -- shadowdancer
+#addreccom 4167 -- waystalker
+#forestcom 4165 -- branchwraith
+#forestcom 4175 -- Deepwood Scout
+#addreccom 4163 -- spellsinger
+#addreccom 4171 -- highweaver
+#addreccom 4169 -- darkweaver
+--addreccom 4188 -- Araloth
+--addreccom 4198 -- glade lord on great eagle
+
+
+#startcom 4137 -- glade captain
+#startunittype1 4131 -- glade guard archer
+#startunitnbrs1 10
+#startunittype2 4139 -- Glade Rider
+#startunitnbrs2 5
+#startscout 4133 -- deepwood scout
+
+
+#multihero4 4192 -- treeman
+#multihero1 4182 -- glade lord on great stag
+#multihero2 4169 -- darkweaver
+#multihero3 4171 -- highweaver
+#multihero5 4198 -- glade lord on great eagle
+
+
+
+
+///////////////// Province defence \\\\\\\\\\\\\\\\\\\\
+
+#defcom1 4137 -- glade captain
+#defcom2 4165 -- branchwraith
+
+#defunit1 4131 -- Glade Guard
+#defmult1 20
+#defunit1b 4143 -- dryad
+#defmult1b 10
+
+#defunit2 4139 -- Glade Rider
+#defmult2 10
+
+
+#end
+
+
+
+
+
+
+
+
 
 -- @@@@ Slaanesh
 
@@ -237,6 +4661,8 @@ Vampires (Vampires)"
 #pierce
 #bonus
 #end
+
+
 
 -- Javelin Bundle used by Hunters
 
@@ -322,6 +4748,7 @@ Vampires (Vampires)"
 #secondaryeffect 51 -- strong poison
 #end
 
+
 -- Steed's Tongue (nostr hellstrider version)
 
 #newweapon 1099
@@ -354,6 +4781,7 @@ Vampires (Vampires)"
 #len 5 -- longer than spear
 #unrepel
 #end
+
 
 
 -- Steed's Tongue (nostr Chaos Lord version)
@@ -580,7 +5008,8 @@ Vampires (Vampires)"
 #name "Chaos Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]"
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
 #gcost 10
@@ -620,7 +5049,8 @@ Vampires (Vampires)"
 #name "Chaos Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]"
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
 #gcost 10
@@ -661,7 +5091,8 @@ Vampires (Vampires)"
 #name "Chaos Mutant Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]"
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
 #gcost 10
@@ -701,7 +5132,8 @@ Vampires (Vampires)"
 #name "Chaos Mutant Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]"
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
 #gcost 10
@@ -742,7 +5174,8 @@ Vampires (Vampires)"
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
 
-(When recruited you will either get a marauder with axe and shield, morningstar and shield, axe and throwing axes, or occasionally a Forsaken Marauder]"
+[When recruited you will either get a marauder with axe and shield, morningstar and shield, axe and throwing axes, or occasionally a Forsaken Marauder]
+[Discounted to 12 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 21 -- full helmet
 #armor 11 -- ring mail hauberk
@@ -758,7 +5191,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Forsaken_Marauder.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Forsaken_Marauder2.tga"
 #name "Forsaken Marauder"
-#descr "While only Warriors, Sorcerers, and Champions of Chaos can truly hope to draw the eye of one of the Ruinous Powers, all manner of other men and beasts are subject to the warping taint of Chaos through proximity alone. Many of the men and women of the countless Marauder tribes are born with mutations, reminders of the constant presence of their Gods. These mutants are not ostracised or culled as they might be in the weak realms of civilised men but are instead treated with respect and honour. Those with the extreme mutations typically do not survive to adulthood but some join the marauders and unleash the blessing of their altered form upon the foe in a frenzied headlong rush. They are known as the Forsaken amongst the ranks of the Warriors, but to the Marauders they are a venerated elite that demonstrate the favour of the Gods."
+#descr "While only Warriors, Sorcerers, and Champions of Chaos can truly hope to draw the eye of one of the Ruinous Powers, all manner of other men and beasts are subject to the warping taint of Chaos through proximity alone. Many of the men and women of the countless Marauder tribes are born with mutations, reminders of the constant presence of their Gods. These mutants are not ostracised or culled as they might be in the weak realms of civilised men but are instead treated with respect and honour. Those with the extreme mutations typically do not survive to adulthood but some join the marauders and unleash the blessing of their altered form upon the foe in a frenzied headlong rush. They are known as the Forsaken amongst the ranks of the Warriors, but to the Marauders they are a venerated elite that demonstrate the favour of the Gods.
+
+[Discounted to 12 gold in Turmoil 3]"
 #weapon 17 -- axe
 #weapon 85 -- tentacle
 #armor 11 -- ring mail hauberk
@@ -781,7 +5216,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Hunter.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Hunter2.tga"
 #name "Marauder Hunter"
-#descr "Not all of the Marauders who accompany Chaos raiding parties are strictly warriors, dedicated to slaughter and battle. Some are hunters who serve a vital function to their tribe in bringing down the beasts that roam the lands around the Chaos Wastes for food, trophies, or simply to ensure the safety of their people. These hunters accompany raiding parties to help provide supplies and to lend their impressive skill with javelins to the host. They are still Marauders are still capable fighters in melee, though they lack some of the fearsome resolve of their companions."
+#descr "Not all of the Marauders who accompany Chaos raiding parties are strictly warriors, dedicated to slaughter and battle. Some are hunters who serve a vital function to their tribe in bringing down the beasts that roam the lands around the Chaos Wastes for food, trophies, or simply to ensure the safety of their people. These hunters accompany raiding parties to help provide supplies and to lend their impressive skill with javelins to the host. They are still Marauders are still capable fighters in melee, though they lack some of the fearsome resolve of their companions.
+
+[Discounted to 12 gold in Turmoil 3]"
 #prec 11 -- +1 for ranged focus
 #weapon 1 -- spear
 #weapon 1085 -- javelin bundle (x4 javs)
@@ -798,7 +5235,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Axe.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Axe2.tga"
 #name "Marauder"
-#descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze."
+#descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
+
+[Discounted to 12 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 21 -- full helmet
 #armor 11 -- ring mail hauberk
@@ -814,7 +5253,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Morningstar.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Morningstar2.tga"
 #name "Marauder"
-#descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze."
+#descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
+
+[Discounted to 12 gold in Turmoil 3]"
 #weapon 15 -- morningstar
 #armor 118 -- half helmet
 #armor 11 -- ring mail hauberk
@@ -830,7 +5271,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Axes.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Axes2.tga"
 #name "Marauder"
-#descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze."
+#descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
+
+[Discounted to 12 gold in Turmoil 3]"
 #weapon 17 -- axe
 #weapon 260 -- throwing axe
 #armor 118 -- half helmet
@@ -846,7 +5289,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Berserker.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Berserker2.tga"
 #name "Marauder Berserker"
-#descr "Berserkers are elite infantry within the ranks of the Marauder tribes whose job is to shatter the enemy line or dispatch the strongest foes. Like all Marauders, they are unrelenting combatants who habitually take what their own lands cannot provide from lesser men, but are set apart by their heedless embrace of death in battle and ability to enter a frenzied killing trance. Berserkers favour the use of an axe in each hand and train extensively to build their physical strength to a level similar to that of the mighty Chaos Warriors."
+#descr "Berserkers are elite infantry within the ranks of the Marauder tribes whose job is to shatter the enemy line or dispatch the strongest foes. Like all Marauders, they are unrelenting combatants who habitually take what their own lands cannot provide from lesser men, but are set apart by their heedless embrace of death in battle and ability to enter a frenzied killing trance. Berserkers favour the use of an axe in each hand and train extensively to build their physical strength to a level similar to that of the mighty Chaos Warriors.
+
+[Discounted to 16 gold in Turmoil 3]"
 #hp 14 --- +2
 #prot 3 -- +1
 #mor 13 -- +1
@@ -870,7 +5315,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Horseman_Jav.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Horseman_Jav2.tga"
 #name "Marauder Light Horseman"
-#descr "Marauder Horsemen are the outriders and scouts of Chaos Warhosts and smaller Marauder raids alike, ranging ahead to harass, pillage, and demoralise the enemy. Like all Marauders they are hardened fighters who place little value on the lives of those beyond their tribe and they have gained a fearsome reputation amongst the civilised realms of men as harbingers of terrible suffering and destruction. The steeds they ride are large, fast, and aggressive beasts that show some traces of the warping influence of Chaos and paired with their skilled riders, many of whom have lived in the saddle virtually their entire lives, they make excellent light cavalry. The most common equipment used by Marauder Horsemen is a combination of light lance, shield, and javelins."
+#descr "Marauder Horsemen are the outriders and scouts of Chaos Warhosts and smaller Marauder raids alike, ranging ahead to harass, pillage, and demoralise the enemy. Like all Marauders they are hardened fighters who place little value on the lives of those beyond their tribe and they have gained a fearsome reputation amongst the civilised realms of men as harbingers of terrible suffering and destruction. The steeds they ride are large, fast, and aggressive beasts that show some traces of the warping influence of Chaos and paired with their skilled riders, many of whom have lived in the saddle virtually their entire lives, they make excellent light cavalry. The most common equipment used by Marauder Horsemen is a combination of light lance, shield, and javelins.
+
+[Discounted to 26 gold in Turmoil 3]"
 #weapon 357 -- light lance
 #weapon 21 -- javelin
 #weapon 56 -- hoof
@@ -897,7 +5344,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Horseman_Flail.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Horseman_Flail2.tga"
 #name "Marauder Horseman"
-#descr "Marauder Horsemen are the outriders and scouts of Chaos Warhosts and smaller Marauder raids alike, ranging ahead to harass, pillage, and demoralise the enemy. Like all Marauders they are hardened fighters who place little value on the lives of those beyond their tribe and they have gained a fearsome reputation amongst the civilised realms of men as harbingers of terrible suffering and destruction. The steeds they ride are large, fast, and aggressive beasts that show some traces of the warping influence of Chaos and paired with their skilled riders, many of whom have lived in the saddle virtually their entire lives, they make excellent light cavalry. Amongst those tribes that follow Slaanesh in the guise of the Serpent the unconventional use of a two handed flail from horseback is not uncommon and these Horsemen are known to be particularly fearless in battle."
+#descr "Marauder Horsemen are the outriders and scouts of Chaos Warhosts and smaller Marauder raids alike, ranging ahead to harass, pillage, and demoralise the enemy. Like all Marauders they are hardened fighters who place little value on the lives of those beyond their tribe and they have gained a fearsome reputation amongst the civilised realms of men as harbingers of terrible suffering and destruction. The steeds they ride are large, fast, and aggressive beasts that show some traces of the warping influence of Chaos and paired with their skilled riders, many of whom have lived in the saddle virtually their entire lives, they make excellent light cavalry. Amongst those tribes that follow Slaanesh in the guise of the Serpent the unconventional use of a two handed flail from horseback is not uncommon and these Horsemen are known to be particularly fearless in battle.
+
+[Discounted to 26 gold in Turmoil 3]"
 #weapon 16 -- flail
 #weapon 56 -- hoof
 #armor 21 -- full helmet
@@ -926,7 +5375,8 @@ Vampires (Vampires)"
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]"
+[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]
+[Discounted to 28 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -943,7 +5393,8 @@ Vampires (Vampires)"
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]"
+[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]
+[Discounted to 28 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -1016,7 +5467,8 @@ Vampires (Vampires)"
 #name "Chosen Warrior"
 #descr "There are those amognst the ranks of the Chaos Warriors who bear the clear favour of Slaanesh and have been elevated as the Chosen of the Prince of Pleasure and granted even greater physical prowess and skill. The Chosen are beautiful and terrible to behold, their armour spotless and shining as they scythe through the ranks of their foes with a cruel indifference. While the Warriors of Slaanesh are grimly focused on the task of butchery and pain, the Chosen are gifted heightened senses and a true passion for excess. They are known for to dance, sing, weep, laugh, cavort, even recite poetry or create art; indeed they will sometimes do all of these in the midst of a pitched battle. The Chosen have reached the end of their path, never destined to rise toward the ultimate goal of Daemonhood, but their souls will surely receive lavish attention from Slaanesh in death just as they have in life. The Chosen are sacred to the followers of the Dark Prince.
 
-[Requires friendly Dominion strength of 5 in the province to recruit.]"
+[Requires friendly Dominion strength of 5 in the province to recruit.]
+[Discounted to 50 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -1027,7 +5479,7 @@ Vampires (Vampires)"
 #att 14 --- +1
 #def 14 --- +1
 #gcost 80 -- doubled because upkeep is halved
-#chaosrec 8 -- doubled
+#chaosrec 10 -- doubled
 #holy
 #montag 1030 -- chosen and forsaken and spawn
 #montagweight 20
@@ -1043,7 +5495,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Warrior_Forsaken.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Warrior_Forsaken2.tga"
 #name "Forsaken Warrior"
-#descr "The Ruinous Powers are as fickle as they are implacable and the whims of Slaanesh in particular change quickly and severely. In striving to prove themselves and draw the attention of the Dark Prince the Chaos Warriors of Slaanesh are always at risk of falling short in the eyes of their patron and failing to join the ranks of the Chosen, instead becoming either Forsaken or turned into a Chaos Spawn. The Forsaken are those unfortunates who have been twisted by the caress of Slaanesh and reduced in stature from proud Chaos Warriors to berserk mutants eager to find death in battle, for unlike Chaos Spawn they are entirely aware of their own fallen condition. Forsaken are not disciplined and well armoured heavy infantry or cavalry as they once were, instead they are whirling, malformed shock troops typically thrown to the frontlines to inflict as much damage as possible before they are cut down. To the Chaos Warriors they are a reminder of the risks of their path and the price of failure, but to the massed Marauders they are considered equals of the Warriors who simply bear the blessings of the Dark Prince in a different fashion."
+#descr "The Ruinous Powers are as fickle as they are implacable and the whims of Slaanesh in particular change quickly and severely. In striving to prove themselves and draw the attention of the Dark Prince the Chaos Warriors of Slaanesh are always at risk of falling short in the eyes of their patron and failing to join the ranks of the Chosen, instead becoming either Forsaken or turned into a Chaos Spawn. The Forsaken are those unfortunates who have been twisted by the caress of Slaanesh and reduced in stature from proud Chaos Warriors to berserk mutants eager to find death in battle, for unlike Chaos Spawn they are entirely aware of their own fallen condition. Forsaken are not disciplined and well armoured heavy infantry or cavalry as they once were, instead they are whirling, malformed shock troops typically thrown to the frontlines to inflict as much damage as possible before they are cut down. To the Chaos Warriors they are a reminder of the risks of their path and the price of failure, but to the massed Marauders they are considered equals of the Warriors who simply bear the blessings of the Dark Prince in a different fashion.
+
+[Discounted to 21 gold in Turmoil 3]"
 #weapon 1084 -- pincer claw
 #weapon 29 -- claw
 #armor 9 -- plate cuirass
@@ -1074,7 +5528,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Warrior_Forsaken.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Warrior_Forsaken2.tga"
 #name "Forsaken Warrior"
-#descr "The Ruinous Powers are as fickle as they are implacable and the whims of Slaanesh in particular change quickly and severely. In striving to prove themselves and draw the attention of the Dark Prince the Chaos Warriors of Slaanesh are always at risk of falling short in the eyes of their patron and failing to join the ranks of the Chosen, instead becoming either Forsaken or turned into a Chaos Spawn. The Forsaken are those unfortunates who have been twisted by the caress of Slaanesh and reduced in stature from proud Chaos Warriors to berserk mutants eager to find death in battle, for unlike Chaos Spawn they are entirely aware of their own fallen condition. Forsaken are not disciplined and well armoured heavy infantry or cavalry as they once were, instead they are whirling, malformed shock troops typically thrown to the frontlines to inflict as much damage as possible before they are cut down. To the Chaos Warriors they are a reminder of the risks of their path and the price of failure, but to the massed Marauders they are considered equals of the Warriors who simply bear the blessings of the Dark Prince in a different fashion."
+#descr "The Ruinous Powers are as fickle as they are implacable and the whims of Slaanesh in particular change quickly and severely. In striving to prove themselves and draw the attention of the Dark Prince the Chaos Warriors of Slaanesh are always at risk of falling short in the eyes of their patron and failing to join the ranks of the Chosen, instead becoming either Forsaken or turned into a Chaos Spawn. The Forsaken are those unfortunates who have been twisted by the caress of Slaanesh and reduced in stature from proud Chaos Warriors to berserk mutants eager to find death in battle, for unlike Chaos Spawn they are entirely aware of their own fallen condition. Forsaken are not disciplined and well armoured heavy infantry or cavalry as they once were, instead they are whirling, malformed shock troops typically thrown to the frontlines to inflict as much damage as possible before they are cut down. To the Chaos Warriors they are a reminder of the risks of their path and the price of failure, but to the massed Marauders they are considered equals of the Warriors who simply bear the blessings of the Dark Prince in a different fashion.
+
+[Discounted to 21 gold in Turmoil 3]"
 #weapon 1084 -- pincer claw
 #weapon 29 -- claw
 #armor 9 -- plate cuirass
@@ -1108,7 +5564,8 @@ Vampires (Vampires)"
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]"
+[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]
+[Discounted to 28 gold in Turmoil 3]"
 #weapon 308 -- glaive
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -1126,7 +5583,8 @@ Vampires (Vampires)"
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]"
+[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]
+[Discounted to 28 gold in Turmoil 3]"
 #weapon 308 -- glaive
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -1172,7 +5630,8 @@ Vampires (Vampires)"
 #name "Chaos Knight"
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Slaanesh. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Slaanesh, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
-[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]"
+[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]
+[Discounted to 70 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 10 -- falchion
@@ -1201,7 +5660,8 @@ Vampires (Vampires)"
 #name "Chaos Knight"
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Slaanesh. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Slaanesh, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
-[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]"
+[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]
+[Discounted to 70 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 10 -- falchion
@@ -1233,7 +5693,8 @@ Vampires (Vampires)"
 #name "Chosen Knight"
 #descr "As with Warriors, Chaos Knights strive to gain the favour of their patron God and become Chosen, the pinnacle of the Path of the Warrior. Chosen Knights are perhaps the most deadly heavy cavalry in existence, marrying supernatural phyiscal strength, speed, and endurance with incredible skill at arms. Already deeply arrogant, Knights of Slaanesh who gain the status of Chosen come to see themselves as living embodiments of their God's multitudinous perfection, flawless mirrors placed to reflect the splendour of the Prince of Pleasure. Being Chosen of Slaanesh they are sacred to the followers of the Dark Prince.
 
-[Requires friendly Dominion strength of 7 in the province to recruit.]"
+[Requires friendly Dominion strength of 7 in the province to recruit.]
+[Discounted to 110 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 10 -- falchion
@@ -1268,7 +5729,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Chaos_Ogre.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Chaos_Ogre2.tga"
 #name "Chaos Ogre"
-#descr "Ogres are large humanoid creatures known for their gluttony, strength, and love of violence. While they are typically quite resistant to both the warping taint of Chaos and the tempting whispers of the Dark Prince, they are naturally drawn to promises of excess and violence and so can often be found in the forces of Slaanesh. Even fairly small Marauder forces can occasionally find themselves benefitting from the presence of a handful of Ogres because these creatures are natural opportunists and recognise that in a smaller force they can bully their way to getting a larger share of the loot. Chaos Ogres have, despite their natural resistances, been changed by their exposure to Chaos and the attentions of the Ruinous Powers and are even stronger and more ferocious fighters than their former fellows in the Ogre Kingdoms."
+#descr "Ogres are large humanoid creatures known for their gluttony, strength, and love of violence. While they are typically quite resistant to both the warping taint of Chaos and the tempting whispers of the Dark Prince, they are naturally drawn to promises of excess and violence and so can often be found in the forces of Slaanesh. Even fairly small Marauder forces can occasionally find themselves benefitting from the presence of a handful of Ogres because these creatures are natural opportunists and recognise that in a smaller force they can bully their way to getting a larger share of the loot. Chaos Ogres have, despite their natural resistances, been changed by their exposure to Chaos and the attentions of the Ruinous Powers and are even stronger and more ferocious fighters than their former fellows in the Ogre Kingdoms.
+
+[Discounted to 35 gold in Turmoil 3]"
 #hp 30
 #size 3
 #prot 5
@@ -1308,7 +5771,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Chaos_Troll.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Chaos_Troll2.tga"
 #name "Chaos Troll"
-#descr "Trollflesh is somewhat succeptible to the warping influence of Chaos but their natural ability to regenerate wages a constant battle with any mutation leading to the appearance of Chaos Trolls varying wildly and changing near constantly. Chaos Trolls are typically smarter, more aggressive, and more coordinated than the Trolls that find themselves goaded into battle by Greenskins but are still fundamentally brutish and prone to do whatever they please in a given moment; nonetheless Chaos warbands will entice them with a share of the loot and use them in battle. They are immensely strong and tough creatures famed for their regenerative prowess and are capable of vomiting a torrent of acidic bile on their opponents."
+#descr "Trollflesh is somewhat succeptible to the warping influence of Chaos but their natural ability to regenerate wages a constant battle with any mutation leading to the appearance of Chaos Trolls varying wildly and changing near constantly. Chaos Trolls are typically smarter, more aggressive, and more coordinated than the Trolls that find themselves goaded into battle by Greenskins but are still fundamentally brutish and prone to do whatever they please in a given moment; nonetheless Chaos warbands will entice them with a share of the loot and use them in battle. They are immensely strong and tough creatures famed for their regenerative prowess and are capable of vomiting a torrent of acidic bile on their opponents.
+
+[Discounted to 45 gold in Turmoil 3]"
 #hp 37
 #size 3
 #prot 8
@@ -1352,7 +5817,8 @@ Vampires (Vampires)"
 #name "Marauder Hellstrider"
 #descr "Hellstriders are devotees of torment, Marauders who hunt from the back of impossibly swift Daemonic Steeds of Slaanesh. These gifts from the Dark Prince come at a great price, for the Hellstrider is curse, or perhaps blessed, to feel the pain of every victim of his hunts and expected to revel in the sensations. The Steeds are said to be made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. Steeds constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry. In battle the Marauder lashes his foes with a life draining Hellscourge whip while the Steed's tongue whips out at lightning speed, delivering poisons both deadly and psychoactive. Should the Marauder be struck from his Steed the beast will fight on for the rest of the battle before returning to the Realm of Chaos.
 
-[Requires friendly Dominion strength of 5 in the province to recruit.]"
+[Requires friendly Dominion strength of 5 in the province to recruit.]
+[Discounted to 45 gold in Turmoil 3]"
 #ap 32
 #mapmove 28 -- same as a shade beast, tireless, fast
 #hp 12 --- big tough guys
@@ -1423,6 +5889,7 @@ Vampires (Vampires)"
 #xploss 100
 #bird -- most similar shape
 #coldres 3
+#snow
 #end
 
 
@@ -1463,6 +5930,7 @@ Vampires (Vampires)"
 #notdomshape 4256
 #heal --- recuperation ability
 #coldres 3
+#snow
 #end
 
 
@@ -1503,6 +5971,7 @@ Vampires (Vampires)"
 #nametype 199 -- slaaneshi daemon
 #domshape 4255
 #coldres 3
+#snow
 #end
 
 
@@ -1549,6 +6018,7 @@ Vampires (Vampires)"
 #notdomshape 4258
 #heal --- recuperation ability
 #coldres 3
+#snow
 #end
 
 
@@ -1596,6 +6066,7 @@ Vampires (Vampires)"
 #xploss 100
 #domshape 4257
 #coldres 3
+#snow
 #end
 
 
@@ -1637,6 +6108,7 @@ Vampires (Vampires)"
 #notdomshape 4266 -- not dominion fiend
 #heal --- recuperation ability
 #coldres 3
+#snow
 #end
 
 
@@ -1677,6 +6149,7 @@ Vampires (Vampires)"
 #nametype 199 -- slaaneshi daemon
 #domshape 4265 -- not dominion fiend
 #coldres 3
+#snow
 #end
 
 
@@ -2129,7 +6602,7 @@ Vampires (Vampires)"
 
 -- Size 3, eyeballs
 
-#newmonster 4228
+#newmonster 4309
 #copystats 4219
 #copyspr 4219
 #montag 1033 -- commander spawns
@@ -2369,6 +6842,7 @@ Vampires (Vampires)"
 #holy
 #magicskill 8 2
 #coldres 3
+#snow
 #end
 
 
@@ -2421,6 +6895,7 @@ Vampires (Vampires)"
 #holy
 #magicskill 8 2
 #coldres 3
+#snow
 #end
 
 
@@ -2472,6 +6947,7 @@ Vampires (Vampires)"
 #holy
 #magicskill 8 2
 #coldres 3
+#snow
 #end
 
 
@@ -2523,6 +6999,7 @@ Vampires (Vampires)"
 #holy
 #magicskill 8 2
 #coldres 3
+#snow
 #end
 
 
@@ -2573,6 +7050,7 @@ Vampires (Vampires)"
 #holy
 #magicskill 8 2
 #coldres 3
+#snow
 #end
 
 
@@ -2583,7 +7061,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Hunter.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Hunter2.tga"
 #name "Marauder Scout"
-#descr "Marauder Scouts are Hunters who have shown an aptitude for travelling unseen through enemy lands and reporting back to their masters. It can be a difficult thing for a Marauder to resist the urge for battle and pillage and remain concealed but the position of Scout does hold some degree of honour, for the wiley Chieftains know that they cannot successfully commit raids without knowledge of their targets."
+#descr "Marauder Scouts are Hunters who have shown an aptitude for travelling unseen through enemy lands and reporting back to their masters. It can be a difficult thing for a Marauder to resist the urge for battle and pillage and remain concealed but the position of Scout does hold some degree of honour, for the wiley Chieftains know that they cannot successfully commit raids without knowledge of their targets.
+
+[Discounted to 25 gold in Turmoil 3]"
 #prec 11 -- +1 for ranged focus
 #weapon 1 -- spear
 #weapon 1085 -- javelin bundle (x4 javs)
@@ -2608,7 +7088,8 @@ Vampires (Vampires)"
 #name "Aspiring Champion"
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Slaanesh tend to be particularly skilled swordsmen and favour the use of two curved blades which they wield with shocking skill and to deadly effect.
 
-[When this Champion is promoted it will transform to a form which will then be further transformed by an event, either becoming an Exalted Hero (and losing all its XP) or being turned into a mindless Chaos Spawn.]"
+[When this Champion is promoted it will transform to a form which will then be further transformed by an event, either becoming an Exalted Hero (and losing all its XP) or being turned into a mindless Chaos Spawn.]
+[Discounted to 75 gold in Turmoil 3]"
 #hp 25
 #mor 17 -- +1
 #mr 14 -- +2 for tier 2
@@ -2642,7 +7123,8 @@ Vampires (Vampires)"
 #name "Aspiring Champion"
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Slaanesh tend to be particularly skilled swordsmen and favour the use of two curved blades which they wield with shocking skill and to deadly effect.
 
-[This Champion is awaiting the event that will transform them to either an Exalted Hero (and losing all its XP) or a mindless Chaos Spawn.]"
+[This Champion is awaiting the event that will transform them to either an Exalted Hero (and losing all its XP) or a mindless Chaos Spawn.]
+[Discounted to 75 gold in Turmoil 3]"
 #hp 25
 #mor 17 -- +1
 #mr 14 -- +2 for tier 2
@@ -2676,7 +7158,8 @@ Vampires (Vampires)"
 #descr "Exalted Heroes stand as paragons on the Path of the Warrior and the Champion, for they are everything that every Chaos Warrior and Aspiring Champion strives to be. The Exalted are monstrously powerful combatants capable of commanding forces of the mightiest warriors in the world, blessed many times over by their patron God and with an iron will to pursue their ambitions and become immortal. They are to the Aspiring Champions as the Chosen are to the Warriors, but unlike the Chosen they do not accept they have reached the zenith of their journey, for the prize of becoming a Chaos Lord and eventually a Daemon Prince still lies ahead of them and the risk of being reduced to a gibbering Chaos Spawn is one they gladly accept. Exalted Heroes of Slaanesh are incredibly talented artists of sensation and passion both on and off the battlefield, as capable of bringing men to tears with their singing, poetry, and dance as they are tearing through a formation of soldiers as a bloody whirlwhind of steel. They are also supremely arrogant to the point that they will actively force their troops to make space for them to enact a fittingly beautiful performance in battle.
 
 [Requires friendly Dominion strength of 7 in the province to recruit.]
-[When this Exalted Hero is promoted it will transform to a form which will then be further transformed by an event, either becoming a Chaos Lord (and losing all its XP) or being turned into a mindless Chaos Spawn.]"
+[When this Exalted Hero is promoted it will transform to a form which will then be further transformed by an event, either becoming a Chaos Lord (and losing all its XP) or being turned into a mindless Chaos Spawn.]
+[Discounted to 160 gold in Turmoil 3]"
 #hp 35
 #mor 18 -- +1 over aspiring champion
 #mr 15 -- +1
@@ -2715,7 +7198,8 @@ Vampires (Vampires)"
 #name "Exalted Hero"
 #descr "Exalted Heroes stand as paragons on the Path of the Warrior and the Champion, for they are everything that every Chaos Warrior and Aspiring Champion strives to be. The Exalted are monstrously powerful combatants capable of commanding forces of the mightiest warriors in the world, blessed many times over by their patron God and with an iron will to pursue their ambitions and become immortal. They are to the Aspiring Champions as the Chosen are to the Warriors, but unlike the Chosen they do not accept they have reached the zenith of their journey, for the prize of becoming a Chaos Lord and eventually a Daemon Prince still lies ahead of them and the risk of being reduced to a gibbering Chaos Spawn is one they gladly accept. Exalted Heroes of Slaanesh are incredibly talented artists of sensation and passion both on and off the battlefield, as capable of bringing men to tears with their singing, poetry, and dance as they are tearing through a formation of soldiers as a bloody whirlwhind of steel. They are also supremely arrogant to the point that they will actively force their troops to make space for them to enact a fittingly beautiful performance in battle.
 
-[This Exalted Hero is awaiting the event that will transform them to either a Chaos Lord (and losing all its XP) or a mindless Chaos Spawn.]"
+[This Exalted Hero is awaiting the event that will transform them to either a Chaos Lord (and losing all its XP) or a mindless Chaos Spawn.]
+[Discounted to 160 gold in Turmoil 3]"
 #hp 35
 #mor 18 -- +1 over aspiring champion
 #mr 15 -- +1
@@ -2752,7 +7236,8 @@ Vampires (Vampires)"
 #name "Chaos Lord"
 #descr "At the zenith of the mortal forces of the Ruinous Powers stand the Chaos Lords, champions and paragons of their patron God whose mere command can see tribes annihilated, cities sacked, and nations brought to the brink of disaster. Only the mightiest and most favoured Exalted Hero will survive to become a Chaos Lord, having overcome their enemies, their rivals, attempted punishments by the Ruinous Powers they have chosen not to follow, and even the capricious whims of their own God. Chaos Lords are extremely skilled combatants and physically far beyond the potential of mortal men in addition to being experienced and innately talented commanders. They are granted Daemonic mounts to carry them into battle and emphasize their status; in the case of Slaanesh a serpentine creature of blinding speed with a deadly lashing tongue and skin which exudes a calming musk that lulls opponents into holding back their blows. Should the Chaos Lord be slain, this mount will fight on before returning to the Chaos Realm of Slaanesh. Aside from continuing to crush their enemies and bring glory to Slaanesh, all that remains for this Chaos Lord is to prove themselves so fully that they are elevated to immortality in the form of a Daemon Prince.
 
-[When this Chaos Lord is promoted it will transform to a form which will then be further transformed by an event, either finally becoming a Daemon Prince (and losing all its XP) or being turned into a mindless Chaos Spawn.]"
+[When this Chaos Lord is promoted it will transform to a form which will then be further transformed by an event, either finally becoming a Daemon Prince (and losing all its XP) or being turned into a mindless Chaos Spawn.]
+[Discounted to 210 gold in Turmoil 3]"
 --stats compared with exalted hero
 #ap 32 -- fastest cav in the game, tied with centauride
 #mapmove 28 -- same as a shade beast, tireless, fast
@@ -2801,7 +7286,8 @@ Vampires (Vampires)"
 #name "Chaos Lord"
 #descr "At the zenith of the mortal forces of the Ruinous Powers stand the Chaos Lords, champions and paragons of their patron God whose mere command can see tribes annihilated, cities sacked, and nations brought to the brink of disaster. Only the mightiest and most favoured Exalted Hero will survive to become a Chaos Lord, having overcome their enemies, their rivals, attempted punishments by the Ruinous Powers they have chosen not to follow, and even the capricious whims of their own God. Chaos Lords are extremely skilled combatants and physically far beyond the potential of mortal men in addition to being experienced and innately talented commanders. They are granted Daemonic mounts to carry them into battle and emphasize their status; in the case of Slaanesh a serpentine creature of blinding speed with a deadly lashing tongue and skin which exudes a calming musk that lulls opponents into holding back their blows. Should the Chaos Lord be slain, this mount will fight on before returning to the Chaos Realm of Slaanesh. Aside from continuing to crush their enemies and bring glory to Slaanesh, all that remains for this Chaos Lord is to prove themselves so fully that they are elevated to immortality in the form of a Daemon Prince.
 
-[This Chaos Lord is awaiting the event that will transform them to either a Daemon Prince (and losing all its XP) or a mindless Chaos Spawn.]"
+[This Chaos Lord is awaiting the event that will transform them to either a Daemon Prince (and losing all its XP) or a mindless Chaos Spawn.]
+[Discounted to 210 gold in Turmoil 3]"
 --stats compared with exalted hero
 #ap 32 -- fastest cav in the game, tied with centauride
 #mapmove 28 -- same as a shade beast, tireless, fast
@@ -2911,7 +7397,7 @@ Vampires (Vampires)"
 #demon
 #magicskill 1 2 -- A2
 #magicskill 4 2 -- S2
-#magicskill 7 3 -- B2
+#magicskill 7 2 -- B2
 #magicskill 8 2 -- H2
 #holy
 #expertleader
@@ -2943,7 +7429,8 @@ Vampires (Vampires)"
 #name "Marauder Shaman"
 #descr "Most Marauder tribes will have one or two Shamans whose duty is to offer counsel to the Chieftain, interpret auguries to ensure successful raids, and lead the tribe in offering the proper observances to their patron God. Shamans tend to have only a little magical talent and rather than harnessing energy provided by the Ruinous Powers, they tap into the magic of their surroundings in the manner of hedge mages, witches, and other lesser mages. Shamans thus practice a different branch of magic from Sorcerers focused on veneration of the dead, the wilds, and the bitter cold of the polar lands. Shamans of Marauder tribes dedicated to Slaanesh in the guise of the Serpent carry staffs topped with snake skeletons and have some talent in the magic of the spheres and the minds of mortals.
 
-[Does not require a lab to recruit.]"
+[Does not require a lab to recruit.]
+[Discounted to 85 gold in Turmoil 3]"
 #gcost 115
 #chaosrec 10 -- t3gcost 85
 #rpcost 2
@@ -2971,7 +7458,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Chieftain.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Chieftain2.tga"
 #name "Marauder Chieftain"
-#descr "While the largest Marauder warhosts are inevitably commanded by an Exalted Hero or Chaos Lord, the smaller tribes that make up the vast majority of human life in the lands surrounding the Chaos Wastes are ruled over by Chieftains. They are typically fierce and crafty warriors with years of experience raiding and doing battle, perhaps even having taken part in a full blown Chaos invasion during their lifetime. Although Marauders hold sheer martial prowess in considerable esteem it is unusual for a young Marauder, no matter how gifted, to ascend to the position of Chieftain, as they will typically embark of the Path of the Warrior or the Path of the Champion, assuming they don't fall in battle trying to prove themselves. Rather Marauder Chieftains are picked out by their Shamans and by former Chiefs to take the position, selected on the basis that they clearly have some favour from the Ruinous Powers, but have not attracted the potentially lethal full attention of their Patron God. The Marauder tribes are well known for their raids by sea and Marauder Chieftains can command fleets of cramped but efficient longboats to bear Marauders and Warriors to battle, though they aren't nearly large enough to transport cavalry."
+#descr "While the largest Marauder warhosts are inevitably commanded by an Exalted Hero or Chaos Lord, the smaller tribes that make up the vast majority of human life in the lands surrounding the Chaos Wastes are ruled over by Chieftains. They are typically fierce and crafty warriors with years of experience raiding and doing battle, perhaps even having taken part in a full blown Chaos invasion during their lifetime. Although Marauders hold sheer martial prowess in considerable esteem it is unusual for a young Marauder, no matter how gifted, to ascend to the position of Chieftain, as they will typically embark of the Path of the Warrior or the Path of the Champion, assuming they don't fall in battle trying to prove themselves. Rather Marauder Chieftains are picked out by their Shamans and by former Chiefs to take the position, selected on the basis that they clearly have some favour from the Ruinous Powers, but have not attracted the potentially lethal full attention of their Patron God. The Marauder tribes are well known for their raids by sea and Marauder Chieftains can command fleets of cramped but efficient longboats to bear Marauders and Warriors to battle, though they aren't nearly large enough to transport cavalry.
+
+[Discounted to 45 gold in Turmoil 3]"
 #gcost 60
 #chaosrec 5 -- t3gcost 45
 #hp 20
@@ -3006,7 +7495,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Horsemaster.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Marauder_Horsemaster2.tga"
 #name "Marauder Horsemaster"
-#descr "While the largest Marauder warhosts are inevitably commanded by an Exalted Hero or Chaos Lord, the smaller tribes that make up the vast majority of human life in the lands surrounding the Chaos Wastes are ruled over by Chieftains. They are typically fierce and crafty warriors with years of experience raiding and doing battle, perhaps even having taken part in a full blown Chaos invasion during their lifetime. Although Marauders hold sheer martial prowess in considerable esteem it is unusual for a young Marauder, no matter how gifted, to ascend to the position of Chieftain, as they will typically embark of the Path of the Warrior or the Path of the Champion, assuming they don't fall in battle trying to prove themselves. Rather Marauder Chieftains are picked out by their Shamans and by former Chiefs to take the position, selected on the basis that they clearly have some favour from the Ruinous Powers, but have not attracted the potentially lethal full attention of their Patron God. Those Chieftains that rule over the primarily eastern Marauder tribes whose raiders are largely mounted go to battle on fine steeds and are known as Horsemasters. They are as versed in raiding tactics as any other Chieftain but tend to lead smaller groups and cannot call on fleets of longships to transport their raiders."
+#descr "While the largest Marauder warhosts are inevitably commanded by an Exalted Hero or Chaos Lord, the smaller tribes that make up the vast majority of human life in the lands surrounding the Chaos Wastes are ruled over by Chieftains. They are typically fierce and crafty warriors with years of experience raiding and doing battle, perhaps even having taken part in a full blown Chaos invasion during their lifetime. Although Marauders hold sheer martial prowess in considerable esteem it is unusual for a young Marauder, no matter how gifted, to ascend to the position of Chieftain, as they will typically embark of the Path of the Warrior or the Path of the Champion, assuming they don't fall in battle trying to prove themselves. Rather Marauder Chieftains are picked out by their Shamans and by former Chiefs to take the position, selected on the basis that they clearly have some favour from the Ruinous Powers, but have not attracted the potentially lethal full attention of their Patron God. Those Chieftains that rule over the primarily eastern Marauder tribes whose raiders are largely mounted go to battle on fine steeds and are known as Horsemasters. They are as versed in raiding tactics as any other Chieftain but tend to lead smaller groups and cannot call on fleets of longships to transport their raiders.
+
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 357 -- light lance
 #weapon 56 -- hoof
 #armor 21 -- full helmet
@@ -3044,7 +7535,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Cultist_Male.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Cultist_Male2.tga"
 #name "Slaaneshi Cultist"
-#descr "Slaanesh is the most seductive and insidious of the Ruinous Powers, for the Dark Prince is able to offer mortals all the pleasures sensation can offer and on the same hand threaten all the torments it can bring. Nothing pleases Slaanesh more than the temptation and corruption of once innocent souls and the complex games of intrigue, blackmail, and seduction involved. As such Slaanesh has a great many adherents hidden in the mortal realms posing as courtiers, mages, merchants, politicians, priest, travellers, and entertainers while secretly furthering the plots of the Prince of Pleasure. Slaaneshi Cultists are expert sophists with a keen understanding of the human mind and can sway vulnerable souls to Slaanesh's side. Their physical beauty, enhanced by their God, is often enough to stay the blade of even a determined attacker. This cultist is male."
+#descr "Slaanesh is the most seductive and insidious of the Ruinous Powers, for the Dark Prince is able to offer mortals all the pleasures sensation can offer and on the same hand threaten all the torments it can bring. Nothing pleases Slaanesh more than the temptation and corruption of once innocent souls and the complex games of intrigue, blackmail, and seduction involved. As such Slaanesh has a great many adherents hidden in the mortal realms posing as courtiers, mages, merchants, politicians, priest, travellers, and entertainers while secretly furthering the plots of the Prince of Pleasure. Slaaneshi Cultists are expert sophists with a keen understanding of the human mind and can sway vulnerable souls to Slaanesh's side. Their physical beauty, enhanced by their God, is often enough to stay the blade of even a determined attacker. This cultist is male.
+
+[Discounted to 100 gold in Turmoil 3]"
 #gcost 145
 #chaosrec 15 -- so T3 gcost is 100
 #rpcost 2
@@ -3081,7 +7574,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Cultist_Female.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Cultist_Female2.tga"
 #name "Slaaneshi Cultist"
-#descr "Slaanesh is the most seductive and insidious of the Ruinous Powers, for the Dark Prince is able to offer mortals all the pleasures sensation can offer and on the same hand threaten all the torments it can bring. Nothing pleases Slaanesh more than the temptation and corruption of once innocent souls and the complex games of intrigue, blackmail, and seduction involved. As such Slaanesh has a great many adherents hidden in the mortal realms posing as courtiers, mages, merchants, politicians, priest, travellers, and entertainers while secretly furthering the plots of the Prince of Pleasure. Slaaneshi Cultists are expert sophists with a keen understanding of the human mind and can sway vulnerable souls to Slaanesh's side. Their physical beauty, enhanced by their God, is often enough to stay the blade of even a determined attacker. This cultist is female."
+#descr "Slaanesh is the most seductive and insidious of the Ruinous Powers, for the Dark Prince is able to offer mortals all the pleasures sensation can offer and on the same hand threaten all the torments it can bring. Nothing pleases Slaanesh more than the temptation and corruption of once innocent souls and the complex games of intrigue, blackmail, and seduction involved. As such Slaanesh has a great many adherents hidden in the mortal realms posing as courtiers, mages, merchants, politicians, priest, travellers, and entertainers while secretly furthering the plots of the Prince of Pleasure. Slaaneshi Cultists are expert sophists with a keen understanding of the human mind and can sway vulnerable souls to Slaanesh's side. Their physical beauty, enhanced by their God, is often enough to stay the blade of even a determined attacker. This cultist is female.
+
+[Discounted to 100 gold in Turmoil 3]"
 #gcost 145
 #chaosrec 15 -- so T3 gcost is 100
 #rpcost 2
@@ -3118,7 +7613,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Sorcerer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Sorcerer2.tga"
 #name "Slaaneshi Sorcerer"
-#descr "Just as Chaos Warriors and Aspiring Champions seek to prove themselves to their patron God and gain glory and power by pursuing an extreme path, so to do Chaos Sorcerers. Sorcerers are magically talented individuals who, rather than researching the lore of a specific Wind of Magic as do the Wizards of the Imperial Colleges instead beseech a Ruinous Power for forbidden knowledge and power. Although in some ways Sorcerers thus take a shortcut to magical mastery, there can be no doubting the commitment of dedication of those who survive the arcane gits bestowed by their God, for simply retaining both their sanity and physical form requires an iron will. Sorcerers of Slaanesh are most talented in the use of magics of manipulation and deception, though they are capable of unleashing considerable devastation should they so choose. All Sorcerers bear the clear favour of their patron God and are thus sacred to their warhosts, but Slaaneshi Sorcerers in particular are known to act as evangelical orators able to move the hearts and minds of mortal men in writhing exultation of the Prince of Pleasure."
+#descr "Just as Chaos Warriors and Aspiring Champions seek to prove themselves to their patron God and gain glory and power by pursuing an extreme path, so to do Chaos Sorcerers. Sorcerers are magically talented individuals who, rather than researching the lore of a specific Wind of Magic as do the Wizards of the Imperial Colleges instead beseech a Ruinous Power for forbidden knowledge and power. Although in some ways Sorcerers thus take a shortcut to magical mastery, there can be no doubting the commitment of dedication of those who survive the arcane gits bestowed by their God, for simply retaining both their sanity and physical form requires an iron will. Sorcerers of Slaanesh are most talented in the use of magics of manipulation and deception, though they are capable of unleashing considerable devastation should they so choose. All Sorcerers bear the clear favour of their patron God and are thus sacred to their warhosts, but Slaaneshi Sorcerers in particular are known to act as evangelical orators able to move the hearts and minds of mortal men in writhing exultation of the Prince of Pleasure.
+
+[Discounted to 200 gold in Turmoil 3]"
 #gcost 275 -- the dastur is F1D1B1H2 with 100% FADB and costs 215 gold
 #chaosrec 25 -- so T3 gcost is 200
 #rpcost 2
@@ -3158,7 +7655,9 @@ Vampires (Vampires)"
 #spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Sorcerer_Lord.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Sorcerer_Lord2.tga"
 #name "Slaaneshi Sorcerer Lord"
-#descr "Just as Chaos Warriors and Aspiring Champions seek to prove themselves to their patron God and gain glory and power by pursuing an extreme path, so to do Chaos Sorcerers. Sorcerers are magically talented individuals who, rather than researching the lore of a specific Wind of Magic as do the Wizards of the Imperial Colleges instead beseech a Ruinous Power for forbidden knowledge and power. Although in some ways Sorcerers thus take a shortcut to magical mastery, there can be no doubting the commitment of dedication of those who survive the arcane gits bestowed by their God, for simply retaining both their sanity and physical form requires an iron will. The most powerful Sorcerers are known as Sorcerer Lords and their magical prowess is considerable, though very few Sorcerers survive learning the soul-scouring secrets required. All Sorcerers bear the clear favour of their patron God and are thus sacred to their warhosts, but Slaaneshi Sorcerers in particular are known to act as evangelical orators able to move the hearts and minds of mortal men in writhing exultation of the Prince of Pleasure."
+#descr "Just as Chaos Warriors and Aspiring Champions seek to prove themselves to their patron God and gain glory and power by pursuing an extreme path, so to do Chaos Sorcerers. Sorcerers are magically talented individuals who, rather than researching the lore of a specific Wind of Magic as do the Wizards of the Imperial Colleges instead beseech a Ruinous Power for forbidden knowledge and power. Although in some ways Sorcerers thus take a shortcut to magical mastery, there can be no doubting the commitment of dedication of those who survive the arcane gits bestowed by their God, for simply retaining both their sanity and physical form requires an iron will. The most powerful Sorcerers are known as Sorcerer Lords and their magical prowess is considerable, though very few Sorcerers survive learning the soul-scouring secrets required. All Sorcerers bear the clear favour of their patron God and are thus sacred to their warhosts, but Slaaneshi Sorcerers in particular are known to act as evangelical orators able to move the hearts and minds of mortal men in writhing exultation of the Prince of Pleasure.
+
+[Discounted to 280 gold in Turmoil 3]"
 #prot 3 -- mutations
 #gcost 400
 #chaosrec 40 -- so T3 gcost is 280
@@ -3541,7 +8040,7 @@ Vampires (Vampires)"
 #weapon 1131 -- steed's tongue
 #weapon 1133 -- Chaos Glaive -- can be replaced, just a one handed magic glaive
 #armor 311 -- chaos helm
-#armor 38 -- blacksteel full plate
+#armor 310 -- chaos full plate
 #armor 3 -- kite shield
 #holy
 #size 5
@@ -3597,6 +8096,189 @@ Vampires (Vampires)"
 #coldres 3
 #end
 
+
+
+------ Azazel
+
+#newmonster 4305
+#spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Hero_Azazel.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Hero_Azazel2.tga"
+#name "Prince of Damnation"
+#descr "Azazel is one of the foremost of Slaanesh's Daemon Princes and holds the official title of Prince of Damnation, his purview being souls who have damned themselves through acts of great betrayal of their rulers or loved ones. In his former mortal life Azazel was a warrior of the Unberogen tribe named Gerreon who swore vengeance against Sigmar Heldenhammer for the death of his brother under Sigmar's command. Gerreon infiltrated Sigmar's honour guard and became a trusted friend to the heroic ruler, in time finding his ruse of loyalty had become truth rather than fiction. Though Gerreon had come to love Sigmar he still chose to betray him, badly wounding him and murdering his betrothed, Gerreon's own sister. Following this great betrayal Gerreon fled to the Chaos Wastes and became a Chaos Lord greatly favoured by the young Chaos God Slaanesh, eventually rising to Daemon Princehood. As a Daemon Prince Azazel wields incredible physical and magical might but his greatest power is his ability to corrupt and dominate the minds of mortals, for the Prince of Damnation appears to his foes as stunningly beautiful and impossible eloquent, just, and convincing. In battle Azazel descends silently on his enemies on graceful white wings and serenely butchers them with his scything claw or unholy sword. While they are Daemons in form their past in the mortal world grants Daemon Princes the benefit of not becoming weaker outside the Dominion of their God, though like Greater Daemons they can still only reform their bodies if slain in this Dominion.
+
+[Azazel is primarily concerned with the corruption and damnation of men and as such is considered female for the purposes of the Seduction command]"
+#hp 58 -- keeper -8
+#size 5
+#prot 7 -- keeper -4
+#mor 30
+#mr 18
+#enc 1
+#str 18 -- -2 from keeper
+#att 15 -- keeper -1
+#def 16 -- keeper -1
+#prec 14 -- keeper +1
+#mapmove 28
+#flying
+#ap 20 -- -2 compared to keeper
+#gcost 0
+#weapon 595 -- hypnotise
+#weapon 189 -- enslavement
+#weapon 477 -- unholy sword
+#weapon 1127 -- wicked claw
+#neednoteat
+#poisonres 10 -- +10
+#diseaseres 100 -- +100
+#demon
+#stealthy 40 -- assassin +15
+#magicskill 1 2 -- A2
+#magicskill 4 2 -- S2
+#magicskill 7 2 -- B2
+#magicskill 8 3 -- H3
+#invulnerable 14
+#wastesurvival
+#female
+#seduce 14 -- +1 over keeper of secrets
+#awe 6 -- +2 over keeper of secrets
+#fear 5 -- -3 over keeper
+#expertleader
+#expertundeadleader
+#holy
+#snow
+#ambidextrous 4
+#domimmortal
+#reformtime 3 -- takes 6 months to reform
+#maxage 9999
+#startage 2666
+#fixedname "Azazel"
+#heal --- recuperation ability
+#combatcaster
+#coldres 3
+#itemslots 294016 -- crown, body, 3 misc, feet
+#end
+
+
+
+---- N'Kari (in dominion)
+
+#newmonster 4306
+#spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Hero_Nkari.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Hero_Nkari2.tga"
+#name "Ruination of Ulthuan"
+#descr "N'Kari is one of the most powerful of Slaanesh's Greater Daemons and certainly the most infamous and feared amongst those in the mortal world unfortunate enough to know of its existence. N'Kari is remarkable amongst Daemons for their singular focus; the sadistic Keeper of Secrets seems to be almost entirely dedicated to the corruption and ruination of the land of Ulthuan, specifically any who carry the bloodline of the great elven hero Aenarion. During Ulthuan's darkest hour with the fate of the mortal world hanging in the balance Aenarion was beset by four Greater Daemons sent by the Ruinous Powers it was N'Kari that came closest to felling the elf, but ultimately was destroyed and banished back to the Realm of Slaanesh, promising vengeance on his people. N'Kari is as patient, intelligent, and skilled in subterfuge as any Keeper of Secrets but eschews the art of corruption in favour of slaughter, assassination, and pain. As with all Daemons N'Kari is more powerful within the Dominion of Slaanesh and, as a Greater Daemon, they are capable of reforming their body should they be slain in this Dominion."
+--stats compared with regular KoS
+#hp 70 -- +4
+#size 5
+#prot 11
+#mor 30
+#mr 18
+#enc 1
+#str 21 -- +1
+#att 17 -- +1
+#def 18 -- +1
+#prec 15 -- +2
+#mapmove 24 --
+#ap 22 --
+#gcost 0
+#weapon 477 -- unholy sword
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
+#weapon 29 -- claw (not bonus)
+#neednoteat
+#poisonres 10 --
+#diseaseres 100 --
+#demon
+#stealthy 30 --
+#magicskill 1 2 -- A2
+#magicskill 4 2 -- S2
+#magicskill 7 3 -- B3
+#magicskill 8 3 -- H3
+#itemslots 277638 -- crown only on head, but otherwise full slots
+#invulnerable 16 -- +1
+#wastesurvival
+#awe 4 -- same as kydnid
+#fear 10 -- +2
+#assassin
+#patience 3 -- +2 over standard, -2 from khainite assassin
+#expertleader
+#expertundeadleader
+#holy
+#snow
+#ambidextrous 4
+#domimmortal
+#reformtime 2 -- 1 quicker
+#notdomshape 4307 -- the weakened form
+#maxage 9999
+#startage 6666
+#heal --- recuperation ability
+#combatcaster
+#coldres 5 -- +2
+#fixedname "N'Kari"
+#popkill 2 -- same as a kohen, 20 a month
+#end
+
+
+---- N'Kari (out of dominion)
+#newmonster 4307
+#spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Hero_Nkari.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Hero_Nkari2.tga"
+#name "Ruination of Ulthuan"
+#descr "N'Kari is one of the most powerful of Slaanesh's Greater Daemons and certainly the most infamous and feared amongst those in the mortal world unfortunate enough to know of its existence. N'Kari is remarkable amongst Daemons for their singular focus; the sadistic Keeper of Secrets seems to be almost entirely dedicated to the corruption and ruination of the land of Ulthuan, specifically any who carry the bloodline of the great elven hero Aenarion. During Ulthuan's darkest hour with the fate of the mortal world hanging in the balance Aenarion was beset by four Greater Daemons sent by the Ruinous Powers it was N'Kari that came closest to felling the elf, but ultimately was destroyed and banished back to the Realm of Slaanesh, promising vengeance on his people. N'Kari is as patient, intelligent, and skilled in subterfuge as any Keeper of Secrets but eschews the art of corruption in favour of slaughter, assassination, and pain. As with all Daemons N'Kari is more powerful within the Dominion of Slaanesh and, as a Greater Daemon, they are capable of reforming their body should they be slain in this Dominion.
+
+[N'Kari is outside of friendly Dominion and has reduced stats]"
+--stats compared with in dominion version
+#hp 58 -- -12
+#size 5
+#prot 9 -- -2
+#mor 30
+#mr 17 -- -1
+#enc 3 -- +2 worse
+#str 19 -- -2
+#att 16 -- -1
+#def 17 -- -1
+#prec 14 -- -1
+#mapmove 24
+#ap 22
+#gcost 0
+#weapon 477 -- unholy sword
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
+#weapon 29 -- claw (not bonus)
+#neednoteat
+#poisonres 10
+#diseaseres 100
+#demon
+#stealthy 20 -- -10
+#magicskill 1 1 -- -1
+#magicskill 4 1 -- -1
+#magicskill 7 2 -- -1
+#magicskill 8 2 -- -1
+#magicboost 53 -1
+#magicboost 8 -1
+#itemslots 277638 -- crown only on head, but otherwise full slots
+#invulnerable 12 -- -4
+#wastesurvival
+#awe 2 -- -2
+#fear 7 -- -3
+#assassin
+#patience 2 -- -1
+#expertleader
+#expertundeadleader
+#holy
+#snow
+#ambidextrous 4
+#domimmortal
+#reformtime 2
+#domshape 4306 -- turn back
+#maxage 9999
+#startage 6666
+#combatcaster
+#coldres 5
+#fixedname "N'Kari"
+#popkill 2 -- same as a kohen, 20 a month
+#end
+
+
+
 ----------PRETENDERS
 
 
@@ -3648,7 +8330,7 @@ Vampires (Vampires)"
 #path 0 7 -- blood
 #pathlevel 0 1
 #school 6 -- blood
-#fatiguecost 500 -- 5 blood slaves
+#fatiguecost 400 -- 4 blood slaves
 #damage 4255 -- daemonette
 #nreff 1
 #effect 10001
@@ -3667,7 +8349,7 @@ Vampires (Vampires)"
 #pathlevel 0 2
 #pathlevel 1 1
 #school 6 -- blood
-#fatiguecost 3200 -- 32 blood slaves -- premium of 2
+#fatiguecost 2600 -- 26 blood slaves -- premium of 2
 #damage 4255 -- daemonette
 #nreff 6
 #effect 10001
@@ -3705,7 +8387,7 @@ Vampires (Vampires)"
 #pathlevel 0 2
 #pathlevel 1 1
 #school 6 -- blood
-#fatiguecost 1400 -- 14 blood slaves
+#fatiguecost 1300 -- 13 blood slaves
 #damage 4265 -- fiend
 #nreff 1
 #effect 10001
@@ -4978,6 +9660,8 @@ Vampires (Vampires)"
 #level 0
 #rarity 5
 #homecom 4302 -- styrkaar
+#homecom 4305 -- Azazel
+#homecom 4306 -- nkari in dominion
 #end
 
 
@@ -5007,11 +9691,23 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 
 -- Sigvald the Magnificent -- floating chaos lord
 
--- N'kari -- two swords KoS, different head maybe? Other minor changes
-
 -- Dechala the Denied One -- four arms rather than 6 I reckon
 
+-- The Masque of Slaanesh -- special herald daemonette
+
 -- Azazel
+
+#newevent
+#msg "The mighty hero Azazel the Prince of Damnation and foremost amongst the Daemon Princes of Slaanesh has joined your cause."
+#req_owncapital 1
+#req_fornation 146
+#nation 146
+#com 4305
+#req_unique 1
+#rarity 5
+#req_rare 2 -- 2% chance, he's pretty good
+#req_turn 12 -- too good to be early
+#end
 
 -- Styrkaar of the Sortsvinaer
 
@@ -5029,6 +9725,19 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_turn 8 -- too good as an early expander
 #end
 
+-- N'Kari
+
+#newevent
+#msg "The mighty hero N'Kari the Ruination of Ulthuan and foremost amongst the Greater Daemons of Slaanesh has joined your cause."
+#req_owncapital 1
+#req_fornation 146
+#nation 146
+#com 4306
+#req_unique 1
+#rarity 5
+#req_rare 2 -- 2% chance, he's pretty good
+#req_turn 14 -- too good to be early
+#end
 
 
 
@@ -5526,10 +10235,12 @@ Dominion: Decreases unrest in your provinces, increases it in enemy provinces. D
 #addreccom 4228 -- cultist female
 #addreccom 4227 -- cultist male
 #addreccom 4229 -- sorcerer
+--addreccom 4305 -- Azazel
 --addreccom 4230 -- sorcerer lord
 --addreccom 4260 -- herald of slaanesh -- could be male or female
 --addreccom 4252 -- keeper of secrets -- could be male or female
 --addreccom 4302 -- styrkaar
+--addreccom 4306 -- nkari
 
 #addforeigncom 4236 -- marauder scout
 #addforeigncom 4259 -- Marauder chieftain
@@ -7047,36 +11758,6 @@ Dominion: Decreases unrest in your provinces, increases it in enemy provinces. D
 #size 4
 #nametype 100 
 #itemslots 1
-#end
-
-
--- Pegasus
-
-#newmonster 3674
-#spr1 "./Sombre_Warhammer/Warhammer_Bretonnia/Pegasus_Heraldry_1.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Bretonnia/Pegasus_Heraldry_2.tga"
-#name "Bretonnian Pegasus"
-#descr "Bretonnian Pegasi are known for their loyalty to their masters and will fight on to avenge them."
-#str 15
-#prot 4
-#weapon 55 -- Hoof
-#animal
-#flying
-#hp 20
-#mor 11
-#mr 11
-#att 10
-#def 10
-#ap 24
-#prec 10
-#enc 3
-#gcost 0
-#rcost 1
-#mapmove 28
-#size 4
-#itemslots 1
-#mountainsurvival
-#animal
 #end
 
 
@@ -9388,7 +14069,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 --- Mechanical Hammer
 
 #newweapon 938
-#copyweapon 115 dwarven hammer
+#copyweapon 115 -- dwarven hammer
 #att 1 -- +1
 #def 1 -- +2
 #nratt 2 -- fast due to mech
@@ -9463,7 +14144,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 
 #newweapon 906
 #copyweapon 17 -- Axe
-#name "Chaos Dwarf Axe"
+#name "Quality Axe"
 #rcost 3 -- triple normal
 #att 1 -- +1
 #def 0 -- +1
@@ -9473,7 +14154,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 
 #newweapon 978
 #copyweapon 18 -- Battleaxe
-#name "Chaos Dwarf Battleaxe"
+#name "Quality Battleaxe"
 #rcost 7 -- double normal and +1
 #att 2 -- +1
 #def 1 -- +1
@@ -9496,18 +14177,6 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #copyweapon 19 -- bite
 #name "Wolf Bite"
 #dmg 12
-#end
-
---- Orc choppa
-
-#newweapon 909
-#copyweapon 8 -- broad sword
-#name "Choppa"
-#def -1 -- -2 from normal broad sword
-#att 0 -- -1 from normal broad sword
-#dmg 7 -- +1 from normal broad sword
-#charge -- added charge bonus common to all choppa weapons
-#rcost 1
 #end
 
 --- Blunderbuss
@@ -9533,7 +14202,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 
 #newweapon 911
 #copyweapon 463 -- Agarthan Steel Crossbow
-#name "Chaos Dwarf Crossbow"
+#name "Quality Crossbow"
 #ammo 12 -- same
 #att 3 -- +1
 #armorpiercing -- same
@@ -9580,6 +14249,8 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #copyweapon 126 -- poison dagger
 #name "Gitknife"
 #secondaryeffect 50 -- weak poison
+#dmg 0 -- -2
+#armorpiercing
 #end
 
 
@@ -9606,7 +14277,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 
 #newarmor 295
 #copyarmor 17 -- full scale mail
-#name "Dwarf Full Scale Mail"
+#name "Quality Full Scale Mail"
 #def -1 -- better by 1
 #enc 3 -- same
 #prot 16 -- +1
@@ -9617,7 +14288,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 
 #newarmor 296
 #copyarmor 12 -- scale mail hauberk
-#name "Dwarf Scale Mail Hauberk"
+#name "Quality Scale Mail Hauberk"
 #def 0 -- better by 1
 #enc 2 -- same
 #prot 14 -- +1
@@ -9628,7 +14299,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 
 #newarmor 297
 #copyarmor 7 -- scale mail cuirass
-#name "Dwarf Scale Mail Cuirass"
+#name "Quality Scale Mail Cuirass"
 #def 0 -- better by 1
 #enc 1 -- same
 #prot 11 -- +1
@@ -9640,7 +14311,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #newarmor 290
 #copyarmor 215 -- Full Plate of Ulm
 #name "Infernal Full Plate"
-#rcost 30
+#rcost 34 -- +6
 #magicarmor
 #end
 
@@ -9709,7 +14380,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #mapmove 18 -- dwarfs are really strong marchers
 #ap 10 --- set to get combat speed to 6
 --gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
-#gcost 16
+#gcost 15
 #rpcost 21 --- They need to have order scales
 #rcost 1
 #armor 2 -- basic shield
@@ -9899,9 +14570,9 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Infernal_Chosen.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Infernal_Chosen2.tga"
 #name "Infernal Chosen"
-#descr "While the vast majority of the Infernal Guard were condemned to service by their peers for public dishonour or a dramatic fall in the fortunes of their master, there are a rare few who join of their own volition. These are Dwarfs who cannot stand some secret shame, some stain to their honour which they can neither repair nor abide, even if it is known only to them. For these Dwarfs there is no choice but to join, for in Chaos Dwarf society even death is no escape from true dishonour, unless of course that death is found in the anonymous ranks of the Infernal Guard. The Chosen are stripped of their identity and sealed in their armour just like the condemned, but unlike their fellows their sacrifice is honoured by the Horns of Hashut on their helms, and they are armed with a pair of glowing forge axes fashioned by the Daemonsmiths to sear the foe with every slash. Members of the Infernal Guard can only be recruited when a Daemonsmith is present.
+#descr "While the vast majority of the Infernal Guard were condemned to service by their peers for public dishonour or a dramatic fall in the fortunes of their master, there are a rare few who join of their own volition. These are Dwarfs who cannot stand some secret shame, some stain to their honour which they can neither repair nor abide, even if it is known only to them. For these Dwarfs there is no choice but to join, for in Chaos Dwarf society even death is no escape from true dishonour, unless of course that death is found in the anonymous ranks of the Infernal Guard. The Chosen are stripped of their identity and sealed in their armour just like the condemned, but unlike their fellows their sacrifice is honoured by the Horns of Hashut on their helms, and they are armed with a pair of glowing forge axes fashioned by the Daemonsmiths to sear the foe with every slash. Members of the Infernal Guard can only be recruited when a Daemonsmith is present. While the Chosen are merely respected for their commitment to ending their dishonor rather than being sacred, their upkeep is halved by contributions from the priesthood.
 
-[Requires a Daemonsmith present to recruit. Limited Recruitment: 1]"
+[Requires a Daemonsmith present to recruit. Halved gold upkeep. Limited Recruitment: 1]"
 #hp 14 --- toughness 4, description makes them sound even tougher
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -9914,8 +14585,8 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 10 --- ballistic skill 3
 #mapmove 18 -- dwarfs are really strong marchers
 #ap 10 --- set to get combat speed to 6
---gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
-#gcost 60
+#gcost 50
+#addupkeep -25
 #rpcost 21 --- They need to have order scales
 #rcost 1
 #armor 290 -- infernal full plate
@@ -10001,7 +14672,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 8
+#gcost 7
 #rpcost 6 --- reduced
 #rcost 1
 #weapon 23 -- normal short bow
@@ -10033,7 +14704,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 7
+#gcost 6
 #rpcost 6 --- reduced
 #rcost 1
 #weapon 1 -- spear
@@ -10052,7 +14723,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Hobgoblin_Sneak.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Hobgoblin_Sneak2.tga"
 #name "Hobgoblin Sneak"
-#descr "Hobgoblins are such an utterly evil and treacherous race that it is hard to imagine a tribe of hobgoblins whose double dealing and backstabbing is renowned even amongst their own fickle kind, yet it exists. This tribe, known as the Sneaky Gits, lives to the east of Zharr-Naggrund. The warriors of this tribe fight in battle with two long curving knives treated with all manner of poisons and ideally suited to their back stabbing methods."
+#descr "Hobgoblins are such an utterly evil and treacherous race that it is hard to imagine a tribe of hobgoblins whose double dealing and backstabbing is renowned even amongst their own fickle kind, yet it exists. This tribe, known as the Sneaky Gits, lives to the east of Zharr-Naggrund. The warriors of this tribe fight in battle with two long curving knives treated with all manner of poisons and ideally suited to their back stabbing methods. Sneaks are experts at striking weak, soft, or particularly painful gaps in the opponents armour."
 #hp 8 --- toughness 3, but smaller than human
 #size 2 --- they aren't goblins
 #prot 0 --- toughness 3, size 2
@@ -10338,7 +15009,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #gcost 1
 #rpcost 1 --- doesn't matter
 #rcost 1
-#weapon 909 -- choppa
+#weapon 1086 -- choppa
 #armor 119 -- reinforced leather cap
 #armor 11 -- ring mail hauberk
 #mountainsurvival
@@ -10374,7 +15045,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #gcost 1
 #rpcost 1 --- doesn't matter
 #rcost 1
-#weapon 909 -- choppa
+#weapon 1086 -- choppa
 #armor 119 -- reinforced leather cap
 #armor 11 -- ring mail hauberk
 #armor 2 -- shield
@@ -10476,9 +15147,9 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 1
 #mapmove 14 -- standard human move
 #ap 12
-#gcost 4
+#gcost 3
 #rpcost 9 --- doesn't matter
-#rcost 6
+#rcost 8
 #slave
 #weapon 954 -- varies
 #firstshape -1023
@@ -10512,9 +15183,9 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #darkvision 50
 #heal -- recuperation ability
 #patrolbonus -1
-#gcost 4
+#gcost 3
 #rpcost 9 --- doesn't matter
-#rcost 6
+#rcost 8
 #slave
 #firstshape -1023
 #monpresentrec 8128 -- chaos dwarf slaver
@@ -10728,7 +15399,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 4
 #mapmove 18 -- big strides
 #ap 16
-#gcost 240
+#gcost 220
 #rpcost 60
 #rcost 10
 #armor 21 -- Full Helmet
@@ -10770,7 +15441,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 4
 #mapmove 18 -- big strides
 #ap 16
-#gcost 240
+#gcost 220
 #rpcost 60
 #rcost 10
 #armor 21 -- Full Helmet
@@ -10868,6 +15539,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #mountainsurvival
 #stealthy 10
 #darkvision 50
+#noleader
 #end
 
 ---- Hobgoblin Khan
@@ -10927,7 +15599,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 60 --- normal assassin price
+#gcost 70 --- normal assassin price
 #rpcost 1 --- normal
 #rcost 1
 #weapon 915 -- gitknife
@@ -10940,6 +15612,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #darkvision 50
 #assassin
 #patience 1 -- standard value
+#poorleader
 #end
 
 ---- Slaver
@@ -10963,8 +15636,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #prec 12 --- ballistic skill 4
 #mapmove 18 -- dwarfs are really strong marchers, this guy is well travelled though not military minded
 #ap 8 --- move 3
---gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
-#gcost 90 -- has to be somewhat high because of the resource boost
+#gcost 75 -- has to be somewhat high because of the resource boost
 #rpcost 1 --- normal for non-mage
 #rcost 1
 #armor 150 -- bone helmet
@@ -14097,17 +18769,21 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #descr "Each Assassin bears the Mark of Khaine somewhere on his body, symbolising his dedication to the God of Murder. The Mark confers a blessing to this sacred agent of death at all times."
 #spr "./Sombre_Warhammer/Warhammer_Dark_Elves/Item_Khaine.tga"
 #type 8 -- misc
+#constlevel 12
 #cursed
 #nofind
 #bless -- always blessed
 #end
 
 
+-- Lokhir's Kraken Helm
+
 #selectitem 916
 #name "Kraken Mask"
 #descr "Lokhir's infamous Kraken Mask."
 #spr "./Sombre_Warhammer/Warhammer_Dark_Elves/Item_Kraken.tga"
 #type 6
+#constlevel 12
 #cursed
 #nofind
 #armor 261 -- helm of the kraken
@@ -14116,100 +18792,6 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 
 
 --------------New Weapons
-
-
-
---- Orc choppa
-
-#newweapon 1203
-#copyweapon 8 -- broad sword
-#name "Choppa"
-#def -1 -- -2 from normal broad sword
-#att 0 -- -1 from normal broad sword
-#dmg 7 -- +1 from normal broad sword
-#charge -- added charge bonus common to all choppa weapons
-#rcost 1
-#end
-
-
--- Steed's Tongue (nostr Seeker Daemonette version)
-
-#newweapon 1198
-#copyweapon 19 -- jade maiden mount bite
-#name "Steed's Tongue"
-#dmg 12 -- basic steed str damage
-#att -3 -- much less skilled than rider
-#sound 9 -- whip
-#flail -- because the tongue is prehensile
-#secondaryeffect 1199 -- psychoactive poisons
-#bonus
-#nostr
-#len 5 -- longer than spear
-#unrepel
-#end
-
--- Steed's Tongue (nostr hellstrider version)
-
-#newweapon 1201
-#copyweapon 19 -- jade maiden mount bite
-#name "Steed's Tongue"
-#dmg 12 -- basic steed str damage
-#att -1 -- less skilled than rider
-#sound 9 -- whip
-#flail -- because the tongue is prehensile
-#secondaryeffect 1199 -- psychoactive poisons
-#bonus
-#nostr
-#len 5 -- longer than spear
-#unrepel
-#end
-
--- Hellscourge
-
-#newweapon 1202
-#copyweapon 757 -- bronze scimitar
-#name "Hellscourge"
-#dmg 6
-#att 0
-#def 0
-#sound 9 -- whip
-#flail -- because the hellscourge has a life of its own
-#secondaryeffect 384 -- minor life drain
-#len 5 -- longer than spear
-#rcost 2
-#magic
-#end
-
-
--- Steed's Tongue (nostr Seeker Daemonette version)
-
-#newweapon 1200
-#copyweapon 20 -- normal bite
-#name "Poisonous Whiptongue"
-#dmg 0
-#att 0
-#def 0
-#sound 9 -- whip
-#flail -- because the tongue is prehensile
-#secondaryeffect 1199 -- psychoactive poisons
-#bonus -- can't be chopped off
-#len 5 -- longer than spear
-#unrepel
-#end
-
-
--- Psychoactive Poisons
-
-#newweapon 1199
-#copyweapon 622 -- maddening rage (confusion effect)
-#name "Psychoactive Poisons"
-#hardmrneg -- mr negates with difficulty
-#magic
-#armornegating
-#secondaryeffect 51 -- strong poison
-#end
-
-
 
 
 -- Repeater Crossbow
@@ -14373,17 +18955,6 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #secondaryeffect 542 -- acid
 #end
 
--- Daemonette Claw
-
-#newweapon 1179
-#copyweapon 600 -- crab claw
-#name "Wicked Claw"
-#magic
-#dmg 6
-#len 1
-#slash
-#pierce
-#end
 
 -- Lokhir Fellheart's heroic weapons
 
@@ -14905,7 +19476,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #str 9 -- -1
 #att 12
 #def 13 -- higher initiative, martial artist -- +1
-#gcost 25
+#gcost 22
 #rpcost 14
 #weapon 1177 -- poison blade
 #weapon 1177 -- poison blade
@@ -14917,7 +19488,6 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #berserk 2
 #nametype 271 -- female dark elf
 #blessbers -- go berserk when blessed
-#deathrec 2
 #end
 
 
@@ -15417,7 +19987,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #gcost 1
 #rpcost 1 --- doesn't matter
 #rcost 1
-#weapon 1203 -- choppa
+#weapon 1086 -- choppa
 #armor 119 -- reinforced leather cap
 #armor 11 -- ring mail hauberk
 #mountainsurvival
@@ -15453,7 +20023,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #gcost 1
 #rpcost 1 --- doesn't matter
 #rcost 1
-#weapon 1203 -- choppa
+#weapon 1086 -- choppa
 #armor 119 -- reinforced leather cap
 #armor 11 -- ring mail hauberk
 #armor 2 -- shield
@@ -15766,16 +20336,17 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 
 #newmonster 5146
 #spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette2.tga" -- fix this
+#spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette2.tga"
 #name "Daemonette"
 #descr "Daemonettes are the most numerous of Slaanesh's servants. They are shrouded in a hypnotic glamour, seditious magics that bestow them a perverse beauty. Daemonettes surge across the battlefield on lithe legs, capering and dancing from foe to foe, claws slicing through flesh and armour with ease. When battle is done, Daemonettes stride amongst the fallen and bring their souls to Slaanesh's palace in the Realm of Chaos, to receive eternal pleasure or pain at the whim of their capricious master. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
-#ap 16 -- fast
-#mapmove 22 -- tireless
-#hp 12
+--compared with the slaaneshi daemonette in dominion, should be worse
+#ap 16
+#mapmove 22
+#hp 11 -- -1
 #prot 3 -- T3, but some carapace
 #size 2
-#str 12 -- S3, daemon
-#enc 1 -- daemon
+#str 12 -- -1
+#enc 2 -- +1
 #att 13 -- WS5 I5, daemon
 #def 13
 #prec 11
@@ -15783,20 +20354,65 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1179 -- wicked claw
-#weapon 1179 -- wicked claw
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
 #startage 20
 #maxage 10000
 #poisonres 10
 #demon
 #neednoteat
-#invulnerable 12 -- daemon
+#invulnerable 11 -- daemon
 #female
-#darkvision 50
 #awe 1
 #ambidextrous 2
 #nametype 272 -- slaaneshi daemon
+#coldres 3
+#snow
+--heal
 #end
+
+
+---- Fiend of Slaanesh
+
+#newmonster 5208
+#spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemon_Fiend.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemon_Fiend2.tga"
+#name "Fiend of Slaanesh"
+#descr "Fiends are hypnotically agile beasts of Slaanesh, hellish creatures which moves with incredible, disturbing speed on their four strangley-jointed legs. Fiends are rather more delicate and less physically powerful than the beasts of the other Ruinous Powers but their speed, reflexes, and armour shredding pincers make them formidable indeed, as does the poisonous stinger with which they can send their prey into a coma in which all sensation is greatly amplified. Fiends appear repulsive from a distance but when they come close they emit a musk which renders them irresistably beautiful and their movements appear so graceful that mortals have a hard time raising their weapons against them. As with all Daemons of Chaos these scuttling horrors are highly resistant to physical attacks."
+--compared with slaanesh version, should be worse generally
+#ap 32
+#mapmove 28
+#hp 22 -- -4
+#prot 6 -- -1
+#size 3
+#str 14 -- -1
+#enc 2 -- +1
+#att 12
+#def 12
+#prec 11
+#mr 14
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
+#weapon 1130 -- coma inducing stinger
+#startage 44
+#maxage 10000
+#poisonres 25 -- immune to poison virtually
+#demon
+#neednoteat
+#invulnerable 12 -- -1
+#spiritsight
+#awe 3 -- mostly represents the musk
+#nametype 272 -- slaaneshi daemon
+#patrolbonus 5 -- sort of standard really good patrol bonus
+--heal --- recuperation ability
+#coldres 3
+#snow
+#end
+
+
 
 
 ---- Seeker of Slaanesh
@@ -15806,30 +20422,31 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Seeker_Slaanesh2.tga"
 #name "Seeker of Slaanesh"
 #descr "Seekers of Slaanesh are the Dark Prince of Chaos' outriders, Daemonettes mounted on swift daemonic Steeds that can dart across a battlefield in a moment. It is said that the Steeds are made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. Steeds constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry, particularly when driven on by a Daemonette eager to deliver a new plaything to Slaanesh's embrace. In battle the claws of the Daemonette are the greatest threat presented by a Seeker, but the Steed itself carries a deadly weapon in the form of its impossibly dextrous tongue, constantly dripping poisons both deadly and psychoactive. Should the Daemonette be struck from her Steed the beast will fight on for the rest of the battle before returning to the Realm of Chaos. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
-#ap 32 -- fastest cav in the game, tied with centauride
-#mapmove 28 -- same as a shade beast, tireless, fast
-#hp 12 -- daemonette
-#prot 4 -- T3, but some carapace, +1 for mount
+-- compared with Slaaneshi Seeker in dominion, it's supposed to be weaker
+#ap 32
+#mapmove 28
+#hp 11 -- -1
+#prot 4
 #size 3
-#str 12 -- S3, daemon
-#enc 1 -- daemon
-#att 13 -- WS5 I5, daemon
+#str 12 -- -1
+#enc 2 -- +1
+#att 13
 #def 13
 #prec 11
-#mr 14 -- +1 for mount
+#mr 14
 #mor 30
 #mounted
 #gcost 0
 #rcost 1
-#weapon 1198 -- steed's tongue
-#weapon 1179 -- wicked claw
-#weapon 1179 -- wicked claw
+#weapon 1128 -- steed's tongue
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
 #startage 20
 #maxage 10000
 #poisonres 10
 #demon
 #neednoteat
-#invulnerable 12 -- daemon
+#invulnerable 11 -- -1
 #female
 #spiritsight
 #awe 1
@@ -15839,7 +20456,11 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #secondtmpshape 5204 -- Steed of Slaanesh
 #cleanshape
 #xploss 100
+--heal
+#snow
+#coldres 3
 #end
+
 
 
 ---- Steed of Slaanesh
@@ -15863,7 +20484,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1200 -- poisonous whiptongue (str based version)
+#weapon 1125 -- poisonous whiptongue (str based version)
 #startage 20
 #maxage 10000
 #poisonres 10
@@ -15903,8 +20524,8 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #gcost 45
 #rpcost 18 -- drawn from distant supplies
 #rcost 3
-#weapon 1201 -- steed's tongue (hellstrider version)
-#weapon 1202 -- hellscourge
+#weapon 1099 -- steed's tongue (hellstrider version)
+#weapon 1124 -- hellscourge
 #armor 118 -- half helmet
 #armor 6 -- ring mail cuirass -- lighter armour because super fast cav
 #armor 2 -- shield
@@ -16134,31 +20755,33 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette_Herald.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette_Herald2.tga"
 #name "Herald of Slaanesh"
-#descr "Foremost amongst the ranks of the Daemonettes are the Heralds of Slaanesh. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm. Slaanesh is always hungry for morsels of courtly intrigue and such scraps can lead to the corrupting of a mortal ruler, a matter to which the Lord of Excess is always attentive. At times the Heralds carry their master's word to specific individuals singled out for divine notice. Not all such visitations are welcomed by those who receive them, for Slaanesh is nothing if not effusive in his tempers. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
-#ap 16 -- fast
-#mapmove 22 -- tireless
-#hp 22 -- T3 W2, daemon
+#descr "Foremost amongst the ranks of the Daemonettes are the Heralds of Slaanesh. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm. Slaanesh is always hungry for morsels of courtly intrigue and such scraps can lead to the corrupting of a mortal ruler, a matter to which the Lord of Excess is always attentive. At times the Heralds carry their master's word to specific individuals singled out for divine notice. Not all such visitations are welcomed by those who receive them, for Slaanesh is nothing if not effusive in his tempers. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks.
+
+[This Herald of Slaanesh will transform into a form capable of seducing either males or females.]"
+--compared the the slaaneshi version, should be worse
+#ap 16
+#mapmove 22
+#hp 20
 #prot 3 -- T3, but some carapace
 #size 2
-#str 14 -- S4, daemon
-#enc 1 -- daemon
-#att 15 -- daemonette +2
+#str 14 -- -1
+#enc 2 -- -1
+#att 15
 #def 15
 #prec 11
 #mr 15 -- daemon + tier 2
 #mor 30
 #gcost 0
 #rcost 1
-#weapon 1179 -- wicked claw
-#weapon 1179 -- wicked claw
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
 #startage 200
 #maxage 10000
 #poisonres 10
 #demon
 #neednoteat
-#invulnerable 14 -- daemon tier 2
+#invulnerable 13 -- -1
 #female
-#darkvision 50
 #awe 3
 #ambidextrous 2
 #seduce 11 -- standard +1
@@ -16167,9 +20790,119 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #spy
 #goodundeadleader
 #goodleader
-#command -20 -- so 60 left
+#command -40 -- so 40 left
 #nametype 272 -- slaaneshi daemon
+--heal
+#coldres 3
+#snow
+#itemslots 15488 -- no hands, 1 torso, feet, 2 misc, head
+#firstshape -1020 -- either male or female
 #end
+
+
+
+---- Herald of Slaanesh (female)
+
+#newmonster 5206
+#spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette_Herald.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette_Herald2.tga"
+#name "Herald of Slaanesh"
+#descr "Foremost amongst the ranks of the Daemonettes are the Heralds of Slaanesh. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm. Slaanesh is always hungry for morsels of courtly intrigue and such scraps can lead to the corrupting of a mortal ruler, a matter to which the Lord of Excess is always attentive. At times the Heralds carry their master's word to specific individuals singled out for divine notice. Not all such visitations are welcomed by those who receive them, for Slaanesh is nothing if not effusive in his tempers. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks.
+
+[This Herald of Slaanesh has been tasked with the seduction and corruption of males and so is considered female for the purposes of the Seduction command]"
+--compared the the slaaneshi version, should be worse
+#ap 16
+#mapmove 22
+#hp 20
+#prot 3 -- T3, but some carapace
+#size 2
+#str 14 -- -1
+#enc 2 -- -1
+#att 15
+#def 15
+#prec 11
+#mr 15 -- daemon + tier 2
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
+#startage 200
+#maxage 10000
+#poisonres 10
+#demon
+#neednoteat
+#invulnerable 13 -- -1
+#female
+#awe 3
+#ambidextrous 2
+#seduce 11 -- standard +1
+#unsurr 2 -- tier 2
+#stealthy 20 -- same as a spy
+#spy
+#goodundeadleader
+#goodleader
+#command -40 -- so 40 left
+#nametype 272 -- slaaneshi daemon
+--heal
+#coldres 3
+#snow
+#itemslots 15488 -- no hands, 1 torso, feet, 2 misc, head
+#montag 1020 -- either male or female
+#end
+
+
+
+
+---- Herald of Slaanesh (male)
+
+#newmonster 5207
+#spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette_Herald_Male.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Daemonette_Herald_Male2.tga"
+#name "Herald of Slaanesh"
+#descr "Foremost amongst the ranks of the Daemonettes are the Heralds of Slaanesh. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm. Slaanesh is always hungry for morsels of courtly intrigue and such scraps can lead to the corrupting of a mortal ruler, a matter to which the Lord of Excess is always attentive. At times the Heralds carry their master's word to specific individuals singled out for divine notice. Not all such visitations are welcomed by those who receive them, for Slaanesh is nothing if not effusive in his tempers. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks.
+
+[This Herald of Slaanesh has been tasked with the seduction and corruption of females and so is considered male for the purposes of the Seduction command]"
+--compared the the slaaneshi version, should be worse
+#ap 16
+#mapmove 22
+#hp 20
+#prot 3 -- T3, but some carapace
+#size 2
+#str 14 -- -1
+#enc 2 -- -1
+#att 15
+#def 15
+#prec 11
+#mr 15 -- daemon + tier 2
+#mor 30
+#gcost 0
+#rcost 1
+#weapon 1127 -- wicked claw
+#weapon 1127 -- wicked claw
+#startage 200
+#maxage 10000
+#poisonres 10
+#demon
+#neednoteat
+#invulnerable 13 -- -1
+#awe 3
+#ambidextrous 2
+#seduce 11 -- standard +1
+#unsurr 2 -- tier 2
+#stealthy 20 -- same as a spy
+#spy
+#goodundeadleader
+#goodleader
+#command -40 -- so 40 left
+#nametype 272 -- slaaneshi daemon
+--heal
+#coldres 3
+#snow
+#itemslots 15488 -- no hands, 1 torso, feet, 2 misc, head
+#montag 1020 -- either male or female
+#end
+
 
 
 ------ Bloodshade -- tier 1 leader
@@ -16704,7 +21437,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #att 15
 #def 14
 #prec 14
-#gcost 120
+#gcost 100
 #rpcost 2
 #weapon 1177 -- poisoned blade
 #weapon 1177 -- poisoned blade
@@ -16725,7 +21458,6 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #awe 1
 #douse 1
 #inquisitor
-#deathrec 10
 #shrinkhp 999 -- turn into battleform in battle
 #end
 
@@ -17459,12 +22191,32 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #pathlevel 1 1
 #school 6 -- blood
 #reqseduce -- only mages with the seduce ability can cast this spell
-#fatiguecost 2500 -- 25 blood slaves
+#fatiguecost 2500 -- 5 each
 #damage 5146 -- daemonette
 #nreff 5
 #effect 10001
 #researchlevel 3
 #restricted 178 -- dark elves only
+#end
+
+
+---- Summon Fiend of Slaanesh
+
+#newspell
+#name "Summon Fiend of Slaanesh"
+#descr "This ritual calls forth a hypnotically agile Fiend of Slaanesh, a hellish creature which moves with incredible, disturbing speed on its four strangley-jointed legs. Fiends are rather more delicate and less physically powerful than the beasts of the other Ruinous Powers but their speed, reflexes, and armour shredding pincers make them formidable indeed, as does the poisonous stinger with which they send their prey into a coma. Like all Daemons they have an unnatrual reslience against mundane weapons."
+#path 0 7 -- blood
+#path 1 4 -- astral
+#pathlevel 0 1
+#pathlevel 1 1
+#school 6 -- blood
+#reqseduce -- only mages with the seduce ability can cast this spell
+#fatiguecost 1400 -- +1 over slaanesh version
+#damage 5208 -- fiend
+#nreff 1
+#effect 10001
+#researchlevel 4
+#restricted 178
 #end
 
 
@@ -17480,7 +22232,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #pathlevel 1 1
 #school 6 -- blood
 #reqseduce -- only mages with the seduce ability can cast this spell
-#fatiguecost 4000 -- 40 blood slaves
+#fatiguecost 4600 -- 46 blood slaves
 #damage 5203 -- seeker
 #nreff 5
 #effect 10001
@@ -17493,7 +22245,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 
 #newspell
 #name "Contact Herald of Slaanesh"
-#descr "This ritual contacts one the Heralds of Slaanesh, favoured of the Dark Prince's servants. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm, seducing and corrupting the highborn and virtuous. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
+#descr "This ritual contacts one the Heralds of Slaanesh, favoured of the Dark Prince's servants. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm, seducing and corrupting the highborn and virtuous. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks. The Herald summoned has an equal chance of having been tasked with the seduction of males or females."
 #path 0 7 -- blood
 #path 1 4 -- astral
 #pathlevel 0 1
@@ -17501,7 +22253,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #school 6 -- blood
 #reqseduce -- only mages with the seduce ability can cast this spell
 #fatiguecost 3000 -- 30 blood slaves
-#damage 5145 -- Herald of Slaanesh
+#damage -1020 -- Herald of Slaanesh male or female
 #nreff 1
 #effect 10021 -- summon commander
 #researchlevel 5
@@ -18715,7 +23467,8 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #rarity 5
 #homemon 5146 -- daemonette
 #homemon 5203 -- seeker of slaanesh
-#homecom 5145 -- herald of slaanesh
+#homemon 5208 -- fiend of slaanesh
+#homecom 5145 -- herald of slaanesh (male or female)
 #end
 
 #newsite 1896
@@ -18769,7 +23522,7 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #end
 
 #newsite 1899
-#name "Pleasure Cult Recruits"
+#name "Pleasure Cult"
 #path 8 -- holy
 #level 0
 #rarity 5
@@ -18777,11 +23530,8 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 #homemon 5147 -- marauder of the serpent
 #homemon 5202 -- marauder with axes
 #homemon 5205 -- hellstrider
-#homemon 5146 -- daemonette
-#homemon 5203 -- seeker of slaanesh
 #homecom 5200 -- anointed of slaanesh
 #homecom 5128 -- slaaneshi sorc
-#homecom 5145 -- herald of slaanesh
 #end
 
 
@@ -18914,6 +23664,8 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 
 #newevent
 #msg "hasfort removed. [hasfort]"
+#notext
+#nolog
 #rarity 5 -- always no limit
 #req_site 1 -- hasfort must be in province
 #req_fort 0 -- there must NOT be a fort in the province
@@ -20238,9 +24990,25 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #nolog
 #notext
 #rarity 5 -- always no limit
+#req_rare 50
 #req_fornation 178
 #req_site 1 -- cult tier 4
 #1unit 5203 -- spawn seeker
+#end
+
+
+---- GENERATE TROOPS from Cult of pleasure tier 4
+
+#newevent
+#nation 178 -- Dark Elves own this event
+#msg "tier 4 generates some troops. [Gate of Slaanesh]"
+#nolog
+#notext
+#rarity 5 -- always no limit
+#req_rare 50
+#req_fornation 178
+#req_site 1 -- cult tier 4
+#1unit 5208 -- fiend of slaanesh
 #end
 
 
@@ -20264,11 +25032,26 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #nation 178 -- Dark Elves own this event
 #msg "Following frantic rituals by the devoted of the Cult of Pleasure a daemonic Herald of Slaanesh has been summoned along with her coterie of Daemonettes. [Gate of Slaanesh]"
 #rarity 5 -- always no limit
-#req_rare 7 -- 7% chance each turn
+#req_rare 5 -- 5% chance each turn
 #req_fornation 178
 #req_site 1 -- cult tier 4
 #com 5145 -- herald of Slaanesh
 #2d3units 5146 -- spawns 2d3 daemonettes
+#end
+
+
+
+---- GENERATE COMMANDER (plus troops) from Cult of pleasure tier 4
+
+#newevent
+#nation 178 -- Dark Elves own this event
+#msg "Following frantic rituals by the devoted of the Cult of Pleasure a daemonic Herald of Slaanesh has been summoned along with a pack of Fiends. [Gate of Slaanesh]"
+#rarity 5 -- always no limit
+#req_rare 3 -- 3% chance each turn
+#req_fornation 178
+#req_site 1 -- cult tier 4
+#com 5145 -- herald of Slaanesh
+#2d3units 5208 -- fiend of slaanesh
 #end
 
 
@@ -20294,7 +25077,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #nation 178 -- Dark Elves own this event
 #msg "A small band of Hellstriders, Marauders mounted atop daemonic Steeds of Slaanesh, have pledged themselves to your service at this Temple of the Cult of Pleasure. [Temple of Pleasure]"
 #rarity 5 -- always no limit
-#req_rare 2 -- 2% chance each turn
+#req_rare 3 -- 3% chance each turn
 #req_fornation 178
 #req_site 1 -- cult tier 3
 #3d3units 5205 -- hellstrider
@@ -20385,6 +25168,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #unrest 40 -- increases unrest by 40
 #3d3units 5146 -- spawns 3d3 daemonettes
 #2d3units 5203 -- seeker
+#1d3units 5208 -- fiend of slaanesh
 #decscale3 5 -- increases magic by 3
 #end
 
@@ -21269,7 +26053,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 859
 #copyweapon 17 -- Axe
-#name "Dwarf Axe"
+#name "Quality Axe"
 #rcost 6
 #att 1 -- +1
 #def 0 -- +1
@@ -21279,7 +26063,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 860
 #copyweapon 13 -- Hammer
-#name "Dwarf Warhammer"
+#name "Quality Warhammer"
 #dmg 7 -- the same
 #att 1 -- +1
 #def 0 -- +1
@@ -21290,7 +26074,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 842
 #copyweapon 25 -- regular crossbow
-#name "Dwarf Crossbow"
+#name "Quality Crossbow"
 #dmg 11 -- +3
 #att 3 -- +1 over normal
 #rcost 12 -- +9 over normal
@@ -21300,7 +26084,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 843
 #copyweapon 26 -- arbalest
-#name "Dwarf Arbalest"
+#name "Quality Arbalest"
 #dmg 15 -- +3 increase
 #att 3 -- +1 increase
 #ammo 12 -- +2
@@ -21311,7 +26095,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 844
 #copyweapon 260 -- throwing axe
-#name "Dwarf Throwing Axes"
+#name "Quality Throwing Axes"
 #dmg 6 -- +1
 #nratt 2 -- +1
 #att -2 -- +2
@@ -21337,7 +26121,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 846
 #copyweapon 18 -- battleaxe
-#name "Dwarf Greataxe"
+#name "Quality Greataxe"
 #dmg 10 -- +1
 #att 1 -- same
 #rcost 10
@@ -21347,7 +26131,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newweapon 847
 #copyweapon 267 -- pickaxe
-#name "Dwarf Warpick"
+#name "Quality Warpick"
 #dmg 11
 #att 0 -- +2
 #def -1 -- +1
@@ -21846,7 +26630,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 340
 #copyarmor 8 -- chain cuirass
-#name "Dwarf Chain Cuirass"
+#name "Quality Chain Cuirass"
 #def 0 -- +1
 #enc 2 -- +1
 #prot 13 -- +1
@@ -21857,7 +26641,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 341
 #copyarmor 13 -- chain hauberk
-#name "Dwarf Chain Hauberk"
+#name "Quality Chain Hauberk"
 #def -1 -- +1
 #enc 2 -- same
 #prot 16 -- +1
@@ -21868,7 +26652,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 342
 #copyarmor 19 -- full plate mail
-#name "Dwarf Full Plate"
+#name "Gromril Full Plate"
 #def -2 -- +1
 #enc 3 -- -2
 #prot 22 -- +1
@@ -21879,7 +26663,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 343
 #copyarmor 11 -- ring mail hauberk
-#name "Dwarf Ring Mail"
+#name "Quality Ring Mail"
 #def 0 -- +1
 #enc 1 -- same
 #prot 11 -- +1
@@ -21890,7 +26674,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 344
 #copyarmor 14 -- plate hauberk
-#name "Dwarf Plate Hauberk"
+#name "Quality Plate Hauberk"
 #def -2 -- +1
 #enc 3 -- -1
 #prot 19 -- +1
@@ -21901,18 +26685,18 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 345
 #copyarmor 20 -- iron cap
-#name "Dwarf Helmet"
+#name "Quality Helmet"
 #def 0 -- same
 #enc 0 -- same
 #prot 17 -- +1
 #rcost 5
 #end
 
---- Dwarf Full Helmet
+--- Gromril Full Helmet
 
 #newarmor 346
 #copyarmor 21 -- full helmet
-#name "Dwarf Full Helmet"
+#name "Gromril Full Helmet"
 #def -1 -- same
 #enc 0 -- same
 #prot 22 -- +1
@@ -21923,8 +26707,8 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 
 #newarmor 347
 #copyarmor 2 -- shield
-#name "Dwarf Shield"
-#def 3 -- same
+#name "Quality Shield"
+#def 4 -- +1
 #enc 1 -- same
 #prot 18 -- +2
 #rcost 7
@@ -22229,8 +27013,8 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #mapmove 18
 #size 2
 #nametype 196 
-#startage 260 -- took away their old age penalties
-#maxage 300
+#startage 250 -- this should mean most aren't old
+#maxage 310
 #reclimit 5
 #end
 
@@ -22931,7 +27715,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #att 11
 #def 10
 #ap 8
-#prec 13 -- +3
+#prec 15 -- +5
 #enc 3 -- +1
 #gcost 100
 #rpcost 1
@@ -23934,7 +28718,6 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #fixedname "Josef Bugman"
 #onebattlespell "Fanaticism"
 #startitem 906 -- Bugman's Tankard
-#autohealer 1
 #itemslots 15488 -- no hands, everything else normal
 #supplybonus 20
 #end
@@ -24070,8 +28853,8 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #poorleader
 #mapmove 16
 #size 2
-#startage 390
-#maxage 450
+#startage 700
+#maxage 750
 #itemslots 31872 -- no hands, head, body, feet, 3 misc
 #end
 
@@ -24104,7 +28887,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #att 13
 #def 12
 #ap 8
-#prec 13
+#prec 15
 #enc 2
 #gcost 0
 #rcost 0
@@ -25502,7 +30285,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 -------- NATION
 
 #selectnation 117
-#name "Dwarfs"
+#name "Karaz-a-Karak"
 #epithet "Ancestral Grudges"
 #era 2
 #brief "The Dwarf empire is composed of hardy Dwarfs clad in superior equipment, but they are expensive both in gold and resources. They rely on various types of infantry and have no cavalry or special monsters, just Dwarf steel and skill. They are slow on the battlefield but good marchers and have some special units can travel underground for mobility. Their magic is not well suited to the battlefield but they are nearly unparalleled smiths and builders."
@@ -25522,7 +30305,7 @@ Mechanics: Forts cost 150%. Discover and defend special sites in mountains and c
 #startsite "Grand Forge"
 #startsite "Vault of Gromril"
 #fortera 3 -- excellent forts, and they have a mason also so they can reach level 4
-#forstcost 50 -- forts 150% price of normal
+#fortcost 50 -- forts 150% price of normal
 #guardspirit 6137 -- ancestor Spirit 
 
 #futuresite 1613 --- summons
@@ -30405,11 +35188,11 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Hero_Franz2.tga"
 #name "Emperor"
 #descr "Karl Franz is the Prince of Altdorf and the current Emperor, elected narrowly over rival candidate Bors Todbringer through the votes of the various Electors. Karl is perhaps the greatest statesman and diplomat the Empire has ever seen and under his rule the greatest of the human realms has recovered and surpassed its former glory. Karl was an intellectual prodigy in his youth, quickly learning any discipline he turned his hand to, be it engineering, music, philosophy, history, or law, but he always knew his true calling was to rule his people not with sheer might, politicking, or religious fervour but with justice and rationality leading the way. In addition to his many academic talents, the Emperor is also a highly skilled general and leader of men and has on numerous occasions proven his own bravery and mettle in combat. Karl Franz rides into battle mounted atop his mighty Griffon 'Deathclaw' armed with the Reikland Runefang and protected by the magic of the Silver Seal."
-#hp 70 -- combined profile
+#hp 35 -- 10 more than general
 #size 5
 #mounted
 #ressize 2
-#prot 6
+#prot 4
 #mor 16
 #mr 17
 #enc 5
@@ -30436,6 +35219,44 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #invulnerable 10
 #itemslots 13442 -- 1 hand, 1 head, body, 2 misc
 #fixedname "Karl Franz"
+#secondtmpshape 7601
+#end
+
+
+
+-- Deathclaw
+
+#newmonster 7601
+#clearweapons
+#spr1 "./Sombre_Warhammer/Warhammer_Empire/Hero_Deathclaw.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Empire/Hero_Deathclaw2.tga"
+#name "Imperial Griffon"
+#descr "With the death of Karl Franz Deathclaw will fight on until the end of the battle before escaping into the wild, mad with grief for the loss of his master."
+#size 5
+#hp 68 -- +6
+#att 14 -- +1
+#def 14 -- +1
+#str 22 -- +2
+#prec 12 --
+#enc 3 --
+#mapmove 26 -- same
+#ap 18
+#mr 13 -- animals, but magical, special, same as vanilla one
+#mor 16 -- +2
+#fear 8 -- +3
+#weapon 408 -- Talons
+#weapon 20 -- Bite -- +3 damage over the beak
+#weapon 29 -- basic claw
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 100
+#flying
+#mountainsurvival
+#animal
+#prot 8
+#itemslots 12288 -- 2 misc
+#berserk 3 -- because karl is dead
 #end
 
 
@@ -30484,18 +35305,18 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #spr1 "./Sombre_Warhammer/Warhammer_Empire/Hero Balthasar.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Hero Balthasar2.tga"
 #name "Supreme Patriarch"
-#descr "Every seven years, the Masters of the eight magical colleges in Altdorf enter a contest of magical might to decide which of them will reign as the Supreme Patriarch. The most recent contest was won by the young and brilliant Patriarch of the Gold College, Balthasar Gelt. Gelt is a mysterious figure, having kept his face concealed by a gold mask for the past decade, but is undeniably a prodigy and is reckoned to be perhaps the most powerful Supreme Patriarch in history. He carries two heirlooms of the Gold College; the Amulet of Sea gold, which protects against hostile magic, and the Cloak of Molten Metal, which protects against missile fire and creates illusionary copies of the mage. As Supreme Patriarch he also wields the Staff of Volans, an ancient and powerful artifact that boosts his already superb magical abilities and allows him to generate magic gems. The rulers of Nuln recently gifted Gelt a pegasus on which he soars over the battlefield, turning the tide with his spells.
+#descr "Every seven years, the Masters of the eight magical colleges in Altdorf enter a contest of magical might to decide which of them will reign as the Supreme Patriarch. The most recent contest was won by the young and brilliant Patriarch of the Gold College, Balthasar Gelt. Gelt is a mysterious figure, having kept his face concealed by a gold mask for the past decade, but is undeniably a prodigy and is reckoned to be perhaps the most powerful Supreme Patriarch in history. He carries two heirlooms of the Gold College; the Amulet of Sea gold, which protects against hostile magic, and the Cloak of Molten Metal, which protects against missile fire and creates illusionary copies of the mage. As Supreme Patriarch he also wields the Staff of Volans, an ancient and powerful artifact that boosts his already superb magical abilities and allows him to generate magic gems. The rulers of Nuln recently gifted Gelt a pegasus on which he soars over the battlefield, turning the tide with his spells. Should Gelt be slain in battle his Pegasus will fight on for a time before fleeing to the wilds.
 
 [Automatically casts Mirror Image on battle start]"
 #fireres 15
 #coldres 10
 #poisonres 15
 #shockres 10
-#hp 50 -- combined profile
+#hp 20 -- still good for a mage
 #size 4
 #mounted
 #ressize 2
-#prot 3
+#prot 2
 #mor 13
 #mr 17
 #enc 5
@@ -30527,7 +35348,50 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #gemprod 0 1
 #gemprod 3 1
 #startitem 901 -- gelt's mask
+#secondtmpshape 7395 -- pegasus
 #end
+
+
+
+-- Gelt's Pegasus
+
+#newmonster 7395
+#spr1 "./Sombre_Warhammer/Warhammer_Empire/Pegasus_Gelt.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Empire/Pegasus_Gelt2.tga"
+#name "Imperial Pegasus"
+#descr "Imperial Pegasi are known for their loyalty to their masters and will fight on to avenge them."
+#str 15
+#prot 5
+#weapon 55 -- Hoof
+#animal
+#flying
+#hp 20
+#mor 11
+#mr 11
+#att 10
+#def 10
+#ap 24
+#prec 10
+#enc 3
+#gcost 0
+#rcost 1
+#noleader
+#mapmove 28
+#size 4
+#itemslots 1
+#magicskill 1 -5
+#magicskill 2 -5
+#magicskill 3 -5
+#magicskill 4 -5
+#magicskill 5 -5
+#magicskill 6 -5
+#magicskill 7 -5
+#magicskill 8 -5
+#mountainsurvival
+#animal
+#end
+
+
 
 
 ---- Thyrus Gormann, Master of the Bright College (reviewed)
@@ -31017,8 +35881,8 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #spr1 "./Sombre_Warhammer/Warhammer_Empire/Nuln_Pegasus.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Nuln_Pegasus2.tga"
 #name "Noble of the Empire"
-#descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Pegasus mount from the rulers of Nuln. Pegasi are noble beasts, loyal and swift, the perfect mount for a nobleman of martial prowess. Nobles of the South East are wealthy enough that they can afford superior magical equipment."
-#hp 50 -- combined profile
+#descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Pegasus mount from the rulers of Nuln. Pegasi are noble beasts, loyal and swift, the perfect mount for a nobleman of martial prowess. Nobles of the South East are wealthy enough that they can afford superior magical equipment. Should the rider be slain the Pegasus will fight on for a time before escaping to the wilds."
+#hp 28
 #size 4
 #mounted
 #ressize 2
@@ -31042,6 +35906,46 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #goodleader
 #flying
 #nametype 188
+#secondtmpshape 7394 -- nuln pegasus
+#end
+
+
+-- Nuln Pegasus
+
+#newmonster 7394
+#spr1 "./Sombre_Warhammer/Warhammer_Empire/Pegasus_Nuln.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Empire/Pegasus_Nuln2.tga"
+#name "Imperial Pegasus"
+#descr "Imperial Pegasi are known for their loyalty to their masters and will fight on to avenge them."
+#str 15
+#prot 8
+#weapon 55 -- Hoof
+#animal
+#flying
+#hp 20
+#mor 11
+#mr 11
+#att 10
+#def 10
+#ap 24
+#prec 10
+#enc 3
+#gcost 0
+#rcost 1
+#noleader
+#mapmove 28
+#size 4
+#itemslots 1
+#magicskill 1 -5
+#magicskill 2 -5
+#magicskill 3 -5
+#magicskill 4 -5
+#magicskill 5 -5
+#magicskill 6 -5
+#magicskill 7 -5
+#magicskill 8 -5
+#mountainsurvival
+#animal
 #end
 
 
@@ -31051,12 +35955,13 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #spr1 "./Sombre_Warhammer/Warhammer_Empire/Griffon Noble.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Griffon Noble2.tga"
 #name "Noble of the Empire"
-#descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Griffon mount from the Imperial Zoo. Griffons are noble, loyal and elegant beasts prized above all other mounts and are seen as symbols of the Empire's strength. The Griffon will fight ferociously to protect its rider, having been bonded with him for many years."
-#hp 65 -- combined profile
+#descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Griffon mount from the Imperial Zoo. Griffons are noble, loyal and elegant beasts prized above all other mounts and are seen as symbols of the Empire's strength. Should the rider be slain the Griffon will continue to fight until the end of the battle, at which point it will depart to live and hunt in the wild."
+#hp 30 -- 25 for general, +5
+--hp 65 -- combined profile
 #size 5
 #mounted
 #ressize 2
-#prot 6
+#prot 4
 #mor 15
 #mr 14
 #enc 5
@@ -31081,7 +35986,45 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #mountainsurvival
 #fear 5
 #unsurr 3
+#secondtmpshape 7600 -- Griffon
 #end
+
+
+
+-- Griffon (mount of noble on griffon)
+
+#newmonster 7600
+#clearweapons
+#spr1 "./Sombre_Warhammer/Warhammer_Empire/Griffon.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Empire/Griffon2.tga"
+#name "Griffon"
+#descr "With its rider slain, this Griffon will fight on until the end of the battle before escaping into the wild."
+#size 5
+#hp 62 -- W4T5, huge -- +14
+#att 13 -- WS5I5
+#def 13 -- WS5I5 -- +5
+#str 20 -- STR 5, huge, natural weapons -- +4
+#prec 12 -- +2
+#enc 3 -- same
+#mapmove 26-- same
+#ap 18
+#mr 13 -- animals, but magical, special, same as vanilla one
+#mor 14 -- --1 vs great eagle
+#fear 5 -- terror
+#weapon 408 -- Talons
+#weapon 20 -- Bite -- +3 damage over the beak
+#weapon 29 -- basic claw
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 100
+#flying
+#mountainsurvival
+#animal
+#prot 8
+#itemslots 12288 -- 2 misc
+#end
+
 
 
 ---- Initiate of Sigmar
@@ -32433,7 +37376,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #weapon 7 -- Quarterstaff
 #poorleader
 #darkvision 100
-#darkpower 2
 #stealthy 20
 #spy
 #magicskill 1 2
@@ -32468,7 +37410,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #weapon 7 -- Quarterstaff
 #poorleader
 #darkvision 100
-#darkpower 2
 #stealthy 20
 #spy
 #magicskill 1 2
@@ -32808,7 +37749,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #poorleader
 #nametype 188
 #autodishealer 1
-#springpower 10
 #end
 
 
@@ -32844,7 +37784,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #poorleader
 #nametype 188
 #autodishealer 1
-#springpower 10
 #end
 
 
@@ -33291,7 +38230,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #weapon 7 -- Quarterstaff
 #poorleader
 #darkvision 100
-#darkpower 4
 #stealthy 25
 #spy
 #illusion
@@ -33378,7 +38316,7 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #nametype 188
 #researchbonus 9
 #mounted
-#autohealer 2
+#autohealer 1
 #end
 
 
@@ -33414,7 +38352,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #nametype 188
 #mounted
 #autohealer 1
-#springpower 10
 #entangle
 #mountainsurvival
 #forestsurvival
@@ -35773,6 +40710,26 @@ Priests: Strong."
 
 -- @@@@ Greenskins
 
+------ ITEMS
+
+---- Baleful Mask
+
+#selectitem 935
+#spr "./Sombre_Warhammer/Warhammer_Greenskins/Item_Mask.tga"
+#name "Baleful Mask"
+#descr "Wurrzag's crude wooden mask allows Da Great Green Prophet to sear the mind of any foe he casts his gaze upon.
+
+[Casts Mind Burn every battle round]"
+#type 6 -- helm
+#constlevel 12
+#armor 187 -- wooden mask
+#restricted 161 -- greenskins south
+#cursed -- can't be dropped
+#nofind
+#autospell "Mind Burn"
+#autospellrepeat 1
+#end
+
 
 
 -------- WEAPONS
@@ -35956,6 +40913,23 @@ Priests: Strong."
 #norepel
 #slash
 #pierce
+#end
+
+
+---- Spleenrippa
+
+#newweapon 1137
+#copyweapon 614 -- tusk
+#name "Spleenrippa"
+#nostr
+#bonus
+#charge
+#dmg 17
+#norepel
+#slash
+#pierce
+#att 1
+#nratt 2
 #end
 
 
@@ -36373,7 +41347,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin2.tga"
 #name "Forest Goblin"
-#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Forest Goblins are a particular subgroup of Goblin that have their own culture, magic, and methods of warfare. They are particularly common in the South but can be found almost anywhere forest or jungle is dense enough to afford them shelter from other races from which they can raid. Forest Goblins, rather like Savage Orcs, arm themselves with primitive weapons of wood, stone, and bone, though truthfully these are hardly less effective than the metal weapons of their cousins. Forest Goblins wear little or no armour and decorate themselves with tattoos, warpaint, and bright feathers which they hammer directly into their skulls."
+#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Forest Goblins are a particular subgroup of Goblin that have their own culture, magic, and methods of warfare. They are particularly common in the South but can be found almost anywhere forest or jungle is dense enough to afford them shelter from other races from which they can raid. Forest Goblins, rather like Savage Orcs, arm themselves with primitive weapons of wood, stone, and bone, though truthfully these are hardly less effective than the metal weapons of their cousins. Forest Goblins wear little or no armour and decorate themselves with tattoos, warpaint, and bright feathers which they hammer directly into their skulls.
+
+[Discounted to 6 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -36753,7 +41729,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Archer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Archer2.tga"
 #name "Forest Goblin Archer"
-#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Forest Goblins are a particular subgroup of Goblin that have their own culture, language, and methods of warfare. They are particularly common in the South but can be found almost anywhere forest or jungle is dense enough to afford them shelter from other races from which they can raid. Forest Goblins, rather like Savage Orcs, arm themselves with primitive weapons of wood, stone, and bone, though truthfully these are hardly less effective than the metal weapons of their cousins. Forest Goblins wear little or no armour and decorate themselves with tattoos, warpaint, and bright feathers which they hammer directly into their skulls. The archers of Forest Goblin tribes are known to coat their arrowheads with poison from the Giant Spiders that are so important to their culture, making them significantly more threatening to troops lacking good protection."
+#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Forest Goblins are a particular subgroup of Goblin that have their own culture, language, and methods of warfare. They are particularly common in the South but can be found almost anywhere forest or jungle is dense enough to afford them shelter from other races from which they can raid. Forest Goblins, rather like Savage Orcs, arm themselves with primitive weapons of wood, stone, and bone, though truthfully these are hardly less effective than the metal weapons of their cousins. Forest Goblins wear little or no armour and decorate themselves with tattoos, warpaint, and bright feathers which they hammer directly into their skulls. The archers of Forest Goblin tribes are known to coat their arrowheads with poison from the Giant Spiders that are so important to their culture, making them significantly more threatening to troops lacking good protection.
+
+[Discounted to 8 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -36790,7 +41768,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Spider_Archer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Spider_Archer2.tga"
 #name "Forest Goblin Spider Rider"
-#descr "One of the most unusual aspects of Forest Goblin society is how intertwined their life is with that of the Giant Spiders that dwell in the deep woords. Spiders are eaten as food, milked for poison, kept as pets, and even worshipped as gods. Some of the larger species are also ridden into battle, where their ability to climb sheer surfaces and scitter over rough terrain and their venomous fangs and protective chitin are useful assets. In battle Spider Riders act as light cavalry, usually deployed on the flanks with either crude stone tipped lances or bows with poison dipped arrows."
+#descr "One of the most unusual aspects of Forest Goblin society is how intertwined their life is with that of the Giant Spiders that dwell in the deep woords. Spiders are eaten as food, milked for poison, kept as pets, and even worshipped as gods. Some of the larger species are also ridden into battle, where their ability to climb sheer surfaces and scitter over rough terrain and their venomous fangs and protective chitin are useful assets. In battle Spider Riders act as light cavalry, usually deployed on the flanks with either crude stone tipped lances or bows with poison dipped arrows.
+
+[Discounted to 21 gold in Turmoil 3]"
 #hp 9 --- toughness 3, smaller than human, mounted on tough spider
 #size 2 --- small cav
 #prot 3 --- some prot from riding spider
@@ -36831,7 +41811,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Spider_Rider.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Spider_Rider2.tga"
 #name "Forest Goblin Spider Rider"
-#descr "One of the most unusual aspects of Forest Goblin society is how intertwined their life is with that of the Giant Spiders that dwell in the deep woords. Spiders are eaten as food, milked for poison, kept as pets, and even worshipped as gods. Some of the larger species are also ridden into battle, where their ability to climb sheer surfaces and scitter over rough terrain and their venomous fangs and protective chitin are useful assets. In battle Spider Riders act as light cavalry, usually deployed on the flanks with either crude stone tipped lances or bows with poison dipped arrows."
+#descr "One of the most unusual aspects of Forest Goblin society is how intertwined their life is with that of the Giant Spiders that dwell in the deep woords. Spiders are eaten as food, milked for poison, kept as pets, and even worshipped as gods. Some of the larger species are also ridden into battle, where their ability to climb sheer surfaces and scitter over rough terrain and their venomous fangs and protective chitin are useful assets. In battle Spider Riders act as light cavalry, usually deployed on the flanks with either crude stone tipped lances or bows with poison dipped arrows.
+
+[Discounted to 21 gold in Turmoil 3]"
 #hp 9 --- toughness 3, smaller than human, mounted on tough spider
 #size 2 --- small cav
 #prot 3 --- some prot from riding spider
@@ -36874,7 +41856,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Spear.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Spear2.tga"
 #name "Goblin"
-#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Being physically weak the majority of Goblins hold a permanent position at the bottom of the Greenskin hierarchy, often ending up beaten, eaten, or otherwise mistreated both by the much larger Orcs and their own treacherous kin. Nonetheless since Goblins are ridiculously prolific, easy to boss around, and naturally inclined toward violence, they inevitably make up a large portion of Greenskin armies. Goblin infantry will be armed with whatever weapons and armour they have managed to cobble together, scavenge, or steal, typically something pointy and unpleasant. Amongst any Goblin mob there will some particularly sneaky and vicious members known as Nasty Skulkers, who take the art of 'sticking da pointy bit in da hurty bit' to an extreme, even for Goblins."
+#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Being physically weak the majority of Goblins hold a permanent position at the bottom of the Greenskin hierarchy, often ending up beaten, eaten, or otherwise mistreated both by the much larger Orcs and their own treacherous kin. Nonetheless since Goblins are ridiculously prolific, easy to boss around, and naturally inclined toward violence, they inevitably make up a large portion of Greenskin armies. Goblin infantry will be armed with whatever weapons and armour they have managed to cobble together, scavenge, or steal, typically something pointy and unpleasant. Amongst any Goblin mob there will some particularly sneaky and vicious members known as Nasty Skulkers, who take the art of 'sticking da pointy bit in da hurty bit' to an extreme, even for Goblins.
+
+[Discounted to 6 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37249,7 +42233,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Archer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Archer2.tga"
 #name "Goblin Archer"
-#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Being physically weak the majority of Goblins hold a permanent position at the bottom of the Greenskin hierarchy, often ending up beaten, eaten, or otherwise mistreated both by the much larger Orcs and their own treacherous kin. Nonetheless since Goblins are ridiculously prolific, easy to boss around, and naturally inclined toward violence, they inevitably make up a large portion of Greenskin armies. Goblins are very keen on avoiding harm while still getting the chance to hurt other living beings and as such are quite fond of bows, with mobs of goblin archers capable of producing clouds of arrows deadly to unarmoured enemies. As these archers tend to stay back from the front lines their mobs are of little interest to the uniquely cruel Nasty Skulkers."
+#descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Being physically weak the majority of Goblins hold a permanent position at the bottom of the Greenskin hierarchy, often ending up beaten, eaten, or otherwise mistreated both by the much larger Orcs and their own treacherous kin. Nonetheless since Goblins are ridiculously prolific, easy to boss around, and naturally inclined toward violence, they inevitably make up a large portion of Greenskin armies. Goblins are very keen on avoiding harm while still getting the chance to hurt other living beings and as such are quite fond of bows, with mobs of goblin archers capable of producing clouds of arrows deadly to unarmoured enemies. As these archers tend to stay back from the front lines their mobs are of little interest to the uniquely cruel Nasty Skulkers.
+
+[Discounted to 6 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37286,7 +42272,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Loon.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Loon2.tga"
 #name "Nightgoblin Loon"
-#descr "Deep in the bowels of the earth grow many strange mushrooms, fungal outcroppings, plantlike beasts, and other oddities. It is well known that Nightgoblins consume magic mushrooms, drink fungusbrew, and make use of the fungoid Squigs, but none outside their kind know exactly what the origin of Loonslime is. A strange purple substance which can induce hallucinations, paranoia, uncontrollable rage, and confusion when it makes contact with a living being, it is applied liberally to the weapons of the bizarre Nightgoblin sect known as the Loons. Loons go to battle wearing full metal helms fashioned into the aspect of the Bad Moon, a symbol they venerate, and are armoured under their robes with precious Dwarf chain links. Loons act as a kind of sacred shock infantry for the Nightgoblins, being much better trained and fiercer warriors than any other of their kind. Even Orcs treat them with a similar form of the pained respect they grant to Shamans, as no sane being would wish to be spiked with Loonslime."
+#descr "Deep in the bowels of the earth grow many strange mushrooms, fungal outcroppings, plantlike beasts, and other oddities. It is well known that Nightgoblins consume magic mushrooms, drink fungusbrew, and make use of the fungoid Squigs, but none outside their kind know exactly what the origin of Loonslime is. A strange purple substance which can induce hallucinations, paranoia, uncontrollable rage, and confusion when it makes contact with a living being, it is applied liberally to the weapons of the bizarre Nightgoblin sect known as the Loons. Loons go to battle wearing full metal helms fashioned into the aspect of the Bad Moon, a symbol they venerate, and are armoured under their robes with precious Dwarf chain links. Loons act as a kind of sacred shock infantry for the Nightgoblins, being much better trained and fiercer warriors than any other of their kind. Even Orcs treat them with a similar form of the pained respect they grant to Shamans, as no sane being would wish to be spiked with Loonslime.
+
+[Discounted to 12 gold in Turmoil 3]"
 #hp 9 --- tough for a goblin
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37328,7 +42316,8 @@ Priests: Strong."
 #name "Nightgoblin"
 #descr "Long ago many Goblins took up abode in the caves beneath the Worlds Edge Mountains. Over time they adapted to their new home and became a distinct type, known as Nightgoblins. They are not dissimilar to their surface dwelling cousins, though they have better night vision and wear dark hooded robes to shelter from the painfully bright sun. In temperament Nightgoblins are even more distrustful, sneaky, and cowardly than a typical Goblin, but tend to have better reflexes, honed by a life of sudden death at the teeth and claws of unspeakable cave beasts. Despite their relative weakness, Nightgoblin mobs are feared in battle because they may be hiding a Fanatic, a crazed loon pumped up on strength enhancing magic mushrooms and armed with a massive iron ball and chain. Nightgoblin infantry overwhelmingly favour the spear both as a good tunnel fighting weapon and a way of stabbing their foes from a safer distance.
 
-[Each recruited Nightgoblin has a 1/13 chance of being a hidden fanatic which will emerge upon taking damage]"
+[Each recruited Nightgoblin has a 1/13 chance of being a hidden fanatic which will emerge upon taking damage]
+[Discounted to 7 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37369,7 +42358,8 @@ Priests: Strong."
 #name "Nightgoblin Archer"
 #descr "Long ago many Goblins took up abode in the caves beneath the Worlds Edge Mountains. Over time they adapted to their new home and became a distinct type, known as Nightgoblins. They are not dissimilar to their surface dwelling cousins, though they have better night vision and wear dark hooded robes to shelter from the painfully bright sun. In temperament Nightgoblins are even more distrustful, sneaky, and cowardly than a typical Goblin, but tend to have better reflexes, honed by a life of sudden death at the teeth and claws of unspeakable cave beasts. Despite their relative weakness, Nightgoblin mobs are feared in battle because they may be hiding a Fanatic, a crazed loon pumped up on strength enhancing magic mushrooms and armed with a massive iron ball and chain. Nightgoblins love to spring ambushes and are notorious for their ability to fill the air, and their foes, with red fletched arrows.
 
-[Each recruited Nightgoblin Archer has a 1/13 chance of being a hidden fanatic which will emerge upon taking damage]"
+[Each recruited Nightgoblin Archer has a 1/13 chance of being a hidden fanatic which will emerge upon taking damage]
+[Discounted to 7 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37408,7 +42398,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider2.tga"
 #name "Goblin Wolf Rider"
-#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows."
+#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows.
+
+[Discounted to 16 gold in Turmoil 3]"
 #hp 8 --- little tougher than normal
 #size 2 --- though the wolf is big, I think size 2 is ok
 #prot 0 --- toughness 3
@@ -37448,7 +42440,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider_Archer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider_Archer2.tga"
 #name "Goblin Wolf Rider"
-#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows."
+#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows.
+
+[Discounted to 16 gold in Turmoil 3]"
 #hp 8 --- little tougher than normal
 #size 2 --- though the wolf is big, I think size 2 is ok
 #prot 0 --- toughness 3
@@ -37488,7 +42482,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Netter.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Netter2.tga"
 #name "Nightgoblin Netta"
-#descr "In the underground world of tunnels and caverns the Nightgoblins inhabit there are many beasts such as Squigs, Shroomgnarlers, or Scumgloids which prey upon and are preyed on by the cowled goblinoids. Whether capturing them for food or as beasts of war, Nightgoblins make extensive use of both strong nets woven from cavespider silk to halt their foe and large cavewood clubs to brutally subdue them. Armed with these weapons the Clubbas and the Nettas, as they are known, form a surprisingly effective formation. When recruiting a mob of these intrepid Nightgoblins the exact ratio of Nettas and Clubbas will vary."
+#descr "In the underground world of tunnels and caverns the Nightgoblins inhabit there are many beasts such as Squigs, Shroomgnarlers, or Scumgloids which prey upon and are preyed on by the cowled goblinoids. Whether capturing them for food or as beasts of war, Nightgoblins make extensive use of both strong nets woven from cavespider silk to halt their foe and large cavewood clubs to brutally subdue them. Armed with these weapons the Clubbas and the Nettas, as they are known, form a surprisingly effective formation. When recruiting a mob of these intrepid Nightgoblins the exact ratio of Nettas and Clubbas will vary.
+
+[Discounted to 8 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37527,7 +42523,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Clubba.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Clubba2.tga"
 #name "Nightgoblin Clubba"
-#descr "In the underground world of tunnels and caverns the Nightgoblins inhabit there are many beasts such as Squigs, Shroomgnarlers, or Scumgloids which prey upon and are preyed on by the cowled goblinoids. Whether capturing them for food or as beasts of war, Nightgoblins make extensive use of both strong nets woven from cavespider silk to halt their foe and large cavewood clubs to brutally subdue them. Armed with these weapons the Clubbas and the Nettas, as they are known, form a surprisingly effective formation. When recruiting a mob of these intrepid Nightgoblins the exact ratio of Nettas and Clubbas will vary."
+#descr "In the underground world of tunnels and caverns the Nightgoblins inhabit there are many beasts such as Squigs, Shroomgnarlers, or Scumgloids which prey upon and are preyed on by the cowled goblinoids. Whether capturing them for food or as beasts of war, Nightgoblins make extensive use of both strong nets woven from cavespider silk to halt their foe and large cavewood clubs to brutally subdue them. Armed with these weapons the Clubbas and the Nettas, as they are known, form a surprisingly effective formation. When recruiting a mob of these intrepid Nightgoblins the exact ratio of Nettas and Clubbas will vary.
+
+[Discounted to 8 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -37566,7 +42564,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boy.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boy2.tga"
 #name "Orc Boy"
-#descr "Orcs, also known as Orc Boyz, are the hard-fighting infantry found at the core of most Greenskin tribes. Goblins are more prolific, but it is the Orcs are most associated with the Greenskin species and do the bulk of the bloody work of battle. Orcs are a warrior race and like little more than a good scrap, so this suits them just fine. In fact Orcs so enjoy fighting that when lacking enemies they will happily brawl amongst themselves. Fortunately they are an incredibly resilient race, barely registering pain and blessed with the ability to regrow entire missing limbs if given time. Though they stand a little shorter than a human, Orcs are very broad and well muscled, which suits their headlong charges and brawling style of battle. Orcs are infamous for the crude but deadly 'choppas' they fashion, which they are able to swing with devastating force on the charge. Orc equipment tends to vary greatly depending on available loot, wealth of their tribe, and their ability to win better gear from their fellow orcs in headbutting contests."
+#descr "Orcs, also known as Orc Boyz, are the hard-fighting infantry found at the core of most Greenskin tribes. Goblins are more prolific, but it is the Orcs are most associated with the Greenskin species and do the bulk of the bloody work of battle. Orcs are a warrior race and like little more than a good scrap, so this suits them just fine. In fact Orcs so enjoy fighting that when lacking enemies they will happily brawl amongst themselves. Fortunately they are an incredibly resilient race, barely registering pain and blessed with the ability to regrow entire missing limbs if given time. Though they stand a little shorter than a human, Orcs are very broad and well muscled, which suits their headlong charges and brawling style of battle. Orcs are infamous for the crude but deadly 'choppas' they fashion, which they are able to swing with devastating force on the charge. Orc equipment tends to vary greatly depending on available loot, wealth of their tribe, and their ability to win better gear from their fellow orcs in headbutting contests.
+
+[Discounted to 8 gold in Turmoil 3]"
 #hp 14 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
@@ -37603,7 +42603,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boy.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boy2.tga"
 #name "Savage Orc Boy"
-#descr "Long ages ago all Orcs were savages with no means of manufacturing metal weapons, armour, or war machines. They lived nomadic lives using primitive weapons to bring down their prey. As Orcs increasingly faced more advanced civilisations with metal weapons they began to covet the arms and armour of their foes and most Greenskin tribes began to use looted wargear and even forge their own equipment. Some Orc tribes, particularly those in the South, shunned these new ways and abandoned metal weapons and armour to fight in the manner of their ancestors, regarding it as the way Mork and Gork intended them to do battle. These primitives are known as Savage Orcs and what they lack from abandoning iron and steel they make up for with their legendary ferocity. When Savage Orcs go to war they fight dressed in scant animal furs, bone, and hide and wield stone axes, bone clubs and large spears well suited to bringing down the great land beasts of the South that make up much of their diet. Savage Orcs daub themselves in warpaint which they believe grants them protection and such is the latent energy of a mass of Orc minds that their belief does give them protection against mundane weapons as well as some magical resistance."
+#descr "Long ages ago all Orcs were savages with no means of manufacturing metal weapons, armour, or war machines. They lived nomadic lives using primitive weapons to bring down their prey. As Orcs increasingly faced more advanced civilisations with metal weapons they began to covet the arms and armour of their foes and most Greenskin tribes began to use looted wargear and even forge their own equipment. Some Orc tribes, particularly those in the South, shunned these new ways and abandoned metal weapons and armour to fight in the manner of their ancestors, regarding it as the way Mork and Gork intended them to do battle. These primitives are known as Savage Orcs and what they lack from abandoning iron and steel they make up for with their legendary ferocity. When Savage Orcs go to war they fight dressed in scant animal furs, bone, and hide and wield stone axes, bone clubs and large spears well suited to bringing down the great land beasts of the South that make up much of their diet. Savage Orcs daub themselves in warpaint which they believe grants them protection and such is the latent energy of a mass of Orc minds that their belief does give them protection against mundane weapons as well as some magical resistance.
+
+[Discounted to 8 gold in Turmoil 3]"
 #hp 14 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
@@ -37831,7 +42833,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Bigun_Great.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Bigun_Great2.tga"
 #name "Savage Orc Bigun"
-#descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Savage Orcs are no exception to this, though on the whole they have far less interest in loot and their Bigun mobs eschew armour and metal weapons just as the Boyz do. Some Savage Orc Biguns wield large two handed stone axes, while others carry a crude stone axe and shield."
+#descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Savage Orcs are no exception to this, though on the whole they have far less interest in loot and their Bigun mobs eschew armour and metal weapons just as the Boyz do. Some Savage Orc Biguns wield large two handed stone axes, while others carry a crude stone axe and shield.
+
+[Discounted to 11 gold in Turmoil 3]"
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
@@ -37868,7 +42872,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Waaaghboy.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Waaaghboy2.tga"
 #name "Savage Orc Waaaghboy"
-#descr "Amongst the primitive Savage Orc tribes of the south those marked out with the potential to become Shamans, usually by greenish light leaking from their eyes, are far more common than in the north. However many of these Savage Orcs, while clearly touched by Mork and or Gork, never develop further magical powers or descend into the truly odd and 'unorcish' behaviour of the Shamans. Instead they remain wild and aggressive fighters like their fellows, though their eyes still glow and their warpaint is especially effective. Waaaghboys, as they are known amongst their kind, are considered sacred to the Greenskins."
+#descr "Amongst the primitive Savage Orc tribes of the south those marked out with the potential to become Shamans, usually by greenish light leaking from their eyes, are far more common than in the north. However many of these Savage Orcs, while clearly touched by Mork and or Gork, never develop further magical powers or descend into the truly odd and 'unorcish' behaviour of the Shamans. Instead they remain wild and aggressive fighters like their fellows, though their eyes still glow and their warpaint is especially effective. Waaaghboys, as they are known amongst their kind, are considered sacred to the Greenskins.
+
+[Discounted to 15 gold in Turmoil 3]"
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
@@ -38204,7 +43210,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Squig_Hopper.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Squig_Hopper2.tga"
 #name "Nightgoblin Squig Hoppa"
-#descr "Once, drunk on fungus brew and in a reckless mood, a Squig Herda dared to leap on the back of a dozing Cave Squig. Driven to new heights of fury by the unexpected rider, the Cave Squig responded by bouncing around with unflagging enthusiasm, much to the delight of the cackling and whooping onlookers. Although the incident ended with both Squig and rider impaled on a wickedly sharp stalagtite, the experience was enough to inspire the other Herdas present and a new craze was born. Squig Hoppas are mad in the particular way that some Nightgoblins tend to be and, especially given their horrendous casualty rate, not terribly common. When enough can be mustered by a tribe they generally prove very effective as a sort of bizarre frenetic cavalry capable of inflicting serious damage on even well armoured enemies. Should the rider be slain the Squig will continue to fight, though it will doubtless bound away after the battle."
+#descr "Once, drunk on fungus brew and in a reckless mood, a Squig Herda dared to leap on the back of a dozing Cave Squig. Driven to new heights of fury by the unexpected rider, the Cave Squig responded by bouncing around with unflagging enthusiasm, much to the delight of the cackling and whooping onlookers. Although the incident ended with both Squig and rider impaled on a wickedly sharp stalagtite, the experience was enough to inspire the other Herdas present and a new craze was born. Squig Hoppas are mad in the particular way that some Nightgoblins tend to be and, especially given their horrendous casualty rate, not terribly common. When enough can be mustered by a tribe they generally prove very effective as a sort of bizarre frenetic cavalry capable of inflicting serious damage on even well armoured enemies. Should the rider be slain the Squig will continue to fight, though it will doubtless bound away after the battle.
+
+[Discounted to 18 gold in Turmoil 3]"
 #hp 8 --- slightly tougher gobbo
 #size 2 --- goblinoid cavalry is size 2
 #prot 0 --- goblin
@@ -38461,7 +43469,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Arrer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Arrer2.tga"
 #name "Orc Arrer Boy"
-#descr "Some Orcs carry bows. These Orcs, known as Arrer Boyz, are viewed suspiciously by the rest of da Boyz, for archery is a bit 'Gobliny'. As Arrer Boyz can prove their prowess in combat, such oddities can be overlooked. Yelling rude names at Arrer Boyz is a proven way to alleviate camp boredom as the resulting response in the form of a hail of arrows is typically good for starting a big ruckus. Orcs are generally poor shots being both somewhat shortsighted and lacking the patience to aim for long before loosing their arrow, but their bows, though crude, are large and powerful. There is also something to be said for, at the end of the day, being a hulking Orc entirely capable in melee combat when the arrows run out or the enemy reaches their mob."
+#descr "Some Orcs carry bows. These Orcs, known as Arrer Boyz, are viewed suspiciously by the rest of da Boyz, for archery is a bit 'Gobliny'. As Arrer Boyz can prove their prowess in combat, such oddities can be overlooked. Yelling rude names at Arrer Boyz is a proven way to alleviate camp boredom as the resulting response in the form of a hail of arrows is typically good for starting a big ruckus. Orcs are generally poor shots being both somewhat shortsighted and lacking the patience to aim for long before loosing their arrow, but their bows, though crude, are large and powerful. There is also something to be said for, at the end of the day, being a hulking Orc entirely capable in melee combat when the arrows run out or the enemy reaches their mob.
+
+[Discounted to 10 gold in Turmoil 3]"
 #hp 14 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
@@ -38497,7 +43507,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Arrer_Boy.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Arrer_Boy2.tga"
 #name "Savage Orc Arrer Boy"
-#descr "In the wild Savage Orc tribes of the southern lands one might think Orcs indulging in archery would be even less common, such is their primitive lust for close combat. However in reality Arrer Boyz are far more common amongst Savage Orc tribes, as the use of crude bows is seen as a natural and traditional way to hunt the massive beasts that roam their land. In fact Savage Orc Arrer Boyz tend to be better shots than their northern counterparts, as their magical warpaint enhances their senses in battle. Being Savage Orcs though, they are quick to hurl aside their bows and charge into melee if provoked into a battle frenzy."
+#descr "In the wild Savage Orc tribes of the southern lands one might think Orcs indulging in archery would be even less common, such is their primitive lust for close combat. However in reality Arrer Boyz are far more common amongst Savage Orc tribes, as the use of crude bows is seen as a natural and traditional way to hunt the massive beasts that roam their land. In fact Savage Orc Arrer Boyz tend to be better shots than their northern counterparts, as their magical warpaint enhances their senses in battle. Being Savage Orcs though, they are quick to hurl aside their bows and charge into melee if provoked into a battle frenzy.
+
+[Discounted to 11 gold in Turmoil 3]"
 #hp 14 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
@@ -38533,7 +43545,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Squig_Team.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Squig_Team2.tga"
 #name "Nightgoblin Squig Herda Team"
-#descr "Cave Squigs are found in the bowels of the earth, common in the caverns deep beneath the Worlds Edge Mountains. They are improbable creatures, part animal and part fungus with spheroid bodies, beady eyes, and huge gaping maws filled with razor sharp teeth. Nightgoblins hunt Squigs of all types for various purposes, but the common Cave Squig is primarily used as a living weapon in battle. Once they have been captured by Nettas and beaten into a daze by Clubbas, Cave Squigs are forced into underground stockades and trained by Nightgoblin Herdas, as much as is even possible, to go where directed by the jabs of a long three pronged 'prodda'. Such is the concentration and constant prodding that is required that a team of two Nightgoblin Herdas carrying their oversized prodda can only reliably usher a pair of Cave Squigs toward the enemy, but then again two Squigs can do a lot of damage very quickly indeed. Should the Squigs be slain in battle the Herdas, if they survive, can always fetch more from the stockade, as in reality the 'training' is much more teaching the Nightgoblins how to keep the Squig from eating them than it is in any way changing the behaviour of the Squig."
+#descr "Cave Squigs are found in the bowels of the earth, common in the caverns deep beneath the Worlds Edge Mountains. They are improbable creatures, part animal and part fungus with spheroid bodies, beady eyes, and huge gaping maws filled with razor sharp teeth. Nightgoblins hunt Squigs of all types for various purposes, but the common Cave Squig is primarily used as a living weapon in battle. Once they have been captured by Nettas and beaten into a daze by Clubbas, Cave Squigs are forced into underground stockades and trained by Nightgoblin Herdas, as much as is even possible, to go where directed by the jabs of a long three pronged 'prodda'. Such is the concentration and constant prodding that is required that a team of two Nightgoblin Herdas carrying their oversized prodda can only reliably usher a pair of Cave Squigs toward the enemy, but then again two Squigs can do a lot of damage very quickly indeed. Should the Squigs be slain in battle the Herdas, if they survive, can always fetch more from the stockade, as in reality the 'training' is much more teaching the Nightgoblins how to keep the Squig from eating them than it is in any way changing the behaviour of the Squig.
+
+[Discounted to 26 gold in Turmoil 3]"
 #hp 30 --- toughness 3, but bulky, strong, two of them
 #size 3 --- two gobbos plus two squigs, but none bigger than size 2, went for size 3 overall
 #prot 4 --- toughness 3, but scaly animal
@@ -38621,7 +43635,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Troll_Stone.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Troll_Stone2.tga"
 #name "Stone Troll"
-#descr "Trolls are hulking creatures whose hunched appearance belies their powerful nature. These dim witted creatures are eternally hungry and will consume almost anything from rocks and plants to metal or flesh. Not surprisingly their stomachs contain extremely powerful acids which they are known to spontaneously vomit at prey in lieu of beating it to a pulp with a crude club or tearing it apart with their long claws. Trolls are incredibly strong and, though they are quite slow and uncoordinated, truly deadly opponents in battle, but their greatest strength is their ability to regenerate. Trolls can heal any wound entirely in short order and even in the course of seconds or minutes their flesh will knit back together, making the task of killing them very difficult. Stone Trolls, the most common variety of Troll in the North and East of the Old World, have developed both tough protective hides and a resistance to magic. Without the help of Shamanic rituals Stone Trolls can only be found in cave systems and it is fairly rare for the Greenskins to be able to get them to join their armies. On the plus side Stone Trolls are too stupid to require any payment beyond food."
+#descr "Trolls are hulking creatures whose hunched appearance belies their powerful nature. These dim witted creatures are eternally hungry and will consume almost anything from rocks and plants to metal or flesh. Not surprisingly their stomachs contain extremely powerful acids which they are known to spontaneously vomit at prey in lieu of beating it to a pulp with a crude club or tearing it apart with their long claws. Trolls are incredibly strong and, though they are quite slow and uncoordinated, truly deadly opponents in battle, but their greatest strength is their ability to regenerate. Trolls can heal any wound entirely in short order and even in the course of seconds or minutes their flesh will knit back together, making the task of killing them very difficult. Stone Trolls, the most common variety of Troll in the North and East of the Old World, have developed both tough protective hides and a resistance to magic. Without the help of Shamanic rituals Stone Trolls can only be found in cave systems and it is fairly rare for the Greenskins to be able to get them to join their armies. On the plus side Stone Trolls are too stupid to require any payment beyond food.
+
+[Discounted to 45 gold in Turmoil 3]"
 #hp 37 --- toughness 4, large size, great stupidity
 #size 3 --- troll
 #prot 8 --- toughness 4, scaly skin
@@ -38662,7 +43678,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boar_Boy.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boar_Boy2.tga"
 #name "Orc Boar Boy"
-#descr "The war boar is a stubborn and vicious animal of incredible resilience, notorious bad temper, and impressive flatulence. These are just the sort of qualities that Orcs greatly admire, so it was only nastural for them to adopt war boars as their preferred mounts. In battle Boar Boy mobs fill the role of shock cavalry, with both rider and mount well suited to and practiced at crashing straight through enemy lines, buckling formations and slaughtering even well protected foes."
+#descr "The war boar is a stubborn and vicious animal of incredible resilience, notorious bad temper, and impressive flatulence. These are just the sort of qualities that Orcs greatly admire, so it was only nastural for them to adopt war boars as their preferred mounts. In battle Boar Boy mobs fill the role of shock cavalry, with both rider and mount well suited to and practiced at crashing straight through enemy lines, buckling formations and slaughtering even well protected foes.
+
+[Discounted to 30 gold in Turmoil 3]"
 #hp 16 --- toughness 4, plus an extra bit for the toughness of the boar
 #size 3 --- normal cav
 #prot 4 --- toughness 4, +1 extra for the toughness of the boar
@@ -38700,7 +43718,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boar_Boy.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boar_Boy2.tga"
 #name "Savage Orc Boar Boy"
-#descr "The war boar is a stubborn and vicious animal of incredible resilience, notorious bad temper, and impressive flatulence. These are just the sort of qualities that Orcs greatly admire, so it was only nastural for them to adopt war boars as their preferred mounts. Savage Orc tribes are typically able to field far more of these shock cavalry than more civilised tribes, as their Shamans have particular skill in matching the right Orc with a compatible War Boar. Additionally Savage Orcs are even more reckless and unafraid of pain or injury than their counterparts and as such many more are willing to attempt leaping on the back of a War Boar or simply beating it into submission. Savage Orc Boar Boyz and their mounts both sport protective warpaint."
+#descr "The war boar is a stubborn and vicious animal of incredible resilience, notorious bad temper, and impressive flatulence. These are just the sort of qualities that Orcs greatly admire, so it was only nastural for them to adopt war boars as their preferred mounts. Savage Orc tribes are typically able to field far more of these shock cavalry than more civilised tribes, as their Shamans have particular skill in matching the right Orc with a compatible War Boar. Additionally Savage Orcs are even more reckless and unafraid of pain or injury than their counterparts and as such many more are willing to attempt leaping on the back of a War Boar or simply beating it into submission. Savage Orc Boar Boyz and their mounts both sport protective warpaint.
+
+[Discounted to 30 gold in Turmoil 3]"
 #hp 16 --- toughness 4, plus an extra bit for the toughness of the boar
 #size 3 --- normal cav
 #prot 5 --- toughness 4, +1 extra for the toughness of the boar, +1 for berserk cav bonus
@@ -38739,7 +43759,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boar_Boy_Bigun.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boar_Boy_Bigun2.tga"
 #name "Orc Boar Boy Bigun"
-#descr "Just as the Biguns are the 'ardest, loudest, and the bashiest Boyz in the tribe, so are the Boar Boy Biguns the elite of their mob. They arm themselves with the best wargear available, usually looted or 'upgraded' from the elite of enemy forces. Biguns are both large and confident enough to headbutt the meanest most aggressive war boars into submission (or at least daze them long enough to leap on their back) and are even known to attach crude barding to their mounts in the manner of the heavy cavalry of man."
+#descr "Just as the Biguns are the 'ardest, loudest, and the bashiest Boyz in the tribe, so are the Boar Boy Biguns the elite of their mob. They arm themselves with the best wargear available, usually looted or 'upgraded' from the elite of enemy forces. Biguns are both large and confident enough to headbutt the meanest most aggressive war boars into submission (or at least daze them long enough to leap on their back) and are even known to attach crude barding to their mounts in the manner of the heavy cavalry of man.
+
+[Discounted to 40 gold in Turmoil 3]"
 #hp 18 --- toughness 4, big, plus an extra bit for the toughness of the boar
 #size 3 --- normal cav
 #prot 5 --- toughness 4, +1 extra for the toughness of the boar, +1 for being bigger
@@ -38777,7 +43799,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boar_Bigun.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boar_Bigun2.tga"
 #name "Savage Orc Boar Boy Bigun"
-#descr "Amongst the Savage Orc tribes of the southern realms the Boar Boy Bigun mobs have the very highest prestige, being the fastest, 'ardest, and wildest Boyz in the tribe. The War Boars they ride are larger and angrier than those ridden by the Biguns in more civilized tribes, they are protected by particularly effective magic warpaint, and they have mastered the art of wielding two stone axes while clinging to their charging mount with their legs."
+#descr "Amongst the Savage Orc tribes of the southern realms the Boar Boy Bigun mobs have the very highest prestige, being the fastest, 'ardest, and wildest Boyz in the tribe. The War Boars they ride are larger and angrier than those ridden by the Biguns in more civilized tribes, they are protected by particularly effective magic warpaint, and they have mastered the art of wielding two stone axes while clinging to their charging mount with their legs.
+
+[Discounted to 45 gold in Turmoil 3]"
 #hp 18 --- toughness 4, plus an extra bit for the toughness of the boar, plus an extra 2 because it's a really big boar
 #size 3 --- normal cav
 #prot 6 --- toughness 4, +1 extra for the toughness of the boar, +1 for being bigger, +1 for berserk cav
@@ -38931,7 +43955,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Black_Orc_Shield.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Black_Orc_Shield2.tga"
 #name "Black Orc"
-#descr "Black Orcs are the biggest, meanest, and strongest of all the varieties of Greenskin, a breed that emerged from the East and quickly rose to power across the land. Their name stems from their dark green skin, though it also fits their dour demeaner, for while they are as aggressive and unreasonable as other Orcs, they are grimly and singularly focused on war. Indeed they take war so seriously that they regard even elite formations such as Boar Boy Biguns as frivolous amateurs. Being the best fighters in any Greenskin army, Black Orcs usually end up with the lion's share of loot and pride themselves on meticulously maintaining both heavy armour and quality weapons, something other Greenskins mock when out of earshot. The origins of the Black Orcs are a mystery, but one common tale is they were created by the Chaos Dwarfs as battle slaves and nearly doomed that empire when they inevitably revolted. Black Orcs wade into battle either with a choppa and heavy shield, a massive two handed big choppa, or lighter armour and paired choppas."
+#descr "Black Orcs are the biggest, meanest, and strongest of all the varieties of Greenskin, a breed that emerged from the East and quickly rose to power across the land. Their name stems from their dark green skin, though it also fits their dour demeaner, for while they are as aggressive and unreasonable as other Orcs, they are grimly and singularly focused on war. Indeed they take war so seriously that they regard even elite formations such as Boar Boy Biguns as frivolous amateurs. Being the best fighters in any Greenskin army, Black Orcs usually end up with the lion's share of loot and pride themselves on meticulously maintaining both heavy armour and quality weapons, something other Greenskins mock when out of earshot. The origins of the Black Orcs are a mystery, but one common tale is they were created by the Chaos Dwarfs as battle slaves and nearly doomed that empire when they inevitably revolted. Black Orcs wade into battle either with a choppa and heavy shield, a massive two handed big choppa, or lighter armour and paired choppas.
+
+[Discounted to 17 gold in Turmoil 3]"
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
@@ -38944,8 +43970,8 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 16 -- standard human move +2 because they are disciplined
 #ap 14 --- normal, move 4
-#gcost 25
-#chaosrec 2
+#gcost 26
+#chaosrec 3
 #rpcost 18
 #rcost 0
 #weapon 1051 -- honed choppa
@@ -38970,7 +43996,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Chariot.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Chariot2.tga"
 #name "Goblin Wolf Chariot"
-#descr "It wasn't very long after they started using giant wolves as cavalry that Goblin armies began the field wolf-drawn chariots. Cobbled together out of scavenged material, they appear to be rickety contraptions but are in fact sleek and effective weapons of war. While they are nowhere near as sturdy as the much heavier War Boar-drawn Orc chariots, they are much faster and can be fielded in much large numbers. The most common form of chariot is crewed by one dedicated driver and one lance armed Goblin - a position of considerable risk and status within the tribe. Goblins are perhaps the only race capable of using Chariots stealthily, as they are experts at quickly dismantling and disguising them for travel before assembling them to launch raids."
+#descr "It wasn't very long after they started using giant wolves as cavalry that Goblin armies began the field wolf-drawn chariots. Cobbled together out of scavenged material, they appear to be rickety contraptions but are in fact sleek and effective weapons of war. While they are nowhere near as sturdy as the much heavier War Boar-drawn Orc chariots, they are much faster and can be fielded in much large numbers. The most common form of chariot is crewed by one dedicated driver and one lance armed Goblin - a position of considerable risk and status within the tribe. Goblins are perhaps the only race capable of using Chariots stealthily, as they are experts at quickly dismantling and disguising them for travel before assembling them to launch raids.
+
+[Discounted to 26 gold in Turmoil 3]"
 #hp 12 --- two gobbos
 #size 4 --- two wolves, chariot, 2 gobbos
 #prot 4 --- toughness 3, but in a chariot
@@ -39009,7 +44037,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Chariot_Archer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Chariot_Archer2.tga"
 #name "Goblin Wolf Chariot"
-#descr "It wasn't very long after they started using giant wolves as cavalry that Goblin armies began the field wolf-drawn chariots. Cobbled together out of scavenged material, they appear to be rickety contraptions but are in fact sleek and effective weapons of war. While they are nowhere near as sturdy as the much heavier War Boar-drawn Orc chariots, they are much faster and can be fielded in much large numbers. Some chariots are crewed by two archers, one of whom doubles as the driver, and rain arrows upon the enemy from a distance, usually before plowing directly into a sufficiently weakened or fleeing foe. Goblins are perhaps the only race capable of using Chariots stealthily, as they are experts at quickly dismantling and disguising them for travel before assembling them to launch raids."
+#descr "It wasn't very long after they started using giant wolves as cavalry that Goblin armies began the field wolf-drawn chariots. Cobbled together out of scavenged material, they appear to be rickety contraptions but are in fact sleek and effective weapons of war. While they are nowhere near as sturdy as the much heavier War Boar-drawn Orc chariots, they are much faster and can be fielded in much large numbers. Some chariots are crewed by two archers, one of whom doubles as the driver, and rain arrows upon the enemy from a distance, usually before plowing directly into a sufficiently weakened or fleeing foe. Goblins are perhaps the only race capable of using Chariots stealthily, as they are experts at quickly dismantling and disguising them for travel before assembling them to launch raids.
+
+[Discounted to 26 gold in Turmoil 3]"
 #hp 12 --- two gobbos
 #size 4 --- two wolves, chariot, 2 gobbos
 #prot 4 --- toughness 3, but in a chariot
@@ -39052,7 +44082,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Chariot.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Chariot2.tga"
 #name "Orc Boar Chariot"
-#descr "Orc chariots arent quite as well constructed or maintained as their Goblin counterparts, but there is no denying their effectiveness. Pulled by two extremely angry War Boars, these crude war machines can pick up quite a pace and have sufficient mass to simply smash through enemy formations. While wolves are certainly faster, the strength and energy of one charging War Boar, let alone two, is something to behold. It takes a certain type of Orc to  willingly crew such a contraption and while they are respected by their peers for the carnage they can inflict, they are regarded as being 'not all there in da 'ead', a view exacerbated by their use of suspiciously spearlike long-handled Choppas."
+#descr "Orc chariots arent quite as well constructed or maintained as their Goblin counterparts, but there is no denying their effectiveness. Pulled by two extremely angry War Boars, these crude war machines can pick up quite a pace and have sufficient mass to simply smash through enemy formations. While wolves are certainly faster, the strength and energy of one charging War Boar, let alone two, is something to behold. It takes a certain type of Orc to  willingly crew such a contraption and while they are respected by their peers for the carnage they can inflict, they are regarded as being 'not all there in da 'ead', a view exacerbated by their use of suspiciously spearlike long-handled Choppas.
+
+[Discounted to 45 gold in Turmoil 3]"
 #hp 18 --- toughness 4, plus extra for the toughness of the boars and chariot
 #size 4 --- two boars, chariot, an orc, high mass, but making them size 5 is a bit too strong
 #prot 6 --- toughness 4, in a chariot
@@ -39094,7 +44126,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Bigun_Shield.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Bigun_Shield2.tga"
 #name "Orc Bigun"
-#descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Biguns therefore tend to be better equipped, with some carrying a pair of choppas or a massive two handed 'big choppa' into battle."
+#descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Biguns therefore tend to be better equipped, with some carrying a pair of choppas or a massive two handed 'big choppa' into battle.
+
+[Discounted to 11 gold in Turmoil 3]"
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
@@ -39131,7 +44165,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Netter.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Netter2.tga"
 #name "Nightgoblin Netta or Clubba"
-#descr "In the underground world of tunnels and caverns the Nightgoblins inhabit there are many beasts such as Squigs, Shroomgnarlers, or Scumgloids which prey upon and are preyed on by the cowled goblinoids. Whether capturing them for food or as beasts of war, Nightgoblins make extensive use of both strong nets woven from cavespider silk to halt their foe and large cavewood clubs to brutally subdue them. Armed with these weapons the Clubbas and the Nettas, as they are known, form a surprisingly effective formation. When recruiting a mob of these intrepid Nightgoblins the exact ratio of Nettas and Clubbas will vary."
+#descr "In the underground world of tunnels and caverns the Nightgoblins inhabit there are many beasts such as Squigs, Shroomgnarlers, or Scumgloids which prey upon and are preyed on by the cowled goblinoids. Whether capturing them for food or as beasts of war, Nightgoblins make extensive use of both strong nets woven from cavespider silk to halt their foe and large cavewood clubs to brutally subdue them. Armed with these weapons the Clubbas and the Nettas, as they are known, form a surprisingly effective formation. When recruiting a mob of these intrepid Nightgoblins the exact ratio of Nettas and Clubbas will vary.
+
+[Discounted to 8 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -39169,7 +44205,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Giant_South.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Giant_South2.tga"
 #name "Giant"
-#descr "Descendants of the long forgotten Sky Titans, Giants are large, lumbering brutes that stride the world seeking battle and food. Though their ancestors dwelt in the Mountains of Mourn exclusively Giants may now be found almost anywhere, for their society is long fallen and their territorial nature has driven a constant diaspora. While many live solitary lives, some are coaxed to join a Greenskin army and it is not uncommon to find local tribes fighting over a Giant, with the ultimate winner often being a very well fed Giant. To most Greenskins Giants are bellowing, cursing, raucous embodiments of might that display everything they admire. There are few sights more inspiring that watching one of 'da big fellas' stomp dwarfs into paste, pick up and swallow some arrogant elf, or smash through a regiment of human knights with a swing of its massive club. For their part Giants are usually happy to join an army of Greenskins for they present many opportunities to fight and feast and some degree of protection against the many foes Giants attract by virtue of being both huge and hugely violent. As Giants are clumsy beasts at the best of times and often quite drunk they are more than capable of harming both allies and themselves as they stomp around causing mayhem. Giants taken in by the Savage Orcs of the Southlands are invariably carefully adorned with the most powerful protective tattoos or warpaint known by the tribe."
+#descr "Descendants of the long forgotten Sky Titans, Giants are large, lumbering brutes that stride the world seeking battle and food. Though their ancestors dwelt in the Mountains of Mourn exclusively Giants may now be found almost anywhere, for their society is long fallen and their territorial nature has driven a constant diaspora. While many live solitary lives, some are coaxed to join a Greenskin army and it is not uncommon to find local tribes fighting over a Giant, with the ultimate winner often being a very well fed Giant. To most Greenskins Giants are bellowing, cursing, raucous embodiments of might that display everything they admire. There are few sights more inspiring that watching one of 'da big fellas' stomp dwarfs into paste, pick up and swallow some arrogant elf, or smash through a regiment of human knights with a swing of its massive club. For their part Giants are usually happy to join an army of Greenskins for they present many opportunities to fight and feast and some degree of protection against the many foes Giants attract by virtue of being both huge and hugely violent. As Giants are clumsy beasts at the best of times and often quite drunk they are more than capable of harming both allies and themselves as they stomp around causing mayhem. Giants taken in by the Savage Orcs of the Southlands are invariably carefully adorned with the most powerful protective tattoos or warpaint known by the tribe.
+
+[Discounted to 200 gold in Turmoil 3]"
 #hp 100 -- T5 W6, huge
 #size 6
 #prot 8
@@ -39182,7 +44220,7 @@ Priests: Strong."
 #prec 8 -- doesn't have the helmet the slave giant does, clumsy
 #mapmove 22 -- huge strides, nomadic
 #ap 18
-#gcost 350
+#gcost 305
 #chaosrec 35
 #rpcost 60
 #rcost 10
@@ -39206,13 +44244,61 @@ Priests: Strong."
 #end
 
 
+---- Giant (SOUTH) -- recruit form
+
+#newmonster 3992
+#spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Giant_South_Recruit.tga"
+#name "Giant"
+#descr "Descendants of the long forgotten Sky Titans, Giants are large, lumbering brutes that stride the world seeking battle and food. Though their ancestors dwelt in the Mountains of Mourn exclusively Giants may now be found almost anywhere, for their society is long fallen and their territorial nature has driven a constant diaspora. While many live solitary lives, some are coaxed to join a Greenskin army and it is not uncommon to find local tribes fighting over a Giant, with the ultimate winner often being a very well fed Giant. To most Greenskins Giants are bellowing, cursing, raucous embodiments of might that display everything they admire. There are few sights more inspiring that watching one of 'da big fellas' stomp dwarfs into paste, pick up and swallow some arrogant elf, or smash through a regiment of human knights with a swing of its massive club. For their part Giants are usually happy to join an army of Greenskins for they present many opportunities to fight and feast and some degree of protection against the many foes Giants attract by virtue of being both huge and hugely violent. As Giants are clumsy beasts at the best of times and often quite drunk they are more than capable of harming both allies and themselves as they stomp around causing mayhem. Giants taken in by the Savage Orcs of the Southlands are invariably carefully adorned with the most powerful protective tattoos or warpaint known by the tribe.
+
+[The full graphic will be used outside of the recruitment screen]
+[Discounted to 200 gold in Turmoil 3]"
+#hp 100 -- T5 W6, huge
+#size 6
+#prot 8
+#mor 17 -- LD10, fear, generally unafraid, southern ones a bit more savage
+#mr 12 -- +2 from warpaint
+#enc 4 -- big
+#str 25 -- S6, huge
+#att 10 -- ws3i3
+#def 10 -- ws3i3
+#prec 8 -- doesn't have the helmet the slave giant does, clumsy
+#mapmove 22 -- huge strides, nomadic
+#ap 18
+#gcost 305
+#chaosrec 35
+#rpcost 60
+#rcost 10
+#armor 150 -- bone helmet
+#weapon 609 -- grab and swallow
+#weapon 1082 -- Wild Swings
+#weapon 1087 -- Giant Stomp
+#maxage 140
+#mountainsurvival
+#coldres 8
+#supplybonus -2 -- gluttonous
+#ambidextrous 3
+#fear 7 -- bellowing, towering, terror
+--nametype ???
+#noleader
+#itemslots 14336 -- two misc, one foot
+#siegebonus 5
+#reclimit 1
+#undisciplined
+#invulnerable 12 -- +4 over regular savage orcs
+#firstshape 3986
+#end
+
+
 ---- Giant (NORTH)
 
 #newmonster 3987
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Giant_North.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Giant_North2.tga"
 #name "Giant"
-#descr "Descendants of the long forgotten Sky Titans, Giants are large, lumbering brutes that stride the world seeking battle and food. Though their ancestors dwelt in the Mountains of Mourn exclusively Giants may now be found almost anywhere, for their society is long fallen and their territorial nature has driven a constant diaspora. While many live solitary lives, some are coaxed to join a Greenskin army and it is not uncommon to find local tribes fighting over a Giant, with the ultimate winner often being a very well fed Giant. To most Greenskins Giants are bellowing, cursing, raucous embodiments of might that display everything they admire. There are few sights more inspiring that watching one of 'da big fellas' stomp dwarfs into paste, pick up and swallow some arrogant elf, or smash through a regiment of human knights with a swing of its massive club. For their part Giants are usually happy to join an army of Greenskins for they present many opportunities to fight and feast and some degree of protection against the many foes Giants attract by virtue of being both huge and hugely violent. As Giants are clumsy beasts at the best of times and often quite drunk they are more than capable of harming both allies and themselves as they stomp around causing mayhem. Giants that join the tribes of the Badlands and Darklands share their love of scavenging from defeated foes and wear clothes and armour cobbled together from cloth and shields looted from fallen Bretonnians and men of the Empire alike. This giant wields a makeshift club made from a gravestone lashed to a tree trunk."
+#descr "Descendants of the long forgotten Sky Titans, Giants are large, lumbering brutes that stride the world seeking battle and food. Though their ancestors dwelt in the Mountains of Mourn exclusively Giants may now be found almost anywhere, for their society is long fallen and their territorial nature has driven a constant diaspora. While many live solitary lives, some are coaxed to join a Greenskin army and it is not uncommon to find local tribes fighting over a Giant, with the ultimate winner often being a very well fed Giant. To most Greenskins Giants are bellowing, cursing, raucous embodiments of might that display everything they admire. There are few sights more inspiring that watching one of 'da big fellas' stomp dwarfs into paste, pick up and swallow some arrogant elf, or smash through a regiment of human knights with a swing of its massive club. For their part Giants are usually happy to join an army of Greenskins for they present many opportunities to fight and feast and some degree of protection against the many foes Giants attract by virtue of being both huge and hugely violent. As Giants are clumsy beasts at the best of times and often quite drunk they are more than capable of harming both allies and themselves as they stomp around causing mayhem. Giants that join the tribes of the Badlands and Darklands share their love of scavenging from defeated foes and wear clothes and armour cobbled together from cloth and shields looted from fallen Bretonnians and men of the Empire alike. This giant wields a makeshift club made from a gravestone lashed to a tree trunk.
+
+[Discounted to 200 gold in Turmoil 3]"
 #hp 100 -- T5 W6, huge
 #size 6
 #prot 8
@@ -39225,7 +44311,7 @@ Priests: Strong."
 #prec 8 -- doesn't have the helmet the slave giant does, clumsy
 #mapmove 22 -- huge strides, nomadic
 #ap 18
-#gcost 350
+#gcost 305
 #chaosrec 35
 #rpcost 60
 #rcost 10
@@ -39245,6 +44331,52 @@ Priests: Strong."
 #siegebonus 5
 #reclimit 1
 #undisciplined
+#end
+
+
+
+---- Giant (NORTH) -- recruit form
+
+#newmonster 3993
+#spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Giant_North_Recruit.tga"
+#name "Giant"
+#descr "Descendants of the long forgotten Sky Titans, Giants are large, lumbering brutes that stride the world seeking battle and food. Though their ancestors dwelt in the Mountains of Mourn exclusively Giants may now be found almost anywhere, for their society is long fallen and their territorial nature has driven a constant diaspora. While many live solitary lives, some are coaxed to join a Greenskin army and it is not uncommon to find local tribes fighting over a Giant, with the ultimate winner often being a very well fed Giant. To most Greenskins Giants are bellowing, cursing, raucous embodiments of might that display everything they admire. There are few sights more inspiring that watching one of 'da big fellas' stomp dwarfs into paste, pick up and swallow some arrogant elf, or smash through a regiment of human knights with a swing of its massive club. For their part Giants are usually happy to join an army of Greenskins for they present many opportunities to fight and feast and some degree of protection against the many foes Giants attract by virtue of being both huge and hugely violent. As Giants are clumsy beasts at the best of times and often quite drunk they are more than capable of harming both allies and themselves as they stomp around causing mayhem. Giants that join the tribes of the Badlands and Darklands share their love of scavenging from defeated foes and wear clothes and armour cobbled together from cloth and shields looted from fallen Bretonnians and men of the Empire alike. This giant wields a makeshift club made from a gravestone lashed to a tree trunk.
+
+[The full graphic will be used outside of the recruitment screen]
+[Discounted to 200 gold in Turmoil 3]"
+#hp 100 -- T5 W6, huge
+#size 6
+#prot 8
+#mor 16 -- LD10, fear, generally unafraid
+#mr 10
+#enc 4 -- big
+#str 25 -- S6, huge
+#att 10 -- ws3i3
+#def 10 -- ws3i3
+#prec 8 -- doesn't have the helmet the slave giant does, clumsy
+#mapmove 22 -- huge strides, nomadic
+#ap 18
+#gcost 305
+#chaosrec 35
+#rpcost 60
+#rcost 10
+#armor 384 -- makeshift armour
+#weapon 609 -- grab and swallow
+#weapon 1082 -- Wild Swings
+#weapon 1087 -- Giant Stomp
+#maxage 140
+#mountainsurvival
+#coldres 8
+#supplybonus -2 -- gluttonous
+#ambidextrous 3
+#fear 7 -- bellowing, towering, terror
+--nametype ???
+#noleader
+#itemslots 14336 -- two misc, one foot
+#siegebonus 5
+#reclimit 1
+#undisciplined
+#firstshape 3987
 #end
 
 
@@ -39364,7 +44496,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider_Archer.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider_Archer2.tga"
 #name "Goblin Wolf Rider Scout"
-#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows. Even armies with no packs of Wolfriders will usually employ a few lone scouts to range ahead and report back to the boss."
+#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows. Even armies with no packs of Wolfriders will usually employ a few lone scouts to range ahead and report back to the boss.
+
+[Discounted to 25 gold in Turmoil 3]"
 #hp 8 --- little tougher than normal
 #size 2 --- though the wolf is big, I think size 2 is ok
 #prot 0 --- toughness 3
@@ -39377,8 +44511,8 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- fast cavalry
 #ap 28 --- faster than horses, move 9
-#gcost 35
-#chaosrec 3
+#gcost 40
+#chaosrec 5
 #rpcost 1 -- fast to recruit these boys
 #rcost 1
 #weapon 1 -- spear
@@ -39404,8 +44538,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Shaman2.tga"
 #name "Goblin Shaman"
-#descr "Goblin Shamans tend to be considerably less powerful than their Orcish counterparts, being of less immediate interest to Gork and Mork. They are also considerably less prone to acting in an 'eccentric' manner, though even if this weren't the case no Orc expects 'propa' behaviour out of a Goblin anyway. That said, Goblin Shamans are afforded a similar level of respect by almost any Orc, as they are notoriously spiteful and vengeful creates, just as happy to turn their unpleasant magic on a disrespectful tribe member as the enemy. Amongst their own kind Goblin Shamans hold considerable status and their council is often saught to resolve disputes (usually in their own favour), ward off bad magic, and the like. Goblin Shamans do not have the priestly authority of their Orcish counterparts and are better able to tolerate the boredom of research."
-#hp 15 --- toughness 3, 2 wounds, small
+#descr "Goblin Shamans tend to be considerably less powerful than their Orcish counterparts, being of less immediate interest to Gork and Mork. They are also considerably less prone to acting in an 'eccentric' manner, though even if this weren't the case no Orc expects 'propa' behaviour out of a Goblin anyway. That said, Goblin Shamans are afforded a similar level of respect by almost any Orc, as they are notoriously spiteful and vengeful creates, just as happy to turn their unpleasant magic on a disrespectful tribe member as the enemy. Amongst their own kind Goblin Shamans hold considerable status and their council is often saught to resolve disputes (usually in their own favour), ward off bad magic, and the like. Goblin Shamans do not have the priestly authority of their Orcish counterparts and are better able to tolerate the boredom of research.
+
+[Discounted to 60 gold in Turmoil 3]"
+#hp 8
 #size 2 --- normal
 #prot 2 --- toughness 4
 #mor 9 --- leadership 7, animosity
@@ -39417,7 +44553,7 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 100
+#gcost 90
 #chaosrec 10
 #rpcost 2
 #rcost 1
@@ -39435,6 +44571,7 @@ Priests: Strong."
 #stealthy 0 -- goblins
 #startage 35
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39445,8 +44582,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Shaman2.tga"
 #name "Forest Goblin Shaman"
-#descr "The Shamans of the Forest Goblin tribes hold a similar level of authority to their Nightgoblin cousins, being essential to many of the tribes rituals. It is the Shamans who extract venom from captured spiders for use in warfare, recreation, and typical Goblin scheming. Forest Goblin Shamans are less willing to perform research than other types of Goblin Shaman, but their connection with nature grants them slightly more magical power. Though they are certainly important to the tribe they are perhaps a little too common for their own good and are not invested with any priestly authority, unlike their elder or Orcish counterparts. Forest Goblin Shamans carry ceremonial wands tipped with venomous spider fangs."
-#hp 15 --- toughness 3, 2 wounds, small
+#descr "The Shamans of the Forest Goblin tribes hold a similar level of authority to their Nightgoblin cousins, being essential to many of the tribes rituals. It is the Shamans who extract venom from captured spiders for use in warfare, recreation, and typical Goblin scheming. Forest Goblin Shamans are less willing to perform research than other types of Goblin Shaman, but their connection with nature grants them slightly more magical power. Though they are certainly important to the tribe they are perhaps a little too common for their own good and are not invested with any priestly authority, unlike their elder or Orcish counterparts. Forest Goblin Shamans carry ceremonial wands tipped with venomous spider fangs.
+
+[Discounted to 75 gold in Turmoil 3]"
+#hp 8
 #size 2 --- normal
 #prot 2 --- toughness 4
 #mor 9 --- leadership 7, animosity
@@ -39458,7 +44597,7 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 135
+#gcost 120
 #chaosrec 15
 #rpcost 2
 #rcost 1
@@ -39480,6 +44619,7 @@ Priests: Strong."
 #beastmaster 1
 #command 10
 #invulnerable 5
+#reinvigoration 1
 #end
 
 
@@ -39490,8 +44630,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Shaman2.tga"
 #name "Nightgoblin Shaman"
-#descr "Goblin Shamans tend to be considerably less powerful than their Orcish counterparts, being of less immediate interest to Gork and Mork. The Nightgoblins have their own distinct brand of Shamans whose rituals revolve almost entirely around the cultivating, distribution, and consumption of psychadelic magic mushrooms. Because of the vast quantities they consume they are, if anything, even more prone to abject insanity than Orc Shamans. When a Nightgoblin Shaman is in the grips of mania, far from ignoring them like Orcs with their Shamans, their fellow Nightgoblins instead revel and share in theirs frenzied state, gulping down large quantities of distilled fungus brew. Strangely Nightgoblin Shamans are the best equipped to cope with the task of research, as their frequently altered mental state does bring bursts of magical enlightenment."
-#hp 15 --- toughness 3, 2 wounds, small
+#descr "Goblin Shamans tend to be considerably less powerful than their Orcish counterparts, being of less immediate interest to Gork and Mork. The Nightgoblins have their own distinct brand of Shamans whose rituals revolve almost entirely around the cultivating, distribution, and consumption of psychadelic magic mushrooms. Because of the vast quantities they consume they are, if anything, even more prone to abject insanity than Orc Shamans. When a Nightgoblin Shaman is in the grips of mania, far from ignoring them like Orcs with their Shamans, their fellow Nightgoblins instead revel and share in theirs frenzied state, gulping down large quantities of distilled fungus brew. Strangely Nightgoblin Shamans are the best equipped to cope with the task of research, as their frequently altered mental state does bring bursts of magical enlightenment.
+
+[Discounted to 70 gold in Turmoil 3]"
+#hp 8
 #size 2 --- normal
 #prot 0 --- toughness 3
 #mor 8 --- leadership 6, animosity
@@ -39503,7 +44645,7 @@ Priests: Strong."
 #prec 11 --- ballistic skill 3 but I've established NGs are slightly better shots
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 110
+#gcost 100
 #chaosrec 10
 #rpcost 2
 #rcost 1
@@ -39522,6 +44664,7 @@ Priests: Strong."
 #researchbonus -1
 #startage 35
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39531,8 +44674,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Great_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Great_Shaman2.tga"
 #name "Nightgoblin Great Shaman"
-#descr "Great Shamans are the most powerful of their kind, so clearly marked by Mork and Gork that they are recognised as direct agents of their will. Amongst the Nightgoblins their is no higher status than that of Great Shaman and it is said even Skarsnik, the most famous Nightgoblin Warboss to ever live, would not dare cross one. It is the Great Shamans that preside over the gatherings of Nightgoblin tribes to share in vast cauldrons of fungus brew, it is they who divine the location of Great Cave Squigs to hunt, and it is they who select those who will receive the Madcap mushroom blessing and become Fanatics. In addition to their advanced magical powers, Nightgoblin Great Shamans consume so many magic mushrooms that they can at times speak the will of Mork and Gork directly and so have considerable priestly authority. Indeed they train tiny Squiggly Beasts to follow them around with a bowl of mushrooms they can feast on at any moment. It goes without saying that these habits result in extremely frequent bouts of complete insanity."
-#hp 17 --- toughness 4, 3 wounds, small
+#descr "Great Shamans are the most powerful of their kind, so clearly marked by Mork and Gork that they are recognised as direct agents of their will. Amongst the Nightgoblins their is no higher status than that of Great Shaman and it is said even Skarsnik, the most famous Nightgoblin Warboss to ever live, would not dare cross one. It is the Great Shamans that preside over the gatherings of Nightgoblin tribes to share in vast cauldrons of fungus brew, it is they who divine the location of Great Cave Squigs to hunt, and it is they who select those who will receive the Madcap mushroom blessing and become Fanatics. In addition to their advanced magical powers, Nightgoblin Great Shamans consume so many magic mushrooms that they can at times speak the will of Mork and Gork directly and so have considerable priestly authority. Indeed they train tiny Squiggly Beasts to follow them around with a bowl of mushrooms they can feast on at any moment. It goes without saying that these habits result in extremely frequent bouts of complete insanity.
+
+[Discounted to 175 gold in Turmoil 3]"
+#hp 10
 #size 2 --- normal
 #prot 2 --- toughness 4
 #mor 8 --- leadership 6, animosity
@@ -39544,8 +44689,8 @@ Priests: Strong."
 #prec 11 --- ballistic skill 3 but I've established NGs are slightly better shots
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 280
-#chaosrec 30
+#gcost 250
+#chaosrec 25
 #rpcost 2 -- good cap only mage, but insane and not up to level of the orc great shaman
 #rcost 1
 #weapon 493 -- sickle staff
@@ -39568,6 +44713,7 @@ Priests: Strong."
 #stealthy 10 -- nightgoblins
 #startage 50
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39577,8 +44723,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Great_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Great_Shaman2.tga"
 #name "Forest Goblin Great Shaman"
-#descr "Great Shamans are the most powerful of their kind, so clearly marked by Mork and Gork that they are recognised as direct agents of their will. Much like the Great Shamans of their cave dwelling cousins the Nightgoblins, Forest Goblin Shamans have considerable social status amongst their tribe. Only the Great Shamans can bend the wills of the largest Giant Spiders to the tribe's cause and their devious counsel is always sought out by Big Bosses and Warbosses alike. Forest Goblin Shamans are less willing to perform research than other types of Goblin Shaman, but their connection with nature grants them more magical power. As Goblins of high social status they inevitably ride to battle mounted on a valuable Giant Spider."
-#hp 23 --- toughness 4, 3 wounds, small, tough spider
+#descr "Great Shamans are the most powerful of their kind, so clearly marked by Mork and Gork that they are recognised as direct agents of their will. Much like the Great Shamans of their cave dwelling cousins the Nightgoblins, Forest Goblin Shamans have considerable social status amongst their tribe. Only the Great Shamans can bend the wills of the largest Giant Spiders to the tribe's cause and their devious counsel is always sought out by Big Bosses and Warbosses alike. Forest Goblin Shamans are less willing to perform research than other types of Goblin Shaman, but their connection with nature grants them more magical power. As Goblins of high social status they inevitably ride to battle mounted on a valuable Giant Spider.
+
+[Discounted to 175 gold in Turmoil 3]"
+#hp 12
 #size 3 --- mounted on giant spider
 #prot 5 --- toughness 4 +3 for spider
 #mor 10 --- leadership 7, animosity, aggressive spider
@@ -39590,8 +44738,8 @@ Priests: Strong."
 #prec 11 --- ballistic skill 3, forest goblin
 #mapmove 22 -- light cav move 7
 #ap 22 -- light cav move 7
-#gcost 280
-#chaosrec 30
+#gcost 250
+#chaosrec 25
 #rpcost 2
 #rcost 1
 #weapon 1075 -- spider fang staff
@@ -39620,6 +44768,7 @@ Priests: Strong."
 #startage 50
 #maxage 5000
 #invulnerable 6
+#reinvigoration 1
 #end
 
 
@@ -39630,8 +44779,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Shaman2.tga"
 #name "Orc Shaman"
-#descr "An Orc Shaman is a sacred living conduit to Gork and Mork and can wield such arcane might that even the crudest Boss cannot help but be impressed. The magics used by Shamans come not only from the Winds of Magic but from the raw energy radiated by any gathering of Greenskins, often becoming overloaded to the point green energy leaks from their eyes and mouth. While Shamans are powerful assets to a tribe and fulfil many vital roles within what passes for Greenskin culture, every Orc knows there's just something 'not right in the ead' about them. Indeed outright madness seems to be a consequence of the constant surges of energy flowing through their minds. It is a common occurence to find an Orc Shaman leaping around howling and behaving an an extremely un-Orcish manner while battle-hardened Biguns and even Warbosses stoically and respectfully pretend not to notice. Orc Shamans focus on darker and more destructive magic than their Goblin counterparts but are even less interested in conducting research."
-#hp 21 --- toughness 4, 2 wounds, bigger than human
+#descr "An Orc Shaman is a sacred living conduit to Gork and Mork and can wield such arcane might that even the crudest Boss cannot help but be impressed. The magics used by Shamans come not only from the Winds of Magic but from the raw energy radiated by any gathering of Greenskins, often becoming overloaded to the point green energy leaks from their eyes and mouth. While Shamans are powerful assets to a tribe and fulfil many vital roles within what passes for Greenskin culture, every Orc knows there's just something 'not right in the ead' about them. Indeed outright madness seems to be a consequence of the constant surges of energy flowing through their minds. It is a common occurence to find an Orc Shaman leaping around howling and behaving an an extremely un-Orcish manner while battle-hardened Biguns and even Warbosses stoically and respectfully pretend not to notice. Orc Shamans focus on darker and more destructive magic than their Goblin counterparts but are even less interested in conducting research.
+
+[Discounted to 155 gold in Turmoil 3]"
+#hp 15
 #size 2 --- normal
 #prot 4 --- toughness 4, humanoid
 #mor 10 --- leadership 7
@@ -39643,7 +44794,7 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 240
+#gcost 230
 #chaosrec 25
 #rpcost 2 --- mage
 #rcost 1
@@ -39666,6 +44817,7 @@ Priests: Strong."
 #noreqlab -- these guys do require temples, but don't need labs
 #startage 35
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39677,8 +44829,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Shaman2.tga"
 #name "Savage Orc Shaman"
-#descr "An Orc Shaman is a sacred living conduit to Gork and Mork and can wield such arcane might that even the crudest Boss cannot help but be impressed. The magics used by Shamans come not only from the Winds of Magic but from the raw energy radiated by any gathering of Greenskins, often becoming overloaded to the point green energy leaks from their eyes and mouth. The Shamans of Savage Orc tribes are typically a little more spiritual and less destructive than their civilised cousins and while they are just as respected and feared, aren't avoided or ignored in the same manner. Instead they are a more integral part of the tribe's crude culture and take part in social rituals where they apply and bless the warpaint and tattoos of the Boyz to protect them in battle. As such they are less prone to fits of insanity and better able to channel the enthusiastic energy of their tribe into raw elemental power. That said, they are even less interested in conducting research, and activity they see as almost entirely unorcish."
-#hp 21 --- toughness 4, 2 wounds, bigger than human
+#descr "An Orc Shaman is a sacred living conduit to Gork and Mork and can wield such arcane might that even the crudest Boss cannot help but be impressed. The magics used by Shamans come not only from the Winds of Magic but from the raw energy radiated by any gathering of Greenskins, often becoming overloaded to the point green energy leaks from their eyes and mouth. The Shamans of Savage Orc tribes are typically a little more spiritual and less destructive than their civilised cousins and while they are just as respected and feared, aren't avoided or ignored in the same manner. Instead they are a more integral part of the tribe's crude culture and take part in social rituals where they apply and bless the warpaint and tattoos of the Boyz to protect them in battle. As such they are less prone to fits of insanity and better able to channel the enthusiastic energy of their tribe into raw elemental power. That said, they are even less interested in conducting research, and activity they see as almost entirely unorcish.
+
+[Discounted to 185 gold in Turmoil 3]"
+#hp 15
 #size 2 --- normal
 #prot 4 --- toughness 4, humanoid
 #mor 10 --- leadership 7
@@ -39690,8 +44844,8 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 300
-#chaosrec 30
+#gcost 260
+#chaosrec 25
 #rpcost 2 --- mage
 #rcost 1
 #weapon 7 -- quarterstaff
@@ -39715,6 +44869,7 @@ Priests: Strong."
 #noreqlab -- these guys do require temples, but don't need labs
 #startage 35
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39726,8 +44881,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Great_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Great_Shaman2.tga"
 #name "Savage Orc Great Shaman"
-#descr "Orc Great Shamans are the most powerful of their kind, boasting terrifying raw magical power which allows them to cause untold destruction on the battlefield. In effect they represent everything about the more typical (but still very strange!) Orc Shaman enhanced to a great degree. While the Shamans of Savage Orc tribes are in general less unstable and dangerous to be around than their civilised cousins, their Great Shamans are still quite a bit more prone to fits of insanity than their lessers. Such is the cost of the tremendous magical energies of the elements and wilds that they can channel. Riding into battle atop painted War Boars nearly as mad as they are, they are truly terrifying manifestations of the will of Gork and Mork. As one might expect, Savage Orc Great Shamans are almost entirely uninterested in the 'grotty' activity of research."
-#hp 35 --- toughness 5, 3 wounds, +4 for the boar
+#descr "Orc Great Shamans are the most powerful of their kind, boasting terrifying raw magical power which allows them to cause untold destruction on the battlefield. In effect they represent everything about the more typical (but still very strange!) Orc Shaman enhanced to a great degree. While the Shamans of Savage Orc tribes are in general less unstable and dangerous to be around than their civilised cousins, their Great Shamans are still quite a bit more prone to fits of insanity than their lessers. Such is the cost of the tremendous magical energies of the elements and wilds that they can channel. Riding into battle atop painted War Boars nearly as mad as they are, they are truly terrifying manifestations of the will of Gork and Mork. As one might expect, Savage Orc Great Shamans are almost entirely uninterested in the 'grotty' activity of research.
+
+[Discounted to 260 gold in Turmoil 3]"
+#hp 17
 #size 3 --- normal for boar cav
 #prot 8 --- toughness 5, humanoid, +1 for boar +1 for berserk cav
 #mor 13 --- leadership 8, special +1 for berserk cav
@@ -39739,8 +44896,8 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 19 -- heavier cavalry rate
 #ap 20 --- move 7, slower cavalry
-#gcost 400
-#chaosrec 40
+#gcost 365
+#chaosrec 35
 #rpcost 4 --- cap only top tier mage
 #rcost 1
 #weapon 238 -- magic staff
@@ -39766,6 +44923,7 @@ Priests: Strong."
 #noreqlab -- these guys do require temples, but don't need labs
 #startage 50
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39776,8 +44934,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Great_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Great_Shaman2.tga"
 #name "Orc Great Shaman"
-#descr "Orc Great Shamans are the most powerful of their kind, boasting terrifying raw magical power which allows them to cause untold destruction on the battlefield. In effect they represent everything about the more typical (but still very strange!) Orc Shaman enhanced to a great degree. As such in addition to being considerably more powerful they are also quite a bit less sane - more prone to spasms and fits and embarassing un-Orcish behaviour. It would require an equally mad Orc, or one who has stared at the sun too long, to lift a finger to stop them though, for beyond any others they have clearly been marked as conduits for the will of Mork and Gork. They wear the bones of beasts and legendary Orcs fallen long ago on their body and adorn these with runes that further enhance their powers and physical abilities. As with lesser Orc Shamans, the Great Shamans have little interest in research."
-#hp 31 --- toughness 5, 3 wounds
+#descr "Orc Great Shamans are the most powerful of their kind, boasting terrifying raw magical power which allows them to cause untold destruction on the battlefield. In effect they represent everything about the more typical (but still very strange!) Orc Shaman enhanced to a great degree. As such in addition to being considerably more powerful they are also quite a bit less sane - more prone to spasms and fits and embarassing un-Orcish behaviour. It would require an equally mad Orc, or one who has stared at the sun too long, to lift a finger to stop them though, for beyond any others they have clearly been marked as conduits for the will of Mork and Gork. They wear the bones of beasts and legendary Orcs fallen long ago on their body and adorn these with runes that further enhance their powers and physical abilities. As with lesser Orc Shamans, the Great Shamans have little interest in research.
+
+[Discounted to 220 gold in Turmoil 3]"
+#hp 15
 #size 2 --- normal
 #prot 6 --- toughness 5, humanoid
 #mor 12 --- leadership 8, special
@@ -39789,7 +44949,7 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 350
+#gcost 325
 #chaosrec 35
 #rpcost 4 --- cap only top tier mage
 #rcost 1
@@ -39813,6 +44973,7 @@ Priests: Strong."
 #noreqlab -- these guys do require temples, but don't need labs
 #startage 50
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39822,8 +44983,10 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Great_Shaman.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Great_Shaman2.tga"
 #name "Goblin Great Shaman"
-#descr "The most powerful of the Goblin Shamans are known as Great Shamans, creatures of proven connection to Gork and Mork whose spiteful magic can be a great boon to their tribe. Though far less numerous than lesser Shamans, they are a more common sight than the Great Shamans of Orc or Nightgoblin society as they rise from the much larger Goblin population and are less prone to die from mushroom overdose than their cave dwelling cousins. Goblin Great Shamans adorn themselves with bone and horn taken from great beasts, Trolls, or even Giants felled by their tribe and these bestial fetishes help focus and manage the raw magical energy that courses through them. As such they are barely prone to madness or suddenly exploding at all. On the other hand their magical power is quite variable - Goblins will happily describe any Shaman that shows more power than the typical small tribe mystic as a Great Shaman. Goblin Great Shamans have a degree of priestly authority and are better able to tolerate the boredom of research than their Orcish counterparts."
-#hp 17 --- toughness 4, 3 wounds, small
+#descr "The most powerful of the Goblin Shamans are known as Great Shamans, creatures of proven connection to Gork and Mork whose spiteful magic can be a great boon to their tribe. Though far less numerous than lesser Shamans, they are a more common sight than the Great Shamans of Orc or Nightgoblin society as they rise from the much larger Goblin population and are less prone to die from mushroom overdose than their cave dwelling cousins. Goblin Great Shamans adorn themselves with bone and horn taken from great beasts, Trolls, or even Giants felled by their tribe and these bestial fetishes help focus and manage the raw magical energy that courses through them. As such they are barely prone to madness or suddenly exploding at all. On the other hand their magical power is quite variable - Goblins will happily describe any Shaman that shows more power than the typical small tribe mystic as a Great Shaman. Goblin Great Shamans have a degree of priestly authority and are better able to tolerate the boredom of research than their Orcish counterparts.
+
+[Discounted to 175 gold in Turmoil 3]"
+#hp 9
 #size 2 --- normal
 #prot 2 --- toughness 4
 #mor 9 --- leadership 7, animosity
@@ -39835,8 +44998,8 @@ Priests: Strong."
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 280
-#chaosrec 30
+#gcost 250
+#chaosrec 25
 #rpcost 2 --- mage
 #rcost 1
 #weapon 7 -- quarterstaff
@@ -39858,6 +45021,7 @@ Priests: Strong."
 #stealthy 0 -- goblins
 #startage 50
 #maxage 5000
+#reinvigoration 1
 #end
 
 
@@ -39868,7 +45032,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boss2.tga"
 #name "Orc Boss"
-#descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. Being the biggest, best, and fightiest Orc Bosses tend to have good quality wargear. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder."
+#descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. Being the biggest, best, and fightiest Orc Bosses tend to have good quality wargear. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder.
+
+[Discounted to 40 gold in Turmoil 3]"
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
 #prot 6 --- toughness 5, humanoid
@@ -39948,7 +45114,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Orc_Boss2.tga"
 #name "Orc Boss"
-#descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. Being the biggest, best, and fightiest Orc Bosses tend to have good quality wargear. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder."
+#descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. Being the biggest, best, and fightiest Orc Bosses tend to have good quality wargear. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder.
+
+[Discounted to 40 gold in Turmoil 3]"
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
 #prot 6 --- toughness 5, humanoid
@@ -40028,7 +45196,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boss2.tga"
 #name "Savage Orc Boss"
-#descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder. Savage Orc Bosses do not equip themselves with the pick of the loot in the fashion of their civilised cousins, but have the right to wear armour fashioned from bone."
+#descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder. Savage Orc Bosses do not equip themselves with the pick of the loot in the fashion of their civilised cousins, but have the right to wear armour fashioned from bone.
+
+[Discounted to 40 gold in Turmoil 3]"
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
 #prot 6 --- toughness 5, humanoid
@@ -40675,7 +45845,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Boss2.tga"
 #name "Goblin Boss"
-#descr "Orcs determine their hierarchy in a simple manner - the biggest and the best fighter takes control. Goblins of all types follow a less straightforward path to the top ranks, as they are both weaker and more devious than their larger cousins. Although straight up fighting is always an option and it helps to be bigger than your fellows, rank is primarily gained through underhanded tactics and sheer cunning. As such, Goblin Bosses tend to be a combination of vicious, lucky, and smart. Goblin tribes are by far the most numerous, inhabiting and thriving in almost every part of the known world, partly because they are capable of operating at a much lower profile than larger mixed Greenskin hosts or Orc tribes. Each of these tribes, even the smallest, will invariably have numerous Goblin Bosses actively engaged in a deadly game of cunning, violence, and treachery against each other. No matter how much they might scheme though, the path upward to Big Boss, then Warboss, is the same no matter what type of Greenskin - it must be earned through battle."
+#descr "Orcs determine their hierarchy in a simple manner - the biggest and the best fighter takes control. Goblins of all types follow a less straightforward path to the top ranks, as they are both weaker and more devious than their larger cousins. Although straight up fighting is always an option and it helps to be bigger than your fellows, rank is primarily gained through underhanded tactics and sheer cunning. As such, Goblin Bosses tend to be a combination of vicious, lucky, and smart. Goblin tribes are by far the most numerous, inhabiting and thriving in almost every part of the known world, partly because they are capable of operating at a much lower profile than larger mixed Greenskin hosts or Orc tribes. Each of these tribes, even the smallest, will invariably have numerous Goblin Bosses actively engaged in a deadly game of cunning, violence, and treachery against each other. No matter how much they might scheme though, the path upward to Big Boss, then Warboss, is the same no matter what type of Greenskin - it must be earned through battle.
+
+[Discounted to 25 gold in Turmoil 3]"
 #hp 15 --- toughness 4, 2 wounds, small
 #size 2 --- normal
 #prot 2 --- toughness 4
@@ -40755,7 +45927,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Boss2.tga"
 #name "Goblin Boss"
-#descr "Orcs determine their hierarchy in a simple manner - the biggest and the best fighter takes control. Goblins of all types follow a less straightforward path to the top ranks, as they are both weaker and more devious than their larger cousins. Although straight up fighting is always an option and it helps to be bigger than your fellows, rank is primarily gained through underhanded tactics and sheer cunning. As such, Goblin Bosses tend to be a combination of vicious, lucky, and smart. Goblin tribes are by far the most numerous, inhabiting and thriving in almost every part of the known world, partly because they are capable of operating at a much lower profile than larger mixed Greenskin hosts or Orc tribes. Each of these tribes, even the smallest, will invariably have numerous Goblin Bosses actively engaged in a deadly game of cunning, violence, and treachery against each other. No matter how much they might scheme though, the path upward to Big Boss, then Warboss, is the same no matter what type of Greenskin - it must be earned through battle."
+#descr "Orcs determine their hierarchy in a simple manner - the biggest and the best fighter takes control. Goblins of all types follow a less straightforward path to the top ranks, as they are both weaker and more devious than their larger cousins. Although straight up fighting is always an option and it helps to be bigger than your fellows, rank is primarily gained through underhanded tactics and sheer cunning. As such, Goblin Bosses tend to be a combination of vicious, lucky, and smart. Goblin tribes are by far the most numerous, inhabiting and thriving in almost every part of the known world, partly because they are capable of operating at a much lower profile than larger mixed Greenskin hosts or Orc tribes. Each of these tribes, even the smallest, will invariably have numerous Goblin Bosses actively engaged in a deadly game of cunning, violence, and treachery against each other. No matter how much they might scheme though, the path upward to Big Boss, then Warboss, is the same no matter what type of Greenskin - it must be earned through battle.
+
+[Discounted to 25 gold in Turmoil 3]"
 #hp 15 --- toughness 4, 2 wounds, small
 #size 2 --- normal
 #prot 2 --- toughness 4
@@ -40835,7 +46009,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Forest_Goblin_Boss2.tga"
 #name "Forest Goblin Boss"
-#descr "Though in many ways Forest Goblin tribes are very similar to those of their more common cousins, the way members of the tribe can rise to the position of Boss is quite different. Rather than becoming a Boss through a combination of cunning, luck, cruelty, and violence, Forest Goblin Bosses are determined by the Shamans of the tribe. The rituals used to select a new Boss do vary between different Forest Goblin tribes but almost all involve liberal use of spider venom to test promising candidates and determine which have the favour of the local spider god. That said, the Shamans ensure that only most cunning, lucky, and violent candidates actually pass the trial by poison, so Forest Goblin bosses are no less dangerous than those of other tribes. Once a goblin has become a Boss he may only climb the hierarchy to the position of Big Boss through participation in battle."
+#descr "Though in many ways Forest Goblin tribes are very similar to those of their more common cousins, the way members of the tribe can rise to the position of Boss is quite different. Rather than becoming a Boss through a combination of cunning, luck, cruelty, and violence, Forest Goblin Bosses are determined by the Shamans of the tribe. The rituals used to select a new Boss do vary between different Forest Goblin tribes but almost all involve liberal use of spider venom to test promising candidates and determine which have the favour of the local spider god. That said, the Shamans ensure that only most cunning, lucky, and violent candidates actually pass the trial by poison, so Forest Goblin bosses are no less dangerous than those of other tribes. Once a goblin has become a Boss he may only climb the hierarchy to the position of Big Boss through participation in battle.
+
+[Discounted to 25 gold in Turmoil 3]"
 #hp 15 --- toughness 4, 2 wounds, small
 #size 2 --- normal
 #prot 2 --- toughness 4
@@ -41555,7 +46731,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Nightgoblin_Boss2.tga"
 #name "Nightgoblin Boss"
-#descr "Orcs determine their hierarchy in a simple manner - the biggest and the best fighter takes control. Goblins of all types follow a less straightforward path to the top ranks, as they are both weaker and more devious than their larger cousins. Although straight up fighting is always an option and it helps to be bigger than your fellows, rank is primarily gained through underhanded tactics and sheer cunning. As such, Goblin Bosses tend to be a combination of vicious, lucky, and smart. Amongst Nightgoblins in particular it helps to have the support of a Shaman and have amassed significant personal wealth in the form of stolen Dwarven chain mail links, a popular currency and a highly prized component in armour. Having become a Boss, though, the path upward to Big Boss, then Warboss, is the same no matter what type of Greenskin - it must be earned through battle."
+#descr "Orcs determine their hierarchy in a simple manner - the biggest and the best fighter takes control. Goblins of all types follow a less straightforward path to the top ranks, as they are both weaker and more devious than their larger cousins. Although straight up fighting is always an option and it helps to be bigger than your fellows, rank is primarily gained through underhanded tactics and sheer cunning. As such, Goblin Bosses tend to be a combination of vicious, lucky, and smart. Amongst Nightgoblins in particular it helps to have the support of a Shaman and have amassed significant personal wealth in the form of stolen Dwarven chain mail links, a popular currency and a highly prized component in armour. Having become a Boss, though, the path upward to Big Boss, then Warboss, is the same no matter what type of Greenskin - it must be earned through battle.
+
+[Discounted to 30 gold in Turmoil 3]"
 #hp 15 --- toughness 4, 2 wounds, small
 #size 2 --- normal
 #prot 2 --- toughness 4
@@ -41820,7 +46998,9 @@ Priests: Strong."
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Black_Orc_Big_Boss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Black_Orc_Big_Boss2.tga"
 #name "Black Orc Big Boss"
-#descr "In Greenskin society there are essentially three tiers of leadership - the Boss who commands a mob, the Big Boss who commands several mobs or a smaller tribe, and the mighty Warboss who rules over one or more major tribes. There are variations in title by region, but the progression is always the same - become a Boss, a Big Boss, then a Warboss. Black Orcs are the exception. Any Black Orc that sets his mind to lead must first have proven himself superior to his peers and any Black Orc capable of doing so is clearly a Big Boss at the least. Black Orc Big Bosses are not only aboslute engines of destruction on the battlefield, they are typically surprisingly skilled commanders, having an instinctual understanding of war and near unmatched ability to 'sort out' the squabbling lesser Greenskins and keep them focused on the bloody task of building an empire. Like any other Big Boss a Black Orc can only attain the status of Warboss through battle, which is exactly how they like it."
+#descr "In Greenskin society there are essentially three tiers of leadership - the Boss who commands a mob, the Big Boss who commands several mobs or a smaller tribe, and the mighty Warboss who rules over one or more major tribes. There are variations in title by region, but the progression is always the same - become a Boss, a Big Boss, then a Warboss. Black Orcs are the exception. Any Black Orc that sets his mind to lead must first have proven himself superior to his peers and any Black Orc capable of doing so is clearly a Big Boss at the least. Black Orc Big Bosses are not only aboslute engines of destruction on the battlefield, they are typically surprisingly skilled commanders, having an instinctual understanding of war and near unmatched ability to 'sort out' the squabbling lesser Greenskins and keep them focused on the bloody task of building an empire. Like any other Big Boss a Black Orc can only attain the status of Warboss through battle, which is exactly how they like it.
+
+[Discounted to 80 gold in Turmoil 3]"
 #hp 28 --- toughness 5, 2 wounds, big
 #size 2 --- normal
 #prot 6 --- toughness 5, humanoid
@@ -42000,6 +47180,158 @@ Priests: Strong."
 
 
 -------- NATIONAL HEROES
+
+
+
+
+
+---- Grokka Goreaxe
+
+#newmonster 3989
+#spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Hero_Grokka.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Hero_Grokka2.tga"
+#name "Fury of Gork"
+#descr "Grokka Goreaxe is a Savage Orc Warboss who epitomises the Savage Orc belief that things should be kept simple and Orcs should live as they once did, as berserk primal forces of rage and violence unencumbered by metal weapons, armour, plans, or even language. Grokka even shuns the use of a boar to ride into battle, preferring to fight from foot with his pair of crude stone axes and rely on his toughness, skill, and sheer berserk fury to carry him through to victory. This approach has garnered much admiration from other Savage Orcs and it is said that Grokka may be a personification of the fighting fury of the Orc deity Gork, though the Shamans are waiting for Grokka to form a true Waaagh before agreeing this is the case."
+#hp 44 --- big even for a big orc warboss
+#size 3
+#prot 10 --- +3 over gorfang
+#mor 18 --- +3 over gorfang
+#mr 16 --- +1 over so warboss
+#unsurr 4 --- tier 4 combat leader
+#enc 2 --- tireless
+#str 19 --- +1 over so warboss
+#att 14 --- weaponskill 6, initiative 4
+#def 13 --- weaponskill 6, initiative 4
+#prec 10 --- ballistic skill 3
+#mapmove 16 -- efficient infantry
+#ap 14
+#gcost 0 -- hero
+#rpcost 0
+#rcost 0
+#weapon 1057 -- stone axe
+#weapon 1057 -- stone axe
+#mountainsurvival
+#forestsurvival
+#darkvision 50
+#heal --- recuperation ability
+#ambidextrous 4
+#okleader -- improved leadership ability
+#command 100 -- so 140 total
+#inspirational 2
+#fixedname "Grokka Goreaxe"
+#startage 30
+#maxage 5000
+#itemslots 290944 -- crown, 3 misc
+#xpshape 35
+#berserk 5
+#invulnerable 16 -- +7
+#xpshape 30 -- 5 more than regualr, 5 less than grimgor
+#end
+
+---- Grokka XPshape
+
+#newmonster 3990
+#spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Hero_Grokka.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Hero_Grokka2.tga"
+#name "Fury of Gork Rising"
+#descr "Grokka Goreaxe is a Savage Orc Warboss who epitomises the Savage Orc belief that things should be kept simple and Orcs should live as they once did, as berserk primal forces of rage and violence unencumbered by metal weapons, armour, plans, or even language. Grokka even shuns the use of a boar to ride into battle, preferring to fight from foot with his pair of crude stone axes and rely on his toughness, skill, and sheer berserk fury to carry him through to victory. This approach has garnered much admiration from other Savage Orcs and it is said that Grokka may be a personification of the fighting fury of the Orc deity Gork, though the Shamans are waiting for Grokka to form a true Waaagh before agreeing this is the case."
+#hp 44 --- big even for a big orc warboss
+#size 3
+#prot 10 --- +3 over gorfang
+#mor 18 --- +3 over gorfang
+#mr 16 --- +1 over so warboss
+#unsurr 4 --- tier 4 combat leader
+#enc 2 --- tireless
+#str 19 --- +1 over so warboss
+#att 14 --- weaponskill 6, initiative 4
+#def 13 --- weaponskill 6, initiative 4
+#prec 10 --- ballistic skill 3
+#mapmove 16 -- efficient infantry
+#ap 14
+#gcost 0 -- hero
+#rpcost 0
+#rcost 0
+#weapon 1057 -- stone axe
+#weapon 1057 -- stone axe
+#mountainsurvival
+#forestsurvival
+#darkvision 50
+#heal --- recuperation ability
+#ambidextrous 4
+#okleader -- improved leadership ability
+#command 100 -- so 140 total
+#inspirational 2
+#fixedname "Grokka Goreaxe"
+#startage 30
+#maxage 5000
+#itemslots 290944 -- crown, 3 misc
+#berserk 5
+#invulnerable 16 -- +7
+#end
+
+---- Grokka in Waaagh
+
+#newmonster 3991
+#copystats 3990
+#copyspr 3989
+#name "Fury of Gork"
+#descr "Grokka Goreaxe is a Savage Orc Warboss who epitomises the Savage Orc belief that things should be kept simple and Orcs should live as they once did, as berserk primal forces of rage and violence unencumbered by metal weapons, armour, plans, or even language. Grokka even shuns the use of a boar to ride into battle, preferring to fight from foot with his pair of crude stone axes and rely on his toughness, skill, and sheer berserk fury to carry him through to victory. This approach has garnered much admiration from other Savage Orcs and it is said that Grokka may be a personification of the fighting fury of the Orc deity Gork. Now that Waaagh Grokka has begun, even the least sane Shaman can agree that Grokka is clearly an avatar of Gork's rage!"
+#inspirational 3 -- +1
+#mr 18
+#unsurr 5 --- tier 5 combat leader
+#holy
+#end
+
+
+
+---- Wurrzag the Great Green Prophet
+
+#newmonster 3988
+#spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Hero_Wurrzag.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Hero_Wurrzag2.tga"
+#name "Great Green Prophet"
+#descr "Wurrzag Ud Ura Zahubu is a Savage Orc Shaman of mighty mystical powers. Known as Da Great Green Prophet, he is recognised to be on a mission from Gork and Mork to advance the cause of all greenskin kind and is famed for turning around the fortunes of once great tribes. It is said that he inspired the Bone Nose tribe to conquer great swathes of the Southlands, sent the Iron Pig tribe rampaging through the Border Princes, and saved the Spotted Skullz from near certain destruction at the hands of an undead legion. Wurrzag always seeks to find the very strongest Bosses and Warbosses and elevate them to perhaps one day lead their own Waaagh, for his insights into gaining the favour of Gork and Mork are legendary. Unlike other Shaman Wurrzag is never distracted from his crusade and though he is clearly touched by the divine he is surprisingly lucid and orcish by the estimations of other greenskins, which itself is somewhat unnerving. In battle Wurrzag rides his mighty boar Spleenrippa and brandishes a magical staff atop which sits his his squiggly beast, in reality the former Great Shaman of the Bone Nose tribe transformed by Wurrzag in a brief magical duel, and from which Wurrzag can draw constant energy. Befitting his station Da Great Green Prophet wears at all times the famed Baleful Mask, a crude wooden construct which constantly sears the minds of his foes as his gaze passes across the them."
+#hp 40 --- +5 over great shaman
+#size 3 ---
+#prot 8 ---
+#mor 15 --- +2
+#mr 21 --- +3 mostly because of that staff
+#enc 4 --- 
+#str 14 --- 
+#att 11 --- 
+#def 10 --- 
+#prec 11 --- +1
+#mapmove 19 -- 
+#ap 20 --- 
+#gcost 0
+#rpcost 0
+#rcost 1
+#weapon 238 -- magic staff
+#weapon 1137 -- spleenrippa
+#armor 187 -- wooden mask
+#mountainsurvival
+#forestsurvival
+#invulnerable 15 -- very good warpaint
+#darkvision 50
+#heal --- recuperation ability
+#okleader
+#fixedname "Wurrzag"
+#spreaddom 1 -- he's a prophet basically
+#magicskill 8 4 -- holy 3
+#magicskill 6 3 -- nature 3
+#magicskill 0 2 -- fire 2
+#magicskill 1 3 -- air 2
+#magicskill 3 2 -- earth 2
+#holy
+#mounted
+#researchbonus -6 -- savage orc shamans hate to research
+--insane 6 -- he is funnily enough not insane
+#startage 69
+#maxage 5000
+#reinvigoration 4 -- thanks to squiggly beast
+#startitem 935 -- Baleful Mask
+#itemslots 13440 -- mounted, no hands
+#end
 
 
 ---- Grom the Paunch of Misty Mountain
@@ -42517,6 +47849,7 @@ Priests: Strong."
 #flying
 #fear 8 -- terror, standard +3 because it's big
 #secondtmpshape 3889 -- feral wyvern
+#reinvigoration 1
 #end
 
 
@@ -42852,16 +48185,16 @@ Priests: Strong."
 
 -------- EVENTS
 
----------------- WELCOME TO GREENSKINS NORTH -----------------
+---------------- WELCOME TO BLACK CRAG -----------------
 
 #newevent
-#msg "Welcome! The Greenskins mod has a central mechanic which make this nation a little different from others.
+#msg "Welcome! Black Crag has a central mechanic which make this nation a little different from others.
 
 Each of your military leaders (Goblin Boss, Nightgoblin Boss, Orc Boss, Black Orc Big Boss) will be 'promoted' when they reach a certain amount of experience points. This will add the term 'Rising' to their name, e.g. 'Orc Boss Rising', but they will otherwise be unchanged. Any 'Rising' Boss, Big Boss, or Warboss has a chance each turn to trigger an event which will transform them to the next tier of military commander and grant them some free troops. This transformation will also remove most of their gained experience, allowing them to earn it and become 'Rising' once more. Only one of these promotion events can happen in each province in each turn.
 
 The intention here is to encourage you to actively use your military commanders in combat and level them up, eventually reaching the hallowed status of Waaaghboss. So get stuck in!
 
-For Northern Greenskins nation the progressions are as follows:
+For Black Crag the progressions are as follows:
 
 Goblin Boss -> Goblin Big Boss -> Goblin Warboss -> Goblin Waaaghboss
 Nightgoblin Boss -> Nightgoblin Big Boss -> Nightgoblin Warboss -> Nightgoblin Waaaghboss
@@ -42879,13 +48212,13 @@ Black Orc Big Boss -> Black Orc Warboss -> Black Orc Waaaghboss"
 ---------------- WELCOME TO GREENSKINS SOUTH -----------------
 
 #newevent
-#msg "Welcome! The Greenskins mod has a central mechanic which make this nation a little different from others.
+#msg "Welcome! The Bone Nose Tribe has a central mechanic which make this nation a little different from others.
 
 Each of your military leaders (Goblin Boss, Forest Goblin Boss, Orc Boss, Savage Orc Boss) will be 'promoted' when they reach a certain amount of experience points. This will add the term 'Rising' to their name, e.g. 'Orc Boss Rising', but they will otherwise be unchanged. Any 'Rising' Boss, Big Boss, or Warboss has a chance each turn to trigger an event which will transform them to the next tier of military commander and grant them some free troops. This transformation will also remove most of their gained experience, allowing them to earn it and become 'Rising' once more. Only one of these promotion events can happen in each province in each turn.
 
 The intention here is to encourage you to actively use your military commanders in combat and level them up, eventually reaching the hallowed status of Waaaghboss. So get stuck in!
 
-For Southern Greenskins nation the progressions are as follows:
+For the Bone Nose Tribe the progressions are as follows:
 
 Goblin Boss -> Goblin Big Boss -> Goblin Warboss -> Goblin Waaaghboss
 Forest Goblin Boss -> Forest Goblin Big Boss -> Forest Goblin Warboss -> Forest Goblin Waaaghboss
@@ -42898,6 +48231,60 @@ Savage Orc Boss -> Savage Orc Big Boss -> Savage Orc Warboss -> Savage Orc Waaag
 #req_unique 1
 #rarity 5
 #end
+
+
+
+------------ Events for Wurrzag Da Great Green Prophet
+---- Spawn hero Wurrzag
+
+#newevent
+#msg "Wurrzag Ud Ura Zahubu Da Great Green Prophet has joined your cause, no doubt signalling great things for the tribes under your control."
+#req_owncapital 1
+#req_fornation 161 -- greenskins south
+#nation 161 -- greenskins south
+#com 3988
+#req_unique 1
+#rarity 5
+#req_rare 3 -- normal hero rarity
+#req_turn 9 -- he's a mage
+#end
+
+
+
+
+------------ Events for Grokka Goreaxe
+---- Spawn hero Grokka
+
+#newevent
+#msg "The mighty hero Grokka Goreaxe the Fury of Gork has joined your cause, bringing with him a throng of Savage Orcs Biguns in awe of his rage."
+#req_owncapital 1
+#req_fornation 161 -- greenskins south
+#nation 161 -- greenskins south
+#com 3989
+#req_unique 1
+#rarity 5
+#req_rare 3 -- ok for him to be sorta common
+#req_turn 6
+#4d6units -6559 -- savage orc bigun random
+#end
+
+---- WAAAGH Grokka
+#newevent
+#rarity 5
+#req_rare 20
+#req_fornation 161 -- greenskins south
+#req_monster 3990
+#req_targmnr 3990
+#nation 161
+#msg "WAAAGH Grokka! Now none can deny that Grokka Goreaxe is truly an avatar of Gork's fury, as the berserker Warboss has caused a Waaagh to coalesce around him. Grokka's dedication to mindless violence and rejection of unorcish behaviour particularly endears him to the Savage Orcs and as such they make up the bulk of his Waaagh."
+#5d6units -6557 -- savage orc boy montag
+#4d6units 3895 -- savage orc arrer boy
+#5d6units -6558 -- assorted forest goblin infantry
+#7d6units -6559 -- savage orc bigun random
+#4d3units 3893 -- waaaghboys
+#transform 3991
+#end
+
 
 
 ------------ Events for Gorfang Rotgut
@@ -44334,6 +49721,8 @@ Savage Orc Boss -> Savage Orc Big Boss -> Savage Orc Warboss -> Savage Orc Waaag
 #level 0
 #rarity 5
 #homecom 3983 -- Grom
+#homecom 3988 -- Wurrzag
+#homecom 3989 -- grokka goreaxe
 #end
 
 --- Northern luck-independent Heroes
@@ -44533,16 +49922,16 @@ Savage Orc Boss -> Savage Orc Big Boss -> Savage Orc Warboss -> Savage Orc Waaag
 
 
 
--------- NATION (there will eventually be two nations)
+-------- NATION
 
 
-------- First nation is Greenskins North
+------- First nation is Black Crag
 
 
 #selectnation 160 -- the other one will be 161
 #clearnation
 #clearsites
-#name "Greenskins North"
+#name "Black Crag"
 #epithet "Green Tide of Darkness"
 #era 2
 #brief "There is no race so pervasive, prolific, diverse, and destructive as the Greenskins. From cowardly Goblins to rugged Orcs and lumbering Trolls they are a bane to civilisations across the known world. The Greenskins of the North and East count the bizarre cave dwelling Nightgoblins and militaristic Black Orcs among their number."
@@ -44621,7 +50010,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #addrecunit 3872 -- orc boar chariot
 #addrecunit 3864 -- black orc recruit montag form
 --addrecunit 3814 -- feral squig
-#addrecunit 3987 -- Giant (north)
+#addrecunit 3993 -- Giant (north) -- recruitment form
 
 #addforeignunit 3800 -- goblin montag
 #addforeignunit 3802 -- goblin archer
@@ -44709,8 +50098,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #selectnation 161
 #clearnation
 #clearsites
-#name "Greenskins South"
-#epithet "Primal Fury"
+#name "Bone Nose Tribe"
+#epithet "Green Horde of Fury"
 #era 2
 #brief "There is no race so pervasive, prolific, diverse, and destructive as the Greenskins. From cowardly Goblins to rugged Orcs and lumbering Trolls they are a bane to civilisations across the known world. The Greenskins of the South and West can call upon tribes of primitive Savage Orcs and spider worshipping Forest Goblins to overthrow the civilisations of the world."
 #descr "There is no race so pervasive, prolific, diverse, and destructive as the Greenskins. From cowardly Goblins to rugged Orcs and lumbering Trolls they are a bane to civilisations across the known world. The Greenskins of the South and West can call upon tribes of primitive Savage Orcs and spider worshipping Forest Goblins to overthrow the civilisations of the world."
@@ -44788,7 +50177,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #addrecunit 3860 -- orc boar boy bigun
 #addrecunit 3894 -- savage orc boar boy
 #addrecunit 3896 -- savage orc boar boy bigun
-#addrecunit 3986 -- Giant (south)
+#addrecunit 3992 -- Giant (south) -- recruit form
 
 #addforeignunit 3800 -- goblin montag
 #addforeignunit 3802 -- goblin archer
@@ -44819,6 +50208,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #addreccom 3977 -- savage orc shaman
 --addreccom 3942 -- savage orc big boss
 --addreccom 3983 -- Hero Grom the paunch of misty mountain
+--addreccom 3988 -- wurrzag da great green prophet
+--addreccom 3989 -- grokka goreaxe
 
 #addforeigncom 3900 -- goblin wolfrider scout
 #addforeigncom 3964 -- goblin boss (SOUTH)
@@ -44894,8 +50285,41 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #end
 
 
+
+---- Eltharion's helm
+
+#selectitem 937
+#spr "./Sombre_Warhammer/Warhammer_High_Elves/Item_Yvresse.tga"
+#name "Helm of Yvresse"
+#descr "The Helm of Yvresse is a priceless heirloom passed down from ruler to ruler of the High Elf realm of Yvresse on the island continent of Ulthuan. The helm provides protection against hostile magic and a ward against mundane weapons."
+#type 6 -- helm
+#constlevel 12
+#armor 333 -- helm of yvresse
+#restricted 110
+#cursed -- can't be dropped
+#nofind
+#mr 2
+#invulnerable 10
+#end
+
+
 -------------- WEAPONS
 
+
+
+
+
+---- Fangsword (eltharion's sword) -- same as runefang
+
+#newweapon 1204
+#copyweapon 75 -- enchanted sword
+#name "Fangsword"
+#dmg 10
+#armorpiercing
+#att 2
+#def 1
+#bonus
+#end
 
 
 -- Silverin Spear
@@ -45000,7 +50424,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 #newweapon 1012
 #copyweapon 614 -- tusk
-#name "Unicorn"
+#name "Unicorn Horn"
 #charge
 #att 0
 #def 0
@@ -45139,6 +50563,17 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #end
 
 
+-- Helm of Yvresse
+
+#newarmor 333
+#copyarmor 118 -- half helmet
+#name "Helm of Yvresse"
+#rcost 6 -- double
+#magicarmor
+#prot 21
+#end
+
+
 ///////////////// New pretenders \\\\\\\\\\\\\\\\\\\\
 
 
@@ -45209,8 +50644,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #armor 12 -- scale mail hauberk
 #armor 162 -- crested helmet
 #armor 2 -- shield
-#gcost 16
-#addupkeep -8
+#gcost 15
+#addupkeep -7
 #rpcost 10
 #formationfighter 2
 #end
@@ -45230,8 +50665,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #armor 364 -- silverin armour
 #armor 369 -- silverin helm
 #armor 377 -- silverin shield
-#gcost 22
-#addupkeep -11
+#gcost 20
+#addupkeep -10
 #rpcost 18
 #mor 13 -- +1
 #mr 14 -- +2
@@ -45311,6 +50746,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #mountainsurvival
 #bodyguard 2
 #formationfighter 2 -- martial prowess
+#reclimit 5
 #end
 
 
@@ -45336,7 +50772,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #quadruped
 #animal
 #startage 15
-#maxage 1000
+#maxage 2000
 #mapmove 22 -- lion +2
 #ap 20 -- lion
 #weapon 322 -- Bite
@@ -45402,13 +50838,12 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #weapon 1003 -- Ceremonial Halberd
 #armor 361
 #armor 162 -- crested helmet
-#gcost 55
+#gcost 50
 #rcost 1
 #rpcost 40
 #awe 1
 #coldres 4
 #fireres 4
-#poisonres 4
 #shockres 4
 #maxage 2000
 #holy
@@ -45668,14 +51103,13 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 -- Eagle Claw Bolt Thrower
 
 #newmonster 6028
-#copystats 6000
+#copystats 6000 -- basestats
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Bolt_Chariot.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Bolt_Chariot2.tga"
 #name "Eagle Claw Bolt Thrower"
 #descr "The Navy of Ulthuan is known to be the mightiest in the world, challenged only by that of their dark brethren in Naggraroth, and the greatest symbol of this naval power is the Eagle Claw Bolt Thrower. These finely wrought and magically enchanted ballistae are capable of unleashing multiple large bolts in a single shot with shocking precision. The Eagle Claws mounted on their ships are far too large for the Lothern Sea Guard to deploy in land battles, but they have developed a miniaturised version which they mount on a chariot similar in design to those used in Tiranoc. The crew are lightly armed and armoured and should not be expected to perform in melee, but the additional ranged power the Eagle Claw brings to bear is highly valued by High Elf commanders.
 
 [As a non-sacred High Elf this troop has halved upkeep]"
-#clearspec
 #hp 18 -- 2 crew
 #size 4 -- big chariot lad
 #prot 5 -- chariot prot
@@ -45697,6 +51131,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #ap 16
 #ambidextrous 2
 #reclimit 1
+#startage 101
+#maxage 2000
 #end
 
 
@@ -45723,7 +51159,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #weapon 9 -- Dagger
 #armor 7 -- scale mail cuirass
 #armor 212 -- magic crown
-#gcost 60
+#gcost 55
 #rpcost 30
 #rcost 1
 #ambidextrous 3
@@ -45738,7 +51174,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 ///////////////// New commanders \\\\\\\\\\\\\\\\\\\\ 
 
--- Noble (reviewed)
+-- Noble
 
 #newmonster 6010
 #copystats 6000 - template
@@ -45758,8 +51194,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #mor 14 -- LD9
 #enc 4
 #weapon 4 -- lance
-#weapon 8 -- Broad Sword
 #weapon 56 -- hoof
+#weapon 8 -- Broad Sword
 #armor 12 -- scale mail hauberk
 #armor 162 -- crested helmet
 #armor 2 -- shield
@@ -45776,7 +51212,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #end
 
 
--- Prince (reviewed)
+-- Prince
 
 #newmonster 6011
 #copystats 6000 - elf
@@ -45795,8 +51231,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #mor 15 -- LD10
 #enc 4
 #weapon 4 -- lance
-#weapon 8 -- Broad Sword
 #weapon 56 -- hoof
+#weapon 8 -- Broad Sword
 #armor 17 -- full scale mail
 #armor 118 -- Half helmet
 #armor 2 -- shield
@@ -45814,7 +51250,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #end
 
 
--- Prince of Tiranoc (reviewed)
+-- Prince of Tiranoc
 
 #newmonster 6026
 #copystats 6000 - Spearman
@@ -45832,13 +51268,14 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #prec 16
 #mr 15 -- tier 3 leader, elf
 #mor 15 -- LD10
-#weapon 8 -- Broad Sword
+#weapon 4 -- lance
 #weapon 56 -- hoof cavalry style
+#weapon 8 -- Broad Sword
 #armor 17 -- full scale mail
 #armor 162 -- crested helmet
 #armor 2 -- shield
-#gcost 150
-#addupkeep -150
+#gcost 140
+#addupkeep -70
 #rcost 20
 #mapmove 22
 #ap 22
@@ -45902,9 +51339,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #magicskill 8 1 -- holy
 #custommagic 3328 100 -- AES
 #custommagic 1024 10 -- FAE
-#researchbonus 1
 #startage 187
-#autodishealer 1
 #holy
 #poorleader
 #command -20 -- 20 total
@@ -45936,8 +51371,8 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #custommagic 3968 100 -- FAWES
 #startage 278
 #maxage 2000
-#autohealer 2
-#autodishealer 3
+#autohealer 1
+#autodishealer 1
 #holy
 #poorleader
 #command -20
@@ -45970,11 +51405,9 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #magicskill 8 2 -- holy
 #custommagic 3328 100 -- AES
 #custommagic 3456 25 -- FAES
-#autodishealer 1
 #startage 298
 #maxage 2000
-#poorleader
-#researchbonus 2
+#okleader
 #rpcost 4
 #allrange 1
 #holy
@@ -45989,7 +51422,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Priestvaul1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Priestvaul2.tga"
 #name "Smith Priest of Vaul"
-#descr "Vaul's Anvil is a shrine of Vaul, the Elven god of smithing, which is situated in the heart of a volcano on the last island of the Dragon Spine. During the Great Chaos Invasion, Aenarion the Defender and Caledor Dragontamer travelled to the Anvil to construct the Great Weapons that would be used to fight the forces of Chaos. The knowledge of making these Great Weapons was lost along with the Hammer of Vaul, but the sites is still used by the Smith Priests of Vaul to make magic items of no small power. The god Vaul was chained and blinded in a eon long war with Khaine, and his priests blind themselves to prove their devotion. The Smith Priests are dedicated to their craft and their training is devoted to crafting alone. Despite their blindness, they can make items far beyond their magic skill in other areas, but their preference for elaborate forging do not make them particularly efficient."
+#descr "Vaul's Anvil is a shrine of Vaul, the Elven god of smithing, which is situated in the heart of a volcano on the last island of the Dragon Spine. During the Great Chaos Invasion, Aenarion the Defender and Caledor Dragontamer travelled to the Anvil to construct the Great Weapons that would be used to fight the forces of Chaos. The knowledge of making these Great Weapons was lost along with the Hammer of Vaul, but the sites is still used by the Smith Priests of Vaul to make magic items of no small power. The god Vaul was chained and blinded in a eon long war with Khaine, and his priests blind themselves to prove their devotion. The Smith Priests are dedicated to their craft and their training is devoted to crafting alone. Despite their blindness, they can make items far beyond their magic skill in other areas, but their preference for elaborate forging means tehy are not particularly efficient."
 #hp 9 -- +1
 #mr 18
 #mor 15
@@ -46021,7 +51454,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Loremaster1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Loremaster2.tga"
 #name "Loremaster of Hoeth"
-#descr "The Tower of Hoeth is home to many disciplines of art, war, magic and learning. Most students and masters confine themselves to one path, and seek to master that path. A select few accomplish several and even fewer master all arts. Those who do are called Loremasters. Even the martial disciplines seem easy to them and their magical knowledge is broad. Their brilliant intellects make them sublime strategists and warriors, able to thread together many nuances and ideas to insights beyond most mortals. Invariably, in times of strife, they seek battle, to better understand, and they excel at this intuitive use of magic. Meanwhile performing rituals, conducting magical research, and forging, while easy to them, is seen as uninteresting work beneath their genius. While Loremasters have considerable knowledge of the magic of death and the wilds, they regard these disciplines as somewhat unsavory or crude arcana best left to the pages of their scholarly works, rather than seeking to apply them in war."
+#descr "The Tower of Hoeth is home to many disciplines of art, war, magic and learning. Most students and masters confine themselves to one path, and seek to master that path. A select few accomplish several and even fewer master all arts. Those who do are called Loremasters. Even the martial disciplines seem easy to them and their magical knowledge is broad. Their brilliant intellects make them sublime strategists and warriors, able to thread together many nuances and ideas to insights beyond most mortals. Invariably, in times of strife, they seek battle, to better understand, and they excel at this intuitive use of magic. Meanwhile performing rituals, conducting magical research, and forging, while easy to them, is seen as uninteresting work beneath their genius. While Loremasters have considerable knowledge of the magic of death and the wilds, they regard these disciplines as somewhat unsavory or crude arcana best left to the pages of their scholarly works, rather than seeking to apply them in war. Loremasters are supremely confident and their own abilities and, truthfully, regard other mages as inferior; as such they refuse to enter communions."
 #nametype 172 -- -Elven names
 #hp 18 -- W3, elf
 #att 14
@@ -46270,7 +51703,9 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Handmaiden.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Handmaiden2.tga"
 #name "Handmaiden of the Everqueen"
-#descr "Highest ranking of all the Sisters of Avelorn are the Handmaidens of the Everqueen. Not the mer courtiers that their name might suggest, but warriors sworn to live and die in the service of their mistress. They are considered paragons of Elvenkind, as talented in artistic and spiritual pursuits as they are on the field of battle. The honour of serving as a Handmaiden is only bestowed on those Sisters who have many times over proven their worth in battle and earned the respect and admiration of their fellows. Handmaidens act as direct representatives of the Everqueen and as such have been imbued with priestly authority in the order of Isha, Goddess of Harvest and life. They are armed with the same deadly bows as the Sisters they often command, but have also mastered the use of the Spear of Avelorn, a polearm blessed with the same righteous blue fire of the Everqueen. Such is their skill with the spectral Bow of Avelorn that they can loose two arrows in the space of a breath."
+#descr "Highest ranking of all the Sisters of Avelorn are the Handmaidens of the Everqueen. Not the mer courtiers that their name might suggest, but warriors sworn to live and die in the service of their mistress. They are considered paragons of Elvenkind, as talented in artistic and spiritual pursuits as they are on the field of battle. The honour of serving as a Handmaiden is only bestowed on those Sisters who have many times over proven their worth in battle and earned the respect and admiration of their fellows. Handmaidens act as direct representatives of the Everqueen and as such have been imbued with priestly authority in the order of Isha, Goddess of Harvest and life. They are armed with the same deadly bows as the Sisters they often command, but have also mastered the use of the Spear of Avelorn, a polearm blessed with the same righteous blue fire of the Everqueen. Such is their skill with the spectral Bow of Avelorn that they can loose two arrows in the space of a breath.
+
+[Does not require a lab to recruit.]"
 #hp 14 -- W2, elf
 #att 14
 #def 15
@@ -46324,7 +51759,6 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #rpcost 1
 #maxage 2000
 #patrolbonus 5
-#researchbonus -2
 #forestsurvival
 #mountainsurvival
 #unsurr 2 -- tier 2 leader
@@ -46402,12 +51836,13 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #gcost 0
 #rpcost 0
 #rcost 0
-#maxage 100
+#maxage 3000
 #flying
 #mountainsurvival
 #animal
 #siegebonus 10
 #patrolbonus 10
+#itemslots 12288 -- 2 misc
 #end
 
 
@@ -46435,11 +51870,50 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #gcost 0
 #rpcost 0
 #rcost 0
-#maxage 100
+#maxage 3000
 #forestsurvival
-#magic
+#magicbeing
 #animal
 #heal
+#itemslots 12288 -- 2 misc
+#end
+
+
+
+-- Griffon of Ulthuan
+
+#newmonster 6043
+#clearweapons
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Griffon.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Griffon2.tga"
+#name "Griffon of Ulthuan"
+#descr "The Griffons of the Annulii Mountains in Ulthuan are of a more noble temperament and higher intelligence than the cunning but savage Griffons of other lands and as such are willing allies to the High Elves, rather than merely beasts used for warfare. Though they are not cruel or bloodthirsty they are still apex predators and a terrifying force on the battlefield capable of rending men asunder and hurling fully armoured horses through the air. They are not so swift in flight as the Great Eagles but are larger and stronger, so not limited to hit and run strikes."
+#size 5
+#hp 62 -- W4T5, huge -- +14
+#att 13 -- WS5I5
+#def 13 -- WS5I5 -- +5
+#str 20 -- STR 5, huge, natural weapons -- +4
+#prec 12 -- +2
+#enc 3 -- same
+#mapmove 26-- same
+#ap 20 -- +5
+#mr 13 -- animals, but magical, special, same as vanilla one
+#mor 14 -- --1 vs great eagle
+#fear 5 -- terror
+#weapon 408 -- Talons
+#weapon 20 -- Bite -- +3 damage over the beak
+#weapon 29 -- basic claw
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 3000
+#flying
+#mountainsurvival
+#animal
+#siegebonus 5 -- great eagle -5
+#patrolbonus 5 -- great eagle -5
+#prot 8
+#itemslots 12288 -- 2 misc
 #end
 
 
@@ -46455,12 +51929,10 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Great_Eagle_Prince.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Great_Eagle_Prince2.tga"
 #name "Prince on Great Eagle"
-#descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them amongst the finest generals in the world, able to read the ebb and flow of battle before it unfolds. This Prince has forged a permanent bond with one of the Great Eagles of the Ulthuan mountains and does battle from atop its back. Should the prince be slain, the Great Eagle will fight to avenge him before returning to the mountains to grieve his loss.
-
-[This commander costs no gold upkeep]"
+#descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them amongst the finest generals in the world, able to read the ebb and flow of battle before it unfolds. This Prince has forged a permanent bond with one of the Great Eagles of the Ulthuan mountains and does battle from atop its back. Should the prince be slain, the Great Eagle will fight to avenge him before returning to the mountains to grieve his loss."
 #nametype 172 -- Elven names
 #size 6 -- vanilla
-#hp 28 -- riders profile +8
+#hp 26 -- riders profile +6
 #att 15 -- prince
 #def 16 -- prince
 #str 10 -- prince
@@ -46489,7 +51961,141 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #expertleader
 #maxage 2000
 #unsurr 3 -- tier 3 combat leader
+#latehero 6 -- can't appear before turn 6
 #end
+
+
+---- Prince on Griffon
+
+#newmonster 6042
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Griffon_Prince.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Griffon_Prince2.tga"
+#name "Prince on Griffon"
+#descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them amongst the finest generals in the world, able to read the ebb and flow of battle before it unfolds. This Prince has forged a permanent bond with one of the Griffons that inhabit the Annulii Mountains of Ulthuan and does battle from atop its back. Unlike the more savage Griffons of other lands these are noble and intelligent creatures, though they have the same keen predatory senses and are terrifying presences in battle. Should the prince be slain, the Griffon will fight on for the rest of the battle before returning to its mountain home."
+#nametype 172 -- Elven names
+#size 5
+#hp 30 -- riders profile +10
+#att 15 -- prince
+#def 16 -- prince
+#str 10 -- prince
+#prec 16
+#enc 4 -- mounted but special
+#mr 15 -- tier 3 leader, elf
+#mor 16 -- LD10, extra from mount
+#weapon 4 -- lance
+#weapon 800 -- dmg 20 claw x2 -- borrowed from empire
+#weapon 417 -- dmg 22 bite
+#weapon 8 -- Broad Sword
+#armor 2 -- shield
+#armor 17 -- full scale mail
+#armor 118 -- Half helmet
+#gcost 0 -- hero
+#rpcost 0
+#rcost 0
+#flying
+#mountainsurvival
+#mounted
+#mapmove 28 -- +2 over empire version
+#ap 20 -- +2 over empire version
+#mountainsurvival
+#fear 5
+#secondtmpshape 6043 -- griffon
+--inspirational 1 -- prince doesn't have it, why should he
+#expertleader
+#maxage 2000
+#unsurr 3 -- tier 3 combat leader
+#latehero 6 -- can't appear before turn 6
+#end
+
+
+
+
+---- Eltharion the Grim
+
+#newmonster 6044
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Hero_Eltharion.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Hero_Eltharion2.tga"
+#name "Warden of Tor Yvresse"
+#descr "Eltharion the Grim was once a charming and carefree young noble, but he saw his lands ravaged and his father slain at the hands of Grom the Paunch and his incredibly destructive Waaagh. Though Eltharion led a coalition force to victory and cleansed Ulthuan of the taint of the Greenskin invasion, even decades later the devastation was still keenly felt and Eltharion himself was never quite the same, becoming stern and harrowed, his joy replaced with cold hatred of his foes and an obsessive desire to protect his people. Eltharion is lauded as one of the finest Princes of Ulthuan as a warrior, a general, and a ruler beloved by those he strives to protect, but none of this matters to the vengeful Warden, only that any threat to Ulthuan is crushed before it can do real harm; thus Eltharion is the most active of all Ulthuan's leaders in taking military action beyond her borders. Eltharion rides into battle atop his supremely loyal Griffon named Stormwing and is armed with the deadly Fangsword, protected by the heirloom Helm of Yvresse, and can draw upon the power of the fabled Talisman of Hoeth which grants him considerable magical power. Should Eltharion be slain in battle Stormwing will fight on for a time before returning to his mountain home."
+#fixedname "Eltharion the Grim"
+#size 5
+#hp 35 -- +5
+#att 16 -- prince +1
+#def 17 -- prince +1
+#str 12 -- +2 from the sword
+#prec 16
+#enc 4 -- mounted but special
+#mr 17 -- tier 4 leader, elf, mage
+#mor 18 -- +2
+#weapon 4 -- lance
+#weapon 800 -- dmg 20 claw x2 -- borrowed from empire
+#weapon 417 -- dmg 22 bite
+#weapon 1204 -- Fangsword
+#armor 2 -- shield
+#armor 17 -- full scale mail
+#armor 333 -- helm of yvresse
+#magicskill 0 2 -- F2
+#magicskill 1 2 -- A2
+#startitem 937 -- helm of yvresse
+#gcost 0 -- hero
+#rpcost 0
+#rcost 0
+#flying
+#mountainsurvival
+#mounted
+#mapmove 30 -- +2
+#ap 20
+#mountainsurvival
+#fear 7 -- +2
+#secondtmpshape 6045 -- stormwing
+#expertleader
+#inspirational 1
+#maxage 2000
+#unsurr 4 -- tier 4 combat leader
+#itemslots 13440 -- head, body, 2 misc
+#combatcaster
+#end
+
+
+
+
+-- Stormwing, Eltharion's Griffon
+
+#newmonster 6045
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Hero_Stormwing.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Hero_Stormwing2.tga"
+#name "Griffon of Ulthuan"
+#descr "The Griffons of the Annulii Mountains in Ulthuan are of a more noble temperament and higher intelligence than the cunning but savage Griffons of other lands and as such are willing allies to the High Elves, rather than merely beasts used for warfare. Though they are not cruel or bloodthirsty they are still apex predators and a terrifying force on the battlefield capable of rending men asunder and hurling fully armoured horses through the air. They are not so swift in flight as the Great Eagles but are larger and stronger, so not limited to hit and run strikes. Stormwing is the personal mount of Eltharion the Grim and is a particularly impressive example of his kind."
+#size 5
+#hp 68
+#att 14
+#def 14
+#str 22
+#prec 12
+#enc 3
+#mapmove 26-- same
+#ap 20 -- +5
+#mr 14
+#mor 17
+#fear 7
+#weapon 408 -- Talons
+#weapon 20 -- Bite -- +3 damage over the beak
+#weapon 29 -- basic claw
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 3000
+#flying
+#mountainsurvival
+#animal
+#siegebonus 5 -- great eagle -5
+#patrolbonus 5 -- great eagle -5
+#prot 9
+#itemslots 12288 -- 2 misc
+#end
+
+
+
 
 
 ----- Alith Anar
@@ -46577,6 +52183,20 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 
 
+
+----------------- Modified spells -----------------
+
+#selectspell 977 -- communion slave
+#notmnr 6032 -- loremaster
+#end
+
+
+#selectspell 976 -- communion master
+#notmnr 6032 -- loremaster
+#end
+
+
+
 ///////////////// New spells \\\\\\\\\\\\\\\\\\\\
 
 --- Summon Unicorns of Avelorn
@@ -46621,10 +52241,26 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #details "Summons a Prince on Great Eagle commander."
 #researchlevel 5
 #restricted 110
-#path 0 2 -- air
+#path 0 1 -- air
 #pathlevel 0 3
 #damage 6036 -- prince on great eagle
 #fatiguecost 1400
+#end
+
+
+--- Bond Blade and Wing
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Bond Blade and Wing"
+#descr "The Griffons of the Annulii Mountains of Ulthuan are far more noble and intelligent than the savage Griffons of other lands and as such are considered allies to the High Elves rather than mere beasts to be unleashed in war. These creatures are still apex predators however and are a terrifying presence in battle, particularly when bonded with a warrior Prince. By way of a ritual passed down through the generations a mage can formalise the alliance by bonding a Griffon with a Prince of the High Elf aristocracy. The two will fight as one until their death, acting as both a general with a bird's eye view of battle and a terrifyingly swift and powerful combatant capable of tearing through the rankgs of the enemy."
+#details "Summons a Prince on Great Eagle commander."
+#researchlevel 6
+#restricted 110
+#path 0 1 -- air
+#pathlevel 0 3
+#damage 6042 -- prince on griffon
+#fatiguecost 2000 -- 4 more than eagle
 #end
 
 
@@ -47076,6 +52712,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #level 0
 #rarity 5
 #homecom 6036 -- prince on great eagle
+#homecom 6042 -- prince on griffon
 #homecom 6013 -- Archmage
 #homecom 6032 -- Loremaster
 #end
@@ -47085,8 +52722,9 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #path 1 -- air
 #level 0
 #rarity 5
-#homecom 6025 - Alith Anar
-#homecom 6033 - Korhil
+#homecom 6044 -- eltharion
+#homecom 6025 -- Alith Anar
+#homecom 6033 -- Korhil
 #end
 
 
@@ -47125,6 +52763,22 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #req_turn 6 -- not right at the start
 #4d3units 6020 -- Shadow Warrior
 #4d3units 6020 -- Shadow Warrior
+#end
+
+
+
+---- SPAWN HERO Eltharion the Grim
+
+#newevent
+#msg "The mighty hero Eltharion the Grim the Warden of Tor Yvresse has joined your cause."
+#req_owncapital 1
+#req_fornation 110 -- High Elves
+#nation 110 -- High Elves
+#com 6044 --
+#req_unique 1
+#rarity 5
+#req_rare 2 -- he's very good
+#req_turn 9 -- not right at the start
 #end
 
 
@@ -47296,6 +52950,8 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #addreccom 6031 -- Priestess of Isha
 --addreccom 6036 -- prince on eagle for testing
 --addreccom 6025 -- alith anar
+--addreccom 6044 -- eltharion
+--addreccom 6042 -- prince on griffon
 
 #coastcom1 6014 --Seaguard Captain
 
@@ -47306,14 +52962,13 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #multihero1 6036 -- prince on great eagle
 #multihero2 6013 -- Archmage
 #multihero3 6032 -- Loremaster
-
-- Tyrion
-- Teclis
-- Caradryan
-- Eltharion
+#multihero4 6042 -- prince on griffon
 
 
 #end
+
+
+
 
 
 -- @@@@ Lizardmen
@@ -48573,7 +54228,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 15
 #rcost 1
 #armor 2 -- shield
 #weapon 815 -- Obsinite Axe
@@ -48607,7 +54262,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 25
 #rcost 1
 #armor 2 -- shield
 #armor 372 -- Crest Plate
@@ -48646,7 +54301,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 641 -- bronze Trident
@@ -48684,7 +54339,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 20
 #ap 20
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 825 -- Riptide Trident
@@ -48721,7 +54376,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 9
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #weapon 641 -- bronze Trident
@@ -48762,7 +54417,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 9
 #mapmove 20
 #ap 20
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #weapon 825 -- Riptide Trident
@@ -48803,7 +54458,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 22
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 827 -- obsinite spear
@@ -48844,7 +54499,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 9
 #mapmove 22
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #armor 372 -- Crest Plate
@@ -48889,7 +54544,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 830 -- Ancient Halberd
@@ -48926,7 +54581,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #armor 372 -- Crest Plate
@@ -48966,7 +54621,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 26
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 841 -- obsinite sword
@@ -49002,7 +54657,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 26
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #armor 372 -- Crest Plate
@@ -49029,7 +54684,9 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Saurus Xhotl Shield.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Saurus Xhotl Shield2.tga"
 #name "Saurus of Xhotl"
-#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. Their scales are deeply and brightly coloured with magenta and they sport crests not unlike those of their Skink cousins. While their magical barriers are intact the Saurus of Xhotl fear little in the way of hostile magic or projectiles and any who break their protection in melee are blasted with raw, fiery energy. Enemy mages have learned their evocations are ineffective and will only target these distinctive Saurus reluctantly, though fire magic is extremely effective in overloading the barriers and rendering them vulnerable. Once exposed, Saurus of Xhotl are still dedicated sacred warriors, but lack the advantages of other spawnings."
+#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. Their scales are deeply and brightly coloured with magenta and they sport crests not unlike those of their Skink cousins. While their magical barriers are intact the Saurus of Xhotl fear little in the way of hostile magic or projectiles and any who break their protection in melee are blasted with raw, fiery energy. Enemy mages have learned their evocations are ineffective and will only target these distinctive Saurus reluctantly, though fire magic is extremely effective in overloading the barriers and rendering them vulnerable. Once exposed, Saurus of Xhotl are still dedicated sacred warriors, but lack the advantages of other spawnings.
+
+[This monster is protected by a bubble shield granted by Xhotl. When it is damaged it will lose protection and resistances but change to a much higher hp form. This represents the shield being shattered. They will return to their shielded form after battle]"
 #hp 1
 #size 2
 #prot 10
@@ -49042,7 +54699,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 373 -- Magic Barrier
 #weapon 841 -- obsinite sword
@@ -49082,7 +54739,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 841 -- obsinite sword
@@ -49105,7 +54762,9 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Wardscale Xhotl Shield.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Wardscale Xhotl Shield2.tga"
 #name "Wardscale of Xhotl"
-#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. The Wardscales are protected by barriers even stronger against hostile magic which lash would be attackers with reactive blasts of fiery energy and electrical discharge. Xhotl is the most colourful and proud of the Old Ones and his wardscales with their ceremonial masks and vidid crests inspire those they lead."
+#descr "Those Saurus spawned under the influence of the eternal shield Xhotl are surrounded by a magic barrier which requires significant force to break. The Wardscales are protected by barriers even stronger against hostile magic which lash would be attackers with reactive blasts of fiery energy and electrical discharge. Xhotl is the most colourful and proud of the Old Ones and his wardscales with their ceremonial masks and vidid crests inspire those they lead.
+
+[This monster is protected by a bubble shield granted by Xhotl. When it is damaged it will lose protection and resistances but change to a much higher hp form. This represents the shield being shattered. They will return to their shielded form after battle]"
 #hp 1
 #size 3
 #prot 10
@@ -49118,7 +54777,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 373 -- Magic Barrier
 #weapon 815 -- Obsinite Axe
@@ -49162,7 +54821,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 18
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #armor 372 -- Crest Plate
@@ -49202,7 +54861,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 20
 #ap 14
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 841 -- obsinite sword
@@ -49238,7 +54897,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 9
 #mapmove 20
 #ap 14
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #weapon 841 -- obsinite sword
@@ -49280,7 +54939,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 8
 #mapmove 16
 #ap 10
-#gcost 1
+#gcost 30
 #rcost 1
 #armor 2 -- shield
 #weapon 841 -- obsinite sword
@@ -49313,7 +54972,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 10
 #mapmove 16
 #ap 10
-#gcost 1
+#gcost 50
 #rcost 1
 #armor 2 -- shield
 #weapon 815 -- Obsinite Axe
@@ -49448,7 +55107,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Skink Priest2.tga"
 #name "Skink Priest"
 #descr "Where the Saurus were bred for war, the smaller and more dextrous Skinks were created by the Old Ones to see to the day to day running of the temple-cities. Highly organised and social, Skinks work instinctively well in large groups and through their complex language of vocal calls and crest patterns, can accomplish tasks with quick efficiency. One in every few hundred Skinks, still a huge number in all, is spawned to serve the Slann in a more direct capacity, as a Priest. These Skinks are larger and bolder than their fellows and command a degree of respect even amongst the Saurus and Kroxigor, for they are the eyes of the Slann. Skink Priests generally attend to minor rituals and observances, though with fewer and fewer active Slann, their role in the plan of the Old Ones is increasing. Every Priest is attuned to the magical presence of the Slann and lends his power in battle through a constant communion."
-#hp 9
+#hp 8
 #size 2
 #prot 0
 #mor 10
@@ -49460,8 +55119,8 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #prec 10
 #mapmove 18
 #ap 16
-#gcost 115
-#rpcost 1
+#gcost 100
+#rpcost 2
 #rcost 1
 #weapon 7 -- Quarterstaff
 #maxage 1000
@@ -49491,7 +55150,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "The Cult of Sotek has grown in size and power since the war to drive the Skaven of Clan Pestilens from the New World. Sotek is not an Old One, though the rise of the serpent god of blood and vengeance was foretold by the Slann, who have yet to even acknowledge the Cult. Whether the Slann will ever take action against the followers of Sotek is unclear, but in the mean time their power grows. More and more spawnings show Sotek's influence and Skink Priests of Sotek are now a common sight, preaching a coming time of vengeance and making sacrifices to sate the thirst of the serpent God. Priests of Sotek are immune to poison and have dominion over snakes, indeed they have taken to using deadly poisonous jungle vipers as a means of protection. They have some skill in blood magic in addition to their native minor magic. Priests of Sotek are not naturally attuned to the communion of the Slann.
 
 [May also be recruited in forests and swamps]"
-#hp 10
+#hp 9
 #size 2
 #prot 0
 #mor 11
@@ -49657,7 +55316,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "Fifth Generation Slann"
 #descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the First Generation died long ago in battle with Chaos and the Fifth Generation was spawned thousands of years ago. The more ancient a Slann, the greater his power, though younger Slann are far more easily roused to action. The presence of a Slann will allow the recruitment of Temple Guard who awaken from their slumber in parallel with their masters.
 
-[50% casting speed increase]"
+[25% casting speed increase]"
 #hp 50
 #size 5
 #prot 13
@@ -49693,7 +55352,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #commaster
 #nametype 123
 #magicboost 7 -3
-#fastcast 50 -- 50% faster
+#fastcast 25 -- 25% faster
 #float
 #montag 1022 -- Slann of any kind
 #inspiringres 1
@@ -49765,7 +55424,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "Fourth Generation Slann"
 #descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the First Generation died long ago in battle with Chaos and the Fifth Generation was spawned thousands of years ago. The more ancient a Slann, the greater his power, though younger Slann are far more easily roused to action. The presence of a Slann will allow the recruitment of Temple Guard who awaken from their slumber in parallel with their masters.
 
-[70% casting speed increase]"
+[35% casting speed increase]"
 #hp 60
 #size 5
 #prot 14
@@ -49801,7 +55460,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #commaster
 #nametype 123
 #magicboost 7 -3
-#fastcast 70 -- 70% faster
+#fastcast 35 -- 35% faster
 #allrange 1
 #float
 #montag 1022 -- Slann of any kind
@@ -49916,7 +55575,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "Third Generation Slann"
 #descr "Once the trusted servants of the Old Ones and architects of the world, the Slann now rule the Lizardmen as mage-priests. Large and bulbous, the alien Slann are uninterested in physical exertion and rely on their mental prowess instead; indeed they are prone to falling into long periods of deep contemplation, renewing their bodies and honing their minds. When they awake they will often declare an enigmatic proclamation that the Skink Priests do their best to implement. All Slann are linked in mind and their Priests are bound to this network, acting as conduits for their power. In their wisdom, the Old Ones decreed only five generations of Slann; the last of the First Generation died long ago in battle with Chaos and the Fifth Generation was spawned thousands of years ago. The more ancient a Slann, the greater his power, though younger Slann are far more easily roused to action. The presence of a Slann will allow the recruitment of Temple Guard who awaken from their slumber in parallel with their masters.
 
-[90% casting speed increase]"
+[45% casting speed increase]"
 #hp 70
 #size 5
 #prot 12
@@ -49955,7 +55614,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #commaster
 #nametype 123
 #magicboost 7 -3
-#fastcast 90 -- 90% faster
+#fastcast 45 -- 45% faster
 #allrange 2
 #float
 #montag 1022 -- Slann of any kind
@@ -50034,7 +55693,8 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Fathomed The Depths"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will.
 
-[100% casting speed increase]"
+[50% casting speed increase]
+[This monster is protected by a bubble shield granted by Xhotl. When it is damaged it will lose protection and resistances but change to a much higher hp form. This represents the shield being shattered. They will return to their shielded form after battle]"
 #hp 1
 #size 6
 #prot 35
@@ -50076,7 +55736,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #amphibian
 #unique
 #magicboost 7 -3
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Zlatlan"
 #float
@@ -50094,7 +55754,8 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Fathomed The Depths"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will.
 
-[100% casting speed increase]"
+[50% casting speed increase]
+[This monster is protected by a bubble shield granted by Xhotl. When it is damaged it will lose protection and resistances but change to a much higher hp form. This represents the shield being shattered. They will return to their shielded form after battle]"
 #hp 1
 #size 6
 #prot 35
@@ -50139,7 +55800,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #firstshape 7303 -- normal zlatlan
 #domsummon 7347 -- Saurus of Xhotl
 #summon5 7330 -- saurus of Tzunki
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Zlatlan"
 #float
@@ -50155,7 +55816,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Fathomed The Depths"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 100
 #size 6
 #prot 14
@@ -50195,7 +55856,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #amphibian
 #unique
 #magicboost 7 -3
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Zlatlan"
 #float
@@ -50213,7 +55874,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Fired The Earth"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Adohi-Tehga is an unequalled pyromancer blessed by Chotec who directed great flows of magma, following the Great Plan. Mortally wounded in the Great Catastrophe, Adohi-Tehga only recently awoke and immediately joined Mazdamundi in his efforts to violently correct the corruption of the world, swearing never to rest until the Old Ones return. Focusing all his power on the destruction of his foes, his palanquin must now be carried into battle by temple guard as he lashes out with the deadly Sword of Rhuin, a weapon of pure fire and wrath. Of all the Second Generation, Adohi-Tehga is by far the most accepting of Sotek.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 110
 #size 6
 #prot 18
@@ -50254,7 +55915,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #firstshape 7289 -- normal adohi
 #domsummon 7334 -- Saurus of Chotec
 #summon5 7334 -- saurus of Chotec
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Adohi Tehga"
 #warning 12
@@ -50269,7 +55930,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Fired The Earth"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Adohi-Tehga is an unequalled pyromancer blessed by Chotec who directed great flows of magma, following the Great Plan. Mortally wounded in the Great Catastrophe, Adohi-Tehga only recently awoke and immediately joined Mazdamundi in his efforts to violently correct the corruption of the world, swearing never to rest until the Old Ones return. Focusing all his power on the destruction of his foes, his palanquin must now be carried into battle by temple guard as he lashes out with the deadly Sword of Rhuin, a weapon of pure fire and wrath. Of all the Second Generation, Adohi-Tehga is by far the most accepting of Sotek.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 110
 #size 6
 #prot 18
@@ -50308,7 +55969,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #fireshield 8
 #firepower 2
 #unique
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Adohi Tehga"
 #inspiringres 1
@@ -50325,7 +55986,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Shaped The Mountains"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Mazdamundi, Lord of the Solar City, is the greatest of his generation, a geomancer who carved the very continents. Mazdamundi is the most active of his kind, having  concluded that the Great Plan has been disrupted and cannot be corrected until the enemies of the Lizardmen are utterly eradicated. Mazdamundi rides into battle atop the ancient Stegadon Zlaaq, trampling the enemy as he blasts them with ancient magic. He carries the Cobra Staff which lashes out to poison those who would strike him and the Sunburst Standard of the Solar City Hexoatl which lends him a blinding aura of power.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 140
 #size 6
 #prot 20
@@ -50367,7 +56028,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #firstshape 7363 -- normal Mazdamundi
 #domsummon 7335 -- Saurus of Quetzl
 #summon5 7335 -- saurus of Quetzl
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Lord Mazdamundi"
 #trample
@@ -50390,7 +56051,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Shaped The Mountains"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Mazdamundi, Lord of the Solar City, is the greatest of his generation, a geomancer who carved the very continents. Mazdamundi is the most active of his kind, having  concluded that the Great Plan has been disrupted and cannot be corrected until the enemies of the Lizardmen are utterly eradicated. Mazdamundi rides into battle atop the ancient Stegadon Zlaaq, trampling the enemy as he blasts them with ancient magic. He carries the Cobra Staff which lashes out to poison those who would strike him and the Sunburst Standard of the Solar City Hexoatl which lends him a blinding aura of power.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 140
 #size 6
 #prot 20
@@ -50429,7 +56090,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #nametype 123
 #awe 4
 #unique
-#fastcast 100
+#fastcast 50
 #allrange 3
 #fixedname "Lord Mazdamundi"
 #trample
@@ -50453,7 +56114,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Guided The Spheres"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Yucatetl is truly blessed, for he alone of his generation was permitted audience with the Old Ones, though the experience blinded him to the material world. Yucatetl helped the First Generation guide the world through the heavens and set the four winds in motion. Even before the coming of Chaos Yucatetl sat motionless, staring into the void with blind unblinking eyes, but now he is awakened and narrowing his eyes to a pinprick of light, sees all that must be done. Yucatetl can cast rituals into even the most distant lands.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 60
 #size 6
 #prot 14
@@ -50493,7 +56154,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #firstshape 7365 -- Yucatetl normal
 #unique
 #magicboost 7 -4
-#fastcast 100
+#fastcast 50
 #fixedname "Yucatetl"
 #float
 #allrange 5
@@ -50511,7 +56172,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #name "One Who Guided The Spheres"
 #descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Yucatetl is truly blessed, for he alone of his generation was permitted audience with the Old Ones, though the experience blinded him to the material world. Yucatetl helped the First Generation guide the world through the heavens and set the four winds in motion. Even before the coming of Chaos Yucatetl sat motionless, staring into the void with blind unblinking eyes, but now he is awakened and narrowing his eyes to a pinprick of light, sees all that must be done. Yucatetl can cast rituals into even the most distant lands.
 
-[100% casting speed increase]"
+[50% casting speed increase]"
 #hp 60
 #size 6
 #prot 14
@@ -50550,7 +56211,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #nametype 123
 #unique
 #magicboost 7 -4
-#fastcast 100
+#fastcast 50
 #fixedname "Yucatetl"
 #float
 #allrange 5
@@ -50734,7 +56395,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #woundfend 3 -- a third as likely to be wounded
 #holy
 #fixedname "Gor Rok"
-#itemslots 42072 - head, body, feet, 3 misc
+#itemslots 15488 - head, body, feet, 2 misc
 #goodleader
 #inspirational 1
 #unsurr 4 -- tier 4
@@ -50937,7 +56598,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Bloodscale of Sotek" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -50950,16 +56611,17 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 #newspell
 #name "Spawning of Sotek"
-#descr "By spilling blood on the altar of Sotek, the Serpent, the Wrathful One, the Nemesis, Skavenbane, the priests of Sotek spread his influence to yet another a spawning of Saurus, led by a frenzied Bloodscale." 
+#descr "By spilling blood on the altar of Sotek, the Serpent, the Wrathful One, the Nemesis, Skavenbane, the priests of Sotek spread his influence to yet another a spawning of Saurus, led by a frenzied Bloodscale."
+#details "Summons 13 troops and a commander. They do have gold upkeep like your recruitables."
 #school 6
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 7
-#pathlevel 0 1
+#pathlevel 0 2
 #effect 10001
-#fatiguecost 2800
+#fatiguecost 3300
 #damage 7329
-#nreff 12
+#nreff 13
 #nextspell "Bloodscale of Sotek"
 #end
 
@@ -50970,7 +56632,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Deepscale of Tzunki" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -50983,12 +56645,15 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 #newspell
 #name "Sacred Spawning of Tzunki"
-#descr "The will of Tzunki, Watcher of Water, the Deep One, the Terror from Below, Devourer of Corsairs is revealed! Careful interpretation of calls from the watery depths of the world issued by Tzunki has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a fearsome Deepscale." 
+#descr "The will of Tzunki, Watcher of Water, the Deep One, the Terror from Below, Devourer of Corsairs is revealed! Careful interpretation of calls from the watery depths of the world issued by Tzunki has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a fearsome Deepscale."
+#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
 #school 0
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 2000
 #damage 7330
@@ -51004,7 +56669,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Nightscale of Huanchi" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -51017,12 +56682,15 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 #newspell
 #name "Sacred Spawning of Huanchi"
-#descr "The will of Huanchi, the Jaguar, the Stalker, Silent Death, Teeth in the Dark is revealed! Careful observation of creatures from the primordial jungles once stalked by Huanchi has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a deadly Nightscale." 
+#descr "The will of Huanchi, the Jaguar, the Stalker, Silent Death, Teeth in the Dark is revealed! Careful observation of creatures from the primordial jungles once stalked by Huanchi has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a deadly Nightscale."
+#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
 #school 0
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 6
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 2000
 #damage 7331
@@ -51038,7 +56706,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Nullscale of Tlazcotl" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -51052,12 +56720,15 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 #newspell
 #name "Sacred Spawning of Tlazcotl"
-#descr "The will of Tlazcotl, the Cold One, the Impassable, Mirror of Calm is revealed! Careful study of the ancient temple cities laid out across the continents by Tlazcotl has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an implacable Nullscale." 
+#descr "The will of Tlazcotl, the Cold One, the Impassable, Mirror of Calm is revealed! Careful study of the ancient temple cities laid out across the continents by Tlazcotl has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an implacable Nullscale."
+#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
 #school 3
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 4
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 2000
 #damage 7332
@@ -51073,7 +56744,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Lorescale of Tepok" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -51086,12 +56757,15 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 #newspell
 #name "Sacred Spawning of Tepok"
-#descr "By observing the rites of Tepok, the Inscrutable, the Ineffable, the Maze of Minds, Master of the Winds, a sacred spawning of his chosen Saurus are summoned, led by a cerebral Lorescale." 
+#descr "By observing the rites of Tepok, the Inscrutable, the Ineffable, the Maze of Minds, Master of the Winds, a sacred spawning of his chosen Saurus are summoned, led by a cerebral Lorescale."
+#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
 #school 5
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 1
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 2000
 #damage 7333
@@ -51107,7 +56781,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Sunscale of Chotec" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -51121,12 +56795,15 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 #newspell
 #name "Sacred Spawning of Chotec"
-#descr "The will of Chotec, the Burning Sun, the Heat of Life, the Searer of Unlife, Light of Truth is revealed! Careful experimentation with the energy gifted to the world by Chotec has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a brilliant Sunscale." 
+#descr "The will of Chotec, the Burning Sun, the Heat of Life, the Searer of Unlife, Light of Truth is revealed! Careful experimentation with the energy gifted to the world by Chotec has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a brilliant Sunscale."
+#details "Summons 14 troops and a commander. They do have gold upkeep like your recruitables."
 #school 2
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 0
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 1800
 #damage 7334
@@ -51142,7 +56819,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Spinescale of Quetzl" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -51157,11 +56834,14 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #newspell
 #name "Sacred Spawning of Quetzl"
 #descr "The will of Quetzl, the Protector, the Rock, the Guardian, He Who Breaks Blades is revealed! Careful analysis of the matter knit together by Quetzl to birth the world itself has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an unstoppable Spinescale."
+#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
 #school 1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 3
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 2000
 #damage 7335
@@ -51178,7 +56858,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #descr "Wardscale of Xhotl" 
 #school -1
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 2
 #pathlevel 0 2
 #effect 10021
@@ -51193,11 +56873,14 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #newspell
 #name "Sacred Spawning of Xhotl"
 #descr "The will of Xhotl, the Infinite Shield, Bane of Magic, Barrier of Woe, Painter of All is revealed! Careful interpretation of the enchantments laid upon the world by Xhotl to keep Chaos at bay has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a vibrant Wardscale."
+#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
 #school 4
 #restricted 145
-#researchlevel 4
+#researchlevel 5
 #path 0 4
 #pathlevel 0 2
+#path 1 8
+#pathlevel 1 3
 #effect 10001
 #fatiguecost 2000
 #damage 7347
@@ -51766,7 +57449,23 @@ Priests: Very Powerful."
 
 -------- ITEMS
 
+-- crown of the overtyrant
 
+#selectitem 938
+#name "Crown of the Overtyrant"
+#descr "This crown worn by Overtyratn Greasus Goldtooth increases his already impressive (for an Ogre) intellect and provides him with elemental resistances."
+#spr "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Item_Crown.tga"
+#constlevel 12
+#type 6
+#cursed
+#nofind
+#armor 281 -- crown of the overtyrant
+#mr 1
+#fireres 5
+#shockres 5
+#coldres 5
+#poisonres 5
+#end
 
 #selectitem 902
 #name "Skrag's Meatpot"
@@ -52156,6 +57855,37 @@ Priests: Very Powerful."
 #end
 
 
+-- Greasus' Sceptre of Titans
+
+#newweapon 1210
+#copyweapon 172 -- magic sceptre
+#name "Sceptre of Titans"
+#dmg 20
+#twohanded
+#att 1
+#def 1
+#len 2
+#pierce
+#bonus
+#end
+
+--- Rhinox (used by greasus)
+
+#newweapon 1211
+#name "Rhinox"
+#bonus
+#nostr
+#len -1
+#pierce
+#slash
+#blunt
+#dmg 22
+#att -2
+#def 0
+#end
+
+
+
 -------- New Armour
 
 --- Ironfist
@@ -52165,7 +57895,6 @@ Priests: Very Powerful."
 #name "Ironfist"
 #ironarmor
 #end
-
 
 --- gutplate
 
@@ -52211,6 +57940,14 @@ Priests: Very Powerful."
 #name "Tyrant Plate"
 #prot 14 -- same
 #rcost 16 -- +1
+#end
+
+-- Crown of the Overtyrant
+
+#newarmor 281
+#copyarmor 212 -- magic crown
+#name "Crown of the Overtyrant"
+#prot 14 -- +5
 #end
 
 
@@ -52879,7 +58616,7 @@ Priests: Very Powerful."
 #newmonster 5518
 #spr1 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Scrap Launcher.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Scrap Launcher2.tga"
-#name "Gnoblar Scraplauncer"
+#name "Gnoblar Scraplauncher"
 #descr "Ogres don't have much use for the weapons of smaller humanoids like Orcs, Elves, Dwarfs and Men, so they allow scrounging Gnoblars to squabble over their possessions. A particularly crafty Gnoblar proclaiming himself King of Scrap recently pioneered a crude war machine based on the Stone Throwers of Dwarf clans which gives all these weapons back, pointy end first. The Scraplauncher does what the name implies: it launches bundles of weapons and other scrap metal across the battlefield to rain down on the heads of the enemy. It is crewed by bickering Gnoblars and hauled by a foul tempered but somewhat oblivious Rhinox. While the Gnoblar crews and thir ill-tempered mount are as fractious and undisciplined as you might expect, the King of Scrap has appointed a Gnoblar of uncommon intelligence to captain each Scraplauncher and as such they can be relied upon to obey orders. Should the Rhinox be badly hurt, it will undoubtedly shake off the ramshackle Scraplauncher and stampede over friend and foe.
 
 [Recruitment limited to 1 per turn, discounted to 100 gold in Turmoil 3]"
@@ -53765,6 +59502,8 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #beastmaster 3
 #noreqlab -- don't require a lab to hire
 #snow
+#unsurr 1 -- tier 1 melee
+#patrolbonus 5
 #end
 
 
@@ -54186,6 +59925,147 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #fear 6
 #itemslots 15488 -- 2 misc, feet, head, body, no hands
 #end
+
+
+---- Jhared the Red
+
+#newmonster 5488
+#copystats 5506
+#spr1 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Hero_Jhared.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Hero_Jhared2.tga"
+#name "Great Hunter"
+#descr "Jhared the Red, sometimes known as Jhared Longstrider, was born an undersized runt to a mid level Bruiser with a mop of highly unusual red hair. His father, seeing this mewling and aberrant creature as a curse, simply abandoned him in the wilds to perish at the hand of nature, but Jhared was found and raised by Sabretusks, creatures with whom he shared a supernatural bond. Over time Jhared grew to be a large and ferocious hunter who commanded a large pack of Sabretusks and had long since shaken off the stigma of his abandonment. He is now known as the greatest living Hunter and revered by his kind.
+
+[Summons 5 Sabretusks on battle start and automatically summons 2 Sabretusks per month]"
+#hp 55
+#prot 10
+#mor 16
+#mr 17
+#str 20
+#att 14
+#def 13
+#prec 18
+#gcost 0
+#rpcost 2
+#armor 192 -- magic furs
+#weapon 931 -- Ogre Club
+#weapon 930 -- ogre smash
+#weapon 927 -- Hunter Harpoon
+#maxage 60
+#mountainsurvival
+#wastesurvival
+#forestsurvival
+#coldres 10
+#supplybonus 20
+#ambidextrous 2
+#goodleader
+#command -40
+#magicskill 6 1 -- N2
+#magicskill 3 1 -- E1
+#researchbonus -4
+#stealthy 20
+#darkvision 50
+#fixedname "Jhared the Red"
+#beastmaster 4
+#patrolbonus 20
+#batstartsum5 5509 -- sabretusks
+#snow
+#unsurr 3
+#summon2 5509 -- Sabretusks
+#end
+
+
+
+
+
+---- Greasus Goldtooth
+
+#newmonster 5487
+#copystats 5506
+#spr1 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Hero_Greasus.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Hero_Greasus2.tga"
+#name "Overtyrant"
+#descr "Greasus Goldtooth, formally known as Overtyrant Greasus Tribestealer Drakecrush Gatecrasher Hoardmaster Goldtooth the Obese, is the fattest, richest, and most powerful ruler in all the Ogre Kingdoms. Greasus took over the Goldtooth Tribe by killing and eating his own father and quickly beat down all other challengers before turning his attention to neighbouring tribes. At that time the Goldtooth Tribe was wealthy but didn't have the reputation to match Greasus' ambitions so the canny new Tyrant set about challenging and killing a series of tribal leaders, each time having studied and exploited their weaknessess and making a name, or rather several Big Names for himself. Eventually Greasus extracted respect and tribute from each of the tribes and so became Overtyrant of the Ogre Kingdoms and organised his kind to greatly increase the wealth they extorted from traders and neighbouring powers, with all paying tithes to Greasus himself, now by far the wealthiest Ogre that had ever lived. Greasus is far too rich to walk and so rides into battle atop a Rhinox mount, armed with the ensorcelled and jewel-encrusted Sceptre of the Titans and sporting the magically protective and intelligence enhancing Overtyrant's Crown on his head. Greasus is so confident in his abilities and his reputation and so pleased to display his hard won obesity that he does the unthinkable and forgoes a protective gutplate, an act which only enhances his aura of invincibility."
+#hp 80
+#size 6
+#prot 10
+#mor 16
+#mr 16
+#enc 4
+#str 21
+#att 13
+#def 12
+#prec 10
+#mapmove 24
+#ap 22
+#gcost 0
+#rpcost 2
+#weapon 1210 -- sceptre of titans
+#weapon 1211 -- rhinox
+#weapon 930 -- ogre smash
+#armor 281 -- crown of the overtyrant
+#maxage 90
+#mountainsurvival
+#wastesurvival
+#coldres 5
+#supplybonus -15
+#ambidextrous 4
+#darkvision 25
+#fixedname "Greasus Goldtooth"
+#snow
+#unsurr 4
+#mason
+#taxcollector
+#taskmaster 3
+#expertleader
+#inspirational 1
+#pillagebonus 10
+#itemslots 29824 -- head, body, 3 misc, no hands
+#startitem 938 -- crown of the overtyrant
+#secondtmpshape 5486 -- pissed of rhinox
+#end
+
+
+
+---- Greasus' Rhinox
+
+#newmonster 5486
+#spr1 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Hero_Greasus_Mount.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Hero_Greasus_Mount2.tga"
+#name "Rhinox"
+#descr "This extremely foul-tempered Rhinox has survived the slaying of its former master Greasus Goldtooth. It is now looking for some way to vent its not inconsiderable fury."
+#size 4
+#hp 55
+#prot 11
+#mor 10
+#mr 8
+#enc 3
+#str 20
+#att 9
+#def 8
+#prec 7
+#mapmove 16
+#ap 18
+#gcost 150
+#rcost 20
+#trample
+#weapon 331 -- gore
+#maxage 40
+#mountainsurvival
+#coldres 8
+#animal
+#xploss 100
+#cleanshape
+#snow
+#itemslots 0
+#quadruped
+#end
+
+
+
+
+
+
 
 
 -------- SPELLS
@@ -54797,6 +60677,37 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #end
 
 
+--- Spawn hero Jhared the Red
+
+#newevent
+#msg "The mighty hero Jhared the Red the Great Hunter sometimes known as Longstrider has joined your cause, accompanied by a pack of snarling Sabretusks."
+#req_owncapital 1
+#req_fornation 121 -- ogres
+#nation 121
+#com 5488 -- jhared
+#req_unique 1
+#rarity 5
+#req_rare 2
+#req_turn 6
+#4d3units 5509 -- Sabretusks
+#end
+
+
+--- Spawn hero Greasus Goldtooth
+
+#newevent
+#msg "The mighty hero Greasus Goldtooth the Overtyrant of the Ogre Kingdoms has joined your cause, bringing with him a substantial contribution of gold to the cause."
+#req_owncapital 1
+#req_fornation 121 -- ogres
+#nation 121
+#com 5487 -- greasus
+#req_unique 1
+#rarity 5
+#req_rare 2
+#req_turn 12 -- not early
+#gold 1000
+#end
+
 
 
 -------- SITES
@@ -54882,10 +60793,12 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #path 0 -- fire
 #level 0
 #rarity 5
+#homecom 5487 -- greasus goldtooth
 #homecom 5494 -- Bragg the Gutsman
 #homecom 5528 -- Slavelord Braugh
 #homecom 5531 -- Groth Onefinger
 #homecom 5533 -- Skrag the Slaughterer
+#homecom 5488 -- Jhared the Red
 #end
 
 
@@ -54995,6 +60908,7 @@ Priests: Average, cannot preach, but get a bonus when blood sacrificing. Hungry 
 --addreccom 5532 -- Henchfiend
 --addreccom 5533 -- Skrag the slaughterer
 --addreccom 5539 -- Mawfiend
+--addreccom 5487 -- greasus goldtooth
 
 #addforeigncom 5527 -- Gnoblar Scout
 #addforeigncom 5520 -- Ogre Bruiser
@@ -57004,7 +62918,7 @@ Summons 3 Giant Rats per month."
 #name "Screaming Bell"
 #descr "Screaming Bells are unholy altars from which the Grey Seers preach to the Skaven and are propelled forward by some uknown force, presumably the will of the Seer or perhaps the Horned Rat himself. The Bell is an ever present symbol in the legends describing the creation of the Skaven race, and its sound reaches deep within the evil hearts of the rat-men, inspiring awe and devotion. In battle the ominous sound of the Bell can be heard above the clamour of the fighting; a message of death for the rat-men's enemies and of victory for the Skaven. The Screaming Bell spreads the dominion of the Horned Rat in much the same fashion as a prophet. Furthermore, the warpstone brazier on the Screaming Bell empowers the Grey Seer making him an even more potent and rapid spellcaster and granting him more accurate visions of the future.
 
-[Casting speed 133% of normal and generates 1 temporary death gem in each battle]"
+[Casting speed increased by 33% and generates 1 temporary death gem in each battle]"
 #hp 33 -- increased due to bell
 #size 6
 #prot 10
@@ -59084,122 +64998,18 @@ Mechanics: Can discover warpstone sites, exhaust them, and reopen them with labs
 #end
 
 
+-- Borgio's Monstrous Helm
 
-
--------- Borrowed Weapons, conflict OK
-
-
--- Horned One Bite (from lizardmen)
-
-#newweapon 814
-#copyweapon 19 -- bite used by jade maidens on their lizards
-#name "Horned One Bite"
-#dmg 13 -- -2
-#pierce -- slashing and piercing
-#end
-
-
----- Scythe (from empire)
-
-#newweapon 794
-#copyweapon 11 -- greatsword
-#name "Scythe"
-#dmg 8
-#def 0
-#len 3
-#rcost 3
-#end
-
----- Mirror of Hysh (from empire)
-
-#newweapon 796
-#name "Mirror of Hysh"
-#dmg 3
-#dt_holy
-#nostr
-#armorpiercing
-#att 100
-#def 0
-#range 100
-#ammo 50
-#nratt 1
-#rcost 1
-#aoe 1
-#explspr 10229 -- small shower of light
-#sound 22 -- mind burn
-#magic
-#end
-
--- Explosive Flask (from empire)
-
-#newweapon 779
-#copyweapon 601 -- cave fire bottle
-#name "Explosive Flask"
-#rcost 9
-#bonus
-#ammo 3 -- +2
-#aoe 2 -- +1
-#end
-
--- Dwarf Axe (from dwarfs)
-
-#newweapon 859
-#copyweapon 17 -- Axe
-#name "Dwarf Axe"
-#rcost 4
-#att 1 -- +1
-#def 0 -- +1
-#end
-
---- Slaying (from Dwarfs)
-
-#newweapon 853
-#name "Slaying"
-#dt_large
-#dmg 6 -- therefore 18 + DRN vs prot + DRN vs size 3 and up
-#nostr
-#att 0
-#def 0
-#rcost 0
-#len 1
-#bonus
-#slash
-#end
-
-
--------- Borrowed Armor, conflict OK
-
---- Dwarf Chain Hauberk
-
-#newarmor 341
-#copyarmor 13 -- chain hauberk
-#name "Dwarf Chain Hauberk"
-#def -1 -- +1
-#enc 2 -- same
-#prot 16 -- +1
-#rcost 18
-#end
-
---- Dwarf Helmet (from dwarfs)
-
-#newarmor 345
-#copyarmor 20 -- iron cap
-#name "Dwarf Helmet"
-#def 0 -- same
-#enc 0 -- same
-#prot 17 -- +1
-#rcost 4
-#end
-
---- Dwarf Shield (from dwarfs)
-
-#newarmor 347
-#copyarmor 2 -- shield
-#name "Dwarf Shield"
-#def 3 -- same
-#enc 1 -- same
-#prot 18 -- +2
-#rcost 5
+#selectitem 936
+#spr "./Sombre_Warhammer/Warhammer_Tilea/Item_Borgio.tga"
+#name "Monstrous Helm"
+#descr "Borgio the Besieger procured this gruesome looking magical helm at great expense that he might better strike fear into the hearts of his foes. It also grants him luck, lending to his reputation as a man who cannot be killed."
+#type 6 -- helm
+#constlevel 12 -- can't be forged
+#cursed -- can't be removed
+#nofind -- can't be picked up
+#armor 334 -- monstrous helm
+#luck
 #end
 
 
@@ -59207,9 +65017,24 @@ Mechanics: Can discover warpstone sites, exhaust them, and reopen them with labs
 -------- New Weapons
 
 
+--- Borgios Mace of Might
+
+#newweapon 1010
+#copyweapon 12 -- mace
+#name "Mace of Might"
+#len 2
+#magic
+#pierce -- and blunt
+#dmg 11
+#att 1
+#def 1
+#nratt 2 -- because its his only weapon
+#end
+
+
 --- Wild Swings (giant's huge club attack)
 
-#newweapon 976
+#newweapon 1082
 #copyweapon 532 -- tail sweep, to get the def negates trait
 #name "Wild Swings"
 #dmg 3
@@ -59442,6 +65267,22 @@ Mechanics: Can discover warpstone sites, exhaust them, and reopen them with labs
 
 
 -------- New Armour
+
+-- Monstrous Helm
+
+#newarmor 334
+#copyarmor 213 -- golden helmet
+#name "Monstrous Helm"
+#end
+
+
+-- Brazen Armour
+
+#newarmor 335
+#copyarmor 214 -- golden armour
+#name "Brazen Armour"
+#prot 22 -- full plate +1
+#end
 
 -- Shield of Myrmidia
 
@@ -60149,6 +65990,8 @@ Mechanics: Can discover warpstone sites, exhaust them, and reopen them with labs
 #startage 70
 #nametype 202
 #end
+
+
 
 
 ----------------- REGIMENTS OF RENOWN
@@ -62305,7 +68148,7 @@ Monthly Reinforcement: 1 Grudgebringer Cavalry."
 #ap 18
 #gcost 250
 #weapon 609 -- grab and swallow
-#weapon 976 -- Wild Swings
+#weapon 1082 -- Wild Swings
 #weapon 977 -- Giant Stomp
 #weapon 974 -- Boulder
 #maxage 140
@@ -62391,7 +68234,98 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 
 
 
----------- HEROES
+
+
+---------------- HEROES
+
+
+-- Borgio the Besieger
+
+#newmonster 5450
+#spr1 "./Sombre_Warhammer/Warhammer_Tilea/Hero_Borgio.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Tilea/Hero_Borgio2.tga"
+#name "Prince of Miragliano"
+#descr "Borgio the Besieger is a towering man of a famously hard diposition who has at one time or another made war on every other principality of Tilea and several powers beyond her borders to boot. Known as a highly skilled general with a particular talent for commanding siege warfare, Borgio is also an astute politician with the paranoid streak more or less required to survive as a leader in a land where loyalty often lives on the edge of a coin and assassins are common. Despite all of his precautions the Prince of Miragliano has found himself the victim of many plots but has so far survived being stabbed, poisoned, caught in a massive fire, and supposedly even magically electrocuted in his own bath; these incidents have added to his reputation as a man who simply cannot be killed. In combat Borgio carries the best wargear afforded to someone of his wealth and power; the Monstrous Helm which strikes fear into his enemies, magical Brazen Armour capable of deflecting almost any blow, and the Mace of Might which grants him incredible strength."
+#hp 33
+#size 3
+#mounted
+#ressize 1 -- merc
+#prot 4 -- tough guy
+#mor 15
+#mr 14
+#enc 5
+#str 20
+#att 13
+#def 13
+#prec 13
+#mapmove 22
+#ap 20
+#gcost 0
+#rpcost 1
+#weapon 56 -- Hoof
+#weapon 1010 -- mace of might
+#armor 335 -- brazen armour
+#armor 334 -- monstrous helm
+#armor 3 -- Kite Shield
+#expertleader
+#inspirational 1
+#siegebonus 25
+#castledef 15
+#fixedname "Borgio the Besieger"
+#unsurr 3 -- tier 3
+#fear 5
+#shockres 5
+#fireres 5
+#poisonres 5
+#startitem 936 -- monstrous helm
+#itemslots 28800 -- head, no hands, 3 misc -- head contains monstrous helm
+#end
+
+
+
+
+
+
+
+
+
+
+-- Leonardo da Miragliano
+
+#newmonster 5386
+#spr1 "./Sombre_Warhammer/Warhammer_Tilea/Hero_Leo.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Tilea/Hero_Leo2.tga"
+#name "Master Inventor"
+#descr "Leonardo da Miragliano came from humble and obscure origins in the winding streets of the city from which he takes his name. His genius was first noticed at a young age when he was assigned as a messenger boy to a prominent architect employed by the Merchant Prince Cosimo, as the precocious youth saw fit to make changes to plans he was tasked with taking to the Prince. Cosimo, known for having an excellent eye for talent and an impressive mind of his own, quickly realised who had made the astoundingly innovative changes to the plans and immediately took Leonardo under his care. Little did Cosimo realise just how significant a discovery this was, for Leonardo has perhaps the greatest mind known to man, tempered only by his frustratingly short attention span: as an inventor, artist, and designer he rarely sticks with any project for long before becoming obsessed with solving a totally unrelated and seemingly impossible problem. A true polymath, Leonardo seems to be capable of effortlessly mastering any craft, art, or science in a distressingly short period of time, but he is perhaps best known for his occasional forays into military design; indeed it was Leonardo who in a matter of days drew up plans for the Steam Tank eventually built by the Engineers Guild of the Empire. Many Princes have sought the Master Inventor's help in either erecting impregnable siege defences, or designing the means to breach such defences, and Leonardo is quite practiced at either side of siege warfare, as well as methods to more quickly arm military forces. On the eve of battle he is known to quickly scribble down a series of equations and suggest adjustments to the ranged weapons of his patron's forces, greatly improving their accuracy.
+
+[Casts Wind Guide at the start of battle]."
+#hp 9
+#size 2
+#prot 0
+#mor 8
+#mr 13
+#enc 3
+#str 9
+#att 8
+#def 8
+#prec 14
+#mapmove 12
+#ap 10
+#gcost 0
+#rcost 1
+#rpcost 0
+#armor 5 -- Leather Cuirass
+#weapon 9 -- Dagger
+#fixedname "Leonardo da Miragliano"
+#fixedresearch 30
+#siegebonus 50
+#castledef 50
+#magicimmune
+#startage 55
+#mason
+#resources 50
+#onebattlespell "Wind Guide"
+#end
 
 
 -- Lorenzo Lupo
@@ -62534,7 +68468,7 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #prec 10
 #mapmove 16
 #ap 12
-#gcost 340
+#gcost 320
 #rpcost 2
 #maxage 4000
 #startage 1
@@ -62561,6 +68495,7 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #spr1 "./Sombre_Warhammer/Warhammer_Tilea/Contract_Mage.tga"
 #name "College Mage Contract"
 #descr "By posting this Contract you will draw the services of a random hireling mage from the Empire's Colleges of Magic. The Colleges are sworn to serve the Empire but have a great deal of autonomy and many of their members choose to pursue work for hire in the other realms of men such as Tilea, Estalia, the Border Princes or even further abroad. Each of the eight Winds of Magic is represented by its own College and the mages of those Colleges are known by the common name for their respective wind, such as the Bright Wizards who use the fiery wind of Aqshy. This contract will supply you with a random mage from one of the eight Colleges: Amber, Amethyst, Bright, Celestial, Gold, Grey, Jade, and Light. Hiring mages in this way is rather expensive, but allows Tilea access to considerable magical diversity.
+
 [Ignore the stats and paths, they're just there to get the AI to treat this as an attractive hire. You do need a lab to buy this though.]"
 #hp 10
 #size 6
@@ -62627,6 +68562,7 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #montag 6590
 #end
 
+
 ---- 2. Grey Wizard
 
 #newmonster 5379
@@ -62653,7 +68589,6 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #weapon 7 -- Quarterstaff
 #poorleader
 #darkvision 100
-#darkpower 2
 #stealthy 20
 #spy
 #magicskill 1 2
@@ -62661,6 +68596,7 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #nametype 188
 #montag 6590
 #end
+
 
 ---- 3. Celestial Wizard
 
@@ -62793,8 +68729,7 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #custommagic 1280 100
 #poorleader
 #nametype 188
-#autohealer 1
-#springpower 1
+#autodishealer 1
 #montag 6590
 #end
 
@@ -62918,6 +68853,38 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #req_rare 1 -- two great heroes! Have to make this rare
 #req_turn 10 -- can't happen before turn 10
 #end
+
+
+---- Hero Leonardo
+
+#newevent
+#msg "The unrivalled genius Leonardo da Miragliano the Master Inventor has joined your cause, placing his easily distrated but incredible mind in your service."
+#req_owncapital 1
+#req_fornation 115 -- Tilea
+#nation 115 -- Tilea
+#com 5386 -- Leonardo
+#req_unique 1
+#rarity 5
+#req_rare 2 -- he's pretty great because he gives you mason
+#req_turn 9 -- can't happen before turn 5
+#end
+
+
+---- Hero Borgio
+
+#newevent
+#msg "The mighty hero Borgio the Besieger the Prince of Miragliano has joined your cause, accompanied by a hand picked unit of pikemen."
+#req_owncapital 1
+#req_fornation 115 -- Tilea
+#nation 115 -- Tilea
+#com 5450 -- Borgio
+#req_unique 1
+#rarity 5
+#req_rare 3
+#3d6units 5352 -- pikeman
+#req_turn 6 -- can't happen before turn 6
+#end
+
 
 
 --------- CONTRACT EVENTS
@@ -63532,56 +69499,6 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #addname "Vittorio"
 #addname "Zanebono"
 #addname "Zanipolo"
-#addname "Girls"
-#addname "Abriana"
-#addname "Bambi"
-#addname "Bianca"
-#addname "Caprice"
-#addname "Cara"
-#addname "Carin"
-#addname "Carlotta"
-#addname "Cettina"
-#addname "Contessa"
-#addname "Domani"
-#addname "Donatella"
-#addname "Fabiana"
-#addname "Fiorella"
-#addname "Fiorenza"
-#addname "Gaetana"
-#addname "Gioia"
-#addname "Giordana"
-#addname "Giovanna"
-#addname "Graziella"
-#addname "Ilaria"
-#addname "Itala"
-#addname "Justina"
-#addname "Lanza"
-#addname "Lave"
-#addname "Liona"
-#addname "Luca"
-#addname "Lucia"
-#addname "Luciana"
-#addname "Mariabella"
-#addname "Marietta"
-#addname "Marsala"
-#addname "Mia"
-#addname "Michelle"
-#addname "Mila"
-#addname "Natalia"
-#addname "Neroli"
-#addname "Ornella"
-#addname "Prima"
-#addname "Primavera"
-#addname "Quorra"
-#addname "Ricarda"
-#addname "Rocio"
-#addname "Romana"
-#addname "Ruffina"
-#addname "Sidonia"
-#addname "Sienna"
-#addname "Sistine"
-#addname "Speranza"
-#addname "Tessa"
 #addname "Trilby"
 #addname "Uberta"
 #addname "Vedette"
@@ -63789,6 +69706,55 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 
 
 #selectnametype 202
+#addname "Abriana"
+#addname "Bambi"
+#addname "Bianca"
+#addname "Caprice"
+#addname "Cara"
+#addname "Carin"
+#addname "Carlotta"
+#addname "Cettina"
+#addname "Contessa"
+#addname "Domani"
+#addname "Donatella"
+#addname "Fabiana"
+#addname "Fiorella"
+#addname "Fiorenza"
+#addname "Gaetana"
+#addname "Gioia"
+#addname "Giordana"
+#addname "Giovanna"
+#addname "Graziella"
+#addname "Ilaria"
+#addname "Itala"
+#addname "Justina"
+#addname "Lanza"
+#addname "Lave"
+#addname "Liona"
+#addname "Luca"
+#addname "Lucia"
+#addname "Luciana"
+#addname "Mariabella"
+#addname "Marietta"
+#addname "Marsala"
+#addname "Mia"
+#addname "Michelle"
+#addname "Mila"
+#addname "Natalia"
+#addname "Neroli"
+#addname "Ornella"
+#addname "Prima"
+#addname "Primavera"
+#addname "Quorra"
+#addname "Ricarda"
+#addname "Rocio"
+#addname "Romana"
+#addname "Ruffina"
+#addname "Sidonia"
+#addname "Sienna"
+#addname "Sistine"
+#addname "Speranza"
+#addname "Tessa"
 #addname "Adelasia"
 #addname "Adele"
 #addname "Adriana"
@@ -63936,7 +69902,6 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #addname "Marcella"
 #addname "Margherita"
 #addname "Maria"
-#addname "María Antonietta"
 #addname "Maria Sole"
 #addname "Mariana"
 #addname "Mariella"
@@ -64042,6 +70007,38 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 
 
 
+--- Futuresite multiheroes
+
+#newsite 1539
+#name "Tilean Multiheroes"
+#path 4 -- astral
+#level 0
+#rarity 5
+#homecom 5392 -- Tilean Sorceress
+#end
+
+
+--- Luck-independent Heroes
+
+#newsite 1558
+#name "Tilean Luck-independent Heroes"
+#path 0 -- fire
+#level 0
+#rarity 5
+#homecom 5448 -- Gotrek
+#homecom 5449 -- Felix
+#homecom 5450 -- borgio
+#homecom 5386 -- leonardo da miragliano
+#homecom 5447 -- Lorenzo Lupo
+#end
+
+
+
+
+
+
+
+
 -------- NATION
 
 #selectnation 115
@@ -64062,6 +70059,10 @@ Mechanics: Randomised mage and RoR contracts."
 #templepic 9
 #startsite "Society of Sorceresses"
 #startsite "Temple of Myrmidia"
+
+
+#futuresite 1539
+#futuresite 1558
 
 #nationinc 5 -- 5% extra gold income
 #tradecoast 20 -- 20% extra gold in coastal forts
@@ -64101,6 +70102,8 @@ Mechanics: Randomised mage and RoR contracts."
 #addreccom 5356 -- Contract
 #addreccom 5376 -- Estalian Alchemist
 #addreccom 5377 -- Mage Contract
+--addreccom 5450 -- borgio
+--addreccom 5386 -- leonardo da miragliano
 --addreccom 5447 -- lupo
 --addreccom 5448 -- gotrek
 --addreccom 5449 -- felix
@@ -64187,9 +70190,9 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 ----------------------- Gotrek and Felix
 -- Mydas the Mean
 -- Lucrezzia Belladonna
--- Borgio the Besieger
+----------------------- Borgio the Besieger
 -- Marco Colombo
--- Leonardo da Miragliano
+----------------------- Leonardo da Miragliano
 -- El Cadavo
 
 #multihero1 5392 -- Tilean Sorceress
@@ -66126,7 +72129,7 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #str 9
 #prot 3
 #mr 16
-#hp 10
+#hp 9
 #holy
 #poorleader
 #command -9 -- so 1 left
@@ -66175,7 +72178,7 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #str 9
 #prot 4
 #mr 17
-#hp 16 -- W2
+#hp 10
 #holy
 #poorleader
 #command -9 -- so 1 left
@@ -66225,7 +72228,7 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #str 9
 #prot 5
 #mr 18
-#hp 24 -- W3 T4
+#hp 12
 #holy
 #poorleader
 #command -9 -- so 1 left
@@ -66278,7 +72281,7 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #str 13
 #prot 5
 #mr 17
-#hp 22
+#hp 12
 #holy
 #poorleader
 #poorundeadleader
@@ -66405,6 +72408,47 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #end
 
 
+-- Ramhotep
+
+#newmonster 4308
+#copystats 5241
+#spr1 "./Sombre_Warhammer/Warhammer_Tomb_Kings/Hero_Ramhotep.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Tomb_Kings/Hero_Ramhotep2.tga"
+#name "Necrotect Visionary"
+#descr "Ramhotep of Quatar is generally recognised as the greatest Necrotect who ever lived and, in death, still the most talented of his mysterious kind and a mage of some power. Ramhotep was the mind behind the Necropolis of Rasetra, the Monoliths of the Great Plains, the Monuments of Eternal Death and many other wonders of Nehekhara. His own tomb, the Sepulchre of the Heavens built in Quatar, was nearly the rival of the Grand Pyramid of Khemri in some ways, though far smaller in scale. With the fall and rise of Nehekhara Ramhotep was awoken to find not only the promised paradise, but a world in which many of his great works had been lost or terrible damaged, horriying the Necrotect Visionary. As he was driven in life to create greater and greater wonders, he is now driven in death to obsessively recover, restore, and protect his legacy and wreak vengeance upon those who have looted and defiled his works of art. Ramhotep's desire for vengeance is such that he enters each battle filled with hateful vigour drawn from the earth to which so many of his works were consigned.
+
+[Casts Summon Earthpower on battle start]"
+#weapon 40 -- whip
+#armor 303 -- Ceremonial Armor
+#armor 301 -- ornate headdress
+#att 11 -- +1
+#def 11 -- +1
+#str 14 -- +1
+#prot 7 -- +2
+#mr 18 -- +1
+#hp 25 -- +13
+#holy
+#poorleader
+#poorundeadleader
+#undcommand -30
+#goodmagicleader
+#gcost 0
+#rpcost 0
+#fireres -5
+#startage 4000 -- about 5 millenia ago was when Nehekara became a kingdom, so that minus 1k
+#maxage 10000
+#fixedname "Ramhotep of Quatar"
+#magicskill 5 2 -- D2
+#magicskill 3 3 -- E3
+#taskmaster 2
+#mason
+#siegebonus 25 -- +10
+#castledef 15 -- +15
+#resources 35 -- +30
+#onebattlespell "Summon Earthpower"
+#end
+
+
 ---------------Pretenders--------------
 
 
@@ -66439,6 +72483,22 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #req_rare 2 -- great mage, powerful
 #req_turn 13 -- not in the first year
 #end
+
+
+-- Spawn Hero Ramhotep
+
+#newevent
+#msg "The mighty hero Ramhotep the Necrotect Visionary has joined your cause."
+#req_owncapital 1
+#req_fornation 112
+#nation 112
+#com 4308 -- hero ramhotep
+#req_unique 1
+#rarity 5
+#req_rare 2 -- pretty good
+#req_turn 7 --
+#end
+
 
 
 
@@ -66480,6 +72540,7 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #rarity 5
 #homecom 5280 -- Hero Apophas
 #homecom 5281 -- hero khatep
+#homecom 4308 -- hero ramhotep
 #end
 
 --- Futuresite multiheroes
@@ -66655,9 +72716,10 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #newspell
 #copyspell "Frighten"  -- To get sound
 #name "Necrotect Mantra"
-#descr "By chanting this mantra the Necrotect grants regenerative properties to a single animated construct. Each Necrotect uses a unique mantra and guards this knowledge jealously, having already taken it to the grave with them once. As such this spell may only be used by a Necrotect."
-#details "Grants regeneration to non-mindless, non-undead, non-demon magic beings (your war statues)"
+#descr "By chanting this mantra the Necrotect grants regenerative properties to a single animated construct. Each Necrotect uses a unique mantra and guards this knowledge jealously, having already taken it to the grave with them once."
+#details "May only be cast by Necrotects, or Ramhotep. Grants regeneration to a non-mindless, non-undead, non-demon magic being (your war statues)"
 #onlymnr 5279 -- Necrotect
+#onlymnr 4308 -- Ramhotep
 #restricted 112
 #path 0 3 -- earth
 #researchlevel 0
@@ -66666,6 +72728,33 @@ https://forums.totalwar.com/discussion/189962/dogs-of-war-compilation/p2
 #effect 23
 #aoe 0
 #damage 536870912
+#fatiguecost 20
+#nreff 1
+#range 20
+#precision 99
+#explspr 10047
+#spec 273301648
+-- 16 magicbeingsonly + 128 AN + 16384 ignores shields + 131072 mindless are immune + 524288 notundead + 4194304 enemy immune + 268435456 notdemons
+#reqtaskmaster
+#end
+
+------- Necrotect quickness spell
+
+#newspell
+#copyspell "Frighten"  -- To get sound
+#name "Necrotect Incantation"
+#descr "By chanting this complex incantation the Necrotect grants quickened movement to one or more animated constructs. This is the most advanced technique known to the Necrotects and is significantly more difficult to use in battle than their typical mantra, indeed very few Necrotects will even be capable of completing the incantation."
+#details "May only be cast by Necrotects, or Ramhotep. Grants aoe 1 quickness to non-mindless, non-undead, non-demon magic beings (your war statues)"
+#onlymnr 5279 -- Necrotect
+#onlymnr 4308 -- Ramhotep
+#restricted 112
+#path 0 3 -- earth
+#researchlevel 0
+#school 3 -- construction
+#pathlevel 0 4
+#effect 10 -- buff type 1
+#aoe 1
+#damage 262144 -- quickness
 #fatiguecost 20
 #nreff 1
 #range 20
@@ -67316,20 +73405,6 @@ Mechanics: No indies or mercs, troops have no upkeep, death scale gold discount,
 #dmg 15 -- +2
 #end
 
----- Wild Swings (giant's huge club attack)
-
-#newweapon 1760
-#copyweapon 532 -- tail sweep, to get the def negates trait
-#name "Wild Swings"
-#dmg 3
-#att 0
-#def 0
-#aoe 2
-#nratt 2
-#len 4
-#blunt
-#end
-
 
 --- Giant Stomp
 
@@ -67529,6 +73604,17 @@ Mechanics: No indies or mercs, troops have no upkeep, death scale gold discount,
 #name "Sword of Unholy Power"
 #secondaryeffect 597 -- life drain, 10 dmg, nostr
 #att 2 -- +1
+#end
+
+
+---- Blood Drinker
+
+#newweapon 1766
+#copyweapon 42 -- one handed bane blade
+#name "Blood Drinker"
+#secondaryeffect 597 -- life drain, 10 dmg, nostr
+#att 2 -- +1
+#nratt 2
 #end
 
 
@@ -69020,7 +75106,6 @@ Mechanics: No indies or mercs, troops have no upkeep, death scale gold discount,
 #end
 
 
-
 ---- Sylvanian Captain
 
 #newmonster 4026
@@ -70150,7 +76235,7 @@ Mechanics: No indies or mercs, troops have no upkeep, death scale gold discount,
 #ap 10 -- -8
 #rpcost 40
 #rcost 10
-#weapon 1760 -- Wild Swings
+#weapon 1082 -- Wild Swings
 #weapon 1761 -- Giant Stomp
 #maxage 500
 #coldres 15
@@ -71078,13 +77163,13 @@ Magic: Weak death and blood."
 -- HEROES
 -------------------------------------------------------------------------
 
----- Mannfred von Carstein
+---- Mannfred Von Carstein
 
 #newmonster 4121
 #spr1 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Mannfred.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Mannfred2.tga"
 #name "Dark Master of Drakenhof"
-#descr "While Vlad von Carstein was the founder of the Carstein bloodline and most physically powerful of their kind, Mannfred is inarguably the most cunning. When Vlad disappeared he took no part in the infighting that saw his 'brother' Konrad rise to prominence, instead travelling far and wide to deepen his knowldge of necromantic lore, even going so far as to wrest secrets from the Liche Priests of Nehekhara and tomes from the ghostly necropolis of Nagashizzar. When he returned Mannfred was amongst the most powerful necromancers in existence, rivalling even the most ancient Necrarchs. Like his sire before him, Mannfred had firm designs on the throne of the Empire and was not above working with the living to ascend to power, bringing them to his side with promises of power and clever deceptions. In battle Mannfred rides atop a particularly powerful Nightmare and wields a great sickle blade in one hand and the life draining Sword of Unholy Power in the other. He is protected by the infamous Armour of Templehof, said to have been forged with the blood of scores of innocents, which grants Mannfred incredible durability. Mannfred's patience, intelligence, and significant library of stolen tomes make him an expert ritualist.
+#descr "While Vlad Von Carstein was the founder of the Carstein bloodline and most physically powerful of their kind, Mannfred is inarguably the most cunning. When Vlad disappeared he took no part in the infighting that saw his 'brother' Konrad rise to prominence, instead travelling far and wide to deepen his knowldge of necromantic lore, even going so far as to wrest secrets from the Liche Priests of Nehekhara and tomes from the ghostly necropolis of Nagashizzar. When he returned Mannfred was amongst the most powerful necromancers in existence, rivalling even the most ancient Necrarchs. Like his sire before him, Mannfred had firm designs on the throne of the Empire and was not above working with the living to ascend to power, bringing them to his side with promises of power and clever deceptions. In battle Mannfred rides atop a particularly powerful Nightmare and wields a great sickle blade in one hand and the life draining Sword of Unholy Power in the other. He is protected by the infamous Armour of Templehof, said to have been forged with the blood of scores of innocents, which grants Mannfred incredible durability. Mannfred's patience, intelligence, and significant library of stolen tomes make him an expert ritualist.
 
 [Loses flight in battle]"
 #gcost 0
@@ -71131,7 +77216,7 @@ Magic: Weak death and blood."
 #flying
 #shrinkhp 999
 #darkvision 100
-#fixedname "Mannfred von Carstein"
+#fixedname "Mannfred Von Carstein"
 #combatcaster
 #holy
 #deathrange 1
@@ -71141,13 +77226,13 @@ Magic: Weak death and blood."
 #end
 
 
----- Mannfred von Carstein (in battle)
+---- Mannfred Von Carstein (in battle)
 
 #newmonster 4122
 #spr1 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Mannfred.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Mannfred2.tga"
 #name "Dark Master of Drakenhof"
-#descr "While Vlad von Carstein was the founder of the Carstein bloodline and most physically powerful of their kind, Mannfred is inarguably the most cunning. When Vlad disappeared he took no part in the infighting that saw his 'brother' Konrad rise to prominence, instead travelling far and wide to deepen his knowldge of necromantic lore, even going so far as to wrest secrets from the Liche Priests of Nehekhara and tomes from the ghostly necropolis of Nagashizzar. When he returned Mannfred was amongst the most powerful necromancers in existence, rivalling even the most ancient Necrarchs. Like his sire before him, Mannfred had firm designs on the throne of the Empire and was not above working with the living to ascend to power, bringing them to his side with promises of power and clever deceptions. In battle Mannfred rides atop a particularly powerful Nightmare and wields a great sickle blade in one hand and the life draining Sword of Unholy Power in the other. He is protected by the infamous Armour of Templehof, said to have been forged with the blood of scores of innocents, which grants Mannfred incredible durability. Mannfred's patience, intelligence, and significant library of stolen tomes make him an expert ritualist.
+#descr "While Vlad Von Carstein was the founder of the Carstein bloodline and most physically powerful of their kind, Mannfred is inarguably the most cunning. When Vlad disappeared he took no part in the infighting that saw his 'brother' Konrad rise to prominence, instead travelling far and wide to deepen his knowldge of necromantic lore, even going so far as to wrest secrets from the Liche Priests of Nehekhara and tomes from the ghostly necropolis of Nagashizzar. When he returned Mannfred was amongst the most powerful necromancers in existence, rivalling even the most ancient Necrarchs. Like his sire before him, Mannfred had firm designs on the throne of the Empire and was not above working with the living to ascend to power, bringing them to his side with promises of power and clever deceptions. In battle Mannfred rides atop a particularly powerful Nightmare and wields a great sickle blade in one hand and the life draining Sword of Unholy Power in the other. He is protected by the infamous Armour of Templehof, said to have been forged with the blood of scores of innocents, which grants Mannfred incredible durability. Mannfred's patience, intelligence, and significant library of stolen tomes make him an expert ritualist.
 
 [Gains flight outside of battle]"
 #gcost 0
@@ -71193,7 +77278,7 @@ Magic: Weak death and blood."
 #douse 2
 #firstshape 4121
 #darkvision 100
-#fixedname "Mannfred von Carstein"
+#fixedname "Mannfred Von Carstein"
 #combatcaster
 #holy
 #deathrange 1
@@ -71201,6 +77286,238 @@ Magic: Weak death and blood."
 #itemslots 12416 -- head and 2 misc only
 #ambidextrous 3
 #end
+
+
+
+
+
+-- Vlad Von Carstein
+
+#newmonster 4123
+#spr1 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Vlad.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Vlad2.tga"
+#name "Von Carstein Progenitor"
+#descr "Vlad Von Carstein is the founder of the Carstein bloodline and, secretly, one of the very few recipients of the original Elixir of Life created by Nagash, a member of the Nehekharan royalty called Vashanesh. Vlad came to Sylvania as a mysterious but charming noble of some distant land several hundred years ago and married the daughter of the Elector Count of the province as he lay in his deathbed. In doing so Vlad became Elector Count himself and immediately amassed considerable power, but the marriage was of more than convenience and Vlad gave his beloved wife Isabella the Blood Kiss so that she might join him in eternity. For many decades Vlad ruled sternly, but fairly, demonstrating a surprising care for his people, but in time his nature provoked a vicious civil war within the Empire and he was eventually defeated and thought destroyed along with his bride. In reality Vlad used the power of an ancient magical ring to preserve himself and Isabella that he might emerge at the proper time and take his place as ruler once more. As the first of the Carstein bloodline Vlad is incredibly powerful both physically and magically and a famously skilled swordsman and general to boot. He prefers to go into battle on foot though like all Carstein vampires is capable of transforming into a cloud of bats to fly outside of battle. Unlike his progeny Vlad has no vulnerability to fire, nor does he balk at crossing running water. Vlad is armed with the infamous sword Blood Drinker which adds to his natural ability to drain the life of those he faces in battle and allows him to strike at blinding speed. 
+
+[Loses flight in battle]"
+#gcost 0
+#rpcost 0
+#hp 44 -- + 9 over lord
+#size 2
+#prot 4 -- same as lord
+#regeneration 5 -- same
+#str 20 -- +2
+#att 16 -- +1
+#def 16 -- +1
+#mr 18 -- +1
+#mor 20 -- +2
+#enc 0
+#prec 14
+#mapmove 26 -- flying
+#ap 16 -- move 6
+#undead
+#neednoteat
+#coldres 15
+#poisonres 15
+#startage 4500
+#maxage 9000
+#magicskill 5 4 -- D4
+#magicskill 7 3 -- B3
+#magicskill 1 2 -- A2
+#magicskill 6 1 -- N1
+#superiorleader
+#superiorundeadleader
+#heal
+#weapon 595 -- Hypnotise
+#weapon 1766 -- Blood Drinker
+#weapon 719 -- life drain
+#armor 19 -- Full plate Mail
+#armor 21 -- Full Helmet
+#invulnerable 15
+#unsurr 4 -- tier 4 combat leader
+#douse 2
+#flying
+#shrinkhp 999
+#darkvision 100
+#combatcaster
+#fixedname "Vlad Von Carstein"
+#itemslots 15488 -- normal with no hands
+#holy
+#end
+
+
+-- Vlad Von Carstein (battleform)
+
+#newmonster 4124
+#spr1 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Vlad.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Vlad2.tga"
+#name "Von Carstein Progenitor"
+#descr "Vlad Von Carstein is the founder of the Carstein bloodline and, secretly, one of the very few recipients of the original Elixir of Life created by Nagash, a member of the Nehekharan royalty called Vashanesh. Vlad came to Sylvania as a mysterious but charming noble of some distant land several hundred years ago and married the daughter of the Elector Count of the province as he lay in his deathbed. In doing so Vlad became Elector Count himself and immediately amassed considerable power, but the marriage was of more than convenience and Vlad gave his beloved wife Isabella the Blood Kiss so that she might join him in eternity. For many decades Vlad ruled sternly, but fairly, demonstrating a surprising care for his people, but in time his nature provoked a vicious civil war within the Empire and he was eventually defeated and thought destroyed along with his bride. In reality Vlad used the power of an ancient magical ring to preserve himself and Isabella that he might emerge at the proper time and take his place as ruler once more. As the first of the Carstein bloodline Vlad is incredibly powerful both physically and magically and a famously skilled swordsman and general to boot. He prefers to go into battle on foot though like all Carstein vampires is capable of transforming into a cloud of bats to fly outside of battle. Unlike his progeny Vlad has no vulnerability to fire, nor does he balk at crossing running water. Vlad is armed with the infamous sword Blood Drinker which adds to his natural ability to drain the life of those he faces in battle and allows him to strike at blinding speed. 
+
+[Gains flight outside battle]"
+#gcost 0
+#rpcost 0
+#hp 44 -- + 9 over lord
+#size 2
+#prot 4 -- same as lord
+#regeneration 5 -- same
+#str 20 -- +2
+#att 16 -- +1
+#def 16 -- +1
+#mr 18 -- +1
+#mor 20 -- +2
+#enc 0
+#prec 14
+#mapmove 26 -- flying
+#ap 16 -- move 6
+#undead
+#neednoteat
+#coldres 15
+#poisonres 15
+#startage 4500
+#maxage 9000
+#magicskill 5 4 -- D4
+#magicskill 7 3 -- B3
+#magicskill 1 2 -- A2
+#magicskill 6 1 -- N1
+#superiorleader
+#superiorundeadleader
+#heal
+#weapon 595 -- Hypnotise
+#weapon 1766 -- Blood Drinker
+#weapon 719 -- life drain
+#armor 19 -- Full plate Mail
+#armor 21 -- Full Helmet
+#invulnerable 15
+#unsurr 4 -- tier 4 combat leader
+#douse 2
+#firstshape 4123
+#darkvision 100
+#combatcaster
+#fixedname "Vlad Von Carstein"
+#itemslots 15488 -- normal with no hands
+#holy
+#end
+
+
+---- Isabella Von Carstein
+
+#newmonster 4125
+#name "Countess of Sylvania"
+#spr1 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Isabella.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Isabella2.tga"
+#descr "Isabella Von Carstein, formerly Isabella Von Drak, is the eternal paramour, advisor, and wife of Vlad, founder of the Carstein bloodline. In her youth Isabella was known as a sharply intelligent and cold beauty with exacting standards that few suitors could hope to match and those that might were driven away by the foul temper and erratic behaviour of her father, Otto Von Drak. As old Otto lay dying, cursing his lack of an heir, a mysterious noble arrived in his court from a distant land and through charm, presence, and intellect convinced Isabella she had met her match and wedded her in short order. Isabella Von Drak became Isabella Von Carstein and ruled alongside her vampiric husband as Countess of Sylvania. Many times during their marriage Vlad refused to grant Isabella the unlife of the vampire, for he loved her too dearly to have her suffer as his kind do, but when she fell gravely ill he finally relented and performed the Blood Kiss, making her his eternal wife. Isabella is not so powerful as Vlad and suffers the same vulnerabilities as others of the Carstein bloodline, but she is cunning indeed and her cold beauty, already great in life, is enough to stay the hand of even determined foes long enough for her to strike them down. Isabella carries at all times the infamous Blood Chalice of Bathori which grants her more powerful blood magic.
+
+[Loses flight in battle]"
+#gcost 0
+#rpcost 0
+#rcost 1
+#weapon 595 -- Hypnotise
+#weapon 1747 -- Enslavement
+#weapon 6 -- short sword
+#weapon 719 -- bonus 0 dmg str added life drain
+#hp 30
+#regeneration 5 -- half that of dominions troll
+#heal
+#prot 2
+#str 16
+#mor 16
+#mr 16
+#awe 3
+#att 13
+#def 14
+#female
+#prec 13
+#spy
+#stealthy 20 -- spy level
+#enc 0
+#mapmove 26 -- flying
+#ap 16 -- move 6
+#undead
+#neednoteat
+#coldres 15
+#fireres -5
+#noriverpass
+#poisonres 15
+#magicskill 5 2 -- D2
+#magicskill 7 3 -- B3
+#magicskill 1 1 -- A1
+#invulnerable 15
+#goodleader
+#expertundeadleader
+#unsurr 3 -- tier 3 combat leader
+#startage 500
+#maxage 10000
+#darkvision 100
+#holy
+#flying
+#shrinkhp 999
+#itemslots 15490 -- normal, one hand
+#bloodrange 1
+#fixedname "Isabella Von Carstein"
+#douse 2
+#end
+
+
+---- Isabella Von Carstein
+
+#newmonster 4126
+#name "Countess of Sylvania"
+#spr1 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Isabella.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Vampires/Hero_Isabella2.tga"
+#descr "Isabella Von Carstein, formerly Isabella Von Drak, is the eternal paramour, advisor, and wife of Vlad, founder of the Carstein bloodline. In her youth Isabella was known as a sharply intelligent and cold beauty with exacting standards that few suitors could hope to match and those that might were driven away by the foul temper and erratic behaviour of her father, Otto Von Drak. As old Otto lay dying, cursing his lack of an heir, a mysterious noble arrived in his court from a distant land and through charm, presence, and intellect convinced Isabella she had met her match and wedded her in short order. Isabella Von Drak became Isabella Von Carstein and ruled alongside her vampiric husband as Countess of Sylvania. Many times during their marriage Vlad refused to grant Isabella the unlife of the vampire, for he loved her too dearly to have her suffer as his kind do, but when she fell gravely ill he finally relented and performed the Blood Kiss, making her his eternal wife. Isabella is not so powerful as Vlad and suffers the same vulnerabilities as others of the Carstein bloodline, but she is cunning indeed and her cold beauty, already great in life, is enough to stay the hand of even determined foes long enough for her to strike them down. Isabella carries at all times the infamous Blood Chalice of Bathori which grants her more powerful blood magic.
+
+[Gains flight outside battle]"
+#gcost 0
+#rpcost 0
+#rcost 1
+#weapon 595 -- Hypnotise
+#weapon 1747 -- Enslavement
+#weapon 6 -- short sword
+#weapon 719 -- bonus 0 dmg str added life drain
+#hp 30
+#regeneration 5 -- half that of dominions troll
+#heal
+#prot 2
+#str 16
+#mor 16
+#mr 16
+#awe 3
+#att 13
+#def 14
+#female
+#prec 13
+#spy
+#stealthy 20 -- spy level
+#enc 0
+#mapmove 26 -- flying
+#ap 16 -- move 6
+#undead
+#neednoteat
+#coldres 15
+#fireres -5
+#noriverpass
+#poisonres 15
+#magicskill 5 2 -- D2
+#magicskill 7 3 -- B3
+#magicskill 1 1 -- A1
+#invulnerable 15
+#goodleader
+#expertundeadleader
+#unsurr 3 -- tier 3 combat leader
+#startage 500
+#maxage 10000
+#darkvision 100
+#holy
+#firstshape 4125
+#itemslots 15490 -- normal, one hand
+#bloodrange 1
+#fixedname "Isabella Von Carstein"
+#douse 2
+#end
+
+
+
 
 
 -------------------------------------------------------------------------
@@ -71232,16 +77549,50 @@ Death Recruitment: Many of your recruitables are discounted in Death scales. Rem
 ---- SPAWN HERO Mannfred
 
 #newevent
-#msg "The mighty hero Mannfred von Carstein the Dark Master of Drakenhof has joined your cause, atop a Nightmare steed animated by his own willpower."
+#msg "The mighty hero Mannfred Von Carstein the Dark Master of Drakenhof has joined your cause, atop a Nightmare steed animated by his own willpower."
 #req_owncapital 1
 #req_fornation 113 -- vamps
 #nation 113 -- vamps
 #com 4121 -- Mannfred
 #req_unique 1
 #rarity 5
-#req_rare 3 -- 3% chance because they only have one hero currently
+#req_rare 2 -- 2% chance
 #req_turn 15 -- he's super powerful
 #end
+
+
+
+---- SPAWN HERO Vlad
+
+#newevent
+#msg "The mighty hero Vlad Von Carstein the Progenitor of the Carstein Bloodline has joined your cause."
+#req_owncapital 1
+#req_fornation 113 -- vamps
+#nation 113 -- vamps
+#com 4123 -- Vlad
+#req_unique 1
+#rarity 5
+#req_rare 2 -- 2% chance
+#req_turn 15 -- he's super powerful
+#end
+
+
+---- SPAWN HERO Isabella
+
+#newevent
+#msg "The mighty hero Isabella Von Carstein the Countess of Sylvania has joined your cause."
+#req_owncapital 1
+#req_fornation 113 -- vamps
+#nation 113 -- vamps
+#com 4125 -- Isabella
+#req_unique 1
+#rarity 5
+#req_rare 3
+#req_turn 10
+#end
+
+
+
 
 
 
@@ -71997,7 +78348,7 @@ Death Recruitment: Many of your recruitables are discounted in Death scales. Rem
 
 
 #selectnation 113
-#name "Vampires"
+#name "Vampiria"
 #epithet "The Midnight Aristocracy"
 #color 0.1 0.1 0.1 -- Charcoal
 #era 2
@@ -72118,6 +78469,8 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 #addreccom 4031 -- Necromancer
 #addreccom 4032 -- Master Necromancer
 --addreccom 4121 -- mannfred
+--addreccom 4123 -- vlad
+--addreccom 4125 -- Isabella
 #end
 
 
@@ -72125,7 +78478,7 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 -- NAMETYPES
 -------------------------------------------------------------------------
 
----- von Carstein Nametype
+---- Von Carstein Nametype
 
 #selectnametype 176
 #addname "Ruprecht Von Carstein"

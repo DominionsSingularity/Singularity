@@ -1,0 +1,101 @@
+
+
+
+1. You start with a 'bloom' site
+2. Blooms may not grow adjacent to other blooms and require positive dominion
+3. Root sites grow in positive dominion next to blooms
+4. Roots/blooms die if not in positive dominion
+-- Blooms can only grow next to roots -- drop this
+6. Should blooms be seasonal? They could either be fixed to the season when they bloomed, or change according to season
+7. A seasonal bloom could provide season themed stuff (monsters, resources, temperature etc)
+8. Blooms can freespawn (this is the way to get the non elf stuff like dryads)
+9. Blooms could grow from stage 1 to stage 3 over time to make them less swingy
+10. Blooms could provide PD?
+
+Season power should be used sparingly
+
+What do I do about PD if wood elves don't use forts?
+
+Wood Elves don't care about forts at all (including not burning them down).
+
+
+
+Orion
+
+1. Orion gets spawned in spring
+2. He is unique? do i need to make him unique
+3. He is killed off in winter
+4. If he dies he will still come back in spring no matter what (spring immortality)
+5. He maybe has no leadership and no itemslots and cannot go to the arena
+6. He maybe summons stuff in fights or freespawns things generally
+7. He can't take permanent damage of any kind (he can get cursed/horror marked but apart from that) - woundfend 99 and self healing
+
+
+
+There are seasonal shape commands, so perhaps dryads etc should have those. There's also a command to be stronger at the height of any given season which could be used in conjunction with these.
+
+relevant event modding commnands
+
+#req_season <0 – 4>
+Event requires this season to happen.
+
+#req_nearbycode <event code>
+Event code must be present in a neighboring province.
+
+#req_nearowncode <event code>
+Current province or neighboring province owned by the same player must have this event code.
+
+
+#req_nearbysite < 0 | 1 >
+Event requires [sitename] to be in the province or adjacent provinces.
+So a 0 here would work to say it must not be adjacent. But only one site can be specified.
+
+
+#req_domchance <0 - 100> Requires a dominion and the higher dominion the higher the chance of this event happening. The owner of the dominion, friendly or not, does not matter for this command. The event will have dominion value * this value % chance of happening (if it should have happened without this command that is). This command can be used to create global enchantments that have the chance of something happening scale with dominion strength.
+
+So can set this to 10 and then it's 10% chance per candle per turn of spawning a bloom if other conditions met.
+
+This can also be used on the freespawning events and the upgrading events so it's all tied to dominion
+
+#req_growth <value>
+Growth scale required.
+
+
+
+Lineup
+
+Glade Guard (longbow and sword)
+Glade Guard (longbow and sword, heavier armour)
+Eternal Guard (spear and very good anti missile shield, formation fighter)
+Glade Rider (composite bow equivalent, sword, no lance because they are supposed to be real archers)
+Glade Rider (light lance, shield)
+Wind Rider (Warhawk rider, sword and composite bow - emphasise shooting somehow)
+
+
+Great Stag Knight (this is like a wild rider but on a much bigger mount, is it sacred or not?)
+Hound of Kurnous
+Zoat (basically like a dragon ogre crossed with a kroxigor)
+
+Sister of the Thorn (mounted on a Steed of Isha. Sacred, spring immortal so they come back every spring, poisonous thorn spears)
+Wild Rider (Mounted on a Steed of Kurnous. Sacred, light lance, shield, stags horns are magical - they can't be berserk because they're mounted)
+Great Stag Knight (this is basically a wild rider mounted on a Great Stag of athel loren. Must be sacred. I could make this not a mounted unit, like moose riders, where the main profile is animal and the rider is just additional attacks - that way it could berserk)
+
+Treekin (size 3 brutish constructs, magic beings, magic attacks)
+Treefolk
+
+
+Shadow Dancer (A1D1?)
+
+
+Ancient Treefolk
+
+--Heroes
+----Orion
+----Ariel
+----Durthu
+----Drycha
+----Coeddil
+----Naestra and Arahan on dragon
+----Skaw the falconer
+----Araloth of Talsyn (also champion of Ariel)
+----Scarloc the Waywatcher
