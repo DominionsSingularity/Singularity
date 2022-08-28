@@ -1,6 +1,7 @@
 --#modname "Troldsvarheim"
 --#description "A nation of dark skinned trolls seeking to put the world under darkness."
 --#icon "Blue_Troldsvarheim/banner.tga"
+
 -- Dependencies Required:
 -- None 
 --  TODO: 
@@ -13,7 +14,7 @@
 -- Weapon: 809-828
 -- Armor: N/A
 -- Spell: N/A
--- Sites: 1708-1709 (sets of ?).
+-- Sites: 1708-1713
 -- Nametypes: N/A
 -- Event ID (#id): 4300-4301
 -- Event Codes: N/A
@@ -541,7 +542,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 --#copystats 2220 -- Troll Shaman
 #copystats 6925 -- Troldsvar
 #name "Troldsvar Shaman"
-#descr "Troldsvar Shamen are the leaders of Troldsvar tribes, and skilled mages of nature and death. Like all Troldsvar, they are weaker in the light and prefer the darkest parts of forests and avoid contact with men. Troldsvar can survive on a diet of sticks and stones, just like normal trolls." -- Todo: Needs extended or rewritten. May never happen.
+#descr "Troldsvar Shaman are the leaders of Troldsvar tribes, and skilled mages of nature and death. Like all Troldsvar, they are weaker in the light and prefer the darkest parts of forests and avoid contact with men. Troldsvar can survive on a diet of sticks and stones, just like normal trolls." -- Todo: Needs extended or rewritten. May never happen.
 #spr1 "Blue_Troldsvarheim/Blue_TroldsvarMageShaman1B.tga"
 --#spr1 "Blue_Troldsvarheim/Blue_TroldsvarTwicebornB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_TroldsvarMageShaman2.tga"
@@ -670,11 +671,11 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #spr1 "Blue_Troldsvarheim/Blue_ShadowElemental1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowElemental2.tga"
 -- Darkpower affected stats:
-#darkpower 6
-#str 14 -- 20 w/ DP
-#att 7 -- 13 w/ DP
-#def 12 -- 18 w/ DP
-#ap 14 -- 20 w/ DP
+#darkpower 5
+#str 15 -- 20 w/ DP
+#att 8 -- 13 w/ DP
+#def 13 -- 18 w/ DP
+#ap 15 -- 20 w/ DP
 -- Other stats:
 #invulnerable 10
 #mr 18
@@ -718,15 +719,15 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 -- Lastly, Shadow HP is half of the original and they get a malus to fire resistance.
 #newmonster 6939
 #name "Shadow"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they will often simply reform somewhere else on the battlefield."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalA1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalA2.tga"
 -- Darkpower affected stats:
-#darkpower 4
-#str 7 -- 11 w/ DP, Original stat -4
-#att 6 -- 10 w/ DP, Original stat -4
-#def 10 -- 14 w/ DP, Original stat -1
-#ap 16 -- 22 w/ DP, Original stat
+#darkpower 3
+#str 6 -- 9 w/ DP, Original stat -3
+#att 6 -- 9 w/ DP, Original stat -3
+#def 8 -- 11 w/ DP, Original stat
+#ap 22 -- 25 w/ DP, Original stat
 -- Other stats:
 #invulnerable 5 -- Original prot + 3
 #mr 8 -- Original MR +3, can be arbitrary
@@ -774,14 +775,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6941
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalA1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalA2.tga"
 -- Darkpower affected stats:
-#str 5 -- 9 w/ DP, orig 9, -4
-#att 5 -- 9 w/ DP, orig 9, -4
-#def 7 -- 11 w/ DP, orig 8, -1
-#ap 22 -- 26 w/ DP, orig 22, -0
+#str 6 -- 9 w/ DP, orig 9
+#att 6 -- 9 w/ DP, orig 9
+#def 8 -- 11 w/ DP, orig 8
+#ap 22 -- 25 w/ DP, orig 22
 -- Other stats:
 #invulnerable 5 -- orig natprot 2
 #mr 8 -- orig 5
@@ -803,14 +804,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6942
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalB2.tga"
 -- Darkpower affected stats:
-#str 11 -- 15 w/ DP, orig 15, -4
-#att 9 -- 13 w/ DP, orig 13, -4
-#def 9 -- 13 w/ DP, orig 10, -1
-#ap 20 -- 24 w/ DP, orig 20, -0
+#str 12 -- 15 w/ DP, orig 15, -4
+#att 10 -- 13 w/ DP, orig 13, -4
+#def 10 -- 13 w/ DP, orig 10, -1
+#ap 20 -- 23 w/ DP, orig 20, -0
 -- Other stats:
 #invulnerable 7 -- orig natprot 4
 #mr 8 -- orig 5
@@ -832,14 +833,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6943
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalC2.tga"
 -- Darkpower affected stats:
-#str 7 -- 11 w/ DP, orig 11, -4
-#att 8 -- 12 w/ DP, orig 12, -4
-#def 9 -- 13 w/ DP, orig 10, -1
-#ap 24 -- 28 w/ DP, orig 24, -0
+#str 8 -- 11 w/ DP, orig 11, -4
+#att 9 -- 12 w/ DP, orig 12, -4
+#def 10 -- 13 w/ DP, orig 10, -1
+#ap 24 -- 27 w/ DP, orig 24, -0
 -- Other stats:
 #invulnerable 6 -- orig natprot 3
 #mr 8 -- orig 5
@@ -861,14 +862,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6944
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalD1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalD2.tga"
 -- Darkpower affected stats:
-#str 5 -- 9 w/ DP, orig 9, -4
-#att 8 -- 12 w/ DP, orig 12, -4
-#def 8 -- 12 w/ DP, orig 9, -1
-#ap 14 -- 18 w/ DP, orig 14, -0
+#str 6 -- 9 w/ DP, orig 9
+#att 9 -- 12 w/ DP, orig 12
+#def 9 -- 12 w/ DP, orig 9
+#ap 14 -- 17 w/ DP, orig 14
 -- Other stats:
 #invulnerable 11 -- orig natprot 8
 #mr 8 -- orig 5
@@ -889,14 +890,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6945
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalE1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalE2.tga"
 -- Darkpower affected stats:
-#str 15 -- 19 w/ DP, orig 19, -4
-#att 5 -- 9 w/ DP, orig 9, -4
-#def 6 -- 10 w/ DP, orig 7, -1
-#ap 14 -- 18 w/ DP, orig 14, -0
+#str 16 -- 19 w/ DP, orig 19
+#att 6 -- 9 w/ DP, orig 9
+#def 7 -- 10 w/ DP, orig 7
+#ap 14 -- 17 w/ DP, orig 14
 -- Other stats:
 #invulnerable 11 -- orig natprot 8
 #mr 8 -- orig 5
@@ -917,14 +918,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6946
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalF1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalF2.tga"
 -- Darkpower affected stats:
-#str 12 -- 16 w/ DP, orig 16, -4
-#att 5 -- 9 w/ DP, orig 9, -4
-#def 8 -- 12 w/ DP, orig 9, -1
-#ap 24 -- 28 w/ DP, orig 24, -0
+#str 13 -- 16 w/ DP, orig 16
+#att 6 -- 9 w/ DP, orig 9
+#def 9 -- 12 w/ DP, orig 9
+#ap 24 -- 27 w/ DP, orig 24
 -- Other stats:
 #invulnerable 7 -- orig natprot 4
 #mr 8 -- orig 5
@@ -946,14 +947,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6947
 #copystats 6939 -- Shadow Base
 #name "Shadow Animal"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowAnimalG1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowAnimalG2.tga"
 -- Darkpower affected stats:
-#str 9 -- 13 w/ DP, orig 13, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 7 -- 11 w/ DP, orig 8, -1
-#ap 15 -- 19 w/ DP, orig 15, -0
+#str 10 -- 13 w/ DP, orig 13, -4
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 8 -- 11 w/ DP, orig 8, -1
+#ap 15 -- 18 w/ DP, orig 15, -0
 -- Other stats:
 #invulnerable 8 -- orig natprot 5
 #mr 8 -- orig 5
@@ -979,16 +980,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6949
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonH1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonH2.tga"
 -- Darkpower affected stats:
-#str 5 -- 9 w/ DP, orig 9, -4
-#att 4 -- 8 w/ DP, orig 8, -4
-#def 7 -- 11 w/ DP, orig 8, -1
-#ap 12 -- 16 w/ DP, orig 12, -0
+#str 6 -- 9 w/ DP, orig 9
+#att 5 -- 8 w/ DP, orig 8
+#def 8 -- 11 w/ DP, orig 8
+#ap 13 -- 16 w/ DP, orig 12
 -- Other stats:
-#invulnerable 8 -- orig prot 5
+#invulnerable 5 -- orig prot 5
 #mr 13 -- orig 10
 #hp 5 -- orig 10
 #prec 10 -- orig 10
@@ -1007,16 +1008,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6950
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonB2.tga"
 -- Darkpower affected stats:
-#str 6 -- 10 w/ DP, orig 10, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1
-#ap 12 -- 16 w/ DP, orig 12, -0
+#str 7 -- 10 w/ DP, orig 10, -4
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1
+#ap 13 -- 16 w/ DP, orig 12, -0
 -- Other stats:
-#invulnerable 11 -- orig prot 8
+#invulnerable 8 -- orig prot 8
 #mr 13 -- orig 10
 #hp 5 -- orig 10
 #prec 10 -- orig 10
@@ -1036,16 +1037,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6951
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonC2.tga"
 -- Darkpower affected stats:
-#str 6 -- 10 w/ DP, orig 10, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
-#ap 12 -- 16 w/ DP, orig 12, -0
+#str 7 -- 10 w/ DP, orig 10, -4
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 13 -- 16 w/ DP, orig 12, -0
 -- Other stats:
-#invulnerable 15 -- orig prot 12
+#invulnerable 12 -- orig prot 12
 #mr 13 -- orig 10
 #hp 5 -- orig 10
 #prec 10 -- orig 10
@@ -1053,8 +1054,8 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 -- Equipment:
 #humanoid
 #weapon 819 -- Shadow Sword
-#armor 136 -- Bronze Scale Hauberk
-#armor 135 -- Bronze Cap
+--#armor 136 -- Bronze Scale Hauberk
+--#armor 135 -- Bronze Cap
 #armor 2 -- Shield
 -- Other tags:
 #montagweight 5
@@ -1065,16 +1066,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6952
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonD1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonD2.tga"
 -- Darkpower affected stats:
-#str 8 -- 12 w/ DP, orig 12, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
-#ap 13 -- 17 w/ DP, orig 13, -0
+#str 9 -- 12 w/ DP, orig 12, -4
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 14 -- 17 w/ DP, orig 13, -0
 -- Other stats:
-#invulnerable 10 -- orig prot 7
+#invulnerable 7 -- orig prot 7
 #mr 12 -- orig 9
 #hp 7 -- orig 13
 #prec 10 -- orig 10
@@ -1092,16 +1093,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6953
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonE1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonE2.tga"
 -- Darkpower affected stats:
-#str 7 -- 11 w/ DP, orig 11, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
-#ap 12 -- 16 w/ DP, orig 12, -0
+#str 8 -- 11 w/ DP, orig 11, -4
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 13 -- 16 w/ DP, orig 12, -0
 -- Other stats:
-#invulnerable 10 -- orig prot 7
+#invulnerable 7 -- orig prot 7
 #mr 13 -- orig 10
 #hp 6 -- orig 12
 #prec 10 -- orig 10
@@ -1119,16 +1120,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6954
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonF1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonF2.tga"
 -- Darkpower affected stats:
-#str 7 -- 11 w/ DP, orig 11, -4
-#att 7 -- 11 w/ DP, orig 11, -4
-#def 12 -- 16 w/ DP, orig 13, -1 (-1 from equipment)
-#ap 14 -- 18 w/ DP, orig 14, -0
+#str 8 -- 11 w/ DP, orig 11, -4
+#att 8 -- 11 w/ DP, orig 11, -4
+#def 13 -- 16 w/ DP, orig 13, -1 (-1 from equipment)
+#ap 15 -- 18 w/ DP, orig 14, -0
 -- Other stats:
-#invulnerable 9 -- orig prot 6
+#invulnerable 6 -- orig prot 6
 #mr 16 -- orig 13
 #hp 7 -- orig 14
 #prec 10 -- orig 10
@@ -1147,16 +1148,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6955
 #copystats 6939 -- Shadow Base
 #name "Shadow"
-#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of people retain some of their skills and equipment. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowPersonG1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowPersonG2.tga"
 -- Darkpower affected stats:
-#str 6 -- 10 w/ DP, orig 10, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
-#ap 10 -- 14 w/ DP, orig 10, -0
+#str 7 -- 10 w/ DP, orig 10, -4
+#att 7 -- 10 w/ DP, orig 10, -4
+#def 10 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
+#ap 11 -- 14 w/ DP, orig 10, -0
 -- Other stats:
-#invulnerable 16 -- orig prot 13
+#invulnerable 13 -- orig prot 13
 #mr 15 -- orig 12
 #hp 6 -- orig 11
 #prec 10 -- orig 10
@@ -1178,14 +1179,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6956
 #copystats 6939 -- Shadow Base
 #name "Shadow Familiar"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowScoutA1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowScoutA2.tga"
 -- Darkpower affected stats:
-#str 1 -- 7 w/ DP
-#att 3 -- 9 w/ DP
-#def 7 -- 13 w/ DP
-#ap 22 -- 26 w/ DP, orig 22, -0
+#str 1 -- 4 w/ DP
+#att 6 -- 9 w/ DP
+#def 12 -- 15 w/ DP
+#ap 24 -- 27 w/ DP, orig 22, -0
 -- Other stats:
 #invulnerable 5 -- orig natprot 2
 #mr 8 -- orig 5
@@ -1206,14 +1207,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6957
 #copystats 6939 -- Shadow Base
 #name "Shadow Familiar"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowScoutB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowScoutB2.tga"
 -- Darkpower affected stats:
-#str 1 -- 7 w/ DP
+#str 2 -- 5 w/ DP
 #att 3 -- 9 w/ DP
-#def 7 -- 13 w/ DP
-#ap 22 -- 26 w/ DP, orig 22, -0
+#def 9 -- 12 w/ DP
+#ap 22 -- 25 w/ DP
 -- Other stats:
 #invulnerable 5 -- orig natprot 2
 #mr 8 -- orig 5
@@ -1234,14 +1235,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6958
 #copystats 6939 -- Shadow Base
 #name "Shadow Familiar"
-#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of animals are easily bound, but not very powerful. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowScoutC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowScoutC2.tga"
 -- Darkpower affected stats:
-#str 1 -- 7 w/ DP
-#att 3 -- 9 w/ DP
-#def 7 -- 13 w/ DP
-#ap 22 -- 26 w/ DP, orig 22, -0
+#str 2 -- 5 w/ DP
+#att 6 -- 9 w/ DP
+#def 10 -- 13 w/ DP
+#ap 23 -- 26 w/ DP, orig 22, -0
 -- Other stats:
 #invulnerable 5 -- orig natprot 2
 #mr 8 -- orig 5
@@ -1262,15 +1263,15 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6962
 #copystats 6939 -- Shadow Base
 #name "Shadow Troll"
-#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowTrollA1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowTrollA2.tga"
 -- Darkpower affected stats:
-#darkpower 6
-#str 11 -- 15 w/ DP, orig 15, -4
-#att 5 -- 9 w/ DP, orig 9, -4
-#def 7 -- 11 w/ DP, orig 8, -1 (-1 from equipment)
-#ap 11 -- 15 w/ DP, orig 11, -0
+#darkpower 5
+#str 12 -- 17 w/ DP, orig 15
+#att 6 -- 11 w/ DP, orig 9
+#def 8 -- 13 w/ DP, orig 8 (-1 from equipment)
+#ap 11 -- 16 w/ DP, orig 11
 -- Other stats:
 #regeneration 20
 #invulnerable 13 -- orig prot 10
@@ -1292,17 +1293,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6959
 #copystats 6939 -- Shadow Base
 #name "Shadow Troll"
-#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowTrollA1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowTrollA2.tga"
 -- Darkpower affected stats:
-#str 15 -- 19 w/ DP, orig 19, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 8 -- 12 w/ DP, orig 9, -1 (-1 from equipment)
-#ap 13 -- 17 w/ DP, orig 13, -0
+#str 16 -- 19 w/ DP, orig 19
+#att 7 -- 10 w/ DP, orig 10
+#def 9 -- 12 w/ DP, orig 9 (-1 from equipment)
+#ap 14 -- 17 w/ DP, orig 13
 -- Other stats:
 #regeneration 20
-#invulnerable 15 -- orig prot 12
+#invulnerable 13 -- orig prot 12
 #mr 15 -- orig 14
 #hp 13 -- orig 26
 #prec 8 -- orig 8
@@ -1321,17 +1322,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6960
 #copystats 6939 -- Shadow Base
 #name "Shadow Troll"
-#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowTrollB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowTrollB2.tga"
 -- Darkpower affected stats:
-#str 18 -- 22 w/ DP, orig 22, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 8 -- 12 w/ DP, orig 9, -1 (-1 from equipment)
-#ap 13 -- 17 w/ DP, orig 13, -0
+#str 19 -- 22 w/ DP, orig 22
+#att 7 -- 10 w/ DP, orig 10
+#def 9 -- 12 w/ DP, orig 9 (-1 from equipment)
+#ap 14 -- 17 w/ DP, orig 13
 -- Other stats:
 #regeneration 20
-#invulnerable 18 -- orig prot 15
+#invulnerable 16 -- orig prot 15
 #mr 15 -- orig 14
 #hp 18 -- orig 35
 #prec 8 -- orig 8
@@ -1350,17 +1351,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6961
 #copystats 6939 -- Shadow Base
 #name "Shadow Troll"
-#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowTrollC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowTrollC2.tga"
 -- Darkpower affected stats:
-#str 18 -- 22 w/ DP, orig 22, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 8 -- 12 w/ DP, orig 9, -1 (-3 from equipment)
-#ap 13 -- 17 w/ DP, orig 13, -0
+#str 19 -- 22 w/ DP, orig 22
+#att 7 -- 10 w/ DP, orig 10
+#def 9 -- 12 w/ DP, orig 9 (-3 from equipment)
+#ap 14 -- 17 w/ DP, orig 13
 -- Other stats:
 #regeneration 20
-#invulnerable 24 -- orig prot 21
+#invulnerable 22 -- orig prot 21
 #mr 15 -- orig 14
 #hp 19 -- orig 38
 #prec 8 -- orig 8
@@ -1379,18 +1380,18 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6963
 #copystats 6939 -- Shadow Base
 #name "Shadow Troll"
-#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of trolls retain some of their skill and equipment, and in the case of trolls, their rapid regeneration. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowTrollD1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowTrollD2.tga"
 -- Darkpower affected stats:
-#darkpower 6
-#str 11 -- 15 w/ DP, orig 15, -4
-#att 5 -- 9 w/ DP, orig 9, -4
-#def 8 -- 12 w/ DP, orig 9, -1 (-1 from equipment)
-#ap 11 -- 15 w/ DP, orig 11, -0
+#darkpower 5
+#str 12 -- 17 w/ DP, orig 15
+#att 6 -- 10 w/ DP, orig 9
+#def 9 -- 14 w/ DP, orig 9 (-1 from equipment)
+#ap 12 -- 17 w/ DP, orig 11
 -- Other stats:
 #regeneration 20
-#invulnerable 19 -- orig prot 16
+#invulnerable 18 -- orig prot 16
 #mr 15 -- orig 14
 #hp 19 -- orig 38
 #prec 8 -- orig 8
@@ -1410,16 +1411,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6964
 #copystats 6939 -- Shadow Base
 #name "Shadow Giant"
-#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGiantA1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGiantA2.tga"
 -- Darkpower affected stats:
-#str 17 -- 21 w/ DP, orig 21, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
-#ap 15 -- 19 w/ DP, orig 15, -0
+#str 18 -- 21 w/ DP, orig 21
+#att 7 -- 10 w/ DP, orig 10
+#def 10 -- 13 w/ DP, orig 10 (-1 from equipment)
+#ap 16 -- 19 w/ DP, orig 15
 -- Other stats:
-#invulnerable 15 -- orig prot 12
+#invulnerable 13 -- orig prot 12
 #mr 14  -- orig 12
 #hp 17 -- orig 34
 #prec 10 -- orig 10
@@ -1439,16 +1440,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6965
 #copystats 6939 -- Shadow Base
 #name "Shadow Giant"
-#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGiantB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGiantB2.tga"
 -- Darkpower affected stats:
-#str 17 -- 21 w/ DP, orig 21, -4
-#att 6 -- 10 w/ DP, orig 10, -4
-#def 9 -- 13 w/ DP, orig 10, -1 (-1 from equipment)
-#ap 15 -- 19 w/ DP, orig 15, -0
+#str 18 -- 21 w/ DP, orig 21
+#att 7 -- 10 w/ DP, orig 10
+#def 10 -- 13 w/ DP, orig 10 (-1 from equipment)
+#ap 16 -- 19 w/ DP, orig 15
 -- Other stats:
-#invulnerable 15 -- orig prot 12
+#invulnerable 13 -- orig prot 12
 #mr 14  -- orig 12
 #hp 17 -- orig 34
 #prec 10 -- orig 10
@@ -1468,16 +1469,16 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6966
 #copystats 6939 -- Shadow Base
 #name "Shadow Giant"
-#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGiantC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGiantC2.tga"
 -- Darkpower affected stats:
-#str 22 -- 28 w/ DP, orig 28 (-6)
-#att 9 -- 13 w/ DP, orig 13, -4
-#def 7 -- 11 w/ DP, orig 8, -1 (-1 from equipment)
-#ap 18 -- 22 w/ DP, orig 18, -0
+#str 25 -- 28 w/ DP, orig 28
+#att 10 -- 13 w/ DP, orig 13
+#def 8 -- 11 w/ DP, orig 8 (-1 from equipment)
+#ap 19 -- 22 w/ DP, orig 18
 -- Other stats:
-#invulnerable 15 -- orig prot 12
+#invulnerable 13 -- orig prot 12
 #mr 11  -- orig 9
 #hp 53 -- orig 106
 #prec 8 -- orig 8
@@ -1496,17 +1497,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6967
 #copystats 6939 -- Shadow Base
 #name "Shadow Giant"
-#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of giants retain some of their skill and equipment, and for some beings they can retain special attributes. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGiantD1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGiantD2.tga"
 -- Darkpower affected stats:
-#str 10 -- 14 w/ DP, orig 14, -4
-#att 8 -- 12 w/ DP, orig 12, -4
-#def 11 -- 15 w/ DP, orig 12, -1
-#ap 14 -- 18 w/ DP, orig 14, -0
+#str 11 -- 14 w/ DP, orig 14
+#att 9 -- 12 w/ DP, orig 12
+#def 12 -- 15 w/ DP, orig 12
+#ap 15 -- 18 w/ DP, orig 14
 -- Other stats:
 #regeneration 10
-#invulnerable 18 -- orig invuln 15
+#invulnerable 15 -- orig invuln 15
 #mr 14  -- orig 12
 #hp 10 -- orig 20
 #prec 5 -- orig 5
@@ -1525,16 +1526,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6968
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatDragon1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatDragon2.tga"
 -- Darkpower affected stats:
-#str 8 -- 14 w/ DP, orig 25 (-6)
-#att 8 -- 12 w/ DP, orig 12, -4
-#def 11 -- 15 w/ DP, orig 12, -1
-#ap 10 -- 14 w/ DP, orig 10, -0
+#darkpower 4
+#str 10 -- 14 w/ DP, orig 25
+#att 8 -- 12 w/ DP, orig 12
+#def 11 -- 15 w/ DP, orig 12
+#ap 10 -- 14 w/ DP, orig 10
 -- Other stats:
-#invulnerable 23 -- orig prot 20
+#invulnerable 24 -- orig prot 20
 #prot 15
 #mr 18  -- orig 18
 #hp 60 -- orig 120
@@ -1548,6 +1550,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #flying
 -- Equipment:
 #lizard
+#itemslots 12288
 #heal
 #weapon 533 -- Dragon Fire
 #weapon 813 -- Shadow Bite
@@ -1564,16 +1567,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6969
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatBird1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatBird2.tga"
 -- Darkpower affected stats:
+#darkpower 4
 #str 19 -- 23 w/ DP, orig 23, -4
 #att 8 -- 12 w/ DP, orig 12, -4
 #def 14 -- 18 w/ DP, orig 15, -1
 #ap 10 -- 14 w/ DP, orig 10, -0
 -- Other stats:
-#invulnerable 18 -- orig prot 15
+#invulnerable 20
 #prot 10
 #mr 18 -- orig 18
 #hp 43 -- orig 86
@@ -1604,16 +1608,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6970
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatNosoi1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatNosoi2.tga"
 -- Darkpower affected stats:
+#darkpower 4
 #str 14 -- 18 w/ DP, orig 18, -4
 #att 8 -- 12 w/ DP, orig 12, -4
 #def 14 -- 18 w/ DP, orig 15, -1
 #ap 10 -- 14 w/ DP, orig 10, -0
 -- Other stats:
-#invulnerable 20 -- orig prot 0?? Ethereal looks bad on shadows.
+#invulnerable 20
 #prot 10
 #mr 18 -- orig 18
 #hp 34 -- orig 66
@@ -1627,6 +1632,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #deathdisease 10
 -- Equipment:
 #humanoid
+#itemslots 12288
 #heal
 #weapon 506 -- Plague Scythe
 #weapon 63 -- Life Drain
@@ -1641,17 +1647,18 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6971
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatLeng1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatLeng2.tga"
 -- Darkpower affected stats:
+#darkpower 4
 #str 16 -- 20 w/ DP, orig 20, -4
 #att 8 -- 12 w/ DP, orig 12, -4
 #def 7 -- 11 w/ DP, orig 8, -1
 #ap 20 -- 24 w/ DP, orig 20, -0
 -- Other stats:
-#invulnerable 21 -- orig prot 18
-#prot 15
+#invulnerable 20
+#prot 10
 #mr 18 -- orig 14
 #hp 34 -- orig 66
 #prec 10 -- orig 10
@@ -1684,16 +1691,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6972
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatLord1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatLord2.tga"
 -- Darkpower affected stats:
-#str 14 -- 20 w/ DP, orig 25 (-6)
-#att 8 -- 12 w/ DP, orig 12, -4
-#def 11 -- 15 w/ DP, orig 12, -1
-#ap 18 -- 22 w/ DP, orig 18, -0
+#darkpower 4
+#str 21 -- 25 w/ DP, orig 25
+#att 8 -- 12 w/ DP, orig 12
+#def 11 -- 15 w/ DP, orig 12
+#ap 18 -- 22 w/ DP, orig 18
 -- Other stats:
-#invulnerable 15 -- orig prot 8
+#invulnerable 20
 #prot 10
 #mr 18 -- orig 18
 #hp 45 -- orig 90
@@ -1710,6 +1718,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #expertleader
 -- Equipment:
 #humanoid
+#itemslots 12288
 #heal
 #forestsurvival
 #weapon 815 -- Shadow Claw
@@ -1726,16 +1735,17 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6973
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatNiefel1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatNiefel2.tga"
 -- Darkpower affected stats:
-#str 20 -- 26 w/ DP, orig 26 (-6)
-#att 9 -- 13 w/ DP, orig 13, -4
-#def 12 -- 16 w/ DP, orig 13, -1
-#ap 16 -- 20 w/ DP, orig 16, -0
+#darkpower 4
+#str 22 -- 26 w/ DP, orig 26
+#att 9 -- 13 w/ DP, orig 13
+#def 12 -- 16 w/ DP, orig 13
+#ap 16 -- 20 w/ DP, orig 16
 -- Other stats:
-#invulnerable 17 -- orig prot 14
+#invulnerable 20
 #prot 10
 #mr 18 -- orig 18
 #hp 38 -- orig 75
@@ -1752,6 +1762,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #coldpower 1
 -- Equipment:
 #humanoid
+#itemslots 12288
 #mountainsurvival
 #weapon 37 -- Ice Blade
 #armor 28 -- Ice Aegis
@@ -1766,17 +1777,18 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6974
 #copystats 6939 -- Shadow Base
 #name "Great Shadow"
-#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "When a magically powerful being's shadow is captured, it will often retain some of their magical power, and their very presence can shroud an entire battlefield in darkness. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowGreatCyclops1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowGreatCyclops2.tga"
 -- Darkpower affected stats:
-#str 22 -- 28 w/ DP, orig 28 (-6)
+#darkpower 4
+#str 24 -- 28 w/ DP, orig 28
 #att 7 -- 11 w/ DP, orig 11, -4
 #def 11 -- 15 w/ DP, orig 12, -1
 #ap 14 -- 18 w/ DP, orig 14, -0
 -- Other stats:
 #invulnerable 27 -- orig prot 24
-#prot 18
+#prot 15
 #mr 18 -- orig 18
 #hp 46 -- orig 91
 #prec 7 -- orig 7
@@ -1789,9 +1801,9 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #stonebeing
 -- Equipment:
 #humanoid
+#itemslots 12288
 #mountainsurvival
-#weapon 37 -- Ice Blade
-#armor 28 -- Ice Aegis
+#weapon 823 -- Shadow Crush
 -- Other tags:
 #reform 0
 #mor 30
@@ -1803,14 +1815,14 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #newmonster 6940
 #copystats 6939 -- Shadow Base
 #name "Shadow Bird"
-#descr "The shadows of birds difficult to bind and not very powerful, but serve as useful scouts. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
+#descr "The shadows of birds difficult to bind and not very powerful, but serve as useful scouts. Like all shadows, they are weakened by the light and grow strong in the dark. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished. Shadows can prove difficult to destroy as they often reform into a new shadow in place of death."
 #spr1 "Blue_Troldsvarheim/Blue_ShadowScoutE1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_ShadowScoutE2.tga"
 -- Darkpower affected stats:
-#str 1 -- 7 w/ DP
-#att 2 -- 8 w/ DP
-#def 10 -- 16 w/ DP
-#ap 22 -- 26 w/ DP, orig 22, -0
+#str 2 -- 5 w/ DP
+#att 5 -- 8 w/ DP
+#def 13 -- 16 w/ DP
+#ap 23 -- 26 w/ DP, orig 22, -0
 -- Other stats:
 #invulnerable 3 -- orig natprot 0
 #mr 8 -- orig 5
@@ -1893,7 +1905,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #darkpower 4
 #str 12 -- 16 w/ DP
 #att 9 -- 13 w/ DP
-#def 14 -- 18 w/ DP
+#def 10 -- 14 w/ DP
 #ap 16 -- 20 w/ DP
 -- Other stats:
 #invulnerable 20
@@ -1922,11 +1934,10 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #neednoteat
 #amphibian
 #enc 0
-#saltvul
 #holy
 #magicskill 1 2 -- Air
 #magicskill 5 4 -- Death
-#magicskill 4 3 -- Astral
+#magicskill 4 1 -- Astral
 #magicskill 8 2 -- Holy
 #nametype 105 -- Undead
 #twiceborn 6977 -- Itself
@@ -1943,7 +1954,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #darkpower 4
 #str 16 -- 20 w/ DP
 #att 9 -- 13 w/ DP
-#def 14 -- 18 w/ DP
+#def 10 -- 14 w/ DP
 #ap 16 -- 20 w/ DP
 -- Other stats:
 #invulnerable 25
@@ -1975,7 +1986,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #holy
 #magicskill 1 2 -- Air
 #magicskill 5 5 -- Death
-#magicskill 4 4 -- Astral
+#magicskill 4 3 -- Astral
 #magicskill 8 3 -- Holy
 #nametype 105 -- Undead
 #twiceborn 6978 -- Itself
@@ -1988,11 +1999,11 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 #spr1 "Blue_Troldsvarheim/Blue_TroldsvarTwicebornB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_TroldsvarTwicebornB2.tga"
 -- Darkpower affected stats:
-#darkpower 6
-#str 13 -- 19 w/ DP
-#att 8 -- 14 w/ DP
-#def 7 -- 13 w/ DP
-#ap 9 -- 15 w/ DP
+#darkpower 4
+#str 15 -- 19 w/ DP
+#att 9 -- 13 w/ DP
+#def 8 -- 12 w/ DP
+#ap 11 -- 15 w/ DP
 -- Other stats:
 #invulnerable 20
 #regeneration 10
@@ -2036,7 +2047,7 @@ In combat, most trolls prefer to smash things with blunt objects, and are armed 
 -- Pretender Great Shadow
 #newmonster 6980
 #name "Monstrous Shadow"
-#descr "The shadows of magically powerful beings often retain some of their magical power, and their very presence can shroud entire battlefields in darkness. This shadow once belonged to a being the likes of which this world may never see again, and though only it's shadow it retains enough power to rise to the seat of the Pantokrator.
+#descr "The shadows of magically powerful beings often retain some of their magical power, and their very presence can shroud entire battlefields in darkness. This shadow once belonged to a being the likes of which this world may never see again, and though only its shadow it retains enough power to rise to the seat of the Pantokrator.
 In battle, it's shadow will extend across the entire battlefield, shrouding it in darkness."
 #spr1 "Blue_Troldsvarheim/Blue_PretenderShadowB1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_PretenderShadowB2.tga"
@@ -2288,12 +2299,12 @@ In battle, it's shadow will extend across the entire battlefield, shrouding it i
 #startage 255
 #end
 
--- Zulkhaz, Troldsvar with 3F1A3D.
+-- Zulkhaz, Troldsvar with 2F1A3D.
 #newmonster 6987
 #copystats 6925 -- Troldsvar
 #name "Banefire Warlock"
 #fixedname "Zulkhaz"
-#descr "Even in his early youth, Zulkhaz was different from his fellow trolls. Where they would stay in the deepest and darkest regions of the Troldsvarheim forest to avoid the sun's harsh light, Zulkhaz would squint up into the skies in almost morbid fascination. As soon as he was old enough, he sought out a renegade Abysian warlock and convinced him to take him on as a bodyguard. The Abysian quickly realized how brilliant the young troll was and made him into his apprentice. The years of apprenticeship have left Zulkhaz's tough hide with countless burns, but in the end he learned what he had come for: How to create fire - and how to snuff it out. When he had learned all he could from his Abysian master, Zulkhaz killed him and returned to Troldsvarheim. There, he combined his knowledge of fire with the magic of death has mastered banefire, the corrupt fires of the underworld. Now the coming God of Darkness has awoken, and Zulkhaz stands ready to extinguish the flames of heaven itself in their name."
+#descr "Even in his early youth, Zulkhaz was different from his fellow trolls. Where they would stay in the deepest and darkest regions of the Troldsvarheim forest to avoid the sun's harsh light, Zulkhaz would squint up into the skies in almost morbid fascination. As soon as he was old enough, he sought out a renegade Abysian warlock and convinced him to take him on as a bodyguard. The Abysian quickly realized how brilliant the young troll was and made him into his apprentice. The years of apprenticeship have left Zulkhaz's tough hide with countless burns, but in the end he learned what he had come for: How to create fire - and how to snuff it out. When he had learned all he could from his Abysian master, Zulkhaz killed him and returned to Troldsvarheim. There, he combined his knowledge of fire with the magic of death and has mastered banefire, the corrupt fires of the underworld. Now the coming God of Darkness has awoken, and Zulkhaz stands ready to extinguish the flames of heaven itself in their name."
 #spr1 "Blue_Troldsvarheim/Blue_TroldsvarHeroFireC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_TroldsvarHeroFireC2.tga"
 #mor 12
@@ -2372,7 +2383,7 @@ In battle, it's shadow will extend across the entire battlefield, shrouding it i
 #copystats 633 -- Werewolf
 #name "Werewolf Lord"
 #fixedname "Vranex"
-#descr "Vranex was once an Ambibate chieftan, until one night he and his warriors were attacked in the night by a pack of werewolves. The sound of screams and the tearing of flesh filled the night as his warriors fell before the might of the beasts. When the battle ended, Vranex stood as the last of his tribe. Unable to return to his people - doubly cursed by his defeat and the blood of the beast that now runs in his veins - Vranex has wandered the wilderness for many years, searching for meaning in his new form, only finding peace in the dark forests of Troldsvarheim with his curse giving him the strength to fight for his new home. Vranex has picked up many skills in his long life as a wanderer, and when he enters a battle wolves will come to his aid from all directions."
+#descr "Vranex was once a warrior chieftan in another land, until one night he and his warriors were attacked in the night by a pack of werewolves. The sound of screams and the tearing of flesh filled the night as his warriors fell before the might of the beasts. When the battle ended, Vranex stood as the last of his tribe. Unable to return to his people - doubly cursed by his defeat and the blood of the beast that now runs in his veins - Vranex has wandered the wilderness for many years, searching for meaning in his new form, only finding peace in the dark forests of Troldsvarheim with his curse giving him the strength to fight for his new home. Vranex has picked up many skills in his long life as a wanderer, and when he enters a battle wolves will come to his aid from all directions."
 #spr1 "Blue_Troldsvarheim/Blue_TroldsvarHeroWerewolfC1.tga"
 #spr2 "Blue_Troldsvarheim/Blue_TroldsvarHeroWerewolfC2.tga"
 #okleader
@@ -2590,11 +2601,11 @@ Any battles fought there will have partial darkness."
 #school 4 -- Enchantment
 #researchlevel 2
 #path 0 5 -- Death
-#pathlevel 0 2
+#pathlevel 0 1
 #effect 10001
-#nreff 1010 -- 12+1
+#nreff 1007 -- 8+1
 #damage -5300 -- Shadow Animals
-#fatiguecost 300
+#fatiguecost 200
 --#spec 8388608
 #restricted 204
 #end
@@ -2608,9 +2619,9 @@ Any battles fought there will have partial darkness."
 #path 0 5 -- Death
 #pathlevel 0 2
 #effect 10001
-#nreff 1008 -- 10+1
+#nreff 1004 -- 6+1
 #damage -5301 -- Shadow People
-#fatiguecost 400
+#fatiguecost 200
 --#spec 8388608
 #restricted 204
 #end
@@ -2624,9 +2635,9 @@ Any battles fought there will have partial darkness."
 #path 0 5 -- Death
 #pathlevel 0 3
 #effect 10001
-#nreff 1002 -- 5+1
+#nreff 1001 -- 4+1
 #damage -5303 -- Shadow Trolls
-#fatiguecost 600
+#fatiguecost 400
 --#spec 8388608
 #restricted 204
 #end
@@ -2636,13 +2647,13 @@ Any battles fought there will have partial darkness."
 #name "Capture Great Shadow"
 #descr "The Shadow Weaver steals the shadow of a magically powerful being, then binds it to the weaver's will. The shadows of the most magically powerful beings often retain some of their magical power, and their very presence can shroud a battlefield in darkness. While their appearance can make them seem like the souls of the recently departed, they are not truly undead and cannot be banished."
 #school 4 -- Conjuration
-#researchlevel 7
+#researchlevel 8
 #path 0 5 -- Death
 #pathlevel 0 5
 #effect 10021
 #nreff 1
 #damage -5304 -- Great Shadow
-#fatiguecost 4500
+#fatiguecost 5000
 #restricted 204
 #end
 
@@ -3115,6 +3126,70 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 #airrange 2
 #end
 
+#newsite 1710
+#level 0
+#rarity 5
+#path 8
+#name "Troldsvar Heroes"
+#homecom 6985 -- Torvast
+#homecom 6987 -- Zulkhaz
+#homecom 6988 -- Maliik
+#homecom 6989 -- Venjo
+#homecom 6990 -- Vranex
+#homecom 6991 -- Zeleria
+#end
+
+#newsite 1711
+#level 0
+#rarity 5
+#path 5
+#name "Troldsvar Shadows"
+#homecom 6940 -- Shadow Bird
+#homemon 6938 -- Shadow Incarnate
+#homemon 6941 -- Shadow Animal
+#homemon 6942 -- Shadow Animal
+#homemon 6944 -- Shadow Animal
+#homemon 6949 -- Shadow Person
+#homemon 6952 -- Shadow Person
+#homemon 6951 -- Shadow Person
+#homemon 6959 -- Shadow Troll
+#homemon 6964 -- Shadow Giant
+#end
+
+#newsite 1712
+#level 0
+#rarity 5
+#path 4
+#name "Troldsvar Phantoms & Great Shadows"
+#homecom 6978 -- Ancient Phantom
+#homecom 6977 -- Phantom
+#homecom 6975 -- Totem
+#homecom 6968 -- Great Shadow
+#homecom 6969 -- Great Shadow
+#homecom 6970 -- Great Shadow
+#homecom 6971 -- Great Shadow
+#homecom 6972 -- Great Shadow
+#homecom 6973 -- Great Shadow
+#homecom 6974 -- Great Shadow
+#end
+
+#newsite 1713
+#level 0
+#rarity 5
+#path 3
+#name "Troldsvar Summons"
+#homecom 1010 -- Svartalf
+#homecom 6976 -- Vuorihiisi
+#homecom 519 -- Troll King
+#homemon 1086 -- Troll Moose Knight
+#homemon 1037 -- War Troll
+#homemon 518 -- Troll
+#homecom 2221 -- Seithberender
+#homecom 2220 -- Shaman
+#homemon 2219 -- Forest Troll
+#homemon 2229 -- Forest Giant
+#end
+
 -- ENDSITES
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3148,6 +3223,11 @@ Priests: Average."
 #clearsites
 #startsite "Forest of Shadows"
 #startsite "Dark Clouds"
+
+#futuresite "Troldsvar Summons"
+#futuresite "Troldsvar Shadows"
+#futuresite "Troldsvar Phantoms & Great Shadows"
+#futuresite "Troldsvar Heroes"
 
 #clearrec
 #addrecunit 6926 -- Troop A, Great club

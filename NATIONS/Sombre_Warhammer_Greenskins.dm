@@ -1,5 +1,4 @@
-
--- @@@@ Greenskins
+---- Greenskins
 
 ------ ITEMS
 
@@ -110,8 +109,6 @@
 #len 4
 #blunt
 #end
-
-
 
 
 --- Ball and chain
@@ -583,7 +580,7 @@
 #prot 21
 #enc 3
 #def -2
-#magic
+#magicarmor
 #end
 
 
@@ -593,7 +590,7 @@
 #copyarmor 38 -- blacksteel full plate
 #name "Blood-Forged Armour"
 #prot 25 -- +1 over blacksteel full plate, everything else same
-#magic
+#magicarmor
 #end
 
 
@@ -613,7 +610,7 @@
 #copyarmor 14 -- plate hauberk
 #name "Azhag's 'Ard Armour"
 #prot 20
-#magic
+#magicarmor
 #end
 
 
@@ -1872,7 +1869,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 6
+#rpcost 5
 #rcost 0 -- to overall reduce reliance on resources
 #weapon 1086 -- choppa
 #armor 2 -- shield
@@ -1911,7 +1908,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 6
+#rpcost 5
 #rcost 1
 #weapon 1057 -- stone axe
 #armor 105 -- hide shield
@@ -2256,7 +2253,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 6
+#rpcost 5
 #rcost 1
 #weapon 1086 -- choppa
 #armor 2 -- shield
@@ -2295,7 +2292,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 6
+#rpcost 5
 #rcost 1
 #weapon 1086 -- choppa
 #armor 7 -- scale mail cuirass
@@ -2332,7 +2329,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 6
+#rpcost 5
 #rcost 1
 #weapon 1086 -- choppa
 #armor 11 -- ring mail hauberk
@@ -2986,7 +2983,7 @@
 #ap 20 --- move 7, slower cavalry
 #gcost 45
 #chaosrec 5
-#rpcost 21
+#rpcost 19
 #rcost 1
 #weapon 1050 -- boar tusk
 #weapon 1086 -- choppa
@@ -3026,7 +3023,7 @@
 #ap 20 --- move 7, slower cavalry
 #gcost 45
 #chaosrec 5
-#rpcost 14 -- much more common than the regular 21
+#rpcost 13 -- much more common than the regular 19
 #rcost 1
 #weapon 1068 -- stone light lance
 #weapon 1050 -- boar tusk
@@ -3515,6 +3512,7 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
+#digest 5
 #armor 150 -- bone helmet
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3560,6 +3558,7 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
+#digest 5
 #armor 150 -- bone helmet
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3606,6 +3605,7 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
+#digest 5
 #armor 384 -- makeshift armour
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3651,6 +3651,7 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
+#digest 5
 #armor 384 -- makeshift armour
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3967,7 +3968,7 @@
 #name "Nightgoblin Great Shaman"
 #descr "Great Shamans are the most powerful of their kind, so clearly marked by Mork and Gork that they are recognised as direct agents of their will. Amongst the Nightgoblins their is no higher status than that of Great Shaman and it is said even Skarsnik, the most famous Nightgoblin Warboss to ever live, would not dare cross one. It is the Great Shamans that preside over the gatherings of Nightgoblin tribes to share in vast cauldrons of fungus brew, it is they who divine the location of Great Cave Squigs to hunt, and it is they who select those who will receive the Madcap mushroom blessing and become Fanatics. In addition to their advanced magical powers, Nightgoblin Great Shamans consume so many magic mushrooms that they can at times speak the will of Mork and Gork directly and so have considerable priestly authority. Indeed they train tiny Squiggly Beasts to follow them around with a bowl of mushrooms they can feast on at any moment. It goes without saying that these habits result in extremely frequent bouts of complete insanity.
 
-[Discounted to 175 gold in Turmoil 3]"
+[Discounted to 180 gold in Turmoil 3]"
 #hp 10
 #size 2 --- normal
 #prot 2 --- toughness 4
@@ -3980,8 +3981,8 @@
 #prec 11 --- ballistic skill 3 but I've established NGs are slightly better shots
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 250
-#chaosrec 25
+#gcost 255
+#chaosrec 25 -- so 180 in turmoil 3
 #rpcost 2 -- good cap only mage, but insane and not up to level of the orc great shaman
 #rcost 1
 #weapon 493 -- sickle staff
@@ -4005,6 +4006,7 @@
 #startage 50
 #maxage 5000
 #reinvigoration 1
+#researchbonus -1
 #end
 
 
@@ -4875,6 +4877,7 @@
 #maxage 5000
 #invulnerable 14 -- +5 over regular savage orc infantry, +1 for berserk cav
 #xpshape 25
+#incscale 0 -- increases turmoil
 #end
 
 ---- Savage Orc Warboss XPshape
@@ -4919,6 +4922,7 @@
 #startage 30
 #maxage 5000
 #invulnerable 14 -- +5 over regular savage orc infantry, +1 for berserk cav
+#incscale 0 -- increases turmoil
 #end
 
 ---- Savage Orc Waaaghboss
@@ -4932,6 +4936,7 @@
 #mr 16 --- tier 4 combat leader +2 for warpaint
 #unsurr 4 --- tier 4 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -4976,6 +4981,7 @@
 #startage 30
 #maxage 5000
 #xpshape 25
+#incscale 0 -- increases turmoil
 #end
 
 ---- Orc Warboss XPshape
@@ -5017,6 +5023,7 @@
 #mounted
 #startage 30
 #maxage 5000
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -5060,6 +5067,7 @@
 #startage 30
 #maxage 5000
 #xpshape 25
+#incscale 0 -- increases turmoil
 #end
 
 ---- Orc Warboss XPshape (SOUTH)
@@ -5101,6 +5109,7 @@
 #mounted
 #startage 30
 #maxage 5000
+#incscale 0 -- increases turmoil
 #end
 
 ---- Orc Waaaghboss
@@ -5114,6 +5123,7 @@
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 ---- Orc Waaaghboss (SOUTH)
@@ -5127,6 +5137,7 @@
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -5700,6 +5711,7 @@
 #secondtmpshape 3951 -- gigantic forest spider
 #xpshape 25
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 ---- Forest Goblin Warboss XPshape
@@ -5745,6 +5757,7 @@
 #poisonres 10
 #secondtmpshape 3951 -- gigantic forest spider
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -5761,6 +5774,7 @@
 #mr 16 --- tier 4 combat leader +2 for spider
 #unsurr 4 --- tier 4 combat leader
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -5846,6 +5860,7 @@
 #maxage 5000
 #xpshape 25
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 ---- Goblin Warboss XPshape
@@ -5889,6 +5904,7 @@
 #startage 30
 #maxage 5000
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -5935,6 +5951,7 @@
 #maxage 5000
 #xpshape 25
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 ---- Goblin Warboss XPshape (SOUTH)
@@ -5978,6 +5995,7 @@
 #startage 30
 #maxage 5000
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -5996,6 +6014,7 @@
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6013,6 +6032,7 @@
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6224,6 +6244,7 @@
 #maxage 5000
 #xpshape 25
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 ---- Nightgoblin Warboss XPshape
@@ -6265,6 +6286,7 @@
 #startage 30
 #maxage 5000
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 ---- Nightgoblin Waaaghboss
@@ -6279,6 +6301,7 @@
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
 #taskmaster 1
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6409,6 +6432,7 @@
 #startage 30
 #maxage 5000
 #xpshape 25
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6450,6 +6474,7 @@
 #nametype 210
 #startage 30
 #maxage 5000
+#incscale 0 -- increases turmoil
 #end
 
 ---- Black Orc Waaaghboss
@@ -6463,6 +6488,7 @@
 #mr 15 --- tier 4 combat leader + CD manip
 #unsurr 4 --- tier 4 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6517,6 +6543,7 @@
 #berserk 5
 #invulnerable 16 -- +7
 #xpshape 30 -- 5 more than regualr, 5 less than grimgor
+#incscale 0 -- increases turmoil
 #end
 
 ---- Grokka XPshape
@@ -6558,6 +6585,7 @@
 #itemslots 290944 -- crown, 3 misc
 #berserk 5
 #invulnerable 16 -- +7
+#incscale 0 -- increases turmoil
 #end
 
 ---- Grokka in Waaagh
@@ -6571,6 +6599,7 @@
 #mr 18
 #unsurr 5 --- tier 5 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6671,6 +6700,7 @@
 #inspirational 1
 #xpshape 35
 #taskmaster 3
+#incscale 0 -- increases turmoil
 #end
 
 ---- Grom XPshape
@@ -6718,6 +6748,7 @@
 #command 60 -- so he can command huge swathes of goblins
 #inspirational 1
 #taskmaster 3
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6731,6 +6762,7 @@
 #inspirational 2
 #holy
 #taskmaster 3
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6783,6 +6815,7 @@
 #itemslots 28672 -- just 3 misc
 #shatteredsoul 15
 #xpshape 35
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6833,6 +6866,7 @@
 #magicskill 5 3 -- D3
 #itemslots 28672 -- just 3 misc
 #shatteredsoul 15
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6846,6 +6880,7 @@
 #inspirational 1
 #unsurr 5 --- tier 5 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6925,6 +6960,7 @@
 #fear 8 -- terror, standard +3 because it's big
 #secondtmpshape 3889 -- feral wyvern
 #xpshape 30
+#incscale 0 -- increases turmoil
 #end
 
 ---- Orc Warboss on Wyvern XPshape
@@ -6968,6 +7004,7 @@
 #flying
 #fear 8 -- terror, standard +3 because it's big
 #secondtmpshape 3889 -- feral wyvern
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -6982,6 +7019,7 @@
 #mr 16 --- tier 4 combat leader + wyvern
 #unsurr 4 --- tier 4 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -7029,6 +7067,7 @@
 #fear 8 -- terror, standard +3 because it's big
 #secondtmpshape 3889 -- feral wyvern
 #xpshape 30
+#incscale 0 -- increases turmoil
 #end
 
 ---- Orc Warboss on Wyvern XPshape (SOUTH)
@@ -7072,6 +7111,7 @@
 #flying
 #fear 8 -- terror, standard +3 because it's big
 #secondtmpshape 3889 -- feral wyvern
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -7086,6 +7126,7 @@
 #mr 16 --- tier 4 combat leader + wyvern
 #unsurr 4 --- tier 4 combat leader
 #holy
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -7185,6 +7226,7 @@
 --itemslots 30850 - one hand, one head, three misc, one feet
 #itemslots 30848 - one head, three misc, one feet
 #xpshape 35
+#incscale 0 -- increases turmoil
 #end
 
 ---- Hero Gorfang Rotgut XPshape
@@ -7225,6 +7267,7 @@
 #maxage 5000
 --itemslots 30850 - one hand, one head, three misc, one feet
 #itemslots 30848 - one head, three misc, one feet
+#incscale 0 -- increases turmoil
 #end
 
 ---- Hero Gorfang Rotgut waaaghform
@@ -7238,6 +7281,7 @@
 #inspirational 1
 #mr 15 --- tier 5 combat leader
 #unsurr 5 --- tier 5 combat leader
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -7282,6 +7326,7 @@
 #maxage 5000
 #itemslots 30848 - one head, three misc, one feet
 #xpshape 35
+#incscale 0 -- increases turmoil
 #end
 
 ---- Grimgor XPshape
@@ -7324,6 +7369,7 @@
 #startage 35
 #maxage 5000
 #itemslots 30848 - one head, three misc, one feet
+#incscale 0 -- increases turmoil
 #end
 
 ---- Grimgor waaaghform
@@ -7338,6 +7384,7 @@
 #mr 17 --- +1 over usual
 #unsurr 6 --- tier 6 combat leader
 #superiorleader
+#incscale 0 -- increases turmoil
 #end
 
 
@@ -7724,7 +7771,7 @@ Savage Orc Boss -> Savage Orc Big Boss -> Savage Orc Warboss -> Savage Orc Waaag
 #4d6units 3805 -- lance wolfriders
 #3d6units 3806 -- bow wolfriders
 #2d3units 3858 -- stone troll
-#5d3units 3865 -- goblin wolf chariot lance
+#4d3units 3865 -- goblin wolf chariot lance
 #4d3units 3866 -- goblin wolf chariot archer
 #transform 3985 -- grom waaagh
 #end
@@ -9242,7 +9289,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 #cavenation 1 -- can start in caves but don't always
 #idealcold 0
-#color 0.0 0.4 0.0 -- it's darkish green currently
+#color 0.0 0.2 0.0 -- it's dark green
 
 ----- Pretender settings -- basically done
 
@@ -9501,6 +9548,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 --addreccom 3983 -- Hero Grom the paunch of misty mountain
 --addreccom 3988 -- wurrzag da great green prophet
 --addreccom 3989 -- grokka goreaxe
+--addreccom 3971 -- orc warboss on wyvern (SOUTH)
 
 #addforeigncom 3900 -- goblin wolfrider scout
 #addforeigncom 3964 -- goblin boss (SOUTH)
@@ -9546,3 +9594,10 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #startunitnbrs2 25
 #startscout 3900 -- goblin wolfrider scout
 #end
+
+
+
+
+
+
+-- ---- End Greenskins

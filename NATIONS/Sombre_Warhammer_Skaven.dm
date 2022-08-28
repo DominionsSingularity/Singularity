@@ -1,4 +1,4 @@
--- @@@@ Skaven
+---- Skaven
 
 
 
@@ -3992,9 +3992,14 @@ Mechanics: Can discover warpstone sites, exhaust them, and reopen them with labs
 #color 0.5 0.4 0.2
 
 #startcom 5560
-#startunittype1 5541
-#startunitnbrs1 16
-#startunittype2 5540
-#startunitnbrs2 16
+#startunittype1 5541 -- spear clanrat
+#startunitnbrs1 26
+#startunittype2 5540 -- sword clanrat
+#startunitnbrs2 13
 #startscout 5580
 #end
+
+
+
+
+-- ---- End Skaven

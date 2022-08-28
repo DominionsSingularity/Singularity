@@ -1,4 +1,4 @@
--- @@@@ Empire
+---- Empire
 
 
 
@@ -801,8 +801,8 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 9
-#rpcost 9
+#gcost 8
+#rpcost 8
 #rcost 1
 #armor 9 -- Plate Cuirass
 #armor 20 -- Iron Cap
@@ -831,8 +831,8 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 10
-#rpcost 9
+#gcost 9
+#rpcost 8
 #rcost 1
 #armor 11 -- Ring mail Hauberk
 #armor 20 -- Iron Cap
@@ -861,8 +861,8 @@
 #prec 10
 #mapmove 14 -- not real state troops
 #ap 12
-#gcost 9
-#rpcost 9
+#gcost 8
+#rpcost 8
 #rcost 1
 #armor 11 -- Ring mail Hauberk
 #armor 119 -- Reinforced Leather Cap
@@ -891,7 +891,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 10
+#gcost 9
 #rpcost 9
 #rcost 1
 #armor 9 -- Plate Cuirass
@@ -921,7 +921,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 10
+#gcost 9
 #rpcost 9
 #rcost 1
 #armor 9 -- Plate Cuirass
@@ -951,7 +951,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 10
+#gcost 9
 #rpcost 9
 #rcost 1
 #armor 9 -- Plate Cuirass
@@ -981,7 +981,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 12
+#gcost 11
 #rpcost 11
 #rcost 1
 #armor 9 -- Plate Cuirass
@@ -1011,7 +1011,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 12
+#gcost 11
 #rpcost 11
 #rcost 1
 #armor 9 -- Plate Cuirass
@@ -1041,7 +1041,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 12
+#gcost 11
 #rpcost 11
 #rcost 1
 #armor 9 -- Plate Cuirass
@@ -1254,8 +1254,8 @@
 #prec 10
 #mapmove 12 -- militia
 #ap 12
-#gcost 10
-#rpcost 9
+#gcost 9
+#rpcost 8
 #rcost 1
 #armor 10 -- Leather Hauberk
 #armor 120 -- Leather Cap
@@ -1284,8 +1284,8 @@
 #prec 10
 #mapmove 12 -- militia
 #ap 12
-#gcost 10
-#rpcost 9
+#gcost 9
+#rpcost 8
 #rcost 1
 #armor 10 -- Leather Hauberk
 #armor 120 -- Leather Cap
@@ -1314,8 +1314,8 @@
 #prec 11
 #mapmove 14 -- not militia, not state troops
 #ap 12
-#gcost 10
-#rpcost 10
+#gcost 9
+#rpcost 9
 #rcost 1
 #armor 10 -- Leather Hauberk
 #armor 120 -- Leather Cap
@@ -1376,7 +1376,7 @@
 #prec 12
 #mapmove 16
 #ap 12
-#gcost 12
+#gcost 11
 #rpcost 16
 #rcost 1
 #armor 10 -- Leather Hauberk
@@ -1666,7 +1666,7 @@
 #ap 18
 #gcost 35
 #rpcost 46
-#rcost 12
+#rcost 18
 #armor 284 -- empire full plate
 #armor 21 -- Full Helmet
 #armor 3 -- Kite Shield
@@ -1701,7 +1701,7 @@
 #ap 26
 #gcost 30
 #rpcost 46
-#rcost 6
+#rcost 8
 #armor 12 -- Scale Mail Hauberk
 #armor 118 -- half helmet
 #armor 2 -- Shield
@@ -1710,84 +1710,6 @@
 #weapon 10 -- falchion
 #nametype 146 -- rus male
 #coldres 3
-#end
-
-
----- Gryphon Legionary
-
-#newmonster 7478
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Gryphon_Legion.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Gryphon_Legion2.tga"
-#name "Gryphon Legionary"
-#descr "The Gryphon Legion are an elite force of Kislevite Winged Lancers who recruit excluisvely from the best and brightest of the Gospodar nobility. Much like their more common counterparts they wear elaborate armour with an unusual feather 'wing' mounted on the back, though where possible they prefer to use feathers from Chimeras, Griffons, and Great Eagles rather than mundane brids of prey. The Gryphon Legion are notoriously independently spirited and typically serve as mercenaries in detachments across the Old World, but they are sworn to return and defend the crown of Kislev should the royal family send word for them. In battle they are famed for their devastating charges and reckless bravery. No Gospodar could ever match the skill and speed of an Ungol horseman, for they learn to ride before they walk, but the Gryphon Legion are mounted on the same superior steeds and can easily outpace the heavy cavalry of the Empire."
-#hp 12
-#size 3
-#mounted
-#ressize 2
-#prot 0
-#mor 14
-#mr 10
-#enc 5
-#str 11
-#att 12
-#def 11
-#prec 10
-#mapmove 24 -- superior horses
-#snow
-#ap 26
-#gcost 40
-#rpcost 46
-#rcost 6
-#armor 12 -- Scale Mail Hauberk
-#armor 126 -- legionary helmet
-#armor 2 -- Shield
-#weapon 4 -- lance
-#weapon 56 -- Hoof
-#weapon 10 -- falchion
-#nametype 146 -- rus male
-#coldres 3
-#end
-
-
----- Gryphon Legionary (summmoning form)
-
-#newmonster 7481
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Gryphon_Legion.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Gryphon_Legion2.tga"
-#name "Gryphon Legionary"
-#descr "The Gryphon Legion are an elite force of Kislevite Winged Lancers who recruit excluisvely from the best and brightest of the Gospodar nobility. Much like their more common counterparts they wear elaborate armour with an unusual feather 'wing' mounted on the back, though where possible they prefer to use feathers from Chimeras, Griffons, and Great Eagles rather than mundane brids of prey. The Gryphon Legion are notoriously independently spirited and typically serve as mercenaries in detachments across the Old World, but they are sworn to return and defend the crown of Kislev should the royal family send word for them. In battle they are famed for their devastating charges and reckless bravery. No Gospodar could ever match the skill and speed of an Ungol horseman, for they learn to ride before they walk, but the Gryphon Legion are mounted on the same superior steeds and can easily outpace the heavy cavalry of the Empire."
-#hp 12
-#size 3
-#mounted
-#ressize 2
-#prot 0
-#mor 14
-#mr 10
-#enc 5
-#str 11
-#att 12
-#def 11
-#prec 10
-#mapmove 24 -- superior horses
-#snow
-#ap 26
-#gcost 40
-#rpcost 46
-#rcost 6
-#armor 12 -- Scale Mail Hauberk
-#armor 126 -- legionary helmet
-#armor 2 -- Shield
-#weapon 4 -- lance
-#weapon 56 -- Hoof
-#weapon 10 -- falchion
-#nametype 146 -- rus male
-#coldres 3
-#firstshape 7478
-#summon1 7478
-#summon2 7478
-#summon3 7478
-#summon4 7478
-#summon5 7478
 #end
 
 
@@ -1802,7 +1724,7 @@
 #size 3
 #mounted
 #ressize 2
-#prot 4
+#prot 2
 #mor 14
 #mr 10
 #enc 5
@@ -1814,7 +1736,7 @@
 #ap 18
 #gcost 65
 #rpcost 60
-#rcost 12
+#rcost 18
 #armor 284 -- empire full plate
 #armor 21 -- Full Helmet
 #armor 3 -- Kite Shield
@@ -1823,6 +1745,7 @@
 #nametype 188
 #secondtmpshape 7496
 #reclimit 1
+#cleanshape
 #end
 
 
@@ -1850,6 +1773,7 @@
 #weapon 799 -- Demigryph Talons
 #nametype 188
 #animal
+#cleanshape
 #end
 
 
@@ -1874,9 +1798,9 @@
 #prec 10
 #mapmove 22
 #ap 23
-#gcost 22
-#rpcost 36
-#rcost 5
+#gcost 25
+#rpcost 32
+#rcost 7
 #armor 14 -- Plate Hauberk
 #armor 118 -- half helmet
 #weapon 8 -- Broad Sword
@@ -1911,7 +1835,7 @@
 #ap 30
 #gcost 22
 #rpcost 36
-#rcost 0
+#rcost 1
 #weapon 56 -- hoof
 #weapon 10 -- falchion
 #weapon 264 -- composite bow
@@ -1993,7 +1917,6 @@
 ---- Flagellant
 
 #newmonster 7461
-#copyspr 217
 #spr1 "./Sombre_Warhammer/Warhammer_Empire/Flagellant.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Flagellant2.tga"
 #name "Flagellant"
@@ -4263,7 +4186,7 @@
 #fixedname "Thyrus Gormann"
 #itemslots 29826 -- 3 misc, 1 hand, head, body
 #combatcaster
-#firerange 2
+#firerange 1
 #firepower 1
 #onebattlespell "Phoenix Power"
 #end
@@ -7199,7 +7122,7 @@
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Winter Throne are one of the rare true Templar Orders, with each member of the Inner Circle being sacred to your cause. Once part of the White Wolves, the hardline Knights of the Winter Throne split off and have developed their own path of Ulric based on the prophesied coming of the Evernacht, an endless winter that will kill the weak and the enemies of Ulric alike. The Knights of the Winter Throne are known for their use of great two-handed axes and their resistance to cold.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 8 sacred knights. Subsequent recruitment will instead give you the same number of sacred knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 8 sacred knights. Subsequent recruitment will instead give you the same number of sacred knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7240,7 +7163,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights of Sigmar's Blood are one of the rare true Templar Orders, with each member of the Inner Circle being sacred to your cause. Based in Averland they are known for their zealous faith and unwavering resolve in battle.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 8 sacred knights. Subsequent recruitment will instead give you the same number of sacred knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 8 sacred knights. Subsequent recruitment will instead give you the same number of sacred knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7279,7 +7202,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in.
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights of the Fiery Heart are one of the rare true Templar Orders, with each member of the Inner Circle being sacred to your cause. Traditionally acting as defenders of the Sigmarite faith and a personal military force of the Grand Theoganist himself, they are devout knights known for their resistance to fire and frost.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 8 sacred knights. Subsequent recruitment will instead give you the same number of sacred knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 8 sacred knights. Subsequent recruitment will instead give you the same number of sacred knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7310,47 +7233,6 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #end
 
 
-
----- Tribute to the Gryphon Legion
-
-#newmonster 7482
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Pledge_Gryphon.tga"
-#name "Tribute to the Gryphon Legion"
-#descr "Even moreso than the Knightly Orders of the Empire, the famed Gryphon Legion of Kislev are a fiercely independant fighting force. They can typically be found serving as mercenaries across the Old World seeking personal glory, wealth, and fame for their regiment, but they are sworn to return to battle the enemies of mother Kislev should the crown demand it.
-Honouring the Gryphon Legion with a tribute to their glory is an expensive act, but will result in a powerful force of 15 Legionaries and perhaps even their dashing Cavalry Commander pledging to serve your cause. The Gryphon Legion are Winged Lancers of great quality and bravery who can deliver perhaps the most devastating charge of any mortal cavalry.
-
-[When you recruit this commander for the first time you will instead a unique leader with a force of 15 Winged Lancers. Subsequent recruitment will instead give you the same number of Lancers and an inferior non-unique Lancer commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
-#hp 40
-#size 6
-#prot 18
-#mor 50
-#mr 12
-#enc 0
-#str 1
-#att 1
-#def 1
-#prec 1
-#mapmove 0
-#immobile
-#ap 2
-#gcost 650
-#addupkeep -650
-#rpcost 2
-#rcost 120
-#maxage 4000
-#startage 1
-#noleader
-#inanimate
-#neednoteat
-#poisonres 75
-#blind
-#nametype 188
-#itemslots 1
-#end
-
-
-
-
 ---- Tribute to the White Wolves
 
 #newmonster 7533
@@ -7359,7 +7241,7 @@ Honouring the Gryphon Legion with a tribute to their glory is an expensive act, 
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The White Wolves are one of the oldest and most powerful Orders in the Old World and are dedicated to the defence of Middenheim. White Wolves are offensively minded and are armed with great two handed middenhammers which let them smash aside their foes.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7397,7 +7279,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Kights Panther are one of the largest and certainly one of the most famous Orders in the Old World. They are dedicated to eradicating Chaos in all forms and are trained to fight even in the Chaos Wastes themselves. With the exotic panther as their symbol, curved foreign swords to back up their lances and steeds interbred with the famed Arabian breeds, they are a unique but highly effective Order.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7435,7 +7317,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Grand Order of the Reiksguard are the largest and most powerful Order in the Empire and Captain Helborg is second only to the Emperor in military authority. The burnished armour of the Reiksguard gleams with light and their charge is an awesome site to behold.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7473,7 +7355,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights of the Blazing Sun are unusual in that they are dedicated to the foreign deity Myrmidia, though this strange god seems to have given the knights total protection against flames and heat.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 12 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 12 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7511,7 +7393,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Black Bear is a particularly boisterous one that is constantly warring and stresses the physical strength and toughness this philosophy requires.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7549,7 +7431,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights Encarmine are a flamboyant, foppish band of warriors comprised entirely of wealthy aristocracy. The Order holds a great deal of political clout in the South of the Empire and are generally free to choose which campaigns they take part in, usually picking those which guarantee the most glory with the least dirty work. Knights Encarmine are unusual in that they have entirely abandoned the traditional lance and shield, instead perfecting a secret technique allowing them to wield two swords from horseback. Though their Order is rather hard to work with at times, the Knights Encarmine are perhaps the most technically skilled in the Empire.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 14 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 14 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7587,7 +7469,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Sacred Scythe are one of the most feared forces in the Empire, for such is their hatred of the undead that they have been known to put entire villages to the torch should they be found guilty in tribunal. Many members of the Order are sworn to the service of Morr, God of the Dead, and each of them is well versed in the hunting of vampires. Encased in black steel and armed with sacred silver scythes they patrol the fell roads of Stirland, ever watchful for incursions from neighbouring Sylvania. The Scythes are ever watchful and though despised by the common folk, maintain a network of spies to better root out hidden foes.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 12 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 12 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7625,7 +7507,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Order of the Gold Lion were founded during the crusades in Araby and are experts in desert warfare who use Estalian steeds of great endurance and favour curved Arabian blades. Though they have recently suffered some misfortunes their young Grandmaster's energy has proven infectious and they are one of the most active Orders. They are famed for their great bravery and loyalty and are known to the common people as The Lionhearts.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 15 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7663,7 +7545,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. The Knights Griffon are the most well drilled and disciplined of all Orders, sworn to protect the Temple of Sigmar, now located in Altdorf. Founded by Magnus the Pious as a splinter of the Knights Panther, they are proud of their origin and are currently involved in a bitter rivalry with the Grand Order of the Reiksguard. The Knights Griffon are able to field some Brothers mounted on Demigryphs, whose talons can tear through armour with ease.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 11 knights and 4 Demigryph knights. Subsequent recruitment will instead give you the same number of knights and Demigryph knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 11 knights and 4 Demigryph knights. Subsequent recruitment will instead give you the same number of knights and Demigryph knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7701,7 +7583,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. 
 Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. A recently founded Order, the Hunters of Sigmar emerged after the Storm of Chaos, pledging to track and destroy Chaos raiders left behind following the invasion. Typically operating in small groups to track Beastmen Warbands, the Hunters are expert woodsmen and can always rely on the support of the populace who appreciate such mighty warriors stooping to defend even the smallest villages. The nature of their mission means Hunters' equipment is often worn from travel and lacking the services of blacksmiths, they often discard pieces of armour damaged in skirmishes. Lances need to be replaced too often and swords become dull and rusted, so the Hunters prefer to use heavier and more reliable axes.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 12 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 12 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -7738,7 +7620,7 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #name "Tribute to the Knights of Morr"
 #descr "The knightly Orders of the Empire are an elite capable of crushing almost any foe in battle. As powerful as they are though, they are equally independant, despite countless attempts by the State or Church to try and reign them in. Honouring an Order with a memorial to their fallen is an expensive act, but it will result in a group of Inner Circle Knights and perhaps even the Grandmaster of the Order pledging to serve your cause. By far the most feared Order in the Empire, the enigmatic Knights of Morr have pledged themselves to the service of the god of death. Upon joining their Order each brother knight takes a vow of silence and rumours abound regarding even stranger intitiation rites and dark ceremonies. Despite their reputation the Knights of Morr are stalwart defenders of humanity, particularly against users of dark magic and servants of Chaos. They are armed with blades imbued with power by the Amethyst Order which raise those they slay as undead servitors.
 
-[When you recruit this commander for the first time you will instead a unique leader with a force of 11 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do.]"
+[When you recruit this commander for the first time you will instead a unique leader with a force of 11 knights. Subsequent recruitment will instead give you the same number of knights and an inferior non-unique knight commander. You must have at least 1 PD in the province for this to happen, otherwise the Tribute will sit there until you do]"
 #hp 40
 #size 6
 #prot 18
@@ -8649,33 +8531,6 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #end
 
 
------ Summon the Gryphon Legion
-
-#newevent
-#nation 144 -- middenheim
-#msg "Your tribute was accepted. The famed Cavalry Commander himself has joined your cause with a force of Gryphon Legionaries. The Gryphon Legion will still accept further tributes and in return send more Legionaries, but there is only one Cavalry Commander."
---nolog -- makes the event not appear in the log
---notext -- make the event not have any text
-#rarity 5
-#req_monster 7482 -- Tribute to the gryphon legion
-#com 7480 -- cavalry commander summoning form
-#killcom 7482 -- Tribute to the gryphon legion
-#req_unique 1 -- can only ever happen once
-#req_mindef 1 -- needed to avoid a sieger ever getting them
-#end
-
-#newevent
-#nation 144 -- middenheim
-#msg "Your tribute was accepted. The Gryphon Legion have provided a force of Legionaries led by one of their own."
-#nolog -- makes the event not appear in the log
-#notext -- make the event not have any text
-#rarity 5 -- always
-#req_monster 7482 -- Tribute to the gryphon legion
-#com 7481 -- gryphon legion summoning form
-#killcom 7482 -- Tribute to the gryphon legion
-#req_mindef 1 -- needed to avoid a sieger ever getting them
-#end
-
 
 ----- Summon the Knights of Sigmar's Blood
 
@@ -9235,7 +9090,7 @@ Priests: Strong."
 #color 0.8 0.1 0.2
 #startcom 7436 - non summoning state captain
 #startunittype1 7450 -- spearmen
-#startunitnbrs1 10
+#startunitnbrs1 15
 #startunittype2 7451 -- halberdiers
 #startunitnbrs2 10
 #startscout 426 -- Scout
@@ -9387,7 +9242,7 @@ Priests: Strong."
 
 #startcom 7417 -- state captain (N)
 #startunittype1 7403 -- spearmen (N)
-#startunitnbrs1 10
+#startunitnbrs1 15
 #startunittype2 7420 -- crossbowmen (N)
 #startunitnbrs2 10
 #startscout 426 -- Scout
@@ -9484,8 +9339,7 @@ Priests: Strong."
 #addreccom 7511 -- Amethyst Wizard (Middenheim - 190)
 #addreccom 7510 -- Celestial Wizard (Middenheim - 210 - slow rec)
 #addreccom 7513 -- Gold Wizard (middenheim - 210 - slow rec)
-#addreccom 7563 -- Ice Wizard of Kislev
-#addreccom 7482 -- tribute to gryphon legion
+--addreccom 7563 -- Ice Wizard of Kislev
 #addreccom 7533 -- tribute to white wolf
 #addreccom 7536 -- tribute to knights panther
 #addreccom 7575 -- tribute to the knights of Morr
@@ -9530,8 +9384,12 @@ Priests: Strong."
 #color 0.5 0.5 1.0
 #startcom 7504 - state captain (Middenheim)
 #startunittype1 7502 -- State Spearman (Middenheim)
-#startunitnbrs1 10
+#startunitnbrs1 15
 #startunittype2 7518 -- archers (middenheim)
-#startunitnbrs2 10
+#startunitnbrs2 15
 #startscout 426 -- Scout
 #end
+
+
+
+-- ---- End Empire

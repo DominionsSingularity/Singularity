@@ -1,4 +1,4 @@
--- @@@@ High Elves
+---- High Elves
 
 
 
@@ -204,6 +204,7 @@
 #flyspr 10088 5
 #nratt 2
 #rcost 5
+#range 45 -- longbow range
 #end
 
 
@@ -1042,7 +1043,7 @@
 #mor 11
 #weapon 9 -- Dagger
 #armor 158 -- robes
-#gcost 130
+#gcost 120
 #rcost 1
 #magicskill 4 1 -- astral
 #magicskill 0 1 -- fire
@@ -1112,7 +1113,7 @@
 #autodishealer 1
 #holy
 #poorleader
-#command -20
+#forestsurvival
 #rpcost 4
 #female
 #magicstudy 1
@@ -1126,7 +1127,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Archmage1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Archmage2.tga"
 #name "Archmage of Hoeth"
-#descr "The White Tower of Hoeth is the seat of High Elf magical learning. Hoeth, the Lord of Wisdom and Knowledge, is the Elven god of learning and sorcery. Although one of the Elvish pantheon and held in esteem by all of the Asur, Hoeth does not have much of a priesthood nor an organized system of churches in Ulthuan, save at the White Tower of Hoeth. There the greatest loremasters and mages in the world strive to perfect their mastery of the sorcerous arts. It is a place of wonders unbounded, where mages strive to harness every aspect of magic. Their knowledge is vast and their breadth of knowledge unsurpassed. In times of strife, the mages of Hoeth join the armies, sometimes commanding entire armies themselves. With skill derived from through centuries of ardous study they deflect the spells of the enemy, while directing the destructive fires of Asuryan against the foe. They can reach farther than most mages when conducting rituals."
+#descr "The White Tower of Hoeth is the seat of High Elf magical learning. Hoeth, the Lord of Wisdom and Knowledge, is the Elven god of learning and sorcery. Although one of the Elvish pantheon and held in esteem by all of the Asur, Hoeth does not have much of a priesthood nor an organized system of churches in Ulthuan, save at the White Tower of Hoeth. There the greatest loremasters and mages in the world strive to perfect their mastery of the sorcerous arts. It is a place of wonders unbounded, where mages strive to harness every aspect of magic. Their knowledge is vast and their breadth of knowledge unsurpassed. In times of strife, the mages of Hoeth join the armies, sometimes commanding entire armies themselves. With skill derived from through centuries of ardous study they deflect the spells of the enemy, while directing the destructive fires of Asuryan against the foe."
 #att 11
 #def 11
 #hp 8
@@ -1141,7 +1142,7 @@
 #magicskill 1 1 -- air
 #magicskill 8 2 -- holy
 #custommagic 3328 100 -- AES
-#custommagic 3456 25 -- FAES
+#custommagic 3456 10 -- FAES
 #startage 298
 #maxage 2000
 #okleader
@@ -1159,7 +1160,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Priestvaul1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Priestvaul2.tga"
 #name "Smith Priest of Vaul"
-#descr "Vaul's Anvil is a shrine of Vaul, the Elven god of smithing, which is situated in the heart of a volcano on the last island of the Dragon Spine. During the Great Chaos Invasion, Aenarion the Defender and Caledor Dragontamer travelled to the Anvil to construct the Great Weapons that would be used to fight the forces of Chaos. The knowledge of making these Great Weapons was lost along with the Hammer of Vaul, but the sites is still used by the Smith Priests of Vaul to make magic items of no small power. The god Vaul was chained and blinded in a eon long war with Khaine, and his priests blind themselves to prove their devotion. The Smith Priests are dedicated to their craft and their training is devoted to crafting alone. Despite their blindness, they can make items far beyond their magic skill in other areas, but their preference for elaborate forging means tehy are not particularly efficient."
+#descr "Vaul's Anvil is a shrine of Vaul, the Elven god of smithing, which is situated in the heart of a volcano on the last island of the Dragon Spine. During the Great Chaos Invasion, Aenarion the Defender and Caledor Dragontamer travelled to the Anvil to construct the Great Weapons that would be used to fight the forces of Chaos. The knowledge of making these Great Weapons was lost along with the Hammer of Vaul, but the sites is still used by the Smith Priests of Vaul to make magic items of no small power. The god Vaul was chained and blinded in a eon long war with Khaine, and his priests blind themselves to prove their devotion. The Smith Priests are dedicated to their craft and their training is devoted to crafting alone. Despite their blindness, they can make items far beyond their magic skill in other areas, but their preference for elaborate forging means they are not particularly efficient."
 #hp 9 -- +1
 #mr 18
 #mor 15
@@ -1231,7 +1232,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Stormweaver1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Stormweaver2.tga"
 #name "Storm Weaver"
-#descr "The Storm Weavers are high elf mages who have chosen not to perfect their harmony with the winds of magic through High Magic, but instead to perfect their control over the sea. They join the Lothern fleet, bringing their control of storms and water to bear against enemy ships and in aid of their own. Storm Weavers hold a rank near the Archmages of Hoeth in the Elven society and due to their service with the Sea Guard are more militarily minded than most mages."
+#descr "The Storm Weavers are high elf mages who have chosen not to perfect their harmony with the winds of magic through High Magic, but instead to perfect their control over the sea. They join the Lothern fleet, bringing their control of storms and water to bear against enemy ships and in aid of their own. Storm Weavers hold a rank near the Archmages of Hoeth in the Elven society and due to their service with the Sea Guard are more militarily minded than most mages, rather disdaining the tedious task of magical research."
 #hp 8
 #mr 18
 #mor 15
@@ -1243,13 +1244,13 @@
 #magicskill 2 2 -- water
 #magicskill 1 2 -- air
 #custommagic 10624 100 -- FASN
-#custommagic 9088 25 -- FAWN
 #startage 201
 #sailing 2 2
 #okleader
 #command -20 -- so 20 left
 #rpcost 4
 #magicstudy 1
+#researchbonus -2
 #holy
 #end
 
@@ -1314,6 +1315,8 @@
 #startage 80
 #maxage 2000
 #rpcost 1
+#mountainsurvival
+#forestsurvival
 #end
 
 
@@ -1440,9 +1443,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Handmaiden.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Handmaiden2.tga"
 #name "Handmaiden of the Everqueen"
-#descr "Highest ranking of all the Sisters of Avelorn are the Handmaidens of the Everqueen. Not the mer courtiers that their name might suggest, but warriors sworn to live and die in the service of their mistress. They are considered paragons of Elvenkind, as talented in artistic and spiritual pursuits as they are on the field of battle. The honour of serving as a Handmaiden is only bestowed on those Sisters who have many times over proven their worth in battle and earned the respect and admiration of their fellows. Handmaidens act as direct representatives of the Everqueen and as such have been imbued with priestly authority in the order of Isha, Goddess of Harvest and life. They are armed with the same deadly bows as the Sisters they often command, but have also mastered the use of the Spear of Avelorn, a polearm blessed with the same righteous blue fire of the Everqueen. Such is their skill with the spectral Bow of Avelorn that they can loose two arrows in the space of a breath.
-
-[Does not require a lab to recruit.]"
+#descr "Highest ranking of all the Sisters of Avelorn are the Handmaidens of the Everqueen. Not the mere courtiers that their name might suggest, but warriors sworn to live and die in the service of their mistress. They are considered paragons of Elvenkind, as talented in artistic and spiritual pursuits as they are on the field of battle. The honour of serving as a Handmaiden is only bestowed on those Sisters who have many times over proven their worth in battle and earned the respect and admiration of their fellows. Handmaidens act as direct representatives of the Everqueen and as such have been imbued with priestly authority in the order of Isha, Goddess of Harvest and life. They are armed with the same deadly bows as the Sisters they often command, but have also mastered the use of the Spear of Avelorn, a polearm blessed with the same righteous blue fire of the Everqueen. Such is their skill with the spectral Bow of Avelorn that they can loose two arrows in the space of a breath."
 #hp 14 -- W2, elf
 #att 14
 #def 15
@@ -1469,6 +1470,7 @@
 #holy
 #female
 #goodleader
+#forestsurvival
 #end
 
 
@@ -2703,3 +2705,9 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 
 
 #end
+
+
+
+
+
+-- ---- End High Elves

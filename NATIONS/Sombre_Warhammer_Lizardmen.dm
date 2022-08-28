@@ -1,4 +1,4 @@
--- @@@@ Lizardmen
+---- Lizardmen
 
 -------- New Weapons
 
@@ -1005,10 +1005,10 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Saurus Cavalry.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Saurus Cavalry2.tga"
 #name "Saurus Cavalry"
-#descr "A number of Saurus warriors are born with a natural affinity for the volatile Cold Ones, large predatory reptiles which some refer to as the sharks of the land, so single minded and voracious are they. The Cold Ones are not near so fleet as a horse, but are powerful and dangerous creatures in their own right; Saurus cavalry are thus some of most powerful troops known. Formations of these cavalry are used to smash enemy elites, tear down great beasts or powerful warriors and generally cause a great deal of carnage in a very short time. The Cold Ones themselves are extremely thick skinned and resilient and the slime exuded from their scaly hide is capable of healing even grievous wounds inflicted on both beast and rider."
-#hp 30
+#descr "A number of Saurus warriors are born with a natural affinity for the volatile Cold Ones, large predatory reptiles which some refer to as the sharks of the land, so single minded and voracious are they. The Cold Ones are not near so fleet as a horse, but are powerful and dangerous creatures in their own right; Saurus cavalry are thus some of most powerful troops known. Formations of these cavalry are used to smash enemy elites, tear down great beasts or powerful warriors and generally cause a great deal of carnage in a very short time. The Cold Ones themselves are extremely thick skinned and resilient and the slime exuded from their scaly hide is capable of healing even grievous wounds inflicted on both beast and rider. Should the rider be slain his mount will fight on until the end of the battle before returning to the wilds."
+#hp 17 -- normal +2, used to be 30
 #size 4
-#prot 14
+#prot 12 -- +2 over basic saurus
 #mor 15
 #mr 11
 #enc 5
@@ -1018,7 +1018,7 @@
 #prec 8
 #mapmove 20
 #ap 18
-#gcost 70
+#gcost 55
 #rpcost 52
 #rcost 4
 #ressize 2
@@ -1034,6 +1034,48 @@
 #heal
 #mounted
 #nametype 123
+#secondtmpshape 7305
+#cleanshape
+#end
+
+
+
+---- Cold One (rider dead)
+
+#newmonster 7305
+#spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Cold_One.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Cold_One2.tga"
+#name "Cold One"
+#descr "The Saurus that once rode into battle on the back of this Cold One has been slain and the mount will fight on until the end of the battle before returning to the wild."
+#hp 23
+#size 3
+#prot 13
+#mor 11
+#mr 9
+#enc 3
+#str 16
+#att 11
+#def 9
+#prec 5
+#mapmove 18
+#ap 16
+#gcost 0
+#rpcost 0
+#weapon 20 -- Bite
+#weapon 29 -- claw
+#startage 10
+#maxage 10000 -- has to be the same to avoid old age
+#animal
+#darkvision 50
+#undisciplined
+#forestsurvival
+#coldblood
+#gcost 0
+#poisonres 5
+#heal
+#quadruped
+#cleanshape
+#itemslots 0
 #end
 
 
@@ -2218,7 +2260,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Saurus Oldblood2.tga"
 #name "Saurus Oldblood"
 #descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. Performing only the simplest tasks outside of warfare, Saurus may seem slow witted, but in battle the Skinks defer to their honed instincts and innate understanding of tactics. Saurus get tougher and more ferocious as they age and by far the oldest and thus most powerful amongst them are the Oldbloods. To have survived thousands of battles, perhaps even the Great War against Chaos, would be impossible for any ordinary Saurus. They ride to war on the back of a powerful Cold One bonded to them through the blessing of Itzl and as such the two fight as though they were a single being."
-#hp 50 -- includes the cold one bonus
+#hp 45
 #size 4
 #prot 15
 #mor 17
@@ -2273,7 +2315,7 @@
 #prec 12
 #mapmove 18
 #ap 16
-#gcost 20
+#gcost 30
 #rpcost 1
 #rcost 1
 #weapon 20 -- basic bite
@@ -2493,6 +2535,7 @@
 #montag 1022 -- Slann of any kind
 #inspiringres 1
 #warning 7
+#latehero 11
 #end
 
 
@@ -2764,7 +2807,7 @@
 #unique
 #magicboost 7 -3
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Zlatlan"
 #float
 #montag 1022 -- Slann of any kind
@@ -2828,7 +2871,7 @@
 #domsummon 7347 -- Saurus of Xhotl
 #summon5 7330 -- saurus of Tzunki
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Zlatlan"
 #float
 #warning 12
@@ -2884,7 +2927,7 @@
 #unique
 #magicboost 7 -3
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Zlatlan"
 #float
 #montag 1022 -- Slann of any kind
@@ -2943,7 +2986,7 @@
 #domsummon 7334 -- Saurus of Chotec
 #summon5 7334 -- saurus of Chotec
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Adohi Tehga"
 #warning 12
 #end
@@ -2997,7 +3040,7 @@
 #firepower 2
 #unique
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Adohi Tehga"
 #inspiringres 1
 #montag 1022 -- Slann of any kind
@@ -3056,7 +3099,7 @@
 #domsummon 7335 -- Saurus of Quetzl
 #summon5 7335 -- saurus of Quetzl
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Lord Mazdamundi"
 #trample
 #reinvigoration 4
@@ -3118,7 +3161,7 @@
 #awe 4
 #unique
 #fastcast 50
-#allrange 3
+#allrange 2
 #fixedname "Lord Mazdamundi"
 #trample
 #reinvigoration 4
@@ -3184,7 +3227,7 @@
 #fastcast 50
 #fixedname "Yucatetl"
 #float
-#allrange 5
+#allrange 3
 #domsummon 7332 -- Saurus of Tzlazcotl
 #summon5 7333 -- saurus of Tepok
 #warning 12
@@ -3241,7 +3284,7 @@
 #fastcast 50
 #fixedname "Yucatetl"
 #float
-#allrange 5
+#allrange 3
 #inspiringres 1
 #montag 1022 -- Slann of any kind
 #warning 12
@@ -4391,18 +4434,21 @@ Priests: Very Powerful."
 
 
 #addreccom 7294 -- Chameleon Scout
+#swampcom 7294 -- Chameleon Scout
+#forestcom 7294 -- Chameleon Scout
 #addreccom 7295 -- Skink Warchief
+#forestcom 7295 -- Skink Warchief
 #addreccom 7290 -- Saurus Scar Veteran
 #addreccom 7293 -- Saurus Oldblood on Cold One
 #addreccom 7291 -- Skink Priest
 #addreccom 7292 -- Priest of Sotek
+#forestcom 7292 -- Priest of Sotek
+#swampcom 7292 -- Priest of Sotek
 #addreccom 7296 -- Fifth Generation Slann
 
-#forestcom 7295 -- Skink Warchief
 #forestcom 7300 -- Skink Shaman
-#forestcom 7292 -- Priest of Sotek
 #swampcom 7300 -- Skink Shaman
-#swampcom 7292 -- Priest of Sotek
+
 
 --addreccom 7298 -- Fourth Generation Slann (cap only)
 --addreccom 7301 -- third gen slann
@@ -4471,3 +4517,5 @@ Priests: Very Powerful."
 #startunitnbrs2 10
 #startscout 7294 -- Chameleon Scout
 #end
+
+-- ---- End Lizardmen

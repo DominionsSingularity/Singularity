@@ -1,4 +1,4 @@
--- @@@@ Wood Elves
+---- Wood Elves
 
 
 -- it turns out that if you give a troop stealth in forest and not stealth in their plainshape, then they destealth and have a battle, as you'd expect.
@@ -55,7 +55,6 @@
 
 
 
-
 -------- stuff to add
 
 ---- heroes
@@ -63,7 +62,6 @@
 -- naestra and arahan
 -- coeddil
 -- durthu
--- orion (plus hounds of kurnous)
 -- ariel
 -- drycha
 -- skaw the falconer
@@ -78,7 +76,6 @@
 
 -- forest dragon
 -- great eagle
-
 
 
 
@@ -517,32 +514,6 @@
 -- Armour
 -------------------------------------------------------------------------
 
-#newarmor 337
-#name "Elven Chainmail"
-#prot 14 -- +2 compared to Chain Mail Cuirass
-#def 0   -- +1 
-#enc 1
-#type 5
-#rcost 14 -- +5
-#end
-
-#newarmor 338
-#name "Whirling Blades"
-#type 4
-#prot 20
-#def 6
-#enc 0
-#rcost 0
-#end
-
-#newarmor 339
-#name "Sigil Tattoos"
-#prot 6
-#def 0
-#enc 0
-#type 7
-#rcost 0
-#end
 
 -------------------------------------------------------------------------
 -- Recruitables
@@ -586,7 +557,7 @@
 #name "Glade Guard"
 #descr "In time of need, every Wood Elf can answer the call to defend their realm, for all are trained in the art of the Long Bow as soon as they are old enough to hold one. After all to the Asrai archery is not just a tool of battle but one of many hunter's skills necessary for survival. When an Elf comes of age he or she will be formally inducted into the Glade Guard of their household and given responsibility for patrolling a section of the realm. When a threat is identified by a patrol it does not take long before they are faced with a suitable sized force of Glade Guard who stand ready to pincushion the interloper with arrows. Glade Guard form the core of almost every force fielded by Athel Loren and are famed for the storms of arrows they can rain down on the enemy line. While graceful and capable swordsmen, Glade Guard are lightly armoured and typically prefer to leave melee combat to the Eternal Guard or troupes of Wardancers.
 
-[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests]"
 #gcost 14
 #armor 10 -- leather hauberk
 #armor 120 -- leather cap
@@ -604,7 +575,7 @@
 #name "Glade Guard"
 #descr "In time of need, every Wood Elf can answer the call to defend their realm, for all are trained in the art of the Long Bow as soon as they are old enough to hold one. After all to the Asrai archery is not just a tool of battle but one of many hunter's skills necessary for survival. When an Elf comes of age he or she will be formally inducted into the Glade Guard of their household and given responsibility for patrolling a section of the realm. When a threat is identified by a patrol it does not take long before they are faced with a suitable sized force of Glade Guard who stand ready to pincushion the interloper with arrows. Glade Guard form the core of almost every force fielded by Athel Loren and are famed for the storms of arrows they can rain down on the enemy line. While graceful and capable swordsmen, Glade Guard are lightly armoured and typically prefer to leave melee combat to the Eternal Guard or troupes of Wardancers.
 
-[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests]"
 #gcost 14
 #armor 10 -- leather hauberk
 #armor 120 -- leather cap
@@ -626,7 +597,7 @@
 #name "Deepwood Scout"
 #descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
 
-[Gain glamour, +15 stealth, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, +15 stealth, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests]"
 #gcost 15
 #armor 5 -- leather cuirass
 #armor 121 -- leather hood
@@ -649,7 +620,7 @@
 #name "Deepwood Scout"
 #descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
 
-[Lose glamour, 15 stealth, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+[Lose glamour, 15 stealth, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests]"
 #gcost 15
 #armor 5 -- leather cuirass
 #armor 121 -- leather hood
@@ -731,7 +702,7 @@
 #name "Glade Rider"
 #descr "The Glade Riders of Athel Loren are amongst the finest horse-warriors in the world, their Elven Steeds and sharp reflexes allowing them to perform feats of horsemanship that border on the supernatural. While their mounts are descended from the same stock as those used by their cousins in Ulthuan, the Wood Elves have ceased to treat these horses as chattel and instead created a close bond of mutual benefit between Elf and Steed. Glade Riders fight in a similar style to the Glade Guard, preferring to finish their foe with volleys of missile fire rather than engage in melee for although their well crafted lances do allow them to deal decisive charges, they are quite lightly armoured.
 
-[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests.]"
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests]"
 #size 3
 #enc 4
 #weapon 1142 -- asrai lance
@@ -760,7 +731,7 @@
 #name "Glade Rider"
 #descr "The Glade Riders of Athel Loren are amongst the finest horse-warriors in the world, their Elven Steeds and sharp reflexes allowing them to perform feats of horsemanship that border on the supernatural. While their mounts are descended from the same stock as those used by their cousins in Ulthuan, the Wood Elves have ceased to treat these horses as chattel and instead created a close bond of mutual benefit between Elf and Steed. Glade Riders fight in a similar style to the Glade Guard, preferring to finish their foe with volleys of missile fire rather than engage in melee for although their well crafted lances do allow them to deal decisive charges, they are quite lightly armoured.
 
-[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Composite Bow will harm friendlies outside forests.]"
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Composite Bow will harm friendlies outside forests]"
 #size 3
 #enc 4
 #weapon 1142 -- asrai lance
@@ -1481,7 +1452,7 @@
 #name "Waywatcher"
 #descr "Waywatchers and silent sentinels, the guardians of the paths leading into Athel Loren. They are masters of concealment, tracking, and hunting. Waywatchers almost always spent their youth as a member of the Deepwood Scouts but there is no formal system of promotion by which they join the ranks of the Waywatchers, rather some Elves simply become more at home in the forest than they do in the society of the Asrai and choose to embark on a decades long pilgrimage to learn the ways of the wilds. Many do not return from this sojourn, but those that do have achieved a harmony with Athel Loren that goes far beyond what one of their kind could typically experience. Waywatchers are superb archers, capable of placing arrows in the weak points of enemy armour with terrifying accuracy. They wear bracers carved from the bone of some unfamiliar creature and inscribed with strange symbols, use this same bone to reinforce their hoods and protect their senses, and cover themselves in foliage to better conceal their movements until the moment is right to strike.
 
-[Gain glamour, +1 hp, +1 strength, +1 morale, +1 precision, and +2 patrolbonus in forests. Waywatcher Long Bow will not harm friendlies in forests.]"
+[Gain glamour, +1 hp, +1 strength, +1 morale, +1 precision, and +2 patrolbonus in forests. Waywatcher Long Bow will not harm friendlies in forests]"
 #gcost 25
 #armor 15 -- full leather armour
 #armor 150 -- bone helmet
@@ -1509,7 +1480,7 @@
 #name "Waywatcher"
 #descr "Waywatchers and silent sentinels, the guardians of the paths leading into Athel Loren. They are masters of concealment, tracking, and hunting. Waywatchers almost always spent their youth as a member of the Deepwood Scouts but there is no formal system of promotion by which they join the ranks of the Waywatchers, rather some Elves simply become more at home in the forest than they do in the society of the Asrai and choose to embark on a decades long pilgrimage to learn the ways of the wilds. Many do not return from this sojourn, but those that do have achieved a harmony with Athel Loren that goes far beyond what one of their kind could typically experience. Waywatchers are superb archers, capable of placing arrows in the weak points of enemy armour with terrifying accuracy. They wear bracers carved from the bone of some unfamiliar creature and inscribed with strange symbols, use this same bone to reinforce their hoods and protect their senses, and cover themselves in foliage to better conceal their movements until the moment is right to strike.
 
-[Lose glamour, 1 hp, 1 strength, 1 morale, 1 precision, and 2 patrolbonus outside forests.  Waywatcher Long Bow will harm friendlies outside forests.]"
+[Lose glamour, 1 hp, 1 strength, 1 morale, 1 precision, and 2 patrolbonus outside forests.  Waywatcher Long Bow will harm friendlies outside forests]"
 #gcost 25
 #armor 15 -- full leather armour
 #armor 150 -- bone helmet
@@ -1600,7 +1571,7 @@
 #name "Warhawk Rider"
 #descr "A great many hawks and shrikes of great size inhabit the canopy of Athel Loren, especially in the regions where the great forest meets the Grey Mountains. These creatures can boast wingspans of fifteen or sixteen feet and are fierce, cunning predators with highly territorial natures, as all the inhabitants of Athel Loren tend to be. Though most Asrai live in the glades in the centre and west of Athel Loren, there are still many who call the eastern regions bordering the Grey Mountains their home and these elves have over the centuries formed a firm bond with these great avians. Warhawk Riders are yong elves who have reared a hawk or shrike from a hatchling, maturing with it and learning to fight in harmony. They are such expert riders that they are able to loose their arrows with great accuracy even as their mount twists and swoops through the air, their elevation and the superb eyesight of their mounts allowing them even more precision in reaching their target. Warhawk Riders wear very little armour and although they are armed with lances and their mounts boast deadly beaks and talons they should not be expected to fare well in prolonged melee. Should the rider be slain the Warhawk will fight on until the end of the battle.
 
-[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests.]
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests]
 [Recruitment limited to 5 per turn]"
 #prot 2 -- from warhawk
 #size 4
@@ -1640,7 +1611,7 @@
 #name "Warhawk Rider"
 #descr "A great many hawks and shrikes of great size inhabit the canopy of Athel Loren, especially in the regions where the great forest meets the Grey Mountains. These creatures can boast wingspans of fifteen or sixteen feet and are fierce, cunning predators with highly territorial natures, as all the inhabitants of Athel Loren tend to be. Though most Asrai live in the glades in the centre and west of Athel Loren, there are still many who call the eastern regions bordering the Grey Mountains their home and these elves have over the centuries formed a firm bond with these great avians. Warhawk Riders are yong elves who have reared a hawk or shrike from a hatchling, maturing with it and learning to fight in harmony. They are such expert riders that they are able to loose their arrows with great accuracy even as their mount twists and swoops through the air, their elevation and the superb eyesight of their mounts allowing them even more precision in reaching their target. Warhawk Riders wear very little armour and although they are armed with lances and their mounts boast deadly beaks and talons they should not be expected to fare well in prolonged melee. Should the rider be slain the Warhawk will fight on until the end of the battle.
 
-[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside of forests. Asrai Composite Bow will harm friendlies outside forests.]
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside of forests. Asrai Composite Bow will harm friendlies outside forests]
 [Recruitment limited to 5 per turn]"
 #prot 2 -- from warhawk
 #size 4
@@ -1709,6 +1680,7 @@
 #mapmove 34 -- -4
 #maxage 2000 -- has to be the same as the elves
 #poorleader
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -1883,7 +1855,7 @@
 #name "Warhawk Captain"
 #descr "Amongst the flights of Warhawk Riders that protect Athel Loren and strike out to punish her enemies all positions are equal, for they are a true brotherhood, but they elect those amongst them with the greatest talent for tactical leadership to act as their Captains. Amongst their own kind they are known as Windriders and it is said they can hear the whispers of the wind itself informing them of enemy movements and the perfect moment to launch strikes or hang back and pepper the foe with arrows. These captains have identical equipment to their troops, save for a more elaborate helm to mark them out. Should the rider be slain the Warhawk will fight on until the end of the battle.
 
-[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests.]"
+[Gain glamour, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Composite Bow will not harm friendlies in forests]"
 #prot 2 -- from warhawk
 #size 4
 #enc 4
@@ -1925,7 +1897,7 @@
 #name "Warhawk Captain"
 #descr "Amongst the flights of Warhawk Riders that protect Athel Loren and strike out to punish her enemies all positions are equal, for they are a true brotherhood, but they elect those amongst them with the greatest talent for tactical leadership to act as their Captains. Amongst their own kind they are known as Windriders and it is said they can hear the whispers of the wind itself informing them of enemy movements and the perfect moment to launch strikes or hang back and pepper the foe with arrows. These captains have identical equipment to their troops, save for a more elaborate helm to mark them out. Should the rider be slain the Warhawk will fight on until the end of the battle.
 
-[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside of forests. Asrai Composite Bow will harm friendlies outside forests.]"
+[Lose glamour, 1 precision, 1 morale, and 1 patrolbonus outside of forests. Asrai Composite Bow will harm friendlies outside forests]"
 #prot 2 -- from warhawk
 #size 4
 #enc 4
@@ -1969,7 +1941,7 @@
 #name "Glade Lord on Great Stag"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. The most virtuous Glade Lords, those destined to defend their home against the greatest threats, ride into battle atop a sacred Great Stag of Athel Loren. No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Should the Glade Lord fall in battle the Great Stag will fight on for a time before returning to the innermost glades of Athel Loren.
 
-[Gain glamour, recuperation, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, recuperation, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests]"
 #hp 24 -- elf, W3, +4 for great stag
 #size 5
 #att 15
@@ -2012,7 +1984,7 @@
 #name "Glade Lord on Great Stag"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. The most virtuous Glade Lords, those destined to defend their home against the greatest threats, ride into battle atop a sacred Great Stag of Athel Loren. No animal in Athel Loren is more treasured than the Great Stag, a noble and intelligent beast which the Asrai revere as representing the true soul of the forest. Should the Glade Lord fall in battle the Great Stag will fight on for a time before returning to the innermost glades of Athel Loren.
 
-[Lose glamour, recuperation, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+[Lose glamour, recuperation, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests]"
 #hp 26 -- +2
 #size 5
 #att 15
@@ -2083,6 +2055,7 @@
 #quadruped
 #cleanshape
 #xploss 100
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -2123,6 +2096,7 @@
 #heal
 #cleanshape
 #xploss 100
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -2138,7 +2112,7 @@
 #name "Deepwood Scout"
 #descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
 
-[Gain glamour, +15 stealth, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, +15 stealth, +1 precision, +1 morale, and +1 patrolbonus in forests. Asrai Long Bow will not harm friendlies in forests]"
 #gcost 25
 #armor 5 -- leather cuirass
 #armor 121 -- leather hood
@@ -2161,7 +2135,7 @@
 #name "Deepwood Scout"
 #descr "Deepwood Scouts hold the responsibility of patrolling areas of the forest deemed too dangerous for Glade Guard to enter, as well as venturing out into enemy territory to neutralise threats before they can reach the realms of the Asrai. Beyond the forest they are fine scouts and raiders, but their true abilities lie in their stealth and craft in navigating the darkest places of ancient woods, evading the keen senses of malicious spirits and territorial beasts. Deepwood Scouts are masters of misdirection, ambush, skirmishing, and tracking whose hidden work is just as vital to the safety of their people as the massed forces of Glade Guard.
 
-[Lose glamour, 15 stealth, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+[Lose glamour, 15 stealth, 1 precision, 1 morale, and 1 patrolbonus outside forests. Asrai Long Bow will harm friendlies outside forests]"
 #gcost 25
 #armor 5 -- leather cuirass
 #armor 121 -- leather hood
@@ -2188,7 +2162,7 @@
 #name "Glade Captain"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute, but the majority of the class is made up of lesser nobles who compete for status and respect. Unlike their cousins the High Elves of Ulthuan or Dark Elves of Naggaroth, the nobility of the Asrai are better able to set aside their ambitions for the greater good of Athel Loren and their rivalries are typically expressed through friendly competition and hunts rather than damaging courtly intrigue. Many lesser nobles become Glade Captains, commanders of small contingents of troops and responsible for the first line defence of their realm and the occasional raid beyond. While they are almost all Highborn, Glade Captains keep their position through merit rather than birthright and are very well versed in tactical leadership, though only Glade Lords are permitted to lead truly large forces. As they typically lead Glade Guard they are armed in a similar manner and favour the Long Bow as their primary weapon, though they wear heavier armour.
 
-[Gain glamour, +1 precision, +1 morale, +1 strength, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, +1 precision, +1 morale, +1 strength, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests]"
 #armor 7 -- scale mail cuirass
 #armor 119 -- reinforced leather cap
 #weapon 1141 -- asrai long bow
@@ -2221,7 +2195,7 @@
 #name "Glade Captain"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute, but the majority of the class is made up of lesser nobles who compete for status and respect. Unlike their cousins the High Elves of Ulthuan or Dark Elves of Naggaroth, the nobility of the Asrai are better able to set aside their ambitions for the greater good of Athel Loren and their rivalries are typically expressed through friendly competition and hunts rather than damaging courtly intrigue. Many lesser nobles become Glade Captains, commanders of small contingents of troops and responsible for the first line defence of their realm and the occasional raid beyond. While they are almost all Highborn, Glade Captains keep their position through merit rather than birthright and are very well versed in tactical leadership, though only Glade Lords are permitted to lead truly large forces. As they typically lead Glade Guard they are armed in a similar manner and favour the Long Bow as their primary weapon, though they wear heavier armour.
 
-[Lose glamour, 1 precision, 1 morale, 1 strength, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+[Lose glamour, 1 precision, 1 morale, 1 strength, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests]"
 #armor 7 -- scale mail cuirass
 #armor 119 -- reinforced leather cap
 #weapon 1170 -- asrai long bow
@@ -2256,7 +2230,7 @@
 #name "Glade Lord"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Glade Lords fight from horseback, riding the finest Elven Steeds with practiced ease, and are capable of firing even the large Asrai Long Bow from this position, though they typically prefer to engage in melee combat where they can indulge their more primal instincts.
 
-[Gain glamour, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests]"
 #hp 20 -- elf, W3
 #size 3
 #att 15
@@ -2296,7 +2270,7 @@
 #name "Glade Lord"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Glade Lords fight from horseback, riding the finest Elven Steeds with practiced ease, and are capable of firing even the large Asrai Long Bow from this position, though they typically prefer to engage in melee combat where they can indulge their more primal instincts.
 
-[Lose glamour, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests.]"
+[Lose glamour, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow will harm friendlies outside forests]"
 #hp 22 -- +2
 #size 3
 #att 15
@@ -2337,7 +2311,7 @@
 #descr "The most powerful of Athel Loren's spirits entwine their essence with that of a living tree, moulding it to their will. This is a not a decision made lightly, for the bond is permanent and by tethering themselves to a physical form these great spirits risk much, including the previously alien concept of death. Treemen are revered by the Asrai and other inhabitants of the forest alike and these great sentinels of Athel Loren are typically home to a great many lesser spirits that will lend them strength should they be threatened. For their part the Treemen cherish the lives of lesser creatures and boast a warmth of character totally unlike that of the spiteful Dryads. They can be counted amongst the mightiest of Athel Loren's denizens, able to wield magic of nature and earth and possessing incredible physical prowess and resilience. Treemen do not fight with grace but instead rely on sheer ferocity and their great strength to smash threats to their forest realm or tear them apart with whipping tendrils as strong as steel.
 
 [Gain glamour, recuperation, +3 strength, +1 magic resistance, +10 hp, +2 protection, and +1 unsurroundable in forests]
-[This commander uses a smaller sprite on the recruitment screen for ease of use.]"
+[This commander uses a smaller sprite on the recruitment screen for ease of use]"
 #size 6
 #enc 1
 #prot 15
@@ -2499,7 +2473,7 @@
 #descr "The oldest, wisest, and most revered generation of Treemen are known as the Ancients, and only Orion, Ariel, and the two remaining Elder Treemen stand above them in the hierarchy of Athel Loren. Ancients are prone to slumber in a dormant state for decades at a time and even when at their most energetic are not nearly so active as their younger fellows, though their magical knowledge and power is considerable and they still boast impressive physical might and resilience. It is only in recent years that many Ancients have awoken and begun to act at the same time, surely signalling that an era of great import has dawned for Athel Loren. While Treemen do not make use of weapons and instead rely on their crushing fists or lashing vines, Ancients typically carry a great staff of enchanted birch and have been known to use other magical items as the moment requires.
 
 [Gain glamour, recuperation, +3 strength, +1 magic resistance, +15 hp, +2 protection in forests]
-[This commander uses a smaller sprite on the recruitment screen for ease of use.]"
+[This commander uses a smaller sprite on the recruitment screen for ease of use]"
 #size 6
 #enc 2
 #prot 13 -- less prot
@@ -2840,7 +2814,7 @@
 #name "Waystalker"
 #descr "Waystalkers are elite amongst the elite, former Waywatchers who have become attuned with the forest on an even deeper level and sharpened their skills to the point they can perform feats of archery, tracking, and ambush that can only be described as supernatural. While all Wood Elves seek harmony with their home forest of Athel Loren, Waystalkers are truly part of the forest, deadly predators feared even by lesser forest spirits for bringing swift judgement. Waystalkers are nearly impossible to locate if in a forest and capable of isolating and assassinating enemy commanders, often taking some part of their body to place on a warning totem to others who would trespass against Athel Loren and her children. Like the Waywatchers under their command Waystalkers camouflage themselves with foliage, but they also protect themselves with elaborate armour fashioned from the bones of some unfamiliar creature and inscribed with strange symbols. Waystalkers are known to dominate Spites, vicious minor forest spirits, through sheer willpower and force them to inhabit and enhance their bows, transforming them into magical weapons of destruction. 
 
-[Gain glamour, +2 hp, +1 strength, +1 morale, +1 precision, +5 patrolbonus, and the assassin ability in forests. Spite Infused Bows will never harm friendlies.]"
+[Gain glamour, +2 hp, +1 strength, +1 morale, +1 precision, +5 patrolbonus, and the assassin ability in forests. Spite Infused Bows will never harm friendlies]"
 #gcost 160
 #armor 149 -- bone cuirass
 #armor 150 -- bone helmet
@@ -2874,14 +2848,14 @@
 #name "Waystalker"
 #descr "Waystalkers are elite amongst the elite, former Waywatchers who have become attuned with the forest on an even deeper level and sharpened their skills to the point they can perform feats of archery, tracking, and ambush that can only be described as supernatural. While all Wood Elves seek harmony with their home forest of Athel Loren, Waystalkers are truly part of the forest, deadly predators feared even by lesser forest spirits for bringing swift judgement. Waystalkers are nearly impossible to locate if in a forest and capable of isolating and assassinating enemy commanders, often taking some part of their body to place on a warning totem to others who would trespass against Athel Loren and her children. Like the Waywatchers under their command Waystalkers camouflage themselves with foliage, but they also protect themselves with elaborate armour fashioned from the bones of some unfamiliar creature and inscribed with strange symbols. Waystalkers are known to dominate Spites, vicious minor forest spirits, through sheer willpower and force them to inhabit and enhance their bows, transforming them into magical weapons of destruction. 
 
-[Lose glamour, 2 hp, 1 strength, 1 morale, 1 precision, 5 patrolbonus, and the assassin ability outside forests. Spite Infused Bows will never harm friendlies.]"
+[Lose glamour, 2 hp, 1 strength, 1 morale, 1 precision, 5 patrolbonus, and the assassin ability outside forests. Spite Infused Bows will never harm friendlies]"
 #gcost 160
 #armor 149 -- bone cuirass
 #armor 150 -- bone helmet
 #weapon 6 -- short sword
 #weapon 9 -- dagger
 #weapon 1158 -- Spite infused Bow
-#forestshape 4168
+#plainshape 4167
 #rpcost 2
 #hp 17
 #str 12
@@ -3113,7 +3087,7 @@
 #name "Glade Lord on Great Eagle"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Some Glade Lords have forged bonds of friendship and alliance with the Great Eagles of the Grey Mountains and fly into battle on the back of one of these noble creatures. Great Eagles are more intelligent and noble in character than the Warhawks of the lower slopes but possess a great hatred of the evils that beset Athel Loren and are a deadly presence on the battlefield. Should the Glade Lord fall in battle the Great Eagle will fight to avenge him before returning to the mountains at the end of the battle.
 
-[Gain glamour, recuperation, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests.]"
+[Gain glamour, recuperation, +1 precision, +1 morale, +1 strength, +2 hp, and +1 unsurroundable in forests. Asrai Long Bow will not harm friendlies in forests]"
 #nametype 172 -- Elven names
 #size 6 -- vanilla
 #hp 26 -- riders profile +6
@@ -3159,7 +3133,7 @@
 #name "Glade Lord on Great Eagle"
 #descr "The Wood Elves of Athel Loren have long been ruled over by an aristocratic class known as the Highborn, whose status and power is in proportion to their responsbility to defend and maintain the lands in which their followers dwell. The greatest Highborn are known as the Lords and Ladies and their power is near absolute. When one of the Lords takes to battle with his host of loyal Glade Guard, Kinbands, and Eternal Guard he is known as a Glade Lord, a warrior and leader to be greatly feared and admired. Glade Lords are powerful and influential enough within Athel Loren that they are even known to command small contingents of forest spirits such as Dryads and Treekin and can count on Spites, tiny and vicious spirits, to grant power to their lances. Some Glade Lords have forged bonds of friendship and alliance with the Great Eagles of the Grey Mountains and fly into battle on the back of one of these noble creatures. Great Eagles are more intelligent and noble in character than the Warhawks of the lower slopes but possess a great hatred of the evils that beset Athel Loren and are a deadly presence on the battlefield. Should the Glade Lord fall in battle the Great Eagle will fight to avenge him before returning to the mountains at the end of the battle.
 
-[Lose glamour, recuperation, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow can harm friendlies outside forests.]"
+[Lose glamour, recuperation, 1 precision, 1 morale, 1 strength, 2 hp, and 1 unsurroundable outside forests. Asrai Long Bow can harm friendlies outside forests]"
 #nametype 172 -- Elven names
 #size 6
 #hp 28 -- +2
@@ -3330,7 +3304,7 @@
 #weapon 1207 -- Hawk's Talon bow
 #weapon 55 -- hoof
 #size 4
-#hp 65 -- W5, T5, big
+#hp 60 -- W5, T5, big
 #prot 10 -- tough!
 #forestsurvival
 #att 16 -- WS8, always strikes first
@@ -3359,7 +3333,7 @@
 #batstartsum2 4314 -- hound of Kurnous
 #immortal
 #springimmortal -- reforms in spring
-#springpower 25
+#springpower 30
 #maxage 9000
 #startage 3000
 #holy
@@ -3384,7 +3358,7 @@
 #weapon 1207 -- Hawk's Talon bow
 #weapon 55 -- hoof
 #size 4
-#hp 65 -- W5, T5, big
+#hp 60 -- W5, T5, big
 #prot 10 -- tough!
 #forestsurvival
 #att 16 -- WS8, always strikes first
@@ -3413,7 +3387,7 @@
 #batstartsum2 4314 -- hound of Kurnous
 #immortal
 #springimmortal -- reforms in spring
-#springpower 25
+#springpower 30
 #maxage 9000
 #startage 3000
 #heal
@@ -3551,11 +3525,11 @@
 #copyspell 600 -- eagle eyes
 #name "Succor of Athel Loren"
 #descr "The mage calls upon the spirits of Athel Loren to look favourably on them and grant them a portion of their energy, reinvigorating them for the duration of the battle."
-#details "This is identical to the reinvigoration granted by Summon Earthpower and does not stack with the reinvigoration from that spell."
+#details "This is half the reinvigoration granted by Summon Earthpower, 2 rather than 4. If you cast Summon Earthpower the 4 will override the 2."
 #effect 23 -- type 2 buff
 #damage 68719476736 -- reinvigoration
 #school 4 -- enchantment
-#fatiguecost 20 -- +15
+#fatiguecost 15 -- +10
 #restricted 111 -- wood elves
 #end
 
@@ -3573,6 +3547,7 @@
 #onlygeosrc 128 -- forest
 #onlygeodst 128 -- forest
 #school 4 -- enchantment
+#restricted 111 -- wood elves
 #end
 
 
@@ -3590,6 +3565,7 @@
 #school 4 -- enchantment
 #researchlevel 6 -- -3
 #fatiguecost 1500 -- -10
+#restricted 111 -- wood elves
 #end
 
 
@@ -3989,7 +3965,7 @@
 #newevent
 #msg "Welcome! Athel Loren has some special mechanics which make them a little different from other nations:
 
-The King in the Woods. In the second turn of spring in year 1 (so about 12 turns into the game) you will receive an event that gives you Orion, a very powerful military commander and single combatant. In the second month of each winter you will get an event that kills Orion if he is still alive, or perhaps he will die in battle before then, but either way he is a spring immortal so will return on the first month of the following spring.
+The King in the Woods. In the second turn of spring in year 1 (so on turn 13 of the game) you will receive an event that gives you Orion, a very powerful military commander and single combatant. In the second month of each winter you will get an event that kills Orion if he is still alive, or perhaps he will die in battle before then, but either way he is a spring immortal so will return on the first month of the following spring.
 
 Forest Home. Most of your commanders and troops gain bonuses when in a forest province. Use this to your advantage! In particular you will notice they get glamour (prevents enemy from seeing you on the strategic map and gives a defensive bonus in combat) when in a forest. Additionally it is cheaper for you to build labs and temples in a forest but more expensive outside.
 
@@ -4001,7 +3977,6 @@ Bramble Forts. Wood Elves are poor builders of forts (they are more expensive an
 #req_unique 1
 #rarity 5
 #end
-
 
 
 
@@ -4019,7 +3994,6 @@ Bramble Forts. Wood Elves are poor builders of forts (they are more expensive an
 #req_fort 0 -- no fort here
 #fort 10 -- bramble fort get
 #end
-
 
 
 ------ HERO EVENTS
@@ -4214,9 +4188,12 @@ Mechanics: Labs and temples are cheaper in forests and more expensive outside. I
 #multihero5 4198 -- glade lord on great eagle
 
 
+---------- DEFENCES
 
+#wallcom 4137 -- glade captain
+#wallunit 4131 -- Glade Guard
+#wallmult 10 -- normal
 
-///////////////// Province defence \\\\\\\\\\\\\\\\\\\\
 
 #defcom1 4137 -- glade captain
 #defcom2 4165 -- branchwraith
@@ -4231,3 +4208,10 @@ Mechanics: Labs and temples are cheaper in forests and more expensive outside. I
 
 
 #end
+
+
+
+
+
+
+-- ---- End Wood Elves

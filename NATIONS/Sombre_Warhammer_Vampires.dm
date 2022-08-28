@@ -1,4 +1,39 @@
--- @@@@ Vampires
+---- Vampires
+
+
+---- Blood Sword
+
+#newweapon 1760
+#copyweapon 8 -- broad sword
+#name "Blood Sword"
+#dt_weapondrain -- max 5 hp, no fatigue?
+#end
+
+
+---- Charnel Sword (used by blood dragons)
+
+#newweapon 1768
+#copyweapon 75 -- enchanted sword
+#name "Charnel Sword"
+#dmg 7 -- same as bane blade
+#rcost 5 -- same as bane blade
+#dt_weapondrain -- max 5 hp, no fatigue?
+#end
+
+
+---- Vampiric Bite
+
+#newweapon 1767
+#name "Vampiric Bite"
+#armorpiercing
+#len -1
+#bonus
+#att 0
+#def 0
+#dmg 0
+#dt_drain
+#pierce
+#end
 
 
 ---- Breton Heavy Lance (Bretonnian Aspirant)
@@ -505,7 +540,7 @@
 #weapon 56 -- nostr hoof
 #invulnerable 10 -- because just ethereality doesn't get across how hard they are to kill
 #ap 25
-#mapmove 30
+#mapmove 26
 #enc 0
 #size 3
 #mounted
@@ -589,7 +624,7 @@
 #startage 50
 #maxage 10000
 #weapon 33 -- claws
-#weapon 63 -- life drain
+#weapon 1767 -- vampiric bite
 #regeneration 5 -- vampire basic
 #invulnerable 10
 #heal
@@ -798,7 +833,6 @@
 #str 12
 #att 11
 #def 11
-#mapmove 3
 --gcost 17
 #gcost 35
 #addupkeep -35
@@ -832,7 +866,6 @@
 #str 12
 #att 11
 #def 11
-#mapmove 3
 #weapon 1752 -- Ancient Sword
 #armor 14 -- Plate Hauberk
 #armor 118 -- half helmet
@@ -860,7 +893,6 @@
 #str 12
 #att 11
 #def 11
-#mapmove 3
 #weapon 1746 -- Ancient Polearm
 #armor 14 -- Plate Hauberk
 #armor 118 -- half helmet
@@ -889,7 +921,6 @@
 #str 12
 #att 11
 #def 11
-#mapmove 3
 #weapon 1753 -- Ancient greatsword
 #armor 14 -- Plate Hauberk
 #armor 118 -- half helmet
@@ -1092,7 +1123,7 @@
 #name "Sylvanian Peasant"
 #descr "The lot of a peasant is a miserable one in any land, but Sylvania is a particularly harsh place to call home. Under constant threat from bandits and various foul creatures that stalk the blighted lands, they are well used to having to form militias to defend their easily isolated villages. Even before the arrival of the Von Carstein Vampires they suffered the rule of a cruel and incompetent aristocracy who neglected and abused the common man in equal measure. When the Von Carsteins took power they instituted The Oath, a dark magical pact which bound the bodies of the people of the land to service of their vampiric masters, so that even after death they might be of use. Every common child born under Von Carstein rule inherits The Oath from their parents and what would be considered a living nightmare to the people of the Empire is normalised. For the peasants the Vampires are typically better rulers than the men who came before them, quicker to act in their defence, even if they do demand the rights to feed on their subjects. Further, the Church of The Oath preaches that in exchange for the servitude of their bodies after death, their souls are guaranteed rest and reward for their loyalty in the peaceful realm of the afterlife.
 
-[6 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep.]"
+[6 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep]"
 #weapon 1 -- Spear
 #secondshape 4003
 #gcost 9
@@ -1120,7 +1151,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Peasant_Bowman_2.tga"
 #descr "The lot of a peasant is a miserable one in any land, but Sylvania is a particularly harsh place to call home. Under constant threat from bandits and various foul creatures that stalk the blighted lands, they are well used to having to form militias to defend their easily isolated villages. Even before the arrival of the Von Carstein Vampires they suffered the rule of a cruel and incompetent aristocracy who neglected and abused the common man in equal measure. When the Von Carsteins took power they instituted The Oath, a dark magical pact which bound the bodies of the people of the land to service of their vampiric masters, so that even after death they might be of use. Every common child born under Von Carstein rule inherits The Oath from their parents and what would be considered a living nightmare to the people of the Empire is normalised. For the peasants the Vampires are typically better rulers than the men who came before them, quicker to act in their defence, even if they do demand the rights to feed on their subjects. Further, the Church of The Oath preaches that in exchange for the servitude of their bodies after death, their souls are guaranteed rest and reward for their loyalty in the peaceful realm of the afterlife. Unlike members of the Levy, peasants receive no training or equipment from their masters are have little appetite for battle.
 
-[7 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep.]"
+[7 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep]"
 #rpcost 5
 #weapon 9 -- Dagger
 #weapon 23 -- short bow
@@ -1149,7 +1180,7 @@
 #name "Sylvanian Levy Archer"
 #descr "The bulk of the mortal Sylvanian military is made of the of the Levies, common folk volunteered by their villages and towns to serve at the behest of the Von Carsteins. Being in the Levy confers a small degree of social status and in truth is in many ways a more comfortable experience than toiling the harsh land of Sylvania as a peasant. Additionally families who contribute to the Levy are exempt from blood taxes by law, though some Vampires secretly disregard such laws. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[9 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep.]"
+[9 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep]"
 #gcost 12
 #deathrec 1
 #rpcost 8
@@ -1184,7 +1215,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Spearman_2.tga"
 #descr "The bulk of the mortal Sylvanian military is made of the of the Levies, common folk volunteered by their villages and towns to serve at the behest of the Von Carsteins. Being in the Levy confers a small degree of social status and in truth is in many ways a more comfortable experience than toiling the harsh land of Sylvania as a peasant. Additionally families who contribute to the Levy are exempt from blood taxes by law, though some Vampires secretly disregard such laws. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[9 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep.]"
+[9 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep]"
 #gcost 12
 #deathrec 1
 #rpcost 8
@@ -1219,7 +1250,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Halberdier_2.tga"
 #descr "The bulk of the mortal Sylvanian military is made of the of the Levies, common folk volunteered by their villages and towns to serve at the behest of the Von Carsteins. Being in the Levy confers a small degree of social status and in truth is in many ways a more comfortable experience than toiling the harsh land of Sylvania as a peasant. Additionally families who contribute to the Levy are exempt from blood taxes by law, though some Vampires secretly disregard such laws. Halberdiers are the best trained and highest status troops amongst the Levy and tend to have slightly more discipline in battle. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[11 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep.]"
+[11 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep]"
 #gcost 14
 #deathrec 1
 #rpcost 8
@@ -1252,7 +1283,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Sylvanian_Crossbowman2.tga"
 #descr "The bulk of the mortal Sylvanian military is made of the of the Levies, common folk volunteered by their villages and towns to serve at the behest of the Von Carsteins. Being in the Levy confers a small degree of social status and in truth is in many ways a more comfortable experience than toiling the harsh land of Sylvania as a peasant. Additionally families who contribute to the Levy are exempt from blood taxes by law, though some Vampires secretly disregard such laws. Crossbows, which were originally imported from the Empire, are relatively rare weapons in Sylvania as their manufacture is tightly restricted; their ability to punch through armour being seen as rather too much of a threat in the hands of the common folk, despite the presence of The Oath. As such Crossbowmen aren't a terribly common sight amongst the Levy. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[11 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep.]"
+[11 gold cost in Death 3 scales. As a slave this troop has halved gold upkeep. When killed it will continue to serve in a Soulless form with no gold upkeep]"
 #gcost 14
 #deathrec 1
 #rpcost 8
@@ -1290,7 +1321,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Sylvanian_Houseguard2.tga"
 #descr "A distinct military force from the Levy, the Houseguard are made up of the sons of the merchants and professional craftsmen who, despite being far below the nobility in the social strata, still have considerable more status than typical common folk. They are the best the mortal inhabitants of Sylvania have to offer, given better training and equipment and entrusted with the protection of the castles and important places of the Von Carsteins. They and their families receive many perks for their service, ensuring the Von Carsteins have a loyal mortal bulwark should dissent emerge amongst the commoners. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[12 gold cost in Death 3 scales. When killed this troop will continue to serve in a Soulless form with no gold upkeep.]"
+[12 gold cost in Death 3 scales. When killed this troop will continue to serve in a Soulless form with no gold upkeep]"
 #gcost 15
 #deathrec 1
 #rpcost 13
@@ -1329,7 +1360,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Forester_2.tga"
 #descr "Sylvania is a densely forested province which is plagued by all manner of evils. Giant spiders, beastmen, trolls, wolves, bandits, and even greenskins can be found in the woods, each threatening the safety of the Sylvanian peasantry. It is the duty of the Wardens to combat these threats and avoid the need for a Vampire to intervene. They are an organisation of men well versed in hunting, tracking, and warfare who are quite accustomed to living in the forests for months at a time, rooting out threats and maintaining the land at the behest of the aristocracy. The intake of recruits to the Wardens is left entirely to their own discretion and they are known for their brutal and exacting requirements; some hopeful aspirants simply do not survive their trial of entry. As such they are a very proud fighting force and loathe to retreat in battle. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[14 gold cost in Death 3 scales. When killed this troop will continue to serve in a Soulless form with no gold upkeep.]"
+[14 gold cost in Death 3 scales. When killed this troop will continue to serve in a Soulless form with no gold upkeep]"
 #gcost 20
 #deathrec 2
 #rpcost 15
@@ -1419,7 +1450,7 @@
 #def 11
 #ap 4
 #flying
-#mapmove 28
+#mapmove 26
 #animal
 #blind
 #forestsurvival
@@ -1464,7 +1495,7 @@
 #def 10
 #ap 6
 #flying
-#mapmove 28
+#mapmove 26
 #animal
 #blind
 #spiritsight
@@ -1507,7 +1538,7 @@
 #mor 13 -- confident, but only LD7 in 8th
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -1526,9 +1557,9 @@
 #heal
 #weapon 595 -- Hypnotise
 #weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- Half Helmet
 #invulnerable 10
 #noriverpass
 #unsurr 2 -- tier 2 combat leader
@@ -1565,7 +1596,7 @@
 #mor 13 -- confident, but only LD7 in 8th
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -1584,9 +1615,9 @@
 #heal
 #weapon 595 -- Hypnotise
 #weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- Half Helmet
 #invulnerable 10
 #noriverpass
 #unsurr 2 -- tier 2 combat leader
@@ -1623,7 +1654,7 @@
 #mor 18 -- confident, LD10
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 25
 #undead
 #neednoteat
@@ -1643,9 +1674,9 @@
 #weapon 595 -- Hypnotise
 #weapon 56 -- hoof
 #weapon 42 -- Bane Blade
-#weapon 719 -- life drain
+#weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- Half Helmet
 #invulnerable 15
 #noriverpass
 #unsurr 3 -- tier 3 combat leader
@@ -1683,7 +1714,7 @@
 #mor 18 -- confident, LD10
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 25
 #undead
 #neednoteat
@@ -1703,9 +1734,9 @@
 #weapon 595 -- Hypnotise
 #weapon 56 -- hoof
 #weapon 42 -- Bane Blade
-#weapon 719 -- life drain
+#weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- Half Helmet
 #invulnerable 15
 #noriverpass
 #unsurr 3 -- tier 3 combat leader
@@ -1726,7 +1757,7 @@
 #name "Captain"
 #descr "Captains are commanders of both the Levy and the Houseguard and inevitably come from families of some station within Sylvania, though of course none are nobles, as only the various houses of the Von Carstein lineage are allowed to hold any title or land. They are not particularly remarkable military leaders, lacking the training of Empire State Captains or the martial tradition of other cultures, but can be relied on to coordinate the movement of mortal forces and deal with threats to order beneath the attention of the vampiric aristocracy. Through the dark hypnotic powers of their masters they are even invested with some words in an ancient dark tongue that allows them limited command over the undead. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins.
 
-[38 gold cost in Death 3 scales. When killed this commander will continue to serve in a Soulless form with no gold upkeep and no ability to lead mundane troops.]"
+[38 gold cost in Death 3 scales. When killed this commander will continue to serve in a Soulless form with no gold upkeep and no ability to lead mundane troops]"
 #gcost 40
 #deathrec 4
 #hp 16 -- two wounds
@@ -1775,7 +1806,7 @@
 #name "Sylvanian Gameskeeper"
 #descr "Sylvania is a densely forested province which is plagued by all manner of evils. Giant spiders, beastmen, trolls, wolves, bandits, and even greenskins can be found in the woods, each threatening the safety of the Sylvanian peasantry. It is the duty of the Wardens to combat these threats. Gameskeepers are the commanders of the Wardens and in addition to the duties of their organisation are sworn to root out dissent to the rule of the Von Carsteins. Being natives of Sylvania they have been sworn to The Oath since birth and if struck down in battle their bodies will immediately rise as soulless undead to continue serving the Von Carsteins. Gameskeepers are always accompanied by a small pack of Sylvanian Hounds.
 
-[38 gold cost in Death 3 scales. When killed this commander will continue to serve in a Soulless form with no gold upkeep and no ability to lead mundane troops.]"
+[38 gold cost in Death 3 scales. When killed this commander will continue to serve in a Soulless form with no gold upkeep and no ability to lead mundane troops]"
 #gcost 40
 #deathrec 4
 #unsurr 1 -- tier 1 leader
@@ -1910,7 +1941,7 @@
 #name "Bretonnian Knight Aspirant"
 #descr "Once a Blood Dragon has established himself as Grand Master of a Knightly Order or a fiefdom and either slain or converted the local Knights to his Bloodline, he will attract new prospective Knights from the ranks of the nobility in human realms, particularly Bretonnia and the Empire. These Aspirants are not yet fully fledged Knights and until they have proven themselves through service to the cause they will not be granted the Blood Kiss and elevated to the ranks of the Blood Knights. This Aspirant is from Bretonnia lands and was most likely set to become a Knight Errant until he was shown the truth of Blood Dragon superiority and the deceit and weakness of the Grail. He is outfitted with the fine destrier steed commonly used by Bretonnian nobility. Should they cover themselves in glory and be granted the Blood Kiss, they will still be a young Blood Knight and not quite so powerful as their older comrades.
 
-[When this unit is promoted it will transform into a Young Blood Knight with homesick 100 and decreased stats to negate its XP stars. Once that troop ends a turn outside of its home province it will lose all XP but also lose the stat decreases, so it will remain as strong.]"
+[When this unit is promoted it will transform into a Young Blood Knight with homesick 100 and decreased stats to negate its XP stars. Once that troop ends a turn outside of its home province it will lose all XP but also lose the stat decreases, so it will remain as strong]"
 #str 10
 #weapon 8 --Broadsword
 #weapon 1762 -- Destrier Hoof
@@ -1978,8 +2009,7 @@
 #heal
 #weapon 4 -- lance
 #weapon 56 -- basic cav hoof
-#weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1760 -- Blood Sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -1999,7 +2029,7 @@
 #name "Imperial Knight Aspirant"
 #descr "Once a Blood Dragon has established himself as Grand Master of a Knightly Order or a fiefdom and either slain or converted the local Knights to his Bloodline, he will attract new prospective Knights from the ranks of the nobility in human realms, particularly Bretonnia and the Empire. These Aspirants are not yet fully fledged Knights and until they have proven themselves through service to the cause they will not be granted the Blood Kiss and elevated to the ranks of the Blood Knights. This Aspirant is from the lands of the Empire, a young son from a noble family, and would be seeking to prove himself as a member of the Nobleborn cavalry had he not been persuaded to seek the power and honour of the Blood Dragon Bloodline. Imperial Aspirants are lighter cavalry than their Bretonnian counterparts but do not make use of the shameful hand crossbow favoured by young nobles in the Empire, preferring a simple sword and shield. Should they cover themselves in glory and be granted the Blood Kiss, they will still be a young Blood Knight and not quite so powerful as their older comrades.
 
-[When this unit is promoted it will transform into a Young Blood Knight with homesick 100 and decreased stats to negate its XP stars. Once that troop ends a turn outside of its home province it will lose all XP but also lose the stat decreases, so it will remain as strong.]"
+[When this unit is promoted it will transform into a Young Blood Knight with homesick 100 and decreased stats to negate its XP stars. Once that troop ends a turn outside of its home province it will lose all XP but also lose the stat decreases, so it will remain as strong]"
 #hp 10
 #size 3
 #mounted
@@ -2063,8 +2093,7 @@
 #heal
 #weapon 4 -- lance
 #weapon 56 -- basic cav hoof
-#weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1760 -- Blood Sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -2113,8 +2142,7 @@
 #heal
 #weapon 4 -- lance
 #weapon 56 -- basic cav hoof
-#weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1760 -- Blood Sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -2170,7 +2198,7 @@
 #gcost 220
 #deathrec 15
 #rpcost 2
-#rcost 10
+#rcost 14
 #ressize 2
 #hp 28 -- little bit tougher than a carstein
 #size 3
@@ -2179,11 +2207,11 @@
 #str 18 -- +2 over carstein
 #att 16 -- +1 over carstein, +1 for berserk cav
 #def 15 -- +1 over carstein
-#mr 16 -- +1 over carstein
+#mr 15
 #mor 16 -- +3 over carstein
 #enc 0
 #prec 12
-#mapmove 28 -- really good horse, same as knight of avalon
+#mapmove 26 -- really good horse, 2 less than knight of avalon
 #ap 28 -- 2 slower than KoA
 #undead
 #neednoteat
@@ -2199,8 +2227,7 @@
 #heal
 #weapon 4 -- lance
 #weapon 615 -- improved nostr bonus hoof
-#weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1760 -- Blood Sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -2228,7 +2255,7 @@
 #gcost 450
 #deathrec 30
 #rpcost 4
-#rcost 6
+#rcost 14
 #ressize 3
 #hp 50 -- +5 over carstein, then +10 for the mount
 #size 4 -- flying horse
@@ -2237,11 +2264,11 @@
 #str 20 -- +2 over carstein
 #att 16 -- +1 over carstein
 #def 16 -- +1 over carstein
-#mr 18 -- +1 over carstein
+#mr 17
 #mor 20 -- +2 over carstein
 #enc 0
 #prec 12
-#mapmove 28 -- flying
+#mapmove 26 -- flying
 #ap 28 -- 2 slower than KoA
 #undead
 #neednoteat
@@ -2256,8 +2283,7 @@
 #expertundeadleader
 #heal
 #weapon 615 -- improved nostr bonus hoof
-#weapon 42 -- Bane Blade
-#weapon 719 -- life drain
+#weapon 1768 -- charnel sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -2287,7 +2313,7 @@
 #gcost 120
 #deathrec 10
 #rpcost 54
-#rcost 10
+#rcost 14
 #hp 15 -- vampire troop
 #ressize 2
 #size 3
@@ -2313,8 +2339,7 @@
 #heal
 #weapon 4 -- lance
 #weapon 56 -- basic cav hoof
-#weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1760 -- Blood Sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -2889,7 +2914,7 @@
 #def 11
 #prec 9
 #ap 22
-#mapmove 26
+#mapmove 24
 #enc 0
 #undead
 #weapon 1759 -- scythe
@@ -3253,7 +3278,7 @@
 #researchbonus -5
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
-#weapon 719 -- Life drain
+#weapon 1767 -- Vampiric Bite
 #invulnerable 10
 #itemslots 274560 -- head slot for crown only and 2 misc
 #darkvision 100
@@ -3290,7 +3315,7 @@
 #mor 18
 #enc 0
 #prec 14 -- super precision!
-#mapmove 28 -- heliophaqgus
+#mapmove 26
 #flying
 #ap 18 -- nice and fast
 #undead
@@ -3309,7 +3334,7 @@
 #researchbonus -5
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
-#weapon 719 -- Life drain
+#weapon 1767 -- Vampiric Bite
 #invulnerable 10
 #itemslots 274560 -- head slot for crown only and 2 misc
 #spiritsight
@@ -3370,7 +3395,7 @@
 #researchbonus -2
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
-#weapon 719 -- Life drain
+#weapon 1767 -- Vampiric Bite
 #armor 368 -- armour of strigos
 #invulnerable 15
 #darkvision 100
@@ -3405,7 +3430,7 @@
 #mor 9 -- braver but not by much
 #enc 0
 #prec 8
-#mapmove 22
+#mapmove 20
 #ap 18
 #undead
 #neednoteat
@@ -3504,7 +3529,7 @@ Magic: Strong death and decent blood with access to air and nature."
 #mor 13 -- confident, but only LD7 in 8th
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -3523,7 +3548,7 @@ Magic: Strong death and decent blood with access to air and nature."
 #heal
 #weapon 595 -- Hypnotise
 #weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1767 -- Vampiric Bite
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #invulnerable 10
@@ -3581,7 +3606,7 @@ Magic: Strong death with access to nature and earth."
 #researchbonus -5
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
-#weapon 719 -- Life drain
+#weapon 1767 -- Vampiric Bite
 #invulnerable 10
 #itemslots 274560 -- head slot for crown only and 2 misc
 #darkvision 100
@@ -3735,7 +3760,7 @@ Magic: Weak death and blood."
 #mor 16 -- +3 over carstein
 #enc 0
 #prec 12
-#mapmove 28 -- really good horse, same as knight of avalon
+#mapmove 26
 #ap 28 -- 2 slower than KoA
 #undead
 #neednoteat
@@ -3751,8 +3776,7 @@ Magic: Weak death and blood."
 #heal
 #weapon 4 -- lance
 #weapon 615 -- improved nostr bonus hoof
-#weapon 8 -- Broad Sword
-#weapon 719 -- life drain
+#weapon 1768 -- Charnel Sword
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #armor 3 -- kite shield
@@ -3798,7 +3822,7 @@ Magic: Weak death and blood."
 #mor 18 -- confident, LD10
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 25
 #undead
 #neednoteat
@@ -3818,7 +3842,7 @@ Magic: Weak death and blood."
 #weapon 1764 -- Staff Sickle
 #weapon 56 -- hoof
 #weapon 1765 -- Sword of Unholy Power
-#weapon 719 -- life drain
+#weapon 1767 -- Vampiric Bite
 #armor 378 -- Armour of Templehof
 #armor 118 -- Half Helmet
 #invulnerable 15
@@ -3861,7 +3885,7 @@ Magic: Weak death and blood."
 #mor 18 -- confident, LD10
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 25
 #undead
 #neednoteat
@@ -3881,7 +3905,7 @@ Magic: Weak death and blood."
 #weapon 1764 -- Staff Sickle
 #weapon 56 -- hoof
 #weapon 1765 -- Sword of Unholy Power
-#weapon 719 -- life drain
+#weapon 1767 -- Vampiric Bite
 #armor 378 -- Armour of Templehof
 #armor 118 -- Half Helmet
 #invulnerable 15
@@ -3925,7 +3949,7 @@ Magic: Weak death and blood."
 #mor 20 -- +2
 #enc 0
 #prec 14
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -3942,7 +3966,7 @@ Magic: Weak death and blood."
 #heal
 #weapon 595 -- Hypnotise
 #weapon 1766 -- Blood Drinker
-#weapon 719 -- life drain
+#weapon 1767 -- Vampiric Bite
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #invulnerable 15
@@ -3980,7 +4004,7 @@ Magic: Weak death and blood."
 #mor 20 -- +2
 #enc 0
 #prec 14
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -3997,7 +4021,7 @@ Magic: Weak death and blood."
 #heal
 #weapon 595 -- Hypnotise
 #weapon 1766 -- Blood Drinker
-#weapon 719 -- life drain
+#weapon 1767 -- Vampiric Bite
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
 #invulnerable 15
@@ -4027,7 +4051,7 @@ Magic: Weak death and blood."
 #weapon 595 -- Hypnotise
 #weapon 1747 -- Enslavement
 #weapon 6 -- short sword
-#weapon 719 -- bonus 0 dmg str added life drain
+#weapon 1767 -- Vampiric Bite
 #hp 30
 #regeneration 5 -- half that of dominions troll
 #heal
@@ -4043,7 +4067,7 @@ Magic: Weak death and blood."
 #spy
 #stealthy 20 -- spy level
 #enc 0
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -4086,7 +4110,7 @@ Magic: Weak death and blood."
 #weapon 595 -- Hypnotise
 #weapon 1747 -- Enslavement
 #weapon 6 -- short sword
-#weapon 719 -- bonus 0 dmg str added life drain
+#weapon 1767 -- Vampiric Bite
 #hp 30
 #regeneration 5 -- half that of dominions troll
 #heal
@@ -4102,7 +4126,7 @@ Magic: Weak death and blood."
 #spy
 #stealthy 20 -- spy level
 #enc 0
-#mapmove 26 -- flying
+#mapmove 24 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -5037,8 +5061,8 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 --Set starting troops, commander, and bonus commander.
 
 #startcom 4107 -- revenant
-#startunitnbrs1 20
-#startunitnbrs2 30
+#startunitnbrs1 15
+#startunitnbrs2 20
 #startunittype1 191 -- longdead
 #startunittype2 914 -- soulless warrior
 #startscout 434 -- black servant
@@ -5442,7 +5466,6 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 #addname "Melmon of Brionne"
 #addname "Jules of Bastonne"
 #addname "Philippe of Couronne"
-#addname "Repanse de Lyonesse"
 #addname "Charlen"
 #end
 
@@ -5659,3 +5682,12 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 #damage 4111 -- wight king
 #nreff 1
 #end
+
+
+
+
+
+
+
+
+-- ---- End Vampires

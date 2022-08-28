@@ -1,4 +1,4 @@
--- @@@@ Bretonnia
+---- Bretonnia
 
 ------ ITEMS
 
@@ -536,7 +536,41 @@
 #ap 12
 #prec 10
 #enc 3
-#gcost 10
+#gcost 9
+#rcost 1
+#rpcost 9
+#poorleader
+#mapmove 16
+#size 2
+#nametype 100 
+#startage 30
+#castledef 1
+#end
+
+
+-- Yeoman (morningstar)
+
+#newmonster 4076
+#spr1 "./Sombre_Warhammer/Warhammer_Bretonnia/Yeoman_Morningstar.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Bretonnia/Yeoman_Morningstar2.tga"
+#name "Yeoman"
+#descr "Though Bretonnia is quite strictly divided between commoner and nobility, there are different degrees of social status within the masses of the commonfolk, just as there are amongst the aristocracy. The Yeomen are commoners who are permitted to own their homes and trusted to lead other peasants, having been marked out by the ruler of their fief as having served particularly faithfully. One of the most common routes to the status of Yeomen is brave service and experience in the Men-at-Arms, though this comes at considerable risk. Yeoman soldiers are better trained, better equipped, and more dedicated in battle than any Man-at-Arms and while they are by no means respected by the knights, they are trusted to give a good enough account of themselves. They are quite often used to guard forts and castles and are experienced in defending such structures."
+#str 10
+#slave
+#weapon 15 -- Morningstar
+#armor 339 -- Feudal Shield
+#armor 20 -- Iron Cap
+#armor 13 -- Chain Mail Hauberk
+#hp 10
+#mor 8
+#slave
+#mr 10
+#att 10
+#def 10
+#ap 12
+#prec 10
+#enc 3
+#gcost 9
 #rcost 1
 #rpcost 9
 #poorleader
@@ -568,7 +602,7 @@
 #att 9
 #def 9
 #ap 12
-#prec 10
+#prec 11
 #enc 3
 #gcost 10
 #rcost 1
@@ -857,6 +891,7 @@
 #itemslots 1
 #mountainsurvival
 #animal
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -885,7 +920,7 @@
 #ap 22
 #prec 10
 #enc 5
-#gcost 60
+#gcost 70
 #ressize 1
 #rcost 12
 #rpcost 48 -- same as ea van hirdman
@@ -922,6 +957,7 @@
 #prec 9
 #enc 3
 #gcost 7
+#addupkeep -6
 #rcost 1
 #rpcost 7
 #mapmove 18
@@ -1349,6 +1385,7 @@
 #gcost 0
 #mapmove 28 -- same as vanilla gryphon
 #size 5
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -1420,6 +1457,7 @@
 #size 4
 #nametype 100 
 #itemslots 1
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -1430,7 +1468,7 @@
 #name "Entreat Duke"
 #descr "The Dukes of Bretonnia are the rulers of the twelve great Dukedoms that make up that nation, each divided into holdings ruled over by Lords which are in turn divided into fiefs ruled by Knights of the Realm. Just as the knights swear fealty to their Lord, the Lords swear fealty to their Duke, and the Dukes swear fealty to the King, the one among them picked to rule over all of Bretonnia at the behest of the Lady. Each of the Dukes is a mighty hero, having ascended to their position not only by birthright but by countless great and honourable deeds, and many of them have successfully completed the Questing Vow and become Grail Lords, taking back their title to protect all of the sacred sites within their Dukedom. By honouring their acheivements with a tournament, great hunt, feast day, or other ritual, one of the Dukes will be entreated to join your cause along with some troops.
 
-[When you hire this commander you will receive, at the end of the turn, a randomly selected one of 12 unique Dukes which vary in power but are all stronger than a Lord commander. You will also receive assorted troops depending on which Duke you get. If you have already had all 12 Dukes, you'll get a Grail Lord and some troops instead. This can only happen if you still control the province in which the Duke was recruited, so if you are put under siege the Entreat Duke icon will remain until the province is back under your control, at which point you will get a Duke and troops as normal.]"
+[When you hire this commander you will receive, at the end of the turn, a randomly selected one of 12 unique Dukes which vary in power but are all stronger than a Lord commander. You will also receive assorted troops depending on which Duke you get. If you have already had all 12 Dukes, you'll get a Grail Lord and some troops instead. This can only happen if you still control the province in which the Duke was recruited, so if you are put under siege the Entreat Duke icon will remain until the province is back under your control, at which point you will get a Duke and troops as normal]"
 #hp 20
 #size 6
 #prot 10
@@ -1654,6 +1692,7 @@
 #size 4
 #nametype 100 
 #itemslots 1
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -1923,7 +1962,7 @@
 #name "Battle Reliquae"
 #descr "To some peasants Grail Knights are effectively living gods whose every act is one of divine heroism and every word is scripture, thus it is unsurpising that there is a particular set of Pilgrims who dedicate their lives to following Grail Knights and, should they meet their end, rushing to secure holy 'relics'. If a Grail Knight is unlucky to be felled in a remote place and this news reaches these fanatics before any members of the nobility, it is quite possible the remains of both knight and steed will be stolen away and turned into a Battle Reliquae. Battle Reliquaes are effectively the skeletal remains of a Grail Knight and his trusty steed dressed up and held together by bindings and staves in a parody of life. They are carried into battle by devout bands of Pilgrims who are driven into a frenzy by visions of their fallen hero-god looking over their actions and approving. Inevitably the presence of a Reliquae causes unrest in the population of a province as commoners argue over the wishes and possession of the remains. The nobility, especially those who have taken the Grail Vow, regard Reliquaes with disgust bordering on horror, but the emissaries of the Lady have let it be known that they are to be allowed to accompany armies into battle and the nobility have no choice but to accept their presence with gritted teeth.
 
-[Berserks self and summons 5 Battle Pilgrims and 4d6 Pilgrims on battle start.]"
+[Berserks self and summons 5 Battle Pilgrims and 4d6 Pilgrims on battle start]"
 #str 11
 #ambidextrous 10
 #weapon 8 -- broad sword
@@ -2455,6 +2494,7 @@
 #size 3
 #itemslots 1
 #magicboost 53 -5
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -2536,6 +2576,7 @@
 #mapmove 28 -- same as vanilla gryphon
 #size 5
 #unsurr 2
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -2836,7 +2877,7 @@ Pilgrims of the Lady. Each of your temmples represents a Grail Chapel dedicated 
 #2d3units 3684 -- questing knight
 #taxboost -25
 #unrest 25
-#incdom 1
+#incdom 2
 #end
 
 
@@ -2848,7 +2889,7 @@ Pilgrims of the Lady. Each of your temmples represents a Grail Chapel dedicated 
 #req_fornation 114 -- Bretonnia
 #req_targmnr 3696 -- Bretonnian Lord
 #rarity 5
-#req_rare 3
+#req_rare 4
 #req_land 1
 #nation 114 -- Bretonnia
 #transform 3679 -- Questing Lord
@@ -2864,7 +2905,7 @@ Pilgrims of the Lady. Each of your temmples represents a Grail Chapel dedicated 
 #req_fornation 114 -- Bretonnia
 #req_targmnr 3679 -- Questing Lord
 #rarity 5
-#req_rare 3
+#req_rare 5
 #req_land 1
 #nation 114 -- Bretonnia
 #transform 3698 -- Grail Lord
@@ -2879,7 +2920,7 @@ Pilgrims of the Lady. Each of your temmples represents a Grail Chapel dedicated 
 #req_fornation 114 -- Bretonnia
 #req_targmnr 3697 -- Paladin
 #rarity 5
-#req_rare 4
+#req_rare 5
 #req_land 1
 #nation 114 -- Bretonnia
 #transform 3687 -- Questing Paladin
@@ -2895,7 +2936,7 @@ Pilgrims of the Lady. Each of your temmples represents a Grail Chapel dedicated 
 #req_fornation 114 -- Bretonnia
 #req_targmnr 3687 -- Questing Paladin
 #rarity 5
-#req_rare 5
+#req_rare 6
 #req_land 1
 #nation 114 -- Bretonnia
 #transform 3677 -- Grail Paladin
@@ -3456,7 +3497,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #templepic 10 -- forest
 #labcost 700
 #templecost 300
-#color 0.1 0.7 0.1
+#color 0.5 0.8 0.3
 
 #guardspirit 3689 -- Guardian Spirit Knight
 
@@ -3465,12 +3506,18 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #addgod 138 -- gorgon
 #addgod 157 --Mother of Monsters
 #addgod 158 -- oracle
+#addgod 216 -- red dragon
+#addgod 265 -- blue dragon
+#addgod 266 -- green dragon
 #addgod 249 --Crone
 #addgod 215 --Virtue
 #addgod 401 --Bitch Queen
+#addgod 472 -- statue of order
 #addgod 485 --Great Enchantress
 #addgod 600 --Titan of War and Wisdom
+#addgod 608 -- phoenix
 #addgod 606 --Great Mother
+#addgod 657 -- monolith
 #addgod 862 --Vampire Queen
 #addgod 1098 --Asynja (warrior)
 #addgod 1231 --Draikana
@@ -3482,6 +3529,9 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #addgod 2138 --Sphinx
 #addgod 2239 --Asynja
 #addgod 2435 --Annunaki of Love and War
+#addgod 2785 -- solar eagle
+#addgod 2786 -- celestial gryphon
+#addgod 2797 -- hieracosphinx
 #addgod 2851 -- titan of winds and waves
 #addgod 2922 -- morgen high queen
 #addgod 3076 -- morrigna (trinity)
@@ -3503,6 +3553,7 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #addrecunit 3664 -- Men-at-Arms (halberd)
 #addrecunit 3665 -- Peasant Bowman
 #addrecunit 3666 -- Yeoman
+#addrecunit 4076 -- yeoman morningstar
 #addrecunit 3716 -- Longbowman
 #addrecunit 3667 -- Mounted Yeoman
 #addrecunit 3685 -- Battle Pilgrim
@@ -3599,6 +3650,8 @@ Mechanics: Pilgrims gather at temples according to dominion strength"
 #startunittype1 3668 -- Mounted Knight Errant
 #startunitnbrs1 5
 #startunittype2 3666 -- Yeomen infantry
-#startunitnbrs2 10
+#startunitnbrs2 15
 #end
 
+
+-- ---- End Bretonnia

@@ -1,4 +1,4 @@
--- @@@@ Dark Elves
+---- Dark Elves
 
 ---------------- ITEMS
 
@@ -172,7 +172,6 @@
 #newweapon 1191
 #copyweapon 6 -- short sword
 #name "Khainite Blade"
-#dmg 7
 #magic
 #secondaryeffect 52 -- death poison
 #end
@@ -663,6 +662,7 @@
 #armor 162 -- Crested Helmet
 #deserter 100 -- in case they accidentally stick around
 #cleanshape
+#deserter 100
 #end
 
 
@@ -1738,6 +1738,7 @@
 #cleanshape
 #xploss 100
 #bird -- most similar shape
+#deserter 100
 #end
 
 
@@ -1997,7 +1998,7 @@
 #name "Herald of Slaanesh"
 #descr "Foremost amongst the ranks of the Daemonettes are the Heralds of Slaanesh. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm. Slaanesh is always hungry for morsels of courtly intrigue and such scraps can lead to the corrupting of a mortal ruler, a matter to which the Lord of Excess is always attentive. At times the Heralds carry their master's word to specific individuals singled out for divine notice. Not all such visitations are welcomed by those who receive them, for Slaanesh is nothing if not effusive in his tempers. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks.
 
-[This Herald of Slaanesh will transform into a form capable of seducing either males or females.]"
+[This Herald of Slaanesh will transform into a form capable of seducing either males or females]"
 --compared the the slaaneshi version, should be worse
 #ap 16
 #mapmove 22
@@ -2152,7 +2153,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Shade_Leader.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Shade_Leader2.tga"
 #name "Bloodshade"
-#descr "The ancestors of the Shades once ruled Clar Karond but were betrayed and exiled by their peers. Outcast and hunted, the clans took to the wilderness of the Blackspire mountains and over time became accustomed to these harsh conditions. Shades are scouts, trackers, hunters, and mountain fighters of incredible skill, said to be able to move as quietly as ghosts, survive in the bitterest cold, and strike with unparalleled swiftness and coordination. Bloodshades are the leaders of bands of Shades and are typically the most skilled of their group, as the Shades practice an uncompromising form of survival of the fittest extreme even by Dark Elf standards. In addition to leading raiding groups they are often employed as lone scouts and assassins, especially by those who cannot afford the services of a Khainite Assassin."
+#descr "The ancestors of the Shades once ruled Clar Karond but were betrayed and exiled by their peers. Outcast and hunted, the clans took to the wilderness of the Blackspire mountains and over time became accustomed to these harsh conditions. Shades are scouts, trackers, hunters, and mountain fighters of incredible skill, said to be able to move as quietly as ghosts, survive in the bitterest cold, and strike with unparalleled swiftness and coordination. Bloodshades are the leaders of bands of Shades and are typically the most skilled of their group, as the Shades practice an uncompromising form of survival of the fittest extreme even by Dark Elf standards."
 #hp 14
 #str 11 -- +1
 #size 2
@@ -2165,7 +2166,7 @@
 #prec 15 -- expert marksman
 #ap 14
 #mapmove 20
-#gcost 90
+#gcost 60
 #rcost 1
 #rpcost 1
 #armor 12 -- scale mail hauberk
@@ -2174,8 +2175,6 @@
 #weapon 6 -- short sword
 #weapon 1183 -- throwing knives
 #stealthy 30
-#assassin
-#patience 1
 #mountainsurvival
 #wastesurvival
 #coldres 5
@@ -2189,7 +2188,6 @@
 #ambidextrous 3
 #darkvision 25
 #unsurr 1 -- tier 1
-#itemslots 3206 -- no misc allowed
 #end
 
 
@@ -2215,7 +2213,7 @@
 #mapmove 20
 #gcost 140
 #rcost 1
-#rpcost 1
+#rpcost 2
 #armor 49 -- lightweight scale mail
 #armor 119 -- reinforced leather cap
 #weapon 1191 -- Khainite blade
@@ -2227,7 +2225,7 @@
 #stealthy 50 -- pretty much the best in the game
 #assassin
 #spy
-#patience 5
+#patience 4
 #ambidextrous 4
 #darkvision 50
 #noleader
@@ -2246,7 +2244,7 @@
 #name "Corsair Captain"
 #descr "It takes decades of hard-bitten villainy to earn or usurp command of one of the ships that accompany a Black Ark in its fleet. Those Corsairs who reach the rank of Captain have the ear of the ruler of the Black Ark itself and may even one day rise to command it themselves, should they be blessed with either noble birth, a particularly ruthless sense of ambition, or both. Though they lack the strategic expertise of Masters or Dreadlords Captains are able to carry troops across the sea and are known for leading from the front and through swift and cruel example, ensuring their men know the Captain has an eye on them at all times. They arm themselves in a fashion very similar to their Corsairs though traditionally they wear heavier, more elaborate armour as should their vessel be brought low they know the lords of Naggaroth will expect them to sink with it.
 
-[When in a coastal province you control this commander might establish a Corsair Cove. Coves will dismantle if on or adjacent to a forted province.]"
+[When in a coastal province you control this commander might establish a Corsair Cove. Coves will dismantle if on or adjacent to a forted province]"
 #hp 15
 #mor 14
 #mr 14 -- tier 2
@@ -2677,7 +2675,7 @@
 #att 15
 #def 14
 #prec 14
-#gcost 100
+#gcost 110
 #rpcost 2
 #weapon 1177 -- poisoned blade
 #weapon 1177 -- poisoned blade
@@ -2717,7 +2715,7 @@
 #att 15
 #def 14
 #prec 14
-#gcost 120
+#gcost 110
 #rpcost 2
 #weapon 1177 -- poisoned blade
 #weapon 1177 -- poisoned blade
@@ -2864,6 +2862,7 @@
 #berserk 2
 #deserter 100 -- in case they accidentally stick around
 #cleanshape
+#deserter 100
 #end
 
 
@@ -3163,7 +3162,7 @@
 #montagweight 2 -- twice as likely
 #end
 
-#newmonster 5182
+#newmonster 5209
 #copystats 2514 -- cave crab
 #copyspr 2514 -- cave crab
 #montag 3201 -- cave beasts
@@ -3435,7 +3434,7 @@
 #damage 5146 -- daemonette
 #nreff 5
 #effect 10001
-#researchlevel 3
+#researchlevel 4
 #restricted 178 -- dark elves only
 #end
 
@@ -3472,11 +3471,11 @@
 #pathlevel 1 1
 #school 6 -- blood
 #reqseduce -- only mages with the seduce ability can cast this spell
-#fatiguecost 4600 -- 46 blood slaves
+#fatiguecost 3800 -- 38 blood slaves
 #damage 5203 -- seeker
-#nreff 5
+#nreff 4
 #effect 10001
-#researchlevel 5
+#researchlevel 6
 #restricted 178 -- dark elves only
 #end
 
@@ -6444,7 +6443,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #req_maxdominion 5 -- if positive dominion is higher than 5 this can't happen at all
 #removesite 1902 -- cult tier 1
 #addsite 1903 -- cult tier 2
-#incscale1 1 -- increases sloth by 1
+#incscale 1 -- increases sloth by 1
 #end
 
 
@@ -6463,7 +6462,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #req_maxdominion 5 -- if positive dominion is higher than 5 this can't happen at all
 #removesite 1902 -- cult tier 1
 #addsite 1903 -- cult tier 2
-#incscale1 1 -- increases sloth by 1
+#incscale 1 -- increases sloth by 1
 #req_monster 5120 -- female pleasure cultist
 #end
 
@@ -6483,7 +6482,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #req_maxdominion 5 -- if positive dominion is higher than 5 this can't happen at all
 #removesite 1902 -- cult tier 1
 #addsite 1903 -- cult tier 2
-#incscale1 1 -- increases sloth by 1
+#incscale 1 -- increases sloth by 1
 #req_monster 5136 -- male pleasure cultist
 #end
 
@@ -6503,7 +6502,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #req_maxdominion 5 -- if positive dominion is higher than 5 this can't happen at all
 #removesite 1902 -- cult tier 1
 #addsite 1903 -- cult tier 2
-#incscale1 1 -- increases sloth by 1
+#incscale 1 -- increases sloth by 1
 #req_2monsters 5136 -- male pleasure cultist
 #end
 
@@ -6523,7 +6522,7 @@ Cult of Pleasure. Your forts can harbour the Cult of Pleasure, which starts quie
 #req_maxdominion 5 -- if positive dominion is higher than 5 this can't happen at all
 #removesite 1902 -- cult tier 1
 #addsite 1903 -- cult tier 2
-#incscale1 1 -- increases sloth by 1
+#incscale 1 -- increases sloth by 1
 #req_2monsters 5120 -- female pleasure cultist
 #end
 
@@ -6831,6 +6830,8 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 --addreccom 5142 -- shadowblade
 --addreccom 5200 -- anointed of slaanesh
 
+#addforeigncom 5115 -- bloodshade
+
 -----------GODS
 
 #addgod 109 -- dagon
@@ -6900,7 +6901,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #defmult2 10
 #defmult2b 10
 
---wallcom ???? -- I don't think they need a wall commander
+#wallcom 5103  -- Darkshard
 #wallunit 5103  -- Darkshard
 #wallmult 12 -- 2 above standard because dark elf cities are extremely heavily defended
 
@@ -6911,3 +6912,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 #startunitnbrs2 10
 #startscout 5115 -- Bloodshade
 #end
+
+
+
+-- ---- End Dark Elves

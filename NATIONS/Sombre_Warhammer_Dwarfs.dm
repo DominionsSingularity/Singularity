@@ -1,4 +1,4 @@
--- @@@@ Dwarfs
+---- Dwarfs
 
 
 
@@ -20,13 +20,15 @@
 
 #selectitem 903
 #name "Mark of Drengi"
-#descr "Slayers tend to bear many tattoos of varying kinds, but there is one which only a Slayer who has risen to the station of Giantslayer or above may bear: the mark of Drengi, signifying true fellowship in the cult of the Slayer. This mark signifies that no ordinary death will be allowed to befall this warrior, rather his end will be the subject of song and legend. Such is the power of destiny that the Slayer may escape certain death in the manner of the preternaturally lucky."
+#descr "Slayers tend to bear many tattoos of varying kinds, but there is one which only a Slayer who has risen to the station of Giantslayer or above may bear: the mark of Drengi, signifying true fellowship in the cult of the Slayer. This mark signifies that no ordinary death will be allowed to befall this warrior, rather his end will be the subject of song and legend. Such is the power of destiny that the Slayer may escape certain death in the manner of the preternaturally lucky. Additionally the Mark will activate the magical tattoos of nearby Slayers each round of combat."
 #spr "./Sombre_Warhammer/Warhammer_Dwarfs/Item_Drengi.tga"
 #constlevel 12
 #type 8 -- misc
 #luck -- personal luck
 #nofind
 #cursed
+#autospell "Awaken Slayer Tattoos" -- custom spell
+#autospellrepeat 1
 #end
 
 ---- Rune of Grimnir
@@ -93,7 +95,7 @@
 #nodemon
 #cursed -- can't be dropped
 #nofind
-#heal
+#recuperation
 #regeneration 2 -- 2% is very low, but that's on purpose
 #end
 
@@ -118,7 +120,7 @@
 
 #selectitem 922
 #spr "./Sombre_Warhammer/Warhammer_Dwarfs/Item_Thorgrim.tga"
-#name "Helm of Himnir Steelbeard"
+#name "Drgon Crown of Karaz"
 #descr "The Dragon Crown has been worn by the High Kings since the founding of Karaz-a-Karak. It is a symbol of absolute authority and represents the trust given to the High King to lead his people and avenge the fallen."
 #type 6 -- helm
 #constlevel 12
@@ -256,7 +258,7 @@
 #selectitem 928
 #spr "./Sombre_Warhammer/Warhammer_Dwarfs/Item_Map_of_the_Underway.tga"
 #name "Map of the Underway"
-#descr "This tablet of stone is inscribed with runes that symbolise the secret tunnels and passages that once connected every Dwarfhold in the Golden Age. Simply carrying this map will allow its bearer to traverse these underground pathways in the same manner as the Runebearers. Using the underways allows for faster strategic movement while avoiding hazardous terrain of the overworld. The map is also inscribed with runes of reinvogration to counter fatigue. Because of the sacred nature of the underways and their great meaning to all Dwarfs, as well as the potential threat they represent to the Dwarfholds that still stand, the map is enchanted such that it will explode in flame should the bearer be slain in battle."
+#descr "This tablet of stone is inscribed with runes that symbolise the secret tunnels and passages that once connected every Dwarfhold in the Golden Age. Simply carrying this map will allow its bearer to traverse these underground pathways in the same manner as the Runebearers. Using the underways allows for faster strategic movement. The map is also inscribed with runes of reinvogration to counter fatigue. Because of the sacred nature of the underways and their great meaning to all Dwarfs, as well as the potential threat they represent to the Dwarfholds that still stand, the map is enchanted such that it will explode in flame should the bearer be slain in battle."
 #type 8
 #reinvigoration 1
 #constlevel 4
@@ -264,13 +266,7 @@
 #secondarypath 3 -- earth
 #mainlevel 1
 #secondarylevel 1
-#mapspeed 8 -- +8 mapmove
-#forestsurvival
-#mountainsurvival
-#swampsurvival
-#wastesurvival
-#snow
-#swimming
+#mapspeed 10 -- +108 mapmove
 #deathfire 5
 #restricted 117
 #noundead
@@ -310,7 +306,7 @@
 #type 6
 #constlevel 4
 #mainpath 3 -- earth
-#mainlevel 3 -- E3 and 15 gems? or 20? I forget
+#mainlevel 2 -- E2 and 10 gems
 #armor 227 -- magic helmet
 #invulnerable 15
 #darkvision 100
@@ -357,7 +353,7 @@
 #secondarylevel 2
 #deathcurse
 #regeneration 10 -- standard regen
-#heal
+#recuperation
 #reinvigoration -2
 #cursed
 #restricted 117
@@ -366,6 +362,22 @@
 #nodemon
 #nofind
 #bless
+#end
+
+
+---- Engineering Rune
+
+#selectitem 939
+#spr "./Sombre_Warhammer/Warhammer_Dwarfs/Item_Engineer.tga"
+#name "Rune of the Engineer"
+#descr "This Rune signals that the bearer is a member of the venerated Engineer's Guild and grants them the ability to enhance the accuracy of others and enchant missile weapons to deliver fiery vengeance to the foe. Each round the run will automatically cast an AoE 1 aim buff which also provides the benefits of Flaming Arrows."
+#type 8 -- misc
+#constlevel 12
+#restricted 117
+#autospell "Aim and Fire"
+#autospellrepeat 1
+#cursed -- can't be dropped
+#nofind
 #end
 
 
@@ -378,7 +390,7 @@
 #newweapon 859
 #copyweapon 17 -- Axe
 #name "Quality Axe"
-#rcost 6
+#rcost 4
 #att 1 -- +1
 #def 0 -- +1
 #end
@@ -391,7 +403,7 @@
 #dmg 7 -- the same
 #att 1 -- +1
 #def 0 -- +1
-#rcost 7
+#rcost 5
 #end
 
 --- Dwarf Crossbow
@@ -399,9 +411,9 @@
 #newweapon 842
 #copyweapon 25 -- regular crossbow
 #name "Quality Crossbow"
-#dmg 11 -- +3
+#dmg 10 -- +2
 #att 3 -- +1 over normal
-#rcost 12 -- +9 over normal
+#rcost 9 -- +6 over normal
 #end
 
 --- Dwarf Arbalest
@@ -409,10 +421,10 @@
 #newweapon 843
 #copyweapon 26 -- arbalest
 #name "Quality Arbalest"
-#dmg 15 -- +3 increase
+#dmg 14 -- +2 increase
 #att 3 -- +1 increase
 #ammo 12 -- +2
-#rcost 15
+#rcost 11
 #end
 
 --- Dwarf Throwing Axes
@@ -424,7 +436,7 @@
 #nratt 2 -- +1
 #att -2 -- +2
 #ammo 3 -- +1
-#rcost 6
+#rcost 5
 #end
 
 --- Oath Hammer (compare stats with maul)
@@ -436,7 +448,7 @@
 #dmg 10 -- +1
 #att 1 -- +1
 #def 1 -- +2
-#rcost 12
+#rcost 9
 #magic -- added
 #len 2
 #end
@@ -448,7 +460,7 @@
 #name "Quality Greataxe"
 #dmg 10 -- +1
 #att 1 -- same
-#rcost 10
+#rcost 7
 #end
 
 --- Dwarf Warpick
@@ -459,7 +471,7 @@
 #dmg 11
 #att 0 -- +2
 #def -1 -- +1
-#rcost 9
+#rcost 7
 #len 2 -- +1
 #end
 
@@ -471,7 +483,17 @@
 #dmg 8 -- same
 #att 2 -- +1
 #def 1 -- +2
-#rcost 10
+#rcost 7
+#end
+
+
+--- Dwarf Hatchet
+
+#newweapon 1202
+#copyweapon 253 -- hatchet
+#name "Quality Hatchet"
+#dmg 6 -- +1
+#rcost 3
 #end
 
 --- Firedrake
@@ -480,7 +502,7 @@
 #copyweapon 14 -- maul
 #name "Firedrake"
 #dmg 10 -- +1
-#rcost 14
+#rcost 12
 #secondaryeffectalways 850 -- alchemical fire
 #end
 
@@ -490,7 +512,7 @@
 #copyweapon 171 -- small area fire
 #name "Alchemical Fire"
 #aoe 3 -- usually 1
-#dmg 11 -- otherwise it's 14
+#dmg 10 -- otherwise it's 14
 --explspr 10053
 #explspr 10162
 #sound 16 -- fire flare
@@ -504,7 +526,7 @@
 #dmg 8 -- same
 #att 1 -- +1
 #def -1 -- same
-#rcost 6
+#rcost 5
 #secondaryeffect 853 -- Slaying
 #end
 
@@ -722,7 +744,7 @@
 #blunt
 #att 0
 #def 0
-#rcost 16
+#rcost 10
 #len 1
 #secondaryeffect 916 --Ironbreaking
 #magic
@@ -839,7 +861,7 @@
 #dmg 15 -- +3 increase
 #att 4 -- +2 increase
 #ammo 12 -- +2
-#rcost 15
+#rcost 12
 #nratt 1 -- fast firing!
 #end
 
@@ -868,10 +890,9 @@
 #att 0
 #nratt 1
 #dmg 3
-#rcost 4
+#rcost 3
 #bonus
 #end
-
 
 --- Axehead (doomseeker)
 
@@ -885,16 +906,14 @@
 #flail
 #end
 
-
 --- Valkyrie Axe
 
 #newweapon 990
-#copyweapon 75 -- enchanted sword
+#copyweapon 17 -- axe
 #name "Valkyrie Axe"
-#rcost 8
+#rcost 7
 #att 1
 #def 0
-#dmg 8 -- axe
 #secondaryeffect 991 -- daemonbane
 #end
 
@@ -958,7 +977,7 @@
 #def 0 -- +1
 #enc 2 -- +1
 #prot 13 -- +1
-#rcost 13
+#rcost 11
 #end
 
 --- Dwarf Chain Hauberk
@@ -969,7 +988,7 @@
 #def -1 -- +1
 #enc 2 -- same
 #prot 16 -- +1
-#rcost 19
+#rcost 16
 #end
 
 --- Dwarf Full Plate
@@ -980,7 +999,8 @@
 #def -2 -- +1
 #enc 3 -- -2
 #prot 22 -- +1
-#rcost 50
+#rcost 40
+#magicarmor
 #end
 
 --- Dwarf Ring Mail
@@ -991,7 +1011,7 @@
 #def 0 -- +1
 #enc 1 -- same
 #prot 11 -- +1
-#rcost 9
+#rcost 8
 #end
 
 --- Dwarf Plate Hauberk
@@ -1002,18 +1022,19 @@
 #def -2 -- +1
 #enc 3 -- -1
 #prot 19 -- +1
-#rcost 27
+#rcost 23
 #end
 
---- Dwarf Helmet
+--- Dwarf Runic Helmet
 
 #newarmor 345
 #copyarmor 20 -- iron cap
-#name "Quality Helmet"
+#name "Runic Helmet"
 #def 0 -- same
 #enc 0 -- same
-#prot 17 -- +1
-#rcost 5
+#prot 19 -- +1 over half helmet
+#rcost 4
+#magicarmor
 #end
 
 --- Gromril Full Helmet
@@ -1024,7 +1045,8 @@
 #def -1 -- same
 #enc 0 -- same
 #prot 22 -- +1
-#rcost 13
+#rcost 11
+#magicarmor
 #end
 
 --- Dwarf Shield
@@ -1035,7 +1057,7 @@
 #def 4 -- +1
 #enc 1 -- same
 #prot 18 -- +2
-#rcost 7
+#rcost 6
 #end
 
 --- Runic Ward
@@ -1046,7 +1068,7 @@
 #def 5 -- -1
 #enc 0 -- -1
 #prot 20 -- +3
-#rcost 10
+#rcost 8
 #end
 
 --- Runic Crown
@@ -1057,7 +1079,7 @@
 #def 0 -- same
 #enc 0 -- same
 #prot 19 -- +8
-#rcost 10
+#rcost 8
 #end
 
 --- Shield of the Hold
@@ -1078,7 +1100,20 @@
 #def 0 -- +1
 #enc 1 -- same
 #prot 17 -- +4
-#rcost 30
+#rcost 26
+#magicarmor
+#end
+
+--- Dwarf Runic Plate
+
+#newarmor 332
+#copyarmor 14 -- plate hauberk
+#name "Runic Plate Hauberk"
+#def -2 -- +1
+#enc 2 -- -2
+#prot 19 -- +1
+#magicarmor
+#rcost 28
 #end
 
 --- Slayer Crown (ungrim ironfist)
@@ -1164,7 +1199,7 @@
 #prot 3
 #weapon 859 --Dwarf axe
 #armor 347 -- Dwarf Shield
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #darkvision 50
@@ -1182,7 +1217,7 @@
 #addupkeep -15
 #gcost 20
 #rcost 1
-#rpcost 15
+#rpcost 12
 #mapmove 18
 #size 2
 #nametype 196
@@ -1202,7 +1237,7 @@
 #prot 3
 #weapon 859 --Dwarf axe
 #armor 347 -- Dwarf Shield
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 344 -- Dwarf Plate Hauberk
 #mountainsurvival
 #formationfighter 2
@@ -1220,7 +1255,7 @@
 #gcost 20
 #addupkeep -15
 #rcost 1
-#rpcost 15
+#rpcost 12
 #mapmove 18
 #size 2
 #nametype 196
@@ -1235,12 +1270,12 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Dwarfs/Clansdwarf_Crossbow_1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Dwarfs/Clansdwarf_Crossbow_2.tga"
 #name "Clansdwarf Crossbow"
-#descr "The Dwarfs are an ancient and hardy race from beneath the mountains. In the time known as the Golden Age of the Dwarfs they ruled over a vast empire, but their power has been dwindled under constant attacks from their numerous foes. Dwarfs have learned a great deal from these battles and as a result, each one of them knows a great deal about stonework and siege warfare. Dwarf race is quite industrious and skilled in engineering. Their design of the crossbow is as intricate as it is genius and other races can only dream of replicating it. Dwarfs take a lot of pride in their crossbows and are often known to rigorously train their aim. Many of them have custom-made improvements to achieve even greater accuracy. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
+#descr "The Dwarfs are an ancient and hardy race from beneath the mountains. In the time known as the Golden Age of the Dwarfs they ruled over a vast empire, but their power has been dwindled under constant attacks from their numerous foes. Dwarfs have learned a great deal from these battles and as a result, each one of them knows a great deal about stonework and siege warfare. Their design of the crossbow is as intricate as it is genius and other races can only dream of replicating it. Dwarfs take a lot of pride in their crossbows and are often known to rigorously train their aim. Many of them have custom-made improvements to achieve even greater accuracy. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
 #str 11
 #prot 3
-#weapon 859 --Dwarf axe
+#weapon 1202 --Dwarf axe
 #weapon 842 --Dwarf crossbow
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 343 -- Dwarf Ring Mail
 #mountainsurvival
 #darkvision 50
@@ -1252,12 +1287,12 @@
 #att 11
 #def 10
 #ap 8
-#prec 10
+#prec 11 -- practiced
 #enc 2
-#gcost 25
-#addupkeep -19
+#gcost 20
+#addupkeep -15
 #rcost 1
-#rpcost 15
+#rpcost 15 -- 3 over the basic clansdwarf
 #poorleader
 #mapmove 18
 #size 2
@@ -1273,13 +1308,13 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Dwarfs/Clansdwarf_Heavy_Crossbow_1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Dwarfs/Clansdwarf_Heavy_Crossbow_2.tga"
 #name "Clansdwarf Heavy Crossbow"
-#descr "The Dwarfs are an ancient and hardy race from beneath the mountains. In the time known as the Golden Age of the Dwarfs they ruled over a vast empire, but their power has been dwindled under constant attacks from their numerous foes. Dwarfs have learned a great deal from these battles and as a result, each one of them knows a great deal about stonework and siege warfare. Dwarf race is quite industrious and skilled in engineering. The Dwarf arbalest is the most feared ranged weapon in the known world, a true masterpiece of Dwarf engineering. Although able to easily pierce even plate mail, the arbalests are time-consuming and hard to make, even by Dwarf standards. They also are hard to jock and aim without extensive training and only few Dwarfs are skilled in the use of this weapon. Arbalests are often targeted by cavalry and flying monsters, but are capable melee fighters in their own right. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
+#descr "The Dwarfs are an ancient and hardy race from beneath the mountains. In the time known as the Golden Age of the Dwarfs they ruled over a vast empire, but their power has been dwindled under constant attacks from their numerous foes. Dwarfs have learned a great deal from these battles and as a result, each one of them knows a great deal about stonework and siege warfare. The Dwarf arbalest is the most feared ranged weapon in the known world, a true masterpiece of Dwarf engineering. Although able to easily pierce even plate mail, the arbalests are time-consuming and hard to make, even by Dwarf standards. They also are hard to jock and aim without extensive training and only few Dwarfs are skilled in the use of this weapon. Arbalests are often targeted by cavalry and flying monsters, but are capable melee fighters in their own right. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
 #str 11
 #prot 3
-#weapon 846 --Dwarf greataxe
+#weapon 859 --Dwarf axe
 #weapon 843 --Dwarf arbalest
-#armor 345 -- Dwarf Helmet
-#armor 340
+#armor 118 -- half helmet
+#armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #darkvision 50
 #siegebonus 1
@@ -1290,12 +1325,12 @@
 #att 11
 #def 10
 #ap 8
-#prec 10
+#prec 11 -- practiced
 #enc 2
-#gcost 25
-#addupkeep -19
+#gcost 20
+#addupkeep -15
 #rcost 1
-#rpcost 15
+#rpcost 15 -- 3 over basic clansdwarf
 #mapmove 18
 #size 2
 #nametype 196
@@ -1310,11 +1345,11 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Dwarfs/Longbeard_1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Dwarfs/Longbeard_2.tga"
 #name "Longbeard"
-#descr "Longbeards are the oldest, most experienced Dwarf warriors and have fought in more wars than most young Dwarfs could even imagine. This fact is evidenced by the length of their mighty beards and they get complete respect from other Dwarfs, who have been rightly taught to respect their elders. It is said, and the Longbeards are always quick to remind others, that ale tasted better, greenskins were larger, and Dwarfs complained less and worked harder in the past; so it is no surprise that the Longbeards are some of the most stalwart heavy infantry in the world. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
+#descr "Longbeards are the oldest, most experienced Dwarf warriors and have fought in more wars than most young Dwarfs could even imagine. This fact is evidenced by the length of their mighty beards and they get complete respect from other Dwarfs, who have been rightly taught to respect their elders. It is said, and the Longbeards are always quick to remind others, that ale tasted better, greenskins were larger, and Dwarfs complained less and worked harder in the past; so it is no surprise that the Longbeards are some of the most stalwart heavy infantry in the world. It is even said that a Longbeard can ignore a seemingly serious injury simply through the stubborn belief that back in their day it would barely be considered a scratch. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
 #str 12 -- +1 over normal
 #prot 3 -- normal
 #weapon 859 --Dwarf axe
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf chain cuirass
 #armor 347 -- Dwarf Shield
 #mountainsurvival
@@ -1333,13 +1368,14 @@
 #gcost 25
 #addupkeep -19
 #rcost 1
-#rpcost 25
+#rpcost 18
 #mapmove 18
 #size 2
 #nametype 196 
 #startage 250 -- this should mean most aren't old
 #maxage 310
 #reclimit 5
+#woundfend 1 -- so 50% chance to ignroe afflictions
 #end
 
 
@@ -1354,7 +1390,7 @@
 #prot 3
 #weapon 846 --Dwarf greataxe
 #weapon 844 --Dwarf throwing axes
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf chain cuirass
 #mountainsurvival
 #forestsurvival
@@ -1374,7 +1410,7 @@
 #gcost 25
 #addupkeep -19
 #rcost 1
-#rpcost 20
+#rpcost 15
 #mapmove 18
 #size 2
 #nametype 196 
@@ -1394,7 +1430,7 @@
 #prot 3
 #weapon 846 --Dwarf greataxe
 #weapon 842 --Dwarf crossbow
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf chain cuirass
 #mountainsurvival
 #forestsurvival
@@ -1413,7 +1449,7 @@
 #gcost 0
 #addupkeep -19
 #rcost 1
-#rpcost 20
+#rpcost 15
 #mapmove 18
 #size 2
 #nametype 196 
@@ -1452,7 +1488,7 @@
 #gcost 35
 #addupkeep -26
 #rcost 1
-#rpcost 33
+#rpcost 20
 #mapmove 18
 #size 2
 #nametype 196
@@ -1472,7 +1508,7 @@
 #str 11
 #prot 3 -- normal
 #weapon 847 --Dwarf warpick
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 343 -- Dwarf Ring Mail
 #mountainsurvival
 #forestsurvival
@@ -1495,7 +1531,7 @@
 #gcost 25
 #addupkeep -19
 #rcost 1
-#rpcost 20
+#rpcost 15
 #okleader
 #mapmove 22
 #size 2
@@ -1534,7 +1570,7 @@
 #gcost 25
 #addupkeep -19
 #rcost 1
-#rpcost 15
+#rpcost 12
 #okleader
 #mapmove 18
 #size 2
@@ -1574,7 +1610,7 @@
 #gcost 50
 #addupkeep -25
 #rcost 1
-#rpcost 25
+#rpcost 18
 #mapmove 18
 #size 2
 #formationfighter 
@@ -1585,7 +1621,7 @@
 #holy
 #unsurr 2 -- hard to surround
 #formationfighter -6 -- they need a lot of space!
-#reclimit 1
+#reclimit 2
 #end
 
 
@@ -1618,7 +1654,7 @@
 #gcost 30
 #addupkeep -22
 #rcost 1
-#rpcost 25
+#rpcost 18
 #mapmove 18
 #size 2
 #nametype 196
@@ -1655,8 +1691,8 @@
 #enc 2
 #gcost 50
 #addupkeep -38
-#rcost 15
-#rpcost 40
+#rcost 10
+#rpcost 22
 #mapmove 18
 #size 2
 #nametype 196
@@ -1679,7 +1715,7 @@
 #str 11
 #prot 3
 #weapon 990 -- Valkyrie Axe
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 341 -- Dwarf Chain Hauberk
 #armor 357 -- Valkyrie Shield
 #mountainsurvival
@@ -1696,8 +1732,6 @@
 #enc 2
 #gcost 50
 #addupkeep -25
-#rpcost 1
-#rcost 1
 #poorleader
 #mapmove 18
 #size 2
@@ -1708,7 +1742,7 @@
 #formationfighter 2
 #coldres 3
 #rcost 1
-#rpcost 30
+#rpcost 20
 #nametype 195
 #female
 #end
@@ -1726,8 +1760,8 @@
 #str 12 -- +1
 #prot 3
 #weapon 848 --Runehammer
-#armor 345 -- Dwarf Helmet
-#armor 344 -- Dwarf Plate Hauberk
+#armor 345 -- Runic Helmet
+#armor 332 -- Runic Plate Hauberk
 #armor 347 -- Dwarf Shield
 #formationfighter 2
 #mountainsurvival
@@ -1748,7 +1782,7 @@
 #gcost 50
 #addupkeep -25
 #rcost 1
-#rpcost 30
+#rpcost 20
 #mapmove 18
 #size 2
 #nametype 196 
@@ -1771,7 +1805,7 @@
 #str 10 -- -1
 #prot 3
 #weapon 7 -- quarterstaff
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #darkvision 50
@@ -1817,7 +1851,7 @@
 #str 13 -- +2
 #prot 5 -- +2
 #weapon 859 --Dwarf axe
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 344 -- Dwarf Plate Hauberk
 #armor 347 -- Dwarf Shield
 #mountainsurvival
@@ -1856,7 +1890,7 @@
 #str 11
 #prot 3
 #weapon 859 --Dwarf axe
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 343 -- Dwarf Ring Mail
 #mountainsurvival
 #forestsurvival
@@ -1901,7 +1935,7 @@
 #prot 3
 #weapon 846 --Dwarf greataxe
 #weapon 842 --Dwarf crossbow
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #forestsurvival
@@ -1942,7 +1976,7 @@
 #str 12 -- +1
 #prot 3
 #weapon 847 --Dwarf warpick
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 340 -- Dwarf Chain Cuirass
 #resources 15
 #mountainsurvival
@@ -2020,14 +2054,14 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Dwarfs/Master_Engineer_1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Dwarfs/Master_Engineer_2.tga"
 #name "Engineer"
-#descr "The Dwarfs are industrious people and highly skilled in the ways of engineering, the quality and reliability of their constructions being widely regarded as the best in the world. Most Dwarf inventions are practical and functional, like pumps to clear water from mine workings and simple engines to draw cages up vertical shafts. However centuries of constant warfare as their civilisation has been pressed from all sides by forces of destruction have led to numerous applications of engineering skill to the subject of warfare. Members of the Guild of Engineers incorporate the use of Rune Magic into some of their work but are not trained to use magic themselves, instead providing their knowledge of fortification, siege, and construction to the war effort along with maintaining their many inventions. Engineers are masters of physics and mathematics and can help nearby Dwarfs, even magic users, calibrate for ranged accuracy at the start of battle. In addition they are able to oversee repairs and construction to restore Dwarfholds to some measure of their former glory.
+#descr "The Dwarfs are industrious people and highly skilled in the ways of engineering, the quality and reliability of their constructions being widely regarded as the best in the world. Most Dwarf inventions are practical and functional, like pumps to clear water from mine workings and simple engines to draw cages up vertical shafts. However centuries of constant warfare as their civilisation has been pressed from all sides by forces of destruction have led to numerous applications of engineering skill to the subject of warfare. Members of the Guild of Engineers incorporate the use of Rune Magic into some of their work but are not trained to use magic themselves, instead providing their knowledge of fortification, siege, and construction to the war effort along with maintaining their many inventions. Engineers are masters of physics and mathematics and can help nearby Dwarfs, even magic users, calibrate for ranged accuracy, as well as using minor runes to allow missile weapons to deliver an extra fiery sting. In addition they are able to oversee repairs and construction to restore Dwarfholds to some measure of their former glory.
 
-[automatically casts Aim on battle start]"
+[automatically casts Aim and Fire each round of battle, which is an AoE 1 aim buff plus the benefits of the Flaming Arrows spell]"
 #str 12 -- +1
 #prot 3
 #weapon 860 -- Dwarf warhammer
 #weapon 986 -- Engineer's Arbalest
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival 
 #darkvision 50
@@ -2041,7 +2075,7 @@
 #ap 8
 #prec 15 -- +5
 #enc 3 -- +1
-#gcost 100
+#gcost 110
 #rpcost 1
 #rcost 1
 #poorleader
@@ -2051,7 +2085,7 @@
 #startage 150
 #maxage 300
 #mason
-#onebattlespell 593 -- Aim
+#startitem 939 -- rune of the engineer
 #end
 
 --Giantslayer
@@ -2062,7 +2096,7 @@
 #name "Giantslayer"
 #descr "The Dwarfs are an ancient and hardy race from beneath the mountains. All of them are above all proud individuals and do not cope easily with failure or personal loss. The loss of his family, failure to uphold an oath or even getting forsaken in love can seriously unhinge the mind of a Dwarf. Sometimes these Dwarfs decide that the only way they can keep up the honour of their clan is to cut any ties to his clan and become a slayer. Having forsaken everything he holds dear, the slayer seeks death by finding large monsters to fight. Few manage to survive even their first encounter, but those who do are tough, violent and dangerous. They can be easily identified by their dyed orange hair and scarred tough skin. This Slayer has managed to slay a Troll in battle, a clear sign that he has been marked out for a great death by Grimnir. He is now tasked with ending the life of a foul Giant. Giantslayers bear the mark of Drengi and though they seek a worthy death, they have a supernatural ability to avoid mortal blows. The presence of a Giantslayer in battle will enhance the potency of the magical tattoos of other Slayers.
 
-[automatically casts Awaken Tattoos on battle start]"
+[automatically casts a shorter ranged smaller aoe Awaken Tattoos each battle round]"
 #str 12 -- +1
 #prot 6 -- +3
 #weapon 851 --slayer axe
@@ -2094,7 +2128,6 @@
 #startitem 903 -- mark of drengi
 #unsurr 1 -- tier 1
 #beartattoo 2
-#onebattlespell 205 -- awaken tattoos
 #inspirational 1
 #end
 
@@ -2111,7 +2144,7 @@
 #str 12
 #prot 3
 #weapon 860 --Dwarf warhammer
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #darkvision 50
@@ -2128,7 +2161,7 @@
 #ap 8
 #prec 10
 #enc 2
-#gcost 100
+#gcost 110
 #rpcost 2
 #rcost 1
 #magicskill 3 1
@@ -2143,7 +2176,6 @@
 #end
 
 
-
 --Journeyman Runesmith
 
 #newmonster 6148
@@ -2156,7 +2188,7 @@
 #str 12
 #prot 3
 #weapon 859 --Dwarf axe
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #forestsurvival
@@ -2173,7 +2205,7 @@
 #ap 8
 #prec 10
 #enc 2
-#gcost 220
+#gcost 230
 #rpcost 2
 #rcost 1
 #holy
@@ -2210,7 +2242,7 @@
 #prot 3
 #firstshape 6148 --Journeyman Runemsmith
 #weapon 859 --Dwarf axe
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival
 #forestsurvival
@@ -2227,7 +2259,7 @@
 #ap 8
 #prec 10
 #enc 2
-#gcost 130
+#gcost 230
 #rcost 1
 #holy
 #masterrit -1
@@ -2244,9 +2276,8 @@
 #nametype 196
 #startage 200
 #maxage 300
+#researchbonus -2
 #end
-
-
 
 
 --Runesmith
@@ -2261,11 +2292,11 @@
 #str 13
 #prot 3
 #weapon 848 --Rune Hammer
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 340 -- Dwarf Chain Cuirass
 #fixforgebonus 1
 #mastersmith 1
-#researchbonus 2
+#researchbonus 1
 #mountainsurvival
 #darkvision 50
 #fireres 5
@@ -2312,7 +2343,7 @@
 #clearweapons
 #weapon 848 --Rune Hammer
 #cleararmor
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 340 -- Dwarf Chain Cuirass
 #fixforgebonus 2
 #mountainsurvival
@@ -2360,7 +2391,7 @@
 #str 13
 #prot 3
 #weapon 848 --Rune Hammer
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 340 -- Dwarf Chain Cuirass
 #fixforgebonus 1
 #mountainsurvival
@@ -2410,7 +2441,7 @@
 #prot 3
 #firstshape 6146
 #weapon 848 --Rune Hammer
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 340 -- Dwarf Chain Cuirass
 #fixforgebonus 1
 #mountainsurvival
@@ -2454,7 +2485,7 @@
 #name "Dragonslayer"
 #descr "Only very few slayers manage to slay a Troll and survive. Even fewer actually manage to find and slay a Giant without getting squashed. But there are some who manage to complete these heroic deeds and have not yet succeeded in their ultimate goal of a glorious death in battle. These scarred veteran Slayers are known as Dragonslayers, and they are mighty indeed. No matter what kind of beast they face in battle, these heroes always seem to come out on top. This might be due to the blessings of the fickle gods, who have a great destiny in store for this great warrior. Their frightening battle-cry will sap strength from their foes, who will know that only death awaits those who face this chosen warrior in combat. Their quest for death has taken them all around the world and they know how to traverse even the most hostile terrain. Dragonslayers bear the mark of Drengi and though they seek a worthy death, they have a supernatural ability to avoid mortal blows. The presence of a Dragonslayer in battle will enhance the magical tattoos of other Slayers. Having proven themselves to Grimnir they have attained sacred status.
 
-[automatically casts Awaken Tattoos on battle start]"
+[automatically casts a shorter ranged smaller aoe Awaken Tattoos each battle round]"
 #str 14
 #prot 7
 #weapon 852 --slayer runeaxe
@@ -2488,7 +2519,6 @@
 #maxage 300
 #startitem 903 -- mark of drengi
 #beartattoo 2
-#onebattlespell 205 -- awaken tattoos
 #unsurr 2 -- tier 2 fight commander
 #holy
 #end
@@ -2509,7 +2539,7 @@
 #prot 4
 #weapon 856 --hurl lighting
 #weapon 857 --thunderstaff
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #mountainsurvival 
 #darkvision 50
@@ -2548,7 +2578,7 @@
 #str 14 -- +1
 #prot 5 -- +2
 #weapon 848 --Rune Hammer
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 340 -- Dwarf Chain Cuirass
 #fixforgebonus 1
 #mountainsurvival
@@ -2606,7 +2636,7 @@
 #mr 16
 #att 13
 #def 0
-#ap 8
+#ap 2
 #prec 15
 #enc 2
 #gcost 0
@@ -2632,7 +2662,7 @@
 #str 13
 #prot 0
 #weapon 854 --Greataxe of Grudges
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 340 -- Dwarf Chain Cuirass
 #magicboost 53 -9
 #mountainsurvival
@@ -2677,7 +2707,7 @@
 #str 14
 #prot 6 -- +1
 #weapon 1160 -- Klad Brakak
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 338 -- Master Runed Gromril Plate
 #fixforgebonus 1
 #mountainsurvival
@@ -2961,7 +2991,7 @@
 #name "Daemonslayer"
 #descr "Only very few slayers manage to slay a Troll and survive. Even fewer actually manage to find and slay a Giant without getting squashed. Rarest of all is the Slayer who has taken part in the killing of a terrible Dragon. These Slayers are the most respected and feared members of their cult, and are known as Daemonslayers, for their destiny is to one day head into the Chaos Wastes just as Grimnir once did, to face certain death against the greatest foe of all. Their frightening battle-cry will sap strength from their foes, who will know that only death awaits those who face this chosen warrior in combat. Their quest for death has taken them across the world and they know how to traverse even the most hostile terrain. Daemonslayers bear the mark of Drengi and though they seek a worthy death, they have a supernatural ability to avoid mortal blows. The presence of a Daemonslayer in battle will enhance the magical tattoos of other Slayers. Having proven themselves to Grimnir, they have gained sacred status.
 
-[automatically casts Awaken Tattoos on battle start]"
+[automatically casts a shorter ranged smaller aoe Awaken Tattoos each battle round]"
 #str 15
 #prot 8
 #weapon 852 --slayer runeaxe
@@ -2994,7 +3024,6 @@
 #maxage 300
 #startitem 903 -- mark of drengi
 #beartattoo 3
-#onebattlespell 205 -- awaken tattoos
 #holy
 #unsurr 3
 #itemslots 63622 -- 2 hands, 1 feet, 1 head, no body, 4 misc
@@ -3012,7 +3041,7 @@
 #str 14 -- +3
 #prot 5
 #weapon 982 --Ol' Trustworthy axe
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 341 -- Dwarf Chain Hauberk
 #mountainsurvival
 #forestsurvival
@@ -3079,7 +3108,7 @@
 #size 2
 #nametype 196
 #startage 225
-#maxage 300
+#maxage 400
 #unsurr 4 -- tier 4 combat leader
 #fixedname "Belegar Ironhammer"
 #itemslots 31872 -- head, body, feet, 3 misc, no hands
@@ -3095,7 +3124,9 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Dwarfs/Hero_Ungrim2.tga"
 #name "Slayer King"
 #fixedname "Ungrim Ironfist"
-#descr "The tale of Ungrim's family is one of a history of calamities. King Baragor, Ungrim's five times great grandsire, suffered a terrible loss that drove him to take the Slayer Oath and become the first Slayer King of Karak Kadrin. Torn between his dual Oaths to seek death as a Slayer and protect his people as King, he settled on establishing the massive Slayer Shrine of Karak Kadrin and passing on the Slayer Oath to his offspring. Although Ungrim cannot truly seek death as a Slayer he is by far the most restless and warlike Dwarf King and constantly leads his Dwarfhold to battle. Armed with the monstrously powerful Axe of Dargo, cloaked in the skin of the Dragon Fyrskar and with the Slayer Crown upon his head, he is a nearly unmatched dealer of death on the battlefield. As a Slayer Ungrim bears the mark of Drengi and is supernaturally able to avoid mortal blows. Ungrim is greatly revered amongst the Slayers and has attained sacred status for his dedication to their ways."
+#descr "The tale of Ungrim's family is one of a history of calamities. King Baragor, Ungrim's five times great grandsire, suffered a terrible loss that drove him to take the Slayer Oath and become the first Slayer King of Karak Kadrin. Torn between his dual Oaths to seek death as a Slayer and protect his people as King, he settled on establishing the massive Slayer Shrine of Karak Kadrin and passing on the Slayer Oath to his offspring. Although Ungrim cannot truly seek death as a Slayer he is by far the most restless and warlike Dwarf King and constantly leads his Dwarfhold to battle. Armed with the monstrously powerful Axe of Dargo, cloaked in the skin of the Dragon Fyrskar and with the Slayer Crown upon his head, he is a nearly unmatched dealer of death on the battlefield. As a Slayer Ungrim bears the mark of Drengi and is supernaturally able to avoid mortal blows. Ungrim is greatly revered amongst the Slayers and has attained sacred status for his dedication to their ways.
+
+[automatically casts a shorter ranged smaller aoe Awaken Tattoos each battle round]"
 #str 14 -- +3
 #prot 8 -- (T6!!!)
 #weapon 980 --axe of dargo
@@ -3147,7 +3178,7 @@
 #str 13
 #prot 3
 #weapon 1159 -- kragg's hammer
-#armor 345 -- Dwarf Helmet
+#armor 345 -- Runic Helmet
 #armor 338 -- master runed gromril
 #fixforgebonus 3 -- built in dwarf hammer basically
 #mountainsurvival
@@ -3192,13 +3223,13 @@
 #name "Engineer Guildmaster"
 #descr "Burlok Damminson is the current master of the Engineers Guild and regarded as one of the greatest Engineers of all time. A stern and exacting Master, he demands adherence to traditional engineering tenets from his Engineers and rejects inventions or theories which diverge from this dogmatic approach. Yet it was not always so; in his youth, already considered an Engineering genius, Burlok was quick to defy the warnings from older Engineers and created many exotic and outlandish machines, believing that field testing and trial-by-error was necessary to make progress. This all ended when, following an experiment with a new steam pressure vessel, Burlok lost his workshop and his left arm in a massive explosion. Chastened by the experience and scolded by his father from bringing disrepute to their family, Burlok took his youthful energy and clear genius and applied it to the proper Dwarf path of Engineering; gradually and painstakingly building of centuries of quality work. Burlok created a mechanical arm to replace his lost limb, truly one of the wonders of the world, and in battle wields a hammer inscribed with a rune of swiftness as well as his master-crafted arbalest.
 
-[automatically casts Aim on battle start]"
+[automatically casts Aim and Fire each round of battle, which is an AoE 1 aim buff plus the benefits of the Flaming Arrows spell]"
 #str 15
 #prot 6
 #weapon 858 --mechanical hand
 #weapon 984 -- Hammer of Swiftness
 #weapon 983 -- Burlok's Arbalest
-#armor 345 -- Dwarf Helmet
+#armor 118 -- half helmet
 #armor 351 -- Runic Chain Hauberk
 #mountainsurvival
 #ambidextrous 2
@@ -3224,7 +3255,7 @@
 #mason
 #fixedname "Burlok Damminson"
 #itemslots 15488 -- body, feet, head, 2 misc, no hands
-#onebattlespell 593 -- Aim
+#startitem 939 -- rune of the engineer
 #end
 
 
@@ -3268,7 +3299,7 @@
 #fixedname "Thorgrim Grudgebearer"
 #unsurr 4 -- tier 4 combat commander
 #itemslots 28800 -- just 3 misc and a head
-#startitem 
+#startitem 922 -- dragon crown
 #heal
 #regeneration 10
 #invulnerable 10
@@ -3323,10 +3354,39 @@
 
 
 #newspell
+#copyspell 205 -- awaken tattoos
+#name "Awaken Slayer Tattoos"
+#aoe 3 -- -2
+#range 15 -- -5+
+#restricted 117 -- Dwarfs
+#school -1 -- can't be researched
+#end
+
+#newspell
+#copyspell 897 -- flaming arrows
+#name "Flaming Arrows for Aim and Fire"
+#aoe 1
+#restricted 117 -- Dwarfs
+#school -1 -- can't be researched
+#end
+
+
+#newspell
+#copyspell 593 -- aim
+#nextspell "Flaming Arrows for Aim and Fire"
+#name "Aim and Fire"
+#restricted 117 -- Dwarfs
+#school -1 -- can't be researched
+#end
+
+
+
+
+#newspell
 #copyspell 879 -- Healing Touch
 #name "Healing Ale"
 #aoe 3
-#dmg 10
+#damage 10
 --spec 4194304 (enemy immune) 128 (AN) 16384 (ignore shields) 524288 (undead immune)
 #spec 4735104
 #restricted 117 -- Dwarfs
@@ -3389,6 +3449,49 @@
 #nextspell "Grudge Panic"
 #end
 
+
+-- Protection of Valaya
+
+#newspell
+#copyspell 907 -- poison ward
+#name "Protection of Valaya"
+#descr "Calling upon Valaya, Mother of All, the Priestess grants a small number of stalwart Dwarf troops protection from foul poisons and venoms used by the worst of their foes. Since the first deployment of the Skaven's poison gas, responsible for the murder of countless brave Ironbreakers, this previously rarely necessary boon has been increasingly important and the Priestesses of Valaya have become a more and more common sight on the battlefield."
+#details "This gives 10 poison resistance to some friendly troops which doesn't stack with Serpent's Blessing or Poison Ward. Each level above H1 grants +1 AoE."
+#restricted 117 -- Dwarfs
+#researchlevel 2
+#path 0 8
+#pathlevel 0 1
+#fatiguecost 20
+#aoe 1000
+#casttime 100
+#range 10
+#precision 10 -- +10
+#onlymnr 6152 -- priestess of valaya
+#end
+
+
+-- Protection of Grungni
+
+#newspell
+#copyspell 640 -- elemental fortitude
+#name "Protection of Grungni"
+#descr "Calling upon Grungni, Father of Runes, the caster grants a small section of the Dwarf formation protection from the the searing heat of the forge, the dazzling power of thunder, and the freezing cold of the mountaintops."
+#details "This gives 5 shock, cold, and fire resistance to some friendly troops."
+#restricted 117 -- Dwarfs
+#researchlevel 4
+#school 4 -- ench
+#path 0 8 -- holy
+#path 1 3
+#pathlevel 0 2
+#pathlevel 1 1
+#fatiguecost 20
+#aoe 1
+#range 10
+#precision 10 -- +10
+#end
+
+
+
 --Rune of Fire
 
 #newspell
@@ -3409,6 +3512,7 @@
 #nreff 1002
 #end
 
+
 --Rune of Thunder
 
 #newspell
@@ -3428,6 +3532,7 @@
 #restricted 117
 #nreff 3
 #end
+
 
 --Rune of Earth
 
@@ -3452,6 +3557,7 @@
 #spec 262144
 #fatiguecost 20
 #end
+
 
 --Rune of Water
 
@@ -4621,7 +4727,7 @@ Priests: Powerful, sometimes protected by Ancestor Spirits.
 Mechanics: Forts cost 150%. Discover and defend special sites in mountains and caves to upgrade the capital significantly."
 #templepic 4
 #flag "./Sombre_Warhammer/Warhammer_Dwarfs/flag3.tga"
-#color 0.3 0.3 0.3
+#color 0.5 0.5 0.5
 #castleprod 15 -- a 15% bonus in resources at their forts
 #idealcold 1
 #startsite "Runesmith Guild"
@@ -4762,8 +4868,8 @@ Mechanics: Forts cost 150%. Discover and defend special sites in mountains and c
 
 #defmult1 10
 #defmult1b 10
-#defmult2 10
-#defmult2b 10
+#defmult2 20
+#defmult2b 20
 
 ---- Wall defenders
 
@@ -4784,9 +4890,9 @@ Mechanics: Forts cost 150%. Discover and defend special sites in mountains and c
 
 #startcom 6111 -- Thane
 #startunittype1 6100 -- Clansdwarf
-#startunitnbrs1 6
+#startunitnbrs1 10
 #startunittype2 6102 -- Clansdwarf Crossbow
-#startunitnbrs2 6
+#startunitnbrs2 8
 #startscout 6140 -- Ranger Captain
 #end
 
@@ -4881,7 +4987,7 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #req_rare 2
 #4d3units 6109 -- Ironbreaker
 #1d3units 6109 -- Ironbreaker
-#3d3units 6114 -- Irondrake
+#2d3units 6114 -- Irondrake
 #req_turn 10 -- not right at the start
 #end
 
@@ -5490,3 +5596,6 @@ Forge give gems, Gromril gives gems and resources, Gold gives gold. A Forge or G
 #nation 117
 #addsite 1553 -- adds the Lost Gromril Reserve site
 #end
+
+
+-- ---- End Dwarfs

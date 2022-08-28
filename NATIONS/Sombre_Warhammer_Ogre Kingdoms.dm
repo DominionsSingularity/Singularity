@@ -1,4 +1,4 @@
--- @@@@ Ogre Kingdoms
+---- Ogre Kingdoms
 
 -------- ITEMS
 
@@ -323,12 +323,13 @@
 
 #newweapon 935
 #name "Deathbelcher"
-#ammo 3
+--ammo 3
+#ammo 1
 #att 1
 #armorpiercing
 #dmg 11
 #nostr
-#nratt 6
+#nratt 8
 #range 10
 #rcost 14
 #sound 25
@@ -684,7 +685,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Ogre Deathbelcher.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Ogre_Kingdoms/Ogre Deathbelcher2.tga"
 #name "Ogre Deathbelcher"
-#descr "The filthy and scorched Deathbelchers are a relatively recent addition to the Ogre forces, armed with powerful but crude magical weapons from the forges of the Chaos Dwarfs. The Deathbelcher weapon itself is effectively a large iron barrel packed with highly explosive and flammable material invented by the Sorcerers of Hashut, then loaded with scrap metal and pieces of jagged rock. In the hands of the Ogres they are inaccurate but devastating close range missile weapons which are so destructive that they are considered worth the risk of a few missing fingers or a lost eye.
+#descr "The filthy and scorched Deathbelchers are a relatively recent addition to the Ogre forces, armed with powerful but crude magical weapons from the forges of the Chaos Dwarfs. The Deathbelcher weapon itself is effectively a large iron barrel packed with highly explosive and flammable material invented by the Sorcerers of Hashut, then loaded with scrap metal and pieces of jagged rock. In the hands of the Ogres they are inaccurate but devastating close range missile weapons which are so destructive that they are considered worth the risk of a few missing fingers or a lost eye. Each Deathbelcher can only be fired once per battle, but they can have a devastating impact.
 
 [Recruitment limited to 3 per turn, discounted to 40 gold in Turmoil 3]"
 #ap 14 -- -2 for carrying big deathbelcher
@@ -2177,6 +2178,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #weapon 461 -- swallow, aoe 1 which eats if smaller damages if not
 #weapon 511 -- Stump
 #weapon 511 -- Stump
+#incorporate 10
 #maxage 60
 #startage 35
 #mountainsurvival
@@ -2306,7 +2308,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #spreaddom 1
 #itemslots 15488 -- head, 2 misc (one taken), feet, body
 #fixedname "Skrag the Slaughterer"
-#onebattlespell 819 -- summons 4 gorgers at edge of battlefield
+#onebattlespell 370 -- summons 4 gorgers at edge of battlefield
 #startitem 902 -- skrag's meat pot
 #older -20
 #end
@@ -2430,7 +2432,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #str 10
 #hp 13
 #slave
-#montag 1047 -- so they aren't in any other montags
+#montag 1019 -- so they aren't in any other montags
 #end
 
 --- Soulless Slave
@@ -2442,7 +2444,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #descr "When Braugh's slaves die, usually sooner rather than later, their corpses continue to serve the Slavelord, bound by the dark power of his necromantic chains."
 #weapon 29 -- Claw
 #slave
-#montag 1047 -- so they aren't in any other montags
+#montag 1019 -- so they aren't in any other montags
 #end
 
 
@@ -2864,7 +2866,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #pathlevel 0 3
 #pathlevel 1 2
 #school 6
-#prec 15 -- +14
+#precision 15 -- +14
 #fatiguecost 30 -- +10
 #end
 
@@ -3505,8 +3507,12 @@ Priests: Average, cannot preach, but get a bonus when blood sacrificing. Hungry 
 
 #startcom 5520
 #startunittype1 5500 -- ogre bull club
-#startunitnbrs1 6
+#startunitnbrs1 8
 #startunittype2 5501 -- ogre bull ironfist
 #startunitnbrs2 6
 #startscout 5527 -- Gnoblar Scout
 #end
+
+
+
+-- ---- End Ogre Kingdoms

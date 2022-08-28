@@ -1,4 +1,4 @@
--- @@@@ Chaos Dwarfs
+---- Chaos Dwarfs
 
 
 ----------------- ITEMS
@@ -240,13 +240,14 @@
 
 #newweapon 910
 #name "Blunderbuss"
-#ammo 5
+--ammo 5
+#ammo 1
 #att 0
 #armorpiercing
 #dmg 6
 #flyspr 109 1
 #nostr
-#nratt 8
+#nratt 12
 #range 7
 #rcost 9
 #sound 25
@@ -436,7 +437,6 @@
 #prec 10 --- ballistic skill 3
 #mapmove 18 -- dwarfs are really strong marchers
 #ap 10 --- set to get combat speed to 6
---gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
 #gcost 15
 #rpcost 21 --- They need to have order scales
 #rcost 1
@@ -453,6 +453,8 @@
 #nametype 192
 #neednoteat
 #supplybonus -1
+#magicboost 8 -5
+#magicboost 53 -5
 #end
 
 
@@ -462,7 +464,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Blunderbuss.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Blunderbuss2.tga"
 #name "Chaos Dwarf Blunderbuss"
-#descr "The Chaos Dwarfs have created a great many weapons of war, with most being as cruel and dangerous as their makers. The best known of these and most widely used amongst their kind is the blunderbuss, a vicious device capable of belching forth a hail of stone or metal shards. The exact alchemical formula used to create the explosive black tar used to propel this flesh-shredding shrapnel is a closely guarded secret, though the Chaos Dwarfs have been known to sell barrels of it to ogre warbands in exchange for slaves. The blunderbuss is best used against packed formations of lesser enemies, particularly those that lack shields or decent armour, as it is neither accurate nor long ranged. Unlike the archers of weaker nations, the Chaos Dwarfs entrusted with these weapons are well armoured and capable melee fighters. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins, though they are equally disciplined and tireless marchers."
+#descr "The Chaos Dwarfs have created a great many weapons of war, with most being as cruel and dangerous as their makers. The best known of these and most widely used amongst their kind is the blunderbuss, a vicious device capable of belching forth a hail of stone or metal shards. The exact alchemical formula used to create the explosive black tar used to propel this flesh-shredding shrapnel is a closely guarded secret, though the Chaos Dwarfs have been known to sell barrels of it to ogre warbands in exchange for slaves. The blunderbuss is best used against packed formations of lesser enemies, particularly those that lack shields or decent armour, as it is neither accurate nor long ranged. Unlike the archers of weaker nations, the Chaos Dwarfs entrusted with these weapons are well armoured and capable melee fighters. Each blunderbuss may only be fired once. Chaos Dwarfs are resistant to magic, but not to the extent of their Western cousins, though they are equally disciplined and tireless marchers."
 #hp 13 --- toughness 4
 #size 2 --- yep, they aren't that small
 #prot 3 --- toughness 4
@@ -475,7 +477,7 @@
 #prec 10 --- ballistic skill 3
 #mapmove 18 -- dwarfs are really strong marchers
 #ap 9 --- set to get combat speed to 6
-#gcost 20
+#gcost 18
 #rpcost 28 --- They need to have order scales
 #rcost 1
 #armor 295 -- dwarf full scale mail
@@ -688,7 +690,6 @@
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- centaurs +2 because, though they're slower, they're better marchers
 #ap 26 --- move 8, but stubby legs (normal centaur has 30)
---gold 1 --- this is to make upkeep much lower which then makes dwarf lives more precious
 #gcost 55 -- (white centaur is 55)
 #rpcost 33 --- pretty rare dudes (white centaur is 29)
 #rcost 1
@@ -1392,6 +1393,8 @@
 #bodyguard 2
 #neednoteat
 #supplybonus -1
+#magicboost 8 -5
+#magicboost 53 -5
 #end
 
 
@@ -1949,7 +1952,7 @@
 #prec 11 --- ballistic skill 3, but specialist in fire evocations
 #mapmove 16 -- dwarfs are really strong marchers, but these guys are less militarily minded
 #ap 8 --- move 3
-#gcost 100 -- same as karapan
+#gcost 110 -- karapan +10
 #rpcost 2 --- They are mages
 #rcost 1
 #armor 20 -- Iron Cap
@@ -2123,7 +2126,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneA.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneA2.tga"
 #name "Stonecursed Sorcerer"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Warrior guards who will serve and protect him until he evenentually turns entirely to stone. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Warrior guards who will serve and protect him until he evenentually turns entirely to stone. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance to Stone Curse will progress, reducing all non-earth magic paths by 1, further encumbering the mage, and removing his chest slot and one hand slot]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2162,7 +2165,6 @@
 #custommagic 21632 100 -- 100% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8100 -- Chaos Dwarf Warrior
 #itemslots 13446 -- no feet, otherwise normal
 #montag 1026 -- stonecursed sorc montag
 #montagweight 3 -- 3/20 -- other one is 17 weight -- so this is 15%
@@ -2178,7 +2180,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneA.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneA2.tga"
 #name "Stonecursed Sorcerer"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Warrior guards who will serve and protect him until he evenentually turns entirely to stone. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Warrior guards who will serve and protect him until he evenentually turns entirely to stone. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance to Stone Curse will progress, reducing all non-earth magic paths by 1, further encumbering the mage, and removing his chest slot and one hand slot]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2217,7 +2219,6 @@
 #custommagic 21632 100 -- 100% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8100 -- Chaos Dwarf Warrior
 #itemslots 13446 -- no feet, otherwise normal
 #montag 1026 -- stonecursed sorc montag
 #montagweight 17 -- 17/20 -- other one is 3 weight -- so this is 85%
@@ -2233,7 +2234,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneA.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneA2.tga"
 #name "Stonecursed Sorcerer"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Warrior guards who will serve and protect him until he evenentually turns entirely to stone. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Warrior guards who will serve and protect him until he evenentually turns entirely to stone. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance to Stone Curse will progress, reducing all non-earth magic paths by 1, further encumbering the mage, and removing his chest slot and one hand slot]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2272,7 +2273,6 @@
 #custommagic 21632 100 -- 100% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8100 -- Chaos Dwarf Warrior
 #itemslots 13446 -- no feet, otherwise normal
 #end
 
@@ -2283,7 +2283,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneB.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_stoneB2.tga"
 #name "Stonewracked Sorcerer"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has almost entirely succumbed to the Stone Curse, losing all but one of his limbs to the spreading stone and seeing his magical powers quickly decline. The Stone Curse is known for its rapid acceleration, so it will not be long before this mage joins his ancestors as a lifeless statue. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Each Sorcerer is, in addition to his considerable magical prowess in the arts of shadow, fire, magma, ash, and blood, also invested with considerable priestly authority and political power, though they leave the leadership of the Legions to the Castellans and the Overlords that serve the most powerful of their caste. This Sorcerer has almost entirely succumbed to the Stone Curse, losing all but one of his limbs to the spreading stone and seeing his magical powers quickly decline. The Stone Curse is known for its rapid acceleration, so it will not be long before this mage joins his ancestors as a lifeless statue. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance the Stone Curse will finally claim this mage, slaying him]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2325,7 +2325,6 @@
 #custommagic 21632 100 -- 100% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8100 -- Chaos Dwarf Warrior
 #itemslots 12418 -- no feet, no body, only one hand, otherwise normal
 #end
 
@@ -2543,7 +2542,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneA.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneA2.tga"
 #name "Stonecursed Sorcerer Lord"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Immortals who will serve and protect him even after he turns entirely to stone. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Immortals who will serve and protect him even after he turns entirely to stone. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance the Stone Curse will progress, reducing all non-earth magic paths by 1, further encumbering the mage, and removing his chest slot and one hand slot]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2585,7 +2584,6 @@
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8122 -- immortal troop
 #itemslots 13446 -- no feet, otherwise normal
 #montag 1025 -- stonecursed sorc lord montag
 #montagweight 17 -- (17/20, the other one has weight of 3) -- so 85%
@@ -2599,7 +2597,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneA.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneA2.tga"
 #name "Stonecursed Sorcerer Lord"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Immortals who will serve and protect him even after he turns entirely to stone. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Immortals who will serve and protect him even after he turns entirely to stone. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance the Stone Curse will progress, reducing all non-earth magic paths by 1, further encumbering the mage, and removing his chest slot and one hand slot]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2641,7 +2639,6 @@
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8122 -- immortal troop
 #itemslots 13446 -- no feet, otherwise normal
 #montag 1025 -- stonecursed sorc lord montag
 #montagweight 3 -- (3/20, the other one has weight of 17) -- so 15%
@@ -2655,7 +2652,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneA.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneA2.tga"
 #name "Stonecursed Sorcerer Lord"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Immortals who will serve and protect him even after he turns entirely to stone. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has begun to fully succumb to the inevitable ravages of the Stone Curse; his lower limbs have turned to stone and his thoughts and movements have begun to slow, though he has not yet lost any magical prowess. He is now carried everywhere by a pair of Immortals who will serve and protect him even after he turns entirely to stone. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance the Stone Curse will progress, reducing all non-earth magic paths by 1, further encumbering the mage, and removing his chest slot and one hand slot]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2697,7 +2694,6 @@
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8122 -- immortal troop
 #itemslots 13446 -- no feet, otherwise normal
 #end
 
@@ -2708,7 +2704,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneB.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Chaos_Dwarfs/Sorcerer_Lord_stoneB2.tga"
 #name "Stonewracked Sorcerer Lord"
-#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has almost entirely succumbed to the Stone Curse, losing all but one of his limbs to the spreading stone and seeing his magical powers quickly decline. The Stone Curse is known for its rapid acceleration, so it will not be long before this mage joins his ancestors as a lifeless statue. Should the mage be slain one of his guards will carry away the body while the other fights on for the duration of the battle before ending his life in shame.
+#descr "Any Chaos Dwarf that shows aptitude for magic, however weak, is taken from his clan and inducted into the Cult of Hashut. Those rare Dwarfs whose magical abilities quickly outstrip those of their fellows eventually form the upper echelon of the Cult; they are the Sorcerers, and it is their place to rule all of Chaos Dwarf society. Sorcerer Lords are the most powerful members of their caste and wield both terrifying magic and almost absolute priestly and political authority. Every Sorcerer Lord must play a constant game of political manoeuvre with his peers, seeking the favour of Hashut and prestige amongst the cult as well as material wealth and military power. This Sorcerer Lord has almost entirely succumbed to the Stone Curse, losing all but one of his limbs to the spreading stone and seeing his magical powers quickly decline. The Stone Curse is known for its rapid acceleration, so it will not be long before this mage joins his ancestors as a lifeless statue. Should the mage be slain his guards will carry away the body before ending their lives in shame.
 
 [Each turn there is a chance the Stone Curse will finally claim this mage, removing all magic paths except holy and removing all item slots. The Immortal guards will continue to carry the mage, even as a statue]"
 #hp 12 --- toughness 4, mage so wounds don't add
@@ -2753,7 +2749,6 @@
 #custommagic 21632 10 -- 10% EFDB
 #neednoteat
 #supplybonus -1
-#tmpshape 8122 -- immortal troop
 #itemslots 12418 -- no feet, no body, only one hand, otherwise normal
 #end
 
@@ -4804,8 +4799,15 @@ Mechanics: Armies enslave as they conquer. Owning or sieging a fort pollutes the
 
 #startcom 8129 -- Castellan
 #startunittype1 8100 -- Chaos Dwarf Warrior
-#startunitnbrs1 8
+#startunitnbrs1 10
 #startunittype2 8101 -- Chaos Dwarf Blunderbuss
-#startunitnbrs2 8
+#startunitnbrs2 10
 #startscout 8125 -- Hobgoblin Scout
 #end
+
+
+
+
+
+
+-- ---- End Chaos Dwarfs

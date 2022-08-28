@@ -1,4 +1,4 @@
--- @@@@ Slaanesh
+---- Slaanesh
 
 --------------New Weapons
 
@@ -261,7 +261,7 @@
 #copyarmor 215 -- full plate of ulm
 #name "Full Chaos Plate"
 #prot 21 -- -2, same as full plate mail
-#rcost 10
+#rcost 12
 #end
 
 ---- Chaos Helm
@@ -270,16 +270,37 @@
 #copyarmor 218 -- full helmet of ulm
 #name "Chaos Helm"
 #prot 21 -- -2
-#rcost 3
+#rcost 4
 #end
 
+---- Chaos Headplate
 
----- Chaos Plate
+#newarmor 305
+#copyarmor 218 -- full helmet of ulm
+#name "Chaos Headplate"
+#prot 14 -- much less
+#rcost 2
+#def 0
+#enc 0
+#end
+
+---- Chaos Plate Cuirass
 
 #newarmor 312
 #copyarmor 217 -- plate cuirass of ulm
 #name "Chaos Plate Cuirass"
-#rcost 7
+#rcost 8
+#end
+
+
+---- Chaos Ogre Gutplate -- same as irongut plate
+
+#newarmor 289
+#copyarmor 9 -- plate cuirass
+#name "Chaos Ogre Gutplate"
+#prot 13 -- -1
+#rcost 13 -- -2
+#ironarmor
 #end
 
 
@@ -372,7 +393,7 @@
 #name "Chaos Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version]
 [Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
@@ -413,7 +434,7 @@
 #name "Chaos Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version]
 [Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
@@ -455,7 +476,7 @@
 #name "Chaos Mutant Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version]
 [Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
@@ -496,7 +517,7 @@
 #name "Chaos Mutant Warhound"
 #descr "Marauder tribes make extensive use of large hounds to track and hunt beasts, warn them of dangers, or run down tired and fleeing foes. The largest and most ferocious of these are taken into battle to be unleashed on the enemy lines, a snarling wave of muscle, tooth, and claw. Chaos Warhounds often sport mutations and those that have been touched by the influence of Chaos tend to be even more dangerous, making them prized possessions for Marauder Chieftains.
 
-[When recruited you may get a mutated Chaos Hound with some advantages over the basic version.]
+[When recruited you may get a mutated Chaos Hound with some advantages over the basic version]
 [Discounted to 7 gold in Turmoil 3]"
 #cleararmor
 #clearweapons
@@ -655,13 +676,13 @@
 #name "Marauder Berserker"
 #descr "Berserkers are elite infantry within the ranks of the Marauder tribes whose job is to shatter the enemy line or dispatch the strongest foes. Like all Marauders, they are unrelenting combatants who habitually take what their own lands cannot provide from lesser men, but are set apart by their heedless embrace of death in battle and ability to enter a frenzied killing trance. Berserkers favour the use of an axe in each hand and train extensively to build their physical strength to a level similar to that of the mighty Chaos Warriors.
 
-[Discounted to 16 gold in Turmoil 3]"
+[Discounted to 18 gold in Turmoil 3]"
 #hp 14 --- +2
 #prot 3 -- +1
 #mor 13 -- +1
 #mr 11 --- +1
 #str 13 -- +1
-#gcost 22
+#gcost 24
 #chaosrec 2
 #rpcost 11 --- +4
 #weapon 17 -- axe
@@ -739,7 +760,7 @@
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]
+[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
 [Discounted to 28 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
@@ -757,7 +778,7 @@
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]
+[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
 [Discounted to 28 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
@@ -779,7 +800,7 @@
 #name "Grave of the Fallen"
 #descr "This follower of Chaos has been slain on the cusp of transformation to something greater, or perhaps something far worse. Their quest to become Chosen ends here.
 
-[This is an intermediary form which should only ever appear if the promoted chaos warrior is killed before its transformation to a Chosen/Forsaken/Spawn can occur. Without this intermediary form it would effectively transform to a Chosen/Forsaken/Spawn when killed, which would give it a 'second life' and generally be exploitable. Instead it's a useless grave marker that will vanish.]"
+[This is an intermediary form which should only ever appear if the promoted chaos warrior is killed before its transformation to a Chosen/Forsaken/Spawn can occur. Without this intermediary form it would effectively transform to a Chosen/Forsaken/Spawn when killed, which would give it a 'second life' and generally be exploitable. Instead it's a useless grave marker that will vanish]"
 #clearweapons
 #cleararmor
 #att 0
@@ -795,7 +816,7 @@
 #mor 50
 #end
 
----- Warrior of Slaanesh -- intermediary grave form which firstshapes into the actual form
+---- Knight of Slaanesh -- intermediary grave form which firstshapes into the actual form
 
 #newmonster 4241
 #copystats 4199 -- warrior template
@@ -804,7 +825,7 @@
 #name "Grave of the Fallen"
 #descr "This follower of Chaos has been slain on the cusp of transformation to something greater, or perhaps something far worse. Their quest to become Chosen ends here.
 
-[This is an intermediary form which should only ever appear if the promoted chaos warrior is killed before its transformation to a Chosen/Forsaken/Spawn can occur. Without this intermediary form it would effectively transform to a Chosen/Forsaken/Spawn when killed, which would give it a 'second life' and generally be exploitable. Instead it's a useless grave marker that will vanish.]"
+[This is an intermediary form which should only ever appear if the promoted chaos warrior is killed before its transformation to a Chosen/Forsaken/Spawn can occur. Without this intermediary form it would effectively transform to a Chosen/Forsaken/Spawn when killed, which would give it a 'second life' and generally be exploitable. Instead it's a useless grave marker that will vanish]"
 #clearweapons
 #cleararmor
 #att 0
@@ -831,8 +852,8 @@
 #name "Chosen Warrior"
 #descr "There are those amognst the ranks of the Chaos Warriors who bear the clear favour of Slaanesh and have been elevated as the Chosen of the Prince of Pleasure and granted even greater physical prowess and skill. The Chosen are beautiful and terrible to behold, their armour spotless and shining as they scythe through the ranks of their foes with a cruel indifference. While the Warriors of Slaanesh are grimly focused on the task of butchery and pain, the Chosen are gifted heightened senses and a true passion for excess. They are known for to dance, sing, weep, laugh, cavort, even recite poetry or create art; indeed they will sometimes do all of these in the midst of a pitched battle. The Chosen have reached the end of their path, never destined to rise toward the ultimate goal of Daemonhood, but their souls will surely receive lavish attention from Slaanesh in death just as they have in life. The Chosen are sacred to the followers of the Dark Prince.
 
-[Requires friendly Dominion strength of 5 in the province to recruit.]
-[Discounted to 50 gold in Turmoil 3]"
+[Requires friendly Dominion strength of 5 in the province to recruit]
+[Discounted to 60 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -842,7 +863,7 @@
 #str 14 -- +1
 #att 14 --- +1
 #def 14 --- +1
-#gcost 80 -- doubled because upkeep is halved
+#gcost 90
 #chaosrec 10 -- doubled
 #holy
 #montag 1030 -- chosen and forsaken and spawn
@@ -928,7 +949,7 @@
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]
+[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
 [Discounted to 28 gold in Turmoil 3]"
 #weapon 308 -- glaive
 #armor 311 -- chaos helm
@@ -947,7 +968,7 @@
 #name "Chaos Warrior"
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
-[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]
+[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
 [Discounted to 28 gold in Turmoil 3]"
 #weapon 308 -- glaive
 #armor 311 -- chaos helm
@@ -967,7 +988,7 @@
 #name "Grave of the Fallen"
 #descr "This follower of Chaos has been slain on the cusp of transformation to something greater, or perhaps something far worse. Their quest to become Chosen ends here.
 
-[This is an intermediary form which should only ever appear if the promoted chaos warrior is killed before its transformation to a Chosen/Forsaken/Spawn can occur. Without this intermediary form it would effectively transform to a Chosen/Forsaken/Spawn when killed, which would give it a 'second life' and generally be exploitable. Instead it's a useless grave marker that will vanish.]"
+[This is an intermediary form which should only ever appear if the promoted chaos warrior is killed before its transformation to a Chosen/Forsaken/Spawn can occur. Without this intermediary form it would effectively transform to a Chosen/Forsaken/Spawn when killed, which would give it a 'second life' and generally be exploitable. Instead it's a useless grave marker that will vanish]"
 #clearweapons
 #cleararmor
 #att 0
@@ -994,7 +1015,7 @@
 #name "Chaos Knight"
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Slaanesh. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Slaanesh, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
-[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP.]
+[When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
 [Discounted to 70 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
@@ -1024,7 +1045,7 @@
 #name "Chaos Knight"
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Slaanesh. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Slaanesh, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
-[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province.]
+[This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
 [Discounted to 70 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
@@ -1057,7 +1078,7 @@
 #name "Chosen Knight"
 #descr "As with Warriors, Chaos Knights strive to gain the favour of their patron God and become Chosen, the pinnacle of the Path of the Warrior. Chosen Knights are perhaps the most deadly heavy cavalry in existence, marrying supernatural phyiscal strength, speed, and endurance with incredible skill at arms. Already deeply arrogant, Knights of Slaanesh who gain the status of Chosen come to see themselves as living embodiments of their God's multitudinous perfection, flawless mirrors placed to reflect the splendour of the Prince of Pleasure. Being Chosen of Slaanesh they are sacred to the followers of the Dark Prince.
 
-[Requires friendly Dominion strength of 7 in the province to recruit.]
+[Requires friendly Dominion strength of 7 in the province to recruit]
 [Discounted to 110 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
@@ -1077,8 +1098,8 @@
 #str 14 -- +1
 #att 14 --- +1
 #def 14 --- +1
-#gcost 155
-#chaosrec 15 -- so 110 in T3
+#gcost 145
+#chaosrec 15 -- so 100 in T3
 #holy
 #montag 1034 -- forsaken, chosen knight, spawns
 #montagweight 20
@@ -1111,11 +1132,11 @@
 #weapon 17 -- axe
 #weapon 10 -- falchion
 #armor 118 -- half helmet
-#armor 9 -- plate cuirass
+#armor 289 -- plate cuirass
 #gcost 50
 #chaosrec 5
-#rpcost 11
-#rcost 0
+#rpcost 13
+#rcost 1
 #maxage 60
 #mountainsurvival
 #wastesurvival
@@ -1181,7 +1202,7 @@
 #name "Marauder Hellstrider"
 #descr "Hellstriders are devotees of torment, Marauders who hunt from the back of impossibly swift Daemonic Steeds of Slaanesh. These gifts from the Dark Prince come at a great price, for the Hellstrider is curse, or perhaps blessed, to feel the pain of every victim of his hunts and expected to revel in the sensations. The Steeds are said to be made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. Steeds constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry. In battle the Marauder lashes his foes with a life draining Hellscourge whip while the Steed's tongue whips out at lightning speed, delivering poisons both deadly and psychoactive. Should the Marauder be struck from his Steed the beast will fight on for the rest of the battle before returning to the Realm of Chaos.
 
-[Requires friendly Dominion strength of 5 in the province to recruit.]
+[Requires friendly Dominion strength of 5 in the province to recruit]
 [Discounted to 45 gold in Turmoil 3]"
 #ap 32
 #mapmove 28 -- same as a shade beast, tireless, fast
@@ -1198,8 +1219,8 @@
 #mounted
 #gcost 60
 #chaosrec 5
-#rpcost 18 -- drawn from distant supplies
-#rcost 3
+#rpcost 26
+#rcost 5
 #weapon 1099 -- steed's tongue (hellstrider version)
 #weapon 1124 -- hellscourge
 #armor 118 -- half helmet
@@ -1254,8 +1275,8 @@
 #bird -- most similar shape
 #coldres 3
 #snow
+#deserter 100 -- in case you end up with one on the strat map
 #end
-
 
 
 ---- Daemonette
@@ -2166,7 +2187,7 @@
 #name "Herald of Slaanesh"
 #descr "Foremost amongst the ranks of the Daemonettes are the Heralds of Slaanesh. It is their purpose not only to attend to Slaanesh's whimsical desires, but muster his armies, take care of military details which would bore the Dark Prince, and carry his creed to the mortal realm. Slaanesh is always hungry for morsels of courtly intrigue and such scraps can lead to the corrupting of a mortal ruler, a matter to which the Lord of Excess is always attentive. At times the Heralds carry their master's word to specific individuals singled out for divine notice. Not all such visitations are welcomed by those who receive them, for Slaanesh is nothing if not effusive in his tempers. In battle Heralds are powerful champions imbued with grace, might, and presence by their benefactor. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks but grow weaker outside the Dominion of their God. Heralds are messengers of Slaanesh's will an as such have priestly authority.
 
-[This Herald of Slaanesh will transform into a form capable of seducing either males or females.]"
+[This Herald of Slaanesh will transform into a form capable of seducing either males or females]"
 #ap 16 -- fast
 #mapmove 22 -- tireless
 #hp 22 -- T3 W2, daemon
@@ -2452,7 +2473,7 @@
 #name "Aspiring Champion"
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Slaanesh tend to be particularly skilled swordsmen and favour the use of two curved blades which they wield with shocking skill and to deadly effect.
 
-[When this Champion is promoted it will transform to a form which will then be further transformed by an event, either becoming an Exalted Hero (and losing all its XP) or being turned into a mindless Chaos Spawn.]
+[When this Champion is promoted it will transform to a form which will then be further transformed by an event, either becoming an Exalted Hero (and losing all its XP) or being turned into a mindless Chaos Spawn]
 [Discounted to 75 gold in Turmoil 3]"
 #hp 25
 #mor 17 -- +1
@@ -2487,7 +2508,7 @@
 #name "Aspiring Champion"
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Slaanesh tend to be particularly skilled swordsmen and favour the use of two curved blades which they wield with shocking skill and to deadly effect.
 
-[This Champion is awaiting the event that will transform them to either an Exalted Hero (and losing all its XP) or a mindless Chaos Spawn.]
+[This Champion is awaiting the event that will transform them to either an Exalted Hero (and losing all its XP) or a mindless Chaos Spawn]
 [Discounted to 75 gold in Turmoil 3]"
 #hp 25
 #mor 17 -- +1
@@ -2521,8 +2542,8 @@
 #name "Exalted Hero"
 #descr "Exalted Heroes stand as paragons on the Path of the Warrior and the Champion, for they are everything that every Chaos Warrior and Aspiring Champion strives to be. The Exalted are monstrously powerful combatants capable of commanding forces of the mightiest warriors in the world, blessed many times over by their patron God and with an iron will to pursue their ambitions and become immortal. They are to the Aspiring Champions as the Chosen are to the Warriors, but unlike the Chosen they do not accept they have reached the zenith of their journey, for the prize of becoming a Chaos Lord and eventually a Daemon Prince still lies ahead of them and the risk of being reduced to a gibbering Chaos Spawn is one they gladly accept. Exalted Heroes of Slaanesh are incredibly talented artists of sensation and passion both on and off the battlefield, as capable of bringing men to tears with their singing, poetry, and dance as they are tearing through a formation of soldiers as a bloody whirlwhind of steel. They are also supremely arrogant to the point that they will actively force their troops to make space for them to enact a fittingly beautiful performance in battle.
 
-[Requires friendly Dominion strength of 7 in the province to recruit.]
-[When this Exalted Hero is promoted it will transform to a form which will then be further transformed by an event, either becoming a Chaos Lord (and losing all its XP) or being turned into a mindless Chaos Spawn.]
+[Requires friendly Dominion strength of 7 in the province to recruit]
+[When this Exalted Hero is promoted it will transform to a form which will then be further transformed by an event, either becoming a Chaos Lord (and losing all its XP) or being turned into a mindless Chaos Spawn]
 [Discounted to 160 gold in Turmoil 3]"
 #hp 35
 #mor 18 -- +1 over aspiring champion
@@ -2562,7 +2583,7 @@
 #name "Exalted Hero"
 #descr "Exalted Heroes stand as paragons on the Path of the Warrior and the Champion, for they are everything that every Chaos Warrior and Aspiring Champion strives to be. The Exalted are monstrously powerful combatants capable of commanding forces of the mightiest warriors in the world, blessed many times over by their patron God and with an iron will to pursue their ambitions and become immortal. They are to the Aspiring Champions as the Chosen are to the Warriors, but unlike the Chosen they do not accept they have reached the zenith of their journey, for the prize of becoming a Chaos Lord and eventually a Daemon Prince still lies ahead of them and the risk of being reduced to a gibbering Chaos Spawn is one they gladly accept. Exalted Heroes of Slaanesh are incredibly talented artists of sensation and passion both on and off the battlefield, as capable of bringing men to tears with their singing, poetry, and dance as they are tearing through a formation of soldiers as a bloody whirlwhind of steel. They are also supremely arrogant to the point that they will actively force their troops to make space for them to enact a fittingly beautiful performance in battle.
 
-[This Exalted Hero is awaiting the event that will transform them to either a Chaos Lord (and losing all its XP) or a mindless Chaos Spawn.]
+[This Exalted Hero is awaiting the event that will transform them to either a Chaos Lord (and losing all its XP) or a mindless Chaos Spawn]
 [Discounted to 160 gold in Turmoil 3]"
 #hp 35
 #mor 18 -- +1 over aspiring champion
@@ -2600,7 +2621,7 @@
 #name "Chaos Lord"
 #descr "At the zenith of the mortal forces of the Ruinous Powers stand the Chaos Lords, champions and paragons of their patron God whose mere command can see tribes annihilated, cities sacked, and nations brought to the brink of disaster. Only the mightiest and most favoured Exalted Hero will survive to become a Chaos Lord, having overcome their enemies, their rivals, attempted punishments by the Ruinous Powers they have chosen not to follow, and even the capricious whims of their own God. Chaos Lords are extremely skilled combatants and physically far beyond the potential of mortal men in addition to being experienced and innately talented commanders. They are granted Daemonic mounts to carry them into battle and emphasize their status; in the case of Slaanesh a serpentine creature of blinding speed with a deadly lashing tongue and skin which exudes a calming musk that lulls opponents into holding back their blows. Should the Chaos Lord be slain, this mount will fight on before returning to the Chaos Realm of Slaanesh. Aside from continuing to crush their enemies and bring glory to Slaanesh, all that remains for this Chaos Lord is to prove themselves so fully that they are elevated to immortality in the form of a Daemon Prince.
 
-[When this Chaos Lord is promoted it will transform to a form which will then be further transformed by an event, either finally becoming a Daemon Prince (and losing all its XP) or being turned into a mindless Chaos Spawn.]
+[When this Chaos Lord is promoted it will transform to a form which will then be further transformed by an event, either finally becoming a Daemon Prince (and losing all its XP) or being turned into a mindless Chaos Spawn]
 [Discounted to 210 gold in Turmoil 3]"
 --stats compared with exalted hero
 #ap 32 -- fastest cav in the game, tied with centauride
@@ -2650,7 +2671,7 @@
 #name "Chaos Lord"
 #descr "At the zenith of the mortal forces of the Ruinous Powers stand the Chaos Lords, champions and paragons of their patron God whose mere command can see tribes annihilated, cities sacked, and nations brought to the brink of disaster. Only the mightiest and most favoured Exalted Hero will survive to become a Chaos Lord, having overcome their enemies, their rivals, attempted punishments by the Ruinous Powers they have chosen not to follow, and even the capricious whims of their own God. Chaos Lords are extremely skilled combatants and physically far beyond the potential of mortal men in addition to being experienced and innately talented commanders. They are granted Daemonic mounts to carry them into battle and emphasize their status; in the case of Slaanesh a serpentine creature of blinding speed with a deadly lashing tongue and skin which exudes a calming musk that lulls opponents into holding back their blows. Should the Chaos Lord be slain, this mount will fight on before returning to the Chaos Realm of Slaanesh. Aside from continuing to crush their enemies and bring glory to Slaanesh, all that remains for this Chaos Lord is to prove themselves so fully that they are elevated to immortality in the form of a Daemon Prince.
 
-[This Chaos Lord is awaiting the event that will transform them to either a Daemon Prince (and losing all its XP) or a mindless Chaos Spawn.]
+[This Chaos Lord is awaiting the event that will transform them to either a Daemon Prince (and losing all its XP) or a mindless Chaos Spawn]
 [Discounted to 210 gold in Turmoil 3]"
 --stats compared with exalted hero
 #ap 32 -- fastest cav in the game, tied with centauride
@@ -2725,6 +2746,7 @@
 #snake
 #itemslots 262144 -- head slot only crown
 #coldres 3
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -2784,6 +2806,63 @@
 #end
 
 
+
+---- Daemon Prince (-2 holy)
+
+#newmonster 4128
+#spr1 "./Sombre_Warhammer/Warhammer_Slaanesh/Daemon_Prince.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Daemon_Prince2.tga"
+#name "Daemon Prince"
+#descr "Daemon Princes were once mortals, Chaos Lords that so pleased their patron God that the ultimate prize of immortality was bestowed upon them, along with a new form embodying the essence of the Chaos God that elevated them. Unlike Daemons, even Greater Daemons, a part of the Daemon Prince is forever its own, distinct from the sprawling energy of the God that granted it such power, for the Ruinous Powers enjoy seeing the schemes and ambitions of their most favoured followers play out across eternity. Daemon Princes of Slaanesh tend to take on serpentine traits, grow new limbs ending in impossibly sharp pincer claws, and exude an aura of sensuality that can greatly heighten or almost entirely dull the senses of those unfortunate enough to stand before them. While Chaos Lords of Slaanesh rely on Sorcerers or Shamans, Daemon Princes have an innate talent for sorcery in addition to their considerable martial prowess and physical might. While they are Daemons in form their past in the mortal world grants Daemon Princes the benefit of not becoming weaker outside the Dominion of their God, though like Greater Daemons they can still only reform their bodies if slain in this Dominion."
+--stats compared with Keeper of Secrets
+#hp 55 -- -11
+#size 5
+#prot 9 -- -2
+#mor 30
+#mr 18
+#enc 1
+#str 20
+#att 16
+#def 16 -- -1
+#prec 13
+#mapmove 18 -- -6
+#ap 16 -- -6
+#gcost 0
+#weapon 477 -- unholy sword
+#weapon 10 -- falchion
+#weapon 1127 -- wicked claw
+#armor 311 -- chaos helm
+#armor 312 -- chaos plate armour
+#neednoteat
+#poisonres 10 -- +10
+#diseaseres 100 -- +100
+#demon
+#magicskill 1 2 -- A2
+#magicskill 4 2 -- S2
+#magicskill 7 2 -- B2
+#magicskill 8 2 -- H2
+#magicboost 8 -2 -- -2 holy
+#holy
+#expertleader
+#expertundeadleader
+#fear 5 -- -3
+#itemslots 13446 -- normal, no feet
+#invulnerable 14 -- -1
+#wastesurvival
+#awe 2 -- -2
+#snow
+#ambidextrous 4
+#domimmortal
+#reformtime 3 -- takes 6 months to reform
+#maxage 9999
+#startage 6666
+#nametype 198 -- slaanesh warrior names
+#heal --- recuperation ability
+#combatcaster
+#coldres 3
+#end
+
+
 ---- Marauder Shaman
 
 #newmonster 4243
@@ -2793,10 +2872,10 @@
 #name "Marauder Shaman"
 #descr "Most Marauder tribes will have one or two Shamans whose duty is to offer counsel to the Chieftain, interpret auguries to ensure successful raids, and lead the tribe in offering the proper observances to their patron God. Shamans tend to have only a little magical talent and rather than harnessing energy provided by the Ruinous Powers, they tap into the magic of their surroundings in the manner of hedge mages, witches, and other lesser mages. Shamans thus practice a different branch of magic from Sorcerers focused on veneration of the dead, the wilds, and the bitter cold of the polar lands. Shamans of Marauder tribes dedicated to Slaanesh in the guise of the Serpent carry staffs topped with snake skeletons and have some talent in the magic of the spheres and the minds of mortals.
 
-[Does not require a lab to recruit.]
-[Discounted to 85 gold in Turmoil 3]"
-#gcost 115
-#chaosrec 10 -- t3gcost 85
+[Does not require a lab to recruit]
+[Discounted to 90 gold in Turmoil 3]"
+#gcost 120
+#chaosrec 10 -- t3gcost 90
 #rpcost 2
 #rcost 1
 #holy
@@ -2810,7 +2889,7 @@
 #weapon 7 -- staff
 #armor 44 -- furs
 #armor 120 -- leather cap
-#researchbonus -1
+#researchbonus -2
 #noreqlab
 #end
 
@@ -2886,7 +2965,6 @@
 #okleader
 #unsurr 1 -- tier 1
 #pillagebonus 5
-#sailing 999 2
 #beastmaster 2
 #taxcollector
 #size 3
@@ -2971,6 +3049,7 @@
 #coldres 3
 #end
 
+
 ---- Slaaneshi Sorcerer
 
 #newmonster 4229
@@ -3048,8 +3127,8 @@
 #stealthy 10
 #armor 158 -- Robes
 #weapon 238 -- magic staff
-#slothresearch 2
-#researchbonus 3
+#slothresearch 1
+#researchbonus 2
 #maxage 2000
 #startage 666
 #wastesurvival
@@ -3066,7 +3145,7 @@
 #name "Keeper of Secrets"
 #descr "The Greater Daemons of Slaanesh are known as Keepers of Secrets, for they are the confidants and courtiers of Slaanesh, as well as the greatest generals and warriors of the Dark Prince. A Keeper of Secrets is a ruiner of purity, a despoiler of the faithful, and the harbinger of damnation. It draws strength from the corruption of others and above all feasts on upon mortal excess and rapture, particularly if it can deliver its target from the heights of one to the depths of another. Keepers are the . Each varies in appearance to some extent and each considers itself the true paragon of beauty, but they share in common certain bovine aspects to their appearance, four arms and two legs, and a visage which combines horror and sensuality in writhing union. Keepers are matchless in their grace and agility, even amongst other Greater Daemons, capable of dancing through ranks of elite enemies and tearing them apart with contemptuous ease. The Keeper's lethality is not limited to its physical prowess, however, for they are also talented and powerful magic users possessing a supernatural ability to travel undetected and strike at appropriate targets from the shadows. As with all Daemons they are more powerful within the Dominion of their God and as Greater Daemons they are capable of reforming their body should they be slain in this Dominion.
 
-[This Keeper of Secrets will transform into a form capable of seducing either males or females.]"
+[This Keeper of Secrets will transform into a form capable of seducing either males or females]"
 --stats compare with archdevil
 #hp 66 -- +4
 #size 5
@@ -3458,6 +3537,7 @@
 #snake
 #itemslots 262144 -- head slot only crown
 #coldres 3
+#deserter 100 -- in case you end up with one on the strat map
 #end
 
 
@@ -3672,7 +3752,7 @@
 ---- Create Spawn
 
 #newspell
-#name "Create Chaos Spawn"
+#name "Create Chaos Spawn of Slaanesh"
 #descr "Chaos Spawn are typically the result of one on the Path of the Champion displeasing or simply failing to sufficiently impress or amuse their patron God, but there are other ways by which they can be birthed from a magical laboratory to plague the world of mortals. This ritual creates a single mindless Chaos Spawn, the form of which can vary greatly. Chaos Spawn of Slaanesh are fast moving by the standards of their kind and typically attack their foes with tentacles, tongues, and armour piercing pincer claws. Though they are truly creatures of Chaos they are not Daemons."
 #path 0 7 -- blood
 #pathlevel 0 1
@@ -3717,7 +3797,7 @@
 #damage 4255 -- daemonette
 #nreff 6
 #effect 10001
-#researchlevel 5
+#researchlevel 4
 #restricted 146
 #end
 
@@ -3770,7 +3850,7 @@
 #pathlevel 0 2
 #pathlevel 1 2
 #school 6 -- blood
-#fatiguecost 4400 -- 42 blood slaves -- premium of 4
+#fatiguecost 4400 -- 44 blood slaves -- premium of 4
 #damage 4257 -- seeker of slaanesh
 #nreff 5
 #effect 10001
@@ -3802,7 +3882,7 @@
 ---- Contact Daemon Prince
 
 #newspell
-#name "Contact Daemon Prince"
+#name "Contact Daemon Prince of Slaanesh"
 #descr "This ritual contacts a Daemon Prince, a former Chaos Lord who has achieved the ultimate goal of immortality at the hand of their patron God. Daemon Princes of Slaanesh have left their humanity far behind, taking a towering new physical form that pleases Slaanesh and grants them even greater martial and phyiscal prowess than they held as a Chaos Lord. Furthermore Daemon Princes are innately talented sorcerers and have all the benefits of Daemonhood, even including the ability to reform their body should they be slain within the Dominion of Slaanesh, but without the drawback of being weaker outside of this Dominion."
 #path 0 7 -- blood
 #path 1 4 -- astral
@@ -5113,6 +5193,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 1"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 1 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5124,6 +5205,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 2"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 2 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5135,6 +5217,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 3"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 3 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5146,6 +5229,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 4"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 4 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5157,6 +5241,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 5"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 5 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5168,6 +5253,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 6"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 6 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5179,6 +5265,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 7"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 7 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5190,6 +5277,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 8"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 8 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5201,6 +5289,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 9"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 9 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5212,6 +5301,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #msg "decrease unrest 10"
 #notext
 #nolog
+#req_pop0ok
 #req_fornation 146
 #req_dominion 10 -- province must have owner's dominion at this value or more
 #rarity 5
@@ -5351,6 +5441,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Aspiring Champion -- FAILURE -- Spawn generated
 #newevent
 #rarity 5
+#req_pop0ok
 #req_rare 15 -- this is a more sensible value
 #req_fornation 146
 #req_monster 4224
@@ -5365,6 +5456,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Aspiring Champion to Exalted Hero, successful
 #newevent
 #rarity 5
+#req_pop0ok
 #req_fornation 146
 #req_monster 4224
 #req_targmnr 4224
@@ -5377,6 +5469,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Aspiring Champion -- FAILURE -- Spawn generated
 #newevent
 #rarity 5
+#req_pop0ok
 #req_rare 15 -- this is a more sensible value
 #req_fornation 146
 #req_monster 4224
@@ -5391,6 +5484,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Aspiring Champion to Exalted Hero, successful
 #newevent
 #rarity 5
+#req_pop0ok
 #req_fornation 146
 #req_monster 4224
 #req_targmnr 4224
@@ -5404,6 +5498,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Exalted Hero -- FAILURE -- Spawn generated
 #newevent
 #rarity 5
+#req_pop0ok
 #req_rare 15 -- this is a more sensible value
 #req_fornation 146
 #req_monster 4238 -- exalted hero
@@ -5417,6 +5512,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Exalted Hero to Chaos Lord, successful
 #newevent
 #rarity 5
+#req_pop0ok
 #req_fornation 146
 #req_monster 4238 -- exalted hero
 #req_targmnr 4238 -- exalted hero
@@ -5430,6 +5526,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Exalted Hero -- FAILURE -- Spawn generated
 #newevent
 #rarity 5
+#req_pop0ok
 #req_rare 15 -- this is a more sensible value
 #req_fornation 146
 #req_monster 4238 -- exalted hero
@@ -5443,6 +5540,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Exalted Hero to Chaos Lord, successful
 #newevent
 #rarity 5
+#req_pop0ok
 #req_fornation 146
 #req_monster 4238 -- exalted hero
 #req_targmnr 4238 -- exalted hero
@@ -5453,11 +5551,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #end
 
 
-
-
 ---- Promotion from Chaos Lord -- FAILURE -- Spawn generated
 #newevent
 #rarity 5
+#req_pop0ok
 #req_rare 15 -- this is a more sensible value
 #req_fornation 146
 #req_monster 4268 -- chaos lord
@@ -5471,6 +5568,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Chaos Lord to Daemon Prince, successful
 #newevent
 #rarity 5
+#req_pop0ok
 #req_fornation 146
 #req_monster 4268 -- chaos lord
 #req_targmnr 4268 -- chaos lord
@@ -5492,6 +5590,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Chaos Lord -- FAILURE -- Spawn generated
 #newevent
 #rarity 5
+#req_pop0ok
 #req_rare 15 -- this is a more sensible value
 #req_fornation 146
 #req_monster 4268 -- chaos lord
@@ -5505,6 +5604,7 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ---- Promotion from Chaos Lord to Daemon Prince, successful
 #newevent
 #rarity 5
+#req_pop0ok
 #req_fornation 146
 #req_monster 4268 -- chaos lord
 #req_targmnr 4268 -- chaos lord
@@ -5520,6 +5620,22 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #pathboost 7 -- blood
 #pathboost 8 -- holy
 #pathboost 8 -- holy
+#end
+
+
+---- This is an event to transforms an H5 daemon prince into one with -2 holy (a bug that happens if you prophetise a daemon prince that was promoted up, or you get your prophet promoted into the prince)
+#newevent
+#notext
+#nolog
+#rarity 5
+#req_pop0ok
+#req_fornation 146
+#req_monster 4270 -- daemon prince
+#req_targmnr 4270 -- daemon prince
+#req_pathholy 5
+#nation 146
+#msg "turned daemon prince into -2 holy version, because he was at h5"
+#transform 4128 -- daemon prince with -2 holy
 #end
 
 
@@ -5686,7 +5802,7 @@ Dominion: Decreases unrest in your provinces, increases it in enemy provinces. D
 #defmult2 10
 #defmult2b 15
 
---wallcom 4207 -- -- I don't think they need a wall commander
+#wallcom 4203 -- Marauder Hunter (javelins, spear)
 #wallunit 4203 -- Marauder Hunter (javelins, spear)
 #wallmult 10 -- normal
 
@@ -5694,6 +5810,10 @@ Dominion: Decreases unrest in your provinces, increases it in enemy provinces. D
 #startunittype1 4207 -- axe and shield marauders
 #startunitnbrs1 12
 #startunittype2 4203 -- Marauder Hunter (javelins, spear)
-#startunitnbrs2 8
+#startunitnbrs2 12
 #startscout 4236 -- marauder scout
 #end
+
+
+
+-- ---- End Slaanesh
