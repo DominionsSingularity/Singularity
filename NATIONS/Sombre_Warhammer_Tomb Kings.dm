@@ -244,7 +244,7 @@
 #newweapon 1108
 #name "Light of Ptra"
 #friendlyimmune
-#range 40
+#range 25
 #ammo 99
 #magic
 #flyspr -1 -- nothing
@@ -286,7 +286,7 @@
 #newweapon 1110
 #name "Fire of Ptra"
 #friendlyimmune
-#range 40
+#range 25
 #ammo 99
 #magic
 #fire
@@ -853,7 +853,7 @@
 #att 12 -- +1
 #def 10 -- +1
 #str 12 -- +2 i think
-#prot 3 -- +3
+#prot 2
 #mr 15
 #hp 10 -- +1 maybe?
 #rpcost 9
@@ -885,7 +885,7 @@
 #att 12 -- +1
 #def 10 -- +1
 #str 12 -- +2 i think
-#prot 3 -- +3
+#prot 2
 #mr 15
 #hp 10 -- +1 maybe?
 #rpcost 9
@@ -917,7 +917,7 @@
 #att 12 -- +1
 #def 10 -- +1
 #str 12 -- +2 i think
-#prot 3 -- +3
+#prot 2
 #mr 15
 #hp 10 -- +1 maybe?
 #formationfighter 2
@@ -946,7 +946,7 @@
 #att 12 -- +1
 #def 10 -- +1
 #str 12 -- +2 i think
-#prot 3 -- +3
+#prot 2
 #mr 15
 #hp 10 -- +1 maybe?
 #sunawe 1
@@ -979,7 +979,7 @@
 #armor 299 -- Shoulder Guard
 #def 10 -- +1
 #str 12 -- +2 i think
-#prot 3 -- +3
+#prot 2
 #mr 15
 #hp 10 -- +1 maybe?
 #prec 12 -- +2 i think
@@ -1002,7 +1002,7 @@
 #name "Ushabti"
 #descr "Carved in the likeness of gods and goddesses of ancient Nehekhara, the Ushabti stood guardian around the Tombs and temples of that land. Long ago they were awoken by the Necrotects and Priests of the Mortuary Cult to march alongside the forces of Nehekhara against the terrible threat of the necromancer Nagash and even now they will answer the call to serve the Kings of their land. The rituals required to animate the Ushabti and imbue them with the souls of fallen heroes, especially so long after Nehekhara fell, are particularly complex but result in constructs far more resilient than the animated lesser undead. Although the Ushabti take the likeness of the gods their veneration was forbidden in ancient Nehekhara and they are not considered sacred to the Tomb Kings.
 
-[60 gold cost in Death 3 scales. Requires no gold upkeep. Each recruit will transform into one of the three Ushabti forms at random; Bow, Dual Khopesh, or Tomb Glaive. Requires Dominion 4+, a Temple, and a Lab to recruit]"
+[70 gold cost in Death 3 scales. Requires no gold upkeep. Each recruit will transform into one of the three Ushabti forms at random; Bow, Dual Khopesh, or Tomb Glaive. Requires Dominion 4+, a Temple, and a Lab to recruit]"
 #size 3
 #hp 24
 #enc 0
@@ -1031,8 +1031,8 @@
 #nomovepen
 #mapmove 22 -- same as longdead
 #maxage 5000
-#gcost 120 -- so cost is 60
-#addupkeep -120
+#gcost 130 -- so cost is 70
+#addupkeep -130
 #deathrec 20 -- x6 is 120
 #rpcost 9
 #rcost 18
@@ -1196,7 +1196,7 @@
 #name "Sepulchral Stalker"
 #descr "Sepulchral Stalkers were created by the ancient Nehekharans to dilineate the borders of a King's realm. They are statues that have the boy of a snake and the upper torso of a man, topped with a thoroughly inhuman and repulsive skull-like visage. Stalkers are instinctively able to hunt down and ambush trespassers and are extremely quick, making them excellent patrollers, well feared by any who would dare tread the land of Nehekhara seeking to find treasure in the many ruins. The rituals that animate the Stalkers are complex and grant them both great resilience and a gaze capable of turning the flesh of mortals to marble. Even if the unfortunate target of the Stalker's gaze is not entirely changed to stone, they may well suffer terrible injuries as parts of them crumble into sand.
 
-[75 gold cost in Death 3 scales. Requires no gold upkeep. Requires Dominion 6+, a Temple, and a Lab to recruit]"
+[110 gold cost in Death 3 scales. Requires no gold upkeep. Requires Dominion 6+, a Temple, and a Lab to recruit]"
 #size 4
 #hp 30
 #enc 0
@@ -1226,9 +1226,9 @@
 #naga -- to avoid leg injuries
 #patrolbonus 3
 #maxage 5000
-#gcost 150 -- so cost ends up at 75
-#addupkeep -150
-#deathrec 25 -- x6 is 150
+#gcost 170 -- so cost ends up at 75
+#addupkeep -170
+#deathrec 20 -- x3 is 60
 #rpcost 9
 #rcost 15
 #reqlab
@@ -1246,7 +1246,7 @@
 #name "Tomb Scorpion"
 #descr "Tomb Scorpions are powerful creations of the Mortuary Cult, formed from a combination of stone, metal, and bone. They are lethal foes, for a Tomb Scorpions tail carries a potent venomous sting and their pincers can slice even an armoured man in half. They are sculpted by Necrotects in the form of Usirian's great scorpion companions which guard the gate to the Underworld and each Scorpion also acts as a sarcophagus in which the remains of a fallen Liche High Priest are interred. Though the Liche High Priest has been destroyed, the vestiges of his spirit power and protect the mighty Scorpion and his residual desire for vengeance motivates its slaughter of the enemy. Tomb Scorpions, as animated sarcophagi for powerful members of the Mortuary Cult, are sacred.
 
-[85 gold cost in Death 3 scales. Requires no gold upkeep. Requires Dominion 6+, a Temple, and a Lab to recruit]"
+[125 gold cost in Death 3 scales. Requires no gold upkeep. Requires Dominion 6+, a Temple, and a Lab to recruit]"
 #size 4
 #hp 40
 #enc 0
@@ -1273,9 +1273,9 @@
 #quadruped -- body type
 #holy
 #maxage 5000
-#gcost 175 -- so cost is 85
-#addupkeep -175
-#deathrec 30 -- x6 is 180
+#gcost 215 -- so cost is 125
+#addupkeep -215
+#deathrec 30 -- -90
 #rpcost 15
 #rcost 35
 #reqlab
@@ -1454,7 +1454,7 @@
 #att 12 -- +1
 #def 10 -- +1
 #str 12 -- +2 i think
-#prot 4 -- bit extra for being mounted
+#prot 3
 #mr 15
 #hp 10 -- +1 maybe?
 #secondshape 5266 -- necroserpent
@@ -1563,7 +1563,7 @@
 #def 6
 #ap 8
 #str 4
-#prot 5
+#prot 4
 #prec 5
 #neednoteat
 #inanimate - but can heal
@@ -1703,7 +1703,7 @@
 #name "Tomb Prince"
 #descr "Tomb Princes are the undead progeny of Tomb Kings, sons who in life never reached the throne but instead served as generals and champions of their city, leading smaller more mobile forces in support of the main army. The Kings of ancient Nehekhara had a great many children by their extensive harems, all of whom were considered legitimate members of the Royal Dynasty, though traditionally only the second eldest son could become the next King. Upon their death a Prince was entombed in a personal chamber within the Royal Tomb, at hand to join and honour their father in the glorious afterlife. Because of the extensive rituals of embalming and mummification performed on Princes they have entered undeath with their minds entirely intact and while initially horrified at the state of their land, they are as eager as ever to conquer, destroy their fathers' foes, and prove themselves worthy. Their physical might and resistance to magic is great and like their King they are practically immortal within the dominion of Nehekhara, though should they be struck down they will require almost a full year to restore their body in the Valley of Kings. Members of a Royal Dynasty of Nehekhara are sacred and any who fell them will be instantly cursed.
 
-[90 gold cost in Death 3 scales. Requires Dominion 4+ to recruit]"
+[120 gold cost in Death 3 scales. Requires Dominion 4+ to recruit]"
 #weapon 768 -- tomb khopesh
 #weapon 1105 -- Royal Sceptre
 #armor 304 -- Royal Armor
@@ -1711,7 +1711,7 @@
 #att 13 -- +2
 #def 11 -- +2
 #str 14 -- S4
-#prot 6 -- +6 -- T5
+#prot 5
 #mr 17
 #hp 28 -- W3 T5
 #holy
@@ -1721,7 +1721,7 @@
 #poormagicleader
 #prec 13
 #unsurr 2 -- tier 2
-#gcost 180 -- 1/2 is 90
+#gcost 210 -- 1/2 is 90
 #deathrec 30 -- x6 is 180
 #rpcost 2
 #fireres -5
@@ -1752,7 +1752,7 @@
 #att 14
 #def 12
 #str 16 -- S5
-#prot 8 -- T5, resilient
+#prot 7
 #mr 18
 #hp 38 -- W4 T5
 #holy
@@ -1797,7 +1797,7 @@
 #att 13 -- +2
 #def 11 -- +2
 #str 14 -- S4
-#prot 7 -- +6 -- T5 + 1 for chariot
+#prot 6
 #mr 17
 #hp 32 -- W3 T5 -- +4 for chariot
 #holy
@@ -1846,7 +1846,7 @@
 #att 14
 #def 12
 #str 16 -- S5
-#prot 9 -- T5, resilient + 1 for chariot
+#prot 8
 #mr 18
 #hp 44 -- W4 T5 -- +6 for chariot
 #holy
@@ -1890,7 +1890,7 @@
 #att 9
 #def 9
 #str 9
-#prot 3
+#prot 2
 #mr 16
 #hp 9
 #holy
@@ -1940,7 +1940,7 @@
 #att 9
 #def 9
 #str 9
-#prot 4
+#prot 3
 #mr 17
 #hp 10
 #holy
@@ -1991,7 +1991,7 @@
 #att 9
 #def 9
 #str 9
-#prot 5
+#prot 4
 #mr 18
 #hp 12
 #holy
@@ -2045,7 +2045,7 @@
 #att 10
 #def 10
 #str 13
-#prot 5
+#prot 3
 #mr 17
 #hp 12
 #holy
@@ -2114,7 +2114,8 @@
 #scalewalls
 #itemslots 29824 -- 3 misc, head, body
 #float
-#pierceres#fixedname "Apophas"
+#pierceres
+#fixedname "Apophas"
 #spiritsight
 #poisonres 25
 #coldres 15
@@ -2142,7 +2143,7 @@
 #att 9
 #def 9
 #str 9
-#prot 6
+#prot 4
 #mr 18
 #hp 30
 #holy
@@ -2172,7 +2173,8 @@
 #magicskill 3 2 -- E2
 #magicskill 4 2 -- S2
 #magicskill 1 2 -- A2
-#taskmaster 1#fixedname "Khatep"
+#taskmaster 1
+#fixedname "Khatep"
 #itemslots 31872 -- feet, head, body, no hands, 3 misc
 #end
 
@@ -2193,7 +2195,7 @@
 #att 11 -- +1
 #def 11 -- +1
 #str 14 -- +1
-#prot 7 -- +2
+#prot 5
 #mr 18 -- +1
 #hp 25 -- +13
 #holy
@@ -2571,10 +2573,10 @@
 #restricted 112
 #path 0 8
 #path 1 5 -- death
-#researchlevel 0
-#school 7
+#researchlevel 1
+#school 4
 #pathlevel 0 1
-#pathlevel 1 1
+#pathlevel 1 2
 #damage 5268
 #reqtaskmaster
 #nreff 4

@@ -1,5 +1,129 @@
 ---- Bretonnia
 
+-- Added
+
+#selectnametype 188
+#clear
+#addname "Dieter"
+#addname "Albrecht"
+#addname "Brenst"
+#addname "Piotr"
+#addname "Markus"
+#addname "Wulf"
+#addname "Wulfram"
+#addname "Arnulf"
+#addname "Arnold"
+#addname "Hellenbach"
+#addname "Volkmar"
+#addname "Leopold"
+#addname "Conrad"
+#addname "Ruland"
+#addname "Magnus"
+#addname "Burkhardt"
+#addname "Reiner"
+#addname "Reinhardt"
+#addname "Gottolf"
+#addname "Halpert"
+#addname "Heinrich"
+#addname "Heinfried"
+#addname "Aldric"
+#addname "Jurgen"
+#addname "Johannes"
+#addname "Johan"
+#addname "Baumfried"
+#addname "Joachim"
+#addname "Reinald"
+#addname "Gunter"
+#addname "Gunthar"
+#addname "Seigfried"
+#addname "Liebrecht"
+#addname "Essen"
+#addname "Jaeger"
+#addname "Lutke"
+#addname "Lukas"
+#addname "Saltzmann"
+#addname "Faustus"
+#addname "Ulfmar"
+#addname "Sighard"
+#addname "Gustaf"
+#addname "Heindel"
+#addname "Winrich"
+#addname "Weiker"
+#addname "Roland"
+#addname "Lienhart"
+#addname "Hutten"
+#addname "Rilker"
+#addname "Klaus"
+#addname "Ostlander"
+#addname "Middenbach"
+#addname "Hentschel"
+#addname "Ansel"
+#addname "Olaf"
+#addname "Hochfried"
+#addname "Rugen"
+#addname "Barthelm"
+#addname "Tomas"
+#addname "Mannfried"
+#addname "Mannlecht"
+#addname "Aldfried"
+#addname "Dieterich"
+#addname "Vorster"
+#addname "Meinhart"
+#addname "Rambrecht"
+#addname "Otto"
+#addname "Thomel"
+#addname "Klepzig"
+#addname "Willusch"
+#addname "Lothar"
+#addname "Volans"
+#addname "Tancred"
+#addname "Grimwold"
+#addname "Balthasar"
+#addname "Werner"
+#addname "Peregrinus"
+#addname "Helwig"
+#addname "Ulher"
+#addname "Schroeder"
+#addname "Schiff"
+#addname "Talabec"
+#addname "Bernau"
+#addname "Bernardt"
+#addname "Alfried"
+#addname "Ruprecht"
+#addname "Berwic"
+#addname "Klaude"
+#addname "Walbrecht"
+#addname "Rolf"
+#addname "Meinfried"
+#addname "Hauptmann"
+#addname "Steiner"
+#addname "Blutdorfer"
+#addname "Lewpold"
+#addname "Wolveram"
+#addname "Austein"
+#addname "Sigisberht"
+#addname "Alberich"
+#addname "Wilricus"
+#addname "Oskar"
+#addname "Hertwig"
+#addname "Siggurd"
+#addname "Bernolt"
+#addname "Mandred"
+#addname "Ortolf"
+#addname "Lepzig"
+#addname "Sigmar"
+#addname "Schwarzhelm"
+#addname "Volkel"
+#addname "Olaf"
+#addname "Mattius"
+#addname "Benolf"
+#addname "Jurgen"
+#addname "Wilheim"
+#addname "Hauptmann"
+#addname "Hochmann"
+#addname "Gartner"
+#end
+
 ------ ITEMS
 
 -- Battle Reliquae
@@ -920,17 +1044,17 @@
 #ap 22
 #prec 10
 #enc 5
-#gcost 70
+#gcost 90
 #ressize 1
-#rcost 12
-#rpcost 48 -- same as ea van hirdman
+#rcost 41
+#rpcost 56 -- same as ea van hirdman
 #goodleader
 #mapmove 26
 #size 3
 #nametype 197 
 #startage 40
 #maxage 300
-#nomovepen
+--#nomovepen
 #woundfend 1
 #end
 
@@ -1086,7 +1210,7 @@
 #armor 21 -- Full Helmet
 #armor 14 -- Plate Hauberk
 #mounted
-#hp 18
+#hp 16
 #prot 3
 #mor 14
 #mr 13
@@ -1123,7 +1247,7 @@
 #armor 21 -- Full Helmet
 #armor 14 -- Plate Hauberk
 #mounted
-#hp 19
+#hp 16
 #prot 3
 #mor 14
 #mr 14
@@ -1162,7 +1286,7 @@
 #armor 21 -- Full Helmet
 #armor 14 -- Plate Hauberk
 #mounted
-#hp 21 (+2)
+#hp 18 (+2)
 #prot 3
 #mor 18
 #mr 16 (+3)
@@ -1205,7 +1329,7 @@
 #armor 14 -- Plate Hauberk
 #mounted
 #taxcollector
-#hp 27
+#hp 17
 #mor 15
 #mr 14
 #att 13
@@ -1243,7 +1367,7 @@
 #armor 21 -- Full Helmet
 #armor 14 -- Plate Hauberk
 #mounted
-#hp 30
+#hp 16
 #prot 3
 #mor 16
 #mr 15
@@ -1284,7 +1408,7 @@
 #holy
 #magicbeing
 #awe 1
-#hp 32
+#hp 19
 #prot 3
 #mor 18
 #mr 16
@@ -1408,7 +1532,7 @@
 #secondtmpshape 3681 -- royal pegasus
 #flying
 #mountainsurvival
-#hp 35 -- takes pegasus into account
+#hp 18 -- takes pegasus into account
 #prot 3
 #mor 15
 #mr 15 -- (+1 for peg)
@@ -1446,7 +1570,7 @@
 #weapon 55 -- Hoof
 #animal
 #flying
-#hp 30 -- +10
+#hp 20 -- +10
 #mor 13 -- +2
 #mr 12 -- +1
 #att 11 -- +1
@@ -1596,7 +1720,7 @@
 #weapon 8 --Broadsword
 #weapon 1020 -- Destrier Hoof
 #str 11 (-2)
-#hp 24
+#hp 15
 #mounted
 #taskmaster 2 -- very good with peasants
 #inspirational 1 -- very good for morale generally
@@ -1626,7 +1750,7 @@
 #weapon 1028 -- Axe of Brionne
 #weapon 1020 -- Destrier Hoof
 #fear 5
-#hp 30
+#hp 20
 #att 14 (+1)
 #def 14 (+1)
 #unsurr 4 (+1)
@@ -1660,7 +1784,7 @@
 #ressize 2
 #patrolbonus 20
 #mountainsurvival
-#hp 40
+#hp 24
 #secondtmpshape 3695 -- Chrysar the royal pegasus
 --all Dukes have the following
 #gcost 0
@@ -1681,7 +1805,7 @@
 #weapon 55 -- Hoof
 #animal
 #flying
-#hp 35 -- +15
+#hp 25 -- +15
 #mor 15 -- +4
 #mr 13 -- +2
 #att 12 -- +2
@@ -1742,7 +1866,7 @@
 #armor 14 -- Plate Hauberk
 #armor 3 -- Kite Shield
 #forestsurvival
-#hp 35 (+5)
+#hp 23 (+5)
 #att 15 (+2)
 #def 15 (+2)
 #patrolbonus 15
@@ -3495,7 +3619,7 @@ Priests: Powerful, may be protected by Guardian Spirits
 Mechanics: Pilgrims gather at temples according to dominion strength"
 #flag "./Sombre_Warhammer/Warhammer_Bretonnia/Bretonnia_Flag.tga"
 #templepic 10 -- forest
-#labcost 700
+#--labcost 700
 #templecost 300
 #color 0.5 0.8 0.3
 

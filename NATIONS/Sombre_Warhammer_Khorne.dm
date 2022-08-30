@@ -94,7 +94,56 @@
 #secondaryeffectalways 171 -- small area fire
 #end
 
+-- Javelin Bundle used by Hunters
 
+#newweapon 1085
+#copyweapon 21 -- javelin
+#name "Javelin Bundle"
+#ammo 4 -- doubled
+#end
+
+-- Warhorse Hoof
+
+#newweapon 1093
+#copyweapon 56 -- hoof
+#name "Warhorse Hoof"
+#att -2
+#dmg 15
+#end
+
+-- Bite, magical
+
+#newweapon 1209
+#copyweapon 20 -- bite
+#name "Bite"
+#magic
+#end
+
+-- Bone Blade
+
+#newweapon 1132
+#copyweapon 29 -- claw
+#name "Bone Blade"
+#len 1
+#dmg 6
+#magic
+#end
+
+--- Giant Stomp
+
+#newweapon 1087
+#name "Giant Stomp"
+#dmg 0
+#att 0
+#def -1
+#len 0
+#rcost 0
+#bonus
+#aoe 1
+#len 0
+#blunt
+#sizeresist
+#end
 
 -- Spiked Whiplash
 
@@ -212,6 +261,43 @@
 #rcost 3
 #end
 
+---- Chaos Plate
+
+#newarmor 310
+#copyarmor 215 -- full plate of ulm
+#name "Full Chaos Plate"
+#prot 21 -- -2, same as full plate mail
+#rcost 19
+#end
+
+---- Chaos Helm
+
+#newarmor 311
+#copyarmor 218 -- full helmet of ulm
+#name "Chaos Helm"
+#prot 21 -- -2
+#rcost 4
+#end
+
+---- Chaos Headplate
+
+#newarmor 305
+#copyarmor 218 -- full helmet of ulm
+#name "Chaos Headplate"
+#prot 14 -- much less
+#rcost 2
+#def 0
+#enc 0
+#end
+
+---- Chaos Plate Cuirass
+
+#newarmor 312
+#copyarmor 217 -- plate cuirass of ulm
+#name "Chaos Plate Cuirass"
+#rcost 8
+#end
+
 
 -------- Monsters
 
@@ -230,13 +316,13 @@
 #enc 3 --- normal
 #str 13 -- +1 for khorne
 #att 11 --- WS4 I4
-#def 11 --- WS4 I4
+#def 10 --- WS4 I4
 #prec 10
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 15
+#gcost 17
 #chaosrec 1
-#rpcost 7 -- normal -2 because of turmoil incentives
+#rpcost 9 -- removed turmoil incentives, gotta have SOME downside to free scale dumps
 #rcost 2
 #ambidextrous 2
 #coldres 3
@@ -257,7 +343,7 @@
 #descr "descr."
 #hp 15 --- chaos warrior base hp
 #size 2 --- normal
-#prot 3 -- T4
+#prot 2 -- T4
 #mor 14 -- 14 base for chaos warrior
 #mr 13 --- 12 base for chaos warrior, +1 for Khorne
 #enc 2 --- -1
@@ -267,8 +353,8 @@
 #prec 10
 #mapmove 18 -- tireless marchers
 #ap 14 --- +2 over human
-#gcost 40
-#chaosrec 4 -- so 28 in T3
+#gcost 60
+#chaosrec 5 -- so 28 in T3
 #rpcost 16
 #rcost 8 -- khorne warriors +7 over slaanesh
 #ambidextrous 2
@@ -463,7 +549,7 @@
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Khorne is depicted as a ferocious Hound with burning eyes whose snarling bark drives men to violence, rage, and the pursuit of greater glory and so the tribal warriors who follow the Blood God are known as the Marauders of the Hound. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Khorne's baleful stare.
 
 [When recruited you will either get a marauder with axe and shield, broad sword and shield, axe and throwing axes, or occasionally a Forsaken Marauder]
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 21 -- full helmet
 #armor 11 -- ring mail hauberk
@@ -481,12 +567,12 @@
 #name "Forsaken Marauder"
 #descr "While only Warriors, Sorcerers, and Champions of Chaos can truly hope to draw the eye of one of the Ruinous Powers, all manner of other men and beasts are subject to the warping taint of Chaos through proximity alone. Many of the men and women of the countless Marauder tribes are born with mutations, reminders of the constant presence of their Gods. These mutants are not ostracised or culled as they might be in the weak realms of civilised men but are instead treated with respect and honour. Those with the extreme mutations typically do not survive to adulthood but some join the marauders and unleash the blessing of their altered form upon the foe in a frenzied headlong rush. They are known as the Forsaken amongst the ranks of the Warriors, but to the Marauders they are a venerated elite that demonstrate the favour of the Gods.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 17 -- axe
 #weapon 29 -- claw
 #armor 11 -- ring mail hauberk
 #hp 14 --- +2
-#prot 3 -- +1
+#prot 2
 #mor 14 -- +2
 #mr 12 --- +1
 #str 14 -- +1
@@ -506,7 +592,7 @@
 #name "Marauder Hunter"
 #descr "Not all of the Marauders who accompany Chaos raiding parties are strictly warriors, dedicated to slaughter and battle. Some are hunters who serve a vital function to their tribe in bringing down the beasts that roam the lands around the Chaos Wastes for food, trophies, or simply to ensure the safety of their people. These hunters accompany raiding parties to help provide supplies and to lend their impressive skill with javelins to the host. They are still Marauders are still capable fighters in melee, though they lack some of the fearsome resolve of their companions.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #prec 11 -- +1 for ranged focus
 #weapon 1 -- spear
 #weapon 1085 -- javelin bundle (x4 javs)
@@ -525,7 +611,7 @@
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Khorne is depicted as a ferocious Hound with burning eyes whose snarling bark drives men to violence, rage, and the pursuit of greater glory and so the tribal warriors who follow the Blood God are known as the Marauders of the Hound. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Khorne's baleful stare.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 21 -- full helmet
 #armor 11 -- ring mail hauberk
@@ -543,7 +629,7 @@
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 8 -- broad sword
 #armor 119 -- reinforced leather cap
 #armor 12 -- scale mail hauberk
@@ -561,7 +647,7 @@
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Khorne is depicted as a ferocious Hound with burning eyes whose snarling bark drives men to violence, rage, and the pursuit of greater glory and so the tribal warriors who follow the Blood God are known as the Marauders of the Hound. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Khorne's baleful stare.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 253 -- hatchet
 #weapon 253 -- hatchet
 #weapon 260 -- throwing axe
@@ -581,15 +667,15 @@
 #name "Marauder Berserker"
 #descr "Berserkers are elite infantry within the ranks of the Marauder tribes whose job is to shatter the enemy line or dispatch the strongest foes. Like all Marauders, they are unrelenting combatants who habitually take what their own lands cannot provide from lesser men, but are set apart by their heedless embrace of death in battle and ability to enter a frenzied killing trance. Berserkers favour the use of an axe in each hand and train extensively to build their physical strength to a level similar to that of the mighty Chaos Warriors. The Berserkers of the tribes that worship Khorne in his guise as the Hound are particularly unrelenting and brutal warriors.
 
-[Discounted to 18 gold in Turmoil 3]"
+[Discounted to 20 gold in Turmoil 3]"
 #hp 14 --- +2
-#prot 3 -- +1
+#prot 2
 #mor 13 -- +1
 #mr 11 --- +1
 #str 13 -- +1
-#gcost 24
+#gcost 26
 #chaosrec 2
-#rpcost 12 --- +5
+#rpcost 16 --- +5
 #rcost 3 -- +1
 #weapon 17 -- axe
 #weapon 17 -- axe
@@ -616,11 +702,11 @@
 #armor 119 -- reinforced leather cap
 #armor 11 -- ring mail hauberk
 #mounted
-#rpcost 14
+#rpcost 18
 #ressize 2
 #rcost 3 -- minor barding
 #ap 26 -- la tc cav +2
-#mapmove 24 -- la tc cav +2
+#mapmove 20 -- la tc cav +2
 #gcost 35
 #chaosrec 3
 #pillagebonus 2
@@ -646,11 +732,11 @@
 #armor 11 -- ring mail hauberk
 #armor 2 -- shield
 #mounted
-#rpcost 14
+#rpcost 18
 #ressize 2
 #rcost 3 -- minor barding
 #ap 26 -- la tc cav +2
-#mapmove 24 -- la tc cav +2
+#mapmove 20 -- la tc cav +2
 #gcost 35
 #chaosrec 3
 #pillagebonus 2
@@ -669,7 +755,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Khorne are known for their brutality and offensive prowess in battle and are perhaps the most dangerous of all their kind. While in combat they are a strange mix of cold discipline and boiling rage, but their professionalism and dedication to martial matters are unquestionable, for Khorne has none of the indulgent traits or Slaanesh or Nurgle. Those Warriors who acheive great deeds in battle will attract the attention of Khorne and may become Chosen in the eyes of the Blood God, though Khorne is an exacting master and may also find them lacking and curse them to become Forsaken or even Chaos Spawn.
 
 [When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -688,7 +774,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Khorne are known for their brutality and offensive prowess in battle and are perhaps the most dangerous of all their kind. While in combat they are a strange mix of cold discipline and boiling rage, but their professionalism and dedication to martial matters are unquestionable, for Khorne has none of the indulgent traits or Slaanesh or Nurgle. Those Warriors who acheive great deeds in battle will attract the attention of Khorne and may become Chosen in the eyes of the Blood God, though Khorne is an exacting master and may also find them lacking and curse them to become Forsaken or even Chaos Spawn.
 
 [This unit has attracted the attention of Khorne and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -762,7 +848,7 @@
 #descr "There are those amognst the ranks of the Chaos Warriors who bear the clear favour of Khorne and have been elevated as the Chosen of the Blood God and granted even greater physical prowess and skill. The Chosen are savage and terrible to behold, their armoured festooned with gleaming Daemonic brass and skull trophies taken from particularly satisfying kills, their howling fury fully unleashed as they butcher ranks of foes in exultation of their master. While the Warriors of Khorne temper their rage with discipline even in battle, the Chosen are true berserkers who give their lives wholly to the expression of rage and bloodlust. It is said that the Chosen of Khorne will fight on despite horrendous wounds and in the face of impossible odds, for even should their sheer fury falter somehow, they would never willingly dishonour Khorne by taking a backward step. The Chosen have reached the end of their path, never destined to rise toward the ultimate goal of Daemonhood, but their souls will surely receive lavish attention from Khorne in death just as they have in life. The Chosen are sacred to the followers of the Blood God.
 
 [Requires friendly Dominion strength of 5 in the province to recruit]
-[Discounted to 60 gold in Turmoil 3]"
+[Discounted to 100 gold in Turmoil 3]"
 #weapon 17 -- axe
 #weapon 17 -- axe
 #armor 311 -- chaos helm
@@ -772,7 +858,7 @@
 #str 14 -- +1
 #att 15 --- +1
 #def 13 --- +1
-#gcost 90
+#gcost 130
 #chaosrec 10 -- doubled
 #holy
 #montag 1040 -- chosen and forsaken and spawn
@@ -856,7 +942,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Khorne are known for their brutality and offensive prowess in battle and are perhaps the most dangerous of all their kind. While in combat they are a strange mix of cold discipline and boiling rage, but their professionalism and dedication to martial matters are unquestionable, for Khorne has none of the indulgent traits or Slaanesh or Nurgle. Those Warriors who acheive great deeds in battle will attract the attention of Khorne and may become Chosen in the eyes of the Blood God, though Khorne is an exacting master and may also find them lacking and curse them to become Forsaken or even Chaos Spawn.
 
 [When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 18 -- battleaxe
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -874,7 +960,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Khorne are known for their brutality and offensive prowess in battle and are perhaps the most dangerous of all their kind. While in combat they are a strange mix of cold discipline and boiling rage, but their professionalism and dedication to martial matters are unquestionable, for Khorne has none of the indulgent traits or Slaanesh or Nurgle. Those Warriors who acheive great deeds in battle will attract the attention of Khorne and may become Chosen in the eyes of the Blood God, though Khorne is an exacting master and may also find them lacking and curse them to become Forsaken or even Chaos Spawn.
 
 [This unit has attracted the attention of Khorne and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 18 -- battleaxe
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -921,7 +1007,7 @@
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Khorne. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Khorne, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
 [When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
-[Discounted to 70 gold in Turmoil 3]"
+[Discounted to 80 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 17 -- axe
@@ -935,7 +1021,7 @@
 #ressize 2
 #rcost 20
 #xpshape 50 -- +10 over normal because the chosen knight is so good
-#gcost 100
+#gcost 110
 #chaosrec 10
 #rpcost 36
 #end
@@ -951,7 +1037,7 @@
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Khorne. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Khorne, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
 [This unit has attracted the attention of Khorne and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
-[Discounted to 70 gold in Turmoil 3]"
+[Discounted to 80 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 17 -- axe
@@ -967,7 +1053,7 @@
 #homesick 100
 #xploss 100
 #secondshape 6241 -- grave that turns into chosen knight, forsaken, spawns
-#gcost 100
+#gcost 110
 #chaosrec 10
 #rpcost 36
 #cleanshape
@@ -984,7 +1070,7 @@
 #descr "As with Warriors, Chaos Knights strive to gain the favour of their patron God and become Chosen, the pinnacle of the Path of the Warrior. The Chosen Knights of Khorne, in particular, are perhaps the most deadly heavy cavalry in existence, for they ride not mighty Chaos Steeds but instead near unstoppable Daemonic mounts known as Juggernauts. These mounts are beasts of brass and iron and pure Daemonic hatred and are capable of crushing, tearing, and obliterating almost anything in their path, though they are somewhat kept in check by their riders, for the Chosen Knights of Khorne do not enter the berserk killing frenzy of their kindred and are instead an implacable force of steely hatred. Should the rider be slain the Juggernaut will fight on for the rest of the battle before returning to the Realm of Khorne. Being Chosen of Khorne they are sacred to the followers of the Blood God.
 
 [Requires friendly Dominion strength of 7 in the province to recruit]
-[Discounted to 160 gold in Turmoil 3]"
+[Discounted to 180 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 976 -- Juggernaut rampage
 #weapon 17 -- axe
@@ -1004,7 +1090,7 @@
 #str 14 -- +1
 #att 15 --- +1
 #def 13 --- +1
-#gcost 220
+#gcost 240
 #chaosrec 20 -- so 160 in T3
 #holy
 #montag 1044 -- forsaken, chosen knight, spawns
@@ -1139,7 +1225,7 @@
 #ap 22
 #mapmove 24
 #hp 15 -- +2
-#prot 8 -- +2
+#prot 7 -- +1
 #size 4
 #str 15
 #enc 1 -- daemon
@@ -1183,7 +1269,7 @@
 #ap 22
 #mapmove 24
 #hp 13 -- -2
-#prot 6 -- -2
+#prot 5 -- -2
 #size 4
 #str 14 -- -1
 #enc 2 -- +1
@@ -1222,7 +1308,7 @@
 #name "Chaos Ogre"
 #descr "Ogres are large humanoid creatures known for their gluttony, strength, and love of violence. While they are typically quite resistant to both the warping taint of Chaos and the tempting whispers of the Dark Prince, they are naturally drawn to promises of excess and violence and so can often be found in the forces of Khorne. Even fairly small Marauder forces can occasionally find themselves benefitting from the presence of a handful of Ogres because these creatures are natural opportunists and recognise that in a smaller force they can bully their way to getting a larger share of the loot. Chaos Ogres have, despite their natural resistances, been changed by their exposure to Chaos and the attentions of the Ruinous Powers and are even stronger and more ferocious fighters than their former fellows in the Ogre Kingdoms.
 
-[Discounted to 35 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #hp 30
 #size 3
 #prot 5
@@ -1239,7 +1325,7 @@
 #weapon 17 -- axe
 #armor 118 -- half helmet
 #armor 9 -- plate cuirass
-#gcost 50
+#gcost 60
 #chaosrec 5
 #rpcost 13
 #rcost 1
@@ -2130,16 +2216,16 @@
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Khorne fight with paired weapons in an offensive whirlwind of destruction and are known for entering a state of frenzied bloodlust in battle.
 
 [When this Champion is promoted it will transform to a form which will then be further transformed by an event, either becoming an Exalted Hero (and losing all its XP) or being turned into a mindless Chaos Spawn]
-[Discounted to 75 gold in Turmoil 3]"
-#hp 25
+[Discounted to 105 gold in Turmoil 3]"
+#hp 19
 #mor 15 -- +1
 #mr 15 -- +2 for tier 2
 #str 14 -- +1
 #att 15 -- +1
 #def 13 -- +1
 #prec 12 -- +2
-#gcost 105
-#chaosrec 10 -- so 75 in T3
+#gcost 135
+#chaosrec 10 -- so 105 in T3
 #rpcost 1
 #goodleader
 #command -60 -- so 20
@@ -2167,15 +2253,15 @@
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Khorne fight with paired weapons in an offensive whirlwind of destruction and are known for entering a state of frenzied bloodlust in battle.
 
 [This Champion is awaiting the event that will transform them to either an Exalted Hero (and losing all its XP) or a mindless Chaos Spawn]
-[Discounted to 75 gold in Turmoil 3]"
-#hp 25
+[Discounted to 105 gold in Turmoil 3]"
+#hp 19
 #mor 15 -- +1
 #mr 15 -- +2 for tier 2
 #str 14 -- +1
 #att 15 -- +1
 #def 13 -- +1
 #prec 12 -- +2
-#gcost 105
+#gcost 135
 #chaosrec 10 -- so 75 in T3
 #rpcost 1
 #goodleader
@@ -2205,7 +2291,7 @@
 [Requires friendly Dominion strength of 7 in the province to recruit]
 [When this Exalted Hero is promoted it will transform to a form which will then be further transformed by an event, either becoming a Chaos Lord (and losing all its XP) or being turned into a mindless Chaos Spawn]
 [Discounted to 160 gold in Turmoil 3]"
-#hp 35
+#hp 27
 #mor 16 -- +1 over aspiring champion
 #mr 16 -- +1
 #str 15 -- +1
@@ -2245,7 +2331,7 @@
 
 [This Exalted Hero is awaiting the event that will transform them to either a Chaos Lord (and losing all its XP) or a mindless Chaos Spawn]
 [Discounted to 160 gold in Turmoil 3]"
-#hp 35
+#hp 27
 #mor 16 -- +1 over aspiring champion
 #mr 16 -- +1
 #str 15 -- +1
@@ -2528,9 +2614,9 @@
 #descr "Most Marauder tribes will have one or two Shamans whose duty is to offer counsel to the Chieftain, interpret auguries to ensure successful raids, and lead the tribe in offering the proper observances to their patron God. Shamans tend to have only a little magical talent and rather than harnessing energy provided by the Ruinous Powers, they tap into the magic of their surroundings in the manner of hedge mages, witches, and other lesser mages. Shamans thus practice a different branch of magic from Sorcerers focused on veneration of the dead, the wilds, and the bitter cold of the polar lands. Shamans of Marauder tribes dedicated to Khorne in the guise of the Hound have a lower status than those of other tribes as Khorne is highly distrustful of magic users and carry a spear rather than a staff, for they are more willing warriors than others of their kind. They use magic of the wilds, frost, bone, and rock.
 
 [Does not require a lab to recruit]
-[Discounted to 90 gold in Turmoil 3]"
-#gcost 120
-#chaosrec 10 -- t3gcost 90
+[Discounted to 120 gold in Turmoil 3]"
+#gcost 150
+#chaosrec 10 -- t3gcost 120
 #rpcost 2
 #rcost 1
 #holy
@@ -2608,7 +2694,7 @@
 #chaosrec 5 -- t3gcost 45
 #ressize 2
 #ap 26 -- la tc cav +2
-#mapmove 24 -- la tc cav +2
+#mapmove 20 -- la tc cav +2
 #hp 20
 #str 14 -- +1 for khorne
 #prot 3
@@ -2748,10 +2834,10 @@
 #descr "Not all who receive Khorne's favour are destined to tread the path of the Champion, some are instead marked out to act as gore-soaked priests of the Blood God's will. Slaughterpriests are granted visions of violence and death from their God and know their purpose is to rouse his followers into acts of great conquest, slaughter, and exultation. These demagogues are known to drink the blood of the enemy spilled in battle and it is said that every drop that passes their lips is added to the great moat of blood surrounding Khorne's citadel of brass. Whether or not this is true, the consumption of this blood marks great physical changes in the Slaughterpriests, who tower over even hulking Chaos Warriors and whose muscle and bone have grown great and hard like stone and corded steel. Slaughterpriests are capable of performing incantations to deliver Khorne's gifts in battle and are known to perform blood rituals and seek out worthy sacrifices in the short times they spend away from the direct pursuit of war.
 
 [Discounted to 190 gold in Turmoil 3]"
-#hp 35
+#hp 28
 #str 16
 #gcost 280
-#prot 8
+#prot 6
 #chaosrec 30 -- so T3 gcost is 190
 #rpcost 2
 #magicskill 8 2 -- H2
@@ -3240,8 +3326,8 @@
 #path 0 7
 #pathlevel 0 1
 #fatiguecost 10
-#range 10
-#aoe 663 -- 50% of whole battlefield
+#range 0
+#aoe 10 -- 50% of whole battlefield -- nerfed to surrounding him instead
 #spec 135168 -- everyone, mr negates, mindless immune
 #explspr 10123 -- red puffs
 #sound 0 -- no sound?
@@ -3451,7 +3537,25 @@
 #damage 6270 -- daemon prince
 #nreff 1
 #effect 10021 -- summon commander
-#researchlevel 6
+#researchlevel 7
+#restricted 147
+#end
+
+---- Daemon Prince Ascendancy
+
+#newspell
+#name "Daemon Prince Ascendancy"
+#descr "This ritual completes the final step to becoming a Daemon Prince, changing a Chaos Lord who has brought the true favor of their patron god into a new form. Daemon Princes of Khorne tend to hold a roughly humanoid shape, though typically with lower limbs more reminiscent than those of a Bloodletter or Bloodthrister, and greatly increased size as well as other alterations pleasing to the Blood God. Unlike the Daemon Princes of the other Ruinous Powers those of Khorne do not use magic at all, instead relying on their great physical strength and incredible martial prowess, as well as Daemonic weapons and armour gifted to them by Khorne. As representatives of Khorne's power and symbols of the rewards that can be gained in the service of the Blood God, Daemon Princes have priestly authority. While they are Daemons in form their past in the mortal world grants Daemon Princes the benefit of not becoming weaker outside the Dominion of their God, though like Greater Daemons they can still only reform their bodies if slain in this Dominion."
+#path 0 7 -- blood
+#path 1 8 -- holy
+#pathlevel 0 3
+#pathlevel 1 1
+#school 6 -- blood
+#fatiguecost 6600 -- 66 blood slaves -- cheaper than magical versions
+#damage 1915 -- daemon prince event
+#nreff 1
+#effect 10083 -- local province enchantment
+#researchlevel 7
 #restricted 147
 #end
 
@@ -4552,7 +4656,7 @@ Red Harvest. Khorne rewards conquest with blood. Each province you control has a
 #req_unique 1
 #rarity 5
 #req_rare 2 -- 2% chance, he's pretty good
-#req_turn 16 -- too good to be early
+#req_turn 25 -- too good to be early
 #end
 
 -- Skulltaker
@@ -5030,126 +5134,17 @@ Red Harvest. Khorne rewards conquest with blood. Each province you control has a
 #end
 
 
-
-
-
-
-
-
 -------------------- CHAOS LORD PROMOTIONS
 
----- Promotion from Chaos Lord -- FAILURE -- Spawn generated
-#newevent
-#rarity 5
-#req_pop0ok
-#req_rare 15 -- this is a more sensible value
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood expectant of ascension to Daemonhood was punished at the last moment for his hubris and twisted into a horrific, mindless Chaos Spawn."
-#poison 999
-#1unit -1043 -- commander spawns montag
-#end
-
 ---- Promotion, reward: Dominion increase
 #newevent
 #rarity 5
-#req_rare 15
 #req_pop0ok
 #req_fornation 147
-#req_domowner 147 -- must have positive khorne dominion already
+#req_mindef 1
 #req_monster 6268 -- chaos lord
 #req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#incdom 4
-#end
-
----- Promotion, reward: magic item
-#newevent
-#rarity 5
-#req_rare 18
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#magicitem 2
-#end
-
----- Promotion, reward: blood slaves
-#newevent
-#rarity 5
-#req_rare 22
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#2d4vis 7
-#end
-
----- Promotion, reward: some bloodletters
-#newevent
-#rarity 5
-#req_rare 28
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#3d3units 6255 -- bloodletters
-#end
-
----- Promotion, reward: temple
-#newevent
-#rarity 5
-#req_rare 28
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#temple
-#end
-
----- Promotion, backstop
-#newevent
-#rarity 5
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
+#req_ench 1915
 #nation 147
 #msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood."
 #transform 6270 -- daemon prince
@@ -5157,127 +5152,6 @@ Red Harvest. Khorne rewards conquest with blood. Each province you control has a
 #pathboost 8 -- holy
 #pathboost 8 -- holy
 #end
-
----- Promotion from Chaos Lord -- FAILURE -- Spawn generated
-#newevent
-#rarity 5
-#req_pop0ok
-#req_rare 15 -- this is a more sensible value
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood expectant of ascension to Daemonhood was punished at the last moment for his hubris and twisted into a horrific, mindless Chaos Spawn."
-#poison 999
-#1unit -1043 -- commander spawns montag
-#end
-
----- Promotion, reward: Dominion increase
-#newevent
-#rarity 5
-#req_rare 15
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#req_domowner 147 -- must have positive khorne dominion already
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#incdom 4
-#end
-
----- Promotion, reward: magic item
-#newevent
-#rarity 5
-#req_rare 18
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#magicitem 2
-#end
-
----- Promotion, reward: blood slaves
-#newevent
-#rarity 5
-#req_rare 22
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#2d4vis 7
-#end
-
----- Promotion, reward: some bloodletters
-#newevent
-#rarity 5
-#req_rare 28
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#3d3units 6255 -- bloodletters
-#end
-
----- Promotion, reward: temple
-#newevent
-#rarity 5
-#req_rare 28
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood.  An additional reward was also provided by the Blood God."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
----reward
-#temple
-#end
-
----- Promotion, backstop
-#newevent
-#rarity 5
-#req_pop0ok
-#req_fornation 147
-#req_monster 6268 -- chaos lord
-#req_targmnr 6268 -- chaos lord
-#nation 147
-#msg "A Chaos Lord who stood before the judgement of Khorne has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood."
-#transform 6270 -- daemon prince
-#xp -99
-#pathboost 8 -- holy
-#pathboost 8 -- holy
-#end
-
 
 ---- This is an event to transforms an H5 daemon prince into one with -2 holy (a bug that happens if you prophetise a daemon prince that was promoted up, or you get your prophet promoted into the prince)
 #newevent
@@ -5293,9 +5167,6 @@ Red Harvest. Khorne rewards conquest with blood. Each province you control has a
 #msg "turned daemon prince into -2 holy version, because he was at h5"
 #transform 4127 -- daemon prince with -2 holy
 #end
-
-
-
 
 
 

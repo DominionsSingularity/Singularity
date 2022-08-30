@@ -747,7 +747,7 @@
 #name "Ogre Mournfang Cavalry"
 #descr "High up the slopes of the Mountains of Mourn lives a beast that has always attracted the attention of the Ogres, a creature they named the Mournfang. Aggressive predators that resemble a blend between the shaggy Rhinoxen and the ferocious Sabretusk, Mournfang packs are capable of hunting and killing anything that lives in their domain, including hulking Stonehorns and Thundertusks. In addition to their great size and strength, Mournfangs are known for their incredible tenacity and resilience, being capable of fighting on even with fatal wounds. The Ogres find such stubborn commitment to violence and territoriality deeply impressive and covet Mournfangs as pets and mounts, though they are notoriously hard to break in. Those rare Ogres foolhardy, lucky, or simply mean enough to beat and capture a juvenile Mournfang and train it as a riding beast benefit from one of the most powerful mounts in the world and make for extremely heavy cavalry which can demand high status within any Ogre force. Should the rider be slain the Mournfang will fight on until the end of the battle before returning to his old territory.
 
-[Recruitment limited to 1 per turn, discounted to 80 gold in Turmoil 3]"
+[Recruitment limited to 1 per turn, discounted to 75 gold in Turmoil 3]"
 #size 5
 #hp 32 -- +2
 #mor 13 -- +2
@@ -756,7 +756,7 @@
 #str 16 -- +1
 #mapmove 20 -- sabretusk
 #ap 22 -- sabretusk
-#gcost 110 -- so 80
+#gcost 105 -- so 75
 #chaosrec 10
 #rpcost 42 -- mushushu chariot -18
 #rcost 8
@@ -1277,7 +1277,7 @@
 [This troop uses a smaller sprite on the recruitment screen for ease of use. Recruitment limited to 1 per turn, discounted to 200 gold in Turmoil 3]"
 #hp 95
 #size 6
-#prot 10
+#prot 9
 #mor 14
 #mr 9
 #enc 4
@@ -1322,7 +1322,7 @@
 [Discounted to 200 gold in Turmoil 3]"
 #hp 95
 #size 6
-#prot 10
+#prot 9
 #mor 14
 #mr 9
 #enc 4
@@ -1620,7 +1620,7 @@
 
 This Tyrant is known for his connection to the Great Maw, having personally made the pilgrimage there and returned with a portion of its ravenous hunger.
 
-[+sacred, +3 berserk]"
+[+sacred, +3 berserk, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1645,7 +1645,7 @@ This Tyrant is known for his connection to the Great Maw, having personally made
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #holy
@@ -1665,7 +1665,7 @@ This Tyrant is known for his connection to the Great Maw, having personally made
 
 This Tyrant is known for his extensive travels across the world seeking out worthy challenges no matter the terrain.
 
-[+survivals, +snowmove, +6 mapmove]"
+[+survivals, +snowmove, +6 mapmove, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1690,7 +1690,7 @@ This Tyrant is known for his extensive travels across the world seeking out wort
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 24
 #swampsurvival
@@ -1711,7 +1711,7 @@ This Tyrant is known for his extensive travels across the world seeking out wort
 
 This Tyrant is known for his great strength and singleminded dedication to tearing down the fortifications of those who would cower behind their walls.
 
-[+4 strength, +20 siegebonus]"
+[+4 strength, +20 siegebonus, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1736,7 +1736,7 @@ This Tyrant is known for his great strength and singleminded dedication to teari
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #siegebonus 20
@@ -1755,7 +1755,7 @@ This Tyrant is known for his great strength and singleminded dedication to teari
 
 This Tyrant is known for his skill at breaking in giants through sheer physical might and willpower.
 
-[+2 strength, +1 taskmaster, +1 mr, +2 morale]"
+[+2 strength, +1 taskmaster, +1 mr, +2 morale, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1780,7 +1780,7 @@ This Tyrant is known for his skill at breaking in giants through sheer physical 
 #pillagebonus 10
 #taxcollector
 #taskmaster 3 -- +1 for being a giantbreaker
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #montag 3207
@@ -1798,7 +1798,7 @@ This Tyrant is known for his skill at breaking in giants through sheer physical 
 
 This Tyrant is known for his slaughter of dangerous wild beasts and knowledge of the hunt.
 
-[+sabretusk retinue, +snowmove, +2 animal awe, +2 beastmaster]"
+[+sabretusk retinue, +snowmove, +2 animal awe, +2 beastmaster, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1823,7 +1823,7 @@ This Tyrant is known for his slaughter of dangerous wild beasts and knowledge of
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #animalawe 2
@@ -1845,7 +1845,7 @@ This Tyrant is known for his slaughter of dangerous wild beasts and knowledge of
 
 This Tyrant is known for his prodigious size and willingness to throw his weight around to crush competitors.
 
-[+10 hp, +2 str, +ogre smash]"
+[+10 hp, +2 str, +ogre smash, unsurroundability +1]"
 #hp 75 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1871,7 +1871,7 @@ This Tyrant is known for his prodigious size and willingness to throw his weight
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #montag 3207
@@ -1890,7 +1890,7 @@ This Tyrant is known for his prodigious size and willingness to throw his weight
 
 This Tyrant is known for having slaughtered and eaten all of his closest kin lest they challenge his authority; a commendable act amongst Ogre kind that shores up his position as a leader to be obeyed.
 
-[+1 inspirational, +1 morale]"
+[+1 inspirational, +1 morale, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -1915,7 +1915,7 @@ This Tyrant is known for having slaughtered and eaten all of his closest kin les
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #inspirational 1
@@ -1934,7 +1934,7 @@ This Tyrant is known for having slaughtered and eaten all of his closest kin les
 
 This Tyrant is known for his incredible toughness and the resilience of his gut, having literally eaten chunks of mountain rock.
 
-[+2 prot, +5 hp, +affliction resistance]"
+[+2 prot, +5 hp, +affliction resistance, unsurroundability +1]"
 #hp 70 -- T5W5 size 4
 #size 4
 #prot 9 -- +2
@@ -1959,7 +1959,7 @@ This Tyrant is known for his incredible toughness and the resilience of his gut,
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #woundfend 1
@@ -1979,7 +1979,7 @@ This Tyrant is known for his incredible toughness and the resilience of his gut,
 
 This Tyrant is known for having survived apparently fatal wounds on more than one occasion.
 
-[+affliction resistance, if slain in battle the Tyrant has a 1 in 3 chance to immediately spring back to life]"
+[+affliction resistance, if slain in battle the Tyrant has a 1 in 3 chance to immediately spring back to life, unsurroundability +1]"
 #hp 65 -- T5W5 size 4
 #size 4
 #prot 7 -- +2
@@ -2004,7 +2004,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #pillagebonus 10
 #taxcollector
 #taskmaster 2
-#unsurr 3 -- tier 3
+#unsurr 4 -- +1
 #mason
 #mapmove 18 -- +2
 #reform 33
@@ -2070,7 +2070,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #descr "The wastelands surrounding the Great Maw are blasted hellscapes awash with the chaotic influence of the warp, unleashed when the Maw impacted. Increasingly, Slaughtermasters are tapping into this energy to augment the gutmagic gifted to their kind, thanks in no small part to the influence of their Henchfiends. These malign lesser Daemons have latched on to the Ogres as a source of power that might be put to use in the service of Chaos, taking on the traits of their servants, the gnoblars. Unlike gnoblars, Henchfiends are extremely intelligent, magically gifted and, most importantly, completely inedible. They provide the Slaughtermasters with access to dark lore and unknown magic, all the time subtly influencing the path of their race."
 #hp 9
 #size 2
-#prot 8
+#prot 5
 #mor 9
 #mr 15
 #enc 1
@@ -2212,7 +2212,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #descr "The wastelands surrounding the Great Maw are blasted hellscapes awash with the chaotic influence of the warp, unleashed when the Maw impacted. The Mawfiends, as they are known, are the undisputed rulers of these lands, surveying them with cruel detachment through four compound eyes. Their claws and hooves, at all times covered in gore, are strong enough to tear through armour, bone and muscle with ease. In addition to their physical prowess Mawfiends are also gifted in the dark arts, particularly magic of fire and blood. Bound to Slaughtermasters with complex bloodpacts, Mawfiends are nonetheless agents of Chaos and true Daemons. Despite their calculating minds, Mawfiends are still connected in some way to the Great Maw and if injured may be unable to contain their rage and hunger."
 #hp 65
 #size 3
-#prot 10
+#prot 9
 #mor 18
 #mr 17
 #enc 1
@@ -2323,7 +2323,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #descr "Groth Onefinger was the first ogre to set eyes upon the Great Maw. Considered mad due to his insistence that the Maw was coming, he was both proven correct and severely wounded by its impact. Groth lost his nose, lips, ears and all but one of his digits in the resultant firestorm, but rose from the ashes to become the First Prophet of the Great Maw and leader of the savage Mawtribes. Despite his badly damaged body his stature as the first ever Butcher is undisputed and Groth's powerful connection to the fiery wastes left him with a great many fiends bound to him."
 #hp 60
 #size 3
-#prot 8
+#prot 7
 #mor 20
 #mr 16
 #enc 4
@@ -2493,7 +2493,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 
 [Summons 5 Sabretusks on battle start and automatically summons 2 Sabretusks per month]"
 #hp 55
-#prot 10
+#prot 8
 #mor 16
 #mr 17
 #str 20
@@ -2543,7 +2543,7 @@ This Tyrant is known for having survived apparently fatal wounds on more than on
 #descr "Greasus Goldtooth, formally known as Overtyrant Greasus Tribestealer Drakecrush Gatecrasher Hoardmaster Goldtooth the Obese, is the fattest, richest, and most powerful ruler in all the Ogre Kingdoms. Greasus took over the Goldtooth Tribe by killing and eating his own father and quickly beat down all other challengers before turning his attention to neighbouring tribes. At that time the Goldtooth Tribe was wealthy but didn't have the reputation to match Greasus' ambitions so the canny new Tyrant set about challenging and killing a series of tribal leaders, each time having studied and exploited their weaknessess and making a name, or rather several Big Names for himself. Eventually Greasus extracted respect and tribute from each of the tribes and so became Overtyrant of the Ogre Kingdoms and organised his kind to greatly increase the wealth they extorted from traders and neighbouring powers, with all paying tithes to Greasus himself, now by far the wealthiest Ogre that had ever lived. Greasus is far too rich to walk and so rides into battle atop a Rhinox mount, armed with the ensorcelled and jewel-encrusted Sceptre of the Titans and sporting the magically protective and intelligence enhancing Overtyrant's Crown on his head. Greasus is so confident in his abilities and his reputation and so pleased to display his hard won obesity that he does the unthinkable and forgoes a protective gutplate, an act which only enhances his aura of invincibility."
 #hp 80
 #size 6
-#prot 10
+#prot 9
 #mor 16
 #mr 16
 #enc 4

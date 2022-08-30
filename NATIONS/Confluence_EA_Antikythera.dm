@@ -2267,7 +2267,7 @@ Research-bots can be further enhanced and made to perform more complex tasks thr
 #custommagic 768 100
 #custommagic 1536 100
 #custommagic 1152 100
-#porrleader
+#poorleader
 #maxage 115
 #startage 105
 #slowrec

@@ -67,11 +67,34 @@
 
 
 
+--- Wild Swings (giant's huge club attack)
+
+#newweapon 1085
+#copyweapon 532 -- tail sweep, to get the def negates trait
+#name "Cleave"
+#dmg 3
+#aoe 2
+#halfstr
+#sizeresist
+#blunt
+#end
+
+#newweapon 1082
+#name "Wild Swings"
+#dmg 5
+#att 0
+#def 0
+#len 4
+#blunt
+#secondaryeffectalways 1085
+#nratt 2
+#end
 
 
 --- Giant Stomp
 
 #newweapon 977
+#copyweapon 532
 #name "Giant Stomp"
 #dmg 0
 #att 0
@@ -637,7 +660,7 @@
 #mounted
 #mapmove 22
 #ap 20
-#gcost 40 -- knight + 5 for being mercs
+#gcost 55
 #weapon 4 -- lance
 #weapon 56 -- hoof
 #weapon 8 -- broad sword
@@ -645,7 +668,7 @@
 #armor 19 -- full plate mail
 #armor 3 -- kite shield
 #ressize 1
-#rpcost 15
+#rpcost 21
 #rcost 7
 #end
 
@@ -692,7 +715,7 @@
 #att 13
 #def 13
 #mor 14
-#hp 21
+#hp 14
 #str 12
 #mr 14 -- special
 #ap 14
@@ -723,7 +746,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Tilea/Captain2.tga"
 #name "Captain"
 #descr "Mercenary Captains are a common sight across the regions of Tilea, Estalia, and the Border Princes. Each leads a small force of mercenary troops and was usually promoted up from the frontlines to begin with. They tend to be competent if unremarkable commanders and skilled combatants. They have access to good quality equipment and are armed with both a blade and crossbow."
-#hp 19
+#hp 14
 #prec 11
 #prot 3
 #mor 11
@@ -755,7 +778,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Tilea/Captain2.tga"
 #name "Captain"
 #descr "Mercenary Captains are a common sight across the regions of Tilea, Estalia, and the Border Princes. Each leads a small force of mercenary troops and was usually promoted up from the frontlines to begin with. They tend to be competent if unremarkable commanders and skilled combatants. They have access to good quality equipment and are armed with both a blade and crossbow."
-#hp 19
+#hp 14
 #prec 11
 #prot 3
 #mor 11
@@ -795,7 +818,7 @@
 #descr "Privateer Captains are the commanders of pirate crews, usually from the island of Sartosa, that ply their bloody trade around the trade-focused realms of Tilea and Estalia. It is common for such crews to seek employment under a mercenary contract rather than trust to the fortune of extorting or stealing from potentially well guarded merchants, so there are typically several in the employ of the city states of Tilea. Privateer Captains are skilled combatants and competent leaders, as they must be able to defend their position from usurpers within and without their crew, but the main attraction of hiring them is gaining access to their ship to sail armies across the sea. When recruited a Privateer Captain will report with a handful of his crewmen.
 
 [Will appear with 10 Sartosan Pirates for free once recruited. Upkeep lowered to that of a 70 gold commander]"
-#hp 19
+#hp 14
 #prec 11
 #prot 3
 #mor 11
@@ -835,7 +858,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Tilea/Privateer2.tga"
 #name "Privateer Captain"
 #descr "Privateer Captains are the commanders of pirate crews, usually from the island of Sartosa, that ply their bloody trade around the trade-focused realms of Tilea and Estalia. It is common for such crews to seek employment under a mercenary contract rather than trust to the fortune of extorting or stealing from potentially well guarded merchants, so there are typically several in the employ of the city states of Tilea. Privateer Captains are skilled combatants and competent leaders, as they must be able to defend their position from usurpers within and without their crew, but the main attraction of hiring them is gaining access to their ship to sail armies across the sea."
-#hp 19
+#hp 14
 #prec 11
 #prot 3
 #mor 11
@@ -872,7 +895,7 @@
 #name "Estalian Almocaden"
 #descr "Estalia is a realm of men to the west of Tilea and is not dissimilar in its fractious nature, extensive use of mercenaries, and the dominance of great rival cities. Almogavars are particularly ferocious infantry that are a common sight on Estalian battlefields; they are men from the hills, barely civilised by the standards of more urbane Estalians, who have made raiding and warfare a way of life. When Estalia was invaded and brought under the control of Araby it was the villages and hamlets controlled by the Almogavars that offered the firmest resistance and these hardy warriors became greatly feared and respected by the foreigners. Now Almogavars can often be found working as mercenaries as far afield as Araby, the Border Princes, and of course Tilea. Almocadens are the leaders of Almogavar groups, always promoted up from the ranks based on experience and merit. They are canny tacticians who specialise in leading small groups on raids and can be recognised by their use of the sword and scaled armour, both rare items in Almogavar society."
 #gcost 80
-#hp 21 -- W2, tough
+#hp 15 -- W2, tough
 #str 12
 #mor 12
 #att 12
@@ -903,7 +926,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Tilea/General2.tga"
 #name "General"
 #descr "Mercenary Generals are experienced commanders who have usually participated in many battles on behalf of the rulers of cities across Estalia, Tilea, and the Border Princes. They are typically hired to command several smaller mercenary companies brought together into a single army, though these forces are usually not so large as those found in realms that do not rely so heavily on sellswords. They are well equipped and dress in a rather flamboyant fashion, eager to show their hard earned wealth."
-#hp 25
+#hp 16
 #size 3
 #mounted
 #ressize 1 -- merc
@@ -917,7 +940,7 @@
 #prec 12
 #mapmove 22
 #ap 20
-#gcost 90
+#gcost 105
 #rpcost 1
 #weapon 56 -- Hoof
 #weapon 8 -- broad sword
@@ -941,6 +964,7 @@
 #descr "The realms of Tilea, Estalia, and the Border Princes are fractious, ruled over by petty tyrants and merchant princes with little sense of unity with or loyalty to their neighbours; wealth and power are always the great motivators. As such the trade of assassins flourishes in these lands and it is not unheard of for a succession of powerful individuals to be mysteriously slain in a short period of time, before some fortunate figure emerges to reap the benefits of their demise and carve up their former holdings. This assassin is a skilled combatant and makes use of a crossbow, the traditional weapon of Tilea. Assassins are careful to ensure they keep on the good side of smugglers and pirates and will not take up work against the residents of the famed pirate isle of Sartosa; as such they can make use of ships to sail considerable distances."
 #ressize 1
 #nametype 201
+#rpcost 2
 #end
 
 
@@ -1053,7 +1077,7 @@
 Monthly Reinforcement: 1 Republican Guardsman"
 #att 13 -- decided to make him extra good
 #def 13
-#hp 24
+#hp 16
 #str 12
 #prot 3
 #mor 14
@@ -1087,7 +1111,7 @@ Monthly Reinforcement: 1 Republican Guardsman"
 Monthly Reinforcement: 1 Republican Guardsman"
 #att 13 -- decided to make him extra good
 #def 13
-#hp 24
+#hp 16
 #str 12
 #prot 3
 #mor 14
@@ -1147,7 +1171,7 @@ Monthly Reinforcement: 4 eager Fellowship Pikemen."
 #incunrest -5
 #att 11
 #def 11
-#hp 20
+#hp 14
 #str 11
 #prot 3
 #mor 14
@@ -1186,7 +1210,7 @@ Monthly Reinforcement: 4 eager Fellowship Pikemen."
 #incunrest -5
 #att 11
 #def 11
-#hp 20
+#hp 14
 #str 11
 #prot 3
 #mor 14
@@ -1244,7 +1268,7 @@ Monthly Reinforcement: 4 eager Fellowship Pikemen."
 Monthly Reinforcement: 2 Leopard Company Pikemen"
 #att 12
 #def 12
-#hp 22
+#hp 15
 #str 12
 #prot 3
 #mor 13
@@ -1280,7 +1304,7 @@ Monthly Reinforcement: 2 Leopard Company Pikemen"
 Monthly Reinforcement: 2 Leopard Company Pikemen"
 #att 12
 #def 12
-#hp 22
+#hp 15
 #str 12
 #prot 3
 #mor 13
@@ -1428,7 +1452,7 @@ Monthly Reinforcement: 1 Marauder"
 #name "Tiger Fighting Hero"
 #descr "Wu Song's Drunken Bandits hail from the distant land of Cathay, an empire said to be ruled over by an immortal Dragon. Cathay is home to a great many arts of fighting, some of them using the energy held within the body to make unarmed strikes as deadly as blows with an iron cudgel. As an arrogant young martial artist trained in the use of the quarterstaff Wu Song once took a challenge to drink a huge amount of alcohol and then walk a path rumoured to be prowled by tigers. As he came face to face with one of the beasts he suddenly realised he was too drunk to flee and would have to fight, but in his haste to throw the tiger off balance he accidentally broke his staff on a tree and the tiger pounced on him. Filled with a drunken rage he managed to pin the creature and struck in its skull with his bare hands, much to his own amazement. Wu Song went on to develop a martial art focused on unarmed strikes and the tempering of the body using internal energies unlocked by the drinking of potent alcohol. Travelling west he so impressed a group of bandits that they swore to follow him to the ends of the earth and enthusiastically took up his practice of drinking before combat, though they lack the patience to truly learn his art. Wu Song uses no weapons or armour save for the pelt of the tiger he first slew, but his rapid strikes are powerful enough to shatter rock and it is said his muscle is as hard is iron.
 Monthly Reinforcement: 2 Bandits"
-#hp 28
+#hp 17
 #size 2
 #prot 18 -- iron hard muscle
 #mor 14 -- drunken rage
@@ -1442,7 +1466,8 @@ Monthly Reinforcement: 2 Bandits"
 #ap 12 --- normal, move 4, want this to be the same as his troops if possible
 #gcost 420 -- so upkeep is 28, paying for the two bandits
 #weapon 960 -- tiger killing strikes
-#okleader -- not a leader, just a martial artist
+#okleader -- not a leader, just a martial artist
+
 #fixedname "Wu Song"
 #unsurr 3 -- tier 3
 #itemslots 292992 -- feet, crown, 3 misc
@@ -1458,7 +1483,7 @@ Monthly Reinforcement: 2 Bandits"
 #name "Tiger Fighting Hero"
 #descr "Wu Song's Drunken Bandits hail from the distant land of Cathay, an empire said to be ruled over by an immortal Dragon. Cathay is home to a great many arts of fighting, some of them using the energy held within the body to make unarmed strikes as deadly as blows with an iron cudgel. As an arrogant young martial artist trained in the use of the quarterstaff Wu Song once took a challenge to drink a huge amount of alcohol and then walk a path rumoured to be prowled by tigers. As he came face to face with one of the beasts he suddenly realised he was too drunk to flee and would have to fight, but in his haste to throw the tiger off balance he accidentally broke his staff on a tree and the tiger pounced on him. Filled with a drunken rage he managed to pin the creature and struck in its skull with his bare hands, much to his own amazement. Wu Song went on to develop a martial art focused on unarmed strikes and the tempering of the body using internal energies unlocked by the drinking of potent alcohol. Travelling west he so impressed a group of bandits that they swore to follow him to the ends of the earth and enthusiastically took up his practice of drinking before combat, though they lack the patience to truly learn his art. Wu Song uses no weapons or armour save for the pelt of the tiger he first slew, but his rapid strikes are powerful enough to shatter rock and it is said his muscle is as hard is iron.
 Monthly Reinforcement: 2 Bandits"
-#hp 28
+#hp 17
 #size 2
 #prot 18 -- iron hard muscle
 #mor 14 -- drunken rage
@@ -1472,7 +1497,8 @@ Monthly Reinforcement: 2 Bandits"
 #ap 12 --- normal, move 4, want this to be the same as his troops if possible
 #gcost 420 -- so upkeep is 28, paying for the two bandits
 #weapon 960 -- tiger killing strikes
-#okleader -- not a leader, just a martial artist
+#okleader -- not a leader, just a martial artist
+
 #fixedname "Wu Song"
 #unsurr 3 -- tier 3
 #itemslots 292992 -- feet, crown, 3 misc
@@ -1519,7 +1545,7 @@ Monthly Reinforcement: 2 Bandits"
 #name "Cursed Captain"
 #descr "Richter Kreugar was once an ambitious, ruthless, and morally flexible young mercenary captain willing to take on any job as long as the pay was good. He was also prone to switch to whichever side of a conflict would pay the most, even in the midst of battle. So it was that Richter and his men wore out their welcome with traditional employers and ended up on the payroll of a Necromancer attempting to carve out an empire in the Empire region of Wolfenburg. While the Necromancer was initially successful he was eventually driven back to his lair in the forest and, calculating that the winds had shifted, Richter waited for an opportune moment and ran his employer through with his sword. With his dying breath the Necromancer cursed Richter, who withered away to a pile of bones in a matter of seconds. However that was not the end of Richter's story, for the next night he arose, now a creature of undeath, compelled to seek battle and unable to truly die. Further, any who Richter struck down rose, for at least for that battle, as an undead soldier loyal to him, as did any his soldiers slew. Sometimes the undead would persist beyond the length of a battle and do in this way Richter formed his new Cursed Company that now seeks mercenary work across the world. Richter is protected from hostile magic by the blood red Gem of the Cursed and wields his unholy sword Blight.
 Monthly Reinforcement: 2 Cursed Companions"
-#hp 22
+#hp 18
 #mor 30
 #str 12
 #att 12
@@ -1552,7 +1578,7 @@ Monthly Reinforcement: 2 Cursed Companions"
 #name "Cursed Captain"
 #descr "Richter Kreugar was once an ambitious, ruthless, and morally flexible young mercenary captain willing to take on any job as long as the pay was good. He was also prone to switch to whichever side of a conflict would pay the most, even in the midst of battle. So it was that Richter and his men wore out their welcome with traditional employers and ended up on the payroll of a Necromancer attempting to carve out an empire in the Empire region of Wolfenburg. While the Necromancer was initially successful he was eventually driven back to his lair in the forest and, calculating that the winds had shifted, Richter waited for an opportune moment and ran his employer through with his sword. With his dying breath the Necromancer cursed Richter, who withered away to a pile of bones in a matter of seconds. However that was not the end of Richter's story, for the next night he arose, now a creature of undeath, compelled to seek battle and unable to truly die. Further, any who Richter struck down rose, for at least for that battle, as an undead soldier loyal to him, as did any his soldiers slew. Sometimes the undead would persist beyond the length of a battle and do in this way Richter formed his new Cursed Company that now seeks mercenary work across the world. Richter is protected from hostile magic by the blood red Gem of the Cursed and wields his unholy sword Blight.
 Monthly Reinforcement: 2 Cursed Companions"
-#hp 22
+#hp 18
 #mor 30
 #str 12
 #att 12
@@ -1622,7 +1648,7 @@ Monthly Reinforcement: 1 Slayer Pirate"
 #darkvision 50
 #siegebonus 1
 #berserk 4
-#hp 28 -- +4 over dragon slayer for being big
+#hp 24
 #mor 30
 #mr 16
 #att 13 -- WS6, dwarf
@@ -1667,7 +1693,7 @@ Monthly Reinforcement: 1 Slayer Pirate"
 #darkvision 50
 #siegebonus 1
 #berserk 4
-#hp 28 -- +4 over dragon slayer for being big
+#hp 24
 #mor 30
 #mr 16
 #att 13 -- WS6, dwarf
@@ -1772,7 +1798,7 @@ Monthly Reinforcement: 1 Venator"
 #size 3
 #att 12
 #def 12
-#hp 20
+#hp 14
 #str 12
 #prot 2
 #mor 13
@@ -1807,7 +1833,7 @@ Monthly Reinforcement: 1 Venator"
 #size 3
 #att 12
 #def 12
-#hp 20
+#hp 14
 #str 12
 #prot 2
 #mor 13
@@ -1844,7 +1870,7 @@ Monthly Reinforcement: 1 Venator"
 Monthly Reinforcement: 2 Marksmen"
 #att 12
 #def 12
-#hp 18
+#hp 13
 #str 11
 #prot 2
 #mor 12
@@ -1873,7 +1899,7 @@ Monthly Reinforcement: 2 Marksmen"
 Monthly Reinforcement: 2 Marksmen"
 #att 12
 #def 12
-#hp 18
+#hp 13
 #str 11
 #prot 2
 #mor 12
@@ -1949,7 +1975,7 @@ Monthly Reinforcement: 2 Marksmen"
 Monthly Reinforcement: 1 Pavise Crossbowman"
 #att 12
 #def 12
-#hp 20
+#hp 14
 #str 12
 #prot 3
 #mor 12
@@ -1983,7 +2009,7 @@ Monthly Reinforcement: 1 Pavise Crossbowman"
 Monthly Reinforcement: 1 Pavise Crossbowman"
 #att 12
 #def 12
-#hp 20
+#hp 14
 #str 12
 #prot 3
 #mor 12
@@ -2047,7 +2073,7 @@ Monthly Reinforcement: 1 Pavise Crossbowman"
 Monthly Reinforcement: 1 Birdman."
 #fixedname "Daddallo of Verezzo"
 #flying
-#hp 15 -- not much of a fighter, has to keep light
+#hp 12 -- not much of a fighter, has to keep light
 #mor 12 -- brave
 #mr 11 -- tier 1
 #prec 11 -- slightly better than average shot
@@ -2078,7 +2104,7 @@ Monthly Reinforcement: 1 Birdman."
 Monthly Reinforcement: 1 Birdman."
 #fixedname "Daddallo of Verezzo"
 #flying
-#hp 15 -- not much of a fighter, has to keep light
+#hp 12 -- not much of a fighter, has to keep light
 #mor 12 -- brave
 #mr 11 -- tier 1
 #prec 11 -- slightly better than average shot
@@ -2290,7 +2316,7 @@ Monthly Reinforcement: 1 Skink Raider Cavalry."
 Monthly Reinforcement: 1 Lost Legionnaire"
 #att 11
 #def 11
-#hp 20 -- W2, fit
+#hp 14 -- W2, fit
 #str 11
 #prot 3
 #mor 12
@@ -2326,7 +2352,7 @@ Monthly Reinforcement: 1 Lost Legionnaire"
 Monthly Reinforcement: 1 Lost Legionnaire"
 #att 11
 #def 11
-#hp 20 -- W2, fit
+#hp 14 -- W2, fit
 #str 11
 #prot 3
 #mor 12
@@ -2354,7 +2380,7 @@ Monthly Reinforcement: 1 Lost Legionnaire"
 #name "Manflayer Captain"
 #descr "Even by the standards of the cruel and arrogant Dark Elves, Malkus Manhide is sadistic, vicious, and known for his contempt for lesser beings. On the other hand, he is also legendarily greedy for coin, an attribute which, coupled with the ascent of his enemies on the continent of Naggaroth, led the Manflayer and his small band of Corsairs taking up a career as mercenaries in the Old World. Malkus' moniker of Manhide is no hollow title used to drum up fear, for rather than wearing the traditional Corsair cloak made from the hardy scales of a Sea Dragon, Malkus instead had a cloak made from the flayed skin of men, elves, and dwarfs that fell victim to his raids, and soon insisted that any who follow him did the same. The Manflayers, as Malkus' crew are known, are experts in terror warfare, raiding, and extracting wealth from the population wherever they land. Though male Dark Elves are forbidden to practice sorcery by their leader Malekith, Malkus considers himself free from the rules of his former home and has learned some magic of shadows and fear. Malkus enchants the flayed skin cloaks of the regiment to make his force harder to detect and to resist harm from mundane weapons.
 Monthly Reinforcement: 1 Manflayer Corsair."
-#hp 16 -- +1
+#hp 14 -- +1
 #enc 3
 #mor 13 -- -1
 #mr 14 -- tier 2
@@ -2401,7 +2427,7 @@ Monthly Reinforcement: 1 Manflayer Corsair."
 #name "Manflayer Captain"
 #descr "Even by the standards of the cruel and arrogant Dark Elves, Malkus Manhide is sadistic, vicious, and known for his contempt for lesser beings. On the other hand, he is also legendarily greedy for coin, an attribute which, coupled with the ascent of his enemies on the continent of Naggaroth, led the Manflayer and his small band of Corsairs taking up a career as mercenaries in the Old World. Malkus' moniker of Manhide is no hollow title used to drum up fear, for rather than wearing the traditional Corsair cloak made from the hardy scales of a Sea Dragon, Malkus instead had a cloak made from the flayed skin of men, elves, and dwarfs that fell victim to his raids, and soon insisted that any who follow him did the same. The Manflayers, as Malkus' crew are known, are experts in terror warfare, raiding, and extracting wealth from the population wherever they land. Though male Dark Elves are forbidden to practice sorcery by their leader Malekith, Malkus considers himself free from the rules of his former home and has learned some magic of shadows and fear. Malkus enchants the flayed skin cloaks of the regiment to make his force harder to detect and to resist harm from mundane weapons.
 Monthly Reinforcement: 1 Manflayer Corsair."
-#hp 16 -- +1
+#hp 14 -- +1
 #enc 3
 #mor 13 -- -1
 #mr 14 -- tier 2
@@ -2511,7 +2537,7 @@ Monthly Reinforcement: 1 Manflayer Corsair."
 #name "Halfling Ranger Captain"
 #descr "Lumpin Croop was born in the poorest backwater of the northern Moot to a family heavily indebted to their landlords and so seemed destined for a life scraping a back breaking existence as a carrot farmer. However Croop was, as some rare Halflings tend to be, born with a strong desire to avoid hard work and a near absolute lack of respect for authority. So it was that Croop became one of the most prolific poachers and thieves in the Moot and accidentally became something of a folk hero to likeminded Halflings born in poverty. Eventually caught by a force of trackers dispatched by angry landowners, Croop improvised a tale of the wealth and adventure awaiting Halflings like him in the distant land of Tilea and was so convincing that the trackers, and many other young Halflings impressed by tales of Croop's exploits, joined him on a long journey south. For his part Croop constantly tried to sneak away to avoid the responsibilities of leadership, but his trackers were as skilled as he and he would always be caught, having to explain the entire thing was a 'test of initiative'. Eventually Croop's group reached Tilea and did indeed find both wealth and adventure as the regiment known as Lumpin Croop's Fighting Cocks, for there is great demand for such skilled woodsmen and archers at affordable rates. Croop's fame back home always attracts a steady stream of willing recruits looking for adventure and an escape from farm labour.
 Monthly Reinforcement: 2 Halfling Rangers."
-#hp 12 -- W2
+#hp 10 -- W2
 #size 1
 #prot 0
 #mor 10 -- +2
@@ -2554,7 +2580,7 @@ Monthly Reinforcement: 2 Halfling Rangers."
 #name "Halfling Ranger Captain"
 #descr "Lumpin Croop was born in the poorest backwater of the northern Moot to a family heavily indebted to their landlords and so seemed destined for a life scraping a back breaking existence as a carrot farmer. However Croop was, as some rare Halflings tend to be, born with a strong desire to avoid hard work and a near absolute lack of respect for authority. So it was that Croop became one of the most prolific poachers and thieves in the Moot and accidentally became something of a folk hero to likeminded Halflings born in poverty. Eventually caught by a force of trackers dispatched by angry landowners, Croop improvised a tale of the wealth and adventure awaiting Halflings like him in the distant land of Tilea and was so convincing that the trackers, and many other young Halflings impressed by tales of Croop's exploits, joined him on a long journey south. For his part Croop constantly tried to sneak away to avoid the responsibilities of leadership, but his trackers were as skilled as he and he would always be caught, having to explain the entire thing was a 'test of initiative'. Eventually Croop's group reached Tilea and did indeed find both wealth and adventure as the regiment known as Lumpin Croop's Fighting Cocks, for there is great demand for such skilled woodsmen and archers at affordable rates. Croop's fame back home always attracts a steady stream of willing recruits looking for adventure and an escape from farm labour.
 Monthly Reinforcement: 2 Halfling Rangers."
-#hp 12 -- W2
+#hp 10 -- W2
 #size 1
 #prot 0
 #mor 10 -- +2
@@ -2762,7 +2788,7 @@ Monthly Reinforcement: 1 Nomad Cavalryman."
 #size 3
 #att 13
 #def 13
-#hp 26 -- tenacious
+#hp 17 -- tenacious
 #str 12
 #prot 3
 #mor 16 -- fearless
@@ -2799,7 +2825,7 @@ Monthly Reinforcement: 1 Nomad Cavalryman."
 #size 3
 #att 13
 #def 13
-#hp 26 -- tenacious
+#hp 17 -- tenacious
 #str 12
 #prot 3
 #mor 16 -- fearless
@@ -2837,7 +2863,7 @@ Monthly Reinforcement: 1 Nomad Cavalryman."
 #name "Exiled Khan"
 #descr "Far to the east of the Old World, beyond the Dark Lands, beyond even the Ogre Kingdoms, lie the seemingly endless plains of the great steppe. It is here that the nomadic hobgoblins rule, thousands of tribes of wolf riding warriors led by lesser Khans, all in service of the Great Hobgobla Khan. Oglah was once amongst the most celebrated Khans to serve the Great Khan directly, controlling a substantial force of wolf riders and even giving orders to weaker Khans during his master's many campaigns. Called to reinforce a great host in the process of being destroyed by a massive army from Cathay, Oglah saw which way the wind was blowing and immediately switched sides, favouring Cathayan silver over potential death. This was fairly typical behaviour for a hobgoblin, but the Great Khan demanded greater loyalty from his inner circle and Oglah soon found his tribe pursued and harried almost to extinction by the Great Khan's forces. Fleeing his homeland and crossing the Dark Lands, the battle tested Khan and his wolf riders quickly took to mercenary life in the Old World. Oglah still receives reinforcements from hobgoblins who escape the lands of the Chaos Dwarfs or flee the steppe and his regiment, the Wolfboyz, have gained fame as a highly effective, if untrustworthy, force of cavalry archers.
 Monthly Reinforcement: 1 Hobgoblin Wolfrider"
-#hp 21 --- tough!
+#hp 16 --- tough!
 #size 3 --- they aren't goblins, mounted on wolf
 #prot 3
 #mor 11
@@ -2881,7 +2907,7 @@ Monthly Reinforcement: 1 Hobgoblin Wolfrider"
 #name "Exiled Khan"
 #descr "Far to the east of the Old World, beyond the Dark Lands, beyond even the Ogre Kingdoms, lie the seemingly endless plains of the great steppe. It is here that the nomadic hobgoblins rule, thousands of tribes of wolf riding warriors led by lesser Khans, all in service of the Great Hobgobla Khan. Oglah was once amongst the most celebrated Khans to serve the Great Khan directly, controlling a substantial force of wolf riders and even giving orders to weaker Khans during his master's many campaigns. Called to reinforce a great host in the process of being destroyed by a massive army from Cathay, Oglah saw which way the wind was blowing and immediately switched sides, favouring Cathayan silver over potential death. This was fairly typical behaviour for a hobgoblin, but the Great Khan demanded greater loyalty from his inner circle and Oglah soon found his tribe pursued and harried almost to extinction by the Great Khan's forces. Fleeing his homeland and crossing the Dark Lands, the battle tested Khan and his wolf riders quickly took to mercenary life in the Old World. Oglah still receives reinforcements from hobgoblins who escape the lands of the Chaos Dwarfs or flee the steppe and his regiment, the Wolfboyz, have gained fame as a highly effective, if untrustworthy, force of cavalry archers.
 Monthly Reinforcement: 1 Hobgoblin Wolfrider"
-#hp 21 --- tough!
+#hp 16 --- tough!
 #size 3 --- they aren't goblins, mounted on wolf
 #prot 3
 #mor 11
@@ -2983,7 +3009,7 @@ Monthly Reinforcement: 1 Hobgoblin Wolfrider"
 #name "Maestro Duelist"
 #descr "Vespero, Tilean for 'the wasp', was once a brash young nobleman much given to self indulgence, street brawls, and romantic escapades, often with the daughters or wives of the merchants of Verezzo. His quick temper and lust, combined with the right of aristocracy to duel their accusers, led to the youth engaging in countless duels, but his skill with the blade always prevailed. Within a few short years he had slain so many angry fathers and husbands that the noble families of the city banded together to offer a huge reward for his head. Seeing now would be a good moment to disappear, the youth donned a skull mask and styled himself Vespero. Having raised cash by cutting down several politics enemies of Borgio the Besieger, ruler of Mirgaliano, Vespero formed a mercenary regiment of likeminded young street duelists and named them Vespero's Vendetta. Vespero is a highly skilled swordsman and, like his men, adept in the use of the cloak as a shield and small throwing daggers.
 Monthly Reinforcement: 2 Duelists"
-#hp 28 -- 3 wounds, but not terribly tough
+#hp 16 -- 3 wounds, but not terribly tough
 #str 11
 #mr 13 -- tier 3
 #mor 13 -- very brave
@@ -3014,7 +3040,7 @@ Monthly Reinforcement: 2 Duelists"
 #name "Maestro Duelist"
 #descr "Vespero, Tilean for 'the wasp', was once a brash young nobleman much given to self indulgence, street brawls, and romantic escapades, often with the daughters or wives of the merchants of Verezzo. His quick temper and lust, combined with the right of aristocracy to duel their accusers, led to the youth engaging in countless duels, but his skill with the blade always prevailed. Within a few short years he had slain so many angry fathers and husbands that the noble families of the city banded together to offer a huge reward for his head. Seeing now would be a good moment to disappear, the youth donned a skull mask and styled himself Vespero. Having raised cash by cutting down several politics enemies of Borgio the Besieger, ruler of Mirgaliano, Vespero formed a mercenary regiment of likeminded young street duelists and named them Vespero's Vendetta. Vespero is a highly skilled swordsman and, like his men, adept in the use of the cloak as a shield and small throwing daggers.
 Monthly Reinforcement: 2 Duelists"
-#hp 28 -- 3 wounds, but not terribly tough
+#hp 16 -- 3 wounds, but not terribly tough
 #str 11
 #mr 13 -- tier 3
 #mor 13 -- very brave
@@ -3082,7 +3108,7 @@ Monthly Reinforcement: 1 Grudgebringer Cavalry."
 #size 3
 #att 14
 #def 14
-#hp 27 -- +2 over empire general
+#hp 17
 #str 12
 #prot 3
 #mor 15
@@ -3119,7 +3145,7 @@ Monthly Reinforcement: 1 Grudgebringer Cavalry."
 #size 3
 #att 14
 #def 14
-#hp 27 -- +2 over empire general
+#hp 17
 #str 12
 #prot 3
 #mor 15
@@ -3195,7 +3221,7 @@ Monthly Reinforcement: 1 Grudgebringer Cavalry."
 #name "Druid of Albion"
 #descr "Hengus is, as far as it is known, the only Druid of Albion to have left that mist shrouded land of bogs, faeries, and giants. He came to the Old World with a pair of giants as his bodyguards as part of a deal with a rather confused trade expidition from the city of Remas. Initially Hengus acted as an emissary of his land, but after fruitlessly explaining time and time again that Albion had little interest in the wares of Remas if they were to be accompanied by forced acceptance of military outposts and Reman 'civilisation', he chose to give up and leave. Unfortunately this angered the merchants of Remas and they placed a harsh embargo on transporting the Druid and his giants home, and so Hengus has taken up mercenary work in order to make ends meet until he can find a way home. The Druid himself is a capable spellcaster, but his true power comes from his bodyguards; towering giants of Albion capable of hurling boulders great distances and smashing entire regiments with their clubs. Like all Druids of Albion, Hengus is a talented healer. Very occasionally another Giant of Albion will find his way to Hengus and join him, though no-one is sure exactly how they get there!
 Monthly Reinforcement: 1/25 chance of a Giant of Albion."
-#hp 18
+#hp 13
 #str 11
 #mr 16
 #mor 12
@@ -3227,7 +3253,7 @@ Monthly Reinforcement: 1/25 chance of a Giant of Albion."
 #name "Druid of Albion"
 #descr "Hengus is, as far as it is known, the only Druid of Albion to have left that mist shrouded land of bogs, faeries, and giants. He came to the Old World with a pair of giants as his bodyguards as part of a deal with a rather confused trade expidition from the city of Remas. Initially Hengus acted as an emissary of his land, but after fruitlessly explaining time and time again that Albion had little interest in the wares of Remas if they were to be accompanied by forced acceptance of military outposts and Reman 'civilisation', he chose to give up and leave. Unfortunately this angered the merchants of Remas and they placed a harsh embargo on transporting the Druid and his giants home, and so Hengus has taken up mercenary work in order to make ends meet until he can find a way home. The Druid himself is a capable spellcaster, but his true power comes from his bodyguards; towering giants of Albion capable of hurling boulders great distances and smashing entire regiments with their clubs. Like all Druids of Albion, Hengus is a talented healer. Very occasionally another Giant of Albion will find his way to Hengus and join him, though no-one is sure exactly how they get there!
 Monthly Reinforcement: 1/25 chance of a Giant of Albion."
-#hp 18
+#hp 13
 #str 11
 #mr 16
 #mor 12

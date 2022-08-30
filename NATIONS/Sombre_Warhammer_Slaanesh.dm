@@ -261,7 +261,7 @@
 #copyarmor 215 -- full plate of ulm
 #name "Full Chaos Plate"
 #prot 21 -- -2, same as full plate mail
-#rcost 12
+#rcost 19
 #end
 
 ---- Chaos Helm
@@ -330,13 +330,13 @@
 #enc 3 --- normal
 #str 12
 #att 11 --- WS4 I4
-#def 12 --- WS4 I4 then +1 for being slaanesh marked
+#def 11 --- WS4 I4 then +1 for being slaanesh marked
 #prec 10
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 15
+#gcost 17
 #chaosrec 1
-#rpcost 7 -- normal -2 because of turmoil incentives
+#rpcost 9 -- normal -2 because of turmoil incentives
 #rcost 2
 #ambidextrous 2
 #coldres 3
@@ -356,7 +356,7 @@
 #descr "descr."
 #hp 15 --- chaos warrior base hp
 #size 2 --- normal
-#prot 3 -- T4
+#prot 2
 #mor 16 -- 14 base for chaos warrior, +2 for slaanesh
 #mr 12 --- 12 base for chaos warrior
 #enc 2 --- -1
@@ -366,8 +366,8 @@
 #prec 10
 #mapmove 18 -- tireless marchers
 #ap 14 --- +2 over human
-#gcost 40
-#chaosrec 4 -- so 28 in T3
+#gcost 60
+#chaosrec 5 -- so 28 in T3
 #rpcost 16
 #rcost 1
 #ambidextrous 2
@@ -583,7 +583,7 @@
 #weapon 85 -- tentacle
 #armor 11 -- ring mail hauberk
 #hp 14 --- +2
-#prot 3 -- +1
+#prot 2
 #mor 14 -- +2
 #mr 11 --- +1
 #str 13 -- +1
@@ -603,7 +603,7 @@
 #name "Marauder Hunter"
 #descr "Not all of the Marauders who accompany Chaos raiding parties are strictly warriors, dedicated to slaughter and battle. Some are hunters who serve a vital function to their tribe in bringing down the beasts that roam the lands around the Chaos Wastes for food, trophies, or simply to ensure the safety of their people. These hunters accompany raiding parties to help provide supplies and to lend their impressive skill with javelins to the host. They are still Marauders are still capable fighters in melee, though they lack some of the fearsome resolve of their companions.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #prec 11 -- +1 for ranged focus
 #weapon 1 -- spear
 #weapon 1085 -- javelin bundle (x4 javs)
@@ -622,7 +622,7 @@
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 17 -- axe
 #armor 21 -- full helmet
 #armor 11 -- ring mail hauberk
@@ -640,7 +640,7 @@
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 15 -- morningstar
 #armor 118 -- half helmet
 #armor 11 -- ring mail hauberk
@@ -658,7 +658,7 @@
 #name "Marauder"
 #descr "The tribes of humans who flock to join the banner of Chaos incursions are collectively known as Marauders and though they hail from many distinct cultures they all recognise and worship the Ruinous Powers. Typically Slaanesh is depicted as a great Serpent whose caress brings pleasure, pain, sorrow, and elation and so the tribal warriors who follow the Dark Prince are known as the Marauders of the Serpent. Marauders are to the warriors of other human realms as great wolves are to dogs; they are hardened by lives of struggle and violence and devoted to battle with no thought of retiring in comfort or returning home to farm or ply a trade. Marauders are physically larger and stronger than typical humans and some bear mutations brought about by proximity to the Chaos Wastes or the briefest flickers of attention from Slaanesh's wandering gaze.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 14 gold in Turmoil 3]"
 #weapon 17 -- axe
 #weapon 260 -- throwing axe
 #armor 118 -- half helmet
@@ -676,15 +676,15 @@
 #name "Marauder Berserker"
 #descr "Berserkers are elite infantry within the ranks of the Marauder tribes whose job is to shatter the enemy line or dispatch the strongest foes. Like all Marauders, they are unrelenting combatants who habitually take what their own lands cannot provide from lesser men, but are set apart by their heedless embrace of death in battle and ability to enter a frenzied killing trance. Berserkers favour the use of an axe in each hand and train extensively to build their physical strength to a level similar to that of the mighty Chaos Warriors.
 
-[Discounted to 18 gold in Turmoil 3]"
+[Discounted to 20 gold in Turmoil 3]"
 #hp 14 --- +2
-#prot 3 -- +1
+#prot 2
 #mor 13 -- +1
 #mr 11 --- +1
 #str 13 -- +1
-#gcost 24
+#gcost 26
 #chaosrec 2
-#rpcost 11 --- +4
+#rpcost 15 --- +4
 #weapon 17 -- axe
 #weapon 17 -- axe
 #armor 21 -- full helmet
@@ -714,7 +714,7 @@
 #ressize 2
 #rcost 3 -- minor barding
 #ap 26 -- la tc cav +2
-#mapmove 24 -- la tc cav +2
+#mapmove 20 -- la tc cav +2
 #gcost 35
 #chaosrec 3
 #pillagebonus 2
@@ -741,7 +741,7 @@
 #ressize 2
 #rcost 3 -- minor barding
 #ap 26 -- la tc cav +2
-#mapmove 24 -- la tc cav +2
+#mapmove 20 -- la tc cav +2
 #gcost 35
 #chaosrec 3
 #mor 13 -- +1
@@ -761,7 +761,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
 [When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -779,7 +779,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
 [This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -853,7 +853,7 @@
 #descr "There are those amognst the ranks of the Chaos Warriors who bear the clear favour of Slaanesh and have been elevated as the Chosen of the Prince of Pleasure and granted even greater physical prowess and skill. The Chosen are beautiful and terrible to behold, their armour spotless and shining as they scythe through the ranks of their foes with a cruel indifference. While the Warriors of Slaanesh are grimly focused on the task of butchery and pain, the Chosen are gifted heightened senses and a true passion for excess. They are known for to dance, sing, weep, laugh, cavort, even recite poetry or create art; indeed they will sometimes do all of these in the midst of a pitched battle. The Chosen have reached the end of their path, never destined to rise toward the ultimate goal of Daemonhood, but their souls will surely receive lavish attention from Slaanesh in death just as they have in life. The Chosen are sacred to the followers of the Dark Prince.
 
 [Requires friendly Dominion strength of 5 in the province to recruit]
-[Discounted to 60 gold in Turmoil 3]"
+[Discounted to 70 gold in Turmoil 3]"
 #weapon 10 -- falchion
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -863,7 +863,7 @@
 #str 14 -- +1
 #att 14 --- +1
 #def 14 --- +1
-#gcost 90
+#gcost 100
 #chaosrec 10 -- doubled
 #holy
 #montag 1030 -- chosen and forsaken and spawn
@@ -950,7 +950,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
 [When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 308 -- glaive
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -969,7 +969,7 @@
 #descr "Chaos Warriors are fighters of near unmatched prowess, possessing superhuman strength and durability combined with skills honed in countless battles and arms and armour forged in infernal fire. When a man joins the marauders and pledges his soul to Chaos he chooses a lifetime of bloody struggle with the promise of earthly reward, yet those who embark on the path of the Chaos Warrior cast aside such pursuits to seek greater truths and perhaps the chance of true immortality as near tireless killing machines. Warriors dedicated to Slaanesh are known for their grace and skill in battle even beyond those of their peers in service to the rival Ruinous Powers. They are no less indifferent than any of their kind to the pleasures of sleep, wine, food, or carnal pursuits, but find great pleasure in the challenge of war and the infliction of pain. Those Warriors who acheive great deeds in battle will attract the attention of Slaanesh and may become Chosen in the eyes of the Prince of Pleasure, though Slaanesh is a capricious creature and may also curse them to become Forsaken or even Chaos Spawn.
 
 [This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
-[Discounted to 28 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #weapon 308 -- glaive
 #armor 311 -- chaos helm
 #armor 310 -- chaos plate armour
@@ -1016,7 +1016,7 @@
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Slaanesh. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Slaanesh, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
 [When this unit is promoted it will transform into an identical unit with homesick 100. As soon as that unit then ends a turn outside of its home province it will transform into its next state and lose all XP]
-[Discounted to 70 gold in Turmoil 3]"
+[Discounted to 80 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 10 -- falchion
@@ -1030,7 +1030,7 @@
 #ressize 2
 #rcost 12
 #xpshape 40
-#gcost 100
+#gcost 110
 #chaosrec 10
 #rpcost 36
 #end
@@ -1046,7 +1046,7 @@
 #descr "Chaos Knights have a fearsome reputation as heralds of doom across the Old World, for the pairing of a mighty Chaos Warrior with a towering Chaos Steed makes for near unstoppable heavy cavalry. Chaos Steeds are to the warhorses of the realms of men what Chaos Warriors are to their soldiers; these beasts are larger, stronger, and more vicious than any normal horse. Chaos Knights are famously arrogant and tend to stay away from the rest of the warhost, considering even Chaos Warriors beneath them, though they are as eager to answer the call to do battle for the glory of their God as any follower of Slaanesh. Just like Warriors, the Knights have embarked on a path towards a fate as either a Chosen of Slaanesh, a Forsaken stripped of their steed and status, or a foul and mindless Chaos Spawn.
 
 [This unit has attracted the attention of Slaanesh and is ready to transform into its next state and lose all XP. It will do so when it ends a turn outside of its home province]
-[Discounted to 70 gold in Turmoil 3]"
+[Discounted to 80 gold in Turmoil 3]"
 #weapon 4 -- lance
 #weapon 1093 -- warhorse hoof
 #weapon 10 -- falchion
@@ -1062,7 +1062,7 @@
 #homesick 100
 #xploss 100
 #secondshape 4241 -- grave that turns into chosen knight, forsaken, spawns
-#gcost 100
+#gcost 110
 #chaosrec 10
 #rpcost 36
 #cleanshape
@@ -1098,8 +1098,8 @@
 #str 14 -- +1
 #att 14 --- +1
 #def 14 --- +1
-#gcost 145
-#chaosrec 15 -- so 100 in T3
+#gcost 155
+#chaosrec 15 -- so 110 in T3
 #holy
 #montag 1034 -- forsaken, chosen knight, spawns
 #montagweight 20
@@ -1116,7 +1116,7 @@
 #name "Chaos Ogre"
 #descr "Ogres are large humanoid creatures known for their gluttony, strength, and love of violence. While they are typically quite resistant to both the warping taint of Chaos and the tempting whispers of the Dark Prince, they are naturally drawn to promises of excess and violence and so can often be found in the forces of Slaanesh. Even fairly small Marauder forces can occasionally find themselves benefitting from the presence of a handful of Ogres because these creatures are natural opportunists and recognise that in a smaller force they can bully their way to getting a larger share of the loot. Chaos Ogres have, despite their natural resistances, been changed by their exposure to Chaos and the attentions of the Ruinous Powers and are even stronger and more ferocious fighters than their former fellows in the Ogre Kingdoms.
 
-[Discounted to 35 gold in Turmoil 3]"
+[Discounted to 45 gold in Turmoil 3]"
 #hp 30
 #size 3
 #prot 5
@@ -1133,7 +1133,7 @@
 #weapon 10 -- falchion
 #armor 118 -- half helmet
 #armor 289 -- plate cuirass
-#gcost 50
+#gcost 60
 #chaosrec 5
 #rpcost 13
 #rcost 1
@@ -1205,9 +1205,9 @@
 [Requires friendly Dominion strength of 5 in the province to recruit]
 [Discounted to 45 gold in Turmoil 3]"
 #ap 32
-#mapmove 28 -- same as a shade beast, tireless, fast
+#mapmove 24 -- same as a shade beast, tireless, fast
 #hp 12 --- big tough guys
-#prot 3 -- +1 for mount
+#prot 2
 #size 3
 #str 12
 #enc 3 -- +2 over steed
@@ -1287,7 +1287,7 @@
 #name "Daemonette"
 #descr "Daemonettes are the most numerous of Slaanesh's servants. They are shrouded in a hypnotic glamour, seditious magics that bestow them a perverse beauty. Daemonettes surge across the battlefield on lithe legs, capering and dancing from foe to foe, claws slicing through flesh and armour with ease. When battle is done, Daemonettes stride amongst the fallen and bring their souls to Slaanesh's palace in the Realm of Chaos, to receive eternal pleasure or pain at the whim of their capricious master. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks but grow weaker outside the Dominion of their God."
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 12
 #prot 3 -- T3, but some carapace
 #size 2
@@ -1329,7 +1329,7 @@
 
 [This Daemonette is outside of friendly Dominion and has reduced stats]"
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 10 -- -2
 #prot 2 -- -1
 #size 2
@@ -1368,7 +1368,7 @@
 #name "Seeker of Slaanesh"
 #descr "Seekers of Slaanesh are the Dark Prince of Chaos' outriders, Daemonettes mounted on swift daemonic Steeds that can dart across a battlefield in a moment. It is said that the Steeds are made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. Steeds constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry, particularly when driven on by a Daemonette eager to deliver a new plaything to Slaanesh's embrace. In battle the claws of the Daemonette are the greatest threat presented by a Seeker, but the Steed itself carries a deadly weapon in the form of its impossibly dextrous tongue, constantly dripping poisons both deadly and psychoactive. Should the Daemonette be struck from her Steed the beast will fight on for the rest of the battle before returning to the Realm of Chaos. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks but grow weaker outside the Dominion of their God."
 #ap 32 -- fastest cav in the game, tied with centauride
-#mapmove 28 -- same as a shade beast, tireless, fast
+#mapmove 24 -- same as a shade beast, tireless, fast
 #hp 12 -- daemonette
 #prot 4 -- T3, but some carapace, +1 for mount
 #size 3
@@ -1417,7 +1417,7 @@
 
 [This Seeker is outside of friendly Dominion and has reduced stats]"
 #ap 32 -- fastest cav in the game, tied with centauride
-#mapmove 28 -- same as a shade beast, tireless, fast
+#mapmove 24 -- same as a shade beast, tireless, fast
 #hp 10 -- -2
 #prot 3 -- -1
 #size 3
@@ -2189,7 +2189,7 @@
 
 [This Herald of Slaanesh will transform into a form capable of seducing either males or females]"
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 22 -- T3 W2, daemon
 #prot 3 -- T3, but some carapace
 #size 2
@@ -2241,7 +2241,7 @@
 
 [This Herald of Slaanesh has been tasked with the seduction and corruption of males and so is considered female for the purposes of the Seduction command]"
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 22 -- T3 W2, daemon
 #prot 3 -- T3, but some carapace
 #size 2
@@ -2295,7 +2295,7 @@
 [This Herald of Slaanesh has been tasked with the seduction and corruption of males and so is considered female for the purposes of the Seduction command]
 [This Herald of Slaanesh is outside of friendly Dominion and has reduced stats]"
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 18 -- -4
 #prot 2 -- -1
 #size 2
@@ -2346,7 +2346,7 @@
 
 [This Herald of Slaanesh has been tasked with the seduction and corruption of females and so is considered male for the purposes of the Seduction command]"
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 22 -- T3 W2, daemon
 #prot 3 -- T3, but some carapace
 #size 2
@@ -2399,7 +2399,7 @@
 [This Herald of Slaanesh has been tasked with the seduction and corruption of females and so is considered male for the purposes of the Seduction command]
 [This Herald of Slaanesh is outside of friendly Dominion and has reduced stats]"
 #ap 16 -- fast
-#mapmove 22 -- tireless
+#mapmove 18 -- tireless
 #hp 18 -- -4
 #prot 2 -- -1
 #size 2
@@ -2474,15 +2474,15 @@
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Slaanesh tend to be particularly skilled swordsmen and favour the use of two curved blades which they wield with shocking skill and to deadly effect.
 
 [When this Champion is promoted it will transform to a form which will then be further transformed by an event, either becoming an Exalted Hero (and losing all its XP) or being turned into a mindless Chaos Spawn]
-[Discounted to 75 gold in Turmoil 3]"
-#hp 25
+[Discounted to 105 gold in Turmoil 3]"
+#hp 19
 #mor 17 -- +1
 #mr 14 -- +2 for tier 2
 #str 14 -- +1
 #att 14
 #def 14
 #prec 12
-#gcost 105
+#gcost 135
 #chaosrec 10 -- so 75 in T3
 #rcost 1
 #rpcost 1
@@ -2509,15 +2509,15 @@
 #descr "Even amongst the elite Chaos Warriors there are those who stand out as having the potential for a greater destiny still, not on the Path of the Warrior but of the Champion. Just as Warriors seek the favour of one of the Ruinous Powers that they might join the rankgs of the Chosen, Aspiring Champions seek to become Exalted Heroes, Chaos Lords, perhaps even reach the zenith of Daemonic Princehood. These Champions are leaders of small bands of Warriors who travel seeking challenges worthy of their great skills and push on to commit greater and greater deeds in the name of their God. Though every Champion believes themselves destined for greatness and so eagerly attempts to draw the eye of their God it is the fate of some to be found wanting in such an event and turned into a foul and mindless Chaos Spawn. Champions of Slaanesh tend to be particularly skilled swordsmen and favour the use of two curved blades which they wield with shocking skill and to deadly effect.
 
 [This Champion is awaiting the event that will transform them to either an Exalted Hero (and losing all its XP) or a mindless Chaos Spawn]
-[Discounted to 75 gold in Turmoil 3]"
-#hp 25
+[Discounted to 105 gold in Turmoil 3]"
+#hp 19
 #mor 17 -- +1
 #mr 14 -- +2 for tier 2
 #str 14 -- +1
 #att 14
 #def 14
 #prec 12
-#gcost 105
+#gcost 135
 #chaosrec 10 -- so 75 in T3
 #rcost 1
 #rpcost 1
@@ -2545,7 +2545,7 @@
 [Requires friendly Dominion strength of 7 in the province to recruit]
 [When this Exalted Hero is promoted it will transform to a form which will then be further transformed by an event, either becoming a Chaos Lord (and losing all its XP) or being turned into a mindless Chaos Spawn]
 [Discounted to 160 gold in Turmoil 3]"
-#hp 35
+#hp 27
 #mor 18 -- +1 over aspiring champion
 #mr 15 -- +1
 #str 15 -- +1
@@ -2585,7 +2585,7 @@
 
 [This Exalted Hero is awaiting the event that will transform them to either a Chaos Lord (and losing all its XP) or a mindless Chaos Spawn]
 [Discounted to 160 gold in Turmoil 3]"
-#hp 35
+#hp 27
 #mor 18 -- +1 over aspiring champion
 #mr 15 -- +1
 #str 15 -- +1
@@ -2624,8 +2624,8 @@
 [When this Chaos Lord is promoted it will transform to a form which will then be further transformed by an event, either finally becoming a Daemon Prince (and losing all its XP) or being turned into a mindless Chaos Spawn]
 [Discounted to 210 gold in Turmoil 3]"
 --stats compared with exalted hero
-#ap 32 -- fastest cav in the game, tied with centauride
-#mapmove 28 -- same as a shade beast, tireless, fast
+#ap 26 -- fastest cav in the game, tied with centauride
+#mapmove 26 -- same as a shade beast, tireless, fast
 #hp 45 -- +10
 #mor 20 -- +2
 #mr 16 -- +1
@@ -2674,8 +2674,8 @@
 [This Chaos Lord is awaiting the event that will transform them to either a Daemon Prince (and losing all its XP) or a mindless Chaos Spawn]
 [Discounted to 210 gold in Turmoil 3]"
 --stats compared with exalted hero
-#ap 32 -- fastest cav in the game, tied with centauride
-#mapmove 28 -- same as a shade beast, tireless, fast
+#ap 26 -- fastest cav in the game, tied with centauride
+#mapmove 26 -- same as a shade beast, tireless, fast
 #hp 45 -- +10
 #mor 20 -- +2
 #mr 16 -- +1
@@ -2719,7 +2719,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Slaanesh/Daemon_Mount2.tga"
 #name "Mount of Slaanesh"
 #descr "Mounts of Slaanesh are bizarre serpentine creatures gifted to Chaos Lords high in Slaanesh's favour. They are quicksilver fast and instinctively deadly fighters with lashing poisonous tongues and, now that their rider is slain, are able to smash through formations of troops with sweeps of their tails. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
-#ap 32 -- fastest cav in the game, tied with centauride
+#ap 26 -- fastest cav in the game, tied with centauride
 #mapmove 28 -- same as a shade beast, tireless, fast
 #hp 36 -- big!
 #prot 7
@@ -2873,9 +2873,9 @@
 #descr "Most Marauder tribes will have one or two Shamans whose duty is to offer counsel to the Chieftain, interpret auguries to ensure successful raids, and lead the tribe in offering the proper observances to their patron God. Shamans tend to have only a little magical talent and rather than harnessing energy provided by the Ruinous Powers, they tap into the magic of their surroundings in the manner of hedge mages, witches, and other lesser mages. Shamans thus practice a different branch of magic from Sorcerers focused on veneration of the dead, the wilds, and the bitter cold of the polar lands. Shamans of Marauder tribes dedicated to Slaanesh in the guise of the Serpent carry staffs topped with snake skeletons and have some talent in the magic of the spheres and the minds of mortals.
 
 [Does not require a lab to recruit]
-[Discounted to 90 gold in Turmoil 3]"
-#gcost 120
-#chaosrec 10 -- t3gcost 90
+[Discounted to 120 gold in Turmoil 3]"
+#gcost 150
+#chaosrec 10 -- t3gcost 120
 #rpcost 2
 #rcost 1
 #holy
@@ -2906,7 +2906,7 @@
 [Discounted to 45 gold in Turmoil 3]"
 #gcost 60
 #chaosrec 5 -- t3gcost 45
-#hp 20
+#hp 16
 #str 13
 #prot 3
 #att 12
@@ -2951,8 +2951,8 @@
 #chaosrec 5 -- t3gcost 45
 #ressize 2
 #ap 26 -- la tc cav +2
-#mapmove 24 -- la tc cav +2
-#hp 20
+#mapmove 20 -- la tc cav +2
+#hp 16
 #str 13
 #prot 3
 #att 12
@@ -2979,9 +2979,9 @@
 #name "Slaaneshi Cultist"
 #descr "Slaanesh is the most seductive and insidious of the Ruinous Powers, for the Dark Prince is able to offer mortals all the pleasures sensation can offer and on the same hand threaten all the torments it can bring. Nothing pleases Slaanesh more than the temptation and corruption of once innocent souls and the complex games of intrigue, blackmail, and seduction involved. As such Slaanesh has a great many adherents hidden in the mortal realms posing as courtiers, mages, merchants, politicians, priest, travellers, and entertainers while secretly furthering the plots of the Prince of Pleasure. Slaaneshi Cultists are expert sophists with a keen understanding of the human mind and can sway vulnerable souls to Slaanesh's side. Their physical beauty, enhanced by their God, is often enough to stay the blade of even a determined attacker. This cultist is male.
 
-[Discounted to 100 gold in Turmoil 3]"
-#gcost 145
-#chaosrec 15 -- so T3 gcost is 100
+[Discounted to 120 gold in Turmoil 3]"
+#gcost 150
+#chaosrec 10 -- so T3 gcost is 120
 #rpcost 2
 #rcost 1
 #magicskill 7 1
@@ -3018,9 +3018,9 @@
 #name "Slaaneshi Cultist"
 #descr "Slaanesh is the most seductive and insidious of the Ruinous Powers, for the Dark Prince is able to offer mortals all the pleasures sensation can offer and on the same hand threaten all the torments it can bring. Nothing pleases Slaanesh more than the temptation and corruption of once innocent souls and the complex games of intrigue, blackmail, and seduction involved. As such Slaanesh has a great many adherents hidden in the mortal realms posing as courtiers, mages, merchants, politicians, priest, travellers, and entertainers while secretly furthering the plots of the Prince of Pleasure. Slaaneshi Cultists are expert sophists with a keen understanding of the human mind and can sway vulnerable souls to Slaanesh's side. Their physical beauty, enhanced by their God, is often enough to stay the blade of even a determined attacker. This cultist is female.
 
-[Discounted to 100 gold in Turmoil 3]"
-#gcost 145
-#chaosrec 15 -- so T3 gcost is 100
+[Discounted to 120 gold in Turmoil 3]"
+#gcost 150
+#chaosrec 10 -- so T3 gcost is 120
 #rpcost 2
 #rcost 1
 #magicskill 7 1
@@ -3058,9 +3058,9 @@
 #name "Slaaneshi Sorcerer"
 #descr "Just as Chaos Warriors and Aspiring Champions seek to prove themselves to their patron God and gain glory and power by pursuing an extreme path, so to do Chaos Sorcerers. Sorcerers are magically talented individuals who, rather than researching the lore of a specific Wind of Magic as do the Wizards of the Imperial Colleges instead beseech a Ruinous Power for forbidden knowledge and power. Although in some ways Sorcerers thus take a shortcut to magical mastery, there can be no doubting the commitment of dedication of those who survive the arcane gits bestowed by their God, for simply retaining both their sanity and physical form requires an iron will. Sorcerers of Slaanesh are most talented in the use of magics of manipulation and deception, though they are capable of unleashing considerable devastation should they so choose. All Sorcerers bear the clear favour of their patron God and are thus sacred to their warhosts, but Slaaneshi Sorcerers in particular are known to act as evangelical orators able to move the hearts and minds of mortal men in writhing exultation of the Prince of Pleasure.
 
-[Discounted to 200 gold in Turmoil 3]"
-#gcost 275 -- the dastur is F1D1B1H2 with 100% FADB and costs 215 gold
-#chaosrec 25 -- so T3 gcost is 200
+[Discounted to 260 gold in Turmoil 3]"
+#gcost 300 -- the dastur is F1D1B1H2 with 100% FADB and costs 215 gold
+#chaosrec 20 -- so T3 gcost is 200
 #rpcost 2
 #rcost 1
 #magicskill 1 1 -- A1
@@ -3100,10 +3100,10 @@
 #name "Slaaneshi Sorcerer Lord"
 #descr "Just as Chaos Warriors and Aspiring Champions seek to prove themselves to their patron God and gain glory and power by pursuing an extreme path, so to do Chaos Sorcerers. Sorcerers are magically talented individuals who, rather than researching the lore of a specific Wind of Magic as do the Wizards of the Imperial Colleges instead beseech a Ruinous Power for forbidden knowledge and power. Although in some ways Sorcerers thus take a shortcut to magical mastery, there can be no doubting the commitment of dedication of those who survive the arcane gits bestowed by their God, for simply retaining both their sanity and physical form requires an iron will. The most powerful Sorcerers are known as Sorcerer Lords and their magical prowess is considerable, though very few Sorcerers survive learning the soul-scouring secrets required. All Sorcerers bear the clear favour of their patron God and are thus sacred to their warhosts, but Slaaneshi Sorcerers in particular are known to act as evangelical orators able to move the hearts and minds of mortal men in writhing exultation of the Prince of Pleasure.
 
-[Discounted to 280 gold in Turmoil 3]"
-#prot 3 -- mutations
-#gcost 400
-#chaosrec 40 -- so T3 gcost is 280
+[Discounted to 340 gold in Turmoil 3]"
+#prot 2
+#gcost 430
+#chaosrec 30 -- so T3 gcost is 280
 #rpcost 4
 #rcost 1
 #magicskill 1 2 -- A2
@@ -3157,7 +3157,7 @@
 #att 16 -- +1 -- WS9 I10
 #def 17 -- +3
 #prec 13
-#mapmove 24 -- -4 but he's not flying
+#mapmove 20 -- -4 but he's not flying
 #ap 22 -- +8
 #gcost 0
 #weapon 477 -- unholy sword
@@ -3217,7 +3217,7 @@
 #att 16 -- +1 -- WS9 I10
 #def 17 -- +3
 #prec 13
-#mapmove 24 -- -4 but he's not flying
+#mapmove 20 -- -4 but he's not flying
 #ap 22 -- +8
 #gcost 0
 #weapon 477 -- unholy sword
@@ -3282,7 +3282,7 @@
 #att 15 -- -1
 #def 16 -- -1
 #prec 12 -- -1
-#mapmove 24
+#mapmove 20
 #ap 22
 #gcost 0
 #weapon 477 -- unholy sword
@@ -3346,7 +3346,7 @@
 #att 16 -- +1 -- WS9 I10
 #def 17 -- +3
 #prec 13
-#mapmove 24 -- -4 but he's not flying
+#mapmove 20 -- -4 but he's not flying
 #ap 22 -- +8
 #gcost 0
 #weapon 477 -- unholy sword
@@ -3410,7 +3410,7 @@
 #att 15 -- -1
 #def 16 -- -1
 #prec 12 -- -1
-#mapmove 24
+#mapmove 20
 #ap 22
 #gcost 0
 #weapon 477 -- unholy sword
@@ -3889,11 +3889,11 @@
 #pathlevel 0 3
 #pathlevel 1 2
 #school 6 -- blood
-#fatiguecost 9900 -- 99 blood slaves
+#fatiguecost 12200 -- 122 blood slaves
 #damage 4270 -- daemon prince
 #nreff 1
 #effect 10021 -- summon commander
-#researchlevel 6
+#researchlevel 8
 #restricted 146
 #end
 
@@ -3909,15 +3909,32 @@
 #pathlevel 0 3
 #pathlevel 1 2
 #school 6 -- blood
-#fatiguecost 12200 -- 122 blood slaves
+#fatiguecost 16600 -- 166 blood slaves
 #damage -1035 -- male or female form of keeper of secrets
 #nreff 1
 #effect 10021 -- summon commander
-#researchlevel 7
+#researchlevel 8
 #restricted 146
 #end
 
 
+---- Daemon Prince Ascendancy
+
+#newspell
+#name "Daemon Prince Ascendancy"
+#descr "This ritual completes the final step to becoming a Daemon Prince, changing a Chaos Lord who has brought the true favor of their patron god into a new form. Daemon Princes of Slaanesh have left their humanity far behind, taking a towering new physical form that pleases Slaanesh and grants them even greater martial and phyiscal prowess than they held as a Chaos Lord. Furthermore Daemon Princes are innately talented sorcerers and have all the benefits of Daemonhood, even including the ability to reform their body should they be slain within the Dominion of Slaanesh, but without the drawback of being weaker outside of this Dominion."
+#path 0 7 -- blood
+#path 1 4 -- astral
+#pathlevel 0 4
+#pathlevel 1 3
+#school 6 -- blood
+#fatiguecost 9900 -- 99 blood slaves
+#damage 1916 -- daemon prince event
+#nreff 1
+#effect 10083 -- local province enchantment
+#researchlevel 7
+#restricted 146
+#end
 
 
 ---------- NAMES
@@ -5190,12 +5207,13 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 ----- Decrease unrest in Slaanesh dominion when province is owned by slaanesh. Each point of dom decreases unrest by 1 each turn
 
 #newevent
-#msg "decrease unrest 1"
+#msg "decrease unrest 1" -- shifted to apply a maxdom requirement, so only one event triggers per province
 #notext
 #nolog
 #req_pop0ok
 #req_fornation 146
 #req_dominion 1 -- province must have owner's dominion at this value or more
+#req_maxdominion 1
 #rarity 5
 #nation 146
 #unrest -1
@@ -5208,9 +5226,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 2 -- province must have owner's dominion at this value or more
+#req_maxdominion 2
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -2
 #end
 
 #newevent
@@ -5220,9 +5239,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 3 -- province must have owner's dominion at this value or more
+#req_maxdominion 3
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -3
 #end
 
 #newevent
@@ -5232,9 +5252,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 4 -- province must have owner's dominion at this value or more
+#req_maxdominion 4
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -4
 #end
 
 #newevent
@@ -5244,9 +5265,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 5 -- province must have owner's dominion at this value or more
+#req_maxdominion 5
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -5
 #end
 
 #newevent
@@ -5256,9 +5278,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 6 -- province must have owner's dominion at this value or more
+#req_maxdominion 6
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -6
 #end
 
 #newevent
@@ -5268,9 +5291,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 7 -- province must have owner's dominion at this value or more
+#req_maxdominion 7
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -7
 #end
 
 #newevent
@@ -5280,9 +5304,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 8 -- province must have owner's dominion at this value or more
+#req_maxdominion 8
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -8
 #end
 
 #newevent
@@ -5292,9 +5317,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 9 -- province must have owner's dominion at this value or more
+#req_maxdominion 9
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -9
 #end
 
 #newevent
@@ -5304,9 +5330,10 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #req_pop0ok
 #req_fornation 146
 #req_dominion 10 -- province must have owner's dominion at this value or more
+#req_maxdominion 10
 #rarity 5
 #nation 146
-#unrest -1
+#unrest -10
 #end
 
 
@@ -5314,126 +5341,16 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 -- I can't do this straightforwardly, so instead I'm having 10 events each of which gives 1% per slaanesh candle chance of making 1 unrest. So 1 candle = ten 1% chances of 1 unrest. 10 candles = ten 10% chances of 1 unrest.
 
 #newevent
-#msg "increase unrest 1"
+#msg "increase unrest 1" -- adjusted this to use less event slots
 #notext
 #nolog
 #req_notfornation 146 -- everyone other than slaanesh can have this event
 #req_domowner 146 -- province must have slaanesh's dominion
 #req_indepok 1 -- can happen in indy prov
 #req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
+#req_domchance 10 -- 10% per candle
 #unrest 1
 #end
-
-#newevent
-#msg "increase unrest 2"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 3"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 4"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 5"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 6"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 7"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 8"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 9"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-#newevent
-#msg "increase unrest 10"
-#notext
-#nolog
-#req_notfornation 146 -- everyone other than slaanesh can have this event
-#req_domowner 146 -- province must have slaanesh's dominion
-#req_indepok 1 -- can happen in indy prov
-#req_pop0ok -- can fire in provinces with low pop
-#req_domchance 1 -- 1% per candle
-#unrest 1
-#end
-
-
 
 
 ---------------- PROMOTION EVENTS ------------------ (these are doubled up to handle 2 of the same in one prov)
@@ -5551,65 +5468,15 @@ Dominion of Sensation. Your dominion has increased importance because some recru
 #end
 
 
----- Promotion from Chaos Lord -- FAILURE -- Spawn generated
-#newevent
-#rarity 5
-#req_pop0ok
-#req_rare 15 -- this is a more sensible value
-#req_fornation 146
-#req_monster 4268 -- chaos lord
-#req_targmnr 4268 -- chaos lord
-#nation 146
-#msg "A Chaos Lord who stood expectant of ascension to Daemonhood was punished at the last moment for his hubris and twisted into a horrific, mindless Chaos Spawn."
-#poison 999
-#1unit -1033 -- commander spawns montag
-#end
-
----- Promotion from Chaos Lord to Daemon Prince, successful
 #newevent
 #rarity 5
 #req_pop0ok
 #req_fornation 146
 #req_monster 4268 -- chaos lord
 #req_targmnr 4268 -- chaos lord
+#req_ench 1916
 #nation 146
-#msg "Chaos Lord ascends to Daemonhood"
-#transform 4270 -- daemon prince
-#xp -99
-#pathboost 1 -- air
-#pathboost 1 -- air
-#pathboost 4 -- astral
-#pathboost 4 -- astral
-#pathboost 7 -- blood
-#pathboost 7 -- blood
-#pathboost 8 -- holy
-#pathboost 8 -- holy
-#end
-
-
----- Promotion from Chaos Lord -- FAILURE -- Spawn generated
-#newevent
-#rarity 5
-#req_pop0ok
-#req_rare 15 -- this is a more sensible value
-#req_fornation 146
-#req_monster 4268 -- chaos lord
-#req_targmnr 4268 -- chaos lord
-#nation 146
-#msg "A Chaos Lord who stood expectant of ascension to Daemonhood was punished at the last moment for his hubris and twisted into a horrific, mindless Chaos Spawn."
-#poison 999
-#1unit -1033 -- commander spawns montag
-#end
-
----- Promotion from Chaos Lord to Daemon Prince, successful
-#newevent
-#rarity 5
-#req_pop0ok
-#req_fornation 146
-#req_monster 4268 -- chaos lord
-#req_targmnr 4268 -- chaos lord
-#nation 146
-#msg "Chaos Lord ascends to Daemonhood"
+#msg "A Chaos Lord who stood before the judgement of Slaanesh has pleased their master and reached pinnacle of the Champion's Path and ascended to Daemonhood."
 #transform 4270 -- daemon prince
 #xp -99
 #pathboost 1 -- air

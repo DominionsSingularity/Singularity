@@ -597,7 +597,7 @@
 #descr "Gors form the great mass of the Beastmen's warherds. Their appearance varies, but most common is the head and legs of a goat with the upper torso of a man. Some individuals have the heads of cattle, hounds or insects instead of goats, while others possess antlers or serrated blades sprouting from their heads. Regardless of their overall form every true Beastman bears horns of some sort, and these are the ultimate mark of rank and power in their society. Before going into battle, the Beastmen will often sharpen their horns or daub them with crude dye or hot blood to make them seem even more savage and fearsome. Gors favour axes and fight with whatever armour has been salvaged from previous foes, with this one wearing a simple cuirass of ringmail."
 #hp 13
 #size 2
-#prot 3
+#prot 2
 #mor 10
 #mr 11
 #enc 3
@@ -630,7 +630,7 @@
 #descr "Gors form the great mass of the Beastmen's warherds. Their appearance varies, but most common is the head and legs of a goat with the upper torso of a man. Some individuals have the heads of cattle, hounds or insects instead of goats, while others possess antlers or serrated blades sprouting from their heads Regardless of their overall form every true Beastman bears horns of some sort, and these are the ultimate mark of rank and power in their society. Before going into battle, the Beastmen will often sharpen their horns or daub them with crude dye or hot blood to make them seem even more savage and fearsome. Gors favour axes and fight with whatever armour has been salvaged from previous foes, with this one having obtained a sturdy cuirass of scale mail and simple iron cap."
 #hp 13
 #size 2
-#prot 3
+#prot 2
 #mor 10
 #mr 11
 #enc 3
@@ -664,7 +664,7 @@
 #descr "The strongest and meanest of the Beastmen footsoldiers are known as Bestigors. Because of their size and ferocity they enjoy a privlileged position in the warherd, constantly enforcing their dominance on the Gors and Ungors with random acts of excessive violence. The Bestigors' desire to prove their innate superiority also manifests in their acts of desecration and defilement. These range from the ritual devouring of prisoners of war to the despoiling of the sacred banners and religious icons on the enemy, which the Bestigors befoul and hold on high so the rest of the warherd might know that they are truly blessed in the eyes of the Dark Gods. Bestigors typically carry massive, double-handed axes, crude in construction but large and heavy enough to split a man in two with a single swing. They wear solid, heavy plates of armour scavenged from the civilised races and beaten with fist and hoof until they fit the Bestigors' stinking and misshapen anatomies."
 #hp 14
 #size 2
-#prot 3
+#prot 2
 #mor 13
 #mr 11
 #enc 3
@@ -955,7 +955,7 @@
 #descr "The chariots of the Beastmen are ramshackle, formed from large pieces of lumber nailed and bound together with little thought of craftsmanship or finesse. This does not matter much, however, becayse the strength and ferocity of the creatures used to draw the chariots far outmatches that of mere horses and is enough to overcome any limitations of their design. The Tuskgor, as they are known, are horrifyingly warped crosses between the wild boars of the Old World's forests and the Beastmen themselves. In battle, Tuskgor chariots surge towards the enemy at breakneck speed as the creatures attempt to gore them with the brutal tusks and horns covering their bodies. Once combat is over the chariots are often repurposed to carry piles of loot back to the Herdstones, which makes them a useful addition to any raiding party."
 #hp 25
 #size 4
-#prot 8
+#prot 7
 #mor 11
 #mr 11
 #enc 5
@@ -1131,7 +1131,7 @@
 #descr "Beastmen live in roaming warbands, led by the strongest and largest among them. These chieftains, known as Wargors, must constantly prove themselves both in battle against the warbands's enemies and against challenges from ambitious Beastmen within the tribe. They invariably have enormous horns as well, for the Beastmen regard the number and size of a creature's horns as a sign of the strength of its favour in the eyes of the Chaos Gods, and would never follow a leader without a splendid set of at least two. Beastmen are adept at moving unseen through the lands of the settled races, using secret paths in the depth of the wilds. As the warband moves it carries with it piles of plunder taken from its victims. Since the Beastmen do not have fixed settlements to return to, they can make use of this loot as long as their leader is present, even surrounded by enemy territory."
 #hp 25
 #size 2
-#prot 5
+#prot 4
 #mor 12
 #mr 13 -- +2 for tier 2 commander
 #enc 3
@@ -1168,7 +1168,7 @@
 #descr "Beastmen live in roaming warbands and are led by the strongest and largest among them, known as Wargors. Sometimes many of these scattered herds will band together, perhaps following a shaman's dream or Wargor's ambition, and form a larger warhorde. When a warhorde forms all chieftains present will fight among themselves to choose a leader, who is given the honorary title of Beastlord. The one who emerges victorious will doubtless be a Beastman possessed of exceptional size and strength, and truly remarkable horns. Although Beastmen are capable of moving unseen through the lands of the settled races, once a warhorde is assembled such subtleties are cast aside: they delight that their victims know of their approach. As the warhorde moves it carries with it piles of plunder taken from its victims. Since the Beastmen do not have fixed settlements to return to, they can make use of this loot as long as their leader is present, even surrounded by enemy territory."
 #hp 35
 #size 3
-#prot 7
+#prot 6
 #mor 14
 #mr 14 -- +3 for tier 3 commander
 #enc 3
@@ -1244,7 +1244,7 @@
 [When recruited, this commander has a chance to turn into one of the four god-specific versions. If attacked on the turn recruited, it will not transform until the following turn.]"
 #hp 25
 #size 2
-#prot 5
+#prot 4
 #mor 11
 #mr 17
 #enc 3
@@ -1285,7 +1285,7 @@
 #descr "The shamans of the Beastmen are held in respect and awe by their brothers, and the greatest among them are known as Great Bray-Shamans. Their advice is sought by the mightiest Beastlords, and their words to the tribes carry the wieght of the Great Powers' will. Where mages of other races may achieve mastery through many years of careful study, the power of a Great Shaman is a sure symbol of their blessing by the power of Chaos which is inate to them. Near every Great Shaman has led at least one ritual of defilement in the conquered temples of their enemies, trampling the sacred relics beneath their hooves and offering up the entrails and blood of the priests to Chaos. Such is the surest way to earn the attention of their own dark gods. The Bray-Shamans are so glutted with Chaos energy that a palpable miasma of fell sorcery surrounds them. Weeds shrivel around them and sprout tooth-like thorns or uproot themselves entirely. Light bends backwards around them to create halos of writhing shadows about their horns. Like most of the Beastmen's priests, this Great Shaman does not dedicate his service to one particular god in the way that many human worshippers of Chaos do: rather, every act of worship is dedicated to Chaos in its entirety."
 #hp 25
 #size 2
-#prot 5
+#prot 4
 #mor 11
 #mr 17
 #enc 3
@@ -1366,7 +1366,7 @@
 #descr "The shamans of the Beastmen are held in respect and awe by their brothers, and the greatest among them are known as Great Bray-Shamans. Their advice is sought by the mightiest Beastlords, and their words to the tribes carry the wieght of the Great Powers' will. While most Shamans serve the collective powers of Chaos, a few bear the Mark of a particular Ruinous Power and serve that master above all others. Shamans Marked by Slaanesh, god of passion and excess, aretruly intoxicating creatures to behold. Their bodies, though grotesque and mutated as any Beastman's, seem to move in a perfect dance with every action."
 #hp 25
 #size 2
-#prot 5
+#prot 4
 #mor 11
 #mr 17
 #enc 3
@@ -1407,7 +1407,7 @@
 #descr "The shamans of the Beastmen are held in respect and awe by their brothers, and the greatest among them are known as Great Bray-Shamans. Their advice is sought by the mightiest Beastlords, and their words to the tribes carry the wieght of the Great Powers' will. While most Shamans serve the collective powers of Chaos, a few bear the Mark of a particular Ruinous Power and serve that master above all others. Shamans Marked by Tzeentch, god of magic and change, are truly bizarre creatures to behold. Their bodies are in a constant state of flux, sprouting feathers which grow only to shrivel and drop the group within minutes, or faces which gibber and whisper maddening prophecies. In their presence streams run backwards or flow with wine, blood, or molten quicksilver. Trees sprout leaves of parchment inked with ancient runes, while stones sing of listeners' most guarded secrets."
 #hp 25
 #size 2
-#prot 5
+#prot 4
 #mor 11
 #mr 17
 #enc 3
@@ -1448,7 +1448,7 @@
 #descr "The shamans of the Beastmen are held in respect and awe by their brothers, and the greatest among them are known as Great Bray-Shamans. Their advice is sought by the mightiest Beastlords, and their words to the tribes carry the wieght of the Great Powers' will. While most Shamans serve the collective powers of Chaos, a few bear the Mark of a particular Ruinous Power and serve that master above all others. Shamans Marked by Knorne, god of warfare and blood, are truly terrifying creatures to behold."
 #hp 25
 #size 2
-#prot 5
+#prot 4
 #mor 11
 #mr 17
 #enc 3
@@ -1527,7 +1527,7 @@
 #descr "Beastmen live in roaming warbands and are led by the strongest and largest among them, known as Wargors. Sometimes many of these scattered herds will band together, perhaps following a shaman's dream or Wargor's ambition, and form a larger warhorde. When a warhorde forms all chieftains present will fight among themselves to choose a leader, who is given the honorary title of Beastlord. The one who emerges victorious will doubtless be a Beastman possessed of exceptional size and strength, and truly remarkable horns. Sometimes a Beastlord chooses to be borne into battle on one of the rickety chariots of the Beastmen, drawn by the ferocious corruptions of wild boars knows as Tuskgors. Although Beastmen are capable of moving unseen through the lands of the settled races, once a warhorde is assembled such subtleties are cast aside: they delight that their victims know of their approach. As the warhorde moves it carries with it piles of plunder taken from its victims. Since the Beastmen do not have fixed settlements to return to, they can make use of this loot as long as their leader is present, even surrounded by enemy territory."
 #hp 35
 #size 4
-#prot 8
+#prot 7
 #mor 14
 #mr 14 -- +3 for tier 3 commander
 #enc 5
@@ -2875,7 +2875,7 @@ Dominion: All provinces under the Beastmen's Dominion will move towards Turmoil 
 #descr "Khazrak the One-Eye is one of the most famed Beastlords in recent history, and possesses a ruthless cunning far above that of his bestial kin. By the normal intellectual standards of Beastmen, Khazrak has a unique and adept ability to control and harness the unruly spirit of the herd and devise simple but effective battle plans in order to win his battles. He makes particularly good use of his well-trained Warhounds, sending them to flank and surprise enemies or cut down those who flee. Khazrak and his warbands have long preyed on the lands around the Drakwald Forest, and this has led to a fierce rivalry with Boris Todbringer, Elector Count of the province of Middenland. This rivalry has cost both man and Beastman the loss of an eye. Khazrak possesses a suit of armour known as the Dark Mail which protects him from hostile spells. He wields a lethal whip named Scourge, wrapped in the bitter curses of many generations of Bray-shamans, which can strike at many foes at once."
 #hp 45 -- Beastlord plus hero bonus
 #size 3
-#prot 7
+#prot 6
 #mor 14
 #mr 18 -- +4 for tier 4 hero, +3 for Dark Mail
 #enc 3
@@ -3173,3 +3173,5 @@ Buildings: Do not build or use forts. Gain rewards for detroying enemy forts and
 #end
 
 
+
+-- ---- End Beastmen

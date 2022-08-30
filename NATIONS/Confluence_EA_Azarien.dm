@@ -218,7 +218,7 @@ Like a beacon the curse will draw forth dark and vengeful spirits and bad events
 #pathlevel 0 3
 #path 1 5
 #pathlevel 1 3 
-#fatiguecost 3000
+#fatiguecost 1800
 #end
 
 

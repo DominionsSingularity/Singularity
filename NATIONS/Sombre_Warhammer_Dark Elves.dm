@@ -33,6 +33,131 @@
 
 --------------New Weapons
 
+--- varies -- used for some montag recruitment
+
+#newweapon 1053
+#name "Varies"
+#dmg 6
+#len 1
+#rcost 0
+#slash
+#pierce
+#blunt
+#end
+
+#newweapon 1086
+#copyweapon 8 -- broad sword
+#name "Choppa"
+#def -1 -- -2 from normal broad sword
+#att 0 -- -1 from normal broad sword
+#dmg 7 -- +1 from normal broad sword
+#charge -- added charge bonus common to all choppa weapons
+#rcost 1
+#end
+
+-- Daemonette Claw
+
+#newweapon 1127
+#copyweapon 600 -- crab claw
+#name "Wicked Claw"
+#magic
+#dmg 2 -- 4 less than the dark elf version because that version needs to be nerfed probably
+#len 0
+#slash
+#pierce
+#bonus
+#end
+
+-- Sensation Coma Posion
+
+#newweapon 1129
+#copyweapon 624 -- paralyzing poison
+#name "Sensation Coma Poison"
+#magic
+#dmg 50
+#end
+
+#newweapon 1098
+#copyweapon 622 -- maddening rage (confusion effect)
+#name "Psychoactive Poisons"
+#hardmrneg -- mr negates with difficulty
+#magic
+#armornegating
+#secondaryeffect 51 -- strong poison
+#end
+
+-- Fiend Tail (coma inducing stinger)
+
+#newweapon 1130
+#copyweapon 423 -- scorpion tail
+#name "Coma Inducing Stinger"
+#secondaryeffect 1129 -- sensation coma poison
+#armorpiercing
+#dmg -3
+#magic
+#end
+
+-- Steed's Tongue (nostr Seeker Daemonette version)
+
+#newweapon 1128
+#copyweapon 19 -- jade maiden mount bite
+#name "Steed's Tongue"
+#dmg 12 -- basic steed str damage
+#att -3 -- much less skilled than rider
+#sound 9 -- whip
+#flail -- because the tongue is prehensile
+#secondaryeffect 1098 -- psychoactive poisons
+#bonus
+#nostr
+#len 5 -- longer than spear
+#unrepel
+#end
+
+-- Steed's Tongue (strength based one for the unmounted steed)
+
+#newweapon 1125
+#copyweapon 20 -- normal bite
+#name "Poisonous Whiptongue"
+#dmg 0
+#att 0
+#def 0
+#sound 9 -- whip
+#flail -- because the tongue is prehensile
+#secondaryeffect 1098 -- psychoactive poisons
+#bonus -- can't be chopped off
+#len 5 -- longer than spear
+#unrepel
+#end
+
+#newweapon 1124
+#copyweapon 757 -- bronze scimitar
+#name "Hellscourge"
+#dmg 6
+#att 0
+#def 0
+#sound 9 -- whip
+#flail -- because the hellscourge has a life of its own
+#secondaryeffect 384 -- minor life drain
+#len 5 -- longer than spear
+#rcost 2
+#magic
+#end
+
+-- Steed's Tongue (nostr hellstrider version)
+
+#newweapon 1099
+#copyweapon 19 -- jade maiden mount bite
+#name "Steed's Tongue"
+#dmg 12 -- basic steed str damage
+#att -1 -- less skilled than rider
+#sound 9 -- whip
+#flail -- because the tongue is prehensile
+#secondaryeffect 1098 -- psychoactive poisons
+#bonus
+#nostr
+#len 5 -- longer than spear
+#unrepel
+#end
 
 -- Repeater Crossbow
 
@@ -608,7 +733,7 @@
 #descr "Cold One Knights count themselves amongst the finest warriors in Naggaroth and many cities and Black Arks pride themselves on how many of these deadly knights they can muster. They are nobles of ambition who seek to further their social standing through glory in battle rather than purely intrigue or courtly scheming and as such they are well respected and feared. The Cold Ones they have made their mounts are famously vicious and aggressive creatures and breaking them in requires considerable force of will. The Cold Ones of Naggaroth are related to the very similar beasts used as mounts by the Saurus of Lustria, but are swifter, lighter and without the ability to exude a substance which causes rapid healing. In fact these creatures from the caves under Hag Graef instead exude a noxious substance that can permanently ruin the senses of touch, smell, and taste that many decadent Dark Elves prize beyond all else, another demonstration of the discipline and single minded ambition of their riders. Should the knight fall in battle their mount can be relied upon to continue fighting for a time, though after battle they will quickly escape."
 #hp 10 -- elite
 #size 4
-#prot 3 -- benefits from Cold One
+#prot 2 -- benefits from Cold One
 #mor 13 -- elite
 #enc 5 -- mounted
 #str 11 -- elite
@@ -616,7 +741,7 @@
 #def 13
 #mapmove 20 -- slightly less than horse
 #ap 18
-#gcost 55
+#gcost 70
 #rcost 12
 #rpcost 44
 #armor 17 -- full scale mail
@@ -676,7 +801,7 @@
 #descr "Dreadknights are the wealthiest and most feared members of the Cold Ones Knights a city or Black Ark can field; nobles who have amassed such glory and plunder in their time as knights that they could easily have become Masters or attained similarly powerful positions outside of the military, but who have instead chosen to continue their grim work on the battlefield. For some it is simply that their exposure to the noxious slime of the Cold Ones has entirely destroyed their finer senses and they can now find only sadistic joy in the bloody chaos of war, for others they seek to reach the position of Dreadlord through martial glory, while others still are biding their time in the knowledge that their enemies within Dark Elf society still hold power and would end their lives if they rose too high. Dreadknights are treated with considerable respect, bordering on reverence, by most Dark Elf warriors, for they represent an ideal of ambition, superiority, discipline, and martial skill. Dreadknights have access to the best arms and armour available, ride upon the finest Cold One steeds, and even armour their mounts in elaborately wrought overlapping plates. Should the knight fall in battle their mount can be relied upon to continue fighting for a time, though after battle they will quickly escape."
 #hp 11 -- +1
 #size 4
-#prot 5 -- +2
+#prot 3 -- +2
 #mor 14 -- +1
 #enc 5 -- mounted
 #str 11 -- same
@@ -684,7 +809,7 @@
 #def 13 -- same
 #mapmove 20 -- slightly less than horse
 #ap 18
-#gcost 75
+#gcost 105
 #rcost 25 -- (same as knight of avalon)
 #rpcost 56
 #armor 14 -- plate hauberk
@@ -872,7 +997,7 @@
 #armor 118 -- Half Helmet
 #armor 14 -- Plate Hauberk
 #weapon 5 -- halberd
-#castledef 2
+#castledef 1
 #bodyguard 2
 #formationfighter 2
 #end
@@ -909,7 +1034,7 @@
 #banefireshield 6 -- 6 AP damage plus MR decay
 #damagerev 1 -- standard
 #reqlab
-#reclimit 2
+#reclimit 1
 #end
 
 
@@ -1484,7 +1609,7 @@
 #enc 3 --- normal
 #str 11 --- big dudes, slightly weaker due to being slaves
 #att 11 --- WS4 I4, not reduced by being a slave
-#def 10 --- WS4 I4, slightly reduced by being a slave
+#def 9 --- WS4 I4, slightly reduced by being a slave
 #prec 9 --- ballistic skill 3, bad condition
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
@@ -1517,7 +1642,7 @@
 #enc 3 --- normal
 #str 11 --- big dudes, slightly weaker due to being slaves
 #att 11 --- WS4 I4, not reduced by being a slave
-#def 10 --- WS4 I4, slightly reduced by being a slave
+#def 9 --- WS4 I4, slightly reduced by being a slave
 #prec 9 --- ballistic skill 3, bad condition
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
@@ -1551,7 +1676,7 @@
 #enc 3 --- normal
 #str 12 --- +1
 #att 11 --- WS4 I4, not reduced by being a slave
-#def 11 --- WS4 I4, not reduced by being a slave
+#def 10 --- WS4 I4, not reduced by being a slave
 #prec 9 --- ballistic skill 3, bad condition
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
@@ -1581,7 +1706,7 @@
 #descr "Daemonettes are the most numerous of Slaanesh's servants. They are shrouded in a hypnotic glamour, seditious magics that bestow them a perverse beauty. Daemonettes surge across the battlefield on lithe legs, capering and dancing from foe to foe, claws slicing through flesh and armour with ease. When battle is done, Daemonettes stride amongst the fallen and bring their souls to Slaanesh's palace in the Realm of Chaos, to receive eternal pleasure or pain at the whim of their capricious master. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
 --compared with the slaaneshi daemonette in dominion, should be worse
 #ap 16
-#mapmove 22
+#mapmove 18
 #hp 11 -- -1
 #prot 3 -- T3, but some carapace
 #size 2
@@ -1664,7 +1789,7 @@
 #descr "Seekers of Slaanesh are the Dark Prince of Chaos' outriders, Daemonettes mounted on swift daemonic Steeds that can dart across a battlefield in a moment. It is said that the Steeds are made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. Steeds constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry, particularly when driven on by a Daemonette eager to deliver a new plaything to Slaanesh's embrace. In battle the claws of the Daemonette are the greatest threat presented by a Seeker, but the Steed itself carries a deadly weapon in the form of its impossibly dextrous tongue, constantly dripping poisons both deadly and psychoactive. Should the Daemonette be struck from her Steed the beast will fight on for the rest of the battle before returning to the Realm of Chaos. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
 -- compared with Slaaneshi Seeker in dominion, it's supposed to be weaker
 #ap 32
-#mapmove 28
+#mapmove 24
 #hp 11 -- -1
 #prot 4
 #size 3
@@ -1711,7 +1836,7 @@
 #name "Steed of Slaanesh"
 #descr "Steeds of Slaanesh are said to be made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. They constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry, particularly when driven on by a Daemonette eager to deliver a new plaything to Slaanesh's embrace. In battle the Steed carries a deadly weapon in the form of its impossibly dextrous tongue, constantly dripping poisons both deadly and psychoactive. As with all Daemons of Chaos these decadent creatures are highly resistant to physical attacks."
 #ap 32 -- fastest cav in the game, tied with centauride
-#mapmove 28 -- same as a shade beast, tireless, fast
+#mapmove 24 -- same as a shade beast, tireless, fast
 #hp 12 -- same as daemonette
 #prot 5 -- +1 over seeker
 #size 2 -- smaller without rider
@@ -1750,7 +1875,7 @@
 #name "Marauder Hellstrider"
 #descr "Hellstriders are devotees of torment, Marauders who hunt from the back of impossibly swift Daemonic Steeds of Slaanesh. These gifts from the Dark Prince come at a great price, for the Hellstrider is curse, or perhaps blessed, to feel the pain of every victim of his hunts and expected to revel in the sensations. The Steeds are said to be made from the guilty desires of living creatures and as such can never be outrun, for no being could possibly escape its own darkest yearnings; what is certainly true is that their agility and speed is far beyond that of a horse. Steeds constantly taste the air with their long, whiplike tongues, sampling the scents and flavours of souls carried by the ever present the Winds of Magic and they are capable of hunting down almost any quarry. In battle the Marauder lashes his foes with a life draining Hellscourge whip while the Steed's tongue whips out at lightning speed, delivering poisons both deadly and psychoactive. Should the Marauder be struck from his Steed the beast will fight on for the rest of the battle before returning to the Realm of Chaos."
 #ap 32
-#mapmove 28 -- same as a shade beast, tireless, fast
+#mapmove 24 -- same as a shade beast, tireless, fast
 #hp 12 --- big tough guys
 #prot 3 -- +1 for mount
 #size 3
@@ -1828,12 +1953,12 @@
 #enc 3 --- normal
 #str 12
 #att 11 --- WS4 I4
-#def 12 --- WS4 I4 then +1 for being slaanesh marked
+#def 11 --- WS4 I4 then +1 for being slaanesh marked
 #prec 10
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
 #gcost 13
-#rpcost 6 -- drawn from distant supplies
+#rpcost 8 -- drawn from distant supplies
 #rcost 0
 #weapon 15 -- morningstar
 #armor 118 -- half helmet
@@ -1863,12 +1988,12 @@
 #enc 3 --- normal
 #str 12
 #att 11 --- WS4 I4
-#def 12 --- WS4 I4 then +1 for being slaanesh marked
+#def 11 --- WS4 I4 then +1 for being slaanesh marked
 #prec 11 -- +1 for ranged focus
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
 #gcost 13
-#rpcost 6 -- drawn from distant supplies
+#rpcost 8 -- drawn from distant supplies
 #rcost 0
 #weapon 17 -- axe
 #weapon 260 -- throwing axe
@@ -2001,7 +2126,7 @@
 [This Herald of Slaanesh will transform into a form capable of seducing either males or females]"
 --compared the the slaaneshi version, should be worse
 #ap 16
-#mapmove 22
+#mapmove 18
 #hp 20
 #prot 3 -- T3, but some carapace
 #size 2
@@ -2053,7 +2178,7 @@
 [This Herald of Slaanesh has been tasked with the seduction and corruption of males and so is considered female for the purposes of the Seduction command]"
 --compared the the slaaneshi version, should be worse
 #ap 16
-#mapmove 22
+#mapmove 18
 #hp 20
 #prot 3 -- T3, but some carapace
 #size 2
@@ -2106,7 +2231,7 @@
 [This Herald of Slaanesh has been tasked with the seduction and corruption of females and so is considered male for the purposes of the Seduction command]"
 --compared the the slaaneshi version, should be worse
 #ap 16
-#mapmove 22
+#mapmove 18
 #hp 20
 #prot 3 -- T3, but some carapace
 #size 2
@@ -2379,7 +2504,7 @@
 #descr "Dreadlords are the rulers of Black Arks, fortified outposts, or entire cities of Naggaroth and represent the pinnacle of the Dark Elven ideology of ambition, ruthlessness, and strength. Even moreso than Masters they are almost exclusively from high birth, backed by powerful and influential noble families and raised from a young age with the sole purpose of ascending to the station of Dreadlord. Unlike lesser nobles there is little chance that a Dreadlord could maintain his position without being an exceptionally skilled and experienced warrior in addition to a master of intrigue and courtly affairs, as each will inevitably find themselves appraised by the cold eye of the Witch King, Malekith, whose intolerance for weakness is legendary. Becoming a Dreadlord requires not only great martial skill and a brilliant tactical and strategic mind, but ambition that borders on the megalomaniacal and an absolutely iron will. In battle Dreadlords wield the finest arms and armour and ride atop the most vicious Cold One available."
 #hp 20
 #size 4
-#prot 5
+#prot 4
 #mor 15 -- LD10
 #mr 15 -- tier 3
 #enc 5
@@ -2389,7 +2514,7 @@
 #prec 14
 #mapmove 20 -- slightly less than horse
 #ap 18
-#gcost 120
+#gcost 180
 #rcost 15
 #rpcost 2
 #ressize 2
@@ -2542,16 +2667,17 @@
 #mr 17 -- +2 over initiate
 #prec 13 -- +1 because they're well trained as battlemages
 #gcost 270
-#rpcost 2
+#rpcost 4
 #armor 148 -- crown
 #armor 5 -- leather cuirass
 #weapon 238 -- magic staff
 #female
 #poorleader
 #startage 700
-#magicskill 5 2 -- D2
-#magicskill 4 2 -- S2
+#magicskill 5 2 -- D1
+#magicskill 4 2 -- S1
 #custommagic 896 200 -- 200% FAW
+#custommagic 6144 100 -- 100% SD
 #nametype 271 -- female dark elf
 #nobadevents 8
 #end
@@ -2569,7 +2695,7 @@
 #mr 17 -- same
 #prec 13 -- +1 because they're well trained as battlemages
 #gcost 290
-#rpcost 2
+#rpcost 4
 #armor 148 -- crown
 #armor 5 -- leather cuirass
 #weapon 238 -- magic staff
@@ -2577,13 +2703,14 @@
 #okleader
 #startage 700
 #magicskill 7 1 -- B1
-#magicskill 5 2 -- D2
-#magicskill 4 2 -- S2
+#magicskill 5 1 -- D1
+#magicskill 4 1 -- S1
 #custommagic 896 200 -- 200% FAW
+#custommagic 6144 100 -- 100% SD
 #nametype 271 -- female dark elf
 #awe 1
 #stealthy 20
-#seduce 11 -- +1
+--#seduce 11 -- +1 -- removed seduction
 #heretic 1
 #spy
 #slothresearch 1
@@ -2615,7 +2742,7 @@
 #rcost 1
 #magicskill 7 1 -- B1
 #magicskill 4 2 -- S2
-#magicskill 5 2 -- D2
+#magicskill 5 1 -- D1 -- nerfed to just D1
 #custommagic 896 200 -- 200% FAW
 #custommagic 6400 100 -- 100% ASD
 #nametype 271 -- female dark elf
@@ -2633,7 +2760,7 @@
 #descr "The Beastmasters of Clar Karond and Karond Kar can command even the unruliest creatures to do their bidding. In part this mastery stems from their unflinching dedication to the tormentors' craft, but brutality and fear alone would be nothing without the Dark Elf sense of empathy. All Elves have a natural attunement with the natural world, but while the High Elves and Wood Elves seek to gain wisdom from or live in balance with nature, the exiles of Naggaroth instead seek to dominate it. It matters not whether the beast is a raging Manticore, a viciously cunning Harpy, or a wise and ancient Dragon, given enough time a Beastmaster can impose their will upon it. Beastmasters are, in addition to their more fantastic charges, typically also responsible for the driving of slaves to battle, as the Dark Elves see humans, greenskins, and the like as mere beasts themselves. Their path is highly exacting and many eventually take on more than they can handle and are slain by one of their charges, so those that survive tend to be exceptionally cunning and martially skilled. High Beastmasters are so valued for their art and feared for their considerable skills that they hold status which nearly rivals that of the Dreadlords. Each month the Beastmaster may acquire and break in some new beasts to be used in battle, depending on the local terrain.
 
 [Randomly spawns beasts based on local province terrain. No command necessary. Multiple Beastmasters in one province will not produce more beasts]"
-#hp 19 -- tier 3
+#hp 15 -- tier 3
 #mor 14
 #mr 15 -- tier 3
 #enc 3
@@ -2798,7 +2925,7 @@
 #descr "Malus Darkblade, known as the Tyrant of Hag Graef, is one of the foremost Dreadlords of Naggaroth and the ruler of Hag Graef. Always ambitious and reckless, even for the bastard son of a Dark Elf noble family, Malus rose to be one of the foremost Masters of his city, but was frustrated by how long his ascent to power was taking. Hearing legends of a powerful artifact hidden to the north of Naggaroth he ventured into the Chaos Wastes and, though he lost most of his expedition in the process, reached the ancient temple of Kul Hadar. His senses blinded by avarice, Malus unwittingly allowed the Daemon Tz'arkan to possess him. To save his life and soul, Malus struck a deal with the Daemon to seek out five artifacts and perform a ritual that would free Tz'arkan, but having completed this quest the Daemon was not freed but instead forever bound to his own dark soul. Malus now battles constantly with Tz'arkan for control of his actions, but benefits from the considerable power of being bound to the Daemon. In battle Malus rides atop an especially vicious and unusually intelligent Cold One named Spite and is armed with the Warpsword of Khaine, greatest of the five artifacts his Tz'arkan had him recover."
 #hp 25 -- +5 over DL
 #size 4
-#prot 6 -- DL +1 for berserk cav
+#prot 5 -- DL +1 for berserk cav
 #mor 17 -- famously hateful and brave
 #mr 17 -- daemonic help, tier 4
 #enc 4
@@ -2938,6 +3065,46 @@
 #cleanshape
 #end
 
+-- Black Dragon
+#newmonster 3732
+#spr1 "./Sombre_Warhammer/Warhammer_Dark_Elves/Dragon_Black.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Dark_Elves/Dragon_Black2.tga"
+#name "Black Dragon"
+#descr "While the Dragons of Ulthuan are ancient creatures that now spend most of their lives in deep slumber, the Black Dragons of Naggaroth are far younger and far more active. When Malekith first set in motion his plot to usurp the Phoenix King and claim the throne of Ulthuan for himself he had his agents steal and secret away several Dragon eggs in Nagarythe, thinking they might otherwise be destroyed in the inevitable civil war that would follow. When the Witch King's plan failed and he was forced to retreat with his forces to the inhospitable land of Naggaroth it became clear that there was no time to allow the Dragons to mature naturally and no hope that the Dragons of Ulthuan would support the exiled Dark Elves. So it was that Malekith ordered his Dragons infused with Dark Magic to accelerate their growth and they were raised as staunch allies of the Druchii who see the High Elves of Ulthuan as traitors and the Dragons of that land as misguided and weak. The Black Dragons were changed by the sorcery used to mature them and while they are creatures of might to rival the Moon Dragons of Ulthuan, they are no longer able to ignite their breath, instead spraying clouds of noxious poison. Although they are predatory and merciless in their way, Black Dragons still hold the honourable and noble nature of their kind and will accept only mighty warriors as riders. Malekith regards each Black Dragon as a member of his family and they are seen as sacred by the Dark Elves, symbols of their ability to adapt, overcome, and prove their strength."
+#size 6 -- stats compared with ulthuan moon dragon
+#prot 19 --
+#hp 100 -- -6
+#att 15 -- 
+#def 14 -- 
+#str 25 -- 
+#prec 15 --
+#enc 2 -- -1
+#mapmove 34 -- +4
+#ap 18 -- +2
+#mr 19 -- 
+#mor 19 -- -1
+#weapon 535 -- dragon gas
+#weapon 20 -- bite
+#weapon 33 -- claws
+#weapon 532 -- tail sweep
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 25000
+#startage 5000
+#flying
+#mountainsurvival
+#fear 9 --
+--awe 1
+#itemslots 12288 -- 2 misc
+#cleanshape
+--nametype ??
+#holy
+#shockres 5
+#fireres 10 -- -5
+#poisonres 15
+#coldres 5
+#end
 
 
 ------ Morathi, the Hag Sorceress
@@ -3499,6 +3666,22 @@
 #restricted 178 -- dark elves only
 #end
 
+
+--- Contact Black Dragon
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Contact Black Dragon"
+#descr "With this spell the caster contacts one of the mighty Black Dragons of Naggaroth to serve the cause. Black Dragons were hatched from eggs secreted away from Ulthuan at the beginning of Malekith's bid to control the throne of the Phoenix King and subsequently rapidly matured and empowered with Dark Magic. They are honourable if merciless creatures that perfectly exemplify the power and ability to overcome that the Dark Elves value so highly. Rather than breathing torrents of flame they spray a poisonous gas capable of silently killing even the most heavily armoured foe in a matter of seconds. As chosen family of Malekith and exemplars of Naggarond's power, they are sacred to the Dark Elves."
+#details "Summons a sacred Black Dragon as a commander."
+#researchlevel 6
+#restricted 178 -- dark elves
+#path 0 5 -- death
+#pathlevel 0 4
+#path 1 4 -- astral
+#pathlevel 1 2
+#damage 3732 -- black dragon
+#fatiguecost 3600
+#end
 
 
 
@@ -4692,6 +4875,7 @@
 #level 0
 #rarity 5
 #gems 7 2
+#homecom 5117
 #end
 
 
@@ -4708,6 +4892,7 @@
 #homemon 5203 -- seeker of slaanesh
 #homemon 5208 -- fiend of slaanesh
 #homecom 5145 -- herald of slaanesh (male or female)
+#homecom 3732 -- black dragon
 #end
 
 #newsite 1896
@@ -6810,7 +6995,7 @@ Mechanics: Cult of Pleasure grows in low dominion forts and offers new recruitab
 ----------LEADERS
 
 #addreccom 5115  -- Bloodshade
-#addreccom 5117  -- Dark Elf Assassin
+--#addreccom 5117  -- Dark Elf Assassin cap only
 #addreccom 5118  -- Corsair Captain
 #addreccom 5143 -- Dark Herald
 #addreccom 5119 -- Master

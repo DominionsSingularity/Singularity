@@ -1397,7 +1397,7 @@ Priests: Average"
 #addreccom 3817
 #addreccom 3818
 --addreccom 3819
-#addreccom 3824
+--#addreccom 3824
 
 -- Heroes --------------------------------------------------------------------------
 

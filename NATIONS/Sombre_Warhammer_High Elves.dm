@@ -43,7 +43,16 @@
 -------------- WEAPONS
 
 
+--------------- Griffon claws (reviewed)
 
+#newweapon 800
+#copyweapon 236 -- claw used by griffon rider
+#name "Griffon Claws"
+#dmg 20 -- +4, big griffon
+#nratt 2 -- +1
+#pierce
+#slash
+#end
 
 
 ---- Fangsword (eltharion's sword) -- same as runefang
@@ -207,6 +216,89 @@
 #range 45 -- longbow range
 #end
 
+-- Sun Dragon mount attacks
+
+#newweapon 1224
+#name "Sun Dragon"
+#dmg 22
+#att 1
+#def 0
+#len -1
+#rcost 0
+#slash
+#nratt 3
+#bonus
+#nostr
+#end
+
+
+-- Sun Dragon mount tail
+
+#newweapon 1225
+#copyweapon 532 -- tail sweep
+#name "Dragon Tail"
+#dmg 17
+#bonus
+#nostr
+#att 1
+#end
+
+
+-- Sun Dragon mount breath
+
+#newweapon 1226
+#copyweapon 533 -- dragon fire
+#name "Sun Dragon Breath"
+#range 7
+#dmg 17 -- 6 + half strength
+#bonus
+#nostr
+#end
+
+
+-- Sun Dragon mount attacks
+
+#newweapon 1227
+#name "Moon Dragon"
+#dmg 25
+#att -1
+#def 0
+#len -1
+#rcost 0
+#slash
+#nratt 3
+#bonus
+#nostr
+#end
+
+
+-- Sun Dragon mount tail
+
+#newweapon 1228
+#copyweapon 532 -- tail sweep
+#name "Moon Dragon Tail"
+#dmg 20
+#bonus
+#nostr
+#att -1
+#end
+
+
+-- Sun Dragon mount breath
+
+#newweapon 1229
+#copyweapon 533 -- dragon fire
+#name "Moon Dragon Breath"
+#range 8
+#dmg 19 -- 6 + half strength
+#bonus
+#nostr
+#end
+
+
+
+#weapon 533 -- dragon fire
+
 
 ///////////////// New armor \\\\\\\\\\\\\\\\\\\\
 
@@ -354,15 +446,12 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Archer1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Archer2.tga"
 #name "Light Archer"
-#descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet."
 #weapon 6 -- Short Sword
 #weapon 24 -- Long Bow
 #armor 5 -- leather Cuirass
 #armor 120 -- leather cap
 #gcost 15
-#addupkeep -7
 #rcost 0
 #rpcost 10
 #end
@@ -375,15 +464,12 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Spearman1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Spearman2.tga"
 #name "Spearman"
-#descr "Once a High Elf has mastered the bow, training and fighting for decades, he is trained to fight as part of Spear regiment. After only a short time a regiment of High Elf Spears become a finely honed fighting machine, each member instinctively knowing the mind of his comrades, the whole regiment fighting as one body. Their training improves upon the national prowess of the Elves, and make them bastions of resistance, a wall of deadly spear tips.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "Once a High Elf has mastered the bow, training and fighting for decades, he is trained to fight as part of Spear regiment. After only a short time a regiment of High Elf Spears become a finely honed fighting machine, each member instinctively knowing the mind of his comrades, the whole regiment fighting as one body. Their training improves upon the national prowess of the Elves, and make them bastions of resistance, a wall of deadly spear tips."
 #weapon 1 -- spear
 #armor 12 -- scale mail hauberk
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 15
-#addupkeep -7
 #rpcost 10
 #formationfighter 2
 #end
@@ -396,15 +482,12 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Silverin.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Silverin2.tga"
 #name "Silverin Guard"
-#descr "The Silverin Guard are the traditional guardians of the Watchstone of Tor Yvresse, a waystone of great power and an essential part of the arcane network maintaining the stability of the Great Vortex which protects the world from an overwhelming wave of Chaos. Their arms and armour are constructed with techniques dating from the time shortly after the Great Chaos Incursion and bear enchantments which, though faded from their glorious past, still function to aid them in battle against supernatural beings and resist hostile magic. In recent centuries the threats posed to the High Elves have grown so many and powerful and the losses the Asur suffer in defence of their homeland so severe that the Silverin Guard have been freed from their purely defensive duties and can now be found reinforcing the armies raised by Nobles and Princes. The Silverin fight in the manner of the ancients, forming a phalanx of long spears and relying on their heavy armour and superior discipline to break down the foe. Their shields depict the sun rising over Tor Yvresse and the knowledge that light always follows from even the darkest times.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The Silverin Guard are the traditional guardians of the Watchstone of Tor Yvresse, a waystone of great power and an essential part of the arcane network maintaining the stability of the Great Vortex which protects the world from an overwhelming wave of Chaos. Their arms and armour are constructed with techniques dating from the time shortly after the Great Chaos Incursion and bear enchantments which, though faded from their glorious past, still function to aid them in battle against supernatural beings and resist hostile magic. In recent centuries the threats posed to the High Elves have grown so many and powerful and the losses the Asur suffer in defence of their homeland so severe that the Silverin Guard have been freed from their purely defensive duties and can now be found reinforcing the armies raised by Nobles and Princes. The Silverin fight in the manner of the ancients, forming a phalanx of long spears and relying on their heavy armour and superior discipline to break down the foe. Their shields depict the sun rising over Tor Yvresse and the knowledge that light always follows from even the darkest times."
 #weapon 1002 -- silverin spear
 #armor 364 -- silverin armour
 #armor 369 -- silverin helm
 #armor 377 -- silverin shield
 #gcost 20
-#addupkeep -10
 #rpcost 18
 #mor 13 -- +1
 #mr 14 -- +2
@@ -421,15 +504,12 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Archerarmor1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Archerarmor2.tga"
 #name "Archer"
-#descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "Expertly trained citizen soldiers make up the bulk of the High Elf armies, every elf becoming a resulute and skilled fighter in time of war. High Elves are first trained with sword and a longbow, until their skill far exceeds that of a man, and only then is he allowed to see battle as an Archer. In disciplined ranks, these Archer regiments unleash accurate volleys of arrows upon their foes. They sometimes wear armor, depending on what sort of resistance they expect to meet."
 #weapon 6 -- Short Sword
 #weapon 24 -- Long Bow
 #armor 7 -- scale mail cuirass
 #armor 20 -- iron cap
 #gcost 15
-#addupkeep -7
 #rpcost 10
 #end
 
@@ -441,16 +521,13 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Seaguard1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Seaguard2.tga"
 #name "Lothern Sea Guard"
-#descr "The Sea Guards from Lothern are always in full force, and man the glorious warships of the High Elves. In war, they join the armies to secure beachheads and spearhead attacks on foreign shores. They are trained to be versatile infantry able to both hold a line in the manner of spearmen and rain down arrows at range from compact bows. There is no doubt that the Sea Guard are the finest marines in the Old World and beyond.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The Sea Guards from Lothern are always in full force, and man the glorious warships of the High Elves. In war, they join the armies to secure beachheads and spearhead attacks on foreign shores. They are trained to be versatile infantry able to both hold a line in the manner of spearmen and rain down arrows at range from compact bows. There is no doubt that the Sea Guard are the finest marines in the Old World and beyond."
 #weapon 1 -- spear
 #weapon 264 -- composite bow
 #armor 12 -- scale mail hauberk
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 22
-#addupkeep -11
 #rpcost 16
 #formationfighter 2
 #end
@@ -463,9 +540,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Whitelion1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Whitelion2.tga"
 #name "White Lion of Chrace"
-#descr "The White Lions are the personal guard of the King's Palace. They are traditionally recruited from the rugged land of Chrace, a perilous realm whose inhabitants are great woodsmen and fierce warriors. Those woodsmen who are proven worthy, form an elite bodyguard, armed with terrible long handled Chracian Axes. The White Lions are often sent to join armies, protecting generals and mages, or bolstering the strength of the army. They are renowned for their unflinching courage in the face of overwhelming odds and horrors. Their White Lion cloaks act as execellent shields while their two handed axes are swung with terrible force.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The White Lions are the personal guard of the King's Palace. They are traditionally recruited from the rugged land of Chrace, a perilous realm whose inhabitants are great woodsmen and fierce warriors. Those woodsmen who are proven worthy, form an elite bodyguard, armed with terrible long handled Chracian Axes. The White Lions are often sent to join armies, protecting generals and mages, or bolstering the strength of the army. They are renowned for their unflinching courage in the face of overwhelming odds and horrors. Their White Lion cloaks act as execellent shields while their two handed axes are swung with terrible force."
 #hp 11 -- much more rugged than most elves
 #att 13 -- +1
 #def 13 -- +1
@@ -477,7 +552,6 @@
 #armor 162 -- crested helmet
 #armor 356 -- Lion Cloak
 #gcost 30
-#addupkeep -15
 #rpcost 28
 #patrolbonus 1
 #forestsurvival
@@ -496,7 +570,7 @@
 #name "War Lion of Chrace"
 #descr "While the lions that stalk the lands of Chrace are savage creatures that must often be hunted down for the safety of the Chracian populace, the High Elves take no joy in needless slaughter and should they discover lion cubs having slain their mother the warriors of Chrace take them in and raise them by hand. These lions become as loyal as griffons and form a bond with the Chracian warriors, serving alongside them in the armies of Ulthuan. Some are used to pull the famed Lion Chariots of Chrace, but others are sent into battle in War Prides. War Lions are surprisingly intelligent and capable of following simple orders given on special whistles. Though they are 'tame' their ferocity in battle in undiminished. Chracians take great care over the wellbeing of their animals and are fond of braiding their long manes and decorating them with golden torques.
 
-[As a non-sacred High Elf this troop has halved upkeep. Limited Recruitment: 10]"
+[Limited Recruitment: 10]"
 #hp 22 -- lion +2
 #att 14 -- WS5, savage
 #def 13
@@ -516,7 +590,6 @@
 #weapon 322 -- Bite
 #weapon 29 -- claw
 #gcost 25
-#addupkeep -12
 #rpcost 18 -- war lion +4
 #darkvision 50 -- lion
 #forestsurvival
@@ -534,9 +607,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Swordmaster1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Swordmaster2.tga"
 #name "Sword Master of Hoeth"
-#descr "The Sword Masters are exemplars of the martial arts, capable of incredible feats of arms. At the White Tower of Hoeth, these ascetic warrior monks train ardously, honing their exceptional agility, mastering every nuance and facet of sword fighting. Each Sword Master has studied warfare and personal combat for decades, often centuries - developing an expertise so incredibly complete that there is no group of warriors that can match them. These devotees of the sword devote themselves to the worship of Hoeth in no lesser manner than those who study High Magic, learning to control their bodies and their minds through meditation and exercise. They wield the Greatswords of Hoeth, elegantly shaped swords, often six feet from the pommel to the tip. Swordmasters are skilled and quick enough to cut and deflect missiles with their blades, just as they parry strikes in melee.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The Sword Masters are exemplars of the martial arts, capable of incredible feats of arms. At the White Tower of Hoeth, these ascetic warrior monks train ardously, honing their exceptional agility, mastering every nuance and facet of sword fighting. Each Sword Master has studied warfare and personal combat for decades, often centuries - developing an expertise so incredibly complete that there is no group of warriors that can match them. These devotees of the sword devote themselves to the worship of Hoeth in no lesser manner than those who study High Magic, learning to control their bodies and their minds through meditation and exercise. They wield the Greatswords of Hoeth, elegantly shaped swords, often six feet from the pommel to the tip. Swordmasters are skilled and quick enough to cut and deflect missiles with their blades, just as they parry strikes in melee."
 #nametype 172 -- -Elven names
 #hp 9 -- +1 over elf
 #att 14
@@ -549,7 +620,6 @@
 #armor 118 -- Half Helmet
 #airshield 20
 #gcost 35
-#addupkeep -17
 #rcost 1
 #rpcost 36
 #maxage 2000
@@ -565,9 +635,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Phoenixguard1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Phoenixguard2.tga"
 #name "Phoenix Guard"
-#descr "Phoenix Guards are the hieratic guardians of the sacred shrine of Asuryan, where the Chamber of Days is found, where on the ancient walls, words of fire are written. Any who look upon them will know the past and the future, and will forever be cursed with knowledge of their own death. The Phoenix Guards do not utter a word, having taken a magical wov to not speak of the secrets of time. Until one has witnessed the Phoenix Guard upon the field of battle, one can not comprehend the power they posses, utterly silent, the air around them shimmering. They are the chosen warriors of their god and sacred. Knowing their fate, they do not flinch from any horror and fight with utter resolve.
-
-[As this troop is sacred they already have halved upkeep and do not get a further reduction]"
+#descr "Phoenix Guards are the hieratic guardians of the sacred shrine of Asuryan, where the Chamber of Days is found, where on the ancient walls, words of fire are written. Any who look upon them will know the past and the future, and will forever be cursed with knowledge of their own death. The Phoenix Guards do not utter a word, having taken a magical wov to not speak of the secrets of time. Until one has witnessed the Phoenix Guard upon the field of battle, one can not comprehend the power they posses, utterly silent, the air around them shimmering. They are the chosen warriors of their god and sacred. Knowing their fate, they do not flinch from any horror and fight with utter resolve."
 #hp 9
 #att 13
 #def 13
@@ -597,9 +665,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Ellyrianreaver1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Ellyrianreaver2.tga"
 #name "Ellyrian Reaver"
-#descr "The Ellyrian Reavers were formed ages ago, during a bitter war, valiantly riding deep into enemy territory to defend Ulthuan. They are brave horsemen, able to live of the land and away from supply routes. They strike fast and hard, vanishing into the wilderness. They form an important part of High Elf armies, being able to patrol ahead of the main force, intercepting enemy scouts an hunting down lone enemies or warmachines.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The Ellyrian Reavers were formed ages ago, during a bitter war, valiantly riding deep into enemy territory to defend Ulthuan. They are brave horsemen, able to live of the land and away from supply routes. They strike fast and hard, vanishing into the wilderness. They form an important part of High Elf armies, being able to patrol ahead of the main force, intercepting enemy scouts an hunting down lone enemies or warmachines."
 #size 3
 #enc 4
 #weapon 357 -- light lance
@@ -608,7 +674,6 @@
 #armor 7 -- scale mail cuirass
 #armor 162 -- crested helmet
 #gcost 35
-#addupkeep -17
 #rpcost 30
 #rcost 4
 #mapmove 28 -- incredibly swift
@@ -628,9 +693,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Silverhelm1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Silverhelm2.tga"
 #name "Silver Helm"
-#descr "While the common citizens of Ulthuan fill the ranks of Spearmen and Archers, the Elven nobles form regiments of Knights. These Elven knights form a powerful part of the armies, mounted upon swift Elven steeds, armoured in hardened steel, and bearing tall lances. They are unparallelled cavalrymen, forming a bond with their horses which borders on a shared mind. They are considered reckless warriors, eager to gain glory through victory, utterly convinced of their own superiority.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "While the common citizens of Ulthuan fill the ranks of Spearmen and Archers, the Elven nobles form regiments of Knights. These Elven knights form a powerful part of the armies, mounted upon swift Elven steeds, armoured in hardened steel, and bearing tall lances. They are unparallelled cavalrymen, forming a bond with their horses which borders on a shared mind. They are considered reckless warriors, eager to gain glory through victory, utterly convinced of their own superiority."
 #att 13 -- i feel like they need +1 here for recklessness
 #size 3
 #enc 4 -- elven steeds
@@ -643,7 +706,6 @@
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 50
-#addupkeep -25
 #rcost 8
 #rpcost 50
 #mapmove 24 -- elven steed
@@ -660,9 +722,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Dragonprince1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Dragonprince2.tga"
 #name "Dragon Prince"
-#descr "In the distant past, when the fabled dragons of Caledor were many, the princes of Caledor rode dragons to war. Today, even though their skill and pride are much the same, the aristocracy of Caledor ride Elven steeds as knights and are colloquially known as the 'Dragon Princes' in honour of their forebears, though their number is largely made up of lesser nobles. They still wear armor forged in a volcano's heart, enchanted in ancient ways. This dragon armor is entirely resistant to flames. In battle the Princes seek glory and worthy opponents, often seeking out the most dangerous assignments.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "In the distant past, when the fabled dragons of Caledor were many, the princes of Caledor rode dragons to war. Today, even though their skill and pride are much the same, the aristocracy of Caledor ride Elven steeds as knights and are colloquially known as the 'Dragon Princes' in honour of their forebears, though their number is largely made up of lesser nobles. They still wear armor forged in a volcano's heart, enchanted in ancient ways. This dragon armor is entirely resistant to flames. In battle the Princes seek glory and worthy opponents, often seeking out the most dangerous assignments."
 #size 3
 #enc 4
 #hp 10 -- +1
@@ -677,7 +737,6 @@
 #armor 360 -- Dragon Helmet
 #armor 2 -- shield
 #gcost 65
-#addupkeep -32
 #rcost 12
 #rpcost 56
 #mapmove 24
@@ -695,9 +754,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Tiranoc1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Tiranoc2.tga"
 #name "Tiranoc Chariot"
-#descr "The High Elves of Tiranoc are a proud and adventurous people, although embittered by many wars. They are always among the first to answer a call to war and foremost are their nobles, fighting from swift war chariots. They fight with skill and bravery, the speed of the Elven steeds complementing their sleek yet powerful chariots. When they charge, they crash fearlessly into their foes, thrusting with sharp spears and running foes over. The charioteers are sometimes called Riders of the Wind, when amassed in larger forces.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The High Elves of Tiranoc are a proud and adventurous people, although embittered by many wars. They are always among the first to answer a call to war and foremost are their nobles, fighting from swift war chariots. They fight with skill and bravery, the speed of the Elven steeds complementing their sleek yet powerful chariots. When they charge, they crash fearlessly into their foes, thrusting with sharp spears and running foes over. The charioteers are sometimes called Riders of the Wind, when amassed in larger forces."
 #clearweapons
 #cleararmor
 #nametype 172 -- -Elven names
@@ -714,7 +771,6 @@
 #armor 162 -- crested helmet
 #armor 1 -- buckler
 #gcost 65
-#addupkeep -32
 #rcost 10
 #rpcost 50
 #mapmove 22
@@ -737,7 +793,7 @@
 #name "Lion Chariot of Chrace"
 #descr "While the lions that stalk the lands of Chrace are savage creatures that must often be hunted down for the safety of the Chracian populace, the High Elves take no joy in needless slaughter and should they discover lion cubs having slain their mother the warriors of Chrace take them in and raise them by hand. These lions become as loyal as griffons and form a bond with the Chracian warriors, serving alongside them in the armies of Ulthuan. Some lions are trained to pull chariots similar to those used by the Knights of Tiranoc. These Lion Chariots are crewed with seasoned White Lion warriors armed with their deadly Chracian longaxes and while they lack the momentum and crushing headlong charge of the Tiranoc Chariots, they are devastatingly powerful in close combat. Should the charioteers be slain the lion will continue to fight on and can be deployed as a War Lion after the battle.
 
-[As a non-sacred High Elf this troop has halved upkeep. Limited Recruitment: 2]"
+[Limited Recruitment: 2]"
 #size 4
 #enc 5
 #hp 12 -- +1
@@ -755,7 +811,6 @@
 #armor 162 -- crested helmet
 #armor 356 -- Lion Cloak
 #gcost 90
-#addupkeep -45
 #rcost 15
 #rpcost 60
 #mapmove 20
@@ -781,9 +836,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Shadowwarrior1.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Shadowwarrior2.tga"
 #name "Shadow Warrior"
-#descr "The grim Shadow Warriors hail from a terrible time, when the land of Nagarythe was riven with civil war. Most of the populace sided with the Witch King and became Dark Elves. Those who did not became the Shadow Warriors. They fought from hiding against the Dark Elves in a blood soaked land. They eventually became masters of guerilla warfare, striking with deadly accuracy from the shadows. Today they are the most sinister and brutal of all the High Elves, and bound to their bitter duty with ancient oaths. Their hatred knows no bounds when it comes to the Dark Elves, but their wrath for any foe is terrible. They go before the armies of Ulthuan wherever they go, killing and clearing way for the main force. They have learned to predict enemy missile fire and avoid it.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The grim Shadow Warriors hail from a terrible time, when the land of Nagarythe was riven with civil war. Most of the populace sided with the Witch King and became Dark Elves. Those who did not became the Shadow Warriors. They fought from hiding against the Dark Elves in a blood soaked land. They eventually became masters of guerilla warfare, striking with deadly accuracy from the shadows. Today they are the most sinister and brutal of all the High Elves, and bound to their bitter duty with ancient oaths. Their hatred knows no bounds when it comes to the Dark Elves, but their wrath for any foe is terrible. They go before the armies of Ulthuan wherever they go, killing and clearing way for the main force. They have learned to predict enemy missile fire and avoid it."
 #hp 10 -- slightly more rugged than most elves
 #att 13
 #def 13
@@ -799,7 +852,6 @@
 #armor 118 -- Half helmet
 #airshield 50
 #gcost 25
-#addupkeep -12
 #rpcost 24
 #rcost 1
 #ambidextrous 3
@@ -818,9 +870,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Ranger.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Ranger2.tga"
 #name "Ranger"
-#descr "Rangers are High Elf warriors who hail from the more remote parts of Ulthuan and maintain a martial tradition distinct to the citizen militia of the more populous areas. Instead, they hone their personal fighting skills in smaller training bands, coming together in times of need to fight alongside their metropolitan counterparts. Thus the skillset and garb of the High Elf Ranger differs from most, often donning lighter armour to enable swifter movement across terrain and to facilitate the greater freedom of movement required to wield two swords at once. Often coming from more insular communities that have suffered at the hands of raiders, High Elf Rangers can be bitter, haughty, and proud, but have a well-deserved reputation as some of the most steadfast warriors of the Asur, particularly when it comes to defence of their lands against their hated cousins the Dark Elves.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "Rangers are High Elf warriors who hail from the more remote parts of Ulthuan and maintain a martial tradition distinct to the citizen militia of the more populous areas. Instead, they hone their personal fighting skills in smaller training bands, coming together in times of need to fight alongside their metropolitan counterparts. Thus the skillset and garb of the High Elf Ranger differs from most, often donning lighter armour to enable swifter movement across terrain and to facilitate the greater freedom of movement required to wield two swords at once. Often coming from more insular communities that have suffered at the hands of raiders, High Elf Rangers can be bitter, haughty, and proud, but have a well-deserved reputation as some of the most steadfast warriors of the Asur, particularly when it comes to defence of their lands against their hated cousins the Dark Elves."
 #hp 10 -- slightly more rugged than most elves
 #str 10 -- more rugged
 #weapon 8 -- Broad Sword
@@ -828,7 +878,6 @@
 #armor 10 -- leather hauberk
 #armor 119 -- Reinforced leather cap
 #gcost 20
-#addupkeep -10
 #rpcost 16
 #rcost 1
 #ambidextrous 3
@@ -845,9 +894,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Bolt_Chariot.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Bolt_Chariot2.tga"
 #name "Eagle Claw Bolt Thrower"
-#descr "The Navy of Ulthuan is known to be the mightiest in the world, challenged only by that of their dark brethren in Naggraroth, and the greatest symbol of this naval power is the Eagle Claw Bolt Thrower. These finely wrought and magically enchanted ballistae are capable of unleashing multiple large bolts in a single shot with shocking precision. The Eagle Claws mounted on their ships are far too large for the Lothern Sea Guard to deploy in land battles, but they have developed a miniaturised version which they mount on a chariot similar in design to those used in Tiranoc. The crew are lightly armed and armoured and should not be expected to perform in melee, but the additional ranged power the Eagle Claw brings to bear is highly valued by High Elf commanders.
-
-[As a non-sacred High Elf this troop has halved upkeep]"
+#descr "The Navy of Ulthuan is known to be the mightiest in the world, challenged only by that of their dark brethren in Naggraroth, and the greatest symbol of this naval power is the Eagle Claw Bolt Thrower. These finely wrought and magically enchanted ballistae are capable of unleashing multiple large bolts in a single shot with shocking precision. The Eagle Claws mounted on their ships are far too large for the Lothern Sea Guard to deploy in land battles, but they have developed a miniaturised version which they mount on a chariot similar in design to those used in Tiranoc. The crew are lightly armed and armoured and should not be expected to perform in melee, but the additional ranged power the Eagle Claw brings to bear is highly valued by High Elf commanders."
 #hp 18 -- 2 crew
 #size 4 -- big chariot lad
 #prot 5 -- chariot prot
@@ -862,7 +909,6 @@
 #mounted
 #nomovepen
 #gcost 140
-#addupkeep -70
 #rcost 50
 #rpcost 50
 #mapmove 18
@@ -881,9 +927,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Sister_Avelorn.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Sister_Avelorn2.tga"
 #name "Sister of Avelorn"
-#descr "There are regions of Avelorn that the citizen soldiers are forbidden to enter. Some are sacred places of power, linked with the rites of renewal the Everqueen performs to sustain Uthuan and her people. Others are drk and dangerous places from which the touch of Chaos never fully faded. It is the duty of the Sisters of Avelorn to watch over such places, to protect them, or to protect others from them. The Sisters are an entirely female force of highly skilled archers, selected from the ranks of the citizen soldiery by the Handmaidens of the Everqueen for their skill and strength of character alike. The Sisters are taught to pursue perfection in everything they do and, both elevated beyond the petty intrigues of Ulthuan social standing and given the Everqueen as an unblemished idol, they do exactly that, be it martial, aristic, or spiritual. The Sisters of Avelorn prefer to fight their battles at long range, as they are granted spectral bows which fire mystical bolts of white-blue flame that sears tainted flesh and bone alike. Yet they are nearly as skilled in close combat, where they put a paired blade and dagger to lethal use. The Sisters are sacred to the people of Ulthuan.
-
-[As this troop is sacred they already have halved upkeep and do not get a further reduction]"
+#descr "There are regions of Avelorn that the citizen soldiers are forbidden to enter. Some are sacred places of power, linked with the rites of renewal the Everqueen performs to sustain Uthuan and her people. Others are drk and dangerous places from which the touch of Chaos never fully faded. It is the duty of the Sisters of Avelorn to watch over such places, to protect them, or to protect others from them. The Sisters are an entirely female force of highly skilled archers, selected from the ranks of the citizen soldiery by the Handmaidens of the Everqueen for their skill and strength of character alike. The Sisters are taught to pursue perfection in everything they do and, both elevated beyond the petty intrigues of Ulthuan social standing and given the Everqueen as an unblemished idol, they do exactly that, be it martial, aristic, or spiritual. The Sisters of Avelorn prefer to fight their battles at long range, as they are granted spectral bows which fire mystical bolts of white-blue flame that sears tainted flesh and bone alike. Yet they are nearly as skilled in close combat, where they put a paired blade and dagger to lethal use. The Sisters are sacred to the people of Ulthuan."
 #hp 9 -- elf +1
 #att 13
 #def 14
@@ -938,7 +982,6 @@
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 80
-#addupkeep -40
 #rcost 8
 #mapmove 24
 #ap 25
@@ -975,7 +1018,6 @@
 #armor 118 -- Half helmet
 #armor 2 -- shield
 #gcost 120
-#addupkeep -60
 #rcost 8
 #mapmove 24
 #ap 25
@@ -998,7 +1040,7 @@
 #descr "The Noble families of Ulthuan have led the High Elves through times of peace and conflict for thousands of years. They pride themselves on their deep sense of honour and mastery of both diplomacy and war. Most High Elf Nobles are trained as a Silver Helm knight, but depending on where they hail from, their style of warfare may vary. The sharp incisive minds of Ulthuan's nobility make them the finest generals in the world, able to read the ebb and flow of battle before it unfolds. The princes of Tiranoc make battle from a swift and deadly chariot."
 #nametype 172 -- Elven names
 #hp 24 -- elf, W3, +4 for chariot
-#prot 4
+#prot 3
 #size 4
 #att 15
 #def 16
@@ -1013,7 +1055,6 @@
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 140
-#addupkeep -70
 #rcost 20
 #mapmove 22
 #ap 22
@@ -1069,14 +1110,14 @@
 #mr 18
 #weapon 446 -- Sceptre
 #armor 158 -- robes
-#gcost 360
+#gcost 310
 #rcost 1
+100% FAE
 #magicskill 4 2 -- astral
-#magicskill 0 2 -- fire
+#magicskill 0 1 -- fire
 #magicskill 1 1 -- air
 #magicskill 8 1 -- holy
-#custommagic 3328 100 -- AES
-#custommagic 1024 10 -- FAE
+#custommagic 1408 100 -- FAE
 #startage 187
 #holy
 #poorleader
@@ -1101,12 +1142,12 @@
 #mr 17
 #weapon 238 -- magic staff
 #armor 158 -- robes
-#gcost 390
+#gcost 270
 #rcost 1
-#magicskill 4 2 -- astral
-#magicskill 6 3 -- nature
+#magicskill 4 1 -- astral
+#magicskill 6 2 -- nature
 #magicskill 8 2 -- holy
-#custommagic 3968 100 -- FAWES
+#custommagic 8192 10 -- N
 #startage 278
 #maxage 2000
 #autohealer 1
@@ -1138,11 +1179,10 @@
 #gcost 500
 #rcost 1
 #magicskill 4 3 -- astral
-#magicskill 0 3 -- fire
+#magicskill 0 2 -- fire
 #magicskill 1 1 -- air
 #magicskill 8 2 -- holy
-#custommagic 3328 100 -- AES
-#custommagic 3456 10 -- FAES
+#custommagic 1408 100 -- FAE
 #startage 298
 #maxage 2000
 #okleader
@@ -1238,12 +1278,13 @@
 #mor 15
 #weapon 9 -- Dagger
 #armor 158 -- robes
-#gcost 340
+#gcost 280
 #rcost 1
-#magicskill 4 2 -- astral
-#magicskill 2 2 -- water
-#magicskill 1 2 -- air
+#magicskill 4 1 -- astral
+#magicskill 2 1 -- water
+#magicskill 1 1 -- air
 #custommagic 10624 100 -- FASN
+#custommagic 768 100 -- AW
 #startage 201
 #sailing 2 2
 #okleader
@@ -1252,6 +1293,39 @@
 #magicstudy 1
 #researchbonus -2
 #holy
+#end
+
+-- Dragon Mage
+
+#newmonster 3729
+#copystats 6000
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Mage.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Mage2.tga"
+#name "Dragon Mage of Caledor"
+#descr "Into every generation of Caledorian nobility a handful of Dragon Mages are born. Though blessed with innate magical talent these Elves are not sent to study at the White Tower of Hoeth but instead inducted into a secretive Caledorian order dedicated to protecting and rousing the slumbering Dragons of their homeland. It is said the dreams of the Dragon Mages are always of riding into battle in a great storm of Dragons the colour of the setting sun, a site not seen for thousands of years, and of burning all the foes of Caledor to ashes. Rather than making use of the full array of magic available to their kind, or even tapping into the High Magic that comes naturally to the Asur, the Dragon Mages instead use magic of dragonfire, burning sulphur, and volcanic fury. As minor nobles of Caledor they are expected to be competent military leaders and diligently train in swordsmanship and the use of their magic in close quarters."
+#hp 14
+#mr 18
+#mor 15
+#prec 13
+#weapon 8 -- broad sword
+#armor 12 -- scale mail hauberk
+#armor 162 -- crested helmet
+#combatcaster
+#att 13
+#def 13
+#str 10
+#gcost 320
+#rcost 1
+#magicskill 0 3 -- fire
+#magicskill 1 1 -- air
+#startage 201
+#goodleader
+#command -40
+#rpcost 4
+#magicstudy 1
+#unsurr 1
+#holy
+#fireres 5
 #end
 
 
@@ -1276,7 +1350,6 @@
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 100
-#addupkeep -50
 #rcost 1
 #sailing 999 4
 #maxage 2000
@@ -1308,7 +1381,6 @@
 #armor 5 -- Leather Cuirass
 #armor 120 -- Leather Cap
 #gcost 25
-#addupkeep -12
 #rcost 1
 #noleader
 #stealthy 15 -- so 55
@@ -1343,7 +1415,6 @@
 #armor 360 -- Dragon Helmet
 #armor 2 -- shield
 #gcost 160
-#addupkeep -80
 #rcost 8
 #rpcost 2
 #mapmove 24
@@ -1383,7 +1454,6 @@
 #armor 162 -- crested helmet
 #armor 2 -- shield
 #gcost 100
-#addupkeep -50
 #rcost 4
 #rpcost 1
 #mapmove 28
@@ -1420,7 +1490,6 @@
 #armor 7 -- scale mail cuirass
 #armor 118 -- half helmet
 #gcost 100
-#addupkeep -50
 #rcost 1
 #rpcost 1
 #ambidextrous 4
@@ -1493,7 +1562,6 @@
 #armor 162 -- crested helmet
 #armor 356 -- lion cloak
 #gcost 80
-#addupkeep -40
 #rcost 1
 #rpcost 1
 #maxage 2000
@@ -1548,6 +1616,193 @@
 
 
 ///////////////// Summons  \\\\\\\\\\\\\\\\\\\\
+
+
+
+-- Dragon Mage on Sun Dragon
+
+#newmonster 3731
+#copystats 6000
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Sun_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Sun_Rider2.tga"
+#name "Dragon Mage on Sun Dragon"
+#descr "Into every generation of Caledorian nobility a handful of Dragon Mages are born. Though blessed with innate magical talent these Elves are not sent to study at the White Tower of Hoeth but instead inducted into a secretive Caledorian order dedicated to protecting and rousing the slumbering Dragons of their homeland. It is said the dreams of the Dragon Mages are always of riding into battle in a great storm of Dragons the colour of the setting sun, a site not seen for thousands of years, and of burning all the foes of Caledor to ashes. Rather than making use of the full array of magic available to their kind, or even tapping into the High Magic that comes naturally to the Asur, the Dragon Mages instead use magic of dragonfire, burning sulphur, and volcanic fury. As minor nobles of Caledor they are expected to be competent military leaders and diligently train in swordsmanship and the use of their magic in close quarters. This Dragon Mage has awoken a Sun Dragon and formed a sacred bond with this ancient ally, riding into battle as a deadly union of Elf and Dragon. Should the Mage be struck down the Sun Dragon will fight on for the remainder of the battle before returning to its slumber."
+#size 6
+#mapmove 34 -- same as celestial dragon
+#ap 18 -- celestial dragon +2
+#flying
+#hp 20 -- +6
+#mr 19 -- +1
+#mor 17 -- +2
+#prec 14 -- +1
+#weapon 1226 -- sun dragon breath
+#weapon 1224 -- sun dragon bite and claws
+#weapon 1225 -- sun dragon tail
+#weapon 8 -- broad sword
+#armor 12 -- scale mail hauberk
+#armor 162 -- crested helmet
+#combatcaster
+#att 13
+#def 13
+#str 10
+#gcost 0
+#rcost 1
+#magicskill 0 3 -- fire
+#magicskill 1 1 -- air
+#startage 201
+#goodleader
+#command -40
+#rpcost 0
+#magicstudy 1
+#unsurr 2 -- +1
+#holy
+#shockres 5
+#fireres 15
+#poisonres 5
+#coldres 5
+#secondtmpshape 3726 -- sun dragon
+#mounted
+#fear 7 -- regular +2
+#siegebonus 10
+#end
+
+
+
+-- Sun Dragon
+
+#newmonster 3726
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Sun.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Sun2.tga"
+#name "Sun Dragon"
+#descr "Dragons are amongst the oldest and most powerful of all creatures, having dwelt in the world long before the arrival of Chaos and crossed the skies when none of the mortal races of Men, Elves, or Dwarfs yet existed. Though they are now rare indeed they live large in the tales of every culture, typically as cruel and destructive forces, bringers of death and destruction. The island continent of Ulthuan is home to the largest remaining population of Dragons, with many hundreds slumbering in the mountains of Caledor, and to the Elves they are not destructive beasts to be feared, but cherished allies of celebrated intelligence and honour. It is known that in times past the Dragons have on several occasions saved Elvenkind, but few know that in doing so they prevented the entire world from falling to Chaos. In recent centuries the Dragons have taken to sleeping for longer and longer, especially the oldest and mightiest of their number, and it is increasingly difficult to raise them, though the Dragon Mages of Caledor have turned the task of rousing them through song into a fine art. Every Dragon is a force on the battlefield, physically mighty, surprisingly fast for its size, and capable of breathing a searing torrent of fire on its foes. Sun Dragons are the youngest and least powerful of the Dragons of Ulthuan, though also the least difficult to rouse from their slumber to defend the land. They are recognisable by their bright red and orange scales and are the favoured mounts of Dragon Mages of Caledor. All Dragons are sacred to the Elves of Ulthuan."
+#size 6
+#prot 17 -- vanilla dragon -1
+#hp 88 -- W5T5, huge, celestial dragon +10
+#att 14 -- WS5I4, +1 for dragon
+#def 13 -- WS5I4, +1 for dragon
+#str 22 -- STR 5, huge, natural weapons
+#prec 14 -- same as vanilla one
+#enc 2 -- energetic
+#mapmove 34 -- same as celestial dragon
+#ap 18 -- celestial dragon +2
+#mr 18 -- celestial dragon
+#mor 17 -- +2 over great eagle of ulthuan
+#weapon 533 -- dragon fire
+#weapon 20 -- bite
+#weapon 33 -- claws
+#weapon 532 -- tail sweep
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 15000
+#flying
+#mountainsurvival
+#fear 7 -- regular +2
+#itemslots 12288 -- 2 misc
+#cleanshape
+--nametype ??
+#holy
+#shockres 5
+#fireres 15
+#poisonres 5
+#coldres 5
+#magicboost 0 -5
+#magicboost 1 -5
+#end
+
+
+
+----- Prince of Caledor on a Moon Dragon
+
+#newmonster 3733
+#copystats 6000 -- elf
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Moon_Rider.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Moon_Rider2.tga"
+#name "Prince of Caledor on Moon Dragon"
+#descr "In times past the nobility of Caledor could form great formations of Dragon Riders, Princes of Caledor mounted atop Moon and Sun and sometimes even ancient Star Dragons, searing the foe with fire before plunging into melee. Now almost all of the remaining Dragons are prone to slumber, especially the older and more powerful Moons and Stars, and the Princes of Caledor instead ride into battle on horses with barding and armour designed in the image of their former mounts. It is unheard of for a Sun Dragon, freshly awoken, to accept a Prince of Caledor as a rider, but should a Moon Dragon be roused by the Dragon Mages it may honour the ancient alliance and select a worthy Prince to mount it and fly forth in defence of the realm. Moon Dragons are particularly known for their fierce loyalty and ability to judge the character of a Prince and together Dragon and Elf make a formidable pair. Should the Prince be slain, the Moon Dragon will fight to avenge him before returning to the mountains to grieve his loss and return to its slumber. All Dragons are sacred to the Elves of Ulthuan and Moon Dragons are such symbols of Ulthuan's ancient might that they spread the Dominion of their home."
+#size 6 -- vanilla
+#hp 32 -- riders profile +10
+#att 15 -- prince
+#def 16 -- prince
+#str 11
+#prec 16
+#enc 4 -- mounted but special
+#mr 19
+#mor 18
+#mapmove 30
+#ap 16
+#weapon 1229 -- moon dragon breath
+#weapon 1227 -- moon dragon bite and claws
+#weapon 4 -- lance
+#weapon 1228 -- moon dragon tail
+#weapon 8 -- Broad Sword
+#armor 2 -- shield
+#armor 359 -- Dragon Armour
+#armor 360 -- Dragon Helmet
+#gcost 0
+#rpcost 0
+#rcost 0
+#flying
+#mountainsurvival
+#mounted
+#siegebonus 10
+#secondtmpshape 3727 -- moon dragon
+#expertleader
+#maxage 2000
+#unsurr 4 -- tier 4 combat leader
+#fear 9 -- +2
+#awe 1 -- added
+#fireres 15
+#shockres 5
+#poisonres 5
+#coldres 5
+#holy
+#spreaddom 1
+#end
+
+
+-- Moon Dragon
+
+#newmonster 3727
+#spr1 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Moon.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_High_Elves/Dragon_Moon2.tga"
+#name "Moon Dragon"
+#descr "Dragons are amongst the oldest and most powerful of all creatures, having dwelt in the world long before the arrival of Chaos and crossed the skies when none of the mortal races of Men, Elves, or Dwarfs yet existed. Though they are now rare indeed they live large in the tales of every culture, typically as cruel and destructive forces, bringers of death and destruction. The island continent of Ulthuan is home to the largest remaining population of Dragons, with many hundreds slumbering in the mountains of Caledor, and to the Elves they are not destructive beasts to be feared, but cherished allies of celebrated intelligence and honour. It is known that in times past the Dragons have on several occasions saved Elvenkind, but few know that in doing so they prevented the entire world from falling to Chaos. In recent centuries the Dragons have taken to sleeping for longer and longer, especially the oldest and mightiest of their number, and it is increasingly difficult to raise them, though the Dragon Mages of Caledor have turned the task of rousing them through song into a fine art. Every Dragon is a force on the battlefield, physically mighty, surprisingly fast for its size, and capable of breathing a searing torrent of fire on its foes. Moon Dragons are the oldest of the Dragons save the extremely rare and ancient Star Dragons and realistically the most powerful of these creatures the Dragon Mages of Caledor can hope to raise. They are not so energetic as Sun Dragons but far mightier and truly awesome to behold in battle. While Sun Dragons are the favoured mounts of Dragon Mages, a Moon Dragon will only allow a royal Prince of Caledor to ride it, having formed an ancient bond with a Prince of great honour. All Dragons are sacred to the Elves of Ulthuan and Moon Dragons are such symbols of Ulthuan's ancient might that they spread the Dominion of their home."
+#size 6 -- stats compared with sun dragon
+#prot 19 -- +2
+#hp 106 -- +18
+#att 15 -- +1
+#def 14 -- +1
+#str 25 -- +3
+#prec 15 -- +1
+#enc 3 -- +1
+#mapmove 30 -- -4
+#ap 16 -- -2
+#mr 19 -- +1
+#mor 20 -- +3
+#weapon 533 -- dragon fire
+#weapon 20 -- bite
+#weapon 33 -- claws
+#weapon 532 -- tail sweep
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 25000
+#flying
+#mountainsurvival
+#fear 9 -- +2
+#awe 1 -- added
+#itemslots 12288 -- 2 misc
+#cleanshape
+--nametype ??
+#holy
+#shockres 5
+#fireres 15
+#poisonres 5
+#coldres 5
+#spreaddom 1 -- so always blessed
+#end
+
 
 
 
@@ -1949,7 +2204,7 @@
 #restricted 110
 #path 0 6 -- nature
 #pathlevel 0 2
-#nreff 504 -- 4+ 1/2 per level
+#nreff 1002 -- 4+ 1 per level
 #damage 6037
 #fatiguecost 600
 #end
@@ -1965,7 +2220,7 @@
 #restricted 110
 #path 0 1 -- air
 #pathlevel 0 2
-#nreff 504 -- 4+ 1/2 per level
+#nreff 1002 -- 4+ 1 per level
 #damage 6035
 #fatiguecost 800
 #end
@@ -1987,6 +2242,79 @@
 #end
 
 
+--- Bond Flame and Flight
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Bond Flame and Flight"
+#descr "With this spell the Dragon Mage awakens one of the Sun Dragons of Ulthuan from their slumber and enters a bond with it, severed only be death, to fight together in defence of Ulthuan and her people. The Dragon Mage will forevermore ride into battle atop one of the mightiest and most noble creatures known to mortals. Should the Dragon Mage be struck down in battle the Sun Dragon will fight on for a time before returning to his lair to grieve over the loss of the mage and slumber once more, perhaps to be called again in the future."
+#details "Transforms a Dragon Mage into a Dragon Mage on a Sun Dragon. Keep in mind this means you will lose any item in the foot slot and that the Sun Dragon on its own is only a temporary second shape, so you may prefer to simply cast Awaken Sun Dragon, depending on your preferences."
+#researchlevel 6
+#restricted 110
+#path 0 0 -- fire
+#pathlevel 0 3
+#effect 10130 -- transform
+#spec 537395200
+#damage 3731 -- sun dragon ridden by dragon mage
+#fatiguecost 3000
+#onlymnr 3729 -- dragon mage of Caledor
+#end
+
+
+--- Bond Moon and Steel
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Bond Moon and Steel"
+#descr "With this spell the Dragon Mage awakens one of the Moon Dragons of Ulthuan from their slumber and recites the ancient vow of alliance between the nobility of Caledor and the Dragons of Ulthuan. The Moon Dragon selects a Prince of Caledor that matches its exacting standards of honour and integrity and the Prince thereafter rides into battle atop this mighty creature. The two fight as a formidable pair but should the rider be slain, the Moon Dragon will fight on for the battle to avenge him before returning to its lair to grieve and return to slumber. Moon Dragons are sacred to the Elves of Ulthuan and their mere presence spreads Ulthuan's dominion."
+#details "Summons a Prince of Caledor on Moon Dragon as a sacred commander. Keep in mind that the Moon Dragon on its own is only a temporary second shape, so you may prefer to simply cast Awaken Moon Dragon, depending on your preferences."
+#researchlevel 7
+#restricted 110
+#path 0 0 -- fire
+#pathlevel 0 4
+#damage 3733 -- moon dragon ridden by dragon mage
+#fatiguecost 4200
+#onlymnr 3729 -- dragon mage of Caledor
+#onlymnr 3731 -- sun dragon ridden by dragon mage
+#end
+
+
+--- Awaken Sun Dragon
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Awaken Sun Dragon"
+#descr "With this spell the Dragon Mage awakens one of the Sun Dragons of Ulthuan from their slumber, to serve in defence of the land and her people and honour the ancient alliance between Elf and Dragon. Sun Dragons are the youngest and least powerful of the Dragons of Ulthuan, though also the least difficult to rouse from their slumber to defend the land. They are recognisable by their bright red and orange scales and are the favoured mounts of Dragon Mages of Caledor. All Dragons are sacred to the Elves of Ulthuan."
+#details "Summons a sacred Sun Dragon as a commander. May only be cast by a Dragon Mage of Caledor."
+#researchlevel 6
+#restricted 110
+#path 0 0 -- fire
+#pathlevel 0 3
+#damage 3726 -- sun dragon
+#fatiguecost 3000
+#onlymnr 3729 -- dragon mage of Caledor
+#onlymnr 3731 -- sun dragon ridden by dragon mage
+#end
+
+
+--- Awaken Moon Dragon
+
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Awaken Moon Dragon"
+#descr "With this spell the Dragon Mage awakens one of the Moon Dragons of Ulthuan from their slumber, to serve in defence of the land and her people and honour the ancient alliance between Elf and Dragon. Moon Dragons are the oldest of the Dragons save the extremely rare and ancient Star Dragons and realistically the most powerful of these creatures the Dragon Mages of Caledor can hope to raise. They are not so energetic as Sun Dragons but far mightier and truly awesome to behold in battle. While Sun Dragons are the favoured mounts of Dragon Mages, a Moon Dragon will only allow a royal Prince of Caledor to ride it, having formed an ancient bond with a Prince of great honour. All Dragons are sacred to the Elves of Ulthuan."
+#details "Summons a sacred Moon Dragon as a commander, which is always blessed and spreads dominion. May only be cast by a Dragon Mage of Caledor."
+#researchlevel 7
+#restricted 110
+#path 0 0 -- fire
+#pathlevel 0 4
+#damage 3727 -- moon dragon
+#fatiguecost 4200
+#onlymnr 3729 -- dragon mage of Caledor
+#onlymnr 3731 -- sun dragon ridden by dragon mage
+#end
+
+
 --- Bond Blade and Wing
 
 #newspell
@@ -2001,6 +2329,8 @@
 #damage 6042 -- prince on griffon
 #fatiguecost 2000 -- 4 more than eagle
 #end
+
+
 
 
 #newspell
@@ -2034,12 +2364,12 @@
 #details "Puts up a Frost Dome and a Dome of Flaming Death in the province."
 #path 0 4 - astral
 #path 1 0 - fire
-#pathlevel 0 4
-#pathlevel 1 2
+#pathlevel 0 5
+#pathlevel 1 3
 #school 4 - enchantment
 #researchlevel 4
 #restricted 110
-#fatiguecost 1500
+#fatiguecost 2000
 #effect 10082
 #damage 64
 #nextspell "Fire Trap"
@@ -2201,7 +2531,7 @@
 #pathlevel 0 2
 #pathlevel 1 2
 #school 2 - evocation
-#researchlevel 4
+#researchlevel 5
 #restricted 110
 #fatiguecost 25
 #aoe 0
@@ -2218,26 +2548,26 @@
 
 ---- Drain Magic
 
-#newspell
-#name "Drain Magic"
-#descr "The caster syphons the energy of all magical beings on the battlefield, hurting them. Strong beings can resist this effect. This spell also affects allied beings."
-#path 0 4 - Astral
-#path 1 0 - Fire
-#pathlevel 0 2
-#pathlevel 1 1
-#school 1 - alteration
-#researchlevel 7
-#restricted 110
-#fatiguecost 100
-#aoe 666
-#precision 0
-#damage 3
-#range 25
-#spec 144
-#flightspr 10000
-#explspr 10054
-#sound 22
-#end
+--#newspell
+--#name "Drain Magic"
+--#descr "The caster syphons the energy of all magical beings on the battlefield, hurting them. Strong beings can resist this effect. This spell also affects allied beings."
+--#path 0 4 - Astral
+--#path 1 0 - Fire
+--#pathlevel 0 2
+--#pathlevel 1 1
+--#school 1 - alteration
+--#researchlevel 7
+--#restricted 110
+--#fatiguecost 100
+--#aoe 666
+--#precision 0
+--#damage 3
+--#range 25
+--#spec 144
+--#flightspr 10000
+--#explspr 10054
+--#sound 22
+--#end
 
 
 
@@ -2383,6 +2713,11 @@
 #addname "Cearoise"
 #addname "Ceallighid"
 #addname "Taereal"
+#addname "Loreal"
+#addname "Lothris"
+#addname "Talamiel"
+#addname "Tyrlis"
+#addname "Calithir"
 #end
 
 
@@ -2443,9 +2778,13 @@
 #homemon 6035 -- great eagle
 #homecom 6036 -- prince on great eagle
 #homemon 6037 -- unicorn
+#homecom 3726 -- sun dragon
+#homecom 3727 -- moon dragon
+#homecom 3731 -- sun dragon ridden by dragon mage
+#homecom 3733 -- moon dragon ridden by prince of caledor
 #end
 
-#newsite 1621
+#newsite 1625
 #name "High Elf Multiheroes"
 #path 4 -- astral
 #level 0
@@ -2456,7 +2795,7 @@
 #homecom 6032 -- Loremaster
 #end
 
-#newsite 1622
+#newsite 1626
 #name "High Elf Luck-independent Heroes"
 #path 1 -- air
 #level 0
@@ -2533,15 +2872,15 @@
 Military: Very skilled infantry, archers and cavalry, strong elite troops, all very expensive.
 Magic: Very strong Astral and Fire, strong Air and Nature, some Water and Earth. Researchers better in Magic scales. Versatile forging.
 Priests: Average.
-Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
+Mechanics: Mercenaries cost 25% more."
 #brief "An ancient race, the High Elves protect the world from the malign influence of Chaos. Their martial skills are rivalled only by their mastery of magic. Their excellence is a necessity, for the elves are few and the powers needed to sustain their wards are great."
 #color 1.0 1.0 1.0
 
 #templepic 17 -- Crystal
 
 #futuresite 1620
-#futuresite 1621
-#futuresite 1622
+#futuresite 1625
+#futuresite 1626
 
 ///////////////// Gods \\\\\\\\\\\\\\\\\\\\
 
@@ -2684,6 +3023,7 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 #addreccom 6017 -- prince of caledor
 #addreccom 6026 -- prince of tiranoc
 #addreccom 6029 -- harathoi mage
+#addreccom 3729 -- dragon mage
 #addreccom 6024 -- Storm Weaver
 #addreccom 6012 -- High Mage
 #addreccom 6031 -- Priestess of Isha
@@ -2691,10 +3031,14 @@ Mechanics: Halved upkeep on non-sacred military. Mercenaries cost 25% more."
 --addreccom 6025 -- alith anar
 --addreccom 6044 -- eltharion
 --addreccom 6042 -- prince on griffon
+--addreccom 3726 -- sun dragon
+--addreccom 3727 -- moon dragon
+--addreccom 3731 -- sun dragon ridden by dragon mage
+--addreccom 3733 -- moon dragon ridden by pricne of caledor
 
 #coastcom1 6014 --Seaguard Captain
 
-#addforeigncom 6015 --scout
+#forestcom 6015 --scout
 
 ////////////////// Hero Settings \\\\\\\\\\\\\\\\\\\
 

@@ -1687,7 +1687,7 @@ Summons 3 Giant Rats per month."
 #descr "The Plague Chantors of Clan Pestilens have recently gained importance as servants of the Awakening God and are now found in many incursions to the surface. They chant sermons of corruption and suffering as they lead the Plague Monks into battle, ringing leper bells and calling for the Horned Rat to bless His numerous, pestilent children. Chantors have been through near constant exposure to warpstone incense and have become highly resistant to poison, making them suitable leaders for the dangerous Plague Censers. Many Chantors pursue the traditional Skaven magic of death and decay, but their order has also adopted an ancient and terrible form of blood magic found in the darkest depths of the Lustrian jungle. Exposure to both warpstone and virulent diseases has altered the physical form of the Chantors, leaving them considerably tougher than most Skaven."
 #hp 13 -- tough bois, but W1
 #size 2
-#prot 4
+#prot 3
 #mor 11
 #mr 12
 #enc 3
@@ -1732,7 +1732,7 @@ Summons 3 Giant Rats per month."
 #descr "Plague Priests are the leaders of the dreaded Clan Pestilens. They spend their time celebrating the rituals of the Horned Rat in His aspect of Harbinger of Disease, and researching newer and deadlier plagues to unleash upon the surface world. Plague Priests are bloated, fetid creatures, ravaged by plague and mutation. This has left them physically powerful combatants tough enough to to survive quite some punishment and strong enough to wield both a large blade and the deadly Plague Scepter with ease. Plague Priests all study magic of death and decay and have long been influenced by ancient Lustrian blood magic."
 #hp 24 -- tough bois, but based on W2 not W3
 #size 2
-#prot 6 -- plaguey resilience
+#prot 5 -- plaguey resilience
 #mor 12
 #mr 15
 #enc 3
@@ -1959,7 +1959,7 @@ Summons 3 Giant Rats per month."
 [Casting speed increased by 33% and generates 1 temporary death gem in each battle]"
 #hp 33 -- increased due to bell
 #size 6
-#prot 10
+#prot 8
 #mor 16
 #mr 18
 #enc 3
@@ -2102,7 +2102,7 @@ Summons 3 Giant Rats per month."
 #spr2 "./Sombre_Warhammer/Warhammer_Skaven/Hero Queek2.tga"
 #name "Warlord of Mors"
 #descr "Warlord Queek Headtaker was groomed from birth as the personal champion of Grand Warlord Gnawdwell, ruler of Clan Mors and one of the Lords of Decay. Queek has spent most of his time as Warlord fighting Night Goblins and Dwarfs, who he hates with unreasoning ferocity. He takes special pleasure in seeking out the strongest of the enemy heroes and leaders, challenging them to single combat, slaying them then taking their skulls or hands as as a trophy. Queek is famed amongst Skaven for his vitriolic temper and immense ego; Queek's psychotic confidence is perhaps the most dangerous thing about him. Gnawdwell has equipped Queek with the Gouger, Dwarf Slayer, Warpstone Armour and the Foul Pendant. The Warpstone Armour, in addition to offering excellent protection, lashes out at those who strike the Headtaker with deadly warpfire."
-#hp 35
+#hp 32
 #size 2
 #prot 3
 #mor 13
@@ -2289,7 +2289,7 @@ Summons 3 Giant Rats per month."
 #descr "Thanquol is a skaven of incredible cunning, ruthlessness and caution even by the standards of his kind. His meteoric rise through the ranks of the Grey Seers marked him as a Chosen of the Horned Rat and this, coupled with his arcane prowess, has made him a favourite agent of the Council of Thirteen. Though he has as many enemies as allies, Thanquol's paranoia, survival instincts and powers of farsight have enabled him to survive every attempt on his life, usually at great cost to those unlucky enough to find themselves nearby. Indeed it is said that so blessed is Thanquol that those who attempt to harm him often inexplicably harm themselves instead. Thanquol carries the Staff and Amulet of the Horned One at all times, granting him increased magical prowess and rapid healing."
 #hp 28 -- W3 T4, hero
 #size 2
-#prot 3
+#prot 2
 #mor 12
 #mr 18
 #enc 3
@@ -2628,7 +2628,7 @@ Summons 8 Giant Rats per month."
 #descr "At the rotten heart of Skavenblight stands a great thirteen sided pillar of obsidian and warpstone. Its every inch is covered with inscrutable script, glyphs of madness and runes of decay; the commandments given to the Skaven by the Horned Rat. To avoid the Pillar of Commandments falling under the control of any of the Council of Thirteen, a Verminlord of great power was bound to it with ancient magic. Over time this magic has decayed and now, with the triumph of the Skaven at hand, it has broken free to crush to foes of the ratmen. The Keeper is an albino monstrosity of great power, both physical and magical who wields two massive bane blades with ease."
 #hp 85
 #size 4
-#prot 10
+#prot 9
 #mor 30
 #mr 18
 #enc 1

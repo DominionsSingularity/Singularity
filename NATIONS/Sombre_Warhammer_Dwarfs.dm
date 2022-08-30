@@ -53,6 +53,7 @@
 #noundead
 #cursed -- can't be dropped
 #nofind
+#restricteditem 900
 #end
 
 ---- Rune of Grugni
@@ -76,6 +77,7 @@
 #nodemon
 #cursed -- can't be dropped
 #nofind
+#restricteditem 900
 #end
 
 ---- Rune of Valaya
@@ -97,6 +99,7 @@
 #nofind
 #recuperation
 #regeneration 2 -- 2% is very low, but that's on purpose
+#restricteditem 900
 #end
 
 ---- Bugman's Tankard
@@ -160,6 +163,7 @@
 #noundead
 #nocoldblood
 #nodemon
+#restricteditem 900
 #end
 
 ---- Lightning Hammer
@@ -178,6 +182,7 @@
 #noundead
 #nocoldblood
 #nodemon
+#restricteditem 900
 #end
 
 ---- Axe of Smiting
@@ -199,6 +204,7 @@
 #noundead
 #nocoldblood
 #nodemon
+#restricteditem 900
 #end
 
 ---- Shield of the Hold
@@ -225,6 +231,7 @@
 #nocoldblood
 #nodemon
 #reinvigoration -2 -- this is mostly so a 0 enc thing still takes fatigue from carrying this
+#restricteditem 900
 #end
 
 ---- Mail of the Peaks
@@ -251,6 +258,7 @@
 #noundead
 #nocoldblood
 #nodemon
+#restricteditem 900
 #end
 
 ---- Map of the Underway
@@ -273,6 +281,7 @@
 #nocoldblood
 #nodemon
 #nofind
+#restricteditem 900
 #end
 
 ---- Miner's Greaves
@@ -295,6 +304,7 @@
 #noundead
 #nocoldblood
 #nodemon
+#restricteditem 900
 #end
 
 ---- Steelbeard Helm
@@ -315,6 +325,7 @@
 #noundead
 #nocoldblood
 #nodemon
+#restricteditem 900
 #end
 
 ---- Ironbringer Gauntlets
@@ -337,6 +348,7 @@
 #nocoldblood
 #nodemon
 #nofind
+#restricteditem 900
 #end
 
 ---- Book of Grudges
@@ -352,7 +364,7 @@
 #mainlevel 2
 #secondarylevel 2
 #deathcurse
-#regeneration 10 -- standard regen
+#limitedregen 10 -- standard regen
 #recuperation
 #reinvigoration -2
 #cursed
@@ -362,6 +374,7 @@
 #nodemon
 #nofind
 #bless
+#restricteditem 900
 #end
 
 
@@ -879,6 +892,7 @@
 --- Whirlwind of Steel
 
 #newweapon 988
+#copyweapon 532 -- Tail Sweep (for defnegates)
 #name "Whirlwind of Steel"
 #ironweapon
 #unrepel
@@ -889,9 +903,10 @@
 #def 0
 #att 0
 #nratt 1
-#dmg 3
+#dmg 9
 #rcost 3
 #bonus
+#halfstr
 #end
 
 --- Axehead (doomseeker)
@@ -1205,7 +1220,7 @@
 #darkvision 50
 #formationfighter 2
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 13
 #mor 13
 #mr 13
@@ -1214,10 +1229,10 @@
 #ap 8
 #prec 10
 #enc 2
-#addupkeep -15
+#addupkeep -10
 #gcost 20
 #rcost 1
-#rpcost 12
+#rpcost 14
 #mapmove 18
 #size 2
 #nametype 196
@@ -1243,7 +1258,7 @@
 #formationfighter 2
 #darkvision 50
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 13
 #mor 13
 #mr 13
@@ -1253,9 +1268,9 @@
 #prec 10
 #enc 2
 #gcost 20
-#addupkeep -15
+#addupkeep -10
 #rcost 1
-#rpcost 12
+#rpcost 14
 #mapmove 18
 #size 2
 #nametype 196
@@ -1280,7 +1295,7 @@
 #mountainsurvival
 #darkvision 50
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 13
 #mor 13
 #mr 13
@@ -1290,9 +1305,9 @@
 #prec 11 -- practiced
 #enc 2
 #gcost 20
-#addupkeep -15
+#addupkeep -10
 #rcost 1
-#rpcost 15 -- 3 over the basic clansdwarf
+#rpcost 17 -- 3 over the basic clansdwarf
 #poorleader
 #mapmove 18
 #size 2
@@ -1318,7 +1333,7 @@
 #mountainsurvival
 #darkvision 50
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 13
 #mor 13
 #mr 13
@@ -1328,9 +1343,9 @@
 #prec 11 -- practiced
 #enc 2
 #gcost 20
-#addupkeep -15
+#addupkeep -10
 #rcost 1
-#rpcost 15 -- 3 over basic clansdwarf
+#rpcost 17 -- 3 over basic clansdwarf
 #mapmove 18
 #size 2
 #nametype 196
@@ -1356,17 +1371,17 @@
 #formationfighter 2
 #darkvision 50
 #siegebonus 2
-#castledef 3
+#castledef 2
 #hp 12 -- -1 over normal
 #mor 16 -- extremely brave
-#mr 14 -- +1 over normal
+#mr 13 -- +1 over normal
 #att 12 -- +1 over normal
 #def 10 -- same as normal because they've slowed down
 #ap 8
 #prec 10 -- same as normal as their eyesight isn't so good
 #enc 3 -- a little less tireless than normal
 #gcost 25
-#addupkeep -19
+#addupkeep -13
 #rcost 1
 #rpcost 18
 #mapmove 18
@@ -1398,7 +1413,7 @@
 #stealthy 0
 #darkvision 50
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 13
 #mor 13
 #mr 13
@@ -1408,9 +1423,9 @@
 #prec 11 -- +1 over normal
 #enc 2
 #gcost 25
-#addupkeep -19
+#addupkeep -13
 #rcost 1
-#rpcost 15
+#rpcost 17
 #mapmove 18
 #size 2
 #nametype 196 
@@ -1437,7 +1452,7 @@
 #stealthy 20
 #darkvision 50
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 14
 #mor 15 -- +2
 #mr 13
@@ -1447,7 +1462,6 @@
 #prec 13 -- +3 over normal
 #enc 2
 #gcost 0
-#addupkeep -19
 #rcost 1
 #rpcost 15
 #mapmove 18
@@ -1475,18 +1489,18 @@
 #mountainsurvival
 #darkvision 50
 #siegebonus 1
-#castledef 2
+#castledef 1
 #hp 14 -- +1
 #mor 16 -- exceptionally brave
 #bodyguard 4
-#mr 14 -- +1
+#mr 13 -- +0
 #att 12 -- +1 over normal
 #def 11 -- +1
 #ap 7 -- CS 5
 #prec 10
 #enc 2
 #gcost 35
-#addupkeep -26
+#addupkeep -18
 #rcost 1
 #rpcost 20
 #mapmove 18
@@ -1519,7 +1533,7 @@
 #stealthy 10
 #darkvision 75 -- +25
 #siegebonus 5
-#castledef 2
+#castledef 1
 #hp 13 -- normal
 #mor 13
 #mr 13
@@ -1529,9 +1543,9 @@
 #prec 10
 #enc 2
 #gcost 25
-#addupkeep -19
+#addupkeep -13
 #rcost 1
-#rpcost 15
+#rpcost 17
 #okleader
 #mapmove 22
 #size 2
@@ -1568,9 +1582,9 @@
 #prec 10
 #enc 2
 #gcost 25
-#addupkeep -19
+#addupkeep -13
 #rcost 1
-#rpcost 12
+#rpcost 15
 #okleader
 #mapmove 18
 #size 2
@@ -1588,8 +1602,8 @@
 #name "Doomseeker"
 #descr "All Dwarfs who take the Slayer Oath are to some extent unhinged and the stress and horror of life as a Slayer has the tendency to push them farther still on the path to madness. There are some who, having failed one too many times to find an honourable death in battle at the hands of a large creature become so desperate to meet their end by any hostile means that they shave off their slayer crests and become Doomseekers. Doomseekers care not what brings them death so long as it is in battle and as such do not specialise in seeking out powerful creatures such as trolls or giants, rather they prefer to pitch themselves into thick enemy ranks and trust the quantity of their foes to spell their doom. Still they are proud Dwarfs and hold great hatred for the enemies of their kind, so they have adapted their weapons and fighting style to best allow them to slaughter throngs of lesser foes. Doomseekers are armed with axeheads attached to lengths of chain wrapped about their arms and in battle act as a whirling storm of spinning death. While quite mad their truly extreme dedication to ending their life makes them sacred to the followers of Grimnir. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold.
 
-[sacred status normally confers halved upkeep, but this troop instead has a quarter of the usual upkeep like all other Dwarf troops]"
-#str 14 -- +3
+[Like the other dwarves, the Valkyrie maintains the standard half upkeep per unit, but it does not stack with the sacred tag]"
+#str 13 -- +3
 #prot 7 -- +4
 #weapon 989 -- axehead
 #weapon 989 -- axehead
@@ -1608,7 +1622,6 @@
 #prec 10
 #enc 6
 #gcost 50
-#addupkeep -25
 #rcost 1
 #rpcost 18
 #mapmove 18
@@ -1621,7 +1634,7 @@
 #holy
 #unsurr 2 -- hard to surround
 #formationfighter -6 -- they need a lot of space!
-#reclimit 2
+#reclimit 1
 #end
 
 
@@ -1642,19 +1655,19 @@
 #mountainsurvival
 #darkvision 75
 #siegebonus 1
-#castledef 3
+#castledef 1
 #hp 15 -- +2
 #mor 15 -- +1
-#mr 15 -- +2
+#mr 14 -- +2
 #att 12 -- +1
 #def 11 -- +1
 #ap 9
 #prec 10
 #enc 2
 #gcost 30
-#addupkeep -22
+#addupkeep -15
 #rcost 1
-#rpcost 18
+#rpcost 21
 #mapmove 18
 #size 2
 #nametype 196
@@ -1680,17 +1693,17 @@
 #mountainsurvival
 #darkvision 50
 #siegebonus 2
-#castledef 4
+#castledef 2
 #hp 15 -- +2
 #mor 15 -- +1
-#mr 15 -- +2
+#mr 14 -- +2
 #att 12 -- +1
 #def 11 -- +1
 #ap 8
 #prec 10
 #enc 2
 #gcost 50
-#addupkeep -38
+#addupkeep -25
 #rcost 10
 #rpcost 22
 #mapmove 18
@@ -1711,7 +1724,7 @@
 #name "Valkyrie"
 #descr "Valaya is one of the three Dwarf ancestor Gods, the wife of both Grungni and Grimnir. It was Valaya who granted the Dwarfs their Runic script and who kept them safe from the warping influence of Chaos after the polar gates fell. Valaya is worshipped as a protector, healer, and source of wisdom. She is a Goddess of duality and is usually depicted in two guises, one as a serene and peaceful Mother to her kind and one as a warrior armed and armoured for battle. Worship of Valaya is common across Dwarf society but only female Dwarfs may become her representatives either by joining the order of Valkyries or Priestesses. Valkyries are female Dwarf warriors of considerable skill who usually guard the hidden temples and sacred places of Valaya, but are known to join Dwarf Throngs at times of crucial importance. Their axes are marked with Runes peculiar to their order which are particularly deadly to the Daemons of Chaos and they are nearly unequalled in their defensive skill with a shield. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold.
 
-[sacred status normally confers halved upkeep, but this troop instead has a quarter of the usual upkeep like all other Dwarf troops]"
+[Like the other dwarves, the Valkyrie maintains the standard half upkeep per unit, but it does not stack with the sacred tag]"
 #str 11
 #prot 3
 #weapon 990 -- Valkyrie Axe
@@ -1720,18 +1733,17 @@
 #armor 357 -- Valkyrie Shield
 #mountainsurvival
 #darkvision 50
-#castledef 3
+#castledef 2
 #siegebonus 1
 #hp 13
 #mor 15 -- +2 over base
-#mr 15
+#mr 14
 #att 12
 #def 12
 #ap 8
 #prec 10
 #enc 2
 #gcost 50
-#addupkeep -25
 #poorleader
 #mapmove 18
 #size 2
@@ -1742,9 +1754,10 @@
 #formationfighter 2
 #coldres 3
 #rcost 1
-#rpcost 20
+#rpcost 25
 #nametype 195
 #female
+#reclimit 2
 #end
 
 
@@ -1768,21 +1781,20 @@
 #darkvision 50
 #fireres 5
 #siegebonus 1
-#castledef 2
+#castledef 1
 #bodyguard 3
 #holy
 #hp 14 -- +1
 #mor 16 -- +2
-#mr 15 -- +2
+#mr 14 -- +1
 #att 12 -- +1
 #def 11 -- +1
 #ap 9 -- CS 5
 #prec 10
 #enc 2
 #gcost 50
-#addupkeep -25
 #rcost 1
-#rpcost 20
+#rpcost 25
 #mapmove 18
 #size 2
 #nametype 196 
@@ -1836,6 +1848,7 @@
 #rpcost 2
 #nametype 195
 #female
+#userestricteditem 900
 #end
 
 
@@ -1849,7 +1862,7 @@
 #name "Thane"
 #descr "Thanes are Dwarf nobility and compose the council of elders for each Dwarf clan alongside the Runesmiths. However, unlike human nobles, Dwarf thanes are not born into their position, but picked by the council of elders. As a result, only Dwarfs who are skilled administrators and warriors act as Thanes, making sure that clan is always lead by the brightest minds and strongest hands within the clan. Dwarfs are a people well prepared for to survive and Thanes are trained to ensure the good order of provinces even if they are cut off from their homeland."
 #str 13 -- +2
-#prot 5 -- +2
+#prot 4
 #weapon 859 --Dwarf axe
 #armor 118 -- half helmet
 #armor 344 -- Dwarf Plate Hauberk
@@ -1858,7 +1871,7 @@
 #darkvision 50
 #siegebonus 2
 #castledef 4
-#hp 22 -- W2T5
+#hp 21 -- W2T5
 #mor 16 -- +3 over base
 #mr 15 -- +2 for being a tier 2 commander
 #att 13 -- +2
@@ -1877,6 +1890,7 @@
 #maxage 300
 #taxcollector
 #unsurr 2 -- tier 2 fight commander
+#userestricteditem 900
 #end
 
 
@@ -1921,6 +1935,7 @@
 #nametype 196
 #startage 120
 #maxage 300
+#userestricteditem 900
 #end
 
 
@@ -1962,6 +1977,7 @@
 #startage 150
 #maxage 300
 #unsurr 1 -- tier 1 fighter
+#userestricteditem 900
 #end
 
 
@@ -2007,6 +2023,7 @@
 #startage 110
 #maxage 300
 #unsurr 1 -- tier 1 combat leader
+#userestricteditem 900
 #end
 
 
@@ -2018,7 +2035,7 @@
 #name "Clan King"
 #descr "Each major clan has a king. Unlike the position of a Thane, the title of a clan King is hereditary within a specific family inside a clan. This family often has a royal bloodline, linking them to the great dwarrows themselves. The king is advised by the Council of Elders and the combined wisdom and strength of these parts make for a stable government. Clan Kings are not only great warriors and leaders, but also historians, knowing their ancestors and the many wrongs dealt to them by heart. Kings are guardians of their people but also have a duty to avenge these wrongs and will enthusiastically seek to repay the grudges of the clan twicefold. Their equipment is naturally second to none, being finely wrought by the greatest craftsdwarfs of the clan and often passed down from a lost gold age of their people. Kings are martial, social, and spiritual leaders and as such are sacred to their clan."
 #str 13 -- +2
-#prot 6 -- +3 (T5)
+#prot 5
 #weapon 854 --Greataxe of Grudges
 #armor 349 -- Runic Crown
 #armor 344 -- Dwarf Plate Hauberk
@@ -2027,7 +2044,7 @@
 #siegebonus 3
 #castledef 6
 #holy
-#hp 29 (W3T5)
+#hp 22 -- (W3T5)
 #mor 17
 #mr 17 --- represents various runes
 #att 14
@@ -2045,6 +2062,7 @@
 #startage 225
 #maxage 300
 #unsurr 3 -- tier 3 combat leader
+#userestricteditem 900
 #end
 
 
@@ -2086,6 +2104,7 @@
 #maxage 300
 #mason
 #startitem 939 -- rune of the engineer
+#userestricteditem 900
 #end
 
 --Giantslayer
@@ -2129,6 +2148,7 @@
 #unsurr 1 -- tier 1
 #beartattoo 2
 #inspirational 1
+#userestricteditem 900
 #end
 
 
@@ -2173,6 +2193,7 @@
 #nametype 196
 #startage 150
 #maxage 300
+#userestricteditem 900
 #end
 
 
@@ -2226,6 +2247,7 @@
 #maxage 300
 #shrinkhp 999 -- when battle starts, changes to battleform
 #researchbonus -2
+#userestricteditem 900
 #end
 
 
@@ -2277,6 +2299,7 @@
 #startage 200
 #maxage 300
 #researchbonus -2
+#userestricteditem 900
 #end
 
 
@@ -2327,6 +2350,7 @@
 #startage 275
 #maxage 350
 #shrinkhp 999 -- one battle start, changes into the battleshape
+#userestricteditem 900
 #end
 
 --Runesmith Battleshape
@@ -2374,6 +2398,7 @@
 #size 2
 #startage 275
 #maxage 350
+#userestricteditem 900
 #firstshape 6120 -- runesmith normal form
 #end
 
@@ -2424,6 +2449,7 @@
 #nametype 196 
 #startage 350
 #maxage 425
+#userestricteditem 900
 #shrinkhp 999 -- turns into the battleform in battle
 #end
 
@@ -2473,6 +2499,7 @@
 #nametype 196 
 #startage 350
 #maxage 425
+#userestricteditem 900
 #end
 
 
@@ -2521,6 +2548,7 @@
 #beartattoo 2
 #unsurr 2 -- tier 2 fight commander
 #holy
+#userestricteditem 900
 #end
 
 
@@ -2536,7 +2564,7 @@
 #name "Thunderer"
 #descr "Thunderers are Dwarf warriors trained in the use of the Thunder Staff, an weapon invented by Dwarrow Runesmiths in the Golden Age and refined by the Guild of Engineers. With these artifacts they are able to hurl bolts of lightning great distances and with considerable accuracy, delivering powerful jolts of electricity which completely bypass armour. Thunder Staffs also make formidable melee weapons, being well balanced Dwarf steel and still capable of delivering a fatal jolt. Thunder Staffs can only be forged with great difficulty, but should the Dwarfs ever recover enough of their lost Golden Age forges they would be able to steadily outfit a small number of these troops. Dwarf troops gladly use their own wealth to support the military efforts of their nation and require only a quarter of the usual upkeep in gold."
 #str 11
-#prot 4
+#prot 3
 #weapon 856 --hurl lighting
 #weapon 857 --thunderstaff
 #armor 118 -- half helmet
@@ -2548,14 +2576,14 @@
 #castledef 2
 #hp 14
 #mor 14
-#mr 14
+#mr 13
 #att 12
 #def 11
 #ap 8
 #prec 12
 #enc 3
 #gcost 40
-#addupkeep -30
+#addupkeep -20
 #rcost 20
 #rpcost 40
 #mapmove 18
@@ -2608,7 +2636,8 @@
 #fireres 5
 #shockres 50
 #reinvigoration 3
-#fastcast 50 -- 150% speed casting
+#fastcast 25 -- 150% speed casting
+#userestricteditem 900
 #end
 
 
@@ -2650,6 +2679,7 @@
 #nametype 196 
 #startage 3000
 #maxage 10000
+#userestricteditem 900
 #end
 
 --Ancestor Spirit
@@ -2705,7 +2735,7 @@
 
 [casting speed 150% of normal, does not lose any magical paths or power in battle]"
 #str 14
-#prot 6 -- +1
+#prot 5
 #weapon 1160 -- Klad Brakak
 #armor 345 -- Runic Helmet
 #armor 338 -- Master Runed Gromril Plate
@@ -2743,6 +2773,7 @@
 #reinvigoration 3
 #fastcast 50 -- 150% speed casting
 #itemslots 15490 -- head, body, feet, 2 misc, 1 hand
+#userestricteditem 900
 #end
 
 
@@ -2788,6 +2819,7 @@
 #spiritsight
 #holy
 #unsurr 3 -- tier 3 combat leader
+#userestricteditem 900
 #end
 
 
@@ -2833,6 +2865,7 @@
 #maxage 7000
 #startitem 907 -- rune of valaya
 #fixedname "Valaya"
+#userestricteditem 900
 #end
 
 --Father of Runes
@@ -2879,6 +2912,7 @@
 #startitem 905 -- rune of grungni
 #unsurr 2 -- he's not strictly a fighter, so just tier 2 here
 #fixedname "Grungni"
+#userestricteditem 900
 #end
 
 
@@ -2925,6 +2959,7 @@
 #fixedname "Grimnir"
 #startitem 904 -- rune of grimnir
 #itemslots 31878 -- normal + 3 misc because the mark takes up one
+#userestricteditem 900
 #end
 
 
@@ -2975,6 +3010,7 @@
 #startage 1500
 #maxage 5000
 #spiritsight
+#userestricteditem 900
 #end
 
 
@@ -3027,6 +3063,7 @@
 #holy
 #unsurr 3
 #itemslots 63622 -- 2 hands, 1 feet, 1 head, no body, 4 misc
+#userestricteditem 900
 #end
 
 ---- Josef Bugman (reviewed)
@@ -3073,6 +3110,7 @@
 #startitem 906 -- Bugman's Tankard
 #itemslots 15488 -- no hands, everything else normal
 #supplybonus 20
+#userestricteditem 900
 #end
 
 ---- Belegar Ironhammer
@@ -3083,7 +3121,7 @@
 #name "True King of Eight Peaks"
 #descr "It is a bitter legacy of hatred and resentment that Belegar Ironhammer has inherited, for he is the leader of the Angrund Clan and direct descendant of King Lunn, the last Dwarf to sit on the throne of Karak Eight Peaks before its fall. Many of the ruling heirs of Angrund have attempted to reclaim their lost home and all have failed, but when Belegar came of age he made bold oaths and set out to recover his full inheritance and restore his Clan's honour. In the many decades since that time Belegar has achieved more than any of his predecessors and won countless battles against the Skaven and Greenskins that infest the Eight Peaks yet has still not reclaimed his throne, though Clan Angrund does now have a foothold on the surface of the lost Dwarfhold. Belegar is known as a tireless and skilled warrior, exceeded only by the famous Slayer King Ungrim Ironfist in martial prowess, and is a legendarily canny strategist, particularly when it comes to siege warfare. He strides into battle bearing the ancient Shield of Defiance and the devastating Hammer of Angrund, symbols of the strength and resolve of his people."
 #str 14 -- +3
-#prot 6 -- +3 (T5)
+#prot 5
 #weapon 987 -- hammer of angrund
 #armor 346 -- Dwarf Full Helmet
 #armor 342 -- Dwarf Full Plate
@@ -3112,6 +3150,7 @@
 #unsurr 4 -- tier 4 combat leader
 #fixedname "Belegar Ironhammer"
 #itemslots 31872 -- head, body, feet, 3 misc, no hands
+#userestricteditem 900
 #end
 
 
@@ -3161,6 +3200,7 @@
 #itemslots 64640 -- 4 misc, 1 body, 1 feet, 1 head
 #holy
 #startitem 933 -- slayer crown
+#userestricteditem 900
 #end
 
 
@@ -3211,6 +3251,7 @@
 #startage 700
 #maxage 750
 #itemslots 31872 -- no hands, head, body, feet, 3 misc
+#userestricteditem 900
 #end
 
 
@@ -3225,7 +3266,7 @@
 
 [automatically casts Aim and Fire each round of battle, which is an AoE 1 aim buff plus the benefits of the Flaming Arrows spell]"
 #str 15
-#prot 6
+#prot 5
 #weapon 858 --mechanical hand
 #weapon 984 -- Hammer of Swiftness
 #weapon 983 -- Burlok's Arbalest
@@ -3256,6 +3297,7 @@
 #fixedname "Burlok Damminson"
 #itemslots 15488 -- body, feet, head, 2 misc, no hands
 #startitem 939 -- rune of the engineer
+#userestricteditem 900
 #end
 
 
@@ -3274,7 +3316,7 @@
 #weapon 985 -- Thronebearers
 #armor 353 -- dragon crown
 #armor 354 -- armour of skaldour
-#onebattlespell 941 -- Grudgefall
+#onebattlespell 1500 -- Grudgefall
 #mountainsurvival
 #holy
 #darkvision 50
@@ -3303,6 +3345,7 @@
 #heal
 #regeneration 10
 #invulnerable 10
+#userestricteditem 900
 #end
 
 
@@ -3345,6 +3388,7 @@
 #fear 5
 #itemslots 30848 -- no hands, one head, one feet
 #startitem 908 -- thunderhorn
+#userestricteditem 900
 #end
 
 
@@ -3393,15 +3437,9 @@
 #school -1 -- can't be researched
 #end
 
--- copy ziz so I can use the slot for grudgefall
-
-#newspell
-#copyspell 941 -- ziz
-#end
-
 -- Grudgefall
 
-#selectspell 941 -- used to be ziz
+#selectspell 1500 -- used to be ziz
 #copyspell 687 -- Doom
 #name "Grudgefall"
 #descr "This is just Doom but with an MR check, used as a onebattlespell by Thorgrim."

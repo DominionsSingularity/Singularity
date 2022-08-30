@@ -9,6 +9,18 @@
 #dt_weapondrain -- max 5 hp, no fatigue?
 #end
 
+#newweapon 886
+#name "Fly Swarm"
+#dmg 1
+#len 5
+#armornegating
+#poison -- poison res works, but damage is instant
+#dt_cap -- 1 damage only
+#att 2
+#nostr
+#bonus
+#unrepel -- you can't repel flies with a sword
+#end
 
 ---- Charnel Sword (used by blood dragons)
 
@@ -25,12 +37,12 @@
 
 #newweapon 1767
 #name "Vampiric Bite"
-#armorpiercing
+--#armorpiercing
 #len -1
 #bonus
 #att 0
 #def 0
-#dmg 0
+#dmg -2
 #dt_drain
 #pierce
 #end
@@ -56,6 +68,7 @@
 --- Giant Stomp
 
 #newweapon 1761
+#copyweapon 532
 #name "Giant Stomp"
 #dmg 0
 #att 0
@@ -66,8 +79,31 @@
 #aoe 1
 #len 0
 #blunt
+#sizeresist
 #end
 
+--- Wild Swings (giant's huge club attack)
+
+#newweapon 1781
+#copyweapon 532 -- tail sweep, to get the def negates trait
+#name "Cleave"
+#dmg 3
+#aoe 2
+#halfstr
+#sizeresist
+#blunt
+#end
+
+#newweapon 1780
+#name "Wild Swings"
+#dmg 5
+#att 0
+#def 0
+#len 4
+#blunt
+#secondaryeffectalways 1781
+#nratt 2
+#end
 
 ---- Enslavement
 
@@ -85,9 +121,9 @@
 #twohanded
 #slash
 #magic
-#armorpiercing
+--#armorpiercing
 #bonus
-#dmg 10
+#dmg 9
 #len 3
 #end
 
@@ -98,7 +134,7 @@
 #name "Chilling Grasp"
 #cold
 #magic
-#armornegating
+#armorpiercing
 #bonus
 #dmg 0
 #att -1
@@ -113,9 +149,9 @@
 #twohanded
 #slash
 #magic
-#armorpiercing
+--#armorpiercing
 #bonus
-#dmg 10
+#dmg 9
 #len 3
 #secondaryeffectalways 1751 -- fires of damnation
 #end
@@ -138,20 +174,25 @@
 ---- Ancient Sword for grave guard
 
 #newweapon 1752
-#copyweapon 202 -- magic sword - dmg7, att2, def2, len1
+--#copyweapon 202 -- magic sword - dmg7, att2, def2, len1
 #name "Ancient Sword"
 #rcost 2
+#def 1 -- -1
+#att 2
+#dmg 7
+#slash
 #end
 
 
 ---- Ancient Polearm for grave guard
 
 #newweapon 1746
-#copyweapon 107 -- halberd of might
+--#copyweapon 107 -- halberd of might
 #name "Ancient Polearm"
-#dmg 10
+#dmg 9
 #def 1
 #att 1
+#def 2
 #rcost 2
 #end
 
@@ -159,12 +200,14 @@
 ---- Ancient Greatsword for grave guard
 
 #newweapon 1753
-#copyweapon 202 -- magic sword
+--#copyweapon 202 -- magic sword
 #name "Ancient Greatsword"
 #dmg 9
 #len 2
 #def 3
+#att 2
 #rcost 2
+#twohanded
 #end
 
 
@@ -173,8 +216,8 @@
 #newweapon 1754
 #copyweapon 4 -- lance
 #name "Ancient Lance"
-#magic
-#dmg 8
+--#magic
+#dmg 7
 #end
 
 
@@ -223,7 +266,7 @@
 #end
 
 
----- Cairn Scythe
+---- Scythe
 
 #newweapon 1759
 #name "Scythe"
@@ -368,7 +411,7 @@
 #rcost 1
 #gcost 300
 #deathrec 50 -- x6 is 300
-#hp 20
+#hp 11
 #ethereal
 #noleader
 #poorundeadleader
@@ -385,14 +428,14 @@
 #prot 0
 #mr 13
 #itemslots 12288 -- 2 misc only
-#stealthy 10
+#stealthy 0
 #neednoteat
 #float
 #spiritsight
 #pooramphibian
 #mor 12
 #maxage 1000
-#fear 5
+--#fear 5
 #female
 #prec 12
 #assassin
@@ -426,9 +469,9 @@
 #name "Cairn Wraith"
 #descr "Cairn Wraiths are hooded, spectral creatures that dwell in the realms of nightmare, haunting the dreams of men. Lacking a true physical form, they are extremely difficult to defeat with mundane weapons and even the strongest of faith find them difficult to banish. Worse still, their icy touch and spectral scythes are able to bypass even the thickest armour or toughest hide with relative ease. Cairn Wraiths are born from the remains of those humans who dabbled in the arts of sorcery long before the rise of necromancers or the colleges of magic, at a time when the dangers of harnessing the winds were either not understood or frequently ignored. These ancient sorcerers used dark magic to prolong their lives, but over time their physical forms decayed or began to simply fade out of existence, and their tribes entombed them in great cairns all over the world. Their spirits lived on though, sustained by echoing sorcery and drawing energy from the suffering of others. Vampires and Necromancers have learned to bind Cairn Wraiths to their will and are known to deploy them as shock troops capable of slaughtering elites and routing entire regiments. So unnatural are Cairn Wraiths that their presence fills the air with an aura of horror that gnaws at the hearts of even hardened soldiers. While binding Cairn Wraiths is a costly process, they require no payment to carry out their implacable task.
 
-[55 gold cost in Death 3 scales. Requires no gold upkeep]"
-#gcost 115
-#addupkeep -115
+[60 gold cost in Death 3 scales. Requires no gold upkeep]"
+#gcost 120
+#addupkeep -120
 #deathrec 20 -- x6 is 120
 #hp 22
 #att 10
@@ -438,7 +481,7 @@
 #maxage 4000
 #undead
 #ethereal
-#fear 5
+--#fear 5
 #rpcost 24
 #pooramphibian
 #neednoteat
@@ -470,9 +513,9 @@
 #name "Cairn Wraith"
 #descr "Cairn Wraiths are hooded, spectral creatures that dwell in the realms of nightmare, haunting the dreams of men. Lacking a true physical form, they are extremely difficult to defeat with mundane weapons and even the strongest of faith find them difficult to banish. Worse still, their icy touch and spectral scythes are able to bypass even the thickest armour or toughest hide with relative ease. Cairn Wraiths are born from the remains of those humans who dabbled in the arts of sorcery long before the rise of necromancers or the colleges of magic, at a time when the dangers of harnessing the winds were either not understood or frequently ignored. These ancient sorcerers used dark magic to prolong their lives, but over time their physical forms decayed or began to simply fade out of existence, and their tribes entombed them in great cairns all over the world. Their spirits lived on though, sustained by echoing sorcery and drawing energy from the suffering of others. Vampires and Necromancers have learned to bind Cairn Wraiths to their will and are known to deploy them as shock troops capable of slaughtering elites and routing entire regiments. So unnatural are Cairn Wraiths that their presence fills the air with an aura of horror that gnaws at the hearts of even hardened soldiers. While binding Cairn Wraiths is a costly process, they require no payment to carry out their implacable task.
 
-[60 gold cost in Death 3 scales. Requires no gold upkeep]"
-#gcost 120
-#addupkeep -120
+[65 gold cost in Death 3 scales. Requires no gold upkeep]"
+#gcost 125
+#addupkeep -125
 #deathrec 20 -- x6 is 120
 #hp 26
 #att 11
@@ -527,7 +570,7 @@
 #maxage 4000
 #undead
 #ethereal
-#fear 5
+--#fear 5
 #rpcost 1
 #pooramphibian
 #neednoteat
@@ -586,7 +629,7 @@
 #custommagic 22912 10 -- FASDB
 #rpcost 4
 #weapon 238 -- Magic Staff
-#hp 20
+#hp 12
 #mr 17
 #end
 
@@ -599,8 +642,8 @@
 #name "Vargheist"
 #descr "Vargheists are Vampires who, newly given the Blood Kiss, failed to feed and reached a point of near total starvation before being released on a rampage of gluttonous slaughter and blood drinking. Occasionally this happens naturally as a mortal unwilling to accept their new state locks themselves away only to become so desperate to feed they break free from their restraints, but usually it is the doing of a master purposely acting to create a Vargheist. Within every Vampire lurks a bestial chiropterate aspect which wishes only to hunt and feed, a nature which is drawn out through starvation and then greatly accelerated by a sudden glut of blood. The physical form of Vargheists is even more warped than the least humanoid Strigoi or Necrarchs, their clawed arms sprouting batlike wings that allow them to take to the air to hunt down prey. Though they are technically still Vampires their once sharp minds are almost entirely subsumed by their predatory instincts and they can be bound to the will of a master just like lesser undead. Vargheists are most commonly used by the Von Carstein and Strigoi Bloodlines.
 
-[50 gold cost in Death 3 scales]"
-#gcost 80
+[40 gold cost in Death 3 scales]"
+#gcost 70
 #deathrec 10 -- nearly half
 #rpcost 26
 #rcost 1
@@ -626,7 +669,7 @@
 #weapon 33 -- claws
 #weapon 1767 -- vampiric bite
 #regeneration 5 -- vampire basic
-#invulnerable 10
+#invulnerable 7
 #heal
 #darkvision 100
 #end
@@ -763,7 +806,7 @@
 #addupkeep -6
 #deathrec 1
 #rpcost 2
-#rcost 0
+#rcost 1
 #ressize 1
 #montag 6560 -- generic do not use one, to stop this thing having a montag shared with longdead
 #end
@@ -805,11 +848,11 @@
 #name "Revenant"
 #descr "Vampires are quick to make use of the Necromancers, occultists, and other mortals who seek to gain power or knowledge in their employ, but there are times when they need a locus for their dark magic which is entirely bound to them while still having some vestige of a mind of its own. Revenants are animated for this purpose; effectively their body is just that of a typical soulless, but rather than simply being controlled by the Vampire like a barely autonomous puppet, they are instead filled with the faded spirit of a long ago slain practicioner of dark magic. Revenants can command undead and have a basic level of death magic but make very poor researchers, as their spirits are faded and unable to think creatively or form new memories. Revenants require no upkeep.
 
-[75 gold cost in Death 3 scales. Requires no gold upkeep]"
+[90 gold cost in Death 3 scales. Requires no gold upkeep]"
 --gcost 60
-#gcost 150
+#gcost 165
 #deathrec 25
-#addupkeep -150
+#addupkeep -165
 #rpcost 2
 #researchbonus -3
 #end
@@ -824,18 +867,17 @@
 #name "Grave Guard"
 #descr "While the bulk of a Vampire or Necromancer's forces may well consist of ranks of skeletons, shambling zombies, or loping ghouls, at the centre of most armies there can be found an elite unit of undead that stand above the expendable chaff. The Grave Guard, as they are commonly known, are the elite and tireless sentinels of many a master of death magic. They are Wights, master warriors from an ancient time entombed in full battle dress with weapon by their side, blessed with dark sorcery and bound, centuries later, to the will of their master. Grave Guard are notoriously resilient, for they are no brittle skeletons quickly raised to overwhelm with numbers or tie the foe down, they are true warriors surging with fell energy and equipped with arms and armour of great potency, despite its often rusted or tattered appearance. Though their own free will is long gone, their martial instincts and capacity for war are forever bound to their physical remains. Grave Guard require no upkeep and awaken with varied weaponry.
 
-[20 gold cost in Death 3 scales. Requires no gold upkeep]"
+[25 gold cost in Death 3 scales. Requires no gold upkeep]"
 #hp 12
-#prot 3
+#prot 2
 #mor 50
 #mr 13
 #enc 0
 #str 12
 #att 11
 #def 11
---gcost 17
-#gcost 35
-#addupkeep -35
+#gcost 40
+#addupkeep -40
 #deathrec 5
 #rcost 0
 #rpcost 9
@@ -859,7 +901,7 @@
 [Requires no gold upkeep]"
 #gcost 0
 #hp 12
-#prot 3
+#prot 2
 #mor 50
 #mr 13
 #enc 0
@@ -886,7 +928,7 @@
 [Requires no gold upkeep]"
 #gcost 0
 #hp 12
-#prot 3
+#prot 2
 #mor 50
 #mr 13
 #enc 0
@@ -914,7 +956,7 @@
 [Requires no gold upkeep]"
 #gcost 0
 #hp 12
-#prot 3
+#prot 2
 #mor 50
 #mr 13
 #enc 0
@@ -957,13 +999,13 @@
 #name "Black Knight"
 #descr "Black Knights, also known as Longdead Knights or Wight Riders, are a powerful tool at the disposal of many a Vampire commander, though it is thankfully rare that any lord of the undead can field them in great numbers. Much like the Grave Guard they are Wights, the animated remains of ancient warriors who were entombed in full battle gear, but while the ancient human kingdoms had many proud and ferocious warriors, horses were a relatively rare symbol of wealth and power. In life Black Knights were typically the closest warriors of ancient chieftains and kings, men of status whose steeds were ritually slaughtered and entombed alongside them upon their deaths. As such their equipment, though seemingly rusted and worn, is of the finest quality, and their skill at arms is considerable. While finding and reanimating these ancient cavalrymen is expensive, they require no upkeep of gold.
 
-[45 gold cost in Death 3 scales. Requires no gold upkeep]"
---gcost 45
-#gcost 90
-#addupkeep -90
-#deathrec 15
+[65 gold cost in Death 3 scales. Requires no gold upkeep]"
+--gcost 50
+#gcost 140
+#addupkeep -140
+#deathrec 25
 #hp 12
-#prot 3
+#prot 2
 #mor 50
 #mr 13
 #enc 0
@@ -992,12 +1034,12 @@
 #name "Wight King"
 #descr "Wight Kings are the reanimated remains of humans warriors who ruled through strength and guile in ancient times of warfare between hundreds of tribes. Like the Grave Guard and Black Knights who served them in life, they are taken from tombs, cairns, and barrows where they were interred with full arms and armour and have absorbed much death magic over the centuries. Wight Kings make excellent warrior-generals for Vampires who have managed to source their remains, being both skilled and very difficult to destroy. Their equipment, though seemingly rusted and worn, is of the finest quality and invariably inscribed with runes of dark sorcery by the shaman of their tribe. While finding and reanimating these ancient kings is expensive, they require no upkeep of gold. Wight Kings, unlike lesser Wights, retain some degree of their own mind rather than being puppets of the Vampire, though they have no desire to do anything but serve the one who has bound them.
 
-[135 gold cost in Death 3 scales. Requires no gold upkeep]"
+[165 gold cost in Death 3 scales. Requires no gold upkeep]"
 --gcost 130
-#gcost 270
-#addupkeep -270
-#deathrec 45
-#hp 31 -- 3 wounds, t5
+#gcost 330
+#addupkeep -330
+#deathrec 55
+#hp 23 -- 3 wounds, t5
 #prot 5 -- t5
 #mor 30
 #mr 16 -- +2 over black knight for being tier 2
@@ -1527,18 +1569,18 @@
 #gcost 460
 #deathrec 60
 #rpcost 2
-#hp 25 -- W2, T4, supernatural
+#hp 18 -- W2, T4, supernatural
 #size 2
 #prot 2 -- T4
 #regeneration 5 -- half that of dominions troll
-#str 16 -- strength 5
+#str 15 -- strength 5
 #att 14
 #def 14
 #mr 15
 #mor 13 -- confident, but only LD7 in 8th
 #enc 0
 #prec 12
-#mapmove 24 -- flying
+#mapmove 20 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -1560,7 +1602,7 @@
 #weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
 #armor 118 -- Half Helmet
-#invulnerable 10
+#invulnerable 7
 #noriverpass
 #unsurr 2 -- tier 2 combat leader
 #douse 2
@@ -1579,24 +1621,24 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Vampires/Vampire_Carstein_Lesser.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Vampire_Carstein_Lesser2.tga"
 #name "Von Carstein Vampire"
-#descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Von Carsteins, descendents of Vlad Von Carstein, represent something of a balance of the traits of the other four Bloodlines, for they are magically gifted, charming, physically strong, and martially skilled. They are drawn to the idea of creating a new realm of perfect feudal order with the Vampire aristocracy firmly on top and in control, for they regard humans as cattle, but cattle worth protecting. They are fractious and prone to infighting, but no more so than any human aristocracy, and they have proven well able to work together when united under a powerful Vampire such as Vlad or his progeny. Much like the Lahmians, the Von Carsteins are known connoisseurs of blood who typically do not kill their feeding stock, but unlike them will happily indulge their predatory instincts in personally hunting down superior blood vessels, rather than delegating the task. They are also well known for their ability to shift into the form of a cloud of bats to travel great distances, though the process is tiring and they would never use it in battle. Despite their balanced abilities the Von Carsteins have developed certain weaknesses over hundreds of years; namely a compulsive inability to cross running water, a vulnerability to fire, and a reduced resistance to hostile magic and divine symbols. In addition to their considerable necromantic abilities and understanding of blood some have embraced their hidden bestial nature to develop their talents in the magic of the wilds, while others have studied the secretive lore of shadow and wind, or delved further into decadent blood rituals. Even the rank and file members of the Von Carstein aristocracy are terrifyingly powerful, entering battle armed with high quality steel and swirling cloaks of living blood.
+#descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Von Carsteins, descendents of Vlad Von Carstein, represent something of a balance of the traits of the other four Bloodlines, for they are magically gifted, charming, physically strong, and martially skilled. They are drawn to the idea of creating a new realm of perfect feudal order with the Vampire aristocracy in control, for they regard humans as cattle, but cattle worth protecting. They are pron to infighting, but no more so than human aristocracy, and they have proven able to work together when united under a powerful Vampire. Much like the Lahmians, the Von Carsteins are known connoisseurs of blood and typically do not kill their feeding stock, but unlike them will happily indulge their predatory instincts in personally hunting down superior blood vessels. They are also well known for their ability to shift into the form of a cloud of bats to travel great distances, though the process is tiring and they would never use it in battle. Despite their balanced abilities the Von Carsteins have developed certain weaknesses over hundreds of years; namely a compulsive inability to cross running water, a vulnerability to fire, and a reduced resistance to hostile magic and divine symbols. In addition to their considerable necromantic abilities and understanding of blood some have embraced their hidden bestial nature to develop their talents in the magic of the wilds, while others have studied the secretive lore of shadow and wind. Even the rank and file members of the Von Carstein aristocracy are terrifyingly powerful, entering battle armed with high quality steel and swirling cloaks of living blood.
 
 [280 gold cost in Death 3 scales. Gains flight outside of battle]"
 #gcost 460
 #deathrec 60
 #rpcost 2
-#hp 25 -- W2, T4, supernatural
+#hp 18 -- W2, T4, supernatural
 #size 2
 #prot 2 -- T4
 #regeneration 5 -- half that of dominions troll
-#str 16 -- strength 5
+#str 15 -- strength 5
 #att 14
 #def 14
 #mr 15
 #mor 13 -- confident, but only LD7 in 8th
 #enc 0
 #prec 12
-#mapmove 24 -- flying
+#mapmove 20 -- flying
 #ap 16 -- move 6
 #undead
 #neednoteat
@@ -1618,7 +1660,7 @@
 #weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
 #armor 118 -- Half Helmet
-#invulnerable 10
+#invulnerable 7
 #noriverpass
 #unsurr 2 -- tier 2 combat leader
 #douse 2
@@ -1636,17 +1678,17 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Vampires/Vampire_Carstein_Lord.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Vampire_Carstein_Lord2.tga"
 #name "Von Carstein Vampire Lord"
-#descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Von Carsteins, descendents of Vlad Von Carstein, represent something of a balance of the traits of the other four Bloodlines, for they are magically gifted, charming, physically strong, and martially skilled. They are drawn to the idea of creating a new realm of perfect feudal order with the Vampire aristocracy firmly on top and in control, for they regard humans as cattle, but cattle worth protecting. They are fractious and prone to infighting, but no more so than any human aristocracy, and they have proven well able to work together when united under a powerful Vampire such as Vlad or his progeny. Much like the Lahmians, the Von Carsteins are known connoisseurs of blood who typically do not kill their feeding stock, but unlike them will happily indulge their predatory instincts in personally hunting down superior blood vessels, rather than delegating the task. They are also well known for their ability to shift into the form of a cloud of bats to travel great distances, though the process is tiring and they would never use it in battle. Despite their balanced abilities the Von Carsteins have developed certain weaknesses over hundreds of years; namely a compulsive inability to cross running water, a vulnerability to fire, and a reduced resistance to hostile magic and divine symbols. In addition to their considerable necromantic abilities and understand of blood some have embraced their hidden bestial nature to develop their talents in the magic of the wilds, while others have studied the secretive lore of shadow and wind, or delved further into decadent blood rituals. The strongest of the Bloodline are known as Lords and most of them were sired by Vlad or his most notable 'sons' Mannfred and Konrad. In battle they ride into battle atop Nightmare steeds armed with fell blades and swirling cloaks of living blood.
+#descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Von Carsteins, descendents of Vlad Von Carstein, represent something of a balance of the traits of the other four Bloodlines, for they are magically gifted, charming, physically strong, and martially skilled. They are drawn to the idea of creating a new realm of perfect feudal order with the Vampire aristocracy in control, for they regard humans as cattle, but cattle worth protecting. They are pron to infighting, but no more so than human aristocracy, and they have proven able to work together when united under a powerful Vampire. Much like the Lahmians, the Von Carsteins are known connoisseurs of blood and typically do not kill their feeding stock, but unlike them will happily indulge their predatory instincts in personally hunting down superior blood vessels. They are also well known for their ability to shift into the form of a cloud of bats to travel great distances, though the process is tiring and they would never use it in battle. Despite their balanced abilities the Von Carsteins have developed certain weaknesses over hundreds of years; namely a compulsive inability to cross running water, a vulnerability to fire, and a reduced resistance to hostile magic and divine symbols. In addition to their considerable necromantic abilities and understanding of blood some have embraced their hidden bestial nature to develop their talents in the magic of the wilds, while others have studied the secretive lore of shadow and wind. The strongest of the Bloodline are known as Lords and most of them were sired by Vlad or his most notable 'sons' Mannfred and Konrad. In battle they ride into battle atop Nightmare steeds armed with fell blades and swirling cloaks of living blood.
 
-[360 gold cost in Death 3 scales. Loses flight in battle]"
-#gcost 540
+[410 gold cost in Death 3 scales. Loses flight in battle]"
+#gcost 590
 #deathrec 60
 #rpcost 4
-#hp 35 -- W3, T5, supernatural
+#hp 22 -- W3, T5, supernatural
 #size 3
 #prot 4 -- T5
 #regeneration 5 -- half that of dominions troll
-#str 18 -- strength 5
+#str 16 -- strength 5
 #att 15
 #def 15
 #mounted
@@ -1654,7 +1696,7 @@
 #mor 18 -- confident, LD10
 #enc 0
 #prec 12
-#mapmove 24 -- flying
+#mapmove 20 -- flying
 #ap 25
 #undead
 #neednoteat
@@ -1677,7 +1719,7 @@
 #weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
 #armor 118 -- Half Helmet
-#invulnerable 15
+#invulnerable 10
 #noriverpass
 #unsurr 3 -- tier 3 combat leader
 #douse 2
@@ -1698,15 +1740,15 @@
 #name "Von Carstein Vampire Lord"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Von Carsteins, descendents of Vlad Von Carstein, represent something of a balance of the traits of the other four Bloodlines, for they are magically gifted, charming, physically strong, and martially skilled. They are drawn to the idea of creating a new realm of perfect feudal order with the Vampire aristocracy firmly on top and in control, for they regard humans as cattle, but cattle worth protecting. They are fractious and prone to infighting, but no more so than any human aristocracy, and they have proven well able to work together when united under a powerful Vampire such as Vlad or his progeny. Much like the Lahmians, the Von Carsteins are known connoisseurs of blood who typically do not kill their feeding stock, but unlike them will happily indulge their predatory instincts in personally hunting down superior blood vessels, rather than delegating the task. They are also well known for their ability to shift into the form of a cloud of bats to travel great distances, though the process is tiring and they would never use it in battle. Despite their balanced abilities the Von Carsteins have developed certain weaknesses over hundreds of years; namely a compulsive inability to cross running water, a vulnerability to fire, and a reduced resistance to hostile magic and divine symbols. In addition to their considerable necromantic abilities and understand of blood some have embraced their hidden bestial nature to develop their talents in the magic of the wilds, while others have studied the secretive lore of shadow and wind, or delved further into decadent blood rituals. The strongest of the Bloodline are known as Lords and most of them were sired by Vlad or his most notable 'sons' Mannfred and Konrad. In battle they ride into battle atop Nightmare steeds armed with fell blades and swirling cloaks of living blood.
 
-[360 gold cost in Death 3 scales. Gains flight outside of battle]"
-#gcost 540
+[410 gold cost in Death 3 scales. Gains flight outside of battle]"
+#gcost 590
 #deathrec 60
 #rpcost 4
-#hp 35 -- W3, T5, supernatural
+#hp 22 -- W3, T5, supernatural
 #size 3
 #prot 4 -- T5
 #regeneration 5 -- half that of dominions troll
-#str 18 -- strength 5
+#str 16 -- strength 5
 #att 15
 #def 15
 #mounted
@@ -1714,7 +1756,7 @@
 #mor 18 -- confident, LD10
 #enc 0
 #prec 12
-#mapmove 24 -- flying
+#mapmove 20 -- flying
 #ap 25
 #undead
 #neednoteat
@@ -1737,7 +1779,7 @@
 #weapon 1767 -- vampiric bite
 #armor 19 -- Full plate Mail
 #armor 118 -- Half Helmet
-#invulnerable 15
+#invulnerable 7
 #noriverpass
 #unsurr 3 -- tier 3 combat leader
 #douse 2
@@ -1822,6 +1864,7 @@
 #secondshape 4020 -- deathshape
 #batstartsum4 4011 -- sylvania hound
 #rpcost 1
+#patrolbonus 5
 #end
 --Deathshape
 #newmonster 4020
@@ -2194,24 +2237,24 @@
 #name "Blood Drake"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Blood Dragons, descendents of Abhorash, elevate martial skill, prowess, and honour above all else. Though they have the same natural talent for dark magic as others of their kind, they have little interest in studying arcane lore and have allowed their magical abilities to atrophy over time, but they make up for this with a constant drive to hone their skill with arms and tactical understanding. All Vampires are driven by a consuming ambition and in the case of Blood Dragons this is channelled into a ruthless desire to be the perfect warrior. As such, Vampires of the Blood Dragon line are more interested in seeking out challenging foes to overcome than building an empire, but they have a surprising respect for mortal warriors of skill and honour and will establish Knightly Orders from which to initiate more of their kind and to provide them with an army which approaches their high standards. Such Orders are well aware of the supernatural nature of their master and commonly mortal men will find themselves fighting alongside the Vampire's undead servants. Blood Drakes are full Vampires of Abhorash's line, but have not yet earned the right to call themselves full Blood Dragons and build their own legacy. They ride into battle on Nightmare mounts created by infusing suitable destriers with dark magic, usually at the head of a force of equally well equipped Blood Knights.
 
-[175 gold cost in Death 3 scales. Does not require lab to recruit]"
-#gcost 220
+[210 gold cost in Death 3 scales. Does not require lab to recruit]"
+#gcost 255
 #deathrec 15
 #rpcost 2
 #rcost 14
 #ressize 2
-#hp 28 -- little bit tougher than a carstein
+#hp 21 -- little bit tougher than a carstein
 #size 3
-#prot 4 -- +1 over carstein, +1 for berserk cav
+#prot 3
 #regeneration 5 -- half that of dominions troll
-#str 18 -- +2 over carstein
+#str 16 -- +2 over carstein
 #att 16 -- +1 over carstein, +1 for berserk cav
 #def 15 -- +1 over carstein
 #mr 15
 #mor 16 -- +3 over carstein
 #enc 0
 #prec 12
-#mapmove 26 -- really good horse, 2 less than knight of avalon
+#mapmove 22
 #ap 28 -- 2 slower than KoA
 #undead
 #neednoteat
@@ -2229,10 +2272,10 @@
 #weapon 615 -- improved nostr bonus hoof
 #weapon 1760 -- Blood Sword
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- half helmet
 #armor 3 -- kite shield
 #mounted
-#invulnerable 10
+#invulnerable 7
 #unsurr 2 -- tier 2 combat leader
 #researchbonus -6
 #noreqlab
@@ -2251,24 +2294,24 @@
 #name "Blood Dragon"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Blood Dragons, descendents of Abhorash, elevate martial skill, prowess, and honour above all else. Though they have the same natural talent for dark magic as others of their kind, they have little interest in studying arcane lore and have allowed their magical abilities to atrophy over time, but they make up for this with a constant drive to hone their skill with arms and tactical understanding. All Vampires are driven by a consuming ambition and in the case of Blood Dragons this is channelled into a ruthless desire to be the perfect warrior. As such, Vampires of the Blood Dragon line are more interested in seeking out challenging foes to overcome than building an empire, but they have a surprising respect for mortal warriors of skill and honour and will establish Knightly Orders from which to initiate more of their kind and to provide them with an army which approaches their high standards. Such Orders are well aware of the supernatural nature of their master and commonly mortal men will find themselves fighting alongside the Vampire's undead servants. In addition to their relative magical weakness, this Bloodline is prone to entering a state of berserk frenzy should they be wounded in battle, for their pride simply cannot stand such an affront. Only the oldest and most powerful of the Bloodline are permitted to take the title of Blood Dragon. These Vampires have cooled some of their lust for blood and have greater inherent magical abilities in addition to their supernatural physical prowess and near perfected martial skills. They ride into battle on the backs of Winged Nightmares, armed with fell magical weaponry, and are virtually unmatched on the battlefield.
 
-[360 gold cost in Death 3 scales. Does not require lab to recruit]"
+[410 gold cost in Death 3 scales. Does not require lab to recruit]"
 #gcost 450
 #deathrec 30
 #rpcost 4
 #rcost 14
 #ressize 3
-#hp 50 -- +5 over carstein, then +10 for the mount
+#hp 28
 #size 4 -- flying horse
-#prot 5 -- +1 over carstein
+#prot 4
 #regeneration 5 -- half that of dominions troll
-#str 20 -- +2 over carstein
+#str 18 -- +2 over carstein
 #att 16 -- +1 over carstein
 #def 16 -- +1 over carstein
 #mr 17
 #mor 20 -- +2 over carstein
 #enc 0
 #prec 12
-#mapmove 26 -- flying
+#mapmove 22 -- flying
 #ap 28 -- 2 slower than KoA
 #undead
 #neednoteat
@@ -2285,10 +2328,10 @@
 #weapon 615 -- improved nostr bonus hoof
 #weapon 1768 -- charnel sword
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- half helmet
 #armor 3 -- kite shield
 #mounted
-#invulnerable 15
+#invulnerable 10
 #unsurr 3 -- tier 3 combat leader
 #flying
 #researchbonus -6
@@ -2317,7 +2360,7 @@
 #hp 15 -- vampire troop
 #ressize 2
 #size 3
-#prot 3 -- +1 berserk cav
+#prot 2
 #str 14
 #att 14 -- +1 berserk cav
 #def 13
@@ -2664,6 +2707,7 @@
 #name "Noble Consort"
 #descr "While the Lahmian Sisterhood has spent centuries gaining wealth, power, and political influence across the Old World, in the long term all of this is simply a means to end. The ultimate goal of the Lahmians is to lead a great migration of humans to the ruined city of Lahmia and see it restored to its former glory, with a large population of humans as a source of food, labour, and worship. To this end the Sisterhood has revealed their vampiric nature to select noble houses and convinced them to prepare the common folk for the coming migration and to gather more wealth and territory in the name of Lahmia, promising them a paradise of delights free from the laws of kings and moralising priests and perhaps even eternal life in the Lahmian Bloodline. The strongest military force the aristocratic houses can muster is drawn from their own ranks; noble heavy cavalry born and bred to find glory, wealth, and titles in times of war. While Lahmians are masters of seduction and manipulation, they are somewhat susceptible to indulging in love themselves and some have chosen to take mortal men as Consorts. These chosen men are often given forces to command in battle and lavished with favours from their mistress, but have not yet been turned either because their vampiric lover prefers them to remain mortal, or has not received permission to bring them into the Bloodline."
 #hp 20
+#prot 2
 #size 3
 #mr 12 -- tier 2 leader
 #mor 15
@@ -2679,7 +2723,7 @@
 #armor 3 -- kite shield
 #armor 214 -- golden armour
 #ressize 2
-#rcost 8
+#rcost 20
 #rpcost 2
 #gcost 100
 #mounted
@@ -2718,20 +2762,20 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Vampires/Vampire_Lahmian_First2.tga"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Lahmians, descendents of the first Vampire, Neferata, are focused on the natural vampiric ability to manipulate and charm mortals. The Lahmians are arguably the most cohesive Bloodline, still ruled by their founder and almost all committed to a single faction, the Lahmian Sisterhood. The Sisterhood's goal is to reclaim their lost city of Lahmia, to restore it to its former glory with a population of obedient mortals, and ultimately control the world. Lahmians are connoisseurs of human blood with an innate talent for blood magic in addition to their necromantic powers and remaining knowledge of the arcane arts of ancient Khemri. They are well known for their incredible ability to beguile, charm, manipulate, or simply hypnotically dominate mortals, skills which they rigorously sharpen by competing with fellow Sisters in the world of courtly affairs and aristocratic politics. Lahmians are not so physically powerful as their fellows but are exceptionally fast and graceful and would be difficult for any but the most elite opponent to strike down. Lahmians of the First Circle are few in number but extremely powerful, being the most trusted agents of Neferata.
 
-[380 gold cost in Death 3 scales]"
-#gcost 500
+[440 gold cost in Death 3 scales]"
+#gcost 560
 #deathrec 40
 #rpcost 4
 #rcost 1
 #weapon 595 -- Hypnotise
 #weapon 1747 -- Enslavement
 #weapon 9 -- Dagger
-#weapon 719 -- bonus 0 dmg str added life drain
-#hp 28 -- quite a bit less than carstein
+--#weapon 719 -- bonus 0 dmg str added life drain
+#hp 18 -- quite a bit less than carstein
 #regeneration 5 -- half that of dominions troll
 #heal
 #prot 0
-#str 15
+#str 14
 #mor 18
 #mr 18 -- specifically trained to withstand holy symbols etc
 #awe 3 -- strong but not extremely so
@@ -2741,9 +2785,9 @@
 #prec 12
 #seduce 13 -- 3 above standard
 #spy
-#stealthy 30 -- spy +10
+#stealthy 10 -- spy +10
 #enc 0
-#mapmove 20
+#mapmove 18
 #ap 14
 #undead
 #neednoteat
@@ -2753,7 +2797,7 @@
 #magicskill 7 3 -- B3
 #custommagic 2432 100 -- AFS
 #custommagic 2432 100 -- AFS
-#invulnerable 15
+#invulnerable 10
 #goodleader
 #expertundeadleader
 #unsurr 3 -- tier 3 combat leader
@@ -2781,12 +2825,12 @@
 #weapon 595 -- Hypnotise
 #weapon 1747 -- Enslavement
 #weapon 9 -- Dagger
-#weapon 719 -- bonus 0 dmg str added life drain
-#hp 18
+--#weapon 719 -- bonus 0 dmg str added life drain
+#hp 14
 #regeneration 5 -- half that of dominions troll
 #heal
 #prot 0
-#str 14
+#str 13
 #mor 14
 #mr 16
 #awe 2
@@ -2796,9 +2840,9 @@
 #prec 12
 #seduce 11 -- 1 above standard
 #spy
-#stealthy 20 -- spy level
+#stealthy 0 -- spy level
 #enc 0
-#mapmove 20
+#mapmove 18
 #ap 14
 #undead
 #neednoteat
@@ -2808,13 +2852,13 @@
 #magicskill 7 2 -- B2
 #custommagic 6528 100 -- AFSD
 #custommagic 2432 100 -- AFS
-#invulnerable 10
+#invulnerable 7
 #goodleader
 #expertundeadleader
 #unsurr 2 -- tier 2 combat leader
 #startage 500
 #maxage 10000
-#scalewalls
+--#scalewalls
 #darkvision 100
 #end
 
@@ -2837,9 +2881,9 @@
 #name "Blood Revenant"
 #descr "Necrarchs experiment obsessively with uses of death magic and the creation of new forms of the undead. One of their most successful and widely used creations is the Blood Revenant, a typical Revenant infused with a mortal heart cursed to forever pump diseased blood through the corpse. Blood Revenants trade their necromantic ability for an affinity for simple blood magic. This is useful to the Necrarchs because while they very rarely drink mortal blood any more, they always need fresh blood slaves for their experiments. Like other Revenants they make poor researchers but require no upkeep.
 
-[75 gold cost in Death 3 scales. Does not require gold upkeep]"
-#gcost 150
-#addupkeep -150
+[90 gold cost in Death 3 scales. Does not require gold upkeep]"
+#gcost 165
+#addupkeep -165
 #deathrec 25
 #rpcost 2
 #researchbonus -3
@@ -2872,7 +2916,7 @@
 #ap 10 -- -8
 #rpcost 40
 #rcost 10
-#weapon 1082 -- Wild Swings
+#weapon 1780 -- Wild Swings
 #weapon 1761 -- Giant Stomp
 #maxage 500
 #coldres 15
@@ -2900,10 +2944,10 @@
 #name "Harvester"
 #descr "Necrarchs experiment obsessively with uses of death magic and the creation of new forms of the undead. Though each Necrarch will have created his own unique abominations, all tend to make use of a similar monstrostrous amalgamation of bones known as a Harvester. Harvesters combine the remains of several creatures animated by powerful magic and give the task of tirelessly hunting down and harvesting specimen parts to fuel further unholy experiments. They are built for speed and power, usually quadrupedal and large, and armed with a crude oversized scythe. The Death Cultists that congregate around Necrarch strongholds see the Harvesters as the will of death itself made manifest and as such they have become sacred to those deluded souls. Harvesters are expensive to construct but require no upkeep of gold.
 
-[45 gold cost in Death 3 scales. Does not require gold upkeep]"
-#gcost 90
+[60 gold cost in Death 3 scales. Does not require gold upkeep]"
+#gcost 120
 #deathrec 15
-#addupkeep -90
+#addupkeep -120
 #hp 35
 #size 4
 #prot 7
@@ -2940,15 +2984,15 @@
 #name "Necrarch"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Necrarchs, descendents of W'Soran, once High Priest of the City of Lahmia, pursue arcane knowlege and mastery over life and death over all else. Like any of their kind the Vampires of the Necrarch Bloodline are physically far superior to lesser mortals, but they are the weakest in body of all the Vampire lineages, for they rarely feed on mortal blood and have channeled their unholy energies into intellectual pursuits and the development of powerful magic. Necrarchs tend to be very reclusive, sequestering themselves in well protected holdings while they conduct magical experiments and pore over ancient tomes. While the Vampires of other Bloodlines may seek to restore fallen cities, rule over mortal empires, or elevate worthy humans to their ranks, the Necrarchs are concerned only with the acquisition of knowledge and the ultimate triumph over life and death. Despite their disinterest in mortals they are known to make use of Necromancers and even take some as Acolytes under their direct tutelage, as humans make very useful agents and researchers, but their forces overwhelmingly consist of undead bound to their will and their skill at raising a wide range of undead is staggering. Though their bodies are withered and particularly vulnerable to flame, Necrarchs are powerful mages capable of quickly turning a battle and supplement their potent necromancy with knowledge of other winds of magic. The dark magic radiating from a Necrarch alone has been known to force even seasoned soldiers to turn and flee in terror.
 
-[290 gold cost in Death 3 scales]"
-#gcost 440
+[310 gold cost in Death 3 scales]"
+#gcost 460
 #deathrec 50
-#rpcost 2
-#hp 20 -- W2, T4, supernatural, frail
+#rpcost 4
+#hp 15 -- W2, T4, supernatural, frail
 #size 2
 #prot 2 -- T4
 #regeneration 5 -- half that of dominions troll
-#str 14 --
+#str 13 --
 #att 12
 #def 12
 #mr 17
@@ -2976,7 +3020,7 @@
 #weapon 9 -- dagger
 #weapon 719 -- life drain
 #armor 158 -- robes
-#invulnerable 10
+#invulnerable 7
 #itemslots 276614 -- no body, head can only have crowns
 #fear 5
 #spiritsight
@@ -2991,15 +3035,15 @@
 #name "Necrarch Ancient"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Necrarchs, descendents of W'Soran, once High Priest of the City of Lahmia, pursue arcane knowlege and mastery over life and death over all else. Like any of their kind the Vampires of the Necrarch Bloodline are physically far superior to lesser mortals, but they are the weakest in body of all the Vampire lineages, for they rarely feed on mortal blood and have channeled their unholy energies into intellectual pursuits and the development of powerful magic. Necrarchs tend to be very reclusive, sequestering themselves in well protected holdings while they conduct magical experiments and pore over ancient tomes. While the Vampires of other Bloodlines may seek to restore fallen cities, rule over mortal empires, or elevate worthy humans to their ranks, the Necrarchs are concerned only with the acquisition of knowledge and the ultimate triumph over life and death. Despite their disinterest in mortals they are known to make use of Necromancers and even take some as Acolytes under their direct tutelage, as humans make very useful agents and researchers, but their forces overwhelmingly consist of undead bound to their will and their skill at raising a wide range of undead is staggering. Though their bodies are withered and particularly vulnerable to flame, Necrarchs are powerful mages capable of quickly turning a battle and supplement their potent necromancy with knowledge of other winds of magic. The dark magic radiating from a Necrarch alone has been known to force even seasoned soldiers to turn and flee in terror. Necrarch Ancients are the oldest and most powerful of their Bloodline and truly powerful mages. They are accompanied by skeletal familiars invested with death magic which can be withdrawn as needed in battle.
 
-[400 gold cost in Death 3 scales]"
-#gcost 610
+[520 gold cost in Death 3 scales]"
+#gcost 730
 #deathrec 70
 #rpcost 4
-#hp 30
+#hp 22
 #size 2
 #prot 4
 #regeneration 5 -- half that of dominions troll
-#str 16
+#str 14
 #att 13
 #def 13
 #mr 18
@@ -3028,7 +3072,7 @@
 #weapon 719 -- life drain
 #weapon 1756 -- familiar's scythe
 #armor 158 -- robes
-#invulnerable 15
+#invulnerable 10
 #itemslots 276614 -- no body, head can only have crowns
 #fear 5
 #tmpdeathgems 2
@@ -3053,7 +3097,7 @@
 #rpcost 2
 #prec 11
 #mr 16
-#hp 16
+#hp 11
 #magicskill 5 2 -- 2 Death
 #custommagic 23936 100 -- FAESBD
 #custommagic 19840 100 -- FAESB
@@ -3249,10 +3293,10 @@
 #gcost 350
 #deathrec 35
 #rpcost 2
-#hp 46
+#hp 31
 #size 3
 #prot 6
-#str 21
+#str 18
 #att 16 -- they have hatred every round, so reroll missed every round!
 #def 15
 #mr 16
@@ -3279,7 +3323,7 @@
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
 #weapon 1767 -- Vampiric Bite
-#invulnerable 10
+#invulnerable 7
 #itemslots 274560 -- head slot for crown only and 2 misc
 #darkvision 100
 #shatteredsoul 5
@@ -3305,10 +3349,10 @@
 #gcost 360
 #deathrec 35
 #rpcost 2
-#hp 50 -- +4
+#hp 33
 #size 4
-#prot 7 -- +1
-#str 22 -- +1
+#prot 6
+#str 19 -- +1
 #att 16 -- they have hatred every round, so reroll missed every round!
 #def 15
 #mr 16
@@ -3335,7 +3379,7 @@
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
 #weapon 1767 -- Vampiric Bite
-#invulnerable 10
+#invulnerable 7
 #itemslots 274560 -- head slot for crown only and 2 misc
 #spiritsight
 #blind
@@ -3359,15 +3403,15 @@
 #name "True Strigoi"
 #descr "The five Vampire Bloodlines have diverged considerably from a common origin in terms of culture, physical form, temperament, and supernatural ability. The Strigoi are descended from Ushoran, Prince of Lahmia and younger brother of Neferata, the first Vampire. Having been denied the Elixir of Life out of petty spite, Ushoran stole it and founded his own Bloodline, a crime for which the Strigoi would pay for hundreds of years as the other Bloodlines took every opportunity to persecute and ostracise them. In desperation after the fall of their haven of Strigos, the Strigoi turned to their inner bestial nature to survive and became monstrous creatures, physically mighty even by the standards of Vampires but a far cry from their former sophistication. Though most Strigoi have descended into a state of near feral madness, some of the oldest of their Bloodline have retained or recovered their sanity and now seek to restore Strigos to its former glory, having arranged an uneasy truce with the other Bloodlines. True Strigoi wear some of the armour their former home was famed for and are far more cunning and magically adept than their fallen kin. They feed on human blood rather than flesh or corpses but are just as difficult to kill and physically powerful. They too have a natural command of death magic and a connection with the wilds and the earth born from centuries spent on the run from their fellows.
 
-[360 gold cost in Death 3 scales]"
-#gcost 465
+[410 gold cost in Death 3 scales]"
+#gcost 515
 #deathrec 35
 #rpcost 4
-#hp 42
+#hp 28
 #size 3
 #prot 5
 #regeneration 10
-#str 21
+#str 18
 #att 16 -- they have hatred every round, so reroll missed every round!
 #def 15
 #mr 18
@@ -3397,7 +3441,7 @@
 #weapon 43 -- Poisoned Claw
 #weapon 1767 -- Vampiric Bite
 #armor 368 -- armour of strigos
-#invulnerable 15
+#invulnerable 10
 #darkvision 100
 #unsurr 3
 #darkvision 100
@@ -3448,6 +3492,54 @@
 #darkvision 50
 #slave
 #reclimit 5
+#end
+
+
+----------- SUMMONS
+
+-- Zombie Dragon
+
+#newmonster 3730
+#spr1 "./Sombre_Warhammer/Warhammer_Vampires/Dragon_Zombie.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Vampires/Dragon_Zombie2.tga"
+#name "Zombie Dragon"
+#descr "Dragons are amongst the oldest and most powerful of all creatures, having dwelt in the world long before the arrival of Chaos and crossed the skies when none of the mortal races of Men, Elves, or Dwarfs yet existed. Though they are now rare indeed they live large in the tales of every culture, typically as cruel and destructive forces, bringers of death and destruction. Even a slain Dragon will take many centuries to fully rot away, even longer if they manage to return to their lair mortally wounded and die in their slumber. As such they are prized finds for powerful necromancers, as even as zombies they retain much of their power and make exceptionally useful puppets. Necromancers typically avoid close combat, but Vampire Lords with access to a Zombie Dragon will often ride it into battle. Despite their tattered wings Zombie Dragons are able to fly using the dark necromantic energy coursing through their decaying form and though their lungs have long stilled they are capable of breathing forth a torrent of pestilent death."
+#size 6
+#prot 16 -- vanilla dragon -2
+#hp 99
+#att 11
+#def 9
+#str 24
+#prec 8
+#enc 0
+#mapmove 34
+#ap 16 -- celestial dragon
+#mr 18 -- celestial dragon
+#mor 50 -- mindless
+#weapon 254 -- plague breath
+#weapon 886 -- fly swarm
+#weapon 20 -- bite
+#weapon 33 -- claws
+#weapon 532 -- tail sweep
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 18000
+#flying
+#pooramphibian
+#undead
+#fear 8
+#itemslots 12288 -- 2 misc
+#cleanshape
+--nametype ??
+#shockres 5
+#fireres 5
+#poisonres 15
+#coldres 15
+#inanimate
+#neednoteat
+#spiritsight
+--noheal
 #end
 
 
@@ -3518,7 +3610,7 @@ Capital Bonus: +2 Blood Slave income.
 Fort Commanders: Von Carstein Vampire, Minor and High Priests.
 Fort Troops: Various human infantry with a second Soulless form, Fell Bat, Crypt Ghoul.
 Magic: Strong death and decent blood with access to air and nature."
-#hp 25 -- W2, T4, supernatural
+#hp 24 -- W2, T4, supernatural
 #size 2
 #prot 2 -- T4
 #regeneration 5 -- half that of dominions troll
@@ -3551,7 +3643,7 @@ Magic: Strong death and decent blood with access to air and nature."
 #weapon 1767 -- Vampiric Bite
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
-#invulnerable 10
+#invulnerable 7
 #noriverpass
 #unsurr 2 -- tier 2 combat leader
 #douse 2
@@ -3607,7 +3699,7 @@ Magic: Strong death with access to nature and earth."
 #weapon 43 -- Poisoned Claw
 #weapon 43 -- Poisoned Claw
 #weapon 1767 -- Vampiric Bite
-#invulnerable 10
+#invulnerable 7
 #itemslots 274560 -- head slot for crown only and 2 misc
 #darkvision 100
 #shatteredsoul 5
@@ -3668,7 +3760,7 @@ Magic: Very strong death ."
 #weapon 9 -- dagger
 #weapon 719 -- life drain
 #armor 158 -- robes
-#invulnerable 10
+#invulnerable 7
 #itemslots 276614 -- no body, head can only have crowns
 #fear 5
 #allrange 1
@@ -3722,7 +3814,7 @@ Magic: Strong blood and decent death with access to fire, astral, air."
 #magicskill 7 2 -- B2
 #custommagic 6528 100 -- AFSD
 #custommagic 2432 100 -- AFS
-#invulnerable 10
+#invulnerable 7
 #goodleader
 #expertundeadleader
 #unsurr 2 -- tier 2 combat leader
@@ -3749,7 +3841,7 @@ Capital Bonus: Enter to gain xp site, resource bonus.
 Fort Commanders: Blood Drake Vampire, Death Cultist minor priest
 Fort Troops: Human medium infantry, human medium and heavy cavalry, vampiric Blood Knight elite cavalry.
 Magic: Weak death and blood."
-#hp 28 -- little bit tougher than a carstein
+#hp 26
 #size 3
 #prot 4 -- +1 over carstein, +1 berserk cav
 #regeneration 5 -- half that of dominions troll
@@ -3778,10 +3870,10 @@ Magic: Weak death and blood."
 #weapon 615 -- improved nostr bonus hoof
 #weapon 1768 -- Charnel Sword
 #armor 19 -- Full plate Mail
-#armor 21 -- Full Helmet
+#armor 118 -- half helmet
 #armor 3 -- kite shield
 #mounted
-#invulnerable 10
+#invulnerable 7
 #unsurr 2 -- tier 2 combat leader
 #researchbonus -6
 #noreqlab
@@ -3845,7 +3937,7 @@ Magic: Weak death and blood."
 #weapon 1767 -- Vampiric Bite
 #armor 378 -- Armour of Templehof
 #armor 118 -- Half Helmet
-#invulnerable 15
+#invulnerable 10
 #noriverpass
 #unsurr 3 -- tier 3 combat leader
 #douse 2
@@ -3908,7 +4000,7 @@ Magic: Weak death and blood."
 #weapon 1767 -- Vampiric Bite
 #armor 378 -- Armour of Templehof
 #armor 118 -- Half Helmet
-#invulnerable 15
+#invulnerable 10
 #noriverpass
 #unsurr 3 -- tier 3 combat leader
 #douse 2
@@ -3922,8 +4014,6 @@ Magic: Weak death and blood."
 #itemslots 12416 -- head and 2 misc only
 #ambidextrous 3
 #end
-
-
 
 
 
@@ -3969,7 +4059,7 @@ Magic: Weak death and blood."
 #weapon 1767 -- Vampiric Bite
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
-#invulnerable 15
+#invulnerable 10
 #unsurr 4 -- tier 4 combat leader
 #douse 2
 #flying
@@ -4024,7 +4114,7 @@ Magic: Weak death and blood."
 #weapon 1767 -- Vampiric Bite
 #armor 19 -- Full plate Mail
 #armor 21 -- Full Helmet
-#invulnerable 15
+#invulnerable 10
 #unsurr 4 -- tier 4 combat leader
 #douse 2
 #firstshape 4123
@@ -4078,7 +4168,7 @@ Magic: Weak death and blood."
 #magicskill 5 2 -- D2
 #magicskill 7 3 -- B3
 #magicskill 1 1 -- A1
-#invulnerable 15
+#invulnerable 10
 #goodleader
 #expertundeadleader
 #unsurr 3 -- tier 3 combat leader
@@ -4137,7 +4227,7 @@ Magic: Weak death and blood."
 #magicskill 5 2 -- D2
 #magicskill 7 3 -- B3
 #magicskill 1 1 -- A1
-#invulnerable 15
+#invulnerable 10
 #goodleader
 #expertundeadleader
 #unsurr 3 -- tier 3 combat leader
@@ -4177,6 +4267,7 @@ Death Recruitment: Many of your recruitables are discounted in Death scales. Rem
 #nation 113
 #req_unique 1
 #rarity 5
+#addsite 1527 -- bloodline selection
 #end
 
 
@@ -4621,6 +4712,7 @@ Death Recruitment: Many of your recruitables are discounted in Death scales. Rem
 -- SITES
 -------------------------------------------------------------------------
 
+
 -- generic Start site
 
 #newsite 1520
@@ -4834,7 +4926,7 @@ Death Recruitment: Many of your recruitables are discounted in Death scales. Rem
 #homecom 4064 -- Cairn Wraith
 #homecom 4059 -- Necrarch Ancient
 #homemon 4063 -- Harvester
-#mon 4120 -- corpse giant
+#homemon 4120 -- corpse giant
 #end
 
 
@@ -5000,7 +5092,8 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 #brief "A nation of powerful Vampires ruling over mortals and legions of undead servants. Each fort must be granted to one of five Bloodlines, each of which has unique strengths and weaknesses."
 #fortera 2
 #startsite "Legacy of Nagash" -- guarantees 4 death gems no matter what bloodline you have in your cap
-#startsite "Bloodline Selection" -- so they don't have to wait a turn
+--startsite "Bloodline Selection" -- so they don't have to wait a turn -- removed this to free up a site slot, they get it via event instead
+--futuresite ??? -- Vampiria Summons -- don't have enough futuresite slots to do this
 #futuresite 1568 -- carstein fort recruits
 #futuresite 1569 -- carstein cap recruits
 #futuresite 1571 -- blood dragon fort recruits
@@ -5096,6 +5189,9 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 #addrecunit 4117 -- Longdead Horseman
 #addrecunit 4065 -- grave guard
 #addrecunit 4054 -- black knight
+--addrecunit 3730 -- zombie dragon
+--addrecunit 4120 -- corpse giant
+
 
 -- Commanders
 
@@ -5480,6 +5576,7 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 
 
 
+
 ----- BLOOD
 
 #newspell
@@ -5665,6 +5762,22 @@ Mechanics: Each fort can be granted to a Bloodline, altering recruitment options
 #pathlevel 0 4
 #fatiguecost 800
 #damage 4120 -- corpse giant
+#nreff 1
+#end
+
+
+---- Create Zombie Dragon
+
+#newspell
+#copyspell 877 -- reanimation
+#name "Create Zombie Dragon"
+#descr "Through a supreme act of necromantic power, the caster creates a mighty Zombie Dragon from the slowly decaying form of one of the mightiest and most ancient creatures the world has ever known. Though less powerful in death, this mindless puppet of the necromancer is still terrifying indeed, capable of blasting its foes with a torrent of pestilent death or simply tearing them apart with its claws and teeth."
+#details "Summons one Zombie Dragon as a troop."
+#restricted 113
+#researchlevel 6
+#pathlevel 0 4
+#fatiguecost 1800
+#damage 3730 -- zombie dragon
 #nreff 1
 #end
 

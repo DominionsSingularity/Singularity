@@ -87,6 +87,7 @@
 #att 2
 #def 2
 #dmg 8
+#bonus
 #end
 
 --- Fearfrost (reviewed)
@@ -1325,38 +1326,6 @@
 #end
 
 
----- Kossar (middenheim)
-
-#newmonster 7568
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Midden_Kossar.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_Kossar2.tga"
-#name "Kossar"
-#descr "The Kossars were an Ungol tribe who worked as mercenaries against the other Ungols at the time of the Gospodar invasion. They had adopted a very unique style of fighting with bow and axe, which they then went on to teach to Gospodar warriors. Kossar regiments are now a combined force of Ungols and Gospodar soldiers, trained and kept as a standing Kislevite force. They are well drilled and well able to engage the enemy at range or in brutal close quarters combat."
-#hp 11
-#size 2
-#prot 0
-#mor 12
-#mr 10
-#enc 3
-#str 11
-#att 11
-#def 10
-#prec 11
-#mapmove 16 -- disciplined
-#snow
-#ap 12
-#gcost 14
-#rpcost 14
-#rcost 1
-#armor 11 -- Ring mail Hauberk
-#armor 119 -- Reinforced Leather cap
-#weapon 264 -- composite bow
-#weapon 18 -- Battleaxe
-#nametype 146 -- rus male
-#coldres 3
-#end
-
-
 ---- Huntsman (middenheim)
 
 #newmonster 7566
@@ -1397,7 +1366,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Empire/Midden_Free Company.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_Free Company2.tga"
 #name "Free Infantryman"
-#descr "Free Infantry is a polite term for the roving bands of footloose young men, ex-soldiers, adventurers and lower quality sellswords which can be found all across The Empire and as far afield as the Border Princes. Unable to accept either peaceful civilian life or the disciplined and often boring role of a State Troop, they seek adventure in the armies of Counts or Burgomeisters where they fight as a mob of light infantry. The Counts are only too glad to recruit these irregulars, as they are a ready source of expendable bodies and if left to their own devices would surely cause widespread unrest. Free Infantry are cheaper to recruit in provinces gripped by Turmoil."
+#descr "Free Infantry is a polite term for the roving bands of footloose young men, ex-soldiers, adventurers and lower quality sellswords which can be found all across The Empire and as far afield as the Border Princes. Unable to accept either peaceful civilian life or the disciplined and often boring role of a State Troop, they seek adventure in the armies of Counts or Burgomeisters where they fight as a mob of light infantry. The Counts are only too glad to recruit these irregulars, as they are a ready source of expendable bodies and if left to their own devices would surely cause widespread unrest. Armies of Middenheim in particular never see any shortage of available Free Infantry, for the region is often beset by conflict and has a strong martial culture. Free Infantry are cheaper to recruit in provinces gripped by Turmoil."
 #hp 10
 #size 2
 #prot 0
@@ -1410,8 +1379,8 @@
 #prec 10
 #mapmove 14
 #ap 12
-#gcost 10
-#rpcost 9
+#gcost 9
+#rpcost 8
 #rcost 1
 #ambidextrous 2
 #armor 15 -- Full Leather Armor
@@ -1677,42 +1646,6 @@
 #end
 
 
----- Winged Lancer
-
-#newmonster 7509
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Lancer.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Lancer2.tga"
-#name "Winged Lancer"
-#descr "The Winged Lancers of Kislev are a Gospodar tradition dating back hundreds of years. They are famed for their elaborate armour, particularly the eagle feather 'wings' mounted on their backs, which make an eerie sound as they charge to battle. The Winged Lancers favour a devastating charge and in this respect they are more devastating than even the knightly orders, though they lack their dwarf-forged plate armour. No Gospodar could ever match the skill and speed of an Ungol horseman, for they learn to ride before they walk, but the Winged Lancers are mounted on the same superior mounts and can easily outpace the heavy cavalry of the Empire."
-#hp 11
-#size 3
-#mounted
-#ressize 2
-#prot 0
-#mor 12
-#mr 10
-#enc 5
-#str 10
-#att 11 -- WS4 I3
-#def 11
-#prec 10
-#mapmove 24 -- superior horses
-#snow
-#ap 26
-#gcost 30
-#rpcost 46
-#rcost 8
-#armor 12 -- Scale Mail Hauberk
-#armor 118 -- half helmet
-#armor 2 -- Shield
-#weapon 4 -- lance
-#weapon 56 -- Hoof
-#weapon 10 -- falchion
-#nametype 146 -- rus male
-#coldres 3
-#end
-
-
 ---- Demigryph Knight (Order)
 
 #newmonster 7495
@@ -1811,39 +1744,6 @@
 
 
 
----- Ungol Horse Archer
-
-#newmonster 7508
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Ungol.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Ungol2.tga"
-#name "Ungol Horse Archer"
-#descr "The Ungol tribes were nomads who were long ago conquered by the Gospodars who now rule Kislev. Though they are no longer independent they maintain their traditional ways of warfare and fiercely defend their shared homeland against invaders. The Ungols are superb riders and their mounts are some of the fleetest steeds in the known world, allowing them to run rings around their opponents and decimate them with deadly accurate bowfire."
-#hp 10
-#size 3
-#mounted
-#ressize 2
-#prot 0
-#mor 10
-#mr 10
-#enc 5
-#str 10
-#att 10
-#def 10
-#prec 12
-#mapmove 26 -- uber horses
-#snow
-#ap 30
-#gcost 22
-#rpcost 36
-#rcost 1
-#weapon 56 -- hoof
-#weapon 10 -- falchion
-#weapon 264 -- composite bow
-#nametype 146 -- rus male
-#coldres 3
-#end
-
-
 ---- Outrider
 
 #newmonster 7463
@@ -1921,12 +1821,12 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Flagellant2.tga"
 #name "Flagellant"
 #descr "The Old World is a dangerous and often cruel place where war, plague and the vagaries of nature can destroy entire towns, turning their inhabitants into beggars, vagabonds and brigands. It is perhaps little wonder that some are driven to the brink of madness by their suffering and see their condition as a sign that they are living in the last days of a dying world. These crazed zealots often band together and latch onto salvation at the hands of Sigmar as their only hope, forming roving bands of Flagellants. These bands are compelled by a divine calling to hurl themselves into battle in a gesture of sacrifice and doom, showing no fear, pain or mercy. No Sigmarite could fail to recognise the pure unfettered faith in the eyes of these madmen and though they are avoided when possible, they are considered sacred."
-#hp 14
+#hp 10
 #size 2
-#prot 4
+#prot 3
 #berserk 2
-#mor 18
-#mr 11
+#mor 16
+#mr 10
 #enc 3
 #str 10
 #att 9
@@ -2937,7 +2837,7 @@
 #size 3
 #mounted
 #ressize 2
-#prot 4
+#prot 3
 #mor 14
 #mr 10
 #enc 5
@@ -3135,6 +3035,37 @@
 #firstshape 7474
 #end
 
+---- Ungol Horse Archer
+
+#newmonster 7508
+#spr1 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Ungol.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Ungol2.tga"
+#name "Ungol Horse Archer"
+#descr "The Ungol tribes were nomads who were long ago conquered by the Gospodars who now rule Kislev. Though they are no longer independent they maintain their traditional ways of warfare and fiercely defend their shared homeland against invaders. The Ungols are superb riders and their mounts are some of the fleetest steeds in the known world, allowing them to run rings around their opponents and decimate them with deadly accurate bowfire."
+#hp 10
+#size 3
+#mounted
+#ressize 2
+#prot 0
+#mor 10
+#mr 10
+#enc 5
+#str 10
+#att 10
+#def 10
+#prec 12
+#mapmove 26 -- uber horses
+#snow
+#ap 30
+#gcost 22
+#rpcost 36
+#rcost 1
+#weapon 56 -- hoof
+#weapon 10 -- falchion
+#weapon 264 -- composite bow
+#nametype 146 -- rus male
+#coldres 3
+#end
 
 ---- Inner Circle Gold Lion
 
@@ -3489,88 +3420,6 @@
 ------------- COMMANDERS
 
 
----- Grandmaster of the Gryphon Legion
-
-#newmonster 7479
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/GM_Gryphon_Legion.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/GM_Gryphon_Legion2.tga"
-#name "Gryphon Commander"
-#descr "The current Cavalry Commander of the Gryphon Legion is none other than Tzarina Katarin's own brother, Ivan Radinov. Ivan was known as something of a rake and troublemaker by the strict standards of the Gospodar nobility and little was expected of him when he was placed in the Gryphon Legion, presumably to strengthen their loyalty to the crown, but he has proven himself on countless occasions. While Ivan may still be a hothead his skill is quite apparent and his bravery in battle is unquestionable. Unusually for a member of the Gryphon Legion he forgoes the use of the traditional lance, preferring to focus on the use of his powerful Ice Mist Scimitar; a prized gift from his sister."
-#hp 28
-#size 3
-#mounted
-#ressize 2
-#prot 3
-#mor 15
-#mr 13
-#enc 5
-#str 11
-#att 13
-#def 13
-#prec 12
-#mapmove 24 -- superior horses
-#snow
-#ap 26
-#gcost 0
-#rpcost 46
-#rcost 6
-#armor 12 -- Scale Mail Hauberk
-#armor 126 -- legionary helmet
-#armor 2 -- Shield
-#weapon 56 -- Hoof
-#weapon 685 -- ice mist scimitar
-#coldres 15
-#unsurr 3
-#fixedname "Ivan Radinov"
-#itemslots 13440 -- head, body, 2 misc
-#goodleader
-#end
-
-
----- Grandmaster of the Gryphon Legion (summoning form)
-
-#newmonster 7480
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/GM_Gryphon_Legion.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/GM_Gryphon_Legion2.tga"
-#name "Gryphon Commander"
-#descr "The current Cavalry Commander of the Gryphon Legion is none other than Tzarina Katarin's own brother, Ivan Radinov. Ivan was known as something of a rake and troublemaker by the strict standards of the Gospodar nobility and little was expected of him when he was placed in the Gryphon Legion, presumably to strengthen their loyalty to the crown, but he has proven himself on countless occasions. While Ivan may still be a hothead his skill is quite apparent and his bravery in battle is unquestionable. Unusually for a member of the Gryphon Legion he forgoes the use of the traditional lance, preferring to focus on the use of his powerful Ice Mist Scimitar; a prized gift from his sister."
-#hp 28
-#size 3
-#mounted
-#ressize 2
-#prot 3
-#mor 15
-#mr 13
-#enc 5
-#str 11
-#att 13
-#def 13
-#prec 12
-#mapmove 24 -- superior horses
-#snow
-#ap 26
-#gcost 0
-#rpcost 46
-#rcost 6
-#armor 12 -- Scale Mail Hauberk
-#armor 126 -- legionary helmet
-#armor 2 -- Shield
-#weapon 56 -- Hoof
-#weapon 685 -- ice mist scimitar
-#coldres 15
-#unsurr 3
-#fixedname "Ivan Radinov"
-#itemslots 13440 -- head, body, 2 misc
-#goodleader
-#firstshape 7479
-#summon1 7478
-#summon2 7478
-#summon3 7478
-#summon4 7478
-#summon5 7478
-#end
-
-
 ---- Grandmaster of the Reiksguard
 
 #newmonster 7464
@@ -3888,49 +3737,7 @@
 #startage 27
 #maxage 50
 #unsurr 3
-#end
-
-
----- Tzarina Katarin Bokha, Ice Queen (reviewed)
-
-#newmonster 7580
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Hero_Katarina.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Hero_Katarina2.tga"
-#name "Ice Queen"
-#descr "Katarin Bokha is the Tzarina of Kislev, daughter of Tzar Boris, known as the Ice Queen across the Old World for her incredible ability to wield the native ice magic of the Gospodar. She is known as a just but stern ruler, devoted to the survival of mother Kislev and to the defeat of the forces of Chaos. She is beloved by the Gospodar and even the Ungol regard her as being the reincarnation of the first Khan-Queen Miska and so treat her with a near fearful respect. Katarin rides to battle armed with the traditional weapon of the Gospodar Khan-Queens, the deadly sword Fearfrost, a blade which can instantly freeze the heart of any it wounds. She is protected by the Crystal Cloak, an heirloom made of snow leopard fur which is enchanted to surround her with a protective whirl of ice crystals which deflect projectiles and render the Tzarina harder to strike in melee."
-#hp 25
-#size 3
-#prot 0
-#mor 15
-#mr 17
-#enc 3
-#str 10
-#att 12
-#def 14
-#prec 12
-#mapmove 24
-#ap 26
-#gcost 0
-#rpcost 2
-#rcost 1
-#armor 8 -- Chain Mail Cuirass
-#weapon 773 -- Fearfrost
-#armor 212 -- magic crown
-#goodleader
-#coldres 30
-#coldpower 1
-#magicskill 2 4
-#magicskill 1 2
-#fixedname "Katarin Bokha"
-#older -60
-#mounted
 #snow
-#combatcaster
-#waterrange 1
-#inspirational 1
-#itemslots 13442 -- 1 hand, head, body, 2 misc
-#airshield 70
-#female
 #end
 
 
@@ -4352,7 +4159,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/State Captain2.tga"
 #name "State Captain"
 #descr "Captains of the State are promoted from the ranks of the regular State Troops, often the Halberdiers, rather than gaining the position by wealth or social status. This practice has been instrumental in the success of Imperial forces, as it ensures leaders who are experienced, well able to lead and have the respect of their men. The position of Captain comes with superior arms and armour produced in the heart of the Empire, a gift from the Dwarfs in the time of Sigmar."
-#hp 19
+#hp 14
 #size 2
 #prot 3
 #mor 11
@@ -4385,7 +4192,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/N_State Captain2.tga"
 #name "State Captain"
 #descr "Captains of the State are promoted from the ranks of the regular State Troops, often the Halberdiers, rather than gaining the position by wealth or social status. This practice has been instrumental in the success of Imperial forces, as it ensures leaders who are experienced, well able to lead and have the respect of their men. The position of Captain comes with superior arms and armour produced in the heart of the Empire, a gift from the Dwarfs in the time of Sigmar."
-#hp 19
+#hp 14
 #size 2
 #prot 3
 #mor 11
@@ -4418,7 +4225,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_State Captain2.tga"
 #name "State Captain"
 #descr "Captains of the State are promoted from the ranks of the regular State Troops, often the Halberdiers, rather than gaining the position by wealth or social status. This practice has been instrumental in the success of Imperial forces, as it ensures leaders who are experienced, well able to lead and have the respect of their men. The position of Captain comes with superior arms and armour produced in the heart of the Empire, a gift from the Dwarfs in the time of Sigmar."
-#hp 19
+#hp 14
 #size 2
 #prot 3
 #mor 11
@@ -4451,7 +4258,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_Huntsmaster2.tga"
 #name "Huntsmaster"
 #descr "The provinces of Hochland and Ostland are famed for the skills of their hunters, particularly with the shortbows common to those regions. Huntsmasters are veterans of many local campaigns to eradicate groups of Beastmen and Greenskins and bring to battle a pack of Hunting Hounds capable of tearing down lightly armoured foes."
-#hp 19
+#hp 14
 #size 2
 #prot 0
 #mor 12
@@ -4492,7 +4299,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_Seneschal2.tga"
 #name "Seneschal"
 #descr "Seneschals are the North East equivalent of Generals; warriors who have seen countless battles and inspire ferocious loyalty amongst their men. They are exclusively promoted from the position of State Captain and represent a counterpart to the Grandmasters of the knightly Orders. On becoming a General, these stern men swear an oath of loyalty to the Empire above all else, and when the Emperor sees the need, they may be placed in command of forces even above Elector Counts and Grandmasters."
-#hp 25
+#hp 15
 #size 3
 #mounted
 #ressize 2
@@ -4520,44 +4327,6 @@
 #end
 
 
----- Kislevite Boyar
-
-#newmonster 7570
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Boyar.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Kislev_Boyar2.tga"
-#name "Boyar"
-#descr "Boyars are Gospodar nobles of Kislev who lead the Kossars, Ungol horse archers, and Winged Lancers into battle, usually against the forces of Chaos to the North. They aren't as drilled in tactics or leadership as the Captains and Generals of the Empire, but they are mounted on superior steeds from their homeland and well equipped with both blade and bow."
-#hp 20
-#size 3
-#mounted
-#ressize 2
-#prot 3
-#mor 13
-#mr 12
-#enc 5
-#str 11
-#att 12
-#def 12
-#prec 12
-#mapmove 24
-#snow
-#ap 26
-#gcost 55
-#rpcost 1
-#rcost 8
-#armor 12 -- Scale Mail Hauberk
-#armor 118 -- half helmet
-#armor 2 -- Shield
-#weapon 56 -- Hoof
-#weapon 10 -- falchion
-#weapon 264 -- composite bow
-#nametype 146 -- rus male
-#coldres 3
-#okleader
-#unsurr 2
-#end
-
-
 ---- General (altdorf)
 
 #newmonster 7435
@@ -4565,7 +4334,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/General2.tga"
 #name "General"
 #descr "Generals of the Empire are warriors who have seen countless battles and inspire ferocious loyalty amongst their men. They are exclusively promoted from the position of State Captain and represent a counterpart to the Grandmasters of the knightly Orders. On becoming a General, these stern men swear an oath of loyalty to the Empire above all else, and when the Emperor sees the need, they may be placed in command of forces even above Elector Counts and Grandmasters."
-#hp 25
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -4579,7 +4348,7 @@
 #prec 12
 #mapmove 22
 #ap 18
-#gcost 90
+#gcost 120
 #rpcost 2
 #rcost 12
 #armor 284 -- empire full plate
@@ -4600,7 +4369,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/N_General2.tga"
 #name "General"
 #descr "Generals of the Empire are warriors who have seen countless battles and inspire ferocious loyalty amongst their men. They are exclusively promoted from the position of State Captain and represent a counterpart to the Grandmasters of the knightly Orders. On becoming a General, these stern men swear an oath of loyalty to the Empire above all else, and when the Emperor sees the need, they may be placed in command of forces even above Elector Counts and Grandmasters."
-#hp 25
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -4614,7 +4383,7 @@
 #prec 12
 #mapmove 22
 #ap 18
-#gcost 90
+#gcost 120
 #rpcost 2
 #rcost 12
 #armor 284 -- empire full plate
@@ -4635,7 +4404,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Nuln_Pegasus2.tga"
 #name "Noble of the Empire"
 #descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Pegasus mount from the rulers of Nuln. Pegasi are noble beasts, loyal and swift, the perfect mount for a nobleman of martial prowess. Nobles of the South East are wealthy enough that they can afford superior magical equipment. Should the rider be slain the Pegasus will fight on for a time before escaping to the wilds."
-#hp 28
+#hp 19
 #size 4
 #mounted
 #ressize 2
@@ -4709,7 +4478,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Griffon Noble2.tga"
 #name "Noble of the Empire"
 #descr "Some nobles of the Empire are not permitted to join the ranks of a Knightly Order, but still yearn for the days they spent in the Nobleborn cavalry, fighting on the frontlines. This noble has secured a prized Griffon mount from the Imperial Zoo. Griffons are noble, loyal and elegant beasts prized above all other mounts and are seen as symbols of the Empire's strength. Should the rider be slain the Griffon will continue to fight until the end of the battle, at which point it will depart to live and hunt in the wild."
-#hp 30 -- 25 for general, +5
+#hp 19 -- 25 for general, +5
 --hp 65 -- combined profile
 #size 5
 #mounted
@@ -4753,7 +4522,7 @@
 #name "Griffon"
 #descr "With its rider slain, this Griffon will fight on until the end of the battle before escaping into the wild."
 #size 5
-#hp 62 -- W4T5, huge -- +14
+#hp 45 -- W4T5, huge -- +14
 #att 13 -- WS5I5
 #def 13 -- WS5I5 -- +5
 #str 20 -- STR 5, huge, natural weapons -- +4
@@ -4818,7 +4587,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_Wolf Father2.tga"
 #name "Wolf Father"
 #descr "The Wolf Kin are fighters driven to near-madness by hardship or despair. Rather than preaching punishment for man's sins and the coming of the end of the world, they take a more direct approach befitting their pragmatic and vengeful god, Ulric. Gathering together and clothing themselves in the furs of wolves, the Kin dedicate themselves to the service of Ulric and mete out punishment to Orcs, Beastmen, and other agents of destruction and evil. They fight with a cold, controlled fury, hacking down their foes with axe and sword and rarely taking a step back. Though eager to slay their enemies, the Wolf Kin understand when to stick to the shadows and are adept at guerilla warfare. The Wolf Kin are led on missions of vengeance by Wolf Fathers, veteran kinsman invested with priestly authority by the Temple of Ulric. Ulric grants his followers superior resistance to magic."
-#hp 23
+#hp 15
 #size 2
 #prot 3
 #mor 14
@@ -4941,6 +4710,7 @@
 #inspirational 2
 #nametype 188
 #mounted
+#rpcost 6
 #spreaddom 1
 #heal
 #trample
@@ -5056,7 +4826,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Warrior Priest2.tga"
 #name "Warrior Priest of Sigmar"
 #descr "The Sigmarite church is at the heart of the Empire and is challenged only in presence by the worship of Ulric in the Northern provinces. Sigmar Heldenhammer, founder of the Empire, is a martial god, but relatively few in the Church are Warrior Priests. These men have devoted themselves to the martial service of their God, a fraternity of hammers driven to smite the foul enemies of the Empire. They are well armed and armoured and specialise in leading men against cults, beastmen, undead and other abominations."
-#hp 20
+#hp 15
 #size 2
 #prot 3
 #mor 14
@@ -5091,7 +4861,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Midden_Warrior Priest2.tga"
 #name "Warrior Priest of Ulric"
 #descr "The Cult of Ulric predates the Sigmarite church by many hundreds of years; after all Sigmar himself was a follower of Ulric! The Wolf God preaches fortitude in the face of hardship and swift vengeance against the enemies of man. While the Simgarite faith has eclipsed the old gods in the South, worship of Ulric is as common as ever in the North East. Nearly all members of the Ulrician clergy are Warrior Priests, well equipped men of steel will and great martial prowess. They carry two handed handed axes, symbols of justice and vengeance. Ulric grants his followers superior resistance to magic."
-#hp 20
+#hp 15
 #size 2
 #prot 3
 #mor 14
@@ -5125,7 +4895,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/Witch Hunter2.tga"
 #name "Witch Hunter"
 #descr "Though the Empire is a mighty nation capable of defending its many borders, the greatest threat lies within. Heresy, corruption and the malign influence of Chaos might take root in the hearts of the discontent, the greedy or the curious at any moment. While the Sigmarite faith does much to shield the collective soul of man there comes a time when a surgeon is required to cut out the infection. Since the Storm of Chaos the Witch Hunters have been granted considerable authority to pursue their grim mission. These men are loners of grim resolve who unnerve the common man. It is said no matter where they tread they will uncover corruption and dissent and more often than not they will personally put an end to it. Witch Hunters are trained and equipped to confront rogue magic users, the undead and even daemons."
-#hp 19
+#hp 14
 #size 2
 #prot 3
 #mor 13
@@ -5163,7 +4933,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Blazing Sun2.tga"
 #name "Grandmaster of the Blazing Sun"
 #descr "Brenst Aufflammen is the current Grandmaster of the Order of the Blazing Sun and as such, also a Battle Priest of Myrmidia. Even amongst the Order, Brenst is particularly devoted to Myrmidia, having been saved by her blessings on numerous occasions. His golden armour erupts into a blaze of light in battle, causing lesser foes to cower in fear. Furthermore, Brenst carries the famed Blazing Lance of Myrmidia, an artifact capable of blasting through ranks of foes when he charges into the fray."
-#hp 28
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5209,7 +4979,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Blazing Sun2.tga"
 #name "Grandmaster of the Blazing Sun"
 #descr "Brenst Aufflammen is the current Grandmaster of the Order of the Blazing Sun and as such, also a Battle Priest of Myrmidia. Even amongst the Order, Brenst is particularly devoted to Myrmidia, having been saved by her blessings on numerous occasions. His golden armour erupts into a blaze of light in battle, causing lesser foes to cower in fear. Furthermore, Brenst carries the famed Blazing Lance of Myrmidia, an artifact capable of blasting through ranks of foes when he charges into the fray."
-#hp 28
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5250,7 +5020,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Morr2.tga"
 #name "Grandmaster of the Knights of Morr"
 #descr "The Knights of Morr are an extremely unusual knightly Order and the position of Grandmaster is subject to their own strange practices. Grandmasters of the Knights of Morr give up their names upon taking the mantle of leadership and first donning the the ceremonial Silver Skull helm. In addition to instilling terror in enemies of the Order, this ancient artifact is capable of breathing a deadly cloud of magical energy from the dread wind of Shyish. Living beings touched by the mist may be overcome by its energy and find their life torn away. Just as his brother knights, the Grandmaster wields a blade imbued with power by the wizards of the Amethyst order, which raises those it slays as undead in the service of his god."
-#hp 28
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5293,7 +5063,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Morr2.tga"
 #name "Grandmaster of the Knights of Morr"
 #descr "The Knights of Morr are an extremely unusual knightly Order and the position of Grandmaster is subject to their own strange practices. Grandmasters of the Knights of Morr give up their names upon taking the mantle of leadership and first donning the the ceremonial Silver Skull helm. In addition to instilling terror in enemies of the Order, this ancient artifact is capable of breathing a deadly cloud of magical energy from the dread wind of Shyish. Living beings touched by the mist may be overcome by its energy and find their life torn away. Just as his brother knights, the Grandmaster wields a blade imbued with power by the wizards of the Amethyst order, which raises those it slays as undead in the service of his god."
-#hp 28
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5332,7 +5102,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Hunter2.tga"
 #name "Grandmaster of Sigmar's Hunters"
 #descr "Jerik Wildorn is the founder and Grandmaster of the Hunters of Sigmar. A minor noble who lost his father and older brother to war at a young age, Jerik was largely raised by his family's gamekeeper, who discovered the boy to be a prodigy in woodcraft, hunting and tracking. Jerik formed the Hunters in the aftermath of the Storm of Chaos, recognising that though the main warhost of Archaon was defeated, hundreds of smaller bands remained to raid the countryside while the Empire, it's manpower terribly depleted, struggled to protect even large towns. Jerik wields a great and terrible axe of hatred taken from a Champion of Nurgle and has adorned his helm with the horns of a great Tzaanbull, a Minotaur of Tzeentch, granting him protection from magic."
-#hp 30
+#hp 18
 #size 3
 #mounted
 #ressize 2
@@ -5374,7 +5144,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Hunter2.tga"
 #name "Grandmaster of Sigmar's Hunters"
 #descr "Jerik Wildorn is the founder and Grandmaster of the Hunters of Sigmar. A minor noble who lost his father and older brother to war at a young age, Jerik was largely raised by his family's gamekeeper, who discovered the boy to be a prodigy in woodcraft, hunting and tracking. Jerik formed the Hunters in the aftermath of the Storm of Chaos, recognising that though the main warhost of Archaon was defeated, hundreds of smaller bands remained to raid the countryside while the Empire, it's manpower terribly depleted, struggled to protect even large towns. Jerik wields a great and terrible axe of hatred taken from a Champion of Nurgle and has adorned his helm with the horns of a great Tzaanbull, a Minotaur of Tzeentch, granting him protection from magic."
-#hp 30
+#hp 18
 #size 3
 #mounted
 #ressize 2
@@ -5421,7 +5191,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Panther2.tga"
 #name "Grandmaster of the Knights Panther"
 #descr "Werner Kriegstadt is the current Grandmaster of the Knights Panther. A seasoned warrior and tactician, he is best known for slaying an Orc Warboss and driving off his wyvern, thereby scattering a horde that threatened to rampage throughout Ostland. Werner is one of the most skilled defensive swordsmen in the Empire, having spent his time before joining the Knights Panther as a noted duelist. He is armed with a lightning fast magic blade liberated from an Emir in Araby centuries ago, which greatly amplifies his talents."
-#hp 28
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5459,7 +5229,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Panther2.tga"
 #name "Grandmaster of the Knights Panther"
 #descr "Werner Kriegstadt is the current Grandmaster of the Knights Panther. A seasoned warrior and tactician, he is best known for slaying an Orc Warboss and driving off his wyvern, thereby scattering a horde that threatened to rampage throughout Ostland. Werner is one of the most skilled defensive swordsmen in the Empire, having spent his time before joining the Knights Panther as a noted duelist. He is armed with a lightning fast magic blade liberated from an Emir in Araby centuries ago, which greatly amplifies his talents."
-#hp 28
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5504,7 +5274,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM White Wolf2.tga"
 #name "Grandmaster of the White Wolves"
 #descr "Rein Volkhard is the current master of the Knights of the White Wolf. A man of impressive stature and physical strength with a natural affinity for the harsh wilds of the North East, Rein was known as a tirelessly active brother knight and foe of Chaos. He was thought lost after a small group of White Wolves were ambushed by Chaos Warriors far north in Troll Country, but reappeared months later, battered but with a new sense of purpose, mounted upon a Greatwolf which he rides to this day. Since the founding of the order all Grandmasters have weilded the terrible Wulfhammer, a dwarf-forged artifact capable of crushing a giant's skull in single blow. Rein has been declared a champion of Ulric and is both protected from hostile magic and considered sacred."
-#hp 45 -- combined profile
+#hp 20 -- combined profile
 #size 4
 #mounted
 #ressize 2
@@ -5544,7 +5314,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM White Wolf2.tga"
 #name "Grandmaster of the White Wolves"
 #descr "Rein Volkhard is the current master of the Knights of the White Wolf. A man of impressive stature and physical strength with a natural affinity for the harsh wilds of the North East, Rein was known as a tirelessly active brother knight and foe of Chaos. He was thought lost after a small group of White Wolves were ambushed by Chaos Warriors far north in Troll Country, but reappeared months later, battered but with a new sense of purpose, mounted upon a Greatwolf which he rides to this day. Since the founding of the order all Grandmasters have weilded the terrible Wulfhammer, a dwarf-forged artifact capable of crushing a giant's skull in single blow. Rein has been declared a champion of Ulric and is both protected from hostile magic and considered sacred."
-#hp 45 -- combined profile
+#hp 20 -- combined profile
 #size 4
 #mounted
 #ressize 2
@@ -5590,7 +5360,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Bear2.tga"
 #name "Grandmaster of the Black Bear"
 #descr "The Order of the Black Bear prides itself on a near constant engagement in battle, violent tournaments and the ritualised sport of bear wrestling, with the Grandmaster expected to lead the way in all cases. It is a testament to the incredible strength and toughness of the current Gransmaster, Lucas Siver, that he has held the position for nearly a decade. Siver's greatest feat was to slay an Ogre Tyrant who led a mercenary force in an attempt to hold Averland to ransom. Since that day he has refused to change his armour or barding, which bears the marks of countless battles, and has taken to using the Tyrant's great flail, a terrible and rusted weapon too heavy for others to even lift."
-#hp 35
+#hp 19
 #size 3
 #mounted
 #ressize 2
@@ -5627,7 +5397,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Bear2.tga"
 #name "Grandmaster of the Black Bear"
 #descr "The Order of the Black Bear prides itself on a near constant engagement in battle, violent tournaments and the ritualised sport of bear wrestling, with the Grandmaster expected to lead the way in all cases. It is a testament to the incredible strength and toughness of the current Gransmaster, Lucas Siver, that he has held the position for nearly a decade. Siver's greatest feat was to slay an Ogre Tyrant who led a mercenary force in an attempt to hold Averland to ransom. Since that day he has refused to change his armour or barding, which bears the marks of countless battles, and has taken to using the Tyrant's great flail, a terrible and rusted weapon too heavy for others to even lift."
-#hp 35
+#hp 19
 #size 3
 #mounted
 #ressize 2
@@ -5671,7 +5441,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Griffon2.tga"
 #name "Grandmaster of Knights Griffon"
 #descr "Hans Dueterberg is the current Grandmaster of the Order of Knights Griffon, a tactical prodigy younger than most of the knights he commands. From an early age Hans showed the favour of Sigmar, leading a unit of Nobleborn cavalry to a series of high profile victories and becoming the youngest ever member of the Knights Griffon. Indeed many have compared him to Magnus the Pious himself, the founder of the Order. An inspiring leader and capable fighter, Hans is all the more powerful as he wears the ancestral Helm of the family Dueterberg, which grants him excellent protection from hostile magics."
-#hp 27
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5711,7 +5481,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Griffon2.tga"
 #name "Grandmaster of Knights Griffon"
 #descr "Hans Dueterberg is the current Grandmaster of the Order of Knights Griffon, a tactical prodigy younger than most of the knights he commands. From an early age Hans showed the favour of Sigmar, leading a unit of Nobleborn cavalry to a series of high profile victories and becoming the youngest ever member of the Knights Griffon. Indeed many have compared him to Magnus the Pious himself, the founder of the Order. An inspiring leader and capable fighter, Hans is all the more powerful as he wears the ancestral Helm of the family Dueterberg, which grants him excellent protection from hostile magics."
-#hp 27
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5757,7 +5527,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Encarmine2.tga"
 #name "Grandmaster of Knights Encarmine"
 #descr "Alessio Barbarini is the current Grandmaster of the Order of Knights Encarmine. The Barbarini family defected from Tilea to the Empire many generations ago in response to reports of atrocities committed by Tilean mercenaries in the Border Princes. The Empire were happy to have such a wealthy and respected family and the Barbarini soon established strong roots amongst the Knightly Orders. Alessio is one of the most famed and arrogant swordsmen in the Empire and the inheritor of an ancient style of dual sword fighting from Tilea. Suplementing his skills with an enchanted Main Gauche of Parrying and a Sword of Swiftness, he is a whirlwind of destruction on the battlefield."
-#hp 28
+#hp 18
 #size 3
 #mounted
 #ressize 2
@@ -5793,7 +5563,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Encarmine2.tga"
 #name "Grandmaster of Knights Encarmine"
 #descr "Alessio Barbarini is the current Grandmaster of the Order of Knights Encarmine. The Barbarini family defected from Tilea to the Empire many generations ago in response to reports of atrocities committed by Tilean mercenaries in the Border Princes. The Empire were happy to have such a wealthy and respected family and the Barbarini soon established strong roots amongst the Knightly Orders. Alessio is one of the most famed and arrogant swordsmen in the Empire and the inheritor of an ancient style of dual sword fighting from Tilea. Suplementing his skills with an enchanted Main Gauche of Parrying and a Sword of Swiftness, he is a whirlwind of destruction on the battlefield."
-#hp 28
+#hp 18
 #size 3
 #mounted
 #ressize 2
@@ -5834,7 +5604,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Scythe2.tga"
 #name "Grandmaster of the Sacred Scythes"
 #descr "Piotr Kronn is the current Grandmaster of the Order of the Sacred Scythe. The Kronn family were once a well regarded line known for their peity and reason both, but they had the extreme misfortune to become implicated in the fall of Sylvania to the Von Carsteins, having ties by marriage to a noble family discovered to be vampiric servants of Vlad himself. As a youth Piotr was obsessed with restoring glory to his family and so joined the Sacred Scythes in an attempt to root out the evil at the heart of Sylvania once and for all. While Piotr is still a dedicated foe of the vampires he has come to face the fact that Sylvania may never be recovered and through decades of fighting the undead has become a pale, expressionless shadow of his former self. Nonetheless he is a skilled warrior who has learned much from his hated enemy and he now rides into battle protected by a cloak which seems to render both rider and mount as shadows, near immune to mundane weapons."
-#hp 26
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5872,7 +5642,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Scythe2.tga"
 #name "Grandmaster of the Sacred Scythes"
 #descr "Piotr Kronn is the current Grandmaster of the Order of the Sacred Scythe. The Kronn family were once a well regarded line known for their peity and reason both, but they had the extreme misfortune to become implicated in the fall of Sylvania to the Von Carsteins, having ties by marriage to a noble family discovered to be vampiric servants of Vlad himself. As a youth Piotr was obsessed with restoring glory to his family and so joined the Sacred Scythes in an attempt to root out the evil at the heart of Sylvania once and for all. While Piotr is still a dedicated foe of the vampires he has come to face the fact that Sylvania may never be recovered and through decades of fighting the undead has become a pale, expressionless shadow of his former self. Nonetheless he is a skilled warrior who has learned much from his hated enemy and he now rides into battle protected by a cloak which seems to render both rider and mount as shadows, near immune to mundane weapons."
-#hp 26
+#hp 17
 #size 3
 #mounted
 #ressize 2
@@ -5916,7 +5686,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Gold Lion Joint2.tga"
 #name "Grandmaster of the Gold Lion"
 #descr "The death of the last member of the von Strommer bloodline marked a period of misfortune for the Gold Lion. With near half the Order lost fighting a Chaos warband and a prominent patron successfully tried for heresy, the Order faced financial ruin. So it was that the young Knight Juergen Fruehauf was appointed to the position of Grandmaster. While a capable leader and proud knight, the true reason for Juergen's appointment was the Fruehauf family's extremely profitable holdings in Marienburg. Even so, three years into his rule the energetic Grandmaster has revitalised the Gold Lion and is on his way to earning the respect of more established Orders. Juergen has an ostentatious streak and has purchased a trained lion from the Imperial Bestiary which accompanies him in battle."
-#hp 35 -- combined profile
+#hp 19 -- combined profile
 #size 4
 #mounted
 #ressize 2
@@ -5956,7 +5726,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Empire/GM Gold Lion Joint2.tga"
 #name "Grandmaster of the Gold Lion"
 #descr "The death of the last member of the von Strommer bloodline marked a period of misfortune for the Gold Lion. With near half the Order lost fighting a Chaos warband and a prominent patron successfully tried for heresy, the Order faced financial ruin. So it was that the young Knight Juergen Fruehauf was appointed to the position of Grandmaster. While a capable leader and proud knight, the true reason for Juergen's appointment was the Fruehauf family's extremely profitable holdings in Marienburg. Even so, three years into his rule the energetic Grandmaster has revitalised the Gold Lion and is on his way to earning the respect of more established Orders. Juergen has an ostentatious streak and has purchased a trained lion from the Imperial Bestiary which accompanies him in battle."
-#hp 35 -- combined profile
+#hp 19 -- combined profile
 #size 4
 #mounted
 #ressize 2
@@ -5993,6 +5763,44 @@
 #firstshape 7488
 #unsurr 3
 #end
+
+
+
+---- Ice Wizard of Kislev (middenheim)
+
+#newmonster 7563
+#copystats 3750 -- template kislevite
+#spr1 "./Sombre_Warhammer/Warhammer_Kislev/Wizard_Ice_Lesser.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Kislev/Wizard_Ice_Lesser2.tga"
+#name "Ice Wizard of Kislev"
+#descr "Part of a tradition almost entirely separate from the Colleges of Magic, the Gospodar warrior-mages of Kislev do not draw on a particular wind of magic but instead wield the Lore of Ice, a magic of chill, frost, and biting winds harnessed from the Motherland Kislev itself. Ice Wizards are well used to battle and train extensively to deliver accurate and deadly ice magic in combat, as well as defend themselves in melee should the need arise. The Ice Wizards have a great deal of political power in Kislev and the leader of their order is none other than Tzarina Katarin, known as the Ice Queen. They are known to lend their aid to the neighbouring provinces of the Empire and can be found in the armies of Middenheim providing support with their unique magic."
+#hp 12
+#size 2
+#prot 0
+#mor 12
+#mr 14
+#enc 3
+#str 11
+#att 11
+#def 11
+#prec 12
+#mapmove 16
+#ap 12
+#gcost 180 -- +20 over kislev
+#rpcost 2
+#rcost 1
+#armor 6 -- Ring Mail Cuirass
+#armor 120 -- Leather cap
+#weapon 17 -- axe
+#magicskill 2 2
+#magicskill 1 1
+#coldres 10
+#okleader
+#command -30
+#combatcaster
+#end
+
+
 
 
 ---- Bright Wizard (Altdorf)
@@ -6995,45 +6803,6 @@
 #nametype 188
 #older -10
 #mounted
-#end
-
-
----- Ice Wizard
-
-#newmonster 7563
-#spr1 "./Sombre_Warhammer/Warhammer_Empire/Wizard Ice.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Empire/Wizard Ice2.tga"
-#name "Ice Wizard"
-#descr "Part of a tradition almost entirely separate from the Colleges of Magic, the Gospodar warrior-mages of Kislev do not draw on a particular wind of magic but instead wield the Lore of Ice, a magic of chill, frost, and biting winds harnessed from land of Kislev itself. Mounted on fleet Kislev steeds and armed with enchanted ice swords, Ice Wizards often join regiments of Ungol horse archers or Winged Lancers and are more likely to be found in the thick of battle than studying in an arcane laboratory. The Ice Wizards have a great deal of political power in Kislev and the leader of their order is none other than Tzarina Katarin, known as the Ice Queen."
-#hp 12
-#size 3
-#prot 0
-#mor 14
-#mr 15
-#enc 3
-#str 11
-#att 11
-#def 11
-#prec 11
-#mapmove 24
-#ap 26
-#gcost 240
-#rpcost 2
-#rcost 1
-#armor 6 -- Ring Mail Cuirass
-#weapon 77 -- Ice Sword
-#poorleader
-#coldres 15
-#coldpower 1
-#magicskill 2 2
-#magicskill 1 1
-#custommagic 768 100
-#custommagic 768 10
-#nametype 146 -- rus male
-#older -10
-#mounted
-#snow
-#combatcaster
 #end
 
 
@@ -8092,7 +7861,6 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #homecom 7577 -- Aldebrand Ludenhof
 #homecom 7578 -- Emil Valgeir
 #homecom 7579 -- Valmir von Raukov
-#homecom 7580 -- Katarin Bokha
 #end
 
 --- Futuresite multiheroes, Middenheim
@@ -8727,21 +8495,6 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #end
 
 
--- Spawn Tzarina Katarin
-
-#newevent
-#msg "The mighty hero Tzarina Katarin Bokha the Ice Queen of Kislev has joined your cause."
-#req_owncapital 1
-#req_fornation 144 -- Middenheim
-#nation 144
-#com 7580 -- Katarin Bokha
-#req_unique 1
-#rarity 5
-#req_rare 3
-#req_turn 8
-#end
-
-
 -- Spawn Ludwig Schwarzhelm
 
 #newevent
@@ -9235,7 +8988,7 @@ Priests: Strong."
 
 ----------- other settings
 
-#labcost 700 - because the colleges of magic are centralised in Altdorf
+#labcost 600 - because the colleges of magic are centralised in Altdorf
 #idealcold 0
 #color 0 0 150
 #color 0.4 0.4 0.0
@@ -9257,8 +9010,8 @@ Priests: Strong."
 #name "Middenheim"
 #epithet "Wolf of the North"
 #era 2
-#brief "Middenheim, the City of the White Wolf, is a power within the Empire, the largest and most powerful realm of men in the Old World. It is a land where magic, invention and the courage of mortal men rub shoulders, each an essential weapon in the war against malign powers. The forces of Nordland, Hochland, Ostland, and the allied nation of Kislev align behind the might of Middenheim."
-#descr "The Empire is the largest and most powerful of the lands of men in the Old World, a mighty nation that stands as the bulwark against the many enemies of man. It is a land where magic, invention and the courage of mortal men rub shoulders, each an essential weapon in the war against malign powers. The men of the Empire have none of the supernatural strength nor brutal upbringing of the Warriors of Chaos, nor do they boast the numberless ranks of the vile Skaven, the savage resilience of the green-skinned Orcs or uncanny agility of the High Elves. Rather, the men of the Empire rely upon faith, steel, and ingenuity. The Empire is split into many provinces which in theory all hold fealty to the Emperor, but tend to have competing goals. Middenheim, the City of the White Wolf, is the capital of the province of Middenland and the home of the Cult of Ulric. The forces of Nordland, Hochland, Ostland, and the allied nation of Kislev align behind the might of Middenheim."
+#brief "Middenheim, the City of the White Wolf, is a power within the Empire, the largest and most powerful realm of men in the Old World. It is a land where magic, invention and the courage of mortal men rub shoulders, each an essential weapon in the war against malign powers. The forces of Nordland, Hochland, and Ostland align behind the might of Middenheim."
+#descr "The Empire is the largest and most powerful of the lands of men in the Old World, a mighty nation that stands as the bulwark against the many enemies of man. It is a land where magic, invention and the courage of mortal men rub shoulders, each an essential weapon in the war against malign powers. The men of the Empire have none of the supernatural strength nor brutal upbringing of the Warriors of Chaos, nor do they boast the numberless ranks of the vile Skaven, the savage resilience of the green-skinned Orcs or uncanny agility of the High Elves. Rather, the men of the Empire rely upon faith, steel, and ingenuity. The Empire is split into many provinces which in theory all hold fealty to the Emperor, but tend to have competing goals. Middenheim, the City of the White Wolf, is the capital of the province of Middenland and the home of the Cult of Ulric. The forces of Nordland, Hochland, and Ostland align behind the might of Middenheim."
 #summary "Race: Humans.
 Military: Medium and heavy infantry with extremely heavy cavalry and dedicated missile units.
 Magic: Colleges allow access to all non blood magic but their taxes make labs more expensive.
@@ -9317,9 +9070,6 @@ Priests: Strong."
 #addrecunit 7524 -- State Swordsman (middenheim)
 #addrecunit 7505 -- State Crossbow (Middenheim)
 #addrecunit 7523 -- Greatsword (middenheim)
-#addrecunit 7568 -- Kossar
-#addrecunit 7508 -- Ungol Horse Archer
-#addrecunit 7509 -- Kislev Winged Lancer
 #addrecunit 7458 -- Order Knight (Lance)
 
 
@@ -9329,7 +9079,6 @@ Priests: Strong."
 #addreccom 7567 -- Huntsmaster
 #addreccom 7504 -- State Captain (Middenheim)
 #addreccom 7521 -- Seneschal
-#addreccom 7570 -- Kislevite Boyar
 #addreccom 7522 -- Warrior Priest of Ulric (middenheim)
 #addreccom 7514 -- Amber Wizard (middenheim - 155)
 #addreccom 7484 -- Jade Wizard (Altdorf and Middenheim - 170)
@@ -9339,7 +9088,7 @@ Priests: Strong."
 #addreccom 7511 -- Amethyst Wizard (Middenheim - 190)
 #addreccom 7510 -- Celestial Wizard (Middenheim - 210 - slow rec)
 #addreccom 7513 -- Gold Wizard (middenheim - 210 - slow rec)
---addreccom 7563 -- Ice Wizard of Kislev
+#addreccom 7563 -- Ice Wizard of Kislev
 #addreccom 7533 -- tribute to white wolf
 #addreccom 7536 -- tribute to knights panther
 #addreccom 7575 -- tribute to the knights of Morr
@@ -9379,7 +9128,7 @@ Priests: Strong."
 
 ------ other Settings
 
-#labcost 700 - because the colleges of magic are centralised in Altdorf
+#labcost 600 - because the colleges of magic are centralised in Altdorf
 #idealcold 1 -- Middenheimers like it a bit colder
 #color 0.5 0.5 1.0
 #startcom 7504 - state captain (Middenheim)

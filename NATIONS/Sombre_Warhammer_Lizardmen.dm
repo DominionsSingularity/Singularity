@@ -1,5 +1,39 @@
 ---- Lizardmen
+-- Added
 
+---- Horned One (stats the same as the dark elf version)
+
+#newmonster 5401
+#spr1 "./Sombre_Warhammer/Warhammer_Tilea/RoR_Horned.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Tilea/RoR_Horned2.tga"
+#name "Horned One"
+#descr "Horned Ones are predatory lizards far more common in the Southlands than Lustria which are used by the Skink Cavalry of the Lizardmen, especially when Saurus Cavalry aren't available. This particular creature was formerly a mount of one of Tichi Huichi's Raider Cavalry. It will flee to the wilds once the battle concludes."
+#hp 17
+#size 3
+#prot 7
+#mor 10
+#mr 9
+#enc 3
+#str 12
+#att 11
+#def 10
+#prec 7
+#weapon 20 -- Bite
+#ap 26
+#mapmove 24
+#gcost 0
+#animal
+#darkvision 50
+#undisciplined
+#forestsurvival
+#gcost 0
+#poisonres 5
+#coldblood
+#startage 10
+#maxage 45
+#montag 3203 -- forest beasts
+#itemslots 2048 -- just feet, hopefully changes the hit locations
+#end
 -------- New Weapons
 
 -- Salamander Breath
@@ -706,7 +740,7 @@
 #descr "When the city of Chaqua fell to the Skaven Clan Pestilens, the only survivors of the virulent and terrible plagues released by the ratmen were a single spawning of Red Crested Skink. The leader of these Skinks was Tehenhauin, prophet of Sotek and a skink of extraordinary size. Tehenhauin and his followers went on to spread the Cult of Sotek across Lustria, exterminating countless Skaven. Entirely immune to all manner of poisons and considerably more aggressive than their fellows, the Red Crested Skinks won countless battles against the ratmen and spawned in unprecedented numbers. With the growing power of the Cult of Sotek, seething hosts of Red Crested Skinks are an increasingly important part of the Lizardman war effort."
 #hp 8
 #size 1
-#prot 3
+#prot 2
 #mor 11
 #mr 11
 #enc 3
@@ -891,7 +925,8 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Temple Guard.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Temple Guard2.tga"
 #name "Temple Guard"
-#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. The Temple Guard are a variant spawning of Saurus created to protect the Slann at all costs. They have more heavily armoured scales than other Saurus and instinctually possess an unshakeable resolve to guard their masters. Temple Guard are rarely spawned in these troubled times and most of their number are the veterans of countless battles, grown stronger and more savage with age. The Temple Guard will remain dormant and may not be recruited absent the presence of an awakened Slann. It would take an incredible feat to cause the Temple Guard to break from battle."
+#descr "Saurus are ferocious warriors bred by the Old Ones specifically for war, with powerful jaws, slashing claws and spurs, tough scales and bony crests. The Temple Guard are a variant spawning of Saurus created to protect the Slann at all costs. They have more heavily armoured scales than other Saurus and instinctually possess an unshakeable resolve to guard their masters. Temple Guard are rarely spawned in these troubled times and most of their number are the veterans of countless battles, grown stronger and more savage with age. The Temple Guard will remain dormant and may not be recruited absent the presence of an awakened Slann. It would take an incredible feat to cause the Temple Guard to break from battle.
+[Requires a dominion of 5 to recruit, as well as an awake Slann]"
 #hp 16
 #size 2
 #prot 10
@@ -904,7 +939,7 @@
 #prec 9
 #mapmove 18
 #ap 10
-#gcost 35
+#gcost 45
 #rpcost 35
 #rcost 1
 #armor 2 -- shield
@@ -922,6 +957,7 @@
 #nametype 123
 #bodyguard 3
 #monpresentrec -1022 -- Awake slann of any kind
+#domrec 5
 #end
 
 
@@ -945,7 +981,7 @@
 #prec 10
 #mapmove 22
 #ap 26
-#gcost 20
+#gcost 18
 #rpcost 21
 #rcost 1
 #weapon 708 -- Stone Lance
@@ -959,7 +995,9 @@
 #mounted
 #nametype 123
 #stealthy 0
+#secondtmpshape 5401 -- horned one
 #end
+
 
 
 ---- Chameleon Skink
@@ -1243,7 +1281,8 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Stegadon.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Stegadon2.tga"
 #name "Stegadon"
-#descr "The hostile jungles of Lustria are home to a phenomenal array of creatures, almost all deadly in their own fashion. Stegadons are among the largest and most aggressive of all. Gigantic, armoured beasts, they are primarily vegetarians, but not adverse to dining on those creatures foolish enough to stand in their path. Their strength is legendary, enough to uproot trees and, properly directed, help erect the great stone momuments of the Lizardmen. With sharp horns, ridges of spikes and a spined tail capable of cracking rocks, Stegadons are virtually unstoppable in battle by conventional means. Skink warchiefs have large howdahs strapped to these beasts and a crew of hunters fire upon the enemy with bows and javelins as the Stegadon charges forward."
+#descr "The hostile jungles of Lustria are home to a phenomenal array of creatures, almost all deadly in their own fashion. Stegadons are among the largest and most aggressive of all. Gigantic, armoured beasts, they are primarily vegetarians, but not adverse to dining on those creatures foolish enough to stand in their path. Their strength is legendary, enough to uproot trees and, properly directed, help erect the great stone momuments of the Lizardmen. With sharp horns, ridges of spikes and a spined tail capable of cracking rocks, Stegadons are virtually unstoppable in battle by conventional means. Skink warchiefs have large howdahs strapped to these beasts and a crew of hunters fire upon the enemy with bows and javelins as the Stegadon charges forward.
+[Recruitment limit of 1]"
 #hp 80
 #size 6
 #prot 18
@@ -1271,6 +1310,7 @@
 #fear 5 -- standard
 #slashres
 #unsurr 1 -- because of tail
+#reclimit 1
 #end
 
 
@@ -1588,7 +1628,6 @@
 #darkvision 100
 #darkpower 1
 #stealthy 25
-#assassin
 #nametype 123
 #unsurr 1
 #end
@@ -2405,20 +2444,15 @@
 #weapon 834 -- contemplate
 #maxage 50000
 #forestsurvival
-#magicskill 8 3
 #magicskill 4 3
 #magicskill 6 1
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 3 1
-#custommagic 8832 100
-#custommagic 9472 100
+#magicskill 8 2
+#custommagic 1920 200 -- FAWE
+#custommagic 10112 100 -- FAWEN
 #holy
 #itemslots 274560 -- 2 misc, crown only headslot
 #poorleader
 #shapechange 7297
-#commaster
 #nametype 123
 #magicboost 7 -3
 #fastcast 25 -- 25% faster
@@ -2435,7 +2469,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Fifth Dormant.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Fifth Dormant.tga"
 #name "Dormant Fifth Generation Slann"
-#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require little in the way of upkeep."
+#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require slightly less in the way of upkeep."
 #hp 40
 #size 5
 #prot 8
@@ -2449,7 +2483,7 @@
 #mapmove 0
 #ap 2
 #gcost 700
-#addupkeep -600
+#addupkeep -200
 #rpcost 4
 #rcost 30
 #weapon 92 -- fist
@@ -2460,13 +2494,11 @@
 #nomagicleader
 #noundeadleader
 #forestsurvival
-#magicskill 8 3
-#magicskill 4 0
+#magicskill 4 3
 #magicskill 6 1
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 3 1
+#magicskill 8 2
+#custommagic 1920 200 -- FAWE
+#custommagic 10112 100 -- FAWEN
 #magicboost 53 -9
 #magicboost 4 -5
 #magicboost 8 -5
@@ -2513,29 +2545,24 @@
 #weapon 834 -- contemplate
 #maxage 50000
 #forestsurvival
-#magicskill 8 3
 #magicskill 4 4
 #magicskill 6 2
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 3 1
-#custommagic 10112 100 -- FAWEN
+#magicskill 8 3
+#custommagic 1920 200 -- FAWE
+#custommagic 1920 100 -- FAWE
 #custommagic 10112 100 -- FAWEN
 #holy
 #itemslots 274560 -- 2 misc, crown only headslot
 #poorleader
 #shapechange 7299
-#commaster
 #nametype 123
 #magicboost 7 -3
 #fastcast 35 -- 35% faster
 #allrange 1
 #float
 #montag 1022 -- Slann of any kind
-#inspiringres 1
 #warning 7
-#latehero 11
+#latehero 10
 #end
 
 
@@ -2545,7 +2572,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Fourth Dormant.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Fourth Dormant.tga"
 #name "Fourth Generation Slann"
-#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require little in the way of upkeep."
+#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require slightly less in the way of upkeep."
 #hp 50
 #size 5
 #prot 9
@@ -2559,20 +2586,19 @@
 #mapmove 0
 #ap 2
 #gcost 880
-#addupkeep -800
+#addupkeep -300
 #rpcost 4
 #rcost 1
 #weapon 92 -- fist
 #weapon 834 -- contemplate
 #maxage 50000
 #forestsurvival
-#magicskill 8 3
 #magicskill 4 4
 #magicskill 6 2
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
-#magicskill 3 1
+#magicskill 8 3
+#custommagic 1920 200 -- FAWE
+#custommagic 1920 100 -- FAWE
+#custommagic 10112 100 -- FAWEN
 #holy
 #itemslots 274560 -- 2 misc, crown only headslot
 #noleader
@@ -2607,7 +2633,7 @@
 [May only be recruited in forests and swamps]"
 #hp 9
 #size 2
-#prot 3
+#prot 2
 #mor 10
 #mr 13
 #enc 3
@@ -2664,24 +2690,20 @@
 #weapon 834 -- contemplate
 #maxage 50000
 #forestsurvival
-#magicskill 8 4
 #magicskill 4 5
 #magicskill 6 3
-#magicskill 0 2
-#magicskill 1 2
-#magicskill 2 2
-#magicskill 3 2
-#spreaddom 1
+#magicskill 8 3
 #nobadevents 15
 #shockres 5
 #fireres 5
 #coldres 5
+#custommagic 1920 300 -- FAWE
+#custommagic 1920 100 -- FAWE
 #custommagic 10112 100 -- FAWEN
 #holy
 #itemslots 290944 -- 3 misc, crown only headslot
 #poorleader
 #shapechange 7302
-#commaster
 #nametype 123
 #magicboost 7 -3
 #fastcast 45 -- 45% faster
@@ -2699,7 +2721,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Third Dormant.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Third Dormant.tga"
 #name "Third Generation Slann"
-#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained and will require little in the way of upkeep."
+#descr "This Slann has entered a dormant state, contemplating the will of the Old Ones, communing with Slann whose physical forms have been destroyed and renewing its own body. The more ancient a Slann, the longer it tends to spend in a dormant state. While dormant the Slann is unable to research or use magic of any sort and is entirely immobile. It is also extremely vulnerable to any form of attack, however it will recover from any afflictions sustained, and takes slightly less gold to upkeep."
 #hp 50
 #size 5
 #prot 10
@@ -2713,25 +2735,22 @@
 #mapmove 0
 #ap 2
 #gcost 1000
-#addupkeep -900
+#addupkeep -300
 #rcost 1
 #weapon 92 -- fist
 #weapon 834 -- contemplate
 #maxage 50000
 #forestsurvival
-#magicskill 8 4
 #magicskill 4 5
 #magicskill 6 3
-#magicskill 0 2
-#magicskill 1 2
-#magicskill 2 2
-#magicskill 3 2
-#spreaddom 1
+#magicskill 8 3
 #shockres 5
 #fireres 5
 #coldres 5
 #nobadevents 15
-#custommagic 10112 100
+#custommagic 1920 300 -- FAWE
+#custommagic 1920 100 -- FAWE
+#custommagic 10112 100 -- FAWEN
 #holy
 #itemslots 290944 -- 3 misc, crown only headslot
 #noleader
@@ -2785,12 +2804,12 @@
 #maxage 100000
 #forestsurvival
 #amphibian
-#magicskill 8 5
-#magicskill 4 5
-#magicskill 6 3
-#magicskill 1 3
+#magicskill 1 2
 #magicskill 2 6
-#magicskill 3 3
+#magicskill 3 1
+#magicskill 4 5
+#magicskill 6 1
+#magicskill 8 5
 #spreaddom 2
 #gemprod 2 1
 #shockres 30
@@ -2800,7 +2819,6 @@
 #holy
 #itemslots 323712 -- four misc slots, crown only headslot
 #poorleader
-#commaster
 #nametype 123
 #secondshape 7304
 #amphibian
@@ -2813,68 +2831,7 @@
 #montag 1022 -- Slann of any kind
 #inspiringres 1
 #warning 12
-#end
-
-
----- Slann (2rd Generation - Seas - awakening with bubble)
-
-#newmonster 7308
-#spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Zlatlan Shield.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Zlatlan Shield2.tga"
-#name "One Who Fathomed The Depths"
-#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Zlatlan is the only being to know every depth of the world's oceans, for he helped shape them. Zlatlan is blessed by both Tzunki and Xhotl, equally at home above and beneath the waves and constantly surrounded by a powerful magical barrier protecting him from harm. Of all the Second Generation, Zlatlan has taken the strongest stance against Sotek, proclaiming he is not an Old One and may even be moving against their will.
-
-[50% casting speed increase]
-[This monster is protected by a bubble shield granted by Xhotl. When it is damaged it will lose protection and resistances but change to a much higher hp form. This represents the shield being shattered. They will return to their shielded form after battle]"
-#hp 1
-#size 6
-#prot 35
-#mor 30
-#mr 30
-#enc 0
-#str 10
-#att 10
-#def 9
-#prec 9
-#mapmove 10
-#ap 8
-#gcost 1
-#rcost 1
-#weapon 92 -- fist
-#weapon 834 -- contemplate
-#armor 373 -- Magic Barrier
-#maxage 100000
-#forestsurvival
-#amphibian
-#magicskill 8 5
-#magicskill 4 5
-#magicskill 6 3
-#magicskill 1 3
-#magicskill 2 6
-#magicskill 3 3
-#spreaddom 2
-#gemprod 2 1
-#shockres 30
-#fireres -500
-#coldres 30
-#poisonres 25
-#holy
-#itemslots 323712 -- four misc slots, crown only headslot
-#poorleader
-#commaster
-#nametype 123
-#secondshape 7304
-#amphibian
-#unique
-#magicboost 7 -3
-#firstshape 7303 -- normal zlatlan
-#domsummon 7347 -- Saurus of Xhotl
-#summon5 7330 -- saurus of Tzunki
-#fastcast 50
-#allrange 2
-#fixedname "Zlatlan"
-#float
-#warning 12
+#heal
 #end
 
 
@@ -2906,12 +2863,12 @@
 #maxage 100000
 #forestsurvival
 #amphibian
-#magicskill 8 5
-#magicskill 4 5
-#magicskill 6 3
-#magicskill 1 3
+#magicskill 1 2
 #magicskill 2 6
-#magicskill 3 3
+#magicskill 3 1
+#magicskill 4 5
+#magicskill 6 1
+#magicskill 8 5
 #spreaddom 2
 #gemprod 2 1
 #shockres 5
@@ -2920,7 +2877,6 @@
 #holy
 #itemslots 323712 -- four misc slots, crown only headslot
 #poorleader
-#commaster
 #nametype 123
 #firstshape 7303
 #amphibian
@@ -2933,62 +2889,8 @@
 #montag 1022 -- Slann of any kind
 #inspiringres 1
 #warning 12
-#end
-
-
----- Slann (2nd generation - fire - awakening form)
-
-#newmonster 7288
-#spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Adohi.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Adohi2.tga"
-#name "One Who Fired The Earth"
-#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Adohi-Tehga is an unequalled pyromancer blessed by Chotec who directed great flows of magma, following the Great Plan. Mortally wounded in the Great Catastrophe, Adohi-Tehga only recently awoke and immediately joined Mazdamundi in his efforts to violently correct the corruption of the world, swearing never to rest until the Old Ones return. Focusing all his power on the destruction of his foes, his palanquin must now be carried into battle by temple guard as he lashes out with the deadly Sword of Rhuin, a weapon of pure fire and wrath. Of all the Second Generation, Adohi-Tehga is by far the most accepting of Sotek.
-
-[50% casting speed increase]"
-#hp 110
-#size 6
-#prot 18
-#mor 30
-#mr 21
-#enc 6
-#str 14
-#att 12
-#def 12
-#prec 11
-#mapmove 18
-#ap 12
-#gcost 1
-#rcost 1
-#weapon 812 -- Sword of Rhuin
-#weapon 829 -- scouring Gaze
-#armor 2 -- shield
-#maxage 50000
-#forestsurvival
-#magicskill 8 5
-#magicskill 4 5
-#magicskill 6 3
-#magicskill 0 5
-#magicskill 1 3
-#magicskill 3 4
-#gemprod 0 1
-#spreaddom 2
-#shockres 5
-#fireres 30
-#coldres 0
-#holy
-#itemslots 290944 -- 3 misc, crown only headslot
-#poorleader
-#commaster
-#fireshield 8
-#firepower 2
-#unique
-#firstshape 7289 -- normal adohi
-#domsummon 7334 -- Saurus of Chotec
-#summon5 7334 -- saurus of Chotec
-#fastcast 50
-#allrange 2
-#fixedname "Adohi Tehga"
-#warning 12
+#nowish
+#heal
 #end
 
 
@@ -3020,12 +2922,11 @@
 #armor 2 -- shield
 #maxage 50000
 #forestsurvival
-#magicskill 8 5
-#magicskill 4 5
-#magicskill 6 3
 #magicskill 0 5
-#magicskill 1 3
-#magicskill 3 4
+#magicskill 3 3
+#magicskill 4 5
+#magicskill 6 2
+#magicskill 8 5
 #gemprod 0 1
 #spreaddom 2
 #shockres 5
@@ -3034,83 +2935,19 @@
 #holy
 #itemslots 290944 -- 3 misc, crown only headslot
 #poorleader
-#commaster
 #nametype 123
 #fireshield 8
 #firepower 2
 #unique
+#heal
 #fastcast 50
 #allrange 2
 #fixedname "Adohi Tehga"
 #inspiringres 1
 #montag 1022 -- Slann of any kind
 #warning 12
+#nowish
 #end
-
-
----- Slann (2nd generation - earth - awakening form)
-
-#newmonster 7362
-#spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Mazdamundi.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Mazdamundi2.tga"
-#name "One Who Shaped The Mountains"
-#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Mazdamundi, Lord of the Solar City, is the greatest of his generation, a geomancer who carved the very continents. Mazdamundi is the most active of his kind, having  concluded that the Great Plan has been disrupted and cannot be corrected until the enemies of the Lizardmen are utterly eradicated. Mazdamundi rides into battle atop the ancient Stegadon Zlaaq, trampling the enemy as he blasts them with ancient magic. He carries the Cobra Staff which lashes out to poison those who would strike him and the Sunburst Standard of the Solar City Hexoatl which lends him a blinding aura of power.
-
-[50% casting speed increase]"
-#hp 140
-#size 6
-#prot 20
-#mor 30
-#mr 21
-#enc 6
-#str 28
-#att 10
-#def 9
-#prec 10
-#mapmove 20
-#ap 18
-#gcost 1
-#rcost 1
-#weapon 810 -- Rampage
-#weapon 89 -- Snake Staff
-#maxage 50000
-#forestsurvival
-#mountainsurvival
-#magicskill 8 5
-#magicskill 4 5
-#magicskill 6 3
-#magicskill 3 5
-#magicskill 1 3
-#magicskill 0 4
-#magicboost 7 -3
-#gemprod 3 1
-#spreaddom 2
-#shockres 5
-#fireres 5
-#coldres 5
-#holy
-#itemslots 290944 -- 3 misc, crown only headslot
-#poorleader
-#commaster
-#nametype 123
-#awe 4
-#unique
-#firstshape 7363 -- normal Mazdamundi
-#domsummon 7335 -- Saurus of Quetzl
-#summon5 7335 -- saurus of Quetzl
-#fastcast 50
-#allrange 2
-#fixedname "Lord Mazdamundi"
-#trample
-#reinvigoration 4
-#heal
-#poisonarmor
-#fear 8
-#slashres
-#unsurr 1
-#warning 12
-#end
-
 
 
 ---- Slann (2nd generation - earth - normal form)
@@ -3141,12 +2978,11 @@
 #maxage 50000
 #forestsurvival
 #mountainsurvival
-#magicskill 8 5
+#magicskill 0 1
+#magicskill 3 6
 #magicskill 4 5
 #magicskill 6 3
-#magicskill 3 6
-#magicskill 0 3
-#magicskill 2 2
+#magicskill 8 5
 #magicboost 7 -3
 #gemprod 3 1
 #spreaddom 2
@@ -3156,7 +2992,6 @@
 #holy
 #itemslots 290944 -- 3 misc, crown only headslot
 #poorleader
-#commaster
 #nametype 123
 #awe 4
 #unique
@@ -3173,64 +3008,7 @@
 #montag 1022 -- Slann of any kind
 #unsurr 1
 #warning 12
-#end
-
-
----- Slann (2nd Generation - Spheres - awakening)
-
-#newmonster 7364
-#spr1 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Yucatetl.tga"
-#spr2 "./Sombre_Warhammer/Warhammer_Lizardmen/Slann Second Yucatetl2.tga"
-#name "One Who Guided The Spheres"
-#descr "Only five Slann of the Second Generation are still alive and they are becoming harder and harder to raise from their meditation, sometimes remaining dormant for decades. The Second Generation helped the Old Ones shape the world itself and they are truly godlike in their magical power. Yucatetl is truly blessed, for he alone of his generation was permitted audience with the Old Ones, though the experience blinded him to the material world. Yucatetl helped the First Generation guide the world through the heavens and set the four winds in motion. Even before the coming of Chaos Yucatetl sat motionless, staring into the void with blind unblinking eyes, but now he is awakened and narrowing his eyes to a pinprick of light, sees all that must be done. Yucatetl can cast rituals into even the most distant lands.
-
-[50% casting speed increase]"
-#hp 60
-#size 6
-#prot 14
-#mor 30
-#mr 23
-#enc 8
-#str 8
-#att 3
-#def 2
-#prec 0
-#mapmove 10
-#ap 6
-#gcost 1
-#rcost 1
-#nobadevents 30
-#weapon 92 -- fist
-#weapon 834 -- contemplate
-#maxage 100000
-#forestsurvival
-#magicskill 8 5
-#magicskill 4 7
-#magicskill 6 1
-#magicskill 1 5
-#magicskill 2 1
-#magicskill 3 1
-#blind
-#spreaddom 2
-#gemprod 4 2
-#shockres 5
-#coldres 5
-#poisonres 5
-#holy
-#itemslots 323712 -- four misc slots, crown only headslot
-#poorleader
-#commaster
-#nametype 123
-#firstshape 7365 -- Yucatetl normal
-#unique
-#magicboost 7 -4
-#fastcast 50
-#fixedname "Yucatetl"
-#float
-#allrange 3
-#domsummon 7332 -- Saurus of Tzlazcotl
-#summon5 7333 -- saurus of Tepok
-#warning 12
+#nowish
 #end
 
 
@@ -3263,9 +3041,9 @@
 #maxage 100000
 #forestsurvival
 #magicskill 8 5
-#magicskill 4 7
+#magicskill 4 6
 #magicskill 6 1
-#magicskill 1 5
+#magicskill 1 4
 #magicskill 2 1
 #magicskill 3 1
 #blind
@@ -3280,6 +3058,7 @@
 #commaster
 #nametype 123
 #unique
+#heal
 #magicboost 7 -4
 #fastcast 50
 #fixedname "Yucatetl"
@@ -3288,6 +3067,7 @@
 #inspiringres 1
 #montag 1022 -- Slann of any kind
 #warning 12
+#nowish
 #end
 
 
@@ -3480,7 +3260,7 @@
 #descr "The story of Tehenhauin is in many ways the story of Sotek. Tehenhauin began his life as a Priest in the city of Chaqua, but the arrival of the Skaven clan Pestilens changed all that. The vile ratmen somehow overcame the disease, flora and fauna of Lustria and became agents of corruption, releasing plagues which devastated the Lizardman population. Cahqua and her resident Slann were ravaged by pestilence and Tehenhauin, sensing the city was doomed, gathered the sacred golden plaques and led the survivors into the jungle. These plaques spoke of the arrival of vengeful Sotek and Tehenhauin, sacrificing thousands of captured ratmen with his serpent blade, acted as his herald. As Prophet of Sotek Tehenhauin is able to unleash wave after wave of poisonous blood red snakes in battle."
 #hp 20 -- big for a skink!
 #size 2
-#prot 9
+#prot 7
 #mor 14
 #mr 16
 #enc 3
@@ -3682,7 +3462,7 @@
 #newspell
 #name "Spawning of Sotek"
 #descr "By spilling blood on the altar of Sotek, the Serpent, the Wrathful One, the Nemesis, Skavenbane, the priests of Sotek spread his influence to yet another a spawning of Saurus, led by a frenzied Bloodscale."
-#details "Summons 13 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 6
 #restricted 145
 #researchlevel 5
@@ -3691,7 +3471,7 @@
 #effect 10001
 #fatiguecost 3300
 #damage 7329
-#nreff 13
+#nreff 8
 #nextspell "Bloodscale of Sotek"
 #end
 
@@ -3716,7 +3496,7 @@
 #newspell
 #name "Sacred Spawning of Tzunki"
 #descr "The will of Tzunki, Watcher of Water, the Deep One, the Terror from Below, Devourer of Corsairs is revealed! Careful interpretation of calls from the watery depths of the world issued by Tzunki has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a fearsome Deepscale."
-#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 0
 #restricted 145
 #researchlevel 5
@@ -3727,7 +3507,7 @@
 #effect 10001
 #fatiguecost 2000
 #damage 7330
-#nreff 12
+#nreff 8
 #nextspell "Deepscale of Tzunki"
 #end
 
@@ -3753,7 +3533,7 @@
 #newspell
 #name "Sacred Spawning of Huanchi"
 #descr "The will of Huanchi, the Jaguar, the Stalker, Silent Death, Teeth in the Dark is revealed! Careful observation of creatures from the primordial jungles once stalked by Huanchi has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a deadly Nightscale."
-#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 0
 #restricted 145
 #researchlevel 5
@@ -3764,7 +3544,7 @@
 #effect 10001
 #fatiguecost 2000
 #damage 7331
-#nreff 12
+#nreff 8
 #nextspell "Nightscale of Huanchi"
 #end
 
@@ -3791,7 +3571,7 @@
 #newspell
 #name "Sacred Spawning of Tlazcotl"
 #descr "The will of Tlazcotl, the Cold One, the Impassable, Mirror of Calm is revealed! Careful study of the ancient temple cities laid out across the continents by Tlazcotl has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an implacable Nullscale."
-#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 3
 #restricted 145
 #researchlevel 5
@@ -3802,7 +3582,7 @@
 #effect 10001
 #fatiguecost 2000
 #damage 7332
-#nreff 12
+#nreff 8
 #nextspell "Nullscale of Tlazcotl"
 #end
 
@@ -3828,7 +3608,7 @@
 #newspell
 #name "Sacred Spawning of Tepok"
 #descr "By observing the rites of Tepok, the Inscrutable, the Ineffable, the Maze of Minds, Master of the Winds, a sacred spawning of his chosen Saurus are summoned, led by a cerebral Lorescale."
-#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 5
 #restricted 145
 #researchlevel 5
@@ -3839,7 +3619,7 @@
 #effect 10001
 #fatiguecost 2000
 #damage 7333
-#nreff 12
+#nreff 8
 #nextspell "Lorescale of Tepok"
 #end
 
@@ -3866,7 +3646,7 @@
 #newspell
 #name "Sacred Spawning of Chotec"
 #descr "The will of Chotec, the Burning Sun, the Heat of Life, the Searer of Unlife, Light of Truth is revealed! Careful experimentation with the energy gifted to the world by Chotec has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a brilliant Sunscale."
-#details "Summons 14 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 9 troops and a commander. They do have gold upkeep like your recruitables."
 #school 2
 #restricted 145
 #researchlevel 5
@@ -3877,7 +3657,7 @@
 #effect 10001
 #fatiguecost 1800
 #damage 7334
-#nreff 14
+#nreff 9
 #nextspell "Sunscale of Chotec"
 #end
 
@@ -3904,7 +3684,7 @@
 #newspell
 #name "Sacred Spawning of Quetzl"
 #descr "The will of Quetzl, the Protector, the Rock, the Guardian, He Who Breaks Blades is revealed! Careful analysis of the matter knit together by Quetzl to birth the world itself has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by an unstoppable Spinescale."
-#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 1
 #restricted 145
 #researchlevel 5
@@ -3915,7 +3695,7 @@
 #effect 10001
 #fatiguecost 2000
 #damage 7335
-#nreff 12
+#nreff 8
 #nextspell "Spinescale of Quetzl"
 #end
 
@@ -3943,7 +3723,7 @@
 #newspell
 #name "Sacred Spawning of Xhotl"
 #descr "The will of Xhotl, the Infinite Shield, Bane of Magic, Barrier of Woe, Painter of All is revealed! Careful interpretation of the enchantments laid upon the world by Xhotl to keep Chaos at bay has allowed the Slann to precisely predict the spawning of sacred saurus bearing his mark, led by a vibrant Wardscale."
-#details "Summons 12 troops and a commander. They do have gold upkeep like your recruitables."
+#details "Summons 8 troops and a commander. They do have gold upkeep like your recruitables."
 #school 4
 #restricted 145
 #researchlevel 5
@@ -3954,7 +3734,7 @@
 #effect 10001
 #fatiguecost 2000
 #damage 7347
-#nreff 12
+#nreff 8
 #nextspell "Wardscale of Xhotl"
 #end
 
@@ -3970,7 +3750,7 @@
 #path 0 4
 #pathlevel 0 5
 #effect 10021
-#fatiguecost 5000
+#fatiguecost 9000
 #damage 7301
 #nreff 1
 #end
@@ -3979,15 +3759,16 @@
 
 #newspell
 #name "Awaken One Who Fathomed The Depths"
-#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Zlatlan, One Who Fathomed The Depths is unmatched in the elemental magic of water, protected from harm by Xhotl and, like his four brothers, a symbol of the Old Ones' will. His honour guard is formed of sacred saurus marked by both Xhotl and Tzunki." 
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Zlatlan, One Who Fathomed The Depths is unmatched in the elemental magic of water, protected from harm by Xhotl and, like his four brothers, a symbol of the Old Ones' will."
+#details "This summons a unique commander. Because the commander is unique if you cast this spell again, it will bring the commander back to where you summoned them, even if they've been killed. Doing so while they are still alive is probably a waste of gems."
 #school 0
 #restricted 145
-#researchlevel 8
+#researchlevel 9
 #path 0 4
 #pathlevel 0 5
 #effect 10021
-#fatiguecost 7000
-#damage 7308
+#fatiguecost 10000
+#damage 7303
 #nreff 1
 #end
 
@@ -3996,15 +3777,16 @@
 
 #newspell
 #name "Awaken One Who Fired The Earth"
-#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Adohi-Tehga, One Who Fired The Earth is an unequalled pyromancer, blessed of Chotec, an embodiment of the wrath of the Slann visited upon those who corrupt the Great Plan and, like his four brothers, a symbol of the Old Ones' will. His honour guard is formed of sacred saurus marked by Chotec." 
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Adohi-Tehga, One Who Fired The Earth is an unequalled pyromancer, blessed of Chotec, an embodiment of the wrath of the Slann visited upon those who corrupt the Great Plan and, like his four brothers, a symbol of the Old Ones' will." 
+#details "This summons a unique commander. Because the commander is unique if you cast this spell again, it will bring the commander back to where you summoned them, even if they've been killed. Doing so while they are still alive is probably a waste of gems."
 #school 0
 #restricted 145
-#researchlevel 8
+#researchlevel 9
 #path 0 4
 #pathlevel 0 5
 #effect 10021
-#fatiguecost 7500
-#damage 7288
+#fatiguecost 10000
+#damage 7289
 #nreff 1
 #end
 
@@ -4013,31 +3795,34 @@
 
 #newspell
 #name "Awaken One Who Shaped The Mountains"
-#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Lord Mazdamundi, One Who Shaped The Mountains is a peerless geomancer, blessed of Quetzl, the most active and powerful of his generation and, like his four brothers, a symbol of the Old Ones' will. Mazdamundi has proclaimed no progress may be made in the Great Plan until the forces of Chaos and unplanned lesser races have been eradicated. His honour guard is formed of sacred Saurus marked by Quetzl." 
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Lord Mazdamundi, One Who Shaped The Mountains is a peerless geomancer, blessed of Quetzl, the most active and powerful of his generation and, like his four brothers, a symbol of the Old Ones' will. Mazdamundi has proclaimed no progress may be made in the Great Plan until the forces of Chaos and unplanned lesser races have been eradicated." 
+#details "This summons a unique commander. Because the commander is unique if you cast this spell again, it will bring the commander back to where you summoned them, even if they've been killed. Doing so while they are still alive is probably a waste of gems."
 #school 0
 #restricted 145
-#researchlevel 8
+#researchlevel 9
 #path 0 4
 #pathlevel 0 5
 #effect 10021
-#fatiguecost 8000
-#damage 7362
+#fatiguecost 10000
+#damage 7363 -- mazdamundi
 #nreff 1
 #end
+
 
 ---- Awaken Second Generation Slann of Spheres
 
 #newspell
 #name "Awaken One Who Guided The Spheres"
-#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Yucatetl, One Who Guided The Spheres, blessed of Tepok and Tlazcotl, the blind unblinking eye that sees all, the only living creature to have been given audience with the Old Ones. Yucatetl is a master of the magic of the countless stars and the four winds who can cast rituals across unheard of distances. His honour guard is formed of the sacred Saurus marked by Quetzl and Tepok." 
+#descr "The Second Generation of Slann were directly responsible for shaping the world to the will of the Old Ones. Only five now remain to guide the Lizardmen in this time of strife and awakening one from his decades of slumber is no small matter. Yucatetl, One Who Guided The Spheres, blessed of Tepok and Tlazcotl, the blind unblinking eye that sees all, the only living creature to have been given audience with the Old Ones. Yucatetl is a master of the magic of the countless stars and the four winds who can cast rituals across unheard of distances."
+#details "This summons a unique commander. Because the commander is unique if you cast this spell again, it will bring the commander back to where you summoned them, even if they've been killed. Doing so while they are still alive is probably a waste of gems."
 #school 0
 #restricted 145
-#researchlevel 8
+#researchlevel 9
 #path 0 4
 #pathlevel 0 5
 #effect 10021
-#fatiguecost 8000
-#damage 7364
+#fatiguecost 11000
+#damage 7365
 #nreff 1
 #end
 
@@ -4048,6 +3833,20 @@
 #copyspell 1006 -- touch of madness
 #name "Touch of madness short"
 #school -1 -- cannot be researched
+#end
+
+#newspell
+#copyspell 976 -- communion master
+#descr "The Slann have mastered the ability to tap into the magic of other creatures near them. They can use the power and pass on the fatigue to others willing to amplify their already powerful force."
+#casttime 50
+#restricted 145
+#end
+
+#newspell
+#copyspell 977 -- communion slave
+#descr "Just as the Slann have mastered the ability to lead, they have taught the ability to serve to the Skink priests who serve them and more. This allows a creature to give their magic and life force to amplify another mage."
+#casttime 50
+#restricted 145
 #end
 
 
@@ -4331,7 +4130,6 @@
 
 
 
-
 -------- NATION
 
 #selectnation 145
@@ -4460,15 +4258,12 @@ Priests: Very Powerful."
 --addreccom 7353 -- spinescale quetzl
 --addreccom 7349 -- wardscale xhotl
 --addreccom 7351 -- nullscale of tlazcotl
---addreccom 7303 -- Zlatlan
 --addreccom 7356 -- Nakai
 --addreccom 7309 -- Tiktaqto
 --addreccom 7352 -- Chakax
---addreccom 7288 -- Adohi-Tehga
 --addreccom 7358 -- Tehenhauin
 --addreccom 7357 -- Gor Rok
 --addreccom 7361 -- Oxyotl
---addreccom 7362 -- Mazdamundi
 
 #addforeigncom 7294 -- Chameleon Scout
 

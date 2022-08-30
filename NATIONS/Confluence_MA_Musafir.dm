@@ -1,6 +1,5 @@
 -- MA MUSAFIR NATION!
 
-
 -- ------------------------------------------------------------------------------------
 -- NATIONAL ITEMS 
 -- ------------------------------------------------------------------------------------
@@ -80,22 +79,22 @@
 -- Kingdom of the Moon --------------------------------------------------------------------------
 
 
-#newspell 
-#name "Kingdom of the Moon" -- Umbral Kingdom?
-#descr "The Moon brazenly ascends during daytime, completely eclipsing her sister, the Sun, and perpetually shrouding the world in darkness, bringing about an endless, Moon-lit night. Under the ascended Moon the most devious and sly of the Moon's servants are empowered, much like their goddess. "
-#details "As long as this global is active limited darkness will cover the world. This only affects battles. If a Temple of the Moon has already been established, or is established at any point while the global is active, The Chosen of the Moon recruits will be added to the site, for as long as both the site and global are active."
-#school 4
-#researchlevel 0
-#path 0 4
-#pathlevel 0 6
+--#newspell 
+--#name "Kingdom of the Moon" -- Umbral Kingdom?
+--#descr "The Moon brazenly ascends during daytime, completely eclipsing her sister, the Sun, and perpetually shrouding the world in darkness, bringing about an endless, Moon-lit night. Under the ascended Moon the most devious and sly of the Moon's servants are empowered, much like their goddess. "
+--#details "As long as this global is active limited darkness will cover the world. This only affects battles. If a Temple of the Moon has already been established, or is established at any point while the global is active, The Chosen of the Moon recruits will be added to the site, for as long as both the site and global are active."
+--#school 4
+--#researchlevel 0
+--#path 0 4
+--#pathlevel 0 6
 --path 1 7
 --pathlevel 1 4
-#restricted 120
-#fatiguecost 6000
-#effect 10081
-#damage 375
-#onlyatsite "Temple of the Moon "
-#end
+--#restricted 120
+--#fatiguecost 6000
+--#effect 10081
+--#damage 375
+--#onlyatsite "Temple of the Moon "
+--#end
 
 
 -- Ferocity --------------------------------------------------------------------------
@@ -140,7 +139,9 @@
 #copyspell "Destruction" -- 636   --  Destruction 
 #name "Storm of Reflections"
 #descr "With a deafening splintering noise all armor on the battlefield will break into thousands of reflecting pieces. The broken armor fragments will remain suspended in air, swirling and creating a storm of reflections. Multiple illusionary images of everyone on the battlefield will be created, making it difficult to figure out which one to strike."
+#details "MRNH to negate armor destruction - mirror image still applied battlefield wide."
 #aoe 666
+#spec 17592194433152
 #path 0 1
 #path 1 4
 #pathlevel 0 4
@@ -1446,7 +1447,7 @@ If an Attendant of the Divines is chosen as the prophet of Musafir, the Temple o
 #name "Magus"
 #spr1 "./Confluence/MA_Musafir/CatPretender1.tga"
 #spr2 "./Confluence/MA_Musafir/CatPretender1.tga"
-#descr "."
+#descr "[Executor ran out of lore]"
 #ap 16
 #mapmove 18
 #hp 16
@@ -2189,17 +2190,17 @@ If an Attendant of the Divines is chosen as the prophet of Musafir, the Temple o
 -- Moon Global/Kingdom of the Moon ---------------------------------------------------------------------------
 
 
-#newevent
-#rarity 13
-#req_ench 375
-#req_permonth 1
-#req_pop0ok
-#req_owncapital 1
-#req_fornation 120
-#msg "Nighttime reigns over the world as the Moon continues to glide across the sky in perfect synchronicity with the Sun, eclipsing her fully.[Temple of the Moon ]" -- World Darkness
-#req_site 1
-#worlddarkness
-#end
+--#newevent
+--#rarity 13
+--#req_ench 375
+--#req_permonth 1
+--#req_pop0ok
+--#req_owncapital 1
+--#req_fornation 120
+--#msg "Nighttime reigns over the world as the Moon continues to glide across the sky in perfect synchronicity with the Sun, eclipsing her fully.[Temple of the Moon ]" -- World Darkness
+--#req_site 1
+--#worlddarkness
+--#end
 
 
 -- -----------------------------------------------------------------------------------

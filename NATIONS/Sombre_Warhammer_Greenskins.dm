@@ -42,6 +42,7 @@
 --- Giant Stomp
 
 #newweapon 1087
+#copyweapon 532
 #name "Giant Stomp"
 #dmg 0
 #att 0
@@ -98,22 +99,32 @@
 
 --- Wild Swings (giant's huge club attack)
 
-#newweapon 1082
+#newweapon 1085
 #copyweapon 532 -- tail sweep, to get the def negates trait
-#name "Wild Swings"
+#name "Cleave"
 #dmg 3
+#aoe 2
+#halfstr
+#sizeresist
+#blunt
+#end
+
+#newweapon 1082
+#name "Wild Swings"
+#dmg 5
 #att 0
 #def 0
-#aoe 2
-#nratt 2
 #len 4
 #blunt
+#secondaryeffectalways 1085
+#nratt 2
 #end
 
 
 --- Ball and chain
 
 #newweapon 1044
+#copyweapon 532 -- tail sweep, to get the def negates trait
 #name "Ball and Chain"
 #ironweapon
 #unrepel
@@ -122,7 +133,7 @@
 #sound 11 -- flail
 #twohanded
 #len 4
-#def 10 -- +10 def because he's a whirling dervish almost immune to melee
+#def 5 -- +5 def because he's a whirling dervish almost immune to melee
 #att 0
 #nratt 1
 #dmg 8
@@ -184,8 +195,9 @@
 #armorpiercing
 #norepel
 #unrepel
---skip2 -- when used skips the next two weapons - this is buggy and doesn't work
-#melee50 -- only used half the time
+#range -3
+#range050
+#ammo 2
 #att 0
 #end
 
@@ -566,7 +578,28 @@
 #nratt 2 -- he has only a single weapon, so needs doubling the attacks
 #end
 
+---- Poison Spear (Singularity)
 
+#newweapon 1080
+#copyweapon 31 -- Coral Spear
+#name "Poison Spear"
+#end
+
+---- Poison Club (Singularity)
+
+#newweapon 1081
+#copyweapon 265 -- Spiked Club
+#name "Poison Club"
+#secondaryeffect 50 -- Weak Poison
+#end
+
+---- Poison Axe (Singularity)
+
+#newweapon 1084
+#copyweapon 675 -- Bronze Axe
+#name "Poison Axe"
+#secondaryeffect 50 -- Weak Poison
+#end
 
 
 
@@ -580,7 +613,7 @@
 #prot 21
 #enc 3
 #def -2
-#magicarmor
+#magic
 #end
 
 
@@ -590,7 +623,7 @@
 #copyarmor 38 -- blacksteel full plate
 #name "Blood-Forged Armour"
 #prot 25 -- +1 over blacksteel full plate, everything else same
-#magicarmor
+#magic
 #end
 
 
@@ -610,7 +643,7 @@
 #copyarmor 14 -- plate hauberk
 #name "Azhag's 'Ard Armour"
 #prot 20
-#magicarmor
+#magic
 #end
 
 
@@ -637,7 +670,7 @@
 #name "Forest Goblin"
 #descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Forest Goblins are a particular subgroup of Goblin that have their own culture, magic, and methods of warfare. They are particularly common in the South but can be found almost anywhere forest or jungle is dense enough to afford them shelter from other races from which they can raid. Forest Goblins, rather like Savage Orcs, arm themselves with primitive weapons of wood, stone, and bone, though truthfully these are hardly less effective than the metal weapons of their cousins. Forest Goblins wear little or no armour and decorate themselves with tattoos, warpaint, and bright feathers which they hammer directly into their skulls.
 
-[Discounted to 6 gold in Turmoil 3]"
+[Discounted to 5 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -646,15 +679,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 373 -- stone spear
+#weapon 1080 -- poison spear
 #armor 2 -- shield
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -665,7 +698,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 ---- Forest Goblin infantry - spear and shield
@@ -683,15 +716,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 373 -- stone spear
+#weapon 1080 -- poison spear
 #armor 2 -- shield
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -702,7 +735,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 ---- Forest Goblin infantry - axe no shield
@@ -720,15 +753,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 1057 -- stone axe
+#weapon 1084 -- poison axe
 #armor 122 -- skull cap
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -739,7 +772,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -758,15 +791,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 1057 -- stone axe
+#weapon 1084 -- poison axe
 #armor 122 -- skull cap
 #armor 2 -- shield
 #forestsurvival -- they live in forests, dur
@@ -778,7 +811,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -797,15 +830,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 1057 -- stone axe
+#weapon 1084 -- poison axe
 #armor 105 -- hide shield
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -816,7 +849,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -835,15 +868,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 252 -- club
+#weapon 1081 -- poison club
 #armor 2 -- shield
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -854,7 +887,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -873,15 +906,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 265 -- spiked club
+#weapon 1081 -- poison club
 #armor 105 -- hide shield
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -892,7 +925,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -911,15 +944,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 373 -- stone spear
+#weapon 1080 -- poison spear
 #armor 105 -- hide shield
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -930,7 +963,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -949,15 +982,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 373 -- stone spear
+#weapon 1080 -- poison spear
 #forestsurvival -- they live in forests, dur
 #darkvision 50
 #nametype 211
@@ -967,7 +1000,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -987,15 +1020,15 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
-#weapon 373 -- stone spear
+#weapon 1080 -- poison spear
 #weapon 21 - javelins
 #forestsurvival -- they live in forests, dur
 #darkvision 50
@@ -1006,7 +1039,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -1019,7 +1052,7 @@
 #name "Forest Goblin Archer"
 #descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Forest Goblins are a particular subgroup of Goblin that have their own culture, language, and methods of warfare. They are particularly common in the South but can be found almost anywhere forest or jungle is dense enough to afford them shelter from other races from which they can raid. Forest Goblins, rather like Savage Orcs, arm themselves with primitive weapons of wood, stone, and bone, though truthfully these are hardly less effective than the metal weapons of their cousins. Forest Goblins wear little or no armour and decorate themselves with tattoos, warpaint, and bright feathers which they hammer directly into their skulls. The archers of Forest Goblin tribes are known to coat their arrowheads with poison from the Giant Spiders that are so important to their culture, making them significantly more threatening to troops lacking good protection.
 
-[Discounted to 8 gold in Turmoil 3]"
+[Discounted to 7 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -1028,11 +1061,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 11
+#gcost 10
 #chaosrec 1
 #rpcost 4
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1046,7 +1079,7 @@
 #startage 15
 #maxage 5000
 #slave
-#invulnerable 3
+#invulnerable 5
 #end
 
 
@@ -1058,7 +1091,7 @@
 #name "Forest Goblin Spider Rider"
 #descr "One of the most unusual aspects of Forest Goblin society is how intertwined their life is with that of the Giant Spiders that dwell in the deep woords. Spiders are eaten as food, milked for poison, kept as pets, and even worshipped as gods. Some of the larger species are also ridden into battle, where their ability to climb sheer surfaces and scitter over rough terrain and their venomous fangs and protective chitin are useful assets. In battle Spider Riders act as light cavalry, usually deployed on the flanks with either crude stone tipped lances or bows with poison dipped arrows.
 
-[Discounted to 21 gold in Turmoil 3]"
+[Discounted to 16 gold in Turmoil 3]"
 #hp 9 --- toughness 3, smaller than human, mounted on tough spider
 #size 2 --- small cav
 #prot 3 --- some prot from riding spider
@@ -1067,15 +1100,15 @@
 #enc 4 --- light cav
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 10 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 22 -- light cav move 7
 #ap 22 -- light cav move 7
-#gcost 30
-#chaosrec 3
+#gcost 22
+#chaosrec 2
 #rpcost 12 -- dunno, maybe right?
 #rcost 1
-#weapon 373 -- stone spear
+#weapon 1080 -- poison spear
 #weapon 594 -- poison short bow
 #weapon 1071 -- spider fangs
 #forestsurvival -- they live in forests, dur
@@ -1088,7 +1121,7 @@
 #mounted
 #siegebonus 1
 #slave
-#invulnerable 4
+#invulnerable 6
 #end
 
 
@@ -1101,7 +1134,7 @@
 #name "Forest Goblin Spider Rider"
 #descr "One of the most unusual aspects of Forest Goblin society is how intertwined their life is with that of the Giant Spiders that dwell in the deep woords. Spiders are eaten as food, milked for poison, kept as pets, and even worshipped as gods. Some of the larger species are also ridden into battle, where their ability to climb sheer surfaces and scitter over rough terrain and their venomous fangs and protective chitin are useful assets. In battle Spider Riders act as light cavalry, usually deployed on the flanks with either crude stone tipped lances or bows with poison dipped arrows.
 
-[Discounted to 21 gold in Turmoil 3]"
+[Discounted to 16 gold in Turmoil 3]"
 #hp 9 --- toughness 3, smaller than human, mounted on tough spider
 #size 2 --- small cav
 #prot 3 --- some prot from riding spider
@@ -1110,15 +1143,15 @@
 #enc 4 --- light cav
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 10 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, but FGs are a bit more shooty
 #mapmove 22 -- light cav move 7
 #ap 22 -- light cav move 7
-#gcost 30
-#chaosrec 3
+#gcost 22
+#chaosrec 2
 #rpcost 12 -- dunno, maybe right?
 #rcost 1
-#weapon 1068 -- stone light lance
+#weapon 1080 -- poison spear
 #weapon 1071 -- spider fangs
 #armor 2 -- shield
 #armor 122 -- skull cap
@@ -1132,7 +1165,7 @@
 #mounted
 #siegebonus 1
 #slave
-#invulnerable 4
+#invulnerable 6
 #end
 
 
@@ -1146,7 +1179,7 @@
 #name "Goblin"
 #descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Being physically weak the majority of Goblins hold a permanent position at the bottom of the Greenskin hierarchy, often ending up beaten, eaten, or otherwise mistreated both by the much larger Orcs and their own treacherous kin. Nonetheless since Goblins are ridiculously prolific, easy to boss around, and naturally inclined toward violence, they inevitably make up a large portion of Greenskin armies. Goblin infantry will be armed with whatever weapons and armour they have managed to cobble together, scavenge, or steal, typically something pointy and unpleasant. Amongst any Goblin mob there will some particularly sneaky and vicious members known as Nasty Skulkers, who take the art of 'sticking da pointy bit in da hurty bit' to an extreme, even for Goblins.
 
-[Discounted to 6 gold in Turmoil 3]"
+[Discounted to 5 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -1155,11 +1188,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1193,11 +1226,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -1228,11 +1261,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1266,11 +1299,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1303,11 +1336,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1340,11 +1373,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1377,11 +1410,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1454,11 +1487,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- reduced to 0 because of the montag thing
@@ -1492,11 +1525,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -1523,7 +1556,7 @@
 #name "Goblin Archer"
 #descr "Goblins vary wildly in habitat, appearance, and culture, but all are cruel, sneaky, cowardly, and disloyal. A typical Goblin divides his day between committing various malicious acts of thievery and backstabbing, denying their involvement in these acts, or sneaking off. Being physically weak the majority of Goblins hold a permanent position at the bottom of the Greenskin hierarchy, often ending up beaten, eaten, or otherwise mistreated both by the much larger Orcs and their own treacherous kin. Nonetheless since Goblins are ridiculously prolific, easy to boss around, and naturally inclined toward violence, they inevitably make up a large portion of Greenskin armies. Goblins are very keen on avoiding harm while still getting the chance to hurt other living beings and as such are quite fond of bows, with mobs of goblin archers capable of producing clouds of arrows deadly to unarmoured enemies. As these archers tend to stay back from the front lines their mobs are of little interest to the uniquely cruel Nasty Skulkers.
 
-[Discounted to 6 gold in Turmoil 3]"
+[Discounted to 5 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -1532,11 +1565,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 9
+#gcost 8
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -1562,26 +1595,26 @@
 #name "Nightgoblin Loon"
 #descr "Deep in the bowels of the earth grow many strange mushrooms, fungal outcroppings, plantlike beasts, and other oddities. It is well known that Nightgoblins consume magic mushrooms, drink fungusbrew, and make use of the fungoid Squigs, but none outside their kind know exactly what the origin of Loonslime is. A strange purple substance which can induce hallucinations, paranoia, uncontrollable rage, and confusion when it makes contact with a living being, it is applied liberally to the weapons of the bizarre Nightgoblin sect known as the Loons. Loons go to battle wearing full metal helms fashioned into the aspect of the Bad Moon, a symbol they venerate, and are armoured under their robes with precious Dwarf chain links. Loons act as a kind of sacred shock infantry for the Nightgoblins, being much better trained and fiercer warriors than any other of their kind. Even Orcs treat them with a similar form of the pained respect they grant to Shamans, as no sane being would wish to be spiked with Loonslime.
 
-[Discounted to 12 gold in Turmoil 3]"
+[Discounted to 18 gold in Turmoil 3]"
 #hp 9 --- tough for a goblin
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
 #mor 10 --- brave for a goblin
 #mr 12 --- improved by their loonslime
 #enc 3 --- normal
-#str 10 --- better than typical goblin
+#str 9 --- better than typical goblin
 #att 10 --- elite for a nightgoblin
 #def 11 --- elite for a nightgoblin
 #prec 12 --- elite for a nightgoblin
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 18
+#gcost 21
 #chaosrec 2
 #rpcost 7
 #rcost 1 --- normal
 #weapon 1059 -- loonsickle
 #weapon 1061 -- loonslime javelin
-#armor 13 -- chain mail hauberk -- under the robes - precious and stolen from dwarfs
+#armor 8 -- chain mail cuirass -- under the robes - precious and stolen from dwarfs
 #armor 21 -- full helmet
 #mountainsurvival
 #darkvision 75 -- they live in caves
@@ -1605,7 +1638,7 @@
 #descr "Long ago many Goblins took up abode in the caves beneath the Worlds Edge Mountains. Over time they adapted to their new home and became a distinct type, known as Nightgoblins. They are not dissimilar to their surface dwelling cousins, though they have better night vision and wear dark hooded robes to shelter from the painfully bright sun. In temperament Nightgoblins are even more distrustful, sneaky, and cowardly than a typical Goblin, but tend to have better reflexes, honed by a life of sudden death at the teeth and claws of unspeakable cave beasts. Despite their relative weakness, Nightgoblin mobs are feared in battle because they may be hiding a Fanatic, a crazed loon pumped up on strength enhancing magic mushrooms and armed with a massive iron ball and chain. Nightgoblin infantry overwhelmingly favour the spear both as a good tunnel fighting weapon and a way of stabbing their foes from a safer distance.
 
 [Each recruited Nightgoblin has a 1/13 chance of being a hidden fanatic which will emerge upon taking damage]
-[Discounted to 7 gold in Turmoil 3]"
+[Discounted to 6 gold in Turmoil 3]"
 #hp 7 --- toughness 3, but smaller than human
 #size 1 --- goblins are size 1
 #prot 0 --- toughness 3
@@ -1614,11 +1647,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 10
+#gcost 9
 #chaosrec 1
 #rpcost 3
 #rcost 0 --- to artifically reduce resource cost
@@ -1656,11 +1689,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 11 --- ballistic skill 3, but I decided to make them slightly better than goblin archers
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 10
+#gcost 9
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -1686,7 +1719,7 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Goblin_Wolfrider2.tga"
 #name "Goblin Wolf Rider"
-#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey. Wolfriders arm themselves with spears, light lances, and bows.
+#descr "Perhaps it is their mutual instincts to pick on the helpless or the isolated but, for whatever reason, there has always been a strong bond between Goblins and the giant wolves that plague the Northeast of the Old World. The two creatures recognised in each other an ally, albeit a fierce one, that was apt to remain loyal only while times were good. As such Goblins have ridden wolves in the manner men or elves ride horses for hundreds of years. Goblin Wolf Riders are dangerously fast and, though they should not be expected to do well in prolonged melee, they are quite capable of slaughtering vulnerable targets or encircling the flanks of more powerful foes. They are experts at riding in close pack formation, a great aid in overwhelming their prey.
 
 [Discounted to 16 gold in Turmoil 3]"
 #hp 8 --- little tougher than normal
@@ -1697,7 +1730,7 @@
 #enc 4 --- low for mounted
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 3, initiative 2
-#def 8 --- weaponskill 3, initiative 2
+#def 10 --- weaponskill 3, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- fast cavalry
 #ap 28 --- faster than horses, move 9
@@ -1739,7 +1772,7 @@
 #enc 4 --- low for mounted
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 3, initiative 2
-#def 8 --- weaponskill 3, initiative 2
+#def 10 --- weaponskill 3, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- fast cavalry
 #ap 28 --- faster than horses, move 9
@@ -1781,7 +1814,7 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
@@ -1822,7 +1855,7 @@
 #enc 4 --- normal, plus big club
 #str 9 --- smaller than humans, str 3, clubbas are stronger than normal
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
@@ -1869,7 +1902,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 5
+#rpcost 6
 #rcost 0 -- to overall reduce reliance on resources
 #weapon 1086 -- choppa
 #armor 2 -- shield
@@ -1894,7 +1927,7 @@
 #descr "Long ages ago all Orcs were savages with no means of manufacturing metal weapons, armour, or war machines. They lived nomadic lives using primitive weapons to bring down their prey. As Orcs increasingly faced more advanced civilisations with metal weapons they began to covet the arms and armour of their foes and most Greenskin tribes began to use looted wargear and even forge their own equipment. Some Orc tribes, particularly those in the South, shunned these new ways and abandoned metal weapons and armour to fight in the manner of their ancestors, regarding it as the way Mork and Gork intended them to do battle. These primitives are known as Savage Orcs and what they lack from abandoning iron and steel they make up for with their legendary ferocity. When Savage Orcs go to war they fight dressed in scant animal furs, bone, and hide and wield stone axes, bone clubs and large spears well suited to bringing down the great land beasts of the South that make up much of their diet. Savage Orcs daub themselves in warpaint which they believe grants them protection and such is the latent energy of a mass of Orc minds that their belief does give them protection against mundane weapons as well as some magical resistance.
 
 [Discounted to 8 gold in Turmoil 3]"
-#hp 14 --- toughness 4
+#hp 15 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
 #mor 10 --- leadership 7, animosity
@@ -1908,7 +1941,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 5
+#rpcost 6
 #rcost 1
 #weapon 1057 -- stone axe
 #armor 105 -- hide shield
@@ -1919,7 +1952,7 @@
 #berserk 2
 #nametype 210
 #firstshape -6557 -- savage orc boy montag
-#invulnerable 8
+#invulnerable 10
 #startage 15
 #maxage 5000
 #ambidextrous 2
@@ -1933,7 +1966,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boy2.tga"
 #name "Savage Orc Boy"
 #descr "Long ages ago all Orcs were savages with no means of manufacturing metal weapons, armour, or war machines. They lived nomadic lives using primitive weapons to bring down their prey. As Orcs increasingly faced more advanced civilisations with metal weapons they began to covet the arms and armour of their foes and most Greenskin tribes began to use looted wargear and even forge their own equipment. Some Orc tribes, particularly those in the South, shunned these new ways and abandoned metal weapons and armour to fight in the manner of their ancestors, regarding it as the way Mork and Gork intended them to do battle. These primitives are known as Savage Orcs and what they lack from abandoning iron and steel they make up for with their legendary ferocity. When Savage Orcs go to war they fight dressed in scant animal furs, bone, and hide and wield stone axes, bone clubs and large spears well suited to bringing down the great land beasts of the South that make up much of their diet. Savage Orcs daub themselves in warpaint which they believe grants them protection and such is the latent energy of a mass of Orc minds that their belief does give them protection against mundane weapons as well as some magical resistance."
-#hp 14 --- toughness 4
+#hp 15 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
 #mor 10 --- leadership 7, animosity
@@ -1958,7 +1991,7 @@
 #berserk 2
 #nametype 210
 #montag 6557 -- savage orc boy montag
-#invulnerable 8
+#invulnerable 10
 #startage 15
 #maxage 5000
 #end
@@ -1970,7 +2003,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boy_Spear2.tga"
 #name "Savage Orc Boy"
 #descr "Long ages ago all Orcs were savages with no means of manufacturing metal weapons, armour, or war machines. They lived nomadic lives using primitive weapons to bring down their prey. As Orcs increasingly faced more advanced civilisations with metal weapons they began to covet the arms and armour of their foes and most Greenskin tribes began to use looted wargear and even forge their own equipment. Some Orc tribes, particularly those in the South, shunned these new ways and abandoned metal weapons and armour to fight in the manner of their ancestors, regarding it as the way Mork and Gork intended them to do battle. These primitives are known as Savage Orcs and what they lack from abandoning iron and steel they make up for with their legendary ferocity. When Savage Orcs go to war they fight dressed in scant animal furs, bone, and hide and wield stone axes, bone clubs and large spears well suited to bringing down the great land beasts of the South that make up much of their diet. Savage Orcs daub themselves in warpaint which they believe grants them protection and such is the latent energy of a mass of Orc minds that their belief does give them protection against mundane weapons as well as some magical resistance."
-#hp 14 --- toughness 4
+#hp 15 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
 #mor 10 --- leadership 7, animosity
@@ -1994,7 +2027,7 @@
 #berserk 2
 #nametype 210
 #montag 6557 -- savage orc boy montag
-#invulnerable 8
+#invulnerable 10
 #startage 15
 #maxage 5000
 #end
@@ -2007,7 +2040,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Boy_Clubs2.tga"
 #name "Savage Orc Boy"
 #descr "Long ages ago all Orcs were savages with no means of manufacturing metal weapons, armour, or war machines. They lived nomadic lives using primitive weapons to bring down their prey. As Orcs increasingly faced more advanced civilisations with metal weapons they began to covet the arms and armour of their foes and most Greenskin tribes began to use looted wargear and even forge their own equipment. Some Orc tribes, particularly those in the South, shunned these new ways and abandoned metal weapons and armour to fight in the manner of their ancestors, regarding it as the way Mork and Gork intended them to do battle. These primitives are known as Savage Orcs and what they lack from abandoning iron and steel they make up for with their legendary ferocity. When Savage Orcs go to war they fight dressed in scant animal furs, bone, and hide and wield stone axes, bone clubs and large spears well suited to bringing down the great land beasts of the South that make up much of their diet. Savage Orcs daub themselves in warpaint which they believe grants them protection and such is the latent energy of a mass of Orc minds that their belief does give them protection against mundane weapons as well as some magical resistance."
-#hp 14 --- toughness 4
+#hp 15 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
 #mor 10 --- leadership 7, animosity
@@ -2033,7 +2066,7 @@
 #ambidextrous 3
 #nametype 210
 #montag 6557 -- savage orc boy montag
-#invulnerable 8
+#invulnerable 10
 #startage 15
 #maxage 5000
 #ambidextrous 2
@@ -2047,7 +2080,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Bigun_Great2.tga"
 #name "Savage Orc Bigun"
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Savage Orcs are no exception to this, though on the whole they have far less interest in loot and their Bigun mobs eschew armour and metal weapons just as the Boyz do. This Bigun is armed with a hefty two handed axe made of wood with a sharpened stone head."
-#hp 16 --- toughness 4, bigger
+#hp 18 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
 #mor 11 --- leadership 7, animosity, fightier
@@ -2059,7 +2092,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -2068,7 +2101,7 @@
 #forestsurvival
 #darkvision 50
 #heal --- recuperation ability
-#invulnerable 9 -- +1 over regular savage orcs
+#invulnerable 13
 #berserk 2
 #startage 18
 #maxage 5000
@@ -2084,7 +2117,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Greenskins/Savage_Orc_Bigun2.tga"
 #name "Savage Orc Bigun"
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Savage Orcs are no exception to this, though on the whole they have far less interest in loot and their Bigun mobs eschew armour and metal weapons just as the Boyz do. This Bigun is armed with a crude stone axe and a wooden shield."
-#hp 16 --- toughness 4, bigger
+#hp 18 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
 #mor 11 --- leadership 7, animosity, fightier
@@ -2096,7 +2129,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -2106,7 +2139,7 @@
 #forestsurvival
 #darkvision 50
 #heal --- recuperation ability
-#invulnerable 9 -- +1 over regular savage orcs
+#invulnerable 13
 #berserk 2
 #startage 18
 #maxage 5000
@@ -2123,8 +2156,8 @@
 #name "Savage Orc Bigun"
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Savage Orcs are no exception to this, though on the whole they have far less interest in loot and their Bigun mobs eschew armour and metal weapons just as the Boyz do. Some Savage Orc Biguns wield large two handed stone axes, while others carry a crude stone axe and shield.
 
-[Discounted to 11 gold in Turmoil 3]"
-#hp 16 --- toughness 4, bigger
+[Discounted to 13 gold in Turmoil 3]"
+#hp 18 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
 #mor 11 --- leadership 7, animosity, fightier
@@ -2136,7 +2169,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -2145,7 +2178,7 @@
 #forestsurvival
 #darkvision 50
 #heal --- recuperation ability
-#invulnerable 9 -- +1 over regular savage orcs
+#invulnerable 13
 #berserk 2
 #startage 18
 #maxage 5000
@@ -2162,8 +2195,8 @@
 #name "Savage Orc Waaaghboy"
 #descr "Amongst the primitive Savage Orc tribes of the south those marked out with the potential to become Shamans, usually by greenish light leaking from their eyes, are far more common than in the north. However many of these Savage Orcs, while clearly touched by Mork and or Gork, never develop further magical powers or descend into the truly odd and 'unorcish' behaviour of the Shamans. Instead they remain wild and aggressive fighters like their fellows, though their eyes still glow and their warpaint is especially effective. Waaaghboys, as they are known amongst their kind, are considered sacred to the Greenskins.
 
-[Discounted to 15 gold in Turmoil 3]"
-#hp 16 --- toughness 4, bigger
+[Discounted to 30 gold in Turmoil 3]"
+#hp 18 --- toughness 4, bigger
 #size 2 --- normal
 #prot 4 --- toughness 4, bigger
 #mor 11 --- leadership 7, animosity, fightier
@@ -2175,8 +2208,8 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 24
-#chaosrec 3
+#gcost 45
+#chaosrec 5
 #rpcost 12
 #rcost 1
 #weapon 1057 -- stone axe
@@ -2185,7 +2218,7 @@
 #forestsurvival
 #darkvision 50
 #heal --- recuperation ability
-#invulnerable 11 -- +3 over regular savage orcs
+#invulnerable 15
 #berserk 3 -- standard value
 #startage 18
 #maxage 5000
@@ -2253,7 +2286,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 5
+#rpcost 6
 #rcost 1
 #weapon 1086 -- choppa
 #armor 2 -- shield
@@ -2292,7 +2325,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 5
+#rpcost 6
 #rcost 1
 #weapon 1086 -- choppa
 #armor 7 -- scale mail cuirass
@@ -2329,7 +2362,7 @@
 #ap 12 --- normal, move 4
 #gcost 11
 #chaosrec 1
-#rpcost 5
+#rpcost 6
 #rcost 1
 #weapon 1086 -- choppa
 #armor 11 -- ring mail hauberk
@@ -2357,7 +2390,7 @@
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Biguns therefore tend to be better equipped, with some carrying a pair of choppas or a massive two handed 'big choppa' into battle."
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 11 --- leadership 7, animosity, fightier
 #mr 10 --- normal
 #enc 3 --- normal
@@ -2367,7 +2400,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -2394,7 +2427,7 @@
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Biguns therefore tend to be better equipped, with some carrying a pair of choppas or a massive two handed 'big choppa' into battle."
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 11 --- leadership 7, animosity, fightier
 #mr 10 --- normal
 #enc 3 --- normal
@@ -2404,7 +2437,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -2432,7 +2465,7 @@
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Biguns therefore tend to be better equipped, with some carrying a pair of choppas or a massive two handed 'big choppa' into battle."
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 11 --- leadership 7, animosity, fightier
 #mr 10 --- normal
 #enc 3 --- normal
@@ -2442,7 +2475,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -2509,7 +2542,7 @@
 #enc 5 --- it's tiring doing this!
 #str 8 --- standard for gobbo
 #att 9 --- standard for gobbo. Note squig gets +3 on his attacks
-#def 9 --- standard for gobbo
+#def 10 --- standard for gobbo
 #prec 5 --- rubbish cave animal + bouncing gobbo
 #mapmove 20 -- medium cav
 #ap 22 --- squigs are fast!
@@ -2552,7 +2585,7 @@
 #enc 3 --- normal
 #str 13 --- smaller than humans, str 5
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 5 --- 
 #mapmove 14 -- standard human move
 #ap 20 --- made the fanatic much faster than regular infantry
@@ -2595,11 +2628,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 10
+#gcost 9
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -2637,11 +2670,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 10
+#gcost 9
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -2680,11 +2713,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 10
+#gcost 9
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -2722,11 +2755,11 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
-#gcost 10
+#gcost 9
 #chaosrec 1
 #rpcost 3
 #rcost 1 --- normal
@@ -2797,8 +2830,8 @@
 #name "Savage Orc Arrer Boy"
 #descr "In the wild Savage Orc tribes of the southern lands one might think Orcs indulging in archery would be even less common, such is their primitive lust for close combat. However in reality Arrer Boyz are far more common amongst Savage Orc tribes, as the use of crude bows is seen as a natural and traditional way to hunt the massive beasts that roam their land. In fact Savage Orc Arrer Boyz tend to be better shots than their northern counterparts, as their magical warpaint enhances their senses in battle. Being Savage Orcs though, they are quick to hurl aside their bows and charge into melee if provoked into a battle frenzy.
 
-[Discounted to 11 gold in Turmoil 3]"
-#hp 14 --- toughness 4
+[Discounted to 10 gold in Turmoil 3]"
+#hp 15 --- toughness 4
 #size 2 --- normal
 #prot 3 --- toughness 4
 #mor 10 --- leadership 7, animosity
@@ -2810,7 +2843,7 @@
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14 -- +1 over regular arrer boyz
+#gcost 13
 #chaosrec 1
 #rpcost 7 -- decreased 2 from regular arrer boyz
 #rcost 1
@@ -2819,7 +2852,7 @@
 #mountainsurvival
 #darkvision 50
 #berserk 2
-#invulnerable 7 -- slightly worse than infantry orcs
+#invulnerable 8 -- slightly worse than infantry orcs
 #heal --- recuperation ability
 #nametype 210
 #startage 15
@@ -2983,7 +3016,7 @@
 #ap 20 --- move 7, slower cavalry
 #gcost 45
 #chaosrec 5
-#rpcost 19
+#rpcost 21
 #rcost 1
 #weapon 1050 -- boar tusk
 #weapon 1086 -- choppa
@@ -3009,11 +3042,11 @@
 #descr "The war boar is a stubborn and vicious animal of incredible resilience, notorious bad temper, and impressive flatulence. These are just the sort of qualities that Orcs greatly admire, so it was only nastural for them to adopt war boars as their preferred mounts. Savage Orc tribes are typically able to field far more of these shock cavalry than more civilised tribes, as their Shamans have particular skill in matching the right Orc with a compatible War Boar. Additionally Savage Orcs are even more reckless and unafraid of pain or injury than their counterparts and as such many more are willing to attempt leaping on the back of a War Boar or simply beating it into submission. Savage Orc Boar Boyz and their mounts both sport protective warpaint.
 
 [Discounted to 30 gold in Turmoil 3]"
-#hp 16 --- toughness 4, plus an extra bit for the toughness of the boar
+#hp 18 --- toughness 4, plus an extra bit for the toughness of the boar
 #size 3 --- normal cav
-#prot 5 --- toughness 4, +1 extra for the toughness of the boar, +1 for berserk cav bonus
-#mor 11 --- leadership 7, animosity, +1 for beserk cav
-#mr 10 --- normal
+#prot 4 --- toughness 4, +1 extra for the toughness of the boar, +1 for berserk cav bonus
+#mor 14 --- no berserk like normal savages
+#mr 12 --- tattoos
 #enc 5 --- cavalry
 #str 12 --- str 3, slightly bigger than human, +1 for beserk cav
 #att 11 --- weaponskill 3, initiative 2, berserk cav bonus
@@ -3023,7 +3056,7 @@
 #ap 20 --- move 7, slower cavalry
 #gcost 45
 #chaosrec 5
-#rpcost 13 -- much more common than the regular 19
+#rpcost 18 -- much more common than the regular 21
 #rcost 1
 #weapon 1068 -- stone light lance
 #weapon 1050 -- boar tusk
@@ -3036,7 +3069,7 @@
 #mounted
 #startage 15
 #maxage 5000
-#invulnerable 10 -- +2 over regular savage orc infantry
+#invulnerable 13
 #end
 
 
@@ -3052,7 +3085,7 @@
 [Discounted to 40 gold in Turmoil 3]"
 #hp 18 --- toughness 4, big, plus an extra bit for the toughness of the boar
 #size 3 --- normal cav
-#prot 5 --- toughness 4, +1 extra for the toughness of the boar, +1 for being bigger
+#prot 4 --- toughness 4, +1 extra for the toughness of the boar, +1 for being bigger
 #mor 11 --- leadership 7, animosity, fightier
 #mr 10 --- normal
 #enc 4 --- cavalry
@@ -3090,11 +3123,11 @@
 #descr "Amongst the Savage Orc tribes of the southern realms the Boar Boy Bigun mobs have the very highest prestige, being the fastest, 'ardest, and wildest Boyz in the tribe. The War Boars they ride are larger and angrier than those ridden by the Biguns in more civilized tribes, they are protected by particularly effective magic warpaint, and they have mastered the art of wielding two stone axes while clinging to their charging mount with their legs.
 
 [Discounted to 45 gold in Turmoil 3]"
-#hp 18 --- toughness 4, plus an extra bit for the toughness of the boar, plus an extra 2 because it's a really big boar
-#size 3 --- normal cav
-#prot 6 --- toughness 4, +1 extra for the toughness of the boar, +1 for being bigger, +1 for berserk cav
-#mor 12 --- leadership 7, animosity, fightier, +1 for beserk cav
-#mr 10 --- normal
+#hp 20 --- toughness 4, plus an extra bit for the toughness of the boar, plus an extra 2 because it's a really big boar
+#size 4 --- large, trampler
+#prot 5 --- toughness 4, +1 extra for the toughness of the boar, +1 for being bigger, +1 for berserk cav
+#mor 15 --- no berserk like normal savages
+#mr 12 --- tattoos
 #enc 4 --- cavalry
 #str 14 --- str 4, bigger than human, +1 for beserk cav
 #att 12 --- weaponskill 4, initiative 2, +1 for berserk cav
@@ -3117,8 +3150,9 @@
 #mounted
 #startage 15
 #maxage 5000
-#invulnerable 10 -- +3 over regular savage orc infantry
+#invulnerable 15
 #ambidextrous 2
+#trample
 #end
 
 
@@ -3132,7 +3166,7 @@
 #descr "Black Orcs are the biggest, meanest, and strongest of all the varieties of Greenskin, a breed that emerged from the East and quickly rose to power across the land. Their name stems from their dark green skin, though it also fits their dour demeaner, for while they are as aggressive and unreasonable as other Orcs, they are grimly and singularly focused on war. Indeed they take war so seriously that they regard even elite formations such as Boar Boy Biguns as frivolous amateurs. Being the best fighters in any Greenskin army, Black Orcs usually end up with the lion's share of loot and pride themselves on meticulously maintaining both heavy armour and quality weapons, something other Greenskins mock when out of earshot. The origins of the Black Orcs are a mystery, but one common tale is they were created by the Chaos Dwarfs as battle slaves and nearly doomed that empire when they inevitably revolted. Black Orcs wade into battle either with a choppa and heavy shield, a massive two handed big choppa, or lighter armour and paired choppas."
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 15 --- leadership 8, immune to psychology, no animosity, fighty
 #mr 11 --- slightly enhanced by chaos dwarf manipulation
 #enc 2 --- tirelessness bred into them by CDs
@@ -3142,7 +3176,7 @@
 #prec 10 --- ballistic skill 3
 #mapmove 16 -- standard human move +2 because they are disciplined
 #ap 14 --- normal, move 4 +2 so he keeps up with 2handers
-#gcost 25
+#gcost 24
 #chaosrec 2
 #rpcost 18
 #rcost 0
@@ -3170,7 +3204,7 @@
 #descr "Black Orcs are the biggest, meanest, and strongest of all the varieties of Greenskin, a breed that emerged from the East and quickly rose to power across the land. Their name stems from their dark green skin, though it also fits their dour demeaner, for while they are as aggressive and unreasonable as other Orcs, they are grimly and singularly focused on war. Indeed they take war so seriously that they regard even elite formations such as Boar Boy Biguns as frivolous amateurs. Being the best fighters in any Greenskin army, Black Orcs usually end up with the lion's share of loot and pride themselves on meticulously maintaining both heavy armour and quality weapons, something other Greenskins mock when out of earshot. The origins of the Black Orcs are a mystery, but one common tale is they were created by the Chaos Dwarfs as battle slaves and nearly doomed that empire when they inevitably revolted. Black Orcs wade into battle either with a choppa and heavy shield, a massive two handed big choppa, or lighter armour and paired choppas."
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 15 --- leadership 8, immune to psychology, no animosity, fighty
 #mr 11 --- slightly enhanced by chaos dwarf manipulation
 #enc 2 --- tirelessness bred into them by CDs
@@ -3180,7 +3214,7 @@
 #prec 10 --- ballistic skill 3
 #mapmove 16 -- standard human move +2 because they are disciplined
 #ap 12 --- normal, move 4
-#gcost 25
+#gcost 24
 #chaosrec 2
 #rpcost 18
 #rcost 0
@@ -3207,7 +3241,7 @@
 #descr "Black Orcs are the biggest, meanest, and strongest of all the varieties of Greenskin, a breed that emerged from the East and quickly rose to power across the land. Their name stems from their dark green skin, though it also fits their dour demeaner, for while they are as aggressive and unreasonable as other Orcs, they are grimly and singularly focused on war. Indeed they take war so seriously that they regard even elite formations such as Boar Boy Biguns as frivolous amateurs. Being the best fighters in any Greenskin army, Black Orcs usually end up with the lion's share of loot and pride themselves on meticulously maintaining both heavy armour and quality weapons, something other Greenskins mock when out of earshot. The origins of the Black Orcs are a mystery, but one common tale is they were created by the Chaos Dwarfs as battle slaves and nearly doomed that empire when they inevitably revolted. Black Orcs wade into battle either with a choppa and heavy shield, a massive two handed big choppa, or lighter armour and paired choppas."
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 15 --- leadership 8, immune to psychology, no animosity, fighty
 #mr 11 --- slightly enhanced by chaos dwarf manipulation
 #enc 2 --- tirelessness bred into them by CDs
@@ -3217,7 +3251,7 @@
 #prec 10 --- ballistic skill 3
 #mapmove 16 -- standard human move +2 because they are disciplined
 #ap 12 --- normal, move 4
-#gcost 25
+#gcost 24
 #chaosrec 2
 #rpcost 18
 #rcost 0
@@ -3245,10 +3279,10 @@
 #name "Black Orc"
 #descr "Black Orcs are the biggest, meanest, and strongest of all the varieties of Greenskin, a breed that emerged from the East and quickly rose to power across the land. Their name stems from their dark green skin, though it also fits their dour demeaner, for while they are as aggressive and unreasonable as other Orcs, they are grimly and singularly focused on war. Indeed they take war so seriously that they regard even elite formations such as Boar Boy Biguns as frivolous amateurs. Being the best fighters in any Greenskin army, Black Orcs usually end up with the lion's share of loot and pride themselves on meticulously maintaining both heavy armour and quality weapons, something other Greenskins mock when out of earshot. The origins of the Black Orcs are a mystery, but one common tale is they were created by the Chaos Dwarfs as battle slaves and nearly doomed that empire when they inevitably revolted. Black Orcs wade into battle either with a choppa and heavy shield, a massive two handed big choppa, or lighter armour and paired choppas.
 
-[Discounted to 17 gold in Turmoil 3]"
+[Discounted to 19 gold in Turmoil 3]"
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 15 --- leadership 8, immune to psychology, no animosity, fighty
 #mr 11 --- slightly enhanced by chaos dwarf manipulation
 #enc 2 --- tirelessness bred into them by CDs
@@ -3258,8 +3292,8 @@
 #prec 10 --- ballistic skill 3
 #mapmove 16 -- standard human move +2 because they are disciplined
 #ap 14 --- normal, move 4
-#gcost 26
-#chaosrec 3
+#gcost 24
+#chaosrec 2
 #rpcost 18
 #rcost 0
 #weapon 1051 -- honed choppa
@@ -3295,7 +3329,7 @@
 #enc 4 --- low for mounted
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 3, initiative 2
-#def 9 --- weaponskill 3, initiative 2, chariots get +1
+#def 10 --- weaponskill 3, initiative 2, chariots get +1
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- fast cavalry
 #ap 26 --- very slightly slower than wolfriders
@@ -3336,7 +3370,7 @@
 #enc 4 --- low for mounted
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 3, initiative 2
-#def 9 --- weaponskill 3, initiative 2, chariots get +1
+#def 10 --- weaponskill 3, initiative 2, chariots get +1
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- fast cavalry
 #ap 26 --- very slightly slower than wolfriders
@@ -3375,7 +3409,7 @@
 [Discounted to 45 gold in Turmoil 3]"
 #hp 18 --- toughness 4, plus extra for the toughness of the boars and chariot
 #size 4 --- two boars, chariot, an orc, high mass, but making them size 5 is a bit too strong
-#prot 6 --- toughness 4, in a chariot
+#prot 5
 #mor 10 --- leadership 7, animosity
 #mr 10 --- normal
 #enc 5 --- normal chariot
@@ -3416,10 +3450,10 @@
 #name "Orc Bigun"
 #descr "Orc hierarchy is a straightforward matter - the biggest and the best at fighting will rise toward the top. In fact those who begin their ascent through the ranks of a mob will actually become bigger in response to the elevated social status, growing thicker bone and muscle, becoming stronger and more aggressive, and developing impressive tusks. Any Orc large and fighty enough to distinguish himself from the bulk of the Boyz in the tribe is known as a Bigun and will have a greater share of the loot and the glory in any battle. Biguns therefore tend to be better equipped, with some carrying a pair of choppas or a massive two handed 'big choppa' into battle.
 
-[Discounted to 11 gold in Turmoil 3]"
+[Discounted to 13 gold in Turmoil 3]"
 #hp 16 --- toughness 4, bigger
 #size 2 --- normal
-#prot 4 --- toughness 4, bigger
+#prot 3
 #mor 11 --- leadership 7, animosity, fightier
 #mr 10 --- normal
 #enc 3 --- normal
@@ -3429,7 +3463,7 @@
 #prec 8 --- ballistic skill 2
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 14
+#gcost 16
 #chaosrec 1
 #rpcost 9
 #rcost 1
@@ -3464,7 +3498,7 @@
 #enc 3 --- normal
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 2, initiative 3
-#def 9 --- weaponskill 2, initiative 3
+#def 10 --- weaponskill 2, initiative 3
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- move 4
@@ -3512,7 +3546,6 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
-#digest 5
 #armor 150 -- bone helmet
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3529,7 +3562,7 @@
 #siegebonus 5
 #reclimit 1
 #undisciplined
-#invulnerable 12 -- +4 over regular savage orcs
+#invulnerable 15
 #end
 
 
@@ -3558,7 +3591,6 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
-#digest 5
 #armor 150 -- bone helmet
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3575,7 +3607,7 @@
 #siegebonus 5
 #reclimit 1
 #undisciplined
-#invulnerable 12 -- +4 over regular savage orcs
+#invulnerable 15
 #firstshape 3986
 #end
 
@@ -3605,7 +3637,6 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
-#digest 5
 #armor 384 -- makeshift armour
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3651,7 +3682,6 @@
 #chaosrec 35
 #rpcost 60
 #rcost 10
-#digest 5
 #armor 384 -- makeshift armour
 #weapon 609 -- grab and swallow
 #weapon 1082 -- Wild Swings
@@ -3799,7 +3829,7 @@
 #enc 4 --- low for mounted
 #str 8 --- smaller than humans, str 3
 #att 9 --- weaponskill 3, initiative 2
-#def 8 --- weaponskill 3, initiative 2
+#def 10 --- weaponskill 3, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 24 -- fast cavalry
 #ap 28 --- faster than horses, move 9
@@ -3841,7 +3871,7 @@
 #enc 3 --- normal
 #str 8 --- str 3, but goblin
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
@@ -3885,7 +3915,7 @@
 #enc 3 --- normal
 #str 8 --- str 3, but goblin
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 9 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
@@ -3968,7 +3998,7 @@
 #name "Nightgoblin Great Shaman"
 #descr "Great Shamans are the most powerful of their kind, so clearly marked by Mork and Gork that they are recognised as direct agents of their will. Amongst the Nightgoblins their is no higher status than that of Great Shaman and it is said even Skarsnik, the most famous Nightgoblin Warboss to ever live, would not dare cross one. It is the Great Shamans that preside over the gatherings of Nightgoblin tribes to share in vast cauldrons of fungus brew, it is they who divine the location of Great Cave Squigs to hunt, and it is they who select those who will receive the Madcap mushroom blessing and become Fanatics. In addition to their advanced magical powers, Nightgoblin Great Shamans consume so many magic mushrooms that they can at times speak the will of Mork and Gork directly and so have considerable priestly authority. Indeed they train tiny Squiggly Beasts to follow them around with a bowl of mushrooms they can feast on at any moment. It goes without saying that these habits result in extremely frequent bouts of complete insanity.
 
-[Discounted to 180 gold in Turmoil 3]"
+[Discounted to 175 gold in Turmoil 3]"
 #hp 10
 #size 2 --- normal
 #prot 2 --- toughness 4
@@ -3981,8 +4011,8 @@
 #prec 11 --- ballistic skill 3 but I've established NGs are slightly better shots
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
-#gcost 255
-#chaosrec 25 -- so 180 in turmoil 3
+#gcost 250
+#chaosrec 25
 #rpcost 2 -- good cap only mage, but insane and not up to level of the orc great shaman
 #rcost 1
 #weapon 493 -- sickle staff
@@ -4006,7 +4036,6 @@
 #startage 50
 #maxage 5000
 #reinvigoration 1
-#researchbonus -1
 #end
 
 
@@ -4021,13 +4050,13 @@
 [Discounted to 175 gold in Turmoil 3]"
 #hp 12
 #size 3 --- mounted on giant spider
-#prot 5 --- toughness 4 +3 for spider
+#prot 4 --- spider
 #mor 10 --- leadership 7, animosity, aggressive spider
 #mr 17 --- normal for higher level guys, +1 for spider
 #enc 4 --- normal for mounted on spider
 #str 8 --- str 3, but goblin
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 10 --- weaponskill 2, initiative 2
 #prec 11 --- ballistic skill 3, forest goblin
 #mapmove 22 -- light cav move 7
 #ap 22 -- light cav move 7
@@ -4077,7 +4106,7 @@
 [Discounted to 155 gold in Turmoil 3]"
 #hp 15
 #size 2 --- normal
-#prot 4 --- toughness 4, humanoid
+#prot 3
 #mor 10 --- leadership 7
 #mr 14 --- normal for tier 2 guys
 #enc 3 --- normal
@@ -4127,7 +4156,7 @@
 [Discounted to 185 gold in Turmoil 3]"
 #hp 15
 #size 2 --- normal
-#prot 4 --- toughness 4, humanoid
+#prot 3
 #mor 10 --- leadership 7
 #mr 16 --- normal for tier 2 guys +2 for warpaint
 #enc 3 --- normal
@@ -4146,7 +4175,7 @@
 #mountainsurvival
 #forestsurvival
 #berserk 3 -- standard value
-#invulnerable 9 -- +1 over regular savage orc boy
+#invulnerable 11 -- +1 over regular savage orc boy
 #darkvision 50
 #heal --- recuperation ability
 #poorleader
@@ -4179,7 +4208,7 @@
 [Discounted to 260 gold in Turmoil 3]"
 #hp 17
 #size 3 --- normal for boar cav
-#prot 8 --- toughness 5, humanoid, +1 for boar +1 for berserk cav
+#prot 6
 #mor 13 --- leadership 8, special +1 for berserk cav
 #mr 18 --- normal for tier 4 guys +2 for warpaint
 #enc 4 --- cus he's on a boar
@@ -4198,7 +4227,7 @@
 #armor 44 -- furs
 #mountainsurvival
 #forestsurvival
-#invulnerable 11 -- +2 over regular savage orc boy, +1 for berserk cav
+#invulnerable 13 -- +2 over regular savage orc boy, +1 for berserk cav
 #darkvision 50
 #heal --- recuperation ability
 #poorleader
@@ -4232,7 +4261,7 @@
 [Discounted to 220 gold in Turmoil 3]"
 #hp 15
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, special
 #mr 16 --- normal for tier 4 guys
 #enc 3 --- normal
@@ -4287,7 +4316,7 @@
 #enc 3 --- normal
 #str 8 --- str 3, but goblin
 #att 9 --- weaponskill 2, initiative 2
-#def 8 --- weaponskill 2, initiative 2
+#def 10 --- weaponskill 2, initiative 2
 #prec 10 --- ballistic skill 3
 #mapmove 14 -- standard human move
 #ap 12 --- normal, move 4
@@ -4330,7 +4359,7 @@
 [Discounted to 40 gold in Turmoil 3]"
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, animosity, fighty
 #mr 11 --- tier 1 combat leader
 #unsurr 1 --- tier 1 combat leader
@@ -4370,7 +4399,7 @@
 #descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. Being the biggest, best, and fightiest Orc Bosses tend to have good quality wargear. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder."
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, animosity, fighty
 #mr 11 --- tier 1 combat leader
 #unsurr 1 --- tier 1 combat leader
@@ -4412,7 +4441,7 @@
 [Discounted to 40 gold in Turmoil 3]"
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, animosity, fighty
 #mr 11 --- tier 1 combat leader
 #unsurr 1 --- tier 1 combat leader
@@ -4452,7 +4481,7 @@
 #descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. Being the biggest, best, and fightiest Orc Bosses tend to have good quality wargear. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder."
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, animosity, fighty
 #mr 11 --- tier 1 combat leader
 #unsurr 1 --- tier 1 combat leader
@@ -4494,7 +4523,7 @@
 [Discounted to 40 gold in Turmoil 3]"
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, animosity, fighty
 #mr 13 --- tier 1 combat leader +2 for being a savage orc
 #unsurr 1 --- tier 1 combat leader
@@ -4524,7 +4553,7 @@
 #startage 20
 #maxage 5000
 #berserk 3 -- standard value
-#invulnerable 11 -- +3 over regular savage orcs
+#invulnerable 15
 #xpshape 25
 #end
 
@@ -4537,7 +4566,7 @@
 #descr "Orcs are led by the biggest and brawniest of their kind. These hulking individuals have risen up from the ranks of the Biguns and pummeled their way to the top, defeating the previous Boss in a one-on-one fight and quite possibly killing him. Unlike Goblin Bosses who are defined both by their cunning and knack for doing violence, Orc Bosses got where they are by doing what Orcs love best with little thought to strategy or tactics. That said, a large and violent Orc exerts a natural leadership over his fellows and any who don't follow his typically quite simple orders will catch a stupendous beating. While there are Orc Bosses who ascend to no higher station each and every one of them is driven by instinct to try and become a Big Boss and eventually a Warboss, through a simple and proven method - constant warfare. Merely fighting amongst the tribe is not enough, any Boss can do that, it is against the many enemy races which populate the world that a Boss must prove himself to climb the ladder. Savage Orc Bosses do not equip themselves with the pick of the loot in the fashion of their civilised cousins, but have the right to wear armour fashioned from bone."
 #hp 27 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 4
 #mor 12 --- leadership 8, animosity, fighty
 #mr 13 --- tier 1 combat leader +2 for being a savage orc
 #unsurr 1 --- tier 1 combat leader
@@ -4567,7 +4596,7 @@
 #startage 20
 #maxage 5000
 #berserk 3 -- standard value
-#invulnerable 11 -- +3 over regular savage orcs
+#invulnerable 15
 #end
 
 
@@ -4580,7 +4609,7 @@
 #descr "With experience in several battles an Orc Boss may find himself reaching the position of Big Boss, provided he can maintain dominance over his peers and prove himself suitably 'well 'ard' and 'ded fighty'. In truth Big Bosses are not physically much different from Bosses and in some cases may not even have a larger number of followers to kick around, but they do have a foul tempered War Boar to ride and significantly more natural authority over their fellows when they start bellowing orders. If a Big Boss continues to seek battles he may eventually find a path to the coveted positon of Warboss, and become one of the biggest and fightiest Orcs in the world."
 #hp 29 --- toughness 5, 2 wounds, big, bit extra for sitting on a boar
 #size 3 --- cavalry
-#prot 7 --- toughness 5, humanoid, +1 for boar
+#prot 6
 #mor 12 --- leadership 8, animosity, fighty
 #mr 12 --- tier 2 combat leader
 #unsurr 2 --- tier 2 combat leader
@@ -4623,7 +4652,7 @@
 #descr "With experience in several battles an Orc Boss may find himself reaching the position of Big Boss, provided he can maintain dominance over his peers and prove himself suitably 'well 'ard' and 'ded fighty'. In truth Big Bosses are not physically much different from Bosses and in some cases may not even have a larger number of followers to kick around, but they do have a foul tempered War Boar to ride and significantly more natural authority over their fellows when they start bellowing orders. If a Big Boss continues to seek battles he may eventually find a path to the coveted positon of Warboss, and become one of the biggest and fightiest Orcs in the world."
 #hp 29 --- toughness 5, 2 wounds, big, bit extra for sitting on a boar
 #size 3 --- cavalry
-#prot 7 --- toughness 5, humanoid, +1 for boar
+#prot 6
 #mor 12 --- leadership 8, animosity, fighty
 #mr 12 --- tier 2 combat leader
 #unsurr 2 --- tier 2 combat leader
@@ -4666,7 +4695,7 @@
 #descr "With experience in several battles an Orc Boss may find himself reaching the position of Big Boss, provided he can maintain dominance over his peers and prove himself suitably 'well 'ard' and 'ded fighty'. In truth Big Bosses are not physically much different from Bosses and in some cases may not even have a larger number of followers to kick around, but they do have a foul tempered War Boar to ride and significantly more natural authority over their fellows when they start bellowing orders. If a Big Boss continues to seek battles he may eventually find a path to the coveted positon of Warboss, and become one of the biggest and fightiest Orcs in the world."
 #hp 29 --- toughness 5, 2 wounds, big, bit extra for sitting on a boar
 #size 3 --- cavalry
-#prot 7 --- toughness 5, humanoid, +1 for boar
+#prot 6
 #mor 12 --- leadership 8, animosity, fighty
 #mr 12 --- tier 2 combat leader
 #unsurr 2 --- tier 2 combat leader
@@ -4709,7 +4738,7 @@
 #descr "With experience in several battles an Orc Boss may find himself reaching the position of Big Boss, provided he can maintain dominance over his peers and prove himself suitably 'well 'ard' and 'ded fighty'. In truth Big Bosses are not physically much different from Bosses and in some cases may not even have a larger number of followers to kick around, but they do have a foul tempered War Boar to ride and significantly more natural authority over their fellows when they start bellowing orders. If a Big Boss continues to seek battles he may eventually find a path to the coveted positon of Warboss, and become one of the biggest and fightiest Orcs in the world."
 #hp 29 --- toughness 5, 2 wounds, big, bit extra for sitting on a boar
 #size 3 --- cavalry
-#prot 7 --- toughness 5, humanoid, +1 for boar
+#prot 6
 #mor 12 --- leadership 8, animosity, fighty
 #mr 12 --- tier 2 combat leader
 #unsurr 2 --- tier 2 combat leader
@@ -4752,7 +4781,7 @@
 #descr "With experience in several battles an Orc Boss may find himself reaching the position of Big Boss, provided he can maintain dominance over his peers and prove himself suitably 'well 'ard' and 'ded fighty'. In truth Big Bosses are not physically much different from Bosses and in some cases may not even have a larger number of followers to kick around, but they do have a foul tempered War Boar to ride and significantly more natural authority over their fellows when they start bellowing orders. If a Big Boss continues to seek battles he may eventually find a path to the coveted positon of Warboss, and become one of the biggest and fightiest Orcs in the world. Savage Orc Big Bosses ride even larger and more ferocious War Boars than their more civilised cousins."
 #hp 31 --- toughness 5, 2 wounds, big, bit extra for sitting on a boar, +2 more for the size of the boar
 #size 3 --- cavalry
-#prot 9 --- toughness 5, humanoid, +1 for boar, +1 for boars bigger size, +1 for berserk cav
+#prot 8
 #mor 13 --- leadership 8, animosity, fighty, +1 for berserk cav
 #mr 14 --- tier 2 combat leader, +2 for savage orc tattoos
 #unsurr 2 --- tier 2 combat leader
@@ -4784,7 +4813,7 @@
 #mounted
 #startage 25
 #maxage 5000
-#invulnerable 13 -- +5 over regular savage orc infantry
+#invulnerable 16
 #xpshape 25
 #end
 
@@ -4798,7 +4827,7 @@
 #descr "With experience in several battles an Orc Boss may find himself reaching the position of Big Boss, provided he can maintain dominance over his peers and prove himself suitably 'well 'ard' and 'ded fighty'. In truth Big Bosses are not physically much different from Bosses and in some cases may not even have a larger number of followers to kick around, but they do have a foul tempered War Boar to ride and significantly more natural authority over their fellows when they start bellowing orders. If a Big Boss continues to seek battles he may eventually find a path to the coveted positon of Warboss, and become one of the biggest and fightiest Orcs in the world. Savage Orc Big Bosses ride even larger and more ferocious War Boars than their more civilised cousins."
 #hp 31 --- toughness 5, 2 wounds, big, bit extra for sitting on a boar, +2 more for the size of the boar
 #size 3 --- cavalry
-#prot 9 --- toughness 5, humanoid, +1 for boar, +1 for boars bigger size, +1 for berserk cav
+#prot 8
 #mor 13 --- leadership 8, animosity, fighty, +1 for berserk cav
 #mr 14 --- tier 2 combat leader, +2 for savage orc tattoos
 #unsurr 2 --- tier 2 combat leader
@@ -4830,7 +4859,7 @@
 #mounted
 #startage 25
 #maxage 5000
-#invulnerable 13 -- +4 over regular savage orc infantry, +1 for berserk cav
+#invulnerable 16
 #end
 
 
@@ -4843,7 +4872,7 @@
 #descr "While Bosses and Big Bosses are fundamentally the same size and toughness of Orc, just with a different hierarchical status, Warbosses are truly in a class of their own. As a Big Boss rises to the level of a Warboss he packs on more and more muscle and grows larger and larger, to the point that he towers over his subordinates. Warbosses lead entire tribes, sometimes even multiple tribes, and typically have a core mob of Biguns that act as their enforcers. While Savage Orcs eschew the gathering of metal arms and armour, a Savage Orc Warboss will adorn himself with equipment made from the bones of particularly savage conquests and draw upon their ferocity in battle. Additionally they will have their pick of the best War Boar stock and as such will ride even larger and more ferocious mounts than their more civilised cousins. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 44 --- toughness 5, 3 wounds, big, bit extra for sitting on a super boar
 #size 4 --- cavalry but huge
-#prot 10 --- toughness 5, humanoid, +1 for boar, +1 for size, +1 for super boar, +1 for berserk cav
+#prot 8
 #mor 15 --- leadership 9, animosity, fighty, +1 for berserk cav
 #mr 15 --- tier 3 combat leader, +2 for savage orc tattoos
 #unsurr 3 --- tier 3 combat leader
@@ -4875,7 +4904,7 @@
 #mounted
 #startage 30
 #maxage 5000
-#invulnerable 14 -- +5 over regular savage orc infantry, +1 for berserk cav
+#invulnerable 18
 #xpshape 25
 #incscale 0 -- increases turmoil
 #end
@@ -4889,7 +4918,7 @@
 #descr "While Bosses and Big Bosses are fundamentally the same size and toughness of Orc, just with a different hierarchical status, Warbosses are truly in a class of their own. As a Big Boss rises to the level of a Warboss he packs on more and more muscle and grows larger and larger, to the point that he towers over his subordinates. Warbosses lead entire tribes, sometimes even multiple tribes, and typically have a core mob of Biguns that act as their enforcers. While Savage Orcs eschew the gathering of metal arms and armour, a Savage Orc Warboss will adorn himself with equipment made from the bones of particularly savage conquests and draw upon their ferocity in battle. Additionally they will have their pick of the best War Boar stock and as such will ride even larger and more ferocious mounts than their more civilised cousins. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 44 --- toughness 5, 3 wounds, big, bit extra for sitting on a super boar
 #size 4 --- cavalry but huge
-#prot 10 --- toughness 5, humanoid, +1 for boar, +1 for size, +1 for super boar, +1 for berserk cav
+#prot 8
 #mor 15 --- leadership 9, animosity, fighty, +1 for berserk cav
 #mr 15 --- tier 3 combat leader, +2 for savage orc tattoos
 #unsurr 3 --- tier 3 combat leader
@@ -4921,7 +4950,7 @@
 #mounted
 #startage 30
 #maxage 5000
-#invulnerable 14 -- +5 over regular savage orc infantry, +1 for berserk cav
+#invulnerable 18
 #incscale 0 -- increases turmoil
 #end
 
@@ -4950,7 +4979,7 @@
 #descr "While Bosses and Big Bosses are fundamentally the same size and toughness of Orc, just with a different hierarchical status, Warbosses are truly in a class of their own. As a Big Boss rises to the level of a Warboss he packs on more and more muscle and grows larger and larger, to the point that he towers over his subordinates. Warbosses lead entire tribes, sometimes even multiple tribes, and typically have a core mob of Biguns that act as their enforcers. They are armed and armoured with the best the tribe has to offer and are devastatingly effective on the battlefield, in addition to being naturally effective military leaders. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 40 --- toughness 5, 3 wounds, big, bit extra for sitting on a boar
 #size 4 --- cavalry but huge
-#prot 8 --- toughness 5, humanoid, +1 for boar, +1 for size
+#prot 7
 #mor 14 --- leadership 9, animosity, fighty
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -4993,7 +5022,7 @@
 #descr "While Bosses and Big Bosses are fundamentally the same size and toughness of Orc, just with a different hierarchical status, Warbosses are truly in a class of their own. As a Big Boss rises to the level of a Warboss he packs on more and more muscle and grows larger and larger, to the point that he towers over his subordinates. Warbosses lead entire tribes, sometimes even multiple tribes, and typically have a core mob of Biguns that act as their enforcers. They are armed and armoured with the best the tribe has to offer and are devastatingly effective on the battlefield, in addition to being naturally effective military leaders. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 40 --- toughness 5, 3 wounds, big, bit extra for sitting on a boar
 #size 4 --- cavalry but huge
-#prot 8 --- toughness 5, humanoid, +1 for boar, +1 for size
+#prot 7
 #mor 14 --- leadership 9, animosity, fighty
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -5036,7 +5065,7 @@
 #descr "While Bosses and Big Bosses are fundamentally the same size and toughness of Orc, just with a different hierarchical status, Warbosses are truly in a class of their own. As a Big Boss rises to the level of a Warboss he packs on more and more muscle and grows larger and larger, to the point that he towers over his subordinates. Warbosses lead entire tribes, sometimes even multiple tribes, and typically have a core mob of Biguns that act as their enforcers. They are armed and armoured with the best the tribe has to offer and are devastatingly effective on the battlefield, in addition to being naturally effective military leaders. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 40 --- toughness 5, 3 wounds, big, bit extra for sitting on a boar
 #size 4 --- cavalry but huge
-#prot 8 --- toughness 5, humanoid, +1 for boar, +1 for size
+#prot 7
 #mor 14 --- leadership 9, animosity, fighty
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -5079,7 +5108,7 @@
 #descr "While Bosses and Big Bosses are fundamentally the same size and toughness of Orc, just with a different hierarchical status, Warbosses are truly in a class of their own. As a Big Boss rises to the level of a Warboss he packs on more and more muscle and grows larger and larger, to the point that he towers over his subordinates. Warbosses lead entire tribes, sometimes even multiple tribes, and typically have a core mob of Biguns that act as their enforcers. They are armed and armoured with the best the tribe has to offer and are devastatingly effective on the battlefield, in addition to being naturally effective military leaders. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 40 --- toughness 5, 3 wounds, big, bit extra for sitting on a boar
 #size 4 --- cavalry but huge
-#prot 8 --- toughness 5, humanoid, +1 for boar, +1 for size
+#prot 7
 #mor 14 --- leadership 9, animosity, fighty
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -5346,7 +5375,7 @@
 #xpshape 25
 #inspirational -1
 #taskmaster 1
-#invulnerable 4
+#invulnerable 6
 #end
 
 ---- Forest Goblin Boss XPshape
@@ -5387,7 +5416,7 @@
 #maxage 5000
 #inspirational -1
 #taskmaster 1
-#invulnerable 4
+#invulnerable 6
 #end
 
 
@@ -5676,7 +5705,7 @@
 #descr "Only a Forest Goblin Big Boss truly marked for greatness by the spider gods will reach the position of Warboss, leader of at least one tribe, maybe more. Forest Goblin Warbosses ride into battle on the back of Gigantic Forest Spiders, much larger than the mounts commonly employed by their tribes. These Gigantic Spiders are formidable beasts in combat able to web their prey in an instant, deliver deadly posion through their fangs, and slash through even thick armour with their powerful chitinous limbs. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 45 --- warboss on giant forest spider, 3 wounds at T4 plus half of the spiders HP
 #size 4 --- big spider
-#prot 10 --- toughness 4, on a big tough spider
+#prot 8
 #mor 12 --- leadership 8, animosity, aggressive spider
 #mr 15 --- tier 3 combat leader, +2 for spider
 #unsurr 3 --- tier 3 combat leader
@@ -5723,7 +5752,7 @@
 #descr "Only a Forest Goblin Big Boss truly marked for greatness by the spider gods will reach the position of Warboss, leader of at least one tribe, maybe more. Forest Goblin Warbosses ride into battle on the back of Gigantic Forest Spiders, much larger than the mounts commonly employed by their tribes. These Gigantic Spiders are formidable beasts in combat able to web their prey in an instant, deliver deadly posion through their fangs, and slash through even thick armour with their powerful chitinous limbs. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 45 --- warboss on giant forest spider, 3 wounds at T4 plus half of the spiders HP
 #size 4 --- big spider
-#prot 10 --- toughness 4, on a big tough spider
+#prot 8
 #mor 12 --- leadership 8, animosity, aggressive spider
 #mr 15 --- tier 3 combat leader, +2 for spider
 #unsurr 3 --- tier 3 combat leader
@@ -5827,7 +5856,7 @@
 #descr "Only the most ruthless, underhanded, sneaky, and cunning Goblin Big Boss will reach the position of Warboss, leader of at least one tribe, maybe more. Goblins cannot hope to match the physical prowess of Orcs and as such tend to lead tribes of Goblins, but Warbosses can often get even Orc Big Bosses to do their bidding through careful manipulation and a willingness to resort to foul play. As such a Goblin Warboss may be at the head of a considerable and dangerous army where their cunning makes them formidable leaders. A Goblin of such status needs to display his superiority and as such Goblin Warbosses travel everywhere on stylish red chariots drawn by slavering wolves. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 25 --- warboss on chariot, 3 wounds at T4 plus some
 #size 4 --- two wolves, chariot, 2 gobbos
-#prot 6 --- toughness 4, in a chariot
+#prot 5
 #mor 11 --- leadership 8, animosity
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -5872,7 +5901,7 @@
 #descr "Only the most ruthless, underhanded, sneaky, and cunning Goblin Big Boss will reach the position of Warboss, leader of at least one tribe, maybe more. Goblins cannot hope to match the physical prowess of Orcs and as such tend to lead tribes of Goblins, but Warbosses can often get even Orc Big Bosses to do their bidding through careful manipulation and a willingness to resort to foul play. As such a Goblin Warboss may be at the head of a considerable and dangerous army where their cunning makes them formidable leaders. A Goblin of such status needs to display his superiority and as such Goblin Warbosses travel everywhere on stylish red chariots drawn by slavering wolves. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 25 --- warboss on chariot, 3 wounds at T4 plus some
 #size 4 --- two wolves, chariot, 2 gobbos
-#prot 6 --- toughness 4, in a chariot
+#prot 5
 #mor 11 --- leadership 8, animosity
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -5918,7 +5947,7 @@
 #descr "Only the most ruthless, underhanded, sneaky, and cunning Goblin Big Boss will reach the position of Warboss, leader of at least one tribe, maybe more. Goblins cannot hope to match the physical prowess of Orcs and as such tend to lead tribes of Goblins, but Warbosses can often get even Orc Big Bosses to do their bidding through careful manipulation and a willingness to resort to foul play. As such a Goblin Warboss may be at the head of a considerable and dangerous army where their cunning makes them formidable leaders. A Goblin of such status needs to display his superiority and as such Goblin Warbosses travel everywhere on stylish red chariots drawn by slavering wolves. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 25 --- warboss on chariot, 3 wounds at T4 plus some
 #size 4 --- two wolves, chariot, 2 gobbos
-#prot 6 --- toughness 4, in a chariot
+#prot 5
 #mor 11 --- leadership 8, animosity
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -5963,7 +5992,7 @@
 #descr "Only the most ruthless, underhanded, sneaky, and cunning Goblin Big Boss will reach the position of Warboss, leader of at least one tribe, maybe more. Goblins cannot hope to match the physical prowess of Orcs and as such tend to lead tribes of Goblins, but Warbosses can often get even Orc Big Bosses to do their bidding through careful manipulation and a willingness to resort to foul play. As such a Goblin Warboss may be at the head of a considerable and dangerous army where their cunning makes them formidable leaders. A Goblin of such status needs to display his superiority and as such Goblin Warbosses travel everywhere on stylish red chariots drawn by slavering wolves. From the postion of Warboss there is only one further goal for any Greenskin, to fight and win until they trigger a Waaagh, a covergence of surging energy, enthusiasm for violence, and sheer number of Greenskins that threatens to sweep away entire civilisations."
 #hp 25 --- warboss on chariot, 3 wounds at T4 plus some
 #size 4 --- two wolves, chariot, 2 gobbos
-#prot 6 --- toughness 4, in a chariot
+#prot 5
 #mor 11 --- leadership 8, animosity
 #mr 13 --- tier 3 combat leader
 #unsurr 3 --- tier 3 combat leader
@@ -6317,7 +6346,7 @@
 [Discounted to 80 gold in Turmoil 3]"
 #hp 28 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 5
 #mor 16 --- leadership 8, immune to psychology, fighty
 #mr 13 --- tier 2 combat leader + chaos dwarf mutation
 #unsurr 2 --- tier 2 combat leader
@@ -6360,7 +6389,7 @@
 #descr "In Greenskin society there are essentially three tiers of leadership - the Boss who commands a mob, the Big Boss who commands several mobs or a smaller tribe, and the mighty Warboss who rules over one or more major tribes. There are variations in title by region, but the progression is always the same - become a Boss, a Big Boss, then a Warboss. Black Orcs are the exception. Any Black Orc that sets his mind to lead must first have proven himself superior to his peers and any Black Orc capable of doing so is clearly a Big Boss at the least. Black Orc Big Bosses are not only aboslute engines of destruction on the battlefield, they are typically surprisingly skilled commanders, having an instinctual understanding of war and near unmatched ability to 'sort out' the squabbling lesser Greenskins and keep them focused on the bloody task of building an empire. Like any other Big Boss a Black Orc can only attain the status of Warboss through battle, which is exactly how they like it."
 #hp 28 --- toughness 5, 2 wounds, big
 #size 2 --- normal
-#prot 6 --- toughness 5, humanoid
+#prot 5
 #mor 16 --- leadership 8, immune to psychology, fighty
 #mr 13 --- tier 2 combat leader + chaos dwarf mutation
 #unsurr 2 --- tier 2 combat leader
@@ -6402,7 +6431,7 @@
 #descr "Black Orc Warbosses are inarguably the biggest, deadliest, angriest Greenskins there are. These hulking brutes are made for war, corded with muscle and covered in thick and surprisingly well made armour they tower over even Black Orc Big Bosses. While Black Orcs are generally known to be a sullen lot focused entirely on waging war, their Warbosses take this to a new extreme, having virtually no interest in anything beyond battle. They rule over other Greenskins as iron disciplinarians, though ultimately they prefer to work with their own kind because no matter what threats they levy it is impossible to get Goblins or Orcs to act like professionals. Many nations of the world live in fear of a Black Orc led Waaagh, as they are both capable of strategic thinking and 'ard enough that countless tribes will flock to their banner, but both the rarity of Black Orcs and their natural distaste for rank amateurs means Black Orcs are rather less likely than other Warbosses to actually trigger a Waaagh. Even so, should they continue to engage in battle, as they surely will, a Waaagh could coalesce around them at any moment."
 #hp 39 --- toughness 5, 3 wounds, big
 #size 3 --- big lad
-#prot 7 --- toughness 5, humanoid, black orc
+#prot 6
 #mor 18 --- leadership 9, immune to psychology, fighty
 #mr 14 --- tier 3 combat leader + CD manip
 #unsurr 3 --- tier 3 combat leader
@@ -6445,7 +6474,7 @@
 #descr "Black Orc Warbosses are inarguably the biggest, deadliest, angriest Greenskins there are. These hulking brutes are made for war, corded with muscle and covered in thick and surprisingly well made armour they tower over even Black Orc Big Bosses. While Black Orcs are generally known to be a sullen lot focused entirely on waging war, their Warbosses take this to a new extreme, having virtually no interest in anything beyond battle. They rule over other Greenskins as iron disciplinarians, though ultimately they prefer to work with their own kind because no matter what threats they levy it is impossible to get Goblins or Orcs to act like professionals. Many nations of the world live in fear of a Black Orc led Waaagh, as they are both capable of strategic thinking and 'ard enough that countless tribes will flock to their banner, but both the rarity of Black Orcs and their natural distaste for rank amateurs means Black Orcs are rather less likely than other Warbosses to actually trigger a Waaagh. Even so, should they continue to engage in battle, as they surely will, a Waaagh could coalesce around them at any moment."
 #hp 39 --- toughness 5, 3 wounds, big
 #size 3 --- big lad
-#prot 7 --- toughness 5, humanoid, black orc
+#prot 6
 #mor 18 --- leadership 9, immune to psychology, fighty
 #mr 14 --- tier 3 combat leader + CD manip
 #unsurr 3 --- tier 3 combat leader
@@ -6511,7 +6540,7 @@
 #descr "Grokka Goreaxe is a Savage Orc Warboss who epitomises the Savage Orc belief that things should be kept simple and Orcs should live as they once did, as berserk primal forces of rage and violence unencumbered by metal weapons, armour, plans, or even language. Grokka even shuns the use of a boar to ride into battle, preferring to fight from foot with his pair of crude stone axes and rely on his toughness, skill, and sheer berserk fury to carry him through to victory. This approach has garnered much admiration from other Savage Orcs and it is said that Grokka may be a personification of the fighting fury of the Orc deity Gork, though the Shamans are waiting for Grokka to form a true Waaagh before agreeing this is the case."
 #hp 44 --- big even for a big orc warboss
 #size 3
-#prot 10 --- +3 over gorfang
+#prot 9 --- +3 over gorfang
 #mor 18 --- +3 over gorfang
 #mr 16 --- +1 over so warboss
 #unsurr 4 --- tier 4 combat leader
@@ -6541,7 +6570,7 @@
 #itemslots 290944 -- crown, 3 misc
 #xpshape 35
 #berserk 5
-#invulnerable 16 -- +7
+#invulnerable 18 -- +7
 #xpshape 30 -- 5 more than regualr, 5 less than grimgor
 #incscale 0 -- increases turmoil
 #end
@@ -6584,7 +6613,7 @@
 #maxage 5000
 #itemslots 290944 -- crown, 3 misc
 #berserk 5
-#invulnerable 16 -- +7
+#invulnerable 18
 #incscale 0 -- increases turmoil
 #end
 
@@ -6598,6 +6627,7 @@
 #inspirational 3 -- +1
 #mr 18
 #unsurr 5 --- tier 5 combat leader
+#invulnerable 20
 #holy
 #incscale 0 -- increases turmoil
 #end
@@ -6613,7 +6643,7 @@
 #descr "Wurrzag Ud Ura Zahubu is a Savage Orc Shaman of mighty mystical powers. Known as Da Great Green Prophet, he is recognised to be on a mission from Gork and Mork to advance the cause of all greenskin kind and is famed for turning around the fortunes of once great tribes. It is said that he inspired the Bone Nose tribe to conquer great swathes of the Southlands, sent the Iron Pig tribe rampaging through the Border Princes, and saved the Spotted Skullz from near certain destruction at the hands of an undead legion. Wurrzag always seeks to find the very strongest Bosses and Warbosses and elevate them to perhaps one day lead their own Waaagh, for his insights into gaining the favour of Gork and Mork are legendary. Unlike other Shaman Wurrzag is never distracted from his crusade and though he is clearly touched by the divine he is surprisingly lucid and orcish by the estimations of other greenskins, which itself is somewhat unnerving. In battle Wurrzag rides his mighty boar Spleenrippa and brandishes a magical staff atop which sits his his squiggly beast, in reality the former Great Shaman of the Bone Nose tribe transformed by Wurrzag in a brief magical duel, and from which Wurrzag can draw constant energy. Befitting his station Da Great Green Prophet wears at all times the famed Baleful Mask, a crude wooden construct which constantly sears the minds of his foes as his gaze passes across the them."
 #hp 40 --- +5 over great shaman
 #size 3 ---
-#prot 8 ---
+#prot 6
 #mor 15 --- +2
 #mr 21 --- +3 mostly because of that staff
 #enc 4 --- 
@@ -6663,7 +6693,7 @@
 #descr "Gobbos are cowardly and disloyal, but nothing stirs their wicked hearts like Grom, mightiest of Goblin Warbosses. Grom was once a fairly ordinary, if perhaps unusually aggressive, Goblin Boss in the Broken Axe tribe, but everything changed when he consumed, upon a dare, a mass of raw Troll flesh. As Troll flesh regenerates and Grom, always a big eater, had not stopped to cook the meal, this appeared to be a suicidal course of action. Yet Grom did not perish, even as the foul meat writhed and thrashed in his belly, and a race between his ability to digest and the flesh's ability to regrow began in earnest. After a full day and night of terrible pain, Grom emerged from his tent a changed Goblin - grown to prodigious size, granted great strength, and able to regenerate his own wounds even more quickly than a Troll. Unsurprisingly Grom soon became Warboss of his own tribe, then conquered the surrounding tribes, personally slaying several Orc Warbosses who severely underestimated this massive Goblin. To Goblins Grom was now a living God, for he was everything they were not, and he strived to live up to his legend, setting his sights overseas on the Elven land of Ulthuan to prove his kind could overcome their ancestral fear of the 'pointy ears'. Grom rides into battle atop his custom War Chariot, armed with his infamous axe Elfbiter, and engenders surprising courage and fervour in his followers, the bulk of which are always Goblins. As a legendary Warboss, Grom may trigger a vast Waaagh in his name by engaging in battle."
 #hp 44 --- toughness 4, 3 wounds, big, then an extra +10 for Grom being so fat
 #size 4 --- big and on chariot
-#prot 8 --- toughness 4, humanoid, increasing for chariot and being huge
+#prot 7
 #mor 13 --- leadership 8, animosity, famously confident
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
@@ -6712,7 +6742,7 @@
 #descr "Gobbos are cowardly and disloyal, but nothing stirs their wicked hearts like Grom, mightiest of Goblin Warbosses. Grom was once a fairly ordinary, if perhaps unusually aggressive, Goblin Boss in the Broken Axe tribe, but everything changed when he consumed, upon a dare, a mass of raw Troll flesh. As Troll flesh regenerates and Grom, always a big eater, had not stopped to cook the meal, this appeared to be a suicidal course of action. Yet Grom did not perish, even as the foul meat writhed and thrashed in his belly, and a race between his ability to digest and the flesh's ability to regrow began in earnest. After a full day and night of terrible pain, Grom emerged from his tent a changed Goblin - grown to prodigious size, granted great strength, and able to regenerate his own wounds even more quickly than a Troll. Unsurprisingly Grom soon became Warboss of his own tribe, then conquered the surrounding tribes, personally slaying several Orc Warbosses who severely underestimated this massive Goblin. To Goblins Grom was now a living God, for he was everything they were not, and he strived to live up to his legend, setting his sights overseas on the Elven land of Ulthuan to prove his kind could overcome their ancestral fear of the 'pointy ears'. Grom rides into battle atop his custom War Chariot, armed with his infamous axe Elfbiter, and engenders surprising courage and fervour in his followers, the bulk of which are always Goblins. As a legendary Warboss, Grom may trigger a vast Waaagh in his name by engaging in battle."
 #hp 44 --- toughness 4, 3 wounds, big, then an extra +10 for Grom being so fat
 #size 4 --- big and on chariot
-#prot 8 --- toughness 4, humanoid, increasing for chariot and being huge
+#prot 7
 #mor 13 --- leadership 8, animosity, famously confident
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
@@ -6776,7 +6806,7 @@
 #descr "Azhag the Slaughterer is a Warboss like no other before him, a union of the brawn and power of an Orc in his prime and the malevolent intelligence of an ancient evil. Azhag was once Boss of a small band of Orcs struggling to survive in the frozen North, but everything changed when he discovered a magic crown in the ruins of a long-forgotten city. The crown whispered fell plans to Azhag and the Orc took to wearing it always, finding success after success as a result of following its machinations. Always the crown spoke of further triumphs, greater ambitions, and Azhag sought them willingly. Though he was prone to use unorcish words, had little tolerance for the typical infighting of his kind, and seemed to be 'not quite right in da 'ead', Greenskins flocked to his banner. As he grew in power the demands of the crown increased though, as it cajoled and manipulated him Southward, seeking to reunite with its original owner. Possessing a brutish and stubborn mind, the Warboss would often resist, standing still in a stupor while battling internally for control of his actions. The only time the two minds work entirely in conjunction is during battle, as Azhag's instincts for violence perfectly complement both the crown's clever plans and the destructive sorcery it granted to its hulking host. In battle Azhag rides atop his personal War Wyvern Skullmuncha and in addition to the dread crown equips himself with magical blades and charmed armour. Though highly unusual, Azhag is nonetheless an Orc Warboss in his prime and may trigger a great Waaagh by engaging in battle."
 #hp 68 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern, then some extra for skullmuncha and Azhag being special
 #size 6 --- big and winged
-#prot 10 --- toughness 5, humanoid, +3 for wyvern, +1 for size
+#prot 9 --- toughness 5, humanoid, +3 for wyvern, +1 for size
 #mor 16 --- leadership 9, fighty, terror, crown
 #mr 18 --- tier 4 combat leader +2 for wyvern, +3 for crown
 #unsurr 4 --- tier 4 combat leader
@@ -6828,7 +6858,7 @@
 #descr "Azhag the Slaughterer is a Warboss like no other before him, a union of the brawn and power of an Orc in his prime and the malevolent intelligence of an ancient evil. Azhag was once Boss of a small band of Orcs struggling to survive in the frozen North, but everything changed when he discovered a magic crown in the ruins of a long-forgotten city. The crown whispered fell plans to Azhag and the Orc took to wearing it always, finding success after success as a result of following its machinations. Always the crown spoke of further triumphs, greater ambitions, and Azhag sought them willingly. Though he was prone to use unorcish words, had little tolerance for the typical infighting of his kind, and seemed to be 'not quite right in da 'ead', Greenskins flocked to his banner. As he grew in power the demands of the crown increased though, as it cajoled and manipulated him Southward, seeking to reunite with its original owner. Possessing a brutish and stubborn mind, the Warboss would often resist, standing still in a stupor while battling internally for control of his actions. The only time the two minds work entirely in conjunction is during battle, as Azhag's instincts for violence perfectly complement both the crown's clever plans and the destructive sorcery it granted to its hulking host. In battle Azhag rides atop his personal War Wyvern Skullmuncha and in addition to the dread crown equips himself with magical blades and charmed armour. Though highly unusual, Azhag is nonetheless an Orc Warboss in his prime and may trigger a great Waaagh by engaging in battle."
 #hp 68 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern, then some extra for skullmuncha and Azhag being special
 #size 6 --- big and winged
-#prot 10 --- toughness 5, humanoid, +3 for wyvern, +1 for size
+#prot 9 --- toughness 5, humanoid, +3 for wyvern, +1 for size
 #mor 16 --- leadership 9, fighty, terror, crown
 #mr 18 --- tier 4 combat leader +2 for wyvern, +3 for crown
 #unsurr 4 --- tier 4 combat leader
@@ -6927,7 +6957,7 @@
 #descr "At a distance you could mistake a Wyvern for a Dragon, but there is no nobility of spirit in these brutal beasts. Wyverns are apex predators that live high in the barren reaches of the World's Edge Mountains, although they will range far from their bone strewn lairs to devastate villages and farms. When Greenskins see the menacing silhouette of a Wyvern circling high above they greet it with whoops and cheers, for an instinctual kinship is felt between these destructive beings, and Orcs see Wyverns as manifestations of the proper order of the strong imposing their will on the weak. No Orc would be so stupid as to think they could tame an adult Wyvern through force, but occasionally Nightgoblins will steal Wyvern eggs and sell them to powerful Orc leaders to raise from hatchlings as personal mounts. This Orc Warboss has such a mount and the pair make for a force of sheer destruction on the battlefield. Like any Warboss there is a chance this one may, through joining in battle, become the leader of a great Waaagh."
 #hp 60 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern
 #size 6 --- big and winged
-#prot 10 --- toughness 5, humanoid, +3 for wyvern, +1 for size
+#prot 9 --- toughness 5, humanoid, +3 for wyvern, +1 for size
 #mor 15 --- leadership 9, animosity, fighty, terror
 #mr 15 --- tier 3 combat leader +2 for wyvern
 #unsurr 3 --- tier 3 combat leader
@@ -6972,7 +7002,7 @@
 #descr "At a distance you could mistake a Wyvern for a Dragon, but there is no nobility of spirit in these brutal beasts. Wyverns are apex predators that live high in the barren reaches of the World's Edge Mountains, although they will range far from their bone strewn lairs to devastate villages and farms. When Greenskins see the menacing silhouette of a Wyvern circling high above they greet it with whoops and cheers, for an instinctual kinship is felt between these destructive beings, and Orcs see Wyverns as manifestations of the proper order of the strong imposing their will on the weak. No Orc would be so stupid as to think they could tame an adult Wyvern through force, but occasionally Nightgoblins will steal Wyvern eggs and sell them to powerful Orc leaders to raise from hatchlings as personal mounts. This Orc Warboss has such a mount and the pair make for a force of sheer destruction on the battlefield. Like any Warboss there is a chance this one may, through joining in battle, become the leader of a great Waaagh."
 #hp 60 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern
 #size 6 --- big and winged
-#prot 10 --- toughness 5, humanoid, +3 for wyvern, +1 for size
+#prot 9 --- toughness 5, humanoid, +3 for wyvern, +1 for size
 #mor 15 --- leadership 9, animosity, fighty, terror
 #mr 15 --- tier 3 combat leader +2 for wyvern
 #unsurr 3 --- tier 3 combat leader
@@ -7034,7 +7064,7 @@
 #descr "At a distance you could mistake a Wyvern for a Dragon, but there is no nobility of spirit in these brutal beasts. Wyverns are apex predators that live high in the barren reaches of the World's Edge Mountains, although they will range far from their bone strewn lairs to devastate villages and farms. When Greenskins see the menacing silhouette of a Wyvern circling high above they greet it with whoops and cheers, for an instinctual kinship is felt between these destructive beings, and Orcs see Wyverns as manifestations of the proper order of the strong imposing their will on the weak. No Orc would be so stupid as to think they could tame an adult Wyvern through force, but occasionally Nightgoblins will steal Wyvern eggs and sell them to powerful Orc leaders to raise from hatchlings as personal mounts. This Orc Warboss has such a mount and the pair make for a force of sheer destruction on the battlefield. Like any Warboss there is a chance this one may, through joining in battle, become the leader of a great Waaagh."
 #hp 60 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern
 #size 6 --- big and winged
-#prot 10 --- toughness 5, humanoid, +3 for wyvern, +1 for size
+#prot 9 --- toughness 5, humanoid, +3 for wyvern, +1 for size
 #mor 15 --- leadership 9, animosity, fighty, terror
 #mr 15 --- tier 3 combat leader +2 for wyvern
 #unsurr 3 --- tier 3 combat leader
@@ -7079,7 +7109,7 @@
 #descr "At a distance you could mistake a Wyvern for a Dragon, but there is no nobility of spirit in these brutal beasts. Wyverns are apex predators that live high in the barren reaches of the World's Edge Mountains, although they will range far from their bone strewn lairs to devastate villages and farms. When Greenskins see the menacing silhouette of a Wyvern circling high above they greet it with whoops and cheers, for an instinctual kinship is felt between these destructive beings, and Orcs see Wyverns as manifestations of the proper order of the strong imposing their will on the weak. No Orc would be so stupid as to think they could tame an adult Wyvern through force, but occasionally Nightgoblins will steal Wyvern eggs and sell them to powerful Orc leaders to raise from hatchlings as personal mounts. This Orc Warboss has such a mount and the pair make for a force of sheer destruction on the battlefield. Like any Warboss there is a chance this one may, through joining in battle, become the leader of a great Waaagh."
 #hp 60 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern
 #size 6 --- big and winged
-#prot 10 --- toughness 5, humanoid, +3 for wyvern, +1 for size
+#prot 9 --- toughness 5, humanoid, +3 for wyvern, +1 for size
 #mor 15 --- leadership 9, animosity, fighty, terror
 #mr 15 --- tier 3 combat leader +2 for wyvern
 #unsurr 3 --- tier 3 combat leader
@@ -7141,7 +7171,7 @@
 #descr "At a distance you could mistake a Wyvern for a Dragon, but there is no nobility of spirit in these brutal beasts. Wyverns are apex predators that live high in the barren reaches of the World's Edge Mountains, although they will range far from their bone strewn lairs to devastate villages and farms. When Greenskins see the menacing silhouette of a Wyvern circling high above they greet it with whoops and cheers, for an instinctual kinship is felt between these destructive beings, and Orcs see Wyverns as manifestations of the proper order of the strong imposing their will on the weak. No Orc would be so stupid as to think they could tame an adult Wyvern through force, but occasionally Nightgoblins will steal Wyvern eggs and sell them to powerful Orc leaders to raise from hatchlings as personal mounts. This Orc Great Shaman has such a mount, making him far more dangerous in combat, lending him greater mobility, and further reinforcing his status as a conduit of either Gork or Mork, or both."
 #hp 50 --- toughness 5, 3 wounds, big, chunk extra for sitting on a wyvern
 #size 6 --- big and winged
-#prot 9 --- toughness 5, humanoid, +3 for wyvern
+#prot 8
 #mor 13 --- GS + wyvern
 #mr 17 --- great shaman + wyvern
 #enc 5 --- standard for cav
@@ -7196,7 +7226,7 @@
 #descr "Gorfang Rotgut is an immensely strong Orc Warboss whose tribe, the Red Fangs, currently occupy the massive Orc fortress of Black Crag, the former Dwarf hold of Karak Drazh. Gorfang's rule over the western entrance to Death Pass is absolute and he has smartly formed an alliance with the Night Goblins of Karak Eight Peaks, led by the infamously cunning Skarsnik. Gorfang has spent most of his life fighting Dwarfs, losing an eye at the Battle of the Jaws and hammering an iron patch into the socket to commemorate the fight rather than letting it heal. Gorfang's most notorious success against the stunties came in the attack on Karak Azul, during which he broke into Lord Kazador's throne room and captured many of the Dwarf Lord's kinsfolk. The Dwarf Lord's son, Kazrik, was not taken captive but was shaved, tattooed with Gorfang's personal glyph and firmly nailed to Kazador's own throne. Kazrik survived, but Lord Kazador has sworn an undying grudge against the Red Fangs. In battle Gorfang wields the massive serrated choppa Red Fang with incredible speed and is protected by a huge shield cut from the great doors of Karak Azul and the magical Evil Sun Armour. As with any Warboss, Gorfang may trigger a Waaagh in his name through regularly joining battle."
 #hp 40 --- toughness 5, 3 wounds, big
 #size 3 --- huge orc
-#prot 7 --- toughness 5, humanoid, +1 for size
+#prot 6
 #mor 15 --- leadership 9, animosity, fighty, +1 because hero
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
@@ -7238,7 +7268,7 @@
 #descr "Gorfang Rotgut is an immensely strong Orc Warboss whose tribe, the Red Fangs, currently occupy the massive Orc fortress of Black Crag, the former Dwarf hold of Karak Drazh. Gorfang's rule over the western entrance to Death Pass is absolute and he has smartly formed an alliance with the Night Goblins of Karak Eight Peaks, led by the infamously cunning Skarsnik. Gorfang has spent most of his life fighting Dwarfs, losing an eye at the Battle of the Jaws and hammering an iron patch into the socket to commemorate the fight rather than letting it heal. Gorfang's most notorious success against the stunties came in the attack on Karak Azul, during which he broke into Lord Kazador's throne room and captured many of the Dwarf Lord's kinsfolk. The Dwarf Lord's son, Kazrik, was not taken captive but was shaved, tattooed with Gorfang's personal glyph and firmly nailed to Kazador's own throne. Kazrik survived, but Lord Kazador has sworn an undying grudge against the Red Fangs. In battle Gorfang wields the massive serrated choppa Red Fang with incredible speed and is protected by a huge shield cut from the great doors of Karak Azul and the magical Evil Sun Armour. As with any Warboss, Gorfang may trigger a Waaagh in his name through regularly joining battle."
 #hp 40 --- toughness 5, 3 wounds, big
 #size 3 --- huge orc
-#prot 7 --- toughness 5, humanoid, +1 for size
+#prot 6
 #mor 15 --- leadership 9, animosity, fighty, +1 because hero
 #mr 14 --- tier 4 combat leader
 #unsurr 4 --- tier 4 combat leader
@@ -7460,7 +7490,7 @@
 #researchlevel 2
 #path 0 6
 #pathlevel 0 2
-#fatiguecost 500
+#fatiguecost 600
 #damage 3819 -- spitting spider
 #restricted 161 -- greenskins south
 #onlymnr 3944 -- forest goblin shaman
@@ -7483,7 +7513,7 @@
 #pathlevel 1 1
 #fatiguecost 500
 #damage 3951 -- gigantic forest spider
-#nreff 1
+#nreff 1002
 #restricted 161 -- greenskins south
 #onlymnr 3944 -- forest goblin shaman
 #onlymnr 3953 -- forest goblin great shaman
@@ -7503,7 +7533,7 @@
 #path 1 3
 #pathlevel 0 1
 #pathlevel 1 1
-#fatiguecost 300
+#fatiguecost 200
 #damage 3814 -- squig
 #nreff 7
 #restricted 160 -- greenskins
@@ -7771,7 +7801,7 @@ Savage Orc Boss -> Savage Orc Big Boss -> Savage Orc Warboss -> Savage Orc Waaag
 #4d6units 3805 -- lance wolfriders
 #3d6units 3806 -- bow wolfriders
 #2d3units 3858 -- stone troll
-#4d3units 3865 -- goblin wolf chariot lance
+#5d3units 3865 -- goblin wolf chariot lance
 #4d3units 3866 -- goblin wolf chariot archer
 #transform 3985 -- grom waaagh
 #end
@@ -9331,9 +9361,9 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #addrecunit 3800 -- goblin montag
 #addrecunit 3802 -- goblin archer
 #addrecunit 3805 -- goblin wolfrider
-#addrecunit 3806 -- goblin wolfrider archer
+--#addrecunit 3806 -- goblin wolfrider archer -- Removed for decluttering
 #addrecunit 3865 -- goblin wolf chariot lance
-#addrecunit 3866 -- goblin wolf chariot archer
+--#addrecunit 3866 -- goblin wolf chariot archer -- Removed for decluttering
 #addrecunit 3803 -- nightgoblin spear montag
 #addrecunit 3804 -- nightgoblin archer montag
 #addrecunit 3868 -- nightgoblin netter or clubba montag
@@ -9403,15 +9433,15 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 #defcom1 3912 -- goblin boss 
 #defcom2 3905 -- orc boss
-#defunit1 -6552 -- goblin infantry montag
-#defunit1b -6552 -- goblin infantry montag 
-#defunit2 3802 -- goblin archer 
-#defunit2b -6556 -- orc montag
+#defunit1 -6556 -- orc montag
+#defunit1b 3802 -- goblin archer
+#defunit2 -6552 -- goblin infantry montag
+#defunit2b 3855 -- orc arrer boy
 
 
 --Sets how many of the units to appear per ten points.
 
-#defmult1 15
+#defmult1 20
 #defmult1b 15
 #defmult2 15
 #defmult2b 10
@@ -9496,30 +9526,30 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 #addrecunit 3800 -- goblin montag
 #addrecunit 3802 -- goblin archer
-#addrecunit 3805 -- goblin wolfrider
-#addrecunit 3806 -- goblin wolfrider archer
-#addrecunit 3865 -- goblin wolf chariot lance
-#addrecunit 3866 -- goblin wolf chariot archer
+--#addrecunit 3805 -- goblin wolfrider
+--#addrecunit 3806 -- goblin wolfrider archer
+--#addrecunit 3865 -- goblin wolf chariot lance
+--#addrecunit 3866 -- goblin wolf chariot archer
 #addrecunit 3877 -- forest goblin montag recruit form
 #addrecunit 3887 -- forest goblin archer
 #addrecunit 3898 -- forest goblin spider rider lance
 #addrecunit 3897 -- forest goblin spider rider archer
-#addrecunit 3869 -- orc boy recruit form montag
-#addrecunit 3855 -- orc arrer boy
-#addrecunit 3867 -- orc bigun recruit montag form
+--#addrecunit 3869 -- orc boy recruit form montag
+--#addrecunit 3855 -- orc arrer boy
+--#addrecunit 3867 -- orc bigun recruit montag form
 #addrecunit 3873 -- Savage Orc boy montag
 #addrecunit 3895 -- Savage orc arrer boy
 #addrecunit 3892 -- Savage Orc Bigun montag
 #addrecunit 3893 -- Savage Orc Waaaghboy
-#addrecunit 3859 -- orc boar boy
-#addrecunit 3860 -- orc boar boy bigun
+--#addrecunit 3859 -- orc boar boy
+--#addrecunit 3860 -- orc boar boy bigun
 #addrecunit 3894 -- savage orc boar boy
 #addrecunit 3896 -- savage orc boar boy bigun
 #addrecunit 3992 -- Giant (south) -- recruit form
 
 #addforeignunit 3800 -- goblin montag
 #addforeignunit 3802 -- goblin archer
-#addforeignunit 3869 -- orc boy recruit form montag
+--#addforeignunit 3869 -- orc boy recruit form montag
 #addforeignunit 3873 -- Savage Orc boy montag
 
 #forestrec 3877 -- forest goblin infantry montag
@@ -9540,7 +9570,7 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 #addreccom 3945 -- forest goblin boss
 #addreccom 3944 -- forest goblin shaman
 #addreccom 3953 -- forest goblin great shaman
-#addreccom 3957 -- orc boss (SOUTH)
+--#addreccom 3957 -- orc boss (SOUTH)
 #addreccom 3903 -- orc shaman
 #addreccom 3940 -- savage orc boss
 #addreccom 3977 -- savage orc shaman
@@ -9564,19 +9594,19 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 
 --Sets the units to be used in province defense.
 
-#defcom1 3912 -- goblin boss 
-#defcom2 3905 -- orc boss
-#defunit1 -6552 -- goblin infantry montag
-#defunit1b -6552 -- goblin infantry montag 
-#defunit2 3802 -- goblin archer 
-#defunit2b -6556 -- orc montag
+#defcom1 3945 -- forest goblin boss (SOUTH)
+#defcom2 3940 -- savage orc boss (SOUTH)
+#defunit1 -6557 -- savage orc montag
+#defunit1b 3887 -- forest goblin archer
+#defunit2 -6558 -- forest goblin infantry montag
+#defunit2b 3895 -- savage orc arrer boy
 
 
 --Sets how many of the units to appear per ten points.
 
 #defmult1 15
-#defmult1b 15
-#defmult2 15
+#defmult1b 20
+#defmult2 20
 #defmult2b 10
 
 
@@ -9587,10 +9617,10 @@ Mechanics: Bosses with enough XP can upgrade to Big Boss, Warboss, and finally t
 --hero2 --
 
 
-#startcom 3957 -- orc boss (SOUTH)
-#startunittype1 3869 -- orc boy recruit form montag
+#startcom 3940 -- savage orc boss (SOUTH)
+#startunittype1 3873 -- savage orc boy recruit form montag
 #startunitnbrs1 15
-#startunittype2 3802 -- goblin archer
+#startunittype2 3887 -- forest goblin archer
 #startunitnbrs2 25
 #startscout 3900 -- goblin wolfrider scout
 #end

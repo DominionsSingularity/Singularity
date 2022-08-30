@@ -1449,7 +1449,7 @@
 [This troop uses a smaller sprite on the recruitment screen for ease of use]"
 #hp 95
 #size 6
-#prot 10
+#prot 9
 #mor 14
 #mr 9
 #enc 4
@@ -1491,7 +1491,7 @@
 #descr "Giants are common in the Dark Lands as they wander down from their ancestral home in the Mountains of Mourn. Frequently these hapless, ungaingly creatures are fleeing the attentions of tribes of ogres, but unfortunately for them the Dark Lands represent an even more dangerous threat, for the Chaos Dwarfs have many uses for their kind. Though slow and stupid, giants are immensely strong and make invaluable slaves whether toiling in the pits, tearing up trees, or on the field of battle. Slavegiants are goaded into battle, but usually it doesn't take much goading, as the Giant is all too willing to take out the humiliation of being enslaved on any creature smaller than himself. In battle Slave Giants attack by stomping, whipping heavy chains about and generally causing utter chaos and carnage."
 #hp 95
 #size 6
-#prot 10
+#prot 9
 #mor 14
 #mr 9
 #enc 4
@@ -1729,7 +1729,7 @@
 #descr "Chaos Dwarf society is strictly heirarchical with many tiers of ascending power and diminishing size, mirroring the mighty ziggurats that dominate their homeland. Amongst Chaos Dwarfs the Warrior caste is a position of middling importance, holding status above craftsmen and civilians, but well below smiths or inductees into cult of Hashut. Castellans are members of the Warrior caste who have distinguished themselves over and over again in battle under the watchful eye of an Overlord, who in turn serves a Sorcerer Lord. The day to day running of the Sorcerer Lord's legion is left to the Castellans, who are adept in leading small forces, raiding for slaves, commanding garrisons or drilling the troops. Each Castellan will have served a significant time in the legion and many have even completed at least one seven year term in the Immortals."
 #hp 22 --- toughness 5, wounds 2
 #size 2 --- yep, they aren't that small
-#prot 6 --- toughness 5
+#prot 4
 #mor 14 --- leadership 10
 #mr 12 --- combat commander tier 1
 #unsurr 1 --- combat commander tier 1
@@ -1770,7 +1770,7 @@
 #descr "While Chaos Dwarf society is ultimately ruled over by the Sorcerer Lords, it is the Overlords which command the legions of warriors. Each Sorcerer Lord may appoint exactly one Overlord, picked from the most ruthless and talented of the Castellan ranks. This is the apex to which all in the Warrior caste aspite, the zenith of all they can acheieve in life, and Overlords are utterly dedicated to their work. Without the distraction of social climbing and intrigue they are focused entirely on the art of war and the elevation of their own Sorcerer Lord to even greater power, for their fortunes are truly tied to those of their master. Each Overlord will have served many decades, perhaps even centuries as a Warrior and Castellan, almost inevitably also having spent time in the ranks of the Immortals to prove his worth. They are superb tacticians and individual combatants and are armed with some of the best available equipment, including a forge axe and magical golden scale mail. Overlords are expected to be able to command throngs of worthless slaves or elite Immortals with equal confidence and authority."
 #hp 28 --- toughness 5, wounds 3
 #size 2 --- yep, they aren't that small
-#prot 6 --- toughness 5
+#prot 5
 #mor 15 --- leadership 10
 #mr 14 --- combat commander tier 3
 #unsurr 3 --- combat commander tier 3
@@ -1812,7 +1812,7 @@
 [Requires a Daemonsmith present to recruit]"
 #hp 23 --- toughness 5, 2 wounds
 #size 2 --- yep, they aren't that small
-#prot 7 --- toughness 5, description makes them sound even tougher
+#prot 5
 #mor 18 --- leadership 10 and immune to psychology
 #mr 13 --- combat commander tier 1 + CD + Infernal
 #unsurr 1 --- combat commander tier 1

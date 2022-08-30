@@ -6,6 +6,127 @@
 
 -- so its best to just have better stealth in forests, rather than stealth vs no stealth
 
+--added
+
+#selectnametype 172 -- - High Elf Names
+#clear
+#addname "Elror"
+#addname "Calthan"
+#addname "Mellion"
+#addname "Avendor"
+#addname "Illindir"
+#addname "Cyrion"
+#addname "Calthran"
+#addname "Elthanar"
+#addname "Elthyrion"
+#addname "Mellion"
+#addname "Amhair"
+#addname "Telion"
+#addname "Lyrandir"
+#addname "Imhandir"
+#addname "Alithin"
+#addname "Meladryan"
+#addname "Amhair"
+#addname "Urdithane"
+#addname "Narien"
+#addname "Dolwen"
+#addname "Silontol"
+#addname "Agnor"
+#addname "Gildiril"
+#addname "Falandar"
+#addname "Ravandil"
+#addname "Nariel"
+#addname "Dalos"
+#addname "Elured"
+#addname "Amendil"
+#addname "Agnor"
+#addname "Larandar"
+#addname "Singal"
+#addname "Valahuir"
+#addname "Laurenor"
+#addname "Meltinir"
+#addname "Cavindel"
+#addname "Carandros"
+#addname "Callandor"
+#addname "Valoriel"
+#addname "Gilgalion"
+#addname "Eldillor"
+#addname "Forion"
+#addname "Cirdalion"
+#addname "Arduval"
+#addname "Thalyrion"
+#addname "Illindir"
+#addname "Illydrian"
+#addname "Avarion"
+#addname "Varhil"
+#addname "Cirin"
+#addname "Halin"
+#addname "Cavindel"
+#addname "Irduval"
+#addname "Dolwen"
+#addname "Gloringwel"
+#addname "Aluthil"
+#addname "Melinir"
+#addname "Valin"
+#addname "Maruviel"
+#addname "Elured"
+#addname "Erefor"
+#addname "Carwariel"
+#addname "Legosil"
+#addname "Olandis"
+#addname "Elror"
+#addname "Yavandir"
+#addname "Larandar"
+#addname "Torendhil"
+#addname "Ethirhil"
+#addname "Avaryan"
+#addname "Circalion"
+#addname "Elurion"
+#addname "Eltorian"
+#addname "Elyrion"
+#addname "Agariel"
+#addname "Avarion"
+#addname "Sinyail"
+#addname "Athelle"
+#addname "Undilar"
+#addname "Iroril"
+#addname "Eranyor"
+#addname "Dinainin"
+#addname "Caimear"
+#addname "Cailihil"
+#addname "Eldalil"
+#addname "Dinandir"
+#addname "Alulildir"
+#addname "Methulil"
+#addname "Methyrion"
+#addname "Faltyrion"
+#addname "Caityrion"
+#addname "Glorinil"
+#addname "Sibeal"
+#addname "Ameis"
+#addname "Cearoise"
+#addname "Ceallighid"
+#addname "Taereal"
+#addname "Loreal"
+#addname "Lothris"
+#addname "Talamiel"
+#addname "Tyrlis"
+#addname "Calithir"
+#end
+
+-- great eagles claws and beak
+
+#newweapon 1007
+#name "Great Eagle"
+#dmg 18
+#bonus
+#len 0
+#att -2
+#nratt 2
+#pierce
+#slash
+#nostr
+#end
 
 ------ possible spite ideas
 
@@ -87,6 +208,7 @@
 ---- Giant Stomp
 
 #newweapon 1168
+#copyweapon 532 -- Tail Sweep
 #name "Giant Stomp"
 #dmg 0
 #att 0
@@ -106,11 +228,11 @@
 #newweapon 1169
 #name "Vinelash"
 #slash
-#dmg -8
+#dmg -5
 #flail
 #len 4 -- +1 from size
 #sound 9
-#nratt 2
+#nratt 1
 #magic
 #bonus
 #secondaryeffect 1150 -- entangling roots (mr resists)
@@ -355,6 +477,7 @@
 #copyweapon 137 -- entangle
 #name "Entangling Roots"
 #mrnegates
+#bonus
 #end
 
 -- Lance of Isha
@@ -431,7 +554,7 @@
 #newweapon 1157
 #copyweapon 24 -- long bow
 #name "Waywatcher Long Bow"
-#dmg 9
+#dmg 8
 #att 2 -- +2
 #armorpiercing
 #halfstr
@@ -443,7 +566,7 @@
 #newweapon 1206
 #copyweapon 24 -- long bow
 #name "Waywatcher Long Bow"
-#dmg 9
+#dmg 8
 #att 2 -- +2
 #armorpiercing
 #halfstr
@@ -508,6 +631,31 @@
 #name "Bite"
 #magic
 #end
+
+
+-- Soporific Breath
+
+#newweapon 1230
+#copyweapon 535 -- dragon gas
+#name "Soporific Breath"
+#aoe 4 -- 2 worse than regular dragon gas
+#dmg -5 -- 2 worse than regular dragon gas
+#secondaryeffectalways 1231 -- soporific fumes
+#end
+
+-- soporific fumes
+
+#newweapon 1231
+#name "Soporific Fumes"
+#inanimateimmune
+#dt_stun
+#dmg 0
+#armornegating
+#hardmrneg
+#magic
+#bonus
+#end
+
 
 
 -------------------------------------------------------------------------
@@ -778,7 +926,7 @@
 #gcost 60
 #rpcost 40
 #rcost 4
-#mapmove 28 -- incredibly swift
+#mapmove 24 -- incredibly swift
 #ap 30
 #ressize 2
 #mounted
@@ -821,7 +969,7 @@
 #gcost 60
 #rpcost 40
 #rcost 4
-#mapmove 28
+#mapmove 24
 #ap 30
 #ressize 2
 #mounted
@@ -1334,10 +1482,10 @@
 #armor 10 -- leather hauberk
 #armor 162 -- crested helmet
 #def 13 -- fateweaving stuff
-#gcost 70
-#rpcost 40
-#rcost 4
-#mapmove 28 -- incredibly swift
+#gcost 100
+#rpcost 48
+#rcost 5
+#mapmove 24 -- incredibly swift
 #ap 30
 #ressize 2
 #mounted
@@ -1373,10 +1521,10 @@
 #armor 162 -- crested helmet
 #hp 10 -- +1
 #def 13
-#gcost 70
-#rpcost 40
-#rcost 4
-#mapmove 28
+#gcost 100
+#rpcost 48
+#rcost 5
+#mapmove 24
 #ap 30
 #ressize 2
 #mounted
@@ -1465,7 +1613,7 @@
 #str 10 -- stronger
 #prec 14 -- extremely good shots
 #mountainsurvival
-#stealthy 60 -- same as a spy
+#stealthy 30 -- same as a spy
 #mor 14
 #patrolbonus 2
 #end
@@ -1493,7 +1641,7 @@
 #str 11 -- +1
 #prec 15 -- +1
 #mountainsurvival
-#stealthy 60
+#stealthy 30
 #mor 15 -- +1
 #patrolbonus 4 -- +2
 #illusion
@@ -1597,7 +1745,7 @@
 #cleanshape
 #ap 8 -- same
 #prec 14 -- super good archers
-#mapmove 32 -- 2 lower than the birb
+#mapmove 26
 #reclimit 5
 #end
 
@@ -1638,7 +1786,7 @@
 #cleanshape
 #ap 8 -- same
 #prec 15 -- super good archers
-#mapmove 32 -- 2 lower than the birb
+#mapmove 26
 #illusion
 #reclimit 5
 #end
@@ -1879,7 +2027,7 @@
 #cleanshape
 #ap 8 -- same
 #prec 14 -- super good archers
-#mapmove 32 -- 2 lower than the birb
+#mapmove 26
 #unsurr 1
 #okleader
 #mr 13 -- tier 1
@@ -1922,7 +2070,7 @@
 #cleanshape
 #ap 8 -- same
 #prec 15 -- super good archers
-#mapmove 32 -- 2 lower than the birb
+#mapmove 26
 #illusion
 #unsurr 1
 #okleader
@@ -2247,7 +2395,7 @@
 #weapon 1141 -- asrai long bow
 #weapon 1154 -- lance of spite
 #weapon 56 -- hoof
-#gcost 110
+#gcost 140
 #rcost 6
 #mapmove 28 -- incredibly swift
 #ap 30
@@ -2287,7 +2435,7 @@
 #weapon 1170 -- asrai long bow
 #weapon 1154 -- lance of spite
 #weapon 56 -- hoof
-#gcost 110
+#gcost 140
 #rcost 6
 #mapmove 28 -- incredibly swift
 #ap 30
@@ -2320,7 +2468,7 @@
 #weapon 1169 -- vinelash
 #weapon 1149 -- oaken fist
 #weapon 1168 -- giant stomp
-#gcost 300
+#gcost 420
 #rpcost 4
 #rcost 1
 #mapmove 22
@@ -2343,14 +2491,13 @@
 #startage 4500
 #maxage 9000
 #firstshape 4192
-#magicskill 6 2 -- N2
+#magicskill 6 3 -- N3
 #magicskill 3 1 -- E1
 #magicskill 8 2 -- H2
 #holy
 #unsurr 2 -- they are fighters after all
 #goodmagicleader
 #poorleader
-#fear 5
 #itemslots 274560 -- 2 misc plus crown
 #end
 
@@ -2374,7 +2521,7 @@
 #weapon 1169 -- vinelash
 #weapon 1149 -- oaken fist
 #weapon 1168 -- giant stomp
-#gcost 300
+#gcost 420
 #rpcost 4
 #rcost 1
 #mapmove 22
@@ -2397,14 +2544,13 @@
 #startage 4500
 #maxage 9000
 #forestshape 4193
-#magicskill 6 2 -- N2
+#magicskill 6 3 -- N3
 #magicskill 3 1 -- E1
 #magicskill 8 2 -- H2
 #holy
 #unsurr 2 -- they are fighters after all
 #goodmagicleader
 #poorleader
-#fear 5
 #itemslots 274560 -- 2 misc plus crown
 #end
 
@@ -2426,7 +2572,7 @@
 #weapon 1169 -- vinelash
 #weapon 1149 -- oaken fist
 #weapon 1168 -- giant stomp
-#gcost 300
+#gcost 420
 #rpcost 4
 #rcost 1
 #mapmove 22
@@ -2449,14 +2595,13 @@
 #startage 4500
 #maxage 9000
 #plainshape 4192
-#magicskill 6 2 -- N2
+#magicskill 6 3 -- N3
 #magicskill 3 1 -- E1
 #magicskill 8 2 -- H2
 #holy
 #unsurr 3 -- they are fighters after all
 #goodmagicleader
 #poorleader
-#fear 5
 #illusion
 #heal
 #itemslots 274560 -- 2 misc plus crown
@@ -2503,7 +2648,7 @@
 #startage 7000
 #maxage 9000
 #firstshape 4194
-#magicskill 6 3 -- N3
+#magicskill 6 4 -- N4
 #magicskill 3 2 -- E2
 #magicskill 2 1 -- W2
 #magicskill 8 3 -- H3
@@ -2555,7 +2700,7 @@
 #startage 7000
 #maxage 9000
 #forestshape 4195
-#magicskill 6 3 -- N3
+#magicskill 6 4 -- N4
 #magicskill 3 2 -- E2
 #magicskill 2 1 -- W2
 #magicskill 8 3 -- H3
@@ -2606,7 +2751,7 @@
 #startage 7000
 #maxage 9000
 #plainshape 4194
-#magicskill 6 3 -- N3
+#magicskill 6 4 -- N4
 #magicskill 3 2 -- E2
 #magicskill 2 1 -- W2
 #magicskill 8 3 -- H3
@@ -2812,10 +2957,10 @@
 #spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waystalker.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Waystalker2.tga"
 #name "Waystalker"
-#descr "Waystalkers are elite amongst the elite, former Waywatchers who have become attuned with the forest on an even deeper level and sharpened their skills to the point they can perform feats of archery, tracking, and ambush that can only be described as supernatural. While all Wood Elves seek harmony with their home forest of Athel Loren, Waystalkers are truly part of the forest, deadly predators feared even by lesser forest spirits for bringing swift judgement. Waystalkers are nearly impossible to locate if in a forest and capable of isolating and assassinating enemy commanders, often taking some part of their body to place on a warning totem to others who would trespass against Athel Loren and her children. Like the Waywatchers under their command Waystalkers camouflage themselves with foliage, but they also protect themselves with elaborate armour fashioned from the bones of some unfamiliar creature and inscribed with strange symbols. Waystalkers are known to dominate Spites, vicious minor forest spirits, through sheer willpower and force them to inhabit and enhance their bows, transforming them into magical weapons of destruction. 
+#descr "Waystalkers are elite amongst the elite, former Waywatchers who have become attuned with the forest on an even deeper level and sharpened their skills to the point they can perform feats of archery, tracking, and ambush that can only be described as supernatural. While all Wood Elves seek harmony with their home forest of Athel Loren, Waystalkers are truly part of the forest, deadly predators feared even by lesser forest spirits for bringing swift judgement. Like the Waywatchers under their command Waystalkers camouflage themselves with foliage, but they also protect themselves with elaborate armour fashioned from the bones of some unfamiliar creature and inscribed with strange symbols. Waystalkers are known to dominate Spites, vicious minor forest spirits, through sheer willpower and force them to inhabit and enhance their bows, transforming them into magical weapons of destruction. 
 
-[Gain glamour, +2 hp, +1 strength, +1 morale, +1 precision, +5 patrolbonus, and the assassin ability in forests. Spite Infused Bows will never harm friendlies]"
-#gcost 160
+[Gain glamour, +2 hp, +1 strength, +1 morale, +1 precision, and +5 patrolbonus in forests. Spite Infused Bows will never harm friendlies]"
+#gcost 130
 #armor 149 -- bone cuirass
 #armor 150 -- bone helmet
 #weapon 6 -- short sword
@@ -2829,7 +2974,7 @@
 #att 14
 #def 14
 #mountainsurvival
-#stealthy 70 -- spy +10
+#stealthy 40
 #mor 15
 #patrolbonus 10
 #unsurr 2 -- tier 2 combat commander
@@ -2863,7 +3008,7 @@
 #att 14
 #def 14
 #mountainsurvival
-#stealthy 70 -- spy +10
+#stealthy 40
 #mor 16
 #patrolbonus 15
 #unsurr 2 -- tier 2 combat commander
@@ -2871,8 +3016,6 @@
 #goodleader
 #command -70 -- 10 left
 #illusion
-#assassin
-#patience 3
 #end
 
 
@@ -2901,8 +3044,7 @@
 #magicskill 8 1
 #magicskill 6 1 -- N1
 #custommagic 9984 100 -- AWEN
-#custommagic 8704 100 -- WN
-#custommagic 1280 100 -- AE
+#custommagic 9984 100 -- AWEN
 #spellsinger
 #female
 #float
@@ -2933,8 +3075,7 @@
 #magicskill 8 1
 #magicskill 6 1 -- N1
 #custommagic 9984 100 -- AWEN
-#custommagic 8704 100 -- WN
-#custommagic 1280 100 -- AE
+#custommagic 9984 100 -- AWEN
 #spellsinger
 #female
 #float
@@ -2965,11 +3106,11 @@
 #forestshape 4172
 #holy
 #magicskill 8 2 -- +1
-#magicskill 6 2 -- +1
-#magicskill 4 2 -- S2
+#magicskill 6 1 -- +1
+#magicskill 4 1 -- S2
 #custommagic 9984 100 -- AWEN
-#custommagic 8704 100 -- WN
-#custommagic 1280 100 -- AE
+#custommagic 1792 100 -- AWE
+#custommagic 10240 100 -- SN
 #spellsinger
 #female
 #float
@@ -2998,11 +3139,11 @@
 #plainshape 4171
 #holy
 #magicskill 8 2 -- +1
-#magicskill 6 2 -- +1
-#magicskill 4 2 -- S2
+#magicskill 6 1 -- +1
+#magicskill 4 1 -- S2
 #custommagic 9984 100 -- AWEN
-#custommagic 8704 100 -- WN
-#custommagic 1280 100 -- AE
+#custommagic 1792 100 -- AWE
+#custommagic 10240 100 -- SN
 #spellsinger
 #female
 #float
@@ -3029,11 +3170,11 @@
 #forestshape 4170
 #holy
 #magicskill 8 2 -- +1
-#magicskill 6 2 -- +1
-#magicskill 5 2 -- D2
+#magicskill 6 1 -- +1
+#magicskill 5 1 -- D2
 #custommagic 9984 100 -- AWEN
-#custommagic 8704 100 -- WN
-#custommagic 1280 100 -- AE
+#custommagic 1792 100 -- AWE
+#custommagic 12288 100 -- DN
 #spellsinger
 #female
 #float
@@ -3062,11 +3203,11 @@
 #plainshape 4169
 #holy
 #magicskill 8 2 -- +1
-#magicskill 6 2 -- +1
-#magicskill 5 2 -- D2
+#magicskill 6 1 -- +1
+#magicskill 5 1 -- D2
 #custommagic 9984 100 -- AWEN
-#custommagic 8704 100 -- WN
-#custommagic 1280 100 -- AE
+#custommagic 1792 100 -- AWE
+#custommagic 12288 100 -- DN
 #spellsinger
 #female
 #float
@@ -3211,6 +3352,99 @@
 
 
 
+-- Forest Dragon (outside of forest)
+#newmonster 3734
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dragon_Forest.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dragon_Forest2.tga"
+#name "Forest Dragon"
+#descr "In the deepest recesses of the Chasm Glades there dwell a subspecies of Dragons, most ancient of creatures, that have adapted to life in Athel Loren. While across the rest of the world save Ulthuan the Dragon population has greatly dwindled, the great forest of Athel Loren offered them shelter and abundance which allowed them to thrive, though in exchange the forest changed them to better act as extensions of its power. Forest Dragons are as intelligent and noble as any of their kind but are somewhat more feral and predatory, respecting only that which has earned the respect of Athel Loren itself. While they do not slumber so deeply as their cousins in Ulthuan the Forest Dragons still spend much of their time at rest, enjoying dreams of distant lands and strange lore fuelled by tales and songs performed for them by the Asrai in a mutually beneficial relationship. From time to time a Forest Dragon will form a bond with a particular Glade Lord and the two will fight as one in battle, the Forest Dragon proving the greatest mount of all. Forest Dragons long ago lost their ability to breathe fire and instead can unleash a stream of soporific and poisonous gas. As some of the mightiest servants of the forest these Dragons are sacred to all the children of Athel Loren.
+[Gain glamour, recuperation, +1 precision, +1 morale, +2 strength, +1 prot, +1 magic resistance, and +2 fear in forests]"
+#size 6 -- stats compared with moon dragon
+#prot 18 -- -1
+#hp 100 -- -6
+#att 15
+#def 14
+#str 23 -- -1
+#prec 14 -- -1
+#enc 3
+#mapmove 30
+#ap 16
+#mr 18 -- -1
+#mor 19 -- -1
+#weapon 1230 -- soporific breath
+#weapon 20 -- bite
+#weapon 33 -- claws
+#weapon 532 -- tail sweep
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 20000
+#flying
+#mountainsurvival
+#forestsurvival
+#darkvision 50
+#fear 7 -- -2
+#itemslots 12288 -- 2 misc
+#cleanshape
+--nametype ??
+#holy
+#shockres 5
+#fireres 10
+#poisonres 20
+#coldres 5
+--illusion
+--heal
+#forestshape 3735
+#end
+
+
+-- Forest Dragon (in forest)
+#newmonster 3735
+#spr1 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dragon_Forest.tga"
+#spr2 "./Sombre_Warhammer/Warhammer_Wood_Elves/Dragon_Forest2.tga"
+#name "Forest Dragon"
+#descr "In the deepest recesses of the Chasm Glades there dwell a subspecies of Dragons, most ancient of creatures, that have adapted to life in Athel Loren. While across the rest of the world save Ulthuan the Dragon population has greatly dwindled, the great forest of Athel Loren offered them shelter and abundance which allowed them to thrive, though in exchange the forest changed them to better act as extensions of its power. Forest Dragons are as intelligent and noble as any of their kind but are somewhat more feral and predatory, respecting only that which has earned the respect of Athel Loren itself. While they do not slumber so deeply as their cousins in Ulthuan the Forest Dragons still spend much of their time at rest, enjoying dreams of distant lands and strange lore fuelled by tales and songs performed for them by the Asrai in a mutually beneficial relationship. From time to time a Forest Dragon will form a bond with a particular Glade Lord and the two will fight as one in battle, the Forest Dragon proving the greatest mount of all. Forest Dragons long ago lost their ability to breathe fire and instead can unleash a stream of soporific and poisonous gas. As some of the mightiest servants of the forest these Dragons are sacred to all the children of Athel Loren.
+[Lose glamour, recuperation, 1 precision, 1 morale, 2 strength, 1 prot, 1 magic resistance, and 2 fear outside forests]"
+#size 6 -- stats compared with normal shape
+#prot 19 -- +1
+#hp 100
+#att 15
+#def 14
+#str 25 -- +2
+#prec 15 -- +1
+#enc 3
+#mapmove 30
+#ap 16
+#mr 19 -- +1
+#mor 19
+#weapon 1230 -- soporific breath
+#weapon 20 -- bite
+#weapon 33 -- claws
+#weapon 532 -- tail sweep
+#gcost 0
+#rpcost 0
+#rcost 0
+#maxage 20000
+#flying
+#mountainsurvival
+#forestsurvival
+#darkvision 50
+#fear 9 -- +2
+#itemslots 12288 -- 2 misc
+#cleanshape
+--nametype ??
+#holy
+#shockres 5
+#fireres 10
+#poisonres 20
+#coldres 5
+#illusion
+#heal
+#plainshape 3734
+#end
+
+
+
 -- Araloth
 
 #newmonster 4188
@@ -3305,7 +3539,7 @@
 #weapon 55 -- hoof
 #size 4
 #hp 60 -- W5, T5, big
-#prot 10 -- tough!
+#prot 9 -- tough!
 #forestsurvival
 #att 16 -- WS8, always strikes first
 #def 16 --
@@ -3359,7 +3593,7 @@
 #weapon 55 -- hoof
 #size 4
 #hp 60 -- W5, T5, big
-#prot 10 -- tough!
+#prot 9 -- tough!
 #forestsurvival
 #att 16 -- WS8, always strikes first
 #def 16 --
@@ -3548,6 +3782,7 @@
 #onlygeodst 128 -- forest
 #school 4 -- enchantment
 #restricted 111 -- wood elves
+#fatiguecost 300
 #end
 
 
@@ -3564,7 +3799,7 @@
 #onlygeodst 128 -- forest
 #school 4 -- enchantment
 #researchlevel 6 -- -3
-#fatiguecost 1500 -- -10
+#fatiguecost 2000 -- -10
 #restricted 111 -- wood elves
 #end
 
@@ -3600,7 +3835,7 @@
 #restricted 111
 #path 0 6 -- nature
 #pathlevel 0 2
-#nreff 504 -- 4+ 1/2 per level
+#nreff 1002 -- 4+1 per level
 #damage 4190
 #fatiguecost 700
 #end
@@ -3618,7 +3853,7 @@
 #restricted 111
 #path 0 1 -- air
 #pathlevel 0 2
-#nreff 504 -- 4+ 1/2 per level
+#nreff 1002 -- 4+1 per level
 #damage 4311
 #fatiguecost 900 -- +1 over the high elf version because they're less allied
 #end
@@ -3673,7 +3908,23 @@
 #path 0 6 -- nature
 #pathlevel 0 3
 #damage 4192 -- treeman
-#fatiguecost 3500
+#fatiguecost 3000
+#end
+
+
+--- Contact Forest Dragon
+#newspell
+#copyspell "Awaken Sleeper"
+#name "Contact Forest Dragon"
+#descr "With this ritual the caster contacts one of the mighty Forest Dragons of Athel Loren to act in defence of the wooded realm. While across the rest of the world save Ulthuan the Dragon population has greatly dwindled, the great forest of Athel Loren offered them shelter and abundance which allowed them to thrive, though in exchange the forest changed them to better act as extensions of its power. Forest Dragons are as intelligent and noble as any of their kind but are somewhat more feral and predatory, respecting only that which has earned the respect of Athel Loren itself. While they do not slumber so deeply as their cousins in Ulthuan the Forest Dragons still spend much of their time at rest, enjoying dreams of distant lands and strange lore fuelled by tales and songs performed for them by the Asrai in a mutually beneficial relationship. From time to time a Forest Dragon will form a bond with a particular Glade Lord and the two will fight as one in battle, the Forest Dragon proving the greatest mount of all. Forest Dragons long ago lost their ability to breathe fire and instead can unleash a stream of soporific and poisonous gas. As some of the mightiest servants of the forest these Dragons are sacred to all the children of Athel Loren."
+#details "Summons a sacred Forest Dragon commander."
+#researchlevel 6
+#onlygeosrc 128 -- forest
+#restricted 111
+#path 0 6 -- nature
+#pathlevel 0 4
+#damage 3734 -- Forest dragon non-forest shape
+#fatiguecost 3400
 #end
 
 
@@ -3691,7 +3942,7 @@
 #path 0 6 -- nature
 #pathlevel 0 4
 #damage 4194 -- treeman ancient
-#fatiguecost 4500
+#fatiguecost 5500
 #end
 
 
@@ -3889,7 +4140,7 @@
 #rarity 5
 #gems 6 3
 #homecom 4197 -- treeman
-#homecom 4196 -- treeman ancient
+--#homecom 4196 -- treeman ancient
 #homemon 4141 -- wild rider
 #end
 
@@ -3905,6 +4156,7 @@
 #path 6 -- nature
 #level 0
 #rarity 5
+#homecom 3734 -- forest dragon
 #homecom 4192 -- treeman
 #homecom 4194 -- treeman ancient
 #homecom 4182 -- glade lord on great stag
