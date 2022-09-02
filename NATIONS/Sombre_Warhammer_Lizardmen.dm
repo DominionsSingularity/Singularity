@@ -2238,7 +2238,7 @@
 #coldblood
 #poisonres 7
 #poorleader
-#comslave
+--#comslave
 #magicskill 8 1
 #custommagic 1792 100
 #custommagic 10240 100
@@ -3837,6 +3837,7 @@
 
 #newspell
 #copyspell 976 -- communion master
+#name "Communion Master "
 #descr "The Slann have mastered the ability to tap into the magic of other creatures near them. They can use the power and pass on the fatigue to others willing to amplify their already powerful force."
 #casttime 50
 #restricted 145
@@ -3844,11 +3845,19 @@
 
 #newspell
 #copyspell 977 -- communion slave
+#name "Communion Slave "
 #descr "Just as the Slann have mastered the ability to lead, they have taught the ability to serve to the Skink priests who serve them and more. This allows a creature to give their magic and life force to amplify another mage."
 #casttime 50
 #restricted 145
 #end
 
+#selectspell 976 -- communion master
+#notfornation 145
+#end
+
+#selectspell 977 -- communion slave
+#notfornation 145
+#end
 
 
 -------- SITES
