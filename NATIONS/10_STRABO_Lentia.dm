@@ -931,7 +931,6 @@
 #humanoid
 #heal
 #diseaseres 100
-#twiceborn 5383 -- Wight Giant
 #end
 
 #newmonster 4315 -- Dragon Shark

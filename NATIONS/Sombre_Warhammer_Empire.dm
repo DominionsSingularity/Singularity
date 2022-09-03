@@ -1478,7 +1478,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 14
+#gcost 16
 #rpcost 24
 #rcost 2
 #armor 284 -- empire full plate
@@ -1508,7 +1508,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 14
+#gcost 16
 #rpcost 24
 #rcost 1
 #armor 19 -- Full Plate Mail
@@ -1538,7 +1538,7 @@
 #prec 10
 #mapmove 20 -- state troop marching
 #ap 12
-#gcost 14
+#gcost 16
 #rpcost 24
 #rcost 1
 #armor 19 -- Full Plate Mail
@@ -1633,7 +1633,7 @@
 #prec 10
 #mapmove 22 -- normal knight
 #ap 18
-#gcost 35
+#gcost 40
 #rpcost 46
 #rcost 18
 #armor 284 -- empire full plate
@@ -4733,7 +4733,7 @@
 #newmonster 7588
 #spr1 "./Sombre_Warhammer/Warhammer_Empire/War_Altar_Immobile.tga"
 #name "War Altar of Sigmar"
-#descr "This War Altar's Arch-Lector has been killed and the horse has bolted. Should the Altar survive the battle intact, a new Arch-LEctor will take the pulpit."
+#descr "This War Altar's Arch-Lector has been killed and the horse has bolted. Should the Altar survive the battle intact, a new Arch-Lector will take the pulpit."
 #hp 50
 #size 6
 #prot 14 -- tough materials
@@ -4792,7 +4792,7 @@
 #mapmove 14
 #ap 10
 #gcost 400
-#rpcost 4
+#rpcost 6
 #magicskill 8 8
 #holy
 #rcost 70
@@ -5769,7 +5769,6 @@
 ---- Ice Wizard of Kislev (middenheim)
 
 #newmonster 7563
-#copystats 3750 -- template kislevite
 #spr1 "./Sombre_Warhammer/Warhammer_Kislev/Wizard_Ice_Lesser.tga"
 #spr2 "./Sombre_Warhammer/Warhammer_Kislev/Wizard_Ice_Lesser2.tga"
 #name "Ice Wizard of Kislev"
@@ -5798,6 +5797,8 @@
 #okleader
 #command -30
 #combatcaster
+#snow
+#nametype 146 -- rus male
 #end
 
 
@@ -7905,8 +7906,6 @@ Honouring an Order with a memorial to their fallen is an expensive act, but it w
 #homecom 7532 -- GM knights panther
 #homemon 7571 -- IC Morr
 #homecom 7574 -- GM Morr
-#homemon 7478 -- IC Gryphon Legion
-#homecom 7479 -- GM Gryphon Legion
 #homemon 7595 -- IC winter throne
 #homecom 7597 -- GM winter throne
 #end
