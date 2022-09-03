@@ -2216,8 +2216,8 @@ Illusionists are considered the most untrustworthy of all the magicians. They a
 #weapon "Quarterstaff"
 #armor "Robes"
 #startage 45
-#magicskill 2 1
-#custommagic 2304 100
+#magicskill 1 2
+#magicskill 4 1
 #poorleader
 #rpcost 2
 #falsearmy -10
