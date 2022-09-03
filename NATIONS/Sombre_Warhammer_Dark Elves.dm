@@ -2674,8 +2674,8 @@
 #female
 #poorleader
 #startage 700
-#magicskill 5 2 -- D1
-#magicskill 4 2 -- S1
+#magicskill 5 1 -- D1
+#magicskill 4 1 -- S1
 #custommagic 896 200 -- 200% FAW
 #custommagic 6144 100 -- 100% SD
 #nametype 271 -- female dark elf
