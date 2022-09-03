@@ -2305,7 +2305,7 @@ If an Attendant of the Divines is chosen as the prophet of Musafir, the Temple o
 
 
 #selectnation 120
-#name "Musafir "
+#name "MA Musafir "
 #epithet "The Anointed Ones"
 #era 2
 #descr "Although the nomadic human tribes of old are long past from the deserts of Musafir, the Tigrans still remain. Finally free from the shackles of humanity the Tigrans have established a land to call their own. In the time since they have grown both wise and strong beyond reproach. The Tigran society is ruled by three main prides. The Hunter Pride, the pride of ferocious Tigrans who worship the Sun Goddess. The Prowler Pride, the pride of shrewd and reclusive Tigrans who worship Night, Death and Goddess of the Moon. And the Pride of the Divines, the ruling pride that worships the Goddess of Reflections. The Tigran warriors of the various prides diverse in both skill and temperament. While each of the three main prides is ruled by sages and driven by different ambitions, all of them still adhere to the wisdom of the all-knowing Mystics and Anointed Priestesses."

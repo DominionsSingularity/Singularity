@@ -8937,7 +8937,7 @@ An Envoy is a diplomatic head of mission with plenipotentiary powers to represen
 -- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #selectnation 186
-#name "Musafir"
+#name "EA Musafir"
 #epithet "The Wandering Tribes"
 #era 1
 #descr "Musafir is a vast desert plain where numerous, small and spread-out nomadic tribes dwell, continuously migrating from oasis to oasis and vying for control with other tribes over the few precious resources the desert has to offer. A recent shift in politics, brought on by numerous prophetic visions from Soothsayers and now returning Farseers alike, has ended the tribal conflicts and given rise to the uniting of the desert tribes under the leadership of the new god of the Harsh Sands. Musafir now stands as a nation of loosely-tied tribes. The centuries-long practice of enslaving other tribes has mostly ended but slavery still exists, possibly stronger than ever. The enslavement of the traveler tribes has been substituted for the mass enslavement of the newly-discovered Tigrans, a race of ferocious but primitive intelligent tigers, and other nations.

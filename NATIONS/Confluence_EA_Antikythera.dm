@@ -2469,7 +2469,7 @@ The Omega is one of the new two, twin prototypes, dubbed Alpha and Omega for poe
 
 
 #selectnation 123
-#name "Antikythera"
+#name "EA Antikythera"
 #epithet "Land of the Automata"
 #era 1
 #descr "In a distant and secluded valley, long-since forgotten by the world, a great citadel unlike any in all the lands of men, an unassailable fortress that should surely have taken an entire lifetime to build, seemingly rose overnight, ambitiously reaching for the skies much to the dismay of the few native inhabitants of this isolated valley. In this impossible structure of metal and stone and shinning gems live the brilliant artificers now known as the Master Makers, mage-smiths of great wisdom and knowledge.

@@ -7752,7 +7752,7 @@ NATION
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #selectnation 146
-#name "Aurum"
+#name "EA Aurum"
 #epithet "The Golden Republic"
 #era 1
 #descr "On the surface, the Republic of Aurum is known far and wide as a glorious golden republic where opulence and wealth permeate and seep into every aspect of society. Tales are told of high golden walls that adorn the palaces of the Republic, of patricians who compete in exhibitions of wealth and luxury, and of the numerous legions of Aurum that are seemingly clad in majestic and gleaming pure golden armor. Stories are told of golden goddesses clad in magical golden armaments that march alongside the legions of Aurum. Though the Republic might have once been nearly as incredible as the stories told, the truth now is far from reality, and nothing more than a well-maintained myth by the Senate which desperately tries to cling to power in the ever-declining Republic. The Republic's recent and numerous expansionist campaigns were motivated by massive debts and deficits in the now all but empty treasury. The Golden Legions of Aurum are little more than thinly gold-platted, or possibly even gold-painted armor, and the magical golden gear of Aurum nothing more than an expensive fabrication.

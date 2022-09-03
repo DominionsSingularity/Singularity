@@ -985,7 +985,7 @@
 --nation
 
 #selectnation 121
-#name "Loringia"
+#name "MA Loringia"
 #epithet "Age of Chivalry"
 #era 2
 #descr "Loringia is a realm of perilous mountains and dense forests at the crossroads of the two great empires of Marignon and Ulm. Though both have influenced Loringia, neither has ever managed to conquer it, and over the years it has become a hotbed of resentment against them. Influences from both Ulms Iron Cult and Marignon's witch hunters are permeating society under a dual church made up of members from both cults. The memory of the young empire's founder is still alive in the minds of many and Loringia's army is made up mostly of noble knights and their men at arms. Yet outside of their fortresses, the old traditions still cling on, and witches and warlocks dwell where the influence of the dual church does not reach."
@@ -2155,7 +2155,7 @@ Priests: Average"
 --nation
 
 #selectnation 129
-#name "Loringia"
+#name "LA Loringia"
 #epithet "Fire and Steel"
 #era 3
 #descr "Loringia is a realm of perilous mountains and fertile valleys at the crossroads of the two great empires of Marignon and Ulm. Though both have influenced Loringia, neither has ever managed to conquer it, and over the years it has become a hotbed of resentment against them. Remnants of Ulm's Iron Cult and Marignons Inquisition have permeated society, retaining most of their old ways for neither were they bound to the dark pact of Marignon, nor cursed in the same way as Ulm. When the malediction devoured Ulm and demon worship corrupted Marignon, a new syncretic faith which opposed both was born. No longer shall humanity chafe under the yoke of demons from beyond, nor sustain those who have forsaken it in pursuit of immortality. With the disappearance of the Pantokrator the Church of the the Immaculate Flame, the holy Vehme and their allies prepare to purge the rot infesting humanity with fire and steel. For a long time Loringias military was made up of noble knights and their men at arms, but the time of chivalry is ending. Reliance on well drilled infantry and ranged weapons is increasing and landsknechts, battle hardened mercenaries in service of the empire, are now the backbone of Loringia's army."

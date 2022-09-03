@@ -5078,7 +5078,7 @@ A Pillar of Plenty will generate anywhere between one to three Astral gems, and 
 -- -----------------------------------------------------------------------------------
 
 #selectnation 155
-#name "Edranor"
+#name "EA Edranor"
 #epithet "Pillars of Power"
 #era 1
 #descr "The harsh and sandy deserts of Edranor are home to a small group of magically-gifted people. The primary source of power of this race of mages comes not from any of the elements, or the forces of Life and Death, but rather from their emotions. Having survived a long history of slavery, strife and death, the powers that they had discovered - and that permitted them to survive and break the shackled that bound them - were those based on agony, torment, and unbridled rage born of loss and desperation. Tempered by a century of constant strife, first imposed upon them and then later self-inflicted, the people of Edranor have learned to harness their emotions to unlock their magical potential. From a very young age their children are taught to draw upon the emotions of pain and anger to fuel their magical abilities by being subjugated to excruciating and unthinkably cruel rituals. Many - of those who survive childhood - wear permanent scars which remind them of the true price of power, and those who die in the process serve as a grim reminder of what happens to those who do not posses sufficient power to protect themselves. 

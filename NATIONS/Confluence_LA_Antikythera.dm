@@ -4599,7 +4599,7 @@ trample
 
 
 #selectnation 122
-#name "Antikythera "
+#name "LA Antikythera "
 #epithet "The Clockwork Empire"
 #era 3
 #descr "Antikythera is an empire centered around a great city built upon ancient secrets and mysteries. In a remarkably short time, the empire of metal and steam has become a power to be reckoned with. Strange metallic monstrosities dominate the battlefield while men of iron take to the sky. In recent years Antikytherans have denounced all gods and the only thing they worship now is technology and progress itself. Alchemists and Technomancers relentlessly search for ways to bind man and technology together and rumors speak of attempts to create God."

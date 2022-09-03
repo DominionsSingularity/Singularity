@@ -2395,7 +2395,7 @@ The smiting and enchanting process is a secret so fiercely guarded that the smit
 
 
 #selectnation 131
-#name "Aurum "
+#name "MA Aurum"
 #epithet "The Golden Tower"
 #era 2
 #descr "After a long and particularly bloody war, Aurum fell to a mysterious enemy. Cities were scorched to the ground, and walls that protected them crumbled into nothingness. A shadow of death swept across the Empire. Even the golden capital with all its splendor and glory, tall walls and brave men, fell to ruin. The Arkenstone Forges, the forges of gold which provided the nation with superior armaments, perished, and the great Golden Tower, a beacon of knowledge and the symbol of Aurumian power, was torn down. With the promise of restoring Aurum to its past glory, the Aurumian people have subjugated themselves to a new God. Aurum has been rebuilt with the forges of gold bustling with activity once again and the Golden Tower reconstructed. However, the scars of a devastating war still mark the golden city. Beneath the city undead hordes still roam the complex system of tunnels in the crypts known as the Undercity, and the once powerful Paragons now possess but a shadow of their former power."

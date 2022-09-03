@@ -7193,7 +7193,7 @@ The presence of the Beating Heart in the province will turn a Pain Amplifier int
 -- -----------------------------------------------------------------------------------
 
 #selectnation 162
-#name "Edranor "
+#name "MA Edranor"
 #epithet "Ten Thousand Spires"
 #era 2
 #descr "The powers of the mages of Edranor were well known across the lands. But though they were vast and astounding, their numbers were few and slow to increase, unlike those of the surrounding barbarian hordes that multiplied as quickly as weeds and were just as hard to eradicate. Fearful of the arcane powers of Edranor, the various barbaric tribes of old united in an attempt to perform genocide. Faced with overwhelming numbers, the mages of Edranor were forced to concede their lands, city by city, until they were brought to the very brink of ruin. It is then that a portion of mages attempted an ascension ritual in order to escape their seemingly inevitable deaths. Many mages ascended to a higher plane of existence but many more were left behind, now truly desperate and lost. Those that failed to ascend found themselves abandoned and were forced to flee in an effort to survive. Many years they spent on the run, their numbers ever dwindling until all hope was lost. It is then that the first Harrowing was undergone and the means of salvation, and indeed retribution, was discovered. Now, Edranor is a growing empire intent on collecting the long-owed debts in blood. The powers of the mages of Edranor are anchored in emotions, primarily those of hate, vengeance, and pain. As such, female mages are much more adept at wielding and practicing this particular brand of magic than males are, and as such hold the reigns of the society. 
