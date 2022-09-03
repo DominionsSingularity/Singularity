@@ -592,7 +592,7 @@
 #prec 8
 #mapmove 18
 #ap 15
-#gcost 8
+#gcost 9
 #rpcost 5
 #rcost 1
 #armor 11 -- ring mail hauberk
@@ -629,7 +629,7 @@
 #prec 8
 #mapmove 18
 #ap 15
-#gcost 7
+#gcost 8
 #rpcost 5
 #rcost 1
 #armor 6 -- ring mail cuirass
@@ -665,7 +665,7 @@
 #prec 7
 #mapmove 16
 #ap 15
-#gcost 3
+#gcost 4
 #rpcost 3
 #rcost 1
 #armor 5 -- leather cuirass
@@ -700,7 +700,7 @@
 #prec 7
 #mapmove 16
 #ap 15
-#gcost 5
+#gcost 6
 #rpcost 5
 #rcost 1
 #armor 5 -- leather cuirass
@@ -735,7 +735,7 @@
 #prec 7
 #mapmove 16
 #ap 15
-#gcost 4
+#gcost 5
 #rpcost 3
 #rcost 1
 #armor 5 -- leather cuirass
@@ -771,7 +771,7 @@
 #prec 8
 #mapmove 18
 #ap 15
-#gcost 11
+#gcost 13
 #rpcost 10
 #rcost 1
 #armor 12 -- Scale mail hauberk
@@ -808,7 +808,7 @@
 #prec 10
 #mapmove 18
 #ap 15
-#gcost 8
+#gcost 9
 #rpcost 9
 #rcost 1
 #armor 5 -- leather cuirass
@@ -844,7 +844,7 @@
 #prec 10
 #mapmove 18
 #ap 15
-#gcost 8
+#gcost 9
 #rpcost 9
 #rcost 1
 #armor 5 -- leather cuirass
@@ -881,7 +881,7 @@
 #prec 11
 #mapmove 18
 #ap 15
-#gcost 18
+#gcost 19
 #rpcost 18
 #rcost 1
 #armor 7 -- Scale mail cuirass
@@ -892,7 +892,7 @@
 #ambidextrous 2
 #poisonres 2
 #diseaseres 25
-#stealthy 30
+#stealthy 25
 #maxage 30
 #siegebonus 3
 #nametype 187
@@ -922,7 +922,7 @@
 #prec 8
 #mapmove 18
 #ap 15
-#gcost 9
+#gcost 10
 #rpcost 5
 #rcost 1
 #weapon 6 -- Short Sword
@@ -978,6 +978,7 @@
 #mountainsurvival
 #darkvision 75
 #undisciplined
+#reclimit 1
 #end
 
 
@@ -1000,7 +1001,7 @@
 #prec 8
 #mapmove 18
 #ap 15
-#gcost 22
+#gcost 23
 #rpcost 15
 #rcost 1
 #armor 12 -- Scale mail hauberk
@@ -1069,7 +1070,7 @@
 #name "Poison Wind Globadier"
 #descr "Globadiers are highly specialised troops armed with deadly poison wind globes. These fragile spheres of glass are filled with toxic warpstone-derived fumes produced by the Warlock Engineers in their secret laboratories. Small groups of Globaiders can often be found scuttling on the flanks of Skaven armies, lobbing their grenades against elite units whose thick armour proves no defence at all. Like most Skryre units they are particularly useful in a siege. Clan Skryre strictly limit the assembly of Globadiers through conventional means to maintain the influence of their Warlock Engineers, who can construct their equipment directly. The majority of their cost comes from the initial purchase, so their upkeep is reduced.
 
-[Gold upkeep is that of a 20 gold troop]"
+[Gold upkeep is that of a 30 gold troop]"
 #hp 9
 #size 2
 #prot 0
@@ -1082,7 +1083,7 @@
 #prec 8
 #mapmove 16 -- reduced by 2 because of heavier weapon
 #ap 15
-#gcost 30 -- 5 more than poison slinger
+#gcost 40 -- 5 more than poison slinger
 #addupkeep -10 -- so 20, which is 5 less than a poison slinger
 #rpcost 18
 #rcost 13
@@ -1245,7 +1246,7 @@
 #prec 8
 #mapmove 16 -- reduced by 2 because of heavier weapon
 #ap 13 -- heavy machinery
-#gcost 45
+#gcost 55
 #addupkeep -25 -- so 20 gold for upkeep purposes
 #rpcost 25
 #rcost 9
@@ -1324,7 +1325,7 @@
 #prec 8
 #mapmove 16 -- reduced by 2 because of heavier weapon
 #ap 13 -- heavy machinery
-#gcost 50
+#gcost 60
 #addupkeep -25 -- so 25 gold for upkeep purposes
 #rpcost 32
 #rcost 10
@@ -1511,7 +1512,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Skaven/Chieftain2.tga"
 #name "Chieftain"
 #descr "The leaders of lesser clans, those that can neither claim the title of Warlord or Greater Clan, the Chieftains are numerous and somewhat expendable, though with their accompanying slaves and clanrats they can certainly add weight to the teeming hordes that make up a Skaven army. Like most Skaven of any import, they make it their business to lead from the back, pushing their subordinates forward toward enemy lines while prudently avoiding the danger of pitched battle."
-#hp 18
+#hp 15
 #size 2
 #prot 2
 #mor 10
@@ -1551,7 +1552,7 @@
 #spr2 "./Sombre_Warhammer/Warhammer_Skaven/Warlord2.tga"
 #name "Warlord"
 #descr "The leaders of the Warlord Clans are cunning Skaven who have fought, schemed, bribed and cheated their way to the top in the traditional manner. While the Greater Clans of Pestilens, Moulder, Eshin and Skryre are undoubtedly far more influential and powerful, with guaranteed seats on the Council of Thirteen, without the numerous Warlord Clans the Skaven could not launch their vast campaigns against the surface world. Warlords are almost always larger Skaven, usually black furred and scarred from countless battles; they are not so foolish as to routinely risk their lives on the frontlines, but their effectiveness as fighters cannot be denied, particularly as they are equipped with the best available arms and armour. While Skaven do not live long lives they are very quick to learn and those who have risen to the position of Warlord are almost always gifted with considerable natural cunning and years of experience in holding their leadership position; as such they make surprisingly impressive generals."
-#hp 26
+#hp 18
 #size 2
 #prot 3
 #mor 11 -- confident
@@ -1638,19 +1639,19 @@ Summons 3 Giant Rats per month."
 #spr2 "./Sombre_Warhammer/Warhammer_Skaven/Assassin2.tga"
 #name "Eshin Assassin"
 #descr "The Assassins of Eshin are true masters of the lethal arts the Clan brought back from the East so many centuries ago. They have the reputation of being able to turn invisible, appearing from the shadows only to deliver silent death to their hapless victims. Unlike the Gutter Runners they have little need of throwing weapons; instead they use Weeping Blades coated with hellish warpstone poison. With their extensive training, Eshin Assassins may also sabotage and disrupt enemy operations, causing unrest."
-#hp 18
+#hp 10
 #size 2
 #prot 2
 #mor 11
 #mr 13 -- tier 2 +1
 #enc 3
 #str 11
-#att 14 -- ASF, WS6, I8
-#def 16 -- ASF, WS6, I8, dodge
+#att 12 -- ASF, WS6, I8
+#def 14 -- ASF, WS6, I8, dodge
 #prec 13
 #mapmove 20 -- able to move quickly across the map
 #ap 17
-#gcost 100
+#gcost 120
 #rcost 1
 #rpcost 2
 #ressize 1
@@ -1661,7 +1662,7 @@ Summons 3 Giant Rats per month."
 #ambidextrous 3
 #poisonres 5
 #diseaseres 25
-#stealthy 40
+#stealthy 25
 #assassin
 #patience 3 -- 1 more than ninja, 2 more than normal assassin
 #maxage 30
@@ -1674,7 +1675,6 @@ Summons 3 Giant Rats per month."
 #okleader
 #command -30 -- so 10 troops
 #unsurr 2 -- tier 2 leader
-#scalewalls
 #end
 
 
@@ -1868,7 +1868,7 @@ Summons 3 Giant Rats per month."
 #spr2 "./Sombre_Warhammer/Warhammer_Skaven/Grey Seer2.tga"
 #name "Grey Seer"
 #descr "Grey Seers are the chosen intermediaries of the Horned Rat, interpreting his will and desires for the Skaven populace. They advise and coerce the Warlord clans towards fulfilling His will and are also trusted agents of the Council of Thirteen, relaying decrees to the various clans. Any who are judged to be opposing the will of the Horned Rat are branded heretics and usually wiped out by rival clans; as such the Seers wield great influence, though as with any Skaven in a position of power, they must watch their backs at all times. Grey Seers are mages, spiritual leaders, arch-manipulators and generals of considerable status. Grey Seers frequently experience warpstone induced visions of the future and when it serves their interests they may prevent a disaster in the province they are located."
-#hp 20 -- T4, smaller than human, W3, 6 less than warlord
+#hp 15 -- T4, smaller than human, W3, 6 less than warlord
 #size 2
 #prot 2
 #mor 10
@@ -1912,7 +1912,7 @@ Summons 3 Giant Rats per month."
 #spr2 "./Sombre_Warhammer/Warhammer_Skaven/Moulder Mutator2.tga"
 #name "Moulder Mutator"
 #descr "Twisted by many years of exposure to large amounts of warpstone, Moulder Mutators are disturbing creatures. They spend much of their time searching for suitable creatures and slaves as subjects for their experiments and their ability to find new 'ingredients' is unsurpassed. They are also the generals of Clan Moulder, leading armies and taking to the battlefield to personally inspect the impact of their creations. Their presence instills a great deal of fear and discipline in their minions; even the most powerful Rat Ogres shy away from these vicious Skaven, a clear testament of their great skill at inflicting pain on all living creatures. Moulder Mutators are used to dealing with all manner of hideous creatures and are surprisingly skilled with their deadly 'Creature Killer' polearms."
-#hp 23
+#hp 15
 #size 2
 #prot 4
 #mor 11
@@ -1985,7 +1985,6 @@ Summons 3 Giant Rats per month."
 #magicskill 8 4
 #holy
 #expertleader
-#spreaddom 1
 #fear 8
 #nametype 187
 #nobadevents 21
@@ -1993,7 +1992,7 @@ Summons 3 Giant Rats per month."
 #darkvision 75
 #inspirational 2
 #tmpdeathgems 1
-#fastcast 33 -- one third faster
+#fastcast 20 -- one third faster
 #end
 
 
@@ -2081,7 +2080,6 @@ Summons 3 Giant Rats per month."
 #stealthy 10
 #holy
 #okleader
-#spreaddom 1
 #inspirational 1
 #nametype 187
 #swampsurvival
@@ -2983,7 +2981,7 @@ Summons 8 Giant Rats per month."
 #pathlevel 0 3
 #pathlevel 1 2
 #effect 10021
-#fatiguecost 3600
+#fatiguecost 4000
 #damage 5571
 #nreff 1
 #end
