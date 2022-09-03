@@ -786,7 +786,7 @@
 #prec 5
 #mapmove 16
 #ap 17
-#gcost 40
+#gcost 60
 #rpcost 28
 #rcost 1
 #weapon 165 -- Great Club
