@@ -152,7 +152,7 @@
 #copystats 2524 -- Released Warrior
 #copyspr 2524 -- Released Warrior
 #name "Fossilized Warrior"
-#descr "Many dead sailors may be found on the sea floor, their bodies fossilizing over the millenia. The passage of time has turned their bodies to stone and their weapons have fossilized and merged with their bodies. Mages of death may sometimes reanimate them for their own purposes."
+#descr "Many dead sailors may be found on the sea floor, their bodies fossilizing over the untold years. The passage of time has turned their bodies to stone and their weapons have fossilized and merged with their bodies. Mages of death may sometimes reanimate them for their own purposes."
 #montag 5310
 #prot 15
 #mr 15
@@ -163,7 +163,7 @@
 #copystats 2525 -- Released One
 #copyspr 2525 -- Released One
 #name "Fossilized Dead"
-#descr "Many dead sailors may be found on the sea floor, their bodies fossilizing over the millenia. The passage of time has turned their bodies to stone and their weapons have fossilized and merged with their bodies. Mages of death may sometimes reanimate them for their own purposes."
+#descr "Many dead sailors may be found on the sea floor, their bodies fossilizing over the untold years. The passage of time has turned their bodies to stone and their weapons have fossilized and merged with their bodies. Mages of death may sometimes reanimate them for their own purposes."
 #montag 5310
 #prot 15
 #mr 15
@@ -1609,6 +1609,25 @@
 #homemon 6872 -- Warden
 #end
 
+#newsite
+#level 0
+#rarity 5
+#path 5
+#name "Krakasos Summons"
+#homecom 6848 -- King of Fossils
+#homecom 6847 -- Corsair King
+#homecom 6849 -- Old King
+#homecom 6846 -- Rock Preserver
+#homemon 6845 -- Rock Wardens
+#homecom 6854 -- Worm of the Water
+#homemon 6843 -- Fossilized Dead
+#homemon 6844 -- Fossilized Dead
+#homecom 6841 -- Damned Captain
+#homecom 6842 -- Damned Boatswain
+#homemon 3352 -- Damned Buccaneer
+#homemon 3351 -- Damned Buccaneer
+#end
+
 -- ENDSITES
 
 -- Krakasos, Kraken Cult
@@ -1632,6 +1651,8 @@ Priests: Average."
 #startsite "Court of the Kraken Kings"
 #startsite "Graveyard of Sunken Ships"
 #startsite "City of Fossils"
+
+#futuresite "Krakasos Summons"
 
 #clearrec
 
