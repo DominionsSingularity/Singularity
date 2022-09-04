@@ -1614,7 +1614,7 @@
 -- Krakasos, Kraken Cult
 
 #selectnation 205
-#clear
+#clearnation
 #era 1
 #name "Krakasos"
 #epithet "Kraken Cult"

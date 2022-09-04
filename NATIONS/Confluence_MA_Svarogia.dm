@@ -508,7 +508,7 @@
 #enc 3
 #att 9
 #def 9
-#pred 10
+#prec 10
 #mr 14
 #mor 12
 #gcost 10010  
@@ -649,7 +649,7 @@
 #armor "Leather Cap"
 #weapon "Berserker Axe"
 #weapon "Berserker Axe"
-#Weapon "Throw Axe"
+#weapon "Throw Axe"
 #forestsurvival
 #nametype 146
 #ambidextrous 2
@@ -1570,7 +1570,7 @@
 #watershape 7033
 #amphibian
 #poorleader
-#spirightsight
+#spiritsight
 #end
 
 #newmonster 7033

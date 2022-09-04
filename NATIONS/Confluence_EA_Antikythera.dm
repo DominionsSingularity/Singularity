@@ -754,7 +754,7 @@ skip2
 #constlevel 4
 #mainpath 4
 #mainlevel 1
-#name "Forge-bot Upgrade"
+#name "Forge-bot Upgrade "
 #descr "This clockwork gear is imbued with potent magical energies. Once placed within a Forge-bot it will vastly increase its efficiency, increasing its forging capabilities. Once placed the upgrades cannot be removed."
 #type 8
 #restricted 123
@@ -775,7 +775,7 @@ skip2
 #mainlevel 2
 #secondarypath 4
 #secondarylevel 2
-#name "Dynamo Core Upgrade"
+#name "Dynamo Core Upgrade "
 #descr "This clockwork gear is imbued with tremendous and volatile magical energies. Once placed within a Dynamo Core and activated in battle, it will continuously emanate the magic stored within it to recharge all the automatons on the battlefield for the duration of the battle. The volatile magic with which the item is imbued will destroy both the item and the Dynamo Core in the process.
 Once placed the upgrades cannot be removed."
 #type 8

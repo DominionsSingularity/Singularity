@@ -4744,7 +4744,7 @@ A Pillar of Plenty will generate anywhere between one to three Astral gems, and 
 #damage 5
 #effect 3
 #aoe 3
-#prec 5
+#precision 5
 #flightspr -1
 #explspr 214 
 #spec 538984576 -- AN/No Shield/Inanim-Immune/Hard-Ethereal
@@ -4789,7 +4789,7 @@ A Pillar of Plenty will generate anywhere between one to three Astral gems, and 
 #damage 5
 #effect 3
 #aoe 1
-#prec 5
+#precision 5
 #flightspr -1
 #explspr 214 
 #spec 538984576 -- AN/No Shield/Inanim-Immune/Hard-Ethereal
@@ -4834,7 +4834,7 @@ A Pillar of Plenty will generate anywhere between one to three Astral gems, and 
 #damage 5
 #effect 3
 #nreff 1
-#prec 5
+#precision 5
 #flightspr -1
 #explspr 214 
 #spec 538984576 -- AN/No Shield/Inanim-Immune/Hard-Ethereal
@@ -4848,7 +4848,7 @@ A Pillar of Plenty will generate anywhere between one to three Astral gems, and 
 #range 45
 #damage 1
 #effect 128
-#prec 5
+#precision 5
 #flightspr -1
 #explspr 214 
 #nreff 1

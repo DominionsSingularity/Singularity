@@ -105,7 +105,7 @@
 #prot 12
 #def 3
 #enc 1
-#magic
+#magicarmor
 #rcost 5
 #end
 
@@ -2087,7 +2087,7 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 	#awe 5
 	#localsun
 	#mastersmith 1
-	#polygetmagic 1
+	--#polygetmagic 1 -- Does nothing on monsters
 	#montag 45336
 	#spiritsight 
 	#holy
@@ -2139,7 +2139,7 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 	#nowish
 	-- -- --
 	#heal
-	#polygetmagic 1
+	--#polygetmagic 1 -- Does nothing on monsters
 	#montag 45336
 	#spiritsight 
 	#holy
@@ -2193,7 +2193,7 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 	#heal
 	#researchbonus 15
 	#inspiringres 1
-	#polygetmagic 1
+	--#polygetmagic 1 -- Does nothing on monsters
 	#montag 45336
 	#spiritsight 
 	#holy
@@ -2304,7 +2304,7 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 	#stealthy 25
 	#spy
 	#seduce 14
-	#polygetmagic 1
+	--#polygetmagic 1 -- Does nothing on monsters
 	#montag 45336
 	#spiritsight 
 	#holy
@@ -2468,7 +2468,7 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 	-- -- --
 	#heal
 	#sleepaura 10
-	#polygetmagic 1
+	--#polygetmagic 1 -- Does nothing on monsters
 	#montag 45336
 	#spiritsight 
 	#holy
@@ -2588,7 +2588,7 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 #noundeadleader
 #fixedresearch
 #ethereal
-#amphibious
+#amphibian
 #neednoteat
 #float
 #spiritsight
@@ -8277,7 +8277,6 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 #req_indepok
 #req_pop0ok
 #msg "Increases Death by 2."
-#descr "No text needed."
 #req_death 1
 #incscale2 3 -- Death
 #notext
@@ -8291,7 +8290,6 @@ The recruitment price of The Nine can first be lowered to 750 gold, then 600 gol
 #req_indepok
 #req_pop0ok
 #msg "Increases Growth by 2."
-#descr "No text needed."
 #req_growth 1
 #decscale2 3 -- Death
 #notext

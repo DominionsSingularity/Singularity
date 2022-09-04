@@ -514,7 +514,7 @@
 	#newspell
 	#copyspell "Internal Alchemy"
 	#name "     Cleanse     "                 
-	#restricted 156                    
+	#restricted 165                    
 	#school -1                                                 
 	#fatiguecost 0
 	#spec 8388608
@@ -534,7 +534,7 @@
 	#newspell
 	#copyspell "Internal Alchemy"
 	#name "   Cleanse   "                 
-	#restricted 156                    
+	#restricted 165                    
 	#school -1                                                 
 	#fatiguecost 0
 	#spec 8388608
@@ -555,7 +555,7 @@
 	#newspell
 	#copyspell "Internal Alchemy"
 	#name " Cleanse "                 
-	#restricted 156                    
+	#restricted 165                    
 	#school -1                                                 
 	#fatiguecost 0
 	#spec 8388608

@@ -772,7 +772,7 @@
 --hanaeans
 
 #newweapon
-#copyweapon 838 --throw flames
+#copyweapon 383 --throw flames
 #name "Fire Lance"
 #dmg 13
 #att 0

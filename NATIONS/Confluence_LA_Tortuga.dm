@@ -1329,7 +1329,7 @@ Each cannon is cared and operated by a retinue of trained Cannoneers and should 
 #newspell
 #name "Strangulation"
 #school -1
-#dmg 20
+#damage 20
 #effect 3 -- Fatigue
 #spec 4398046593153
 #end
@@ -2843,7 +2843,7 @@ Each cannon is cared and operated by a retinue of trained Cannoneers and should 
 #nametype 103
 #nobadevents 2
 #poorleader
-#insirational -1
+#inspirational -1
 #rpcost 10000
 #sailing 2 2
 #end
@@ -3078,7 +3078,7 @@ Each cannon is cared and operated by a retinue of trained Cannoneers and should 
 #str 9
 #att 10
 #def 10
-#starage 65
+#startage 65
 #mor 14
 #prec 12
 #prot 0
@@ -5003,7 +5003,6 @@ Each cannon is cared and operated by a retinue of trained Cannoneers and should 
 
 #selectnation 190
 #clearrec
-#cleardef
 #clearsites
 #cleargods
 #islandnation

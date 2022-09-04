@@ -2906,7 +2906,7 @@ This spell will only have effect once per turn per province."
 #type 8
 #restricted 167
 #awe 3
-#illusion
+--#illusion -- Does nothing on items
 #autospell "Charm"
 #autospellrepeat 1
 #cursed
@@ -3454,7 +3454,7 @@ This spell will only have effect once per turn per province."
 		#newweapon 1942
 		#name "Bouncing Lightning"
 		#dmg 1
-		#nreff 3
+		#nratt 3
 		#dt_cap
 		#shock
 		#magic

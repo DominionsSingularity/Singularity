@@ -3201,7 +3201,7 @@ Moose Knights are much better equipped than normal Mountain Trolls and ride a gr
 -- Troldsvarheim, Moving Shadows
 
 #selectnation 204
-#clear
+#clearnation
 #era 1
 #name "Troldsvarheim"
 #epithet "Moving Shadows"

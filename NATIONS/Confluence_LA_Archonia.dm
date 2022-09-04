@@ -2003,7 +2003,7 @@ secondshape
 -- Exemplar ----------------------------------------------------------------------
 
 #newmonster 7076
-#copystats 3280
+#copystats 3280 -- Mirror Guard
 #name "Exemplar"
 #spr1 "./Confluence/LA_Archons/Exemplar1.tga"
 #spr2 "./Confluence/LA_Archons/Exemplar2.tga"
@@ -2035,7 +2035,7 @@ A Martyr Saint must be present in the province in order to recruit Exemplars."
 #maxage 1000
 #magicbeing
 #awe 3
-#autobless
+--#autobless -- Does nothing on monsters (copies from mirror guard anyways)
 #incunrest -10
 #rcost -37
 #rpcost 0
@@ -3410,12 +3410,13 @@ All national commanders have prophet shapes with different minor bonuses."
 
 -- Forts ----------------------------------------------------------------------
 
-#startfort 3
-#defaultfort 10
-#forestfort 35
-#mountainfort 37
-#farmfort 3
-#swampfort 11
+-- Bluefire's notes, no idea what these commands are intended to do, but they do nothing, so I have commented them out
+--#startfort 3
+--#defaultfort 10
+--#forestfort 35
+--#mountainfort 37
+--#farmfort 3
+--#swampfort 11
 
 -- Sites ----------------------------------------------------------------------
 

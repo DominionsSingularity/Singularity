@@ -35,7 +35,7 @@ The ring will protect its bearer from its scorching touch, but will certainly bu
 #mainlevel 2  
 #type 8 
 #restricted 146
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #fireres 5
@@ -55,7 +55,7 @@ The gauntlets will protect its wearer from its scorching touch, but will certain
 #mainlevel 2  
 #type 8  
 #restricted 146
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #fireres 5
@@ -75,7 +75,7 @@ The boots will protect its wearer from their scorching touch, but will certainly
 #mainlevel 2  
 #type 7  
 #restricted 146
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #fireres 5
@@ -95,7 +95,7 @@ The armor will protect its wearer from its scorching touch, but will certainly b
 #mainlevel 3  
 #type 5
 #restricted 146
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #armor "Molten Gold Armor"
@@ -115,7 +115,7 @@ The helmet will protect its wearer from its scorching touch, but will certainly 
 #mainlevel 2 
 #type 6
 #restricted 146
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #armor "Molten Gold Helmet"
@@ -135,7 +135,7 @@ The shield will protect its wearer from its scorching touch, but will certainly 
 #mainlevel 3 
 #type 4
 #restricted 146
-#speciallook 3
+--#speciallook 3 -- Does nothing on items
 #heat 3
 #awe 1
 #fireshield 8
@@ -155,7 +155,7 @@ The sword will partially protect the wielder from fire and flames."
 #mainpath 0
 #mainlevel 2 
 #restricted 146
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #type 1
 #weapon 860
 #fireres 5
@@ -1311,7 +1311,7 @@ The sword will partially protect the wielder from fire and flames."
 #nation -2
 #req_monster 4387 -- Assassin High Magistrate
 #req_fornation 146
-#3com 428         -- Gain 3 assassins
+#2com 428         -- Gain 3 assassins
 #end
 
 #newevent

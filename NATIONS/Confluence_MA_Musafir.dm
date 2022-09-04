@@ -226,7 +226,7 @@
 #school 2
 #nextspell "Rising Flames"
 #restricted 120
-#prec 2
+#precision 2
 #end
 
 

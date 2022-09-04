@@ -1241,7 +1241,7 @@ Priests: Average"
 #nodemon
 #noundead 
 #itemcost1 300
-#assassin
+--#assassin -- does nothing, event transforms judge into assassin
 #batstartsum3 7050
 #cursed
 #nofind
@@ -1253,10 +1253,11 @@ Priests: Average"
 #newevent
 #rarity 5
 #notext
-#req_targmnr 7037 --"Vehmic Judge"
+#req_targmnr 7037 -- MA Vehmic Judge
 #req_targitem 602
 #transform 7049
 #end
+
 
 #newevent
 #rarity 5
@@ -1286,7 +1287,7 @@ Priests: Average"
 #rarity 0
 #req_unique 1
 #nation 2 -- special independents
-#reqcode -300
+#req_code -300
 #code 0
 #msg "You refused to bring the Warlocks to justice and in return gained strong allies for the wars to come. Faith in you however wanes as the warlocks continue their wretched practices under the watchful eye of the holy Vehme."
 #addsite 1505
@@ -1301,7 +1302,7 @@ Priests: Average"
 #rarity 0
 #req_unique 1
 #nation 2 -- special independents
-#reqcode -300
+#req_code -300
 #code 0
 #msg "You chose to burn the warlocks on the pyre and the population celebrates their demise. Their faith in you has increased and the pyre through which you first revealed yourself burns brighter than ever before."
 #addsite 1504
@@ -1910,6 +1911,14 @@ Priests: Average"
 #holy
 #userestricteditem 80
 #darkvision 50
+#end
+
+#newevent
+#rarity 5
+#notext
+#req_targmnr 7217 -- LA Vehmic Judge
+#req_targitem 602
+#transform 7049 -- Assassin Vehmic Judge
 #end
 
 #newmonster 7218 --"Black Bishop"

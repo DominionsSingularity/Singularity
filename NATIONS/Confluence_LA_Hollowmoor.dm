@@ -404,7 +404,7 @@
 
 #newevent
 #rarity 2           -- Uncommon Bad
-#unique 1
+#req_unique 1
 #msg "A reckless woodsman has stumbled into a gathering of witches in the dark depths of the forest. Furious at the interruption the coven promptly made the woodsman the object of a new dark ritual."
 #nation -2         
 #req_pop0ok     
@@ -1157,7 +1157,7 @@
 #req_mydominion 1  -- Req Friendly Dom
 #gold 555          -- Around 555 gold
 #1d6vis 5          -- 1-6 D gems
-#1d3 4             -- 1-3 S gems
+#1d3vis 4             -- 1-3 S gems
 #magicitem 2       -- 0-4 lvl item
 #end
 	
@@ -2546,7 +2546,7 @@ This spell will only have effect once per turn per provinces."
 #path 0 5
 #pathlevel 0 3
 #fatiguecost 100
-#restricted 125
+#restricted 164
 #range 0
 #nreff 1
 #nextspell "Spread Plague"
@@ -3715,7 +3715,7 @@ homerealm 0
 -- Raven -------------------------------------------------------------------------------------------------------------------------------------------
 
 #newmonster 5329 
-#copstats 517
+#copystats 517
 #spr1 "./Confluence/LA_Hollowmoor/Raven1.tga"
 #spr2 "./Confluence/LA_Hollowmoor/Raven2.tga"
 #descr "Fiercely intelligent, Ravens are often employed as scouts and messengers of the Dark Lords. Ravens are commonly believed to be symbols of bad luck and bringers of ill tidings, and as such are no unlikely sight in Hollowmoor. When numerous Ravens gather to form an unkindness, misfortune and bad luck seems to sweep across the province with gusto."
@@ -3751,7 +3751,7 @@ homerealm 0
 #end
 
 	#newmonster 5381 
-	#copstats 517
+	#copystats 517
 	#spr1 "./Confluence/LA_Hollowmoor/Raven1.tga"
 	#spr2 "./Confluence/LA_Hollowmoor/Raven2.tga"
 	#descr "Fiercely intelligent, Ravens are often employed as scouts and messengers of the Dark Lords. Ravens are commonly believed to be symbols of bad luck and bringers of ill tidings, and as such are no unlikely sight in Hollowmoor. When numerous Ravens gather to form an unkindness, misfortune and bad luck seems to sweep across the province with gusto."
@@ -4180,7 +4180,6 @@ Each Autumn, the Pumpkin Lords can venture out into the open plains and farmland
 #goodleader
 #goodmagicleader
 #goodundeadleader
-#goodun
 #magicskill 7 1
 #magicskill 6 1
 #itemslots 13446

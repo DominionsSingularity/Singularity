@@ -14,7 +14,7 @@
 #req_fort 1
 #req_minpop 1500
 #msg "A Duellist's Guild has been established in ##landname##." 
-#req_freesite 1
+#req_freesites 1
 #req_nositenbr 1651
 #addsite 1651
 --notext
@@ -4057,7 +4057,7 @@ trample
 #descr "A powerful electrical storm which causes those caught in it to become supercharged, and on rare occasions even burn. The storm will continue to rage while the Arc Pylon is powered."
 #school -1
 #researchlevel 0
-#dmg 2
+#damage 2
 #aoe 662       -- 5% hit
 #explspr 10219 -- Lightning woot woot     10237-fields of magic exp rising, good 
 #spec 2176     -- AN + Shock Based?          10226-rising concentrical blue rings
@@ -4741,7 +4741,7 @@ Forts: Each month Antikytheran fortified provinces have a 10% chance per friend
 #addgod 5942       
 #addgod 5943
 #addgod 5208
-#cheapgod10 5942 -- Tech Lord
+#cheapgod20 5942 -- Tech Lord
 #cheapgod20 5943 -- Emperor
 #cheapgod40 5208 -- Mech Lord
 

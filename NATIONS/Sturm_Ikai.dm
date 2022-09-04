@@ -544,7 +544,7 @@
 #ethereal
 #float
 #homesick 50
-#recuperation
+#heal
 #batstartsum1d6 -9
 #magicpower 1
 #researchbonus -4

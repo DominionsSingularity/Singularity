@@ -1861,7 +1861,7 @@ Runemasters do not suffer from the spell singer slow casting penalty unlike othe
 #custommagic 1152 100
 #custommagic 3456 100
 #custommagic 3456 10
-#fixedforgebonus 1
+#fixforgebonus 1
 #resources 5
 #spellsinger
 #end

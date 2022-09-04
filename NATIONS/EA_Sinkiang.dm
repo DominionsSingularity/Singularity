@@ -950,7 +950,6 @@
 #pooramphibian
 #magicbeing
 #inanimate
-#mind
 #spiritsight
 #neednoteat
 #stonebeing
@@ -1007,8 +1006,7 @@
 #curseluckshield 2
 #battlesum2 1363 --ancestral spirit
 #batstartsum2d6 1363 --ancestral spirit
-#autospell "Blessing"
-#autospellrepeat 1
+#onebattlespell "Blessing"
 #miscshape
 #itemslots 12288 --2misc
 #nametype 121
@@ -1058,8 +1056,7 @@
 #curseluckshield 2
 #battlesum2 1363 --ancestral spirit
 #batstartsum2d6 1363 --ancestral spirit
-#autospell "Blessing"
-#autospellrepeat 1
+#onebattlespell "Blessing"
 #quadruped
 #itemslots 12288 --2misc
 #end

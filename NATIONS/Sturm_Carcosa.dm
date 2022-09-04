@@ -707,7 +707,7 @@ While undoubtedly more skilled and vastly better armed than average cultists, re
 #nametype 100
 #stealthy 0
 #magicskill 8 1
-#pathboost 8 1
+#magicboost 8 1
 #custommagic 6784 50
 #berserk 3
 #holy
@@ -1310,7 +1310,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #path 0 8
 #pathlevel 0 1
 #restricted 124 -- carcosa
-#restricted 131 -- carcosa
 #nextspell 1314 -- Mind reading
 #ainocast 1
 #reqspellsinger
@@ -1345,7 +1344,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #nextspell "Flesh Shaping"
 #reqspellsinger
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #end
 
 #selectspell 1318
@@ -1366,7 +1364,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #nextspell "Flesh Shaping"
 #reqspellsinger
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #end
 
 #selectspell 1319
@@ -1379,7 +1376,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #school 2
 #reqspellsinger
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #spec 4224 --mr negates, AN --17592186044544 --hard mr negates, AN damage
 #end
 
@@ -1394,7 +1390,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #school 1
 #reqspellsinger
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #range 10
 #spec 16777216 --mr negates easily
 #ainocast 1
@@ -1410,7 +1405,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #school 1
 #reqspellsinger
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #range 10
 #ainocast
 #end
@@ -1419,7 +1413,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #name "Empyrean Flames"
 #descr "The Mage ventures into the Chamber of Ways, the room that holds the Noonstone, and binds three hazes to his will. The Haze is an incadescent being sprung from the Noonstone's light. It is clad in meteorite armor and carries a standard depicting the accursed yellow sign."
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #researchlevel 3
 #path 0 0 -- Fire
 #path 1 8
@@ -1437,7 +1430,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #name "Strange Bedfellows"
 #descr "The Astral mage opens a gateway into the void in order to summon three Elder Things to aid the God of Carcosa. These strange beings have long used the Sun in Splendour's light as a beacon to navigate the treacherous currents beyond this world. With its fall from the heavens, only few of them manage to traverse the void on their own. The very existence of their race is threatened and as such they have a vested interest in aiding the tattered kings in restoring the Noonstone to its old radiance."
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #researchlevel 1
 #path 0 4 -- Astral
 #path 1 8
@@ -1455,7 +1447,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #name "Summon Shoggoth"
 #descr "The mage invokes the Key and the Gate to open a path into the void and manifest a Shoggoth. This being, also known as an Otherness, is a mindless, slowly swirling mass of dark goo that has grown to enormous proportions with passing aeons."
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #researchlevel 6
 #path 0 2 -- water
 #path 1 8
@@ -1472,7 +1463,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #name "Summon Hunter from Beyond"
 #descr "The mage invokes the Key and the Gate to open a path into the void and summon a Thing That Should Not Be.  It is a huge and horrible void spawn that can steal life from living beings."
 #restricted 124 --carcosa
-#restricted 131 -- carcosa
 #researchlevel 8
 #path 0 5 -- death
 #path 1 8
@@ -1495,7 +1485,6 @@ Priest: Strong, Aspirants can temple train void beings and do not require labs t
 #name "Brittle Crown"
 #descr "This light and brittle crown was forged from broken off parts of the noonstone and is ensorcelled with protective enchantments that alter the fate of the wearer. The power of the artifact is limited however, and will only deflect a single attack each round."
 #restricted 124 --"Carcosa"
-#restricted 131 -- carcosa
 #autospell "Twist Fate"
 #autospellrepeat 1
 #armor 212 -- magic crown 

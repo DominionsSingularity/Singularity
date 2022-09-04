@@ -192,7 +192,7 @@ secondaryeffectalways 1047
 
 #newweapon 1049
 #name "Agonizing Bolt"
-#rango0
+#range0
 #dmg -3
 #halfstr
 #magic
@@ -4888,7 +4888,7 @@ The Sigil of Concealment will randomly increase or decrease the size of the army
 #gcost 0
 #spiritsight
 #slimer 4
-#regen 50
+#regeneration 50
 #stealthy 25
 #maxage 5000
 #goodmagicleader
@@ -4935,7 +4935,7 @@ The Sigil of Concealment will randomly increase or decrease the size of the army
 	#gcost 0
 	#spiritsight
 	#slimer 4
-	#regen 50
+	#regeneration 50
 	#stealthy 25
 	#maxage 5000
 	#goodmagicleader
@@ -5876,7 +5876,6 @@ The Sigil of Concealment will randomly increase or decrease the size of the army
 #onlymnr 4505 -- Dreamer
 #nextspell "Dreamwalking"
 #restricted 162
-#twiceborn 4505
 #end
 
 -- Dream Shaping ---------------------------------------------------------------------------------------
@@ -5903,7 +5902,6 @@ The Sigil of Concealment will randomly increase or decrease the size of the army
 #onlymnr 4505 -- Dreamer
 #nextspell "Transcendent Dreams"
 #restricted 162
-#twiceborn 4505
 #end
 
 -- Harrowing ---------------------------------------------------------------------------------------

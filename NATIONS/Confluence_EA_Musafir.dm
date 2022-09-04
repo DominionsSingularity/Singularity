@@ -2961,7 +2961,7 @@
 #school 2
 #nextspell "Rising Flames"
 #restricted 186
-#prec 2
+#precision 2
 #end
 
 -- Summon Sphinx ------------------------------------------------------------------------------------------------------------------
@@ -9118,7 +9118,7 @@ Priests: Moderate."
 
 #homerealm 10
 #homerealm 7
-#addgod 4000
+--#addgod 4000
 #addgod 2786
 #addgod 3546
 #cheapgod20 3546

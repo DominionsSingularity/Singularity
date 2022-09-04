@@ -1,5 +1,88 @@
 ---- Tilea
 
+#newweapon 779
+#copyweapon 601 -- cave fire bottle
+#name "Explosive Flask"
+#rcost 9
+#bonus
+#ammo 3 -- +2
+#aoe 2 -- +1
+#end
+
+#newweapon 796
+#name "Mirror of Hysh"
+#dmg 3
+#dt_holy
+#nostr
+#armorpiercing
+#att 100
+#def 0
+#range 100
+#ammo 50
+#nratt 1
+#rcost 1
+#aoe 1
+#explspr 10229 -- small shower of light
+#sound 22 -- mind burn
+#magic
+#end
+
+#newweapon 794
+#copyweapon 11 -- greatsword
+#name "Scythe"
+#dmg 8
+#def 0
+#len 3
+#rcost 3
+#end
+
+#newweapon 814
+#copyweapon 19 -- bite used by jade maidens on their lizards
+#name "Horned One Bite"
+#dmg 13 -- -2
+#pierce -- slashing and piercing
+#len -1
+#end
+
+#newweapon 853
+#name "Slaying"
+#dt_large
+#dmg 6 -- therefore 18 + DRN vs prot + DRN vs size 3 and up
+#nostr
+#att 0
+#def 0
+#rcost 0
+#len 1
+#bonus
+#slash
+#end
+
+#newweapon 859
+#copyweapon 17 -- Axe
+#name "Quality Axe"
+#rcost 4
+#att 1 -- +1
+#def 0 -- +1
+#end
+
+#newarmor 347
+#copyarmor 2 -- shield
+#name "Quality Shield"
+#def 4 -- +1
+#enc 1 -- same
+#prot 18 -- +2
+#rcost 6
+#end
+
+#newarmor 341
+#copyarmor 13 -- chain hauberk
+#name "Quality Chain Hauberk"
+#def -1 -- +1
+#enc 2 -- same
+#prot 16 -- +1
+#rcost 16
+#end
+
 ------ NEW ITEMS
 
 -- Long Drong's slayer Mark

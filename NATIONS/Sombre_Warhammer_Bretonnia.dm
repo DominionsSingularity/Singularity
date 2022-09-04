@@ -3619,7 +3619,7 @@ Priests: Powerful, may be protected by Guardian Spirits
 Mechanics: Pilgrims gather at temples according to dominion strength"
 #flag "./Sombre_Warhammer/Warhammer_Bretonnia/Bretonnia_Flag.tga"
 #templepic 10 -- forest
-#--labcost 700
+--#labcost 700
 #templecost 300
 #color 0.5 0.8 0.3
 

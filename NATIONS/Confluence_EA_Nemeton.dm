@@ -603,7 +603,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 #custommagic 9984 100
 #custommagic 9984 10
 #magicboost 6 1  
-#magciboost 8 1
+#magicboost 8 1
 #noreqtemple
 #weapon 1379
 #poorleader
@@ -686,7 +686,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 #custommagic 9984 100
 #custommagic 9984 10
 #magicboost 6 1  
-#magciboost 8 1
+#magicboost 8 1
 #noreqtemple
 #weapon 1379
 #poorleader
@@ -771,7 +771,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 #custommagic 9984 100
 #custommagic 9984 10
 #magicboost 6 1  
-#magciboost 8 1
+#magicboost 8 1
 #noreqtemple
 #weapon 1379
 #poorleader
@@ -817,7 +817,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 	#custommagic 9984 100
 	#custommagic 9984 10
 	#magicboost 6 1  
-	#magciboost 8 1
+	#magicboost 8 1
 	#noreqtemple
 	#weapon 1379
 	#poorleader
@@ -862,7 +862,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 	#custommagic 9984 100
 	#custommagic 9984 10
 	#magicboost 6 1  
-	#magciboost 8 1
+	#magicboost 8 1
 	#noreqtemple
 	#weapon 1379
 	#poorleader
@@ -908,7 +908,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 	#custommagic 9984 100
 	#custommagic 9984 10
 	#magicboost 6 1  
-	#magciboost 8 1
+	#magicboost 8 1
 	#noreqtemple
 	#weapon 1379
 	#poorleader
@@ -3161,7 +3161,7 @@ While in forests, the Grove Guardians can draw upon the knowledge of the land to
 #reinvigoration 1
 #plainshape 4121
 #magicboost 6 1 53 1
-#magciboost 8 1
+#magicboost 8 1
 #weapon 1379
 #noreqtemple
 #poorleader
@@ -3240,7 +3240,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 #custommagic 9984 100
 #custommagic 9984 10
 #magicboost 6 1  
-#magciboost 8 1
+#magicboost 8 1
 #noreqtemple
 #weapon 1379
 #poorleader
@@ -3600,7 +3600,7 @@ Though Keepers of the Grove are novice Water mages, some of them also devote a p
 #magicskill 2 1
 #custommagic 8704 50
 #magicboost 6 1 53 1
-#magciboost 8 1
+#magicboost 8 1
 #poorleader
 #autohealer 1
 #poorleader
@@ -3642,7 +3642,7 @@ While in forests, the Grove Guardians can draw upon the knowledge of the land to
 #custommagic 9984 100
 #custommagic 9984 10
 #magicboost 6 1 53 1
-#magciboost 8 1
+#magicboost 8 1
 #noreqtemple
 #poorleader
 #rpcost 1
@@ -3685,7 +3685,7 @@ While in forests, the Druids of the Grove can draw upon the knowledge of the lan
 #custommagic 9984 100
 #custommagic 9984 10
 #magicboost 6 1  
-#magciboost 8 1
+#magicboost 8 1
 #noreqtemple
 #weapon 1379
 #poorleader

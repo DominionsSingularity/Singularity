@@ -896,7 +896,7 @@
 #prot 16
 #def 5
 #enc 2
-#magic
+#magicarmor
 #rcost 5
 #end
 
@@ -7394,7 +7394,7 @@ This enchanted mirror will release ten illusory animals once activated."
 #undead
 --inanimate
 #neednoteat
-#spirigsight
+#spiritsight
 --noheal
 #armor 761
 #weapon 1978
@@ -7431,7 +7431,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -7468,7 +7468,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -7505,7 +7505,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -7541,7 +7541,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -7580,7 +7580,7 @@ This enchanted mirror will release ten illusory animals once activated."
 #undead
 --inanimate
 #neednoteat
-#spirigsight
+#spiritsight
 --noheal
 #armor 761
 #weapon 1978
@@ -7617,7 +7617,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -7654,7 +7654,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -7691,7 +7691,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -7727,7 +7727,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -7766,7 +7766,7 @@ This enchanted mirror will release ten illusory animals once activated."
 #undead
 --inanimate
 #neednoteat
-#spirigsight
+#spiritsight
 --noheal
 #armor 761
 #weapon 1978
@@ -7803,7 +7803,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -7840,7 +7840,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -7877,7 +7877,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -7913,7 +7913,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -7952,7 +7952,7 @@ This enchanted mirror will release ten illusory animals once activated."
 #undead
 --inanimate
 #neednoteat
-#spirigsight
+#spiritsight
 --noheal
 #armor 761
 #weapon 1978
@@ -7989,7 +7989,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -8026,7 +8026,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -8063,7 +8063,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -8099,7 +8099,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -8138,7 +8138,7 @@ This enchanted mirror will release ten illusory animals once activated."
 #undead
 --inanimate
 #neednoteat
-#spirigsight
+#spiritsight
 --noheal
 #armor 761
 #weapon 1978
@@ -8175,7 +8175,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -8212,7 +8212,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	--inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	--noheal
 	#armor 761
 	#weapon 1978
@@ -8249,7 +8249,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -8284,7 +8284,7 @@ This enchanted mirror will release ten illusory animals once activated."
 	#undead
 	#inanimate
 	#neednoteat
-	#spirigsight
+	#spiritsight
 	#noheal
 	#armor 761
 	#weapon 1978
@@ -8570,7 +8570,7 @@ A Mirror-Mage is a Master Illusionist who has successfully split light in front 
 #magicboost 53 -1
 #neednoteat
 #magicbeing
-#amphibious
+#amphibian
 #spiritsight
 #end
 
@@ -8635,7 +8635,7 @@ A Mirror-Mage is a Master Illusionist who has successfully split light in front 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #end
 
@@ -8716,7 +8716,7 @@ A Mirror-Mage is a Master Illusionist who has successfully split light in front 
 #magicboost 53 -1
 #neednoteat
 #magicbeing
-#amphibious
+#amphibian
 #spiritsight
 #end
 
@@ -8784,7 +8784,7 @@ A Mirror-Mage is a Master Illusionist who has successfully split light in front 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #end
 
@@ -9207,7 +9207,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9245,7 +9245,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9283,7 +9283,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9321,7 +9321,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9359,7 +9359,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9397,7 +9397,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9435,7 +9435,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9473,7 +9473,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9511,7 +9511,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique
@@ -9549,7 +9549,7 @@ The Mirror Lord Shadow will gain the Mirror Lord's skill in Death magic up to a 
 #invulnerable 25
 #neednoteat
 #undead
-#amphibious
+#amphibian
 #spiritsight
 #immortal
 #unique

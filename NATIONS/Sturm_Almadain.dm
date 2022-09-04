@@ -1288,7 +1288,6 @@ Capital province has 25% lower population and gem income but starts surrounded b
 #pathlevel 0 2
 #school 5 -- thaum
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #fatiguecost 10
 #aoe 0
 #range 0
@@ -1307,38 +1306,31 @@ Capital province has 25% lower population and gem income but starts surrounded b
 #pathlevel 0 2
 #school 5 -- thaum
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #ainocast
 #end
 
 #selectspell "Smokeless Flame"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Contact Jinn"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Summon Jinn Warriors"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Contact Houri"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Summon Hinn"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Summon Ifrit"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 --#selectspell "Summon Shaytan"
@@ -1347,32 +1339,26 @@ Capital province has 25% lower population and gem income but starts surrounded b
 
 #selectspell "Scorching Wind"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Awaken Jinn Block"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Feast for Ghuls"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Summon Ghulah"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Summon Binn"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 #selectspell "Summon Si'lat"
 #restricted 128 --"Al-Mada'in"
-#restricted 130 --"Al-Mada'in"
 #end
 
 
@@ -2782,31 +2768,5 @@ Capital province has 25% lower population and gem income but starts surrounded b
 #req_notfornation 128
 #end
 
-
---ameer events
-
---"Ameer al'Hariq"
-#newevent
-#rarity 5
-#notext
-#req_nation 130 --"Al-Mada'in"
-#req_monster 7185 --"Ameer"
-#req_pathfire 2
-#req_targmnr 7185 --"Ameer"
-#req_targpath2 0 --fire 3
-#transform 7187 --"Ameer Fire"
-#end
-
---"Ameer al'Hawa"
-#newevent
-#rarity 5
-#notext
-#req_nation 130 --"Al-Mada'in"
-#req_monster 7185 --"Ameer"
-#req_pathair 2
-#req_targmnr 7185 --"Ameer"
-#req_targpath2 1 --air 3
-#transform 7186 --"Ameer Air"
-#end
 
 ---- End Almadain

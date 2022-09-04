@@ -550,7 +550,7 @@
 #custommagic 4608 10
 #autohealer 1
 #holy
-#recuperation
+#heal
 #end
 
 #newmonster 7132

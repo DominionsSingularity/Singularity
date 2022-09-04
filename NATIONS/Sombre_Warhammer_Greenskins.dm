@@ -613,7 +613,7 @@
 #prot 21
 #enc 3
 #def -2
-#magic
+#magicarmor
 #end
 
 
@@ -623,7 +623,7 @@
 #copyarmor 38 -- blacksteel full plate
 #name "Blood-Forged Armour"
 #prot 25 -- +1 over blacksteel full plate, everything else same
-#magic
+#magicarmor
 #end
 
 
@@ -643,7 +643,7 @@
 #copyarmor 14 -- plate hauberk
 #name "Azhag's 'Ard Armour"
 #prot 20
-#magic
+#magicarmor
 #end
 
 
@@ -7799,10 +7799,9 @@ Savage Orc Boss -> Savage Orc Big Boss -> Savage Orc Warboss -> Savage Orc Waaag
 #16d6units -6552 -- goblin infantry
 #12d6units 3802 -- goblin archer
 #4d6units 3805 -- lance wolfriders
-#3d6units 3806 -- bow wolfriders
+#3d6units 3805 -- lance wolfriders
 #2d3units 3858 -- stone troll
-#5d3units 3865 -- goblin wolf chariot lance
-#4d3units 3866 -- goblin wolf chariot archer
+#4d3units 3865 -- goblin wolf chariot lance
 #transform 3985 -- grom waaagh
 #end
 

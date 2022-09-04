@@ -1,6 +1,108 @@
 -- MA AURUM NATION!!
 
 
+	#newweapon 1443
+	#copyweapon 229
+	#name "Molten Strike"
+	#fire
+	#dmg 16   
+	#armorpiercing
+	#aoe 1
+	#end
+--
+	#newweapon 1444
+	#copyweapon 229
+	#name "Molten Strike"
+	#fire
+	#dmg 15   
+	#armorpiercing
+	#aoe 1
+	#end
+--
+	#newweapon 1445
+	#copyweapon 229
+	#name "Molten Strike"
+	#fire
+	#dmg 14    
+	#armorpiercing
+	#aoe 1
+	#end
+--
+	#newweapon 1446
+	#copyweapon 229
+	#name "Molten Strike"
+	#fire
+	#dmg 13    
+	#armorpiercing
+	#aoe 1
+	#end
+--
+	#newweapon 1447
+	#copyweapon 229
+	#name "Molten Strike"
+	#fire
+	#dmg 12    
+	#armorpiercing
+	#aoe 1
+	#end
+--
+	#newweapon 1448
+	#copyweapon 229
+	#name "Molten Strike"
+	#fire
+	#dmg 11     
+	#armorpiercing
+	#aoe 1
+	#end
+
+#newweapon 1437
+#name "Molten Crush"
+#blunt
+#dmg 0
+#armorpiercing
+#secondaryeffect 1443
+#end
+
+#newweapon 1438
+#name "Molten Crush"
+#blunt
+#dmg 0
+#armorpiercing
+#secondaryeffect 1444
+#end
+
+#newweapon 1439
+#name "Molten Crush"
+#blunt
+#dmg 0
+#armorpiercing
+#secondaryeffect 1445
+#end
+
+#newweapon 1440
+#name "Molten Crush"
+#blunt
+#dmg 0
+#armorpiercing
+#secondaryeffect 1446
+#end
+
+#newweapon 1441
+#name "Molten Crush"
+#blunt
+#dmg 0
+#armorpiercing
+#secondaryeffect 1447
+#end
+
+#newweapon 1442
+#name "Molten Crush"
+#blunt
+#dmg 0
+#armorpiercing
+#secondaryeffect 1448
+#end
+
 -- ------------------------------------------------------------------------------------
 -- ITEMS  
 -- ------------------------------------------------------------------------------------
@@ -19,7 +121,7 @@ The ring will protect its bearer from its scorching touch, but will certainly bu
 #mainlevel 2  
 #type 8  
 #restricted 131
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #fireres 5
@@ -41,7 +143,7 @@ The gauntlets will protect its wearer from its scorching touch, but will certain
 #mainlevel 2  
 #type 8  
 #restricted 131
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #fireres 5
@@ -63,7 +165,7 @@ The boots will protect its wearer from their scorching touch, but will certainly
 #mainlevel 2  
 #type 7  
 #restricted 131
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #fireres 5
@@ -85,7 +187,7 @@ The armor will protect its wearer from its scorching touch, but will certainly b
 #mainlevel 3 
 #type 5
 #restricted 131
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #armor "Molten Gold Armor"
@@ -107,7 +209,7 @@ The helmet will protect its wearer from its scorching touch, but will certainly 
 #mainlevel 2 
 #type 6
 #restricted 131
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #heat 3
 #awe 1
 #armor "Molten Gold Helmet"
@@ -129,7 +231,7 @@ The shield will protect its wearer from its scorching touch, but will certainly 
 #mainlevel 3 
 #type 4
 #restricted 131
-#speciallook 3
+--#speciallook 3 -- Does nothing on items
 #heat 3
 #awe 1
 #fireshield 8
@@ -151,7 +253,7 @@ The sword will partially protect the wielder from fire and flames."
 #mainpath 0
 #mainlevel 2 
 #restricted 131
-#speciallook 1
+--#speciallook 1 -- Does nothing on items
 #type 1
 #weapon 860
 #fireres 5
@@ -2410,12 +2512,13 @@ Priests: Average. Powerful summonable priests."
 
 -- Forst --------------------------------------------------------------------------
 
-#startfort 31    -- great city
-#farmfort 3      -- fortified city
-#mountainfort 42 -- mountain city
-#forestfort 29   -- woodland citadel
-#swampfort 5     -- swamp city
-#defaultfort 3   -- fortified city
+-- Bluefire's notes, no idea what these commands are intended to do, but they do nothing, so I have commented them out
+--#startfort 31    -- great city
+--#farmfort 3      -- fortified city
+--#mountainfort 42 -- mountain city
+--#forestfort 29   -- woodland citadel
+--#swampfort 5     -- swamp city
+--#defaultfort 3   -- fortified city
 
 -- Sites --------------------------------------------------------------------------
 

@@ -3284,7 +3284,7 @@ Exhausted Warpstone Seams controlled by the Skaven have a chance each turn to be
 #req_fornation 116
 #req_targowner 116 -- the targeted commander must be owned by skaven
 #req_targgod 0 -- can't target your god
-#req_targnomnr 5117 -- can't target an eshin assassin
+#req_targnomnr 5563 -- can't target an eshin assassin
 #req_targnomnr 5574 -- deathmaster snikch
 #req_permonth 1 -- only allowed one of these per month
 #assassin 5563 -- eshin assassin
