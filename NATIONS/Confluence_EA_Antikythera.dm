@@ -1720,44 +1720,45 @@ Unlike other automatons, the spiderlings are much more fragile and easier to des
 -- Mechanical Angel -----------------------------------------------------------------------
 
 
-#newmonster 5713
-#name "Mechanical Angel"
-#spr1 "./Confluence/EA_Antikythera/Priest1.tga"
-#spr2 "./Confluence/EA_Antikythera/Priest1.tga"
-#descr "A Mechanical Angel is a spring-driven clockwork inscribed with holy symbols thus granting it the ability to speak the Will of the Master Makers. The Mechanical Angels are able to spread their wings and fly great distances though they unable to perform their primary function while mobile."
-#ap 2
-#mapmove 0
-#hp 14
-#mr 14
-#prot 18
-#size 4
-#str 12
-#enc 0
-#att 5
-#def 5
-#prec 5
-#mor 50
-#gcost 25  
-#magicbeing
-#inanimate
-#poisonres 25
-#neednoteat
-#noheal
-#startage -1
-#maxage 1000
-#reinvigoration -7
-#rcost 100
-#itemslots 1
-#magicskill 8 1
-#shapechange 5714
-#clearweapons
-#holy
-#noleader
-#poormagicleader
-#rpcost 1
-#darkvision 100
-#end
---
+--#newmonster 5713
+--#name "Mechanical Angel"
+--#spr1 "./Confluence/EA_Antikythera/Priest1.tga"
+--#spr2 "./Confluence/EA_Antikythera/Priest1.tga"
+--#descr "A Mechanical Angel is a spring-driven clockwork inscribed with holy symbols thus granting it the ability to speak the Will of the Master Makers. The Mechanical Angels are able to spread their wings and fly great distances though they unable to perform their primary function while mobile."
+--#ap 2
+--#mapmove 0
+--#hp 14
+--#mr 14
+--#prot 18
+--#size 4
+--#str 12
+--#enc 0
+--#att 5
+--#def 5
+--#prec 5
+--#mor 50
+--#gcost 25  
+--#magicbeing
+--#inanimate
+--#poisonres 25
+--#neednoteat
+--#noheal
+--#startage -1
+--#maxage 1000
+--#reinvigoration -7
+--#rcost 100
+--#itemslots 1
+--#magicskill 8 1
+--#shapechange 5714
+--#clearweapons
+--#holy
+--#noleader
+--#poormagicleader
+--#rpcost 1
+--#darkvision 100
+--#end
+
+
 #newmonster 5714
 #name "Mechanical Angel"
 #spr1 "./Confluence/EA_Antikythera/Priest2.tga"
@@ -1775,7 +1776,7 @@ Unlike other automatons, the spiderlings are much more fragile and easier to des
 #def 5
 #prec 5
 #mor 50
-#gcost 25   
+#gcost 35 -- +10g for losing immobile form
 #magicbeing
 #inanimate
 #poisonres 25
@@ -1789,8 +1790,9 @@ Unlike other automatons, the spiderlings are much more fragile and easier to des
 #poormagicleader
 #itemslots 1
 #flying
-#shapechange 5713
-#magicboost 53 -1
+--#shapechange 5713
+--#magicboost 53 -1
+#magicskill 8 1
 #holy
 #rpcost 1
 #darkvision 100
@@ -2510,8 +2512,8 @@ Priests: Very weak"
 #addreccom 5736
 #addreccom 5711
 #addreccom 5712
-#addreccom 5713
---addreccom 5714
+--#addreccom 5713 -- Mechanical Angel immobile
+addreccom 5714 -- Mechanical Angel mobile
 #addreccom 5715
 #addreccom 5716
 --addreccom 5717
@@ -2550,7 +2552,7 @@ Priests: Very weak"
 
 
 #defcom1 5711
-#defcom2 5713
+#defcom2 5714
 
 #defunit1 5703
 #defunit1b 5704
