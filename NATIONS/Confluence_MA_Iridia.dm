@@ -8367,47 +8367,14 @@ This enchanted mirror will release ten illusory animals once activated."
 #gcost 0
 #shrinkhp 999
 #end
-	#newmonster 7681
-	#name "Illusory Pikeman"
-	#spr1 "./Confluence/MA_Iridia/IllusoryPike2.tga"
-	#spr2 "./Confluence/MA_Iridia/IllusoryPike2.tga"
-	#descr "An Illusory Pikeman is a semblance of a pikeman captured in a Gold Mirror. The illusion is elusive and difficult to hit, but once hit, it will be destroyed. The weapons of an illusion are unreal and will only harm those who believe them to be real."
-	#magicbeing
-	#inanimate
-	#ethereal
-	#amphibian
-	#neednoteat
-	#mor 50
-	#spiritsight
-	#startage -1
-	#maxage 500
-	#poisonres 25
-	#enc 0
-	#hp 1
-	#mr 10
-	#prot 0
-	#size 2
-	#str 10
-	#enc 3
-	#att 10
-	#def 10
-	#prec 10
-	#gcost 0
-	#immobile
-	#ap 0
-	#mapmove 0
-	#battlesum1 7684
-	#end
-	
-#newmonster 7684
+
+#newmonster 7681
 #name "Illusory Pikeman"
-#spr1 "./Confluence/MA_Iridia/IllusoryPike1.tga"
+#spr1 "./Confluence/MA_Iridia/IllusoryPike2.tga"
 #spr2 "./Confluence/MA_Iridia/IllusoryPike2.tga"
 #descr "An Illusory Pikeman is a semblance of a pikeman captured in a Gold Mirror. The illusion is elusive and difficult to hit, but once hit, it will be destroyed. The weapons of an illusion are unreal and will only harm those who believe them to be real."
-#hp 1
-#regeneration 100
-#growhp 1
 #magicbeing
+#inanimate
 #ethereal
 #amphibian
 #neednoteat
@@ -8415,11 +8382,9 @@ This enchanted mirror will release ten illusory animals once activated."
 #spiritsight
 #startage -1
 #maxage 500
-#weapon "Illusory Pike"
-#mapmove 20
 #poisonres 25
 #enc 0
-#ap 12
+#hp 1
 #mr 10
 #prot 0
 #size 2
@@ -8429,70 +8394,11 @@ This enchanted mirror will release ten illusory animals once activated."
 #def 10
 #prec 10
 #gcost 0
+#immobile
+#ap 0
+#mapmove 0
+#battlesum1 7657
 #end
-
-	#newmonster 7683
-	#name "Illusory Pikeman"
-	#spr1 "./Confluence/MA_Iridia/IllusoryPike1.tga"
-	#spr2 "./Confluence/MA_Iridia/IllusoryPike2.tga"
-	#descr "An Illusory Pikeman is a semblance of a pikeman captured in a Gold Mirror. The illusion is elusive and difficult to hit, but once hit, it will be destroyed. The weapons of an illusion are unreal and will only harm those who believe them to be real."
-	#hp 2
-	#regeneration 100
-	#growhp 2
-	#magicbeing
-	#ethereal
-	#amphibian
-	#neednoteat
-	#mor 50
-	#spiritsight
-	#startage -1
-	#maxage 500
-	#weapon "Illusory Pike"
-	#mapmove 20
-	#poisonres 25
-	#enc 0
-	#ap 12
-	#mr 10
-	#prot 0
-	#size 2
-	#str 10
-	#enc 3
-	#att 10
-	#def 10
-	#prec 10
-	#gcost 0
-	#end
-
-		#newmonster 7682
-		#name "Illusory Pikeman"
-		#spr1 "./Confluence/MA_Iridia/IllusoryPike2.tga"
-		#spr2 "./Confluence/MA_Iridia/IllusoryPike2.tga"
-		#descr "An Illusory Pikeman is a semblance of a pikeman captured in a Gold Mirror. The illusion is elusive and difficult to hit, but once hit, it will be destroyed. The weapons of an illusion are unreal and will only harm those who believe them to be real."
-		#hp 3
-		#magicbeing
-		#inanimate
-		#ethereal
-		#amphibian
-		#neednoteat
-		#mor 50
-		#spiritsight
-		#startage -1
-		#maxage 500
-		#poisonres 25
-		#enc 0
-		#mr 10
-		#prot 0
-		#size 2
-		#str 10
-		#enc 3
-		#att 10
-		#def 10
-		#prec 10
-		#gcost 0
-		#immobile
-		#ap 0
-		#end	
-		
 		
 -- Mirror Mage REGULAR ------------------------------------------------------------
 
@@ -10018,7 +9924,7 @@ Priests: Weak. Dominion conflict bonus -1."
 
 #defunit1 7600  -- Pike
 #defunit1b 7601 -- Xbow
-#defunit1c 7615 -- Phantasmal Pike / Illusion 7657
+#defunit1c 7615 -- Phantasmal Pike / Illusion 
 #defunit1d 7616 -- Phantasmal Xbow / Illusion 7658
 #defunit2 7603  -- Knight
 #defunit2b 7618 -- Phantasmal Knight / Ill    7660
