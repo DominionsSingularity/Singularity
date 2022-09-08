@@ -90,7 +90,7 @@
 #newarmor 751
 #copyarmor 224 -- Shell Cap
 #name "Mantle"
-#prot 7
+#prot 4
 #def 0
 #enc 0
 #rcost 0
@@ -326,7 +326,7 @@
 #ap 10
 #gcost 0
 #eyes 2
-#fear 5
+--#fear 5
 #stealthy 0
 #weapon 628
 #weapon 628
@@ -463,7 +463,7 @@
 #ap 10
 #gcost 10110
 #eyes 2
-#fear 5
+--#fear 5
 #stealthy 0
 #unsurr 5
 #weapon 628
@@ -802,7 +802,7 @@
 #spr2 "Blue_Krakasos/Blue_MilitiaA2.tga"
 #name "Krakasos Militia"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. Most follow the Kraken Kings, living in cities of rock on the seabed and carrying out their orders to the best of their ability. Militia are quickly armed and unskilled fighters."
-#rpcost 5
+#rpcost 8
 #rcost 1 -- +1 spear
 #hp 14 -- -1
 #str 11
@@ -841,7 +841,7 @@
 #spr2 "Blue_Krakasos/Blue_MilitiaB2.tga"
 #name "Krakasos Militia"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. Most follow the Kraken Kings, living in cities of rock on the seabed and carrying out their orders to the best of their ability. Militia are quickly armed and unskilled fighters."
-#rpcost 6
+#rpcost 9
 #rcost 1 -- +1 sword
 #hp 14 -- -1
 #str 11
@@ -916,7 +916,7 @@
 #spr2 "Blue_Krakasos/Blue_Spearman2.tga"
 #name "Krakasos Spearman"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. Most follow the Kraken Kings, living in cities of rock on the seabed and carrying out their orders to the best of their ability."
-#rpcost 11
+#rpcost 14
 #rcost 1 -- +1 spear
 #hp 15
 #str 13 -- +2
@@ -954,7 +954,7 @@
 #spr2 "Blue_Krakasos/Blue_Warrior2.tga"
 #name "Krakasos Warrior"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. Most follow the Kraken Kings, living in cities of rock on the seabed and carrying out their orders to the best of their ability."
-#rpcost 12
+#rpcost 15
 #rcost 1 -- +1 sword
 #hp 15
 #str 12 -- +1
@@ -968,7 +968,7 @@
 #enc 3
 #mapmove 14
 #ap 13
-#gcost 10012
+#gcost 10013
 #eyes 2
 #weapon 512 -- Fossilized Sword
 #weapon 671 -- Stone Dagger
@@ -992,7 +992,7 @@
 #spr2 "Blue_Krakasos/Blue_HeavyWarrior2.tga"
 #name "Krakasos Heavy Warrior"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. Most follow the Kraken Kings, living in cities of rock on the seabed and carrying out their orders to the best of their ability. The heavy warriors of Krakasos form the city guard, protecting the cities of rock while wearing armor of rock enchanted by geomancers."
-#rpcost 12
+#rpcost 15
 #rcost 1 -- +1 sword
 #hp 15
 #str 12 -- +1
@@ -1006,7 +1006,7 @@
 #enc 3
 #mapmove 14
 #ap 13
-#gcost 10012
+#gcost 10013
 #eyes 2
 #weapon 512 -- Fossilized Sword
 #weapon 602 -- Fossilized Axe
@@ -1030,7 +1030,7 @@
 #spr2 "Blue_Krakasos/Blue_HeavySpearman2.tga"
 #name "Krakasos Heavy Spearman"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. Most follow the Kraken Kings, living in cities of rock on the seabed and carrying out their orders to the best of their ability. The heavy warriors of Krakasos form the city guard, protecting the cities of rock while wearing armor of rock enchanted by geomancers."
-#rpcost 11
+#rpcost 14
 #rcost 3 -- +1 spear, +2 for parity
 #hp 15
 #str 13 -- +2
@@ -1105,7 +1105,7 @@
 #spr2 "Blue_Krakasos/Blue_Berserker2b.tga"
 #name "Krakasos Vagabond"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. The fishmen of Krakasos are easily captivated by shiny objects, and many join the bands of marauders following the Corsair Kings, plundering nearby lands and passing vessels for their gold and other valuables to be hoarded deep beneath the waves."
-#rpcost 15
+#rpcost 17
 #rcost 1 -- +1 sword
 #hp 15
 #str 11 -- +0
@@ -1121,7 +1121,7 @@
 #enc 3
 #mapmove 22 -- +6
 #ap 15 -- +2
-#gcost 10018
+#gcost 10020
 #chaosrec 1
 #incunrest 3
 #pillagebonus 1
@@ -1150,7 +1150,7 @@
 #spr2 "Blue_Krakasos/Blue_Wrecker2.tga"
 #name "Krakasos Wrecker"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. The fishmen of Krakasos are easily captivated by shiny objects, and many join the bands of marauders following the Corsair Kings, plundering nearby lands and passing vessels for their gold and other valuables to be hoarded deep beneath the waves."
-#rpcost 16
+#rpcost 18
 #rcost 4 -- +4 weapon
 #hp 15
 #str 13 -- +2
@@ -1166,7 +1166,7 @@
 #enc 3
 #mapmove 22 -- +6
 #ap 15 -- +2
-#gcost 10018
+#gcost 10020
 #chaosrec 1
 #incunrest 3
 #pillagebonus 1
@@ -1193,7 +1193,7 @@
 #spr2 "Blue_Krakasos/Blue_Marauder2.tga"
 #name "Krakasos Marauder"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. The fishmen of Krakasos are easily captivated by shiny objects, and many join the bands of marauders following the Corsair Kings, plundering nearby lands and passing vessels for their gold and other valuables to be hoarded deep beneath the waves."
-#rpcost 7
+#rpcost 9
 #rcost 6 -- +2 shield, +1 axe, +3 cuirass
 #hp 15
 #str 11 -- +0
@@ -1235,7 +1235,7 @@
 #spr2 "Blue_Krakasos/Blue_Plunderer2.tga"
 #name "Krakasos Plunderer"
 #descr "In the lands of Krakasos live strange fishmen who follow the Krakens in all things. The fishmen of Krakasos are easily captivated by shiny objects, and many join the bands of marauders following the Corsair Kings, plundering nearby lands and passing vessels for their gold and other valuables to be hoarded deep beneath the waves."
-#rpcost 8
+#rpcost 10
 #rcost 5 -- +1 trident, +3 cuirass
 #hp 15
 #str 11 -- +0
@@ -1678,10 +1678,10 @@ Priests: Average."
 #addrecunit 6866 -- Heavy Swordfighter
 
 
-#addforeigncom 6851 -- Captain
+--#addforeigncom 6851 -- Captain
 
-#addforeignunit 6870 -- Marauder
-#addforeignunit 6871 -- Plunderer
+--#addforeignunit 6870 -- Marauder
+--#addforeignunit 6871 -- Plunderer
 --#addforeignunit 6868 -- Vagabond
 --#addforeignunit 6869 -- Wrecker
 
