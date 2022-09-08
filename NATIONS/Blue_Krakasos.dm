@@ -1681,6 +1681,14 @@ Priests: Average."
 #addrecunit 6866 -- Heavy Swordfighter
 
 
+#landcom 6852 -- Sorcerer
+#landcom 6856 -- Scout
+#landcom 6851 -- Captain
+#landrec 6870 -- Marauder
+#landrec 6871 -- Plunderer
+#landrec 6868 -- Vagabond
+#landrec 6869 -- Wrecker
+
 --#addforeigncom 6851 -- Captain
 
 --#addforeignunit 6870 -- Marauder
