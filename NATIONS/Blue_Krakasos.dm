@@ -277,6 +277,7 @@
 #eyes 2
 #fear 5
 #stealthy 0
+#unsurr 4
 #incunrest 50
 #weapon 628
 #weapon 628
@@ -328,6 +329,7 @@
 #eyes 2
 --#fear 5
 #stealthy 0
+#unsurr 4
 #weapon 628
 #weapon 628
 #weapon 832 -- Fossilized Mast
@@ -375,6 +377,7 @@
 #eyes 2
 #fear 5
 #stealthy 0
+#unsurr 4
 #weapon 628
 #weapon 628
 #weapon 628
@@ -465,7 +468,7 @@
 #eyes 2
 --#fear 5
 #stealthy 0
-#unsurr 5
+#unsurr 4
 #weapon 628
 #weapon 628
 #weapon 628
