@@ -264,6 +264,7 @@
 #ressize 2
 #unsurr 2
 #ambidextrous 4
+#cleanshape
 #secondshape 7810
 #end
 
@@ -284,15 +285,16 @@
 #ressize 2
 #unsurr 1
 #ambidextrous 4
+#cleanshape
 #secondshape 7811
 #firstshape 7809
 #end
 
 #newmonster 7811
 #copystats 1901 --EA TC medium footman
+#name "Heavy Chariot"
 #spr1 "./sinkiang/chariot3.tga"
 #spr2 "./sinkiang/chariot3_2.tga"
-#name "Heavy Chariot"
 #descr "Chariots have seen military use since the early days of the Kingdom. Nobody knows where they come from but they have dominated the battlefield ever since. Some say they were introduced by Ubaran traders, others that the Ubarans merely brought the concept and stories from a land inhabited by giants. The heavy war chariots are pulled by two horses. They are wide with two large wheels for stability. Each one carries a driver, an archer and a spearman."
 #clearweapons
 #weapon 675 --bronze axe
@@ -303,15 +305,16 @@
 #trample
 #ressize 2
 #ambidextrous 4
+#cleanshape
 #firstshape 7809
 #end
 
 -- Noble warrior - armored, spear + composite bow [Fig 2] [Fig 3]
 #newmonster 7812
 #copystats 1901 --EA TC medium footman
+#name "Nobleman"
 #spr1 "./sinkiang/noble.tga"
 #spr2 "./sinkiang/noble_2.tga"
-#name "Nobleman"
 #descr "The noble class of Sinkiang is called the Shang. They are descendants of conquerors and as such every Nobleman must prove himself on the field of battle if he is to advance in the Court of Sinkiang. They spend their days training with weapons and are accomplished warriors and archers. Their primary weapons are the composite bow and spear. Should they get bested however they will switch to an axe and dagger for close quarter combat."
 #clearweapons
 #cleararmor
@@ -331,6 +334,7 @@
 
 #newmonster 7813
 #copystats 1901 --EA TC medium footman
+#name "Nobleman"
 #spr1 "./sinkiang/noble2.tga"
 #spr2 "./sinkiang/noble2_2.tga"
 #descr "The noble class of Sinkiang is called the Shang. They are descendants of conquerors and as such every Nobleman must prove himself on the field of battle if he is to advance in the Court of Sinkiang. They spend their days training with weapons and are accomplished warriors and archers. Their primary weapons are the composite bow and spear. Should they get bested however they will switch to an axe and dagger for close quarter combat. This noble has switched to using his close-quarter kit. He is tired of battle and his morale is lower than it used to be."
