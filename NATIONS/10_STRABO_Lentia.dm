@@ -73,8 +73,8 @@
 -- FOLDTROOPS
 
 #newmonster 4292 -- Ichtyid Hunter
-#spr1 "./Singularity/ea_lentia/ichtyidhunter1.tga"
-#spr2 "./Singularity/ea_lentia/ichtyidhunter2.tga"
+#spr1 "./ea_lentia/ichtyidhunter1.tga"
+#spr2 "./ea_lentia/ichtyidhunter2.tga"
 #name "Ichtyid Hunter"
 #descr "Ichtyids are a race of fishmen that dwell along the coastlines, both in the water and on land. They are born in shallow waters and use turtles and big fishes as both food and material for weapons and armor. These hunters are equipped with spears and nets, but have no armor, except for their scales."
 #hp 16
@@ -99,8 +99,8 @@
 #end
 
 #newmonster 4293 -- Ichtyid Warrior
-#spr1 "./Singularity/ea_lentia/ichtyidwarrior1.tga"
-#spr2 "./Singularity/ea_lentia/ichtyidwarrior2.tga"
+#spr1 "./ea_lentia/ichtyidwarrior1.tga"
+#spr2 "./ea_lentia/ichtyidwarrior2.tga"
 #name "Ichtyid Warrior"
 #descr "Ichtyids are a race of fishmen that dwell along the coastlines, both in the water and on land. They are born in shallow waters and use turtles and big fishes as both food and material for weapons and armor. Ichtyid warriors form the bulk of Lentia's army, being equipped with turtle shell armor."
 #hp 17
@@ -127,8 +127,8 @@
 #end
 
 #newmonster 4294 -- Scaleless Warrior
-#spr1 "./Singularity/ea_lentia/scalelesswarrior1.tga"
-#spr2 "./Singularity/ea_lentia/scalelesswarrior2.tga"
+#spr1 "./ea_lentia/scalelesswarrior1.tga"
+#spr2 "./ea_lentia/scalelesswarrior2.tga"
 #name "Scaleless Warrior"
 #descr "For raiding coastal villages fish shamans devised a salve made from some special kelp. This salve causes all the scales on ichtyid's body to fall off, but gives the skin a camouflaging ability."
 #hp 16
@@ -154,8 +154,8 @@
 #end
 
 #newmonster 4295 -- Fish Guard
-#spr1 "./Singularity/ea_lentia/fishguard1.tga"
-#spr2 "./Singularity/ea_lentia/fishguard2.tga"
+#spr1 "./ea_lentia/fishguard1.tga"
+#spr2 "./ea_lentia/fishguard2.tga"
 #name "Fish Guard"
 #descr "Fish guards are elite warriors of Lentia. Every ichtyid warrior wishing to become a fish guard must hunt down a shark, kill it and adorn his spear, shield and cap with the teeth of the slain shark."
 #hp 17
@@ -182,8 +182,8 @@
 #end
 
 #newmonster 4296 -- Shark Totemist
-#spr1 "./Singularity/ea_lentia/sharktotemist1.tga"
-#spr2 "./Singularity/ea_lentia/sharktotemist2.tga"
+#spr1 "./ea_lentia/sharktotemist1.tga"
+#spr2 "./ea_lentia/sharktotemist2.tga"
 #name "Shark Totemist"
 #descr "Shark totemists are warriors of the Shark Cult. After the rite of initiation a shark totemist cuts off his dorsal fin and dons a sharkskin armor. During this rite he inherits the bloodlust of a shark, so when he rushes into the battle wielding two sharktooth daggers, he soon becomes engulfed by rage."
 #hp 17
@@ -211,8 +211,8 @@
 #end
 
 #newmonster 4297 -- Sharkshifter
-#spr1 "./Singularity/ea_lentia/sharkshifter1.tga"
-#spr2 "./Singularity/ea_lentia/sharkshifter2.tga"
+#spr1 "./ea_lentia/sharkshifter1.tga"
+#spr2 "./ea_lentia/sharkshifter2.tga"
 #name "Sharkshifter"
 #descr "Sharkshifters are sacred warriors of the Shark Cult. The most ardent shark totemists are given a permission to wear a blessed shark head as a helmet. When a sharkshifter is wounded, his shark hide melds with his body, transforming him into a fearsome wereshark."
 #hp 18
@@ -242,8 +242,8 @@
 #end
 
 #newmonster 4298 -- Wereshark
-#spr1 "./Singularity/ea_lentia/wereshark1.tga"
-#spr2 "./Singularity/ea_lentia/wereshark2.tga"
+#spr1 "./ea_lentia/wereshark1.tga"
+#spr2 "./ea_lentia/wereshark2.tga"
 #name "Wereshark"
 #descr "A wereshark is a transformed sharkshifter, that combines traits of an ichtyid and a shark."
 #hp 25
@@ -272,8 +272,8 @@
 #end
 
 #newmonster 4317 -- Shark-Kin
-#spr1 "./Singularity/ea_lentia/shark-kin_1.tga"
-#spr2 "./Singularity/ea_lentia/shark-kin_2.tga"
+#spr1 "./ea_lentia/shark-kin_1.tga"
+#spr2 "./ea_lentia/shark-kin_2.tga"
 #name "Shark-Kin"
 #descr "Shark-kin are nomadic hunters of the seas, eating any seafood they can catch. Usually they fiercely defend their tribal territories from all other races, but the Shark Cult of Lentia has gained their trust. Even on land the shark-kin raiders are a vanguard of Lentia's forces."
 #hp 18
@@ -301,8 +301,8 @@
 #end
 
 #newmonster 4307 -- Giant Carp
-#spr1 "./Singularity/ea_lentia/giantcarp1.tga"
-#spr2 "./Singularity/ea_lentia/giantcarp2.tga"
+#spr1 "./ea_lentia/giantcarp1.tga"
+#spr2 "./ea_lentia/giantcarp2.tga"
 #name "Giant Carp"
 #descr "Giant carps are not bottom-feeders like their normal-sized cousins. They are so big that they can swallow a man whole. Strangely, one could encounter a giant carp not only in lakes and rivers, but also in seas."
 #hp 132
@@ -331,8 +331,8 @@
 #end
 
 #newmonster 4308 -- Giant Shark
-#spr1 "./Singularity/ea_lentia/giantshark1.tga"
-#spr2 "./Singularity/ea_lentia/giantshark2.tga"
+#spr1 "./ea_lentia/giantshark1.tga"
+#spr2 "./ea_lentia/giantshark2.tga"
 #name "Giant Shark"
 #descr "Giant sharks are ferocious aquatic predators."
 #hp 60
@@ -361,8 +361,8 @@
 #end
 
 #newmonster 4316 -- Piranha Shark
-#spr1 "./Singularity/ea_lentia/piranhashark1.tga"
-#spr2 "./Singularity/ea_lentia/piranhashark2.tga"
+#spr1 "./ea_lentia/piranhashark1.tga"
+#spr2 "./ea_lentia/piranhashark2.tga"
 #name "Piranha Shark"
 #descr "Piranha sharks are bloodthirsty hunters, that can be tamed only by the power of the Great Shark Totem."
 #hp 10
@@ -391,8 +391,8 @@
 #end
 
 #newmonster 4319 -- Dragon Shark-Kin
-#spr1 "./Singularity/ea_lentia/dragon_shark-kin_1.tga"
-#spr2 "./Singularity/ea_lentia/dragon_shark-kin_2.tga"
+#spr1 "./ea_lentia/dragon_shark-kin_1.tga"
+#spr2 "./ea_lentia/dragon_shark-kin_2.tga"
 #name "Dragon Shark-Kin"
 #descr "Dragon Shark-Kin are common Shark-Kin that underwent a ritual scarification that has awakened their Dragon Shark ancestry."
 #hp 18
@@ -427,8 +427,8 @@
 -- FOLDCOMMANDERS
 
 #newmonster 4299 -- Scaleless Scout
-#spr1 "./Singularity/ea_lentia/scalelessscout1.tga"
-#spr2 "./Singularity/ea_lentia/scalelessscout2.tga"
+#spr1 "./ea_lentia/scalelessscout1.tga"
+#spr2 "./ea_lentia/scalelessscout2.tga"
 #name "Scaleless Scout"
 #descr "For raiding coastal villages fish shamans devised a salve made from some special kelp. This salve causes all the scales on ichtyid's body to fall off, but gives the skin a camouflaging ability. Scaleless scouts are trained to be even stealthier."
 #hp 16
@@ -454,8 +454,8 @@
 #end
 
 #newmonster 4300 -- Scaleless Commander
-#spr1 "./Singularity/ea_lentia/scalelesscommander1.tga"
-#spr2 "./Singularity/ea_lentia/scalelesscommander2.tga"
+#spr1 "./ea_lentia/scalelesscommander1.tga"
+#spr2 "./ea_lentia/scalelesscommander2.tga"
 #name "Scaleless Commander"
 #descr "For raiding coastal villages fish shamans devised a salve made from some special kelp. This salve causes all the scales on ichtyid's body to fall off, but gives the skin a camouflaging ability. Scaleless commanders usually lead such coastal raids, that appear from nowhere, take what they want, and disappear in the sea."
 #hp 16
@@ -482,8 +482,8 @@
 #end
 
 #newmonster 4301 -- Ichtyid Lord
-#spr1 "./Singularity/ea_lentia/ichtyidlord1.tga"
-#spr2 "./Singularity/ea_lentia/ichtyidlord2.tga"
+#spr1 "./ea_lentia/ichtyidlord1.tga"
+#spr2 "./ea_lentia/ichtyidlord2.tga"
 #name "Ichtyid Lord"
 #descr "Ichtyids are a race of fishmen that dwell along the coastlines, both in the water and on land. They are born in shallow waters and use turtles and big fishes as both food and material for weapons and armor. Ichtyid Lords are basic commanders of Lentia's army."
 #hp 18
@@ -511,8 +511,8 @@
 #end
 
 #newmonster 4314 -- Shark Cult Commander
-#spr1 "./Singularity/ea_lentia/sharkcultcommander1.tga"
-#spr2 "./Singularity/ea_lentia/sharkcultcommander2.tga"
+#spr1 "./ea_lentia/sharkcultcommander1.tga"
+#spr2 "./ea_lentia/sharkcultcommander2.tga"
 #name "Shark Cult Commander"
 #descr "Shark Cult commanders are elite commanders of Lentia. They wear sharkskin armor, have the ferocity of a sharkshifter, but can't transform into a wereshark."
 #hp 18
@@ -548,8 +548,8 @@
 -- FOLDMAGES
 
 #newmonster 4302 -- Fish Shaman
-#spr1 "./Singularity/ea_lentia/fishshaman1.tga"
-#spr2 "./Singularity/ea_lentia/fishshaman2.tga"
+#spr1 "./ea_lentia/fishshaman1.tga"
+#spr2 "./ea_lentia/fishshaman2.tga"
 #name "Fish Shaman"
 #descr "Fish shamans are neophytes of the Shark Cult. They have weak magical powers and are not allowed to wear blessed shark heads."
 #hp 16
@@ -578,8 +578,8 @@
 #end
 
 #newmonster 4303 -- Tsunami Caller
-#spr1 "./Singularity/ea_lentia/tsunamicaller1.tga"
-#spr2 "./Singularity/ea_lentia/tsunamicaller2.tga"
+#spr1 "./ea_lentia/tsunamicaller1.tga"
+#spr2 "./ea_lentia/tsunamicaller2.tga"
 #name "Tsunami Caller"
 #descr "Tsunami callers are the main mages-priests of Lentia. They have control over water and earth. Their magical powers caused several earthquakes and tsunamis in the past, that is how they earned their name."
 #hp 16
@@ -610,8 +610,8 @@
 #end
 
 #newmonster 4304 -- Shark Aspect
-#spr1 "./Singularity/ea_lentia/sharkaspect1.tga"
-#spr2 "./Singularity/ea_lentia/sharkaspect2.tga"
+#spr1 "./ea_lentia/sharkaspect1.tga"
+#spr2 "./ea_lentia/sharkaspect2.tga"
 #name "Shark Aspect"
 #descr "Shark aspects are high priests of Lentia. They carry sharktooth staves and each staff has at least one tooth taken from the Great Shark Totem. This special tooth instills fear in animal minds."
 #hp 16
@@ -643,8 +643,8 @@
 #end
 
 #newmonster 4305 -- Ichtyid Stormcaller
-#spr1 "./Singularity/ea_lentia/ichtyidstormcaller1.tga"
-#spr2 "./Singularity/ea_lentia/ichtyidstormcaller2.tga"
+#spr1 "./ea_lentia/ichtyidstormcaller1.tga"
+#spr2 "./ea_lentia/ichtyidstormcaller2.tga"
 #name "Ichtyid Stormcaller"
 #descr "Some ichtyids remained on the surface more than the others. Ichtyid stormcallers always changed weather before the raiding party from the sea arrived. There is a saying in Berytos: 'Only a simple person thinks that thunder and lightning are the worst parts of the storm.'."
 #hp 16
@@ -673,8 +673,8 @@
 #end
 
 #newmonster 4320 -- Ichtyid Stargazer
-#spr1 "./Singularity/ea_lentia/ichtyidstargazer1.tga"
-#spr2 "./Singularity/ea_lentia/ichtyidstargazer2.tga"
+#spr1 "./ea_lentia/ichtyidstargazer1.tga"
+#spr2 "./ea_lentia/ichtyidstargazer2.tga"
 #name "Ichtyid Stargazer"
 #descr "Some ichtyids were fascinated by the stars at the first sight. They left the sea, trying to get closer to the stars and settled in the mountains. Sometimes gazing at the starry sky gave them understanding of deeper secrets."
 #hp 16
@@ -702,8 +702,8 @@
 #end
 
 #newmonster 4306 -- Ichtyarch
-#spr1 "./Singularity/ea_lentia/ichtyarch1.tga"
-#spr2 "./Singularity/ea_lentia/ichtyarch2.tga"
+#spr1 "./ea_lentia/ichtyarch1.tga"
+#spr2 "./ea_lentia/ichtyarch2.tga"
 #name "Ichtyarch"
 #descr "Ichtyarchs are the rulers of Lentia. Their magical prowess is superior to that of the other ichtyid mages, and they are skilled warriors and leaders."
 #hp 18
@@ -739,8 +739,8 @@
 #end
 
 #newmonster 4318 -- Dragon Shark Aspect
-#spr1 "./Singularity/ea_lentia/dragon_shark_aspect_1.tga"
-#spr2 "./Singularity/ea_lentia/dragon_shark_aspect_2.tga"
+#spr1 "./ea_lentia/dragon_shark_aspect_1.tga"
+#spr2 "./ea_lentia/dragon_shark_aspect_2.tga"
 #name "Dragon Shark Aspect"
 #descr "Dragon Shark Aspects are Shark Aspects who underwent a ritual implantation of a dragon shark tooth under their skin. This has awakened their dormant Fire magic affinity."
 #hp 16
@@ -773,8 +773,8 @@
 #end
 
 #newmonster 4309 -- Salted One
-#spr1 "./Singularity/ea_lentia/saltedone1.tga"
-#spr2 "./Singularity/ea_lentia/saltedone2.tga"
+#spr1 "./ea_lentia/saltedone1.tga"
+#spr2 "./ea_lentia/saltedone2.tga"
 #name "Salted One"
 #fixedname "Salatin"
 #descr "Salatin and his two brothers were ones of the only ichtyids mages, that practiced death magic. One time they got caught in a fishing net by a skillful fomorian fisher. They begged for freedom and the fisher agreed to free them after they grant him three wishes. Caught ichtyid mages accepted this offer, not thinking about the consequences. Fomorian fisher wished for breakfast, lunch, and dinner, so he salted Salatin, smoked one of his brothers and sun-dried the last one. All three ichtyids survived this experience with their sheer willpower and resentment. After killing the fisher, they have returned to the seas, gaining some new powers from this ordeal."
@@ -803,8 +803,8 @@
 #end
 
 #newmonster 4310 -- Smoked One
-#spr1 "./Singularity/ea_lentia/smokedone1.tga"
-#spr2 "./Singularity/ea_lentia/smokedone2.tga"
+#spr1 "./ea_lentia/smokedone1.tga"
+#spr2 "./ea_lentia/smokedone2.tga"
 #name "Smoked One"
 #fixedname "Silithis"
 #descr "Silithis and his two brothers were ones of the only ichtyids mages, that practiced death magic. One time they got caught in a fishing net by a skillful fomorian fisher. They begged for freedom and the fisher agreed to free them after they grant him three wishes. Caught ichtyid mages accepted this offer, not thinking about the consequences. Fomorian fisher wished for breakfast, lunch, and dinner, so he smoked Silithis, salted one of his brothers and sun-dried the last one. All three ichtyids survived this experience with their sheer willpower and resentment. After killing the fisher, they have returned to the seas, gaining some new powers from this ordeal."
@@ -833,8 +833,8 @@
 #end
 
 #newmonster 4311 -- Sun-dried One
-#spr1 "./Singularity/ea_lentia/sun-driedone1.tga"
-#spr2 "./Singularity/ea_lentia/sun-driedone2.tga"
+#spr1 "./ea_lentia/sun-driedone1.tga"
+#spr2 "./ea_lentia/sun-driedone2.tga"
 #name "Sun-dried One"
 #fixedname "Stals"
 #descr "Stals and his two brothers were ones of the only ichtyids mages, that practiced death magic. One time they got caught in a fishing net by a skillful fomorian fisher. They begged for freedom and the fisher agreed to free them after they grant him three wishes. Caught ichtyid mages accepted this offer, not thinking about the consequences. Fomorian fisher wished for breakfast, lunch, and dinner, so he sun-dried Stals, salted one of his brothers and smoked the last one. All three ichtyids survived this experience with their sheer willpower and resentment. After killing the fisher, they have returned to the seas, gaining some new powers from this ordeal."
@@ -863,8 +863,8 @@
 #end
 
 #newmonster 4312 -- Insane Stargazer
-#spr1 "./Singularity/ea_lentia/insanestargazer1.tga"
-#spr2 "./Singularity/ea_lentia/insanestargazer2.tga"
+#spr1 "./ea_lentia/insanestargazer1.tga"
+#spr2 "./ea_lentia/insanestargazer2.tga"
 #name "Insane Stargazer"
 #fixedname "Pliss"
 #descr "Pliss is one of the most dedicated stargazers. He had a goal: he wanted to climb the highest mountain to be as close to the stars as possible. After returning from his voyage to the highest mountain he started rambling about a star that is about to fall and bring doom to the seas. Ichtyids of Lentia didn't believe him, thinking that Pliss became insane. To this day Pliss tried to persuade his folk to flee the seas, but they just don't want to listen to his ramblings anymore. Pliss wields a staff with some strange purple tentacle on it. He says that this tentacle gives him the power to control minds of lesser beings."
@@ -895,8 +895,8 @@
 #end
 
 #newmonster 4313 -- Ichtytitan
-#spr1 "./Singularity/ea_lentia/ichtytitan1.tga"
-#spr2 "./Singularity/ea_lentia/ichtytitan2.tga"
+#spr1 "./ea_lentia/ichtytitan1.tga"
+#spr2 "./ea_lentia/ichtytitan2.tga"
 #name "Ichtytitan"
 #descr "Ichtytitan is an ancient being that was venerated as a deity by coastal tribes even during the reign of the Pantokrator. Fishermen sacrificed a large portion of their catch every month to keep the sea deity calm. When the Pantokrator noticed this heresy, he banished the Ichtytitan to the deepest ocean trench and cursed him with insatiable hunger. Now, with the Pantokrator gone, the Ichtytitan has broken free from his dark prison, vowing to consume all who stand in his way, be they man, monster, or even deity."
 #hp 142
@@ -934,8 +934,8 @@
 #end
 
 #newmonster 4315 -- Dragon Shark
-#spr1 "./Singularity/ea_lentia/dragonshark1.tga"
-#spr2 "./Singularity/ea_lentia/dragonshark2.tga"
+#spr1 "./ea_lentia/dragonshark1.tga"
+#spr2 "./ea_lentia/dragonshark2.tga"
 #name "Dragon Shark"
 #descr "Ichtyid tribes were too small to deserve much of the direct attention of the Pantokrator. For purposes of ruling the Shark Cult in his name, the Pantokrator transformed a fire-breathing dragon into a giant red-skinned shark, that retained some of its former magical powers. The Dragon Shark didn't enjoy its new shape, but it had no choice, because going against the will of the Pantokrator equaled death. Now, with the Pantokrator gone, the Dragon Shark decided to attain divinity itself."
 #hp 146
@@ -1059,7 +1059,7 @@
 -- FOLDITEMS
 
 #selectitem 564 -- Trident of Shark Command
-#spr "./Singularity/ea_lentia/trident_of_shark_command.tga"
+#spr "./ea_lentia/trident_of_shark_command.tga"
 #constlevel 4
 #mainpath 2
 #mainlevel 3
@@ -1160,7 +1160,7 @@
 Military: Amphibious infantry, sacred sharkshifters
 Magic: Water, Earth, Nature, and some Air and Astral
 Priests: Moderate."
-#flag "./Singularity/ea_lentia/flag.tga"
+#flag "./ea_lentia/flag.tga"
 #color 0.0 0.5 0.6
 #uwnation
 #cavenation 0 -- no cave start

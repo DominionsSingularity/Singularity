@@ -504,11 +504,8 @@
 
 -- Spirit Communion/Spirit of the Forest --------------------------------------------------------------------------
 
-	#selectspell 2504 -- Awaken Tattoos
-	#school -1
-	#range 1
-	#aoe 0
-	#nreff 1
+	#selectspell 2504
+	#copyspell 205 -- Awaken Tattoos
 	#end
 
 #newspell    
@@ -1268,7 +1265,7 @@ All troops recruited under this enchantment will permanently retain weapons ench
 
 #newspell
 #copyspell 795
-#name "Awaken Sleeper"
+#name "Awaken Sleeper "
 #researchlevel 4
 #path 0 6
 #pathlevel 0 4
