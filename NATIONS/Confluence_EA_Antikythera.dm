@@ -2513,7 +2513,7 @@ Priests: Very weak"
 #addreccom 5711
 #addreccom 5712
 --#addreccom 5713 -- Mechanical Angel immobile
-addreccom 5714 -- Mechanical Angel mobile
+#addreccom 5714 -- Mechanical Angel mobile
 #addreccom 5715
 #addreccom 5716
 --addreccom 5717
